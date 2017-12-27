@@ -1,0 +1,335 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<quest xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xsd="http://www.w3.org/2001/XMLSchema" uniqueid="1232" version="62">
+	<displayname>$$9801$$</displayname>
+	<level>43</level>
+	<repeatable>true</repeatable>
+	<timer>
+		<time>00:25:00</time>
+		<events/>
+		<hideonui>false</hideonui>
+	</timer>
+	<canplaycoop>true</canplaycoop>
+	<cooprequired>false</cooprequired>
+	<ranked>false</ranked>
+	<description>$$10211$$</description>
+	<completiontext>$$9976$$</completiontext>
+	<inprogresstext>$$9978$$</inprogresstext>
+	<summarytext>$$9704$$</summarytext>
+	<alliance>eAllianceCouncilOfImhotep</alliance>
+	<repeatableduration>12</repeatableduration>
+	<canabandon>true</canabandon>
+	<hiddenquest>false</hiddenquest>
+	<friendonly>false</friendonly>
+	<suppressnotifications>false</suppressnotifications>
+	<customquest>false</customquest>
+	<questtype>RandomMap</questtype>
+	<questgamemodetype>Normal</questgamemodetype>
+	<prereqs>
+		<values>
+			<level>
+				<min>40</min>
+				<max>99</max>
+			</level>
+			<questcomplete>
+				<id>1200</id>
+			</questcomplete>
+		</values>
+	</prereqs>
+	<equipmentprereqs/>
+	<targets>
+		<grouping>
+			<cooponly>false</cooponly>
+			<forcetocenter>false</forcetocenter>
+			<name>Player Start</name>
+			<count>1</count>
+			<team>1</team>
+			<area>Player1</area>
+			<groupfilename>shared_player1_age2_barrackstowers</groupfilename>
+			<rottype>Rotate0</rottype>
+			<rotateunitorientations>false</rotateunitorientations>
+		</grouping>
+		<grouping>
+			<cooponly>true</cooponly>
+			<forcetocenter>false</forcetocenter>
+			<name>Coop Start</name>
+			<count>1</count>
+			<team>3</team>
+			<area>Player2</area>
+			<groupfilename>shared_player3_age2_barrackstowers</groupfilename>
+			<rottype>Rotate270</rottype>
+			<rotateunitorientations>false</rotateunitorientations>
+		</grouping>
+	</targets>
+	<objectives id="0" mustfailall="false">
+		<values>
+			<or id="1" mustfailall="false">
+				<description/>
+				<values>
+					<timer id="2">
+						<description>$$2471$$</description>
+						<failonexpire>false</failonexpire>
+					</timer>
+					<reduceunitsto id="3">
+						<type>LogicalTypeNeededForVictory</type>
+						<count>0</count>
+						<includeteam>true</includeteam>
+						<includeunderconstruction>false</includeunderconstruction>
+						<canuncomplete>false</canuncomplete>
+						<causesfailure>true</causesfailure>
+						<playerid>1</playerid>
+					</reduceunitsto>
+					<reduceunitsto id="4">
+						<type>AIStart</type>
+						<count>1</count>
+						<includeteam>false</includeteam>
+						<includeunderconstruction>false</includeunderconstruction>
+						<canuncomplete>false</canuncomplete>
+						<causesfailure>true</causesfailure>
+						<playerid>1</playerid>
+					</reduceunitsto>
+					<dummy id="5">
+						<description>$$9545$$</description>
+						<objectivename>UNUSED</objectivename>
+						<autocomplete>false</autocomplete>
+					</dummy>
+				</values>
+			</or>
+		</values>
+	</objectives>
+	<secondaryobjectives id="6" mustfailall="false" rewardname="OptionalOne">
+		<description>$$9507$$</description>
+		<values>
+			<or id="7" mustfailall="false">
+				<values>
+					<reduceunitsto id="8">
+						<description/>
+						<type>AIStart</type>
+						<count>2</count>
+						<includeteam>false</includeteam>
+						<includeunderconstruction>false</includeunderconstruction>
+						<canuncomplete>false</canuncomplete>
+						<causesfailure>true</causesfailure>
+						<playerid>1</playerid>
+					</reduceunitsto>
+					<dummy id="9">
+						<description>$$9546$$</description>
+						<objectivename>UNUSED</objectivename>
+						<autocomplete>false</autocomplete>
+					</dummy>
+					<timer id="10">
+						<failonexpire>false</failonexpire>
+					</timer>
+				</values>
+			</or>
+		</values>
+	</secondaryobjectives>
+	<secondaryobjectives id="11" mustfailall="false" rewardname="OptionalTwo">
+		<description>$$9508$$</description>
+		<values>
+			<or id="12" mustfailall="false">
+				<values>
+					<reduceunitsto id="13">
+						<type>AIStart</type>
+						<count>3</count>
+						<includeteam>false</includeteam>
+						<includeunderconstruction>false</includeunderconstruction>
+						<canuncomplete>false</canuncomplete>
+						<causesfailure>true</causesfailure>
+						<playerid>1</playerid>
+					</reduceunitsto>
+					<dummy id="14">
+						<description>$$9547$$</description>
+						<objectivename>UNUSED</objectivename>
+						<autocomplete>false</autocomplete>
+					</dummy>
+					<timer id="15">
+						<failonexpire>false</failonexpire>
+					</timer>
+				</values>
+			</or>
+		</values>
+	</secondaryobjectives>
+	<secondaryobjectives id="16" mustfailall="false" rewardname="OptionalThree">
+		<description>$$9509$$</description>
+		<values>
+			<or id="17" mustfailall="false">
+				<values>
+					<reduceunitsto id="18">
+						<type>AIStart</type>
+						<count>5</count>
+						<includeteam>false</includeteam>
+						<includeunderconstruction>false</includeunderconstruction>
+						<canuncomplete>false</canuncomplete>
+						<causesfailure>true</causesfailure>
+						<playerid>1</playerid>
+					</reduceunitsto>
+					<dummy id="19">
+						<description>$$9550$$</description>
+						<objectivename>UNUSED</objectivename>
+						<autocomplete>false</autocomplete>
+					</dummy>
+					<timer id="20">
+						<failonexpire>false</failonexpire>
+					</timer>
+				</values>
+			</or>
+		</values>
+	</secondaryobjectives>
+	<secondaryobjectives id="21" mustfailall="false" rewardname="OptionalFour">
+		<description>$$9510$$</description>
+		<values>
+			<or id="22" mustfailall="false">
+				<values>
+					<reduceunitsto id="23">
+						<type>AIStart</type>
+						<count>7</count>
+						<includeteam>false</includeteam>
+						<includeunderconstruction>false</includeunderconstruction>
+						<canuncomplete>false</canuncomplete>
+						<causesfailure>true</causesfailure>
+						<playerid>1</playerid>
+					</reduceunitsto>
+					<dummy id="24">
+						<description>$$9551$$</description>
+						<objectivename>UNUSED</objectivename>
+						<autocomplete>false</autocomplete>
+					</dummy>
+					<timer id="25">
+						<failonexpire>false</failonexpire>
+					</timer>
+				</values>
+			</or>
+		</values>
+	</secondaryobjectives>
+	<onaccept/>
+	<rewards visible="true">
+		<alliancepoints visible="true">
+			<amount>20</amount>
+		</alliancepoints>
+		<capitalresource visible="true">
+			<capitalresource>cCapResCoin</capitalresource>
+			<amount>300</amount>
+		</capitalresource>
+		<loottable visible="true">general</loottable>
+	</rewards>
+	<secondaryrewards visible="true" name="OptionalOne">
+		<capitalresource visible="true">
+			<capitalresource>cCapResCoin</capitalresource>
+			<amount>400</amount>
+		</capitalresource>
+		<loottable visible="true">general</loottable>
+	</secondaryrewards>
+	<secondaryrewards visible="true" name="OptionalTwo">
+		<capitalresource visible="true">
+			<capitalresource>cCapResCoin</capitalresource>
+			<amount>400</amount>
+		</capitalresource>
+		<loottable visible="true">general</loottable>
+	</secondaryrewards>
+	<secondaryrewards visible="true" name="OptionalThree">
+		<capitalresource visible="true">
+			<capitalresource>cCapResCoin</capitalresource>
+			<amount>400</amount>
+		</capitalresource>
+		<loottable visible="true">general</loottable>
+		<loottable visible="true">general</loottable>
+	</secondaryrewards>
+	<secondaryrewards visible="true" name="OptionalFour">
+		<capitalresource visible="true">
+			<capitalresource>cCapResCoin</capitalresource>
+			<amount>1000</amount>
+		</capitalresource>
+		<loottable visible="true">general_legendary</loottable>
+		<loottable visible="true">general_legendary</loottable>
+	</secondaryrewards>
+	<playersettings id="1">
+		<team>1</team>
+		<color>1</color>
+		<tributablebehavior>Default</tributablebehavior>
+		<playertype>Human</playertype>
+		<cooponly>false</cooponly>
+		<startingfood>-1</startingfood>
+		<startingwood>-1</startingwood>
+		<startinggold>-1</startinggold>
+		<startingstone>-1</startingstone>
+		<aislidervariables/>
+		<aiflagvariables/>
+	</playersettings>
+	<playersettings id="2">
+		<team>2</team>
+		<color>2</color>
+		<tributablebehavior>Default</tributablebehavior>
+		<playertype>Computer</playertype>
+		<personality>$$9689$$</personality>
+		<script>Shared_Alliance\Alliance_Canyon_V2</script>
+		<dataset>C01\C01_CoreRush_T4</dataset>
+		<cooponly>false</cooponly>
+		<startingfood>0</startingfood>
+		<startingwood>0</startingwood>
+		<startinggold>0</startinggold>
+		<startingstone>0</startingstone>
+		<aislidervariables/>
+		<aiflagvariables/>
+	</playersettings>
+	<playersettings id="3">
+		<team>1</team>
+		<color>7</color>
+		<tributablebehavior>Default</tributablebehavior>
+		<playertype>Human</playertype>
+		<cooponly>true</cooponly>
+		<startingfood>-1</startingfood>
+		<startingwood>-1</startingwood>
+		<startinggold>-1</startinggold>
+		<startingstone>-1</startingstone>
+		<aislidervariables/>
+		<aiflagvariables/>
+	</playersettings>
+	<playersettings id="4">
+		<team>3</team>
+		<color>3</color>
+		<tributablebehavior>Default</tributablebehavior>
+		<playertype>Computer</playertype>
+		<personality>$$2279$$</personality>
+		<dataset>c04\c04_vanilla_t0</dataset>
+		<cooponly>false</cooponly>
+		<startingfood>0</startingfood>
+		<startingwood>0</startingwood>
+		<startinggold>0</startinggold>
+		<startingstone>0</startingstone>
+		<aislidervariables/>
+		<aiflagvariables/>
+	</playersettings>
+	<diplomacysettings>
+		<diplomacy relation="Neutral" team1="1" team2="3" sharedlos="true"/>
+		<diplomacy relation="Neutral" team1="3" team2="1" sharedlos="true"/>
+		<diplomacy relation="Enemy" team1="2" team2="3" sharedlos="true"/>
+	</diplomacysettings>
+	<randommap>
+		<map>Core\Shared_Alliance\Alliance_Canyon_V2</map>
+		<randommap>true</randommap>
+		<numplayers>4</numplayers>
+		<mapvariables>
+			<variable name="scenarioFile" type="String">Shared_Alliance/Alliance_Canyon_V2</variable>
+			<variable name="region" type="String">Persian Rock</variable>
+			<variable name="mapSize" type="String">Standard</variable>
+		</mapvariables>
+		<nuggetoverrides/>
+		<mapregionname>Persian Rock</mapregionname>
+		<lightsetname>&lt;Not Specified&gt;</lightsetname>
+		<mapsizename>Standard</mapsizename>
+	</randommap>
+	<questgivers>
+		<protounit>A02_AllianceLeader</protounit>
+	</questgivers>
+	<questreturners>
+		<protounit>A02_AllianceLeader</protounit>
+	</questreturners>
+	<maplocationx>0.74</maplocationx>
+	<maplocationy>0.475</maplocationy>
+	<mapmarker>QuestRepeatable</mapmarker>
+	<mappage>Persia</mappage>
+	<elitespawnchance>0</elitespawnchance>
+	<questbasescale>0</questbasescale>
+	<victoryconditions/>
+</quest>

@@ -1,0 +1,96 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<quest xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xsd="http://www.w3.org/2001/XMLSchema" uniqueid="2002" version="30">
+	<displayname>$$5482$$</displayname>
+	<level>0</level>
+	<repeatable>false</repeatable>
+	<offertype>eOfferNone</offertype>
+	<timer>
+		<events/>
+		<hideonui>true</hideonui>
+	</timer>
+	<canplaycoop>false</canplaycoop>
+	<cooprequired>false</cooprequired>
+	<ranked>false</ranked>
+	<description>$$8952$$</description>
+	<completiontext>$$8948$$</completiontext>
+	<inprogresstext>$$8948$$</inprogresstext>
+	<summarytext>$$8947$$</summarytext>
+	<canabandon>false</canabandon>
+	<hiddenquest>false</hiddenquest>
+	<friendonly>false</friendonly>
+	<suppressnotifications>true</suppressnotifications>
+	<customquest>false</customquest>
+	<questtype>CapitolCity</questtype>
+	<questgamemodetype>Normal</questgamemodetype>
+	<prereqs>
+		<values>
+			<civilization>
+				<id>3</id>
+			</civilization>
+			<questcomplete>
+				<id>12012</id>
+			</questcomplete>
+		</values>
+	</prereqs>
+	<equipmentprereqs/>
+	<targets/>
+	<objectives id="0" mustfailall="false">
+		<values>
+			<or id="1" mustfailall="false">
+				<description>$$8953$$</description>
+				<values>
+					<unitdiscovered id="2">
+						<type>GEN_FredTheRedeemer</type>
+						<count>1</count>
+					</unitdiscovered>
+					<ownsunit id="3">
+						<type>GEN_FredTheRedeemer</type>
+						<count>1</count>
+					</ownsunit>
+					<unitdiscovered id="4">
+						<type>C02_R2_Trader_V2</type>
+						<count>1</count>
+					</unitdiscovered>
+					<ownsunit id="5">
+						<type>C02_R2_Trader_V2</type>
+						<count>1</count>
+					</ownsunit>
+				</values>
+			</or>
+		</values>
+	</objectives>
+	<onaccept>
+		<protip visible="false">TIP_Shared_FirstReturnHome</protip>
+	</onaccept>
+	<rewards visible="true">
+		<or visible="true">
+			<blueprint visible="true">Van_Statue11</blueprint>
+			<blueprint visible="true">Van_Statue16</blueprint>
+		</or>
+	</rewards>
+	<diplomacysettings/>
+	<randommap>
+		<randommap>true</randommap>
+		<numplayers>0</numplayers>
+		<mapvariables>
+			<variable name="region" type="String"/>
+			<variable name="lighting" type="String"/>
+			<variable name="mapSize" type="String"/>
+		</mapvariables>
+		<nuggetoverrides/>
+	</randommap>
+	<questgivers>
+		<protounit>C02_R2_Trader_V2</protounit>
+	</questgivers>
+	<questreturners>
+		<protounit>GEN_FredTheRedeemer</protounit>
+	</questreturners>
+	<objectiveimage/>
+	<maplocationx>0.5</maplocationx>
+	<maplocationy>0.5</maplocationy>
+	<mapmarker>Blank</mapmarker>
+	<mappage>Egypt</mappage>
+	<elitespawnchance>0</elitespawnchance>
+	<victoryconditions/>
+</quest>

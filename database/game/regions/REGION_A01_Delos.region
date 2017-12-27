@@ -1,0 +1,16 @@
+<?xml version="1.0"?>
+<Region xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xsd="http://www.w3.org/2001/XMLSchema" ID="20">
+    <Name>Delos</Name>
+    <PlayList>Delos</PlayList>
+    <MapName>Regions/REGION_A01_Delos</MapName>
+    <MapLocationX>0.775</MapLocationX>
+    <MapLocationY>0.6</MapLocationY>
+    <MapMarker>RegionDefault</MapMarker>
+    <MapPage>Greece</MapPage>
+    <LoadScreen>UserInterface\LoadingScreens\DelosLoading_df</LoadScreen>
+    <DescriptionStringID>65729</DescriptionStringID>
+    <DisplayNameStringID>65718</DisplayNameStringID>
+    <AvatarShield>UserInterface\Avatar\RegionShield_Alliance_Delos</AvatarShield>
+    <FlagIcon>UserInterface\Icons\Regions\RegionFlagArgos_ua</FlagIcon>
+    <Alliance>true</Alliance>
+</Region>

@@ -1,0 +1,254 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<quest xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xsd="http://www.w3.org/2001/XMLSchema" uniqueid="311" version="39">
+	<displayname>$$666$$</displayname>
+	<level>-1</level>
+	<repeatable>true</repeatable>
+	<offertype>eOfferNone</offertype>
+	<timer>
+		<time>00:15:00</time>
+		<events/>
+		<hideonui>false</hideonui>
+	</timer>
+	<canplaycoop>true</canplaycoop>
+	<cooprequired>false</cooprequired>
+	<ranked>false</ranked>
+	<alliance>eAllianceNone</alliance>
+	<questtype>RandomMap</questtype>
+	<description>$$3565$$</description>
+	<completiontext>$$668$$</completiontext>
+	<inprogresstext>$$3563$$</inprogresstext>
+	<summarytext>$$12925$$</summarytext>
+	<repeatableduration>12</repeatableduration>
+	<canabandon>true</canabandon>
+	<hiddenquest>false</hiddenquest>
+	<friendonly>false</friendonly>
+	<suppressnotifications>false</suppressnotifications>
+	<customquest>false</customquest>
+	<questgamemodetype>Normal</questgamemodetype>
+	<prereqs>
+		<values>
+			<civilization>
+				<id>1</id>
+			</civilization>
+			<questcomplete>
+				<id>310</id>
+			</questcomplete>
+		</values>
+	</prereqs>
+	<equipmentprereqs/>
+	<targets>
+		<grouping>
+			<cooponly>true</cooponly>
+			<forcetocenter>false</forcetocenter>
+			<name>Player2</name>
+			<count>1</count>
+			<team>3</team>
+			<area>Player2</area>
+			<groupfilename>Shared_Player3_Age3_Fortress</groupfilename>
+			<rottype>Rotate0</rottype>
+			<rotateunitorientations>false</rotateunitorientations>
+		</grouping>
+		<protounit>
+			<cooponly>false</cooponly>
+			<forcetocenter>false</forcetocenter>
+			<name>EnemyHops</name>
+			<protoname>Npc_Myc_Hoplite</protoname>
+			<count>6</count>
+			<team>2</team>
+			<area>Quest_Area_B</area>
+			<usequesttargetindicator>false</usequesttargetindicator>
+		</protounit>
+		<protounit>
+			<cooponly>false</cooponly>
+			<forcetocenter>false</forcetocenter>
+			<name>EnemyHips</name>
+			<protoname>Gr_Cav_Hippikon</protoname>
+			<count>8</count>
+			<team>2</team>
+			<area>Quest_Area_B</area>
+			<usequesttargetindicator>false</usequesttargetindicator>
+		</protounit>
+		<protounit>
+			<cooponly>false</cooponly>
+			<forcetocenter>false</forcetocenter>
+			<name>EnemyHyps</name>
+			<protoname>Npc_Myc_Hypaspist</protoname>
+			<count>8</count>
+			<team>2</team>
+			<area>Quest_Area_D</area>
+			<usequesttargetindicator>false</usequesttargetindicator>
+		</protounit>
+		<protounit>
+			<cooponly>false</cooponly>
+			<forcetocenter>false</forcetocenter>
+			<name>EnemyBows</name>
+			<protoname>Npc_Myc_Bowman</protoname>
+			<count>8</count>
+			<team>2</team>
+			<area>Quest_Area_E</area>
+			<usequesttargetindicator>false</usequesttargetindicator>
+		</protounit>
+	</targets>
+	<objectives id="0" mustfailall="false">
+		<values>
+			<or id="1" mustfailall="false">
+				<values>
+					<kill id="2">
+						<description>$$2530$$</description>
+						<type>Gr_Bldg_Wonder</type>
+						<count>1</count>
+						<includeconversion>true</includeconversion>
+						<onlycountelites>false</onlycountelites>
+					</kill>
+					<reduceunitsto id="3">
+						<type>LogicalTypeNeededForVictory</type>
+						<count>0</count>
+						<includeteam>true</includeteam>
+						<includeunderconstruction>false</includeunderconstruction>
+						<canuncomplete>false</canuncomplete>
+						<causesfailure>true</causesfailure>
+						<playerid>1</playerid>
+					</reduceunitsto>
+				</values>
+			</or>
+		</values>
+	</objectives>
+	<secondaryobjectives id="4" mustfailall="false" rewardname="Optional">
+		<description>$$9656$$</description>
+		<values>
+			<or id="5" mustfailall="false">
+				<values>
+					<timer id="6">
+						<description>$$9656$$</description>
+						<failonexpire>true</failonexpire>
+					</timer>
+					<dummy id="7">
+						<description>$$10370$$</description>
+						<objectivename>TimeFailed</objectivename>
+						<autocomplete>false</autocomplete>
+					</dummy>
+					<kill id="8">
+						<description/>
+						<type>Gr_Bldg_Wonder</type>
+						<count>1</count>
+						<includeconversion>true</includeconversion>
+						<onlycountelites>false</onlycountelites>
+					</kill>
+				</values>
+			</or>
+		</values>
+	</secondaryobjectives>
+	<onaccept/>
+	<rewards visible="true">
+		<xp visible="true">
+			1
+			<lookuptable>SQLong</lookuptable>
+		</xp>
+		<capitalresource visible="true">
+			<capitalresource>cCapResCoin</capitalresource>
+			<amount>1</amount>
+			<lookuptable>SQLong</lookuptable>
+		</capitalresource>
+		<loottable visible="true">general</loottable>
+		<loottable visible="true">general</loottable>
+	</rewards>
+	<secondaryrewards visible="true" name="Optional">
+		<capitalresource visible="true">
+			<capitalresource>cCapResCoin</capitalresource>
+			<amount>1</amount>
+			<lookuptable>OptCoin</lookuptable>
+		</capitalresource>
+		<loottable visible="true">general</loottable>
+	</secondaryrewards>
+	<playersettings id="1">
+		<team>1</team>
+		<color>1</color>
+		<tributablebehavior>Default</tributablebehavior>
+		<playertype>Human</playertype>
+		<cooponly>false</cooponly>
+		<startingfood>2000</startingfood>
+		<startingwood>2000</startingwood>
+		<startinggold>2000</startinggold>
+		<startingstone>2000</startingstone>
+		<aislidervariables/>
+		<aiflagvariables/>
+	</playersettings>
+	<playersettings id="2">
+		<team>2</team>
+		<color>2</color>
+		<tributablebehavior>Default</tributablebehavior>
+		<playertype>Computer</playertype>
+		<personality>$$2249$$</personality>
+		<script>CORE\Ramp_Heavy</script>
+		<dataset>C01\C01_MycenaeAllLevels</dataset>
+		<cooponly>false</cooponly>
+		<startingfood>3000</startingfood>
+		<startingwood>3000</startingwood>
+		<startinggold>3000</startinggold>
+		<startingstone>3000</startingstone>
+		<aislidervariables>
+			<aivariable>
+				<key>InfantryBias</key>
+				<value>0.2</value>
+			</aivariable>
+			<aivariable>
+				<key>ArcherBias</key>
+				<value>0</value>
+			</aivariable>
+			<aivariable>
+				<key>CavalryBias</key>
+				<value>0</value>
+			</aivariable>
+		</aislidervariables>
+		<aiflagvariables/>
+	</playersettings>
+	<playersettings id="3">
+		<team>1</team>
+		<color>7</color>
+		<tributablebehavior>Default</tributablebehavior>
+		<playertype>Human</playertype>
+		<cooponly>true</cooponly>
+		<startingfood>1000</startingfood>
+		<startingwood>1000</startingwood>
+		<startinggold>1000</startinggold>
+		<startingstone>1000</startingstone>
+		<aislidervariables/>
+		<aiflagvariables/>
+	</playersettings>
+	<diplomacysettings/>
+	<randommap>
+		<map>scenarioloader</map>
+		<randommap>true</randommap>
+		<numplayers>3</numplayers>
+		<mapvariables>
+			<variable name="scenarioFile" type="String">C01/C01_Side_DestroyWonder</variable>
+			<variable name="P2LandPatrolCount" type="Int">18</variable>
+			<variable name="P2AddMarketManager" type="Bool">True</variable>
+			<variable name="QuestID" type="Int">311</variable>
+			<variable name="TimeFailedMinutes" type="Int">15</variable>
+			<variable name="OptionalRestrictTime" type="Bool">true</variable>
+			<variable name="P2AllowResourcePatrol" type="Bool">false</variable>
+			<variable name="region" type="String">Greek Inland</variable>
+			<variable name="lighting" type="String">Morning</variable>
+			<variable name="mapSize" type="String"/>
+		</mapvariables>
+		<nuggetoverrides/>
+		<mapregionname>Greek Inland</mapregionname>
+		<lightsetname>Morning</lightsetname>
+	</randommap>
+	<questgivers>
+		<protounit>C01_R2_KingAgamemnon</protounit>
+	</questgivers>
+	<questreturners>
+		<protounit>C01_R2_KingAgamemnon</protounit>
+	</questreturners>
+	<maplocationx>0.603</maplocationx>
+	<maplocationy>0.426</maplocationy>
+	<mapmarker>QuestRepeatable</mapmarker>
+	<mappage>Greece</mappage>
+	<elitespawnchance>0.025</elitespawnchance>
+	<linkedquestid>11942</linkedquestid>
+	<questbasescale>0</questbasescale>
+	<victoryconditions/>
+</quest>

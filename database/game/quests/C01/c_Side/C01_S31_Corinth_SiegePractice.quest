@@ -1,0 +1,176 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<quest xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xsd="http://www.w3.org/2001/XMLSchema" uniqueid="181" version="41">
+	<displayname>$$2198$$</displayname>
+	<level>-1</level>
+	<repeatable>false</repeatable>
+	<timer>
+		<time>00:20:00</time>
+		<events/>
+		<hideonui>false</hideonui>
+	</timer>
+	<canplaycoop>true</canplaycoop>
+	<cooprequired>false</cooprequired>
+	<ranked>false</ranked>
+	<alliance>eAllianceNone</alliance>
+	<questtype>RandomMap</questtype>
+	<description>$$688$$</description>
+	<completiontext>$$689$$</completiontext>
+	<inprogresstext>$$1576$$</inprogresstext>
+	<summarytext>$$1577$$</summarytext>
+	<canabandon>true</canabandon>
+	<hiddenquest>false</hiddenquest>
+	<friendonly>false</friendonly>
+	<suppressnotifications>false</suppressnotifications>
+	<customquest>false</customquest>
+	<questgamemodetype>Normal</questgamemodetype>
+	<prereqs>
+		<values>
+			<civilization>
+				<id>1</id>
+			</civilization>
+			<questcomplete>
+				<id>178</id>
+			</questcomplete>
+		</values>
+	</prereqs>
+	<equipmentprereqs/>
+	<targets>
+		<grouping>
+			<cooponly>true</cooponly>
+			<forcetocenter>false</forcetocenter>
+			<name>Player2</name>
+			<count>1</count>
+			<team>3</team>
+			<area>Player2</area>
+			<groupfilename>Shared_Start_Small</groupfilename>
+			<rottype>Rotate0</rottype>
+			<rotateunitorientations>true</rotateunitorientations>
+		</grouping>
+	</targets>
+	<objectives id="0" mustfailall="false">
+		<values>
+			<or id="1" mustfailall="false">
+				<values>
+					<timer id="2">
+						<description>$$2471$$</description>
+						<failonexpire>true</failonexpire>
+					</timer>
+					<and id="3" mustfailall="false">
+						<values>
+							<kill id="4">
+								<description>$$2507$$</description>
+								<type>Gr_Bldg_Fortress</type>
+								<count>2</count>
+								<includeconversion>true</includeconversion>
+								<onlycountelites>false</onlycountelites>
+							</kill>
+							<kill id="5">
+								<description>$$2482$$</description>
+								<type>Gr_Bldg_House</type>
+								<count>10</count>
+								<includeconversion>true</includeconversion>
+								<onlycountelites>false</onlycountelites>
+							</kill>
+							<kill id="6">
+								<description>$$2508$$</description>
+								<type>Gr_Bldg_TownCenter</type>
+								<count>3</count>
+								<includeconversion>true</includeconversion>
+								<onlycountelites>false</onlycountelites>
+							</kill>
+						</values>
+					</and>
+					<reduceunitsto id="7">
+						<type>LogicalTypeNeededForVictory</type>
+						<count>0</count>
+						<includeteam>true</includeteam>
+						<includeunderconstruction>false</includeunderconstruction>
+						<canuncomplete>false</canuncomplete>
+						<causesfailure>true</causesfailure>
+						<playerid>1</playerid>
+					</reduceunitsto>
+				</values>
+			</or>
+		</values>
+	</objectives>
+	<onaccept/>
+	<rewards visible="true">
+		<xp visible="true">20000</xp>
+		<capitalresource visible="true">
+			<capitalresource>cCapResCoin</capitalresource>
+			<amount>150</amount>
+		</capitalresource>
+		<loottable visible="true">general</loottable>
+		<loottable visible="true">general</loottable>
+	</rewards>
+	<playersettings id="1">
+		<team>1</team>
+		<color>1</color>
+		<tributablebehavior>Default</tributablebehavior>
+		<playertype>Human</playertype>
+		<cooponly>false</cooponly>
+		<startingfood>400</startingfood>
+		<startingwood>400</startingwood>
+		<startinggold>400</startinggold>
+		<startingstone>400</startingstone>
+		<aislidervariables/>
+		<aiflagvariables/>
+	</playersettings>
+	<playersettings id="2">
+		<team>2</team>
+		<color>2</color>
+		<tributablebehavior>Default</tributablebehavior>
+		<playertype>Computer</playertype>
+		<personality>$$4054$$</personality>
+		<dataset>C01\C01_CoreRamp_T1</dataset>
+		<cooponly>false</cooponly>
+		<startingfood>0</startingfood>
+		<startingwood>0</startingwood>
+		<startinggold>0</startinggold>
+		<startingstone>0</startingstone>
+		<aislidervariables/>
+		<aiflagvariables/>
+	</playersettings>
+	<playersettings id="3">
+		<team>1</team>
+		<color>7</color>
+		<tributablebehavior>Default</tributablebehavior>
+		<playertype>Human</playertype>
+		<cooponly>true</cooponly>
+		<startingfood>300</startingfood>
+		<startingwood>300</startingwood>
+		<startinggold>300</startinggold>
+		<startingstone>300</startingstone>
+		<aislidervariables/>
+		<aiflagvariables/>
+	</playersettings>
+	<diplomacysettings/>
+	<randommap>
+		<map>scenarioloader</map>
+		<randommap>true</randommap>
+		<numplayers>3</numplayers>
+		<mapvariables>
+			<variable name="scenarioFile" type="String">C01/C01_Side_BatteringPractice</variable>
+			<variable name="region" type="String">Greek Inland</variable>
+		</mapvariables>
+		<nuggetoverrides/>
+		<mapregionname>Greek Inland</mapregionname>
+		<lightsetname>&lt;Not Specified&gt;</lightsetname>
+		<mapsizename>&lt;Not Specified&gt;</mapsizename>
+	</randommap>
+	<questgivers>
+		<protounit>C01_R2_Engineer</protounit>
+	</questgivers>
+	<questreturners>
+		<protounit>C01_R2_Engineer</protounit>
+	</questreturners>
+	<maplocationx>0.57</maplocationx>
+	<maplocationy>0.48</maplocationy>
+	<mapmarker>QuestDefault</mapmarker>
+	<mappage>Greece</mappage>
+	<elitespawnchance>0</elitespawnchance>
+	<linkedquestid>0</linkedquestid>
+	<questbasescale>0</questbasescale>
+	<victoryconditions/>
+</quest>

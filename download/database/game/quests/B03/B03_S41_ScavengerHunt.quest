@@ -1,0 +1,229 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<quest xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xsd="http://www.w3.org/2001/XMLSchema" uniqueid="103041" version="58">
+	<displayname>$$10325$$</displayname>
+	<level>-1</level>
+	<repeatable>false</repeatable>
+	<offertype>eOfferBooster3</offertype>
+	<timer>
+		<events/>
+		<hideonui>false</hideonui>
+	</timer>
+	<canplaycoop>false</canplaycoop>
+	<cooprequired>false</cooprequired>
+	<ranked>false</ranked>
+	<alliance>eAllianceNone</alliance>
+	<questtype>RandomMap</questtype>
+	<description>$$11955$$</description>
+	<completiontext>$$11925$$</completiontext>
+	<inprogresstext>$$11926$$</inprogresstext>
+	<summarytext>$$10766$$</summarytext>
+	<repeatableduration>0</repeatableduration>
+	<canabandon>true</canabandon>
+	<hiddenquest>false</hiddenquest>
+	<friendonly>false</friendonly>
+	<suppressnotifications>false</suppressnotifications>
+	<customquest>false</customquest>
+	<questgamemodetype>Normal</questgamemodetype>
+	<prereqs>
+		<values>
+			<or>
+				<values>
+					<queststatus>
+						<id>103040</id>
+						<queststatus>Assigned</queststatus>
+					</queststatus>
+					<questcomplete>
+						<id>103040</id>
+					</questcomplete>
+				</values>
+			</or>
+		</values>
+	</prereqs>
+	<equipmentprereqs/>
+	<targets>
+		<grouping>
+			<cooponly>false</cooponly>
+			<forcetocenter>false</forcetocenter>
+			<name>Player Start</name>
+			<count>1</count>
+			<team>1</team>
+			<area>Player1</area>
+			<groupfilename>shared_start_small</groupfilename>
+			<rottype>Rotate0</rottype>
+			<rotateunitorientations>true</rotateunitorientations>
+		</grouping>
+		<protounit>
+			<cooponly>false</cooponly>
+			<forcetocenter>false</forcetocenter>
+			<name>BabylonS41_KingTusk</name>
+			<protoname>BabylonS41_KingTusk1</protoname>
+			<count>1</count>
+			<team>2</team>
+			<area>Quest_Area_A</area>
+			<overrides parent="NPC_SH_BoarKing">
+				<visualscale>2.2</visualscale>
+				<initialhitpoints>3000</initialhitpoints>
+				<maxhitpoints>3000</maxhitpoints>
+				<animfile>World\Animals\Boar\KingTusk.xml</animfile>
+				<wanderdistance>0</wanderdistance>
+				<maxrunvelocity>15.0</maxrunvelocity>
+				<maxvelocity>12.0</maxvelocity>
+			</overrides>
+			<usequesttargetindicator>true</usequesttargetindicator>
+		</protounit>
+	</targets>
+	<objectives id="0" mustfailall="false">
+		<values>
+			<or id="1" mustfailall="false">
+				<values>
+					<and id="2" mustfailall="false">
+						<values>
+							<tribute id="3">
+								<description>$$10817$$</description>
+								<type>Food</type>
+								<amount>600</amount>
+								<destplayer>3</destplayer>
+							</tribute>
+							<dummy id="4">
+								<description>$$11773$$</description>
+								<objectivename>BabylonS41_AllySurvivesDummy</objectivename>
+								<autocomplete>false</autocomplete>
+							</dummy>
+							<dummy id="5">
+								<description>$$10819$$</description>
+								<objectivename>BabylonS41_KillKingTusk</objectivename>
+								<autocomplete>false</autocomplete>
+							</dummy>
+							<collectmaterial id="6">
+								<description>$$10654$$</description>
+								<type>SH_Fungus</type>
+								<amount>1</amount>
+								<includeexisting>false</includeexisting>
+							</collectmaterial>
+						</values>
+					</and>
+					<reduceunitsto id="7">
+						<type>LogicalTypeNeededForVictory</type>
+						<count>0</count>
+						<includeteam>false</includeteam>
+						<includeunderconstruction>false</includeunderconstruction>
+						<canuncomplete>false</canuncomplete>
+						<causesfailure>true</causesfailure>
+						<playerid>1</playerid>
+					</reduceunitsto>
+				</values>
+			</or>
+		</values>
+	</objectives>
+	<onaccept/>
+	<rewards visible="true">
+		<xp visible="true">
+			1
+			<lookuptable>SQShort</lookuptable>
+		</xp>
+		<capitalresource visible="true">
+			<capitalresource>cCapResCoin</capitalresource>
+			<amount>1</amount>
+			<lookuptable>SQShort</lookuptable>
+		</capitalresource>
+		<loottable visible="true">general</loottable>
+	</rewards>
+	<playersettings id="1">
+		<team>1</team>
+		<color>1</color>
+		<tributablebehavior>Default</tributablebehavior>
+		<playertype>Human</playertype>
+		<cooponly>false</cooponly>
+		<startingfood>-1</startingfood>
+		<startingwood>200</startingwood>
+		<startinggold>-1</startinggold>
+		<startingstone>-1</startingstone>
+		<aislidervariables/>
+		<aiflagvariables/>
+	</playersettings>
+	<playersettings id="2">
+		<team>2</team>
+		<color>2</color>
+		<tributablebehavior>Default</tributablebehavior>
+		<playertype>Computer</playertype>
+		<personality>$$10642$$</personality>
+		<dataset>c03\c03_vanilla_t0</dataset>
+		<cooponly>false</cooponly>
+		<startingfood>0</startingfood>
+		<startingwood>0</startingwood>
+		<startinggold>0</startinggold>
+		<startingstone>0</startingstone>
+		<aislidervariables/>
+		<aiflagvariables/>
+	</playersettings>
+	<playersettings id="3">
+		<team>1</team>
+		<color>3</color>
+		<tributablebehavior>Default</tributablebehavior>
+		<playertype>Computer</playertype>
+		<personality>$$11772$$</personality>
+		<dataset>c02\c02_vanilla_t0</dataset>
+		<cooponly>false</cooponly>
+		<startingfood>0</startingfood>
+		<startingwood>0</startingwood>
+		<startinggold>0</startinggold>
+		<startingstone>0</startingstone>
+		<aislidervariables/>
+		<aiflagvariables/>
+	</playersettings>
+	<playersettings id="4">
+		<team>3</team>
+		<color>3</color>
+		<tributablebehavior>Default</tributablebehavior>
+		<playertype>Computer</playertype>
+		<personality>$$11772$$</personality>
+		<dataset>c02\c02_vanilla_t0</dataset>
+		<cooponly>false</cooponly>
+		<startingfood>0</startingfood>
+		<startingwood>0</startingwood>
+		<startinggold>0</startinggold>
+		<startingstone>0</startingstone>
+		<aislidervariables/>
+		<aiflagvariables/>
+	</playersettings>
+	<diplomacysettings>
+		<diplomacy relation="Neutral" team1="1" team2="3" sharedlos="true"/>
+		<diplomacy relation="Neutral" team1="3" team2="1" sharedlos="true"/>
+		<diplomacy relation="Neutral" team1="2" team2="3" sharedlos="false"/>
+		<diplomacy relation="Neutral" team1="3" team2="2" sharedlos="false"/>
+	</diplomacysettings>
+	<randommap>
+		<map>Core\Shared_Babylon\Babylon_S41_SH_LostIsland</map>
+		<randommap>true</randommap>
+		<numplayers>4</numplayers>
+		<mapvariables>
+			<variable name="scenarioFile" type="String">Shared_Babylon/Babylon_S41_SH_LostIsland</variable>
+			<variable name="RestrictNuggetScaling" type="Bool">true</variable>
+			<variable name="QuestID" type="Int">103041</variable>
+			<variable name="region" type="String">Egyptian Marsh</variable>
+			<variable name="lighting" type="String">Evening</variable>
+			<variable name="mapSize" type="String">Standard</variable>
+		</mapvariables>
+		<nuggetoverrides>
+			<nuggetoverride overrideweight="-1">Quest_BabylonSH41_MapleTreeNugget</nuggetoverride>
+		</nuggetoverrides>
+		<mapregionname>Egyptian Marsh</mapregionname>
+		<lightsetname>Evening</lightsetname>
+		<mapsizename>Standard</mapsizename>
+	</randommap>
+	<questgivers>
+		<protounit>Babylon_NewFactionLady</protounit>
+	</questgivers>
+	<questreturners>
+		<protounit>Babylon_NewFactionLady</protounit>
+	</questreturners>
+	<maplocationx>0.58</maplocationx>
+	<maplocationy>0.09</maplocationy>
+	<mapmarker>QuestDefault</mapmarker>
+	<mappage>Libya</mappage>
+	<elitespawnchance>0</elitespawnchance>
+	<linkedquestid>0</linkedquestid>
+	<questbasescale>0</questbasescale>
+	<victoryconditions/>
+</quest>

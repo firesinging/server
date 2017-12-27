@@ -1,0 +1,166 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<quest xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xsd="http://www.w3.org/2001/XMLSchema" uniqueid="222" version="34">
+	<displayname>$$5243$$</displayname>
+	<level>10</level>
+	<repeatable>true</repeatable>
+	<timer>
+		<time>00:30:00</time>
+		<events/>
+		<hideonui>false</hideonui>
+	</timer>
+	<canplaycoop>false</canplaycoop>
+	<cooprequired>false</cooprequired>
+	<ranked>false</ranked>
+	<description>$$5243$$</description>
+	<completiontext>$$5243$$</completiontext>
+	<inprogresstext>$$5243$$</inprogresstext>
+	<summarytext>$$5243$$</summarytext>
+	<canabandon>true</canabandon>
+	<hiddenquest>false</hiddenquest>
+	<friendonly>false</friendonly>
+	<suppressnotifications>false</suppressnotifications>
+	<customquest>false</customquest>
+	<questtype>RandomMap</questtype>
+	<questgamemodetype>Normal</questgamemodetype>
+	<prereqs>
+		<values>
+			<civilization>
+				<id>1</id>
+			</civilization>
+			<level>
+				<min>99</min>
+				<max>99</max>
+			</level>
+		</values>
+	</prereqs>
+	<equipmentprereqs/>
+	<targets>
+		<grouping>
+			<cooponly>false</cooponly>
+			<forcetocenter>false</forcetocenter>
+			<name>PlayerStart</name>
+			<count>1</count>
+			<team>1</team>
+			<area>Player1</area>
+			<groupfilename>Shared_Player1_Age2_barracks</groupfilename>
+			<rottype>Rotate0</rottype>
+			<rotateunitorientations>true</rotateunitorientations>
+		</grouping>
+		<grouping>
+			<cooponly>false</cooponly>
+			<forcetocenter>false</forcetocenter>
+			<name>EnemyStart</name>
+			<count>1</count>
+			<team>2</team>
+			<area>Quest_Area_A</area>
+			<groupfilename>Shared_Start_Small</groupfilename>
+			<rottype>Rotate0</rottype>
+			<rotateunitorientations>true</rotateunitorientations>
+		</grouping>
+		<protounit>
+			<cooponly>false</cooponly>
+			<forcetocenter>false</forcetocenter>
+			<name>PlayerDefenders</name>
+			<protoname>PT_Uber_Hoplite</protoname>
+			<count>10</count>
+			<team>1</team>
+			<area>Player1</area>
+			<usequesttargetindicator>false</usequesttargetindicator>
+		</protounit>
+		<protounit>
+			<cooponly>false</cooponly>
+			<forcetocenter>false</forcetocenter>
+			<name>EnemyHouses</name>
+			<protoname>Gr_Bldg_House</protoname>
+			<count>10</count>
+			<team>2</team>
+			<area>Quest_Area_A</area>
+			<usequesttargetindicator>false</usequesttargetindicator>
+		</protounit>
+		<protounit>
+			<cooponly>false</cooponly>
+			<forcetocenter>false</forcetocenter>
+			<name>EnemyDefenders</name>
+			<protoname>Gr_Inf_Spearman</protoname>
+			<count>50</count>
+			<team>2</team>
+			<area>Quest_Area_A</area>
+			<usequesttargetindicator>false</usequesttargetindicator>
+		</protounit>
+	</targets>
+	<objectives id="0" mustfailall="false">
+		<values>
+			<buildunit id="1">
+				<description>$$2538$$</description>
+				<type>UnitTypeBldgWonder</type>
+				<count>1</count>
+			</buildunit>
+			<kill id="2">
+				<description>$$5182$$</description>
+				<type>CountsTowardMilitaryScore</type>
+				<count>10000</count>
+				<includeconversion>true</includeconversion>
+				<onlycountelites>false</onlycountelites>
+			</kill>
+			<timer id="3">
+				<description>$$2471$$</description>
+				<failonexpire>true</failonexpire>
+			</timer>
+		</values>
+	</objectives>
+	<onaccept/>
+	<rewards visible="true"/>
+	<playersettings id="1">
+		<team>1</team>
+		<color>1</color>
+		<tributablebehavior>Default</tributablebehavior>
+		<playertype>Human</playertype>
+		<cooponly>false</cooponly>
+		<startingfood>-1</startingfood>
+		<startingwood>-1</startingwood>
+		<startinggold>-1</startinggold>
+		<startingstone>-1</startingstone>
+		<aislidervariables/>
+		<aiflagvariables/>
+	</playersettings>
+	<playersettings id="2">
+		<team>2</team>
+		<color>2</color>
+		<tributablebehavior>Default</tributablebehavior>
+		<playertype>Computer</playertype>
+		<script>core\rush_weak</script>
+		<character/>
+		<dataset>c01\c01_corerush_t2</dataset>
+		<cooponly>false</cooponly>
+		<startingfood>1000</startingfood>
+		<startingwood>1000</startingwood>
+		<startinggold>1000</startinggold>
+		<startingstone>1000</startingstone>
+		<aislidervariables/>
+		<aiflagvariables/>
+	</playersettings>
+	<diplomacysettings/>
+	<randommap>
+		<map>Core\Shared\Shared_RM_Land_Baseline</map>
+		<randommap>true</randommap>
+		<numplayers>2</numplayers>
+		<mapvariables>
+			<variable name="region" type="String">Egyptian Marsh</variable>
+			<variable name="lighting" type="String">Noon</variable>
+			<variable name="mapSize" type="String">Standard</variable>
+		</mapvariables>
+		<nuggetoverrides/>
+		<mapregionname>Egyptian Marsh</mapregionname>
+		<lightsetname>Noon</lightsetname>
+		<mapsizename>Standard</mapsizename>
+	</randommap>
+	<questgivers/>
+	<questreturners/>
+	<maplocationx>0.5</maplocationx>
+	<maplocationy>0.5</maplocationy>
+	<mapmarker>QuestDefault</mapmarker>
+	<mappage>Greece</mappage>
+	<elitespawnchance>0</elitespawnchance>
+	<victoryconditions/>
+</quest>

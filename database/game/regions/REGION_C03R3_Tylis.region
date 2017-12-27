@@ -1,0 +1,14 @@
+<?xml version="1.0"?>
+<Region xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xsd="http://www.w3.org/2001/XMLSchema" ID="10">
+  <Name>Tylis</Name>
+  <CivID>6</CivID>
+  <MapName>Regions/REGION_C03R3_Tylis</MapName>
+  <MapLocationX>0.3</MapLocationX>
+  <MapLocationY>0.3</MapLocationY>
+  <MapMarker>RegionDefault</MapMarker>
+  <MapPage>Thrace</MapPage>
+  <LoadScreen>UserInterface\LoadingScreens\C03TylisLoading_df</LoadScreen>
+  <AvatarShield>UserInterface\Avatar\RegionShieldTylis_ua</AvatarShield>
+  <DescriptionStringID>63609</DescriptionStringID>
+  <DisplayNameStringID>62957</DisplayNameStringID>
+</Region>

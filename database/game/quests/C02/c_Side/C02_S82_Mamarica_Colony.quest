@@ -1,0 +1,221 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<quest xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xsd="http://www.w3.org/2001/XMLSchema" uniqueid="395" version="51">
+	<displayname>$$649$$</displayname>
+	<level>17</level>
+	<repeatable>false</repeatable>
+	<offertype>eOfferNone</offertype>
+	<timer>
+		<events/>
+		<hideonui>false</hideonui>
+	</timer>
+	<canplaycoop>true</canplaycoop>
+	<cooprequired>false</cooprequired>
+	<ranked>false</ranked>
+	<alliance>eAllianceNone</alliance>
+	<questtype>RandomMap</questtype>
+	<description>$$4964$$</description>
+	<completiontext>$$651$$</completiontext>
+	<inprogresstext>$$1555$$</inprogresstext>
+	<summarytext>$$4960$$</summarytext>
+	<canabandon>true</canabandon>
+	<hiddenquest>false</hiddenquest>
+	<friendonly>false</friendonly>
+	<suppressnotifications>false</suppressnotifications>
+	<customquest>false</customquest>
+	<questgamemodetype>Normal</questgamemodetype>
+	<prereqs>
+		<values>
+			<civilization>
+				<id>3</id>
+			</civilization>
+			<questcomplete>
+				<id>387</id>
+			</questcomplete>
+		</values>
+	</prereqs>
+	<equipmentprereqs/>
+	<targets>
+		<grouping>
+			<cooponly>false</cooponly>
+			<forcetocenter>false</forcetocenter>
+			<name>Player1</name>
+			<count>1</count>
+			<team>1</team>
+			<area>Quest_Area_C</area>
+			<groupfilename>Shared_Start_Transport</groupfilename>
+			<rottype>Rotate0</rottype>
+			<rotateunitorientations>false</rotateunitorientations>
+		</grouping>
+		<grouping>
+			<cooponly>true</cooponly>
+			<forcetocenter>false</forcetocenter>
+			<name>Player2</name>
+			<count>1</count>
+			<team>3</team>
+			<area>Quest_Area_D</area>
+			<groupfilename>Shared_Start_Transport</groupfilename>
+			<rottype>RotateRandom</rottype>
+			<rotateunitorientations>false</rotateunitorientations>
+		</grouping>
+		<grouping>
+			<cooponly>false</cooponly>
+			<forcetocenter>false</forcetocenter>
+			<name>Lib1</name>
+			<count>1</count>
+			<team>2</team>
+			<area>Player1</area>
+			<groupfilename>Shared_Start_BarracksTowers</groupfilename>
+			<rottype>Rotate0</rottype>
+			<rotateunitorientations>true</rotateunitorientations>
+		</grouping>
+		<protounit>
+			<cooponly>false</cooponly>
+			<forcetocenter>false</forcetocenter>
+			<name>revealer</name>
+			<protoname>Con_SpyglassRevealer_E</protoname>
+			<count>1</count>
+			<team>1</team>
+			<area>Player1</area>
+			<usequesttargetindicator>false</usequesttargetindicator>
+		</protounit>
+	</targets>
+	<objectives id="0" mustfailall="false">
+		<values>
+			<or id="1" mustfailall="false">
+				<values>
+					<and id="2" mustfailall="false">
+						<values>
+							<buildunit id="3">
+								<description>$$2565$$</description>
+								<type>AbstractTownCenter</type>
+								<count>1</count>
+							</buildunit>
+							<dummy id="4">
+								<description>$$3802$$</description>
+								<objectivename>EnemiesDefeated</objectivename>
+								<autocomplete>false</autocomplete>
+							</dummy>
+						</values>
+					</and>
+					<reduceunitsto id="5">
+						<type>LogicalTypeNeededForVictory</type>
+						<count>0</count>
+						<includeteam>true</includeteam>
+						<includeunderconstruction>false</includeunderconstruction>
+						<canuncomplete>false</canuncomplete>
+						<causesfailure>true</causesfailure>
+						<playerid>1</playerid>
+					</reduceunitsto>
+					<and id="6" mustfailall="true">
+						<values>
+							<reduceunitsto id="7">
+								<type>AbstractTownCenter</type>
+								<count>0</count>
+								<includeteam>true</includeteam>
+								<includeunderconstruction>false</includeunderconstruction>
+								<canuncomplete>false</canuncomplete>
+								<causesfailure>true</causesfailure>
+								<playerid>1</playerid>
+							</reduceunitsto>
+							<reduceunitsto id="8">
+								<type>UnitTypeVillager1</type>
+								<count>0</count>
+								<includeteam>true</includeteam>
+								<includeunderconstruction>false</includeunderconstruction>
+								<canuncomplete>false</canuncomplete>
+								<causesfailure>true</causesfailure>
+								<playerid>1</playerid>
+							</reduceunitsto>
+						</values>
+					</and>
+				</values>
+			</or>
+		</values>
+	</objectives>
+	<onaccept/>
+	<rewards visible="true">
+		<xp visible="true">20000</xp>
+		<capitalresource visible="true">
+			<capitalresource>cCapResCoin</capitalresource>
+			<amount>150</amount>
+		</capitalresource>
+		<loottable visible="true">general</loottable>
+		<loottable visible="true">general</loottable>
+	</rewards>
+	<playersettings id="1">
+		<team>1</team>
+		<color>1</color>
+		<tributablebehavior>Default</tributablebehavior>
+		<playertype>Human</playertype>
+		<cooponly>false</cooponly>
+		<startingfood>400</startingfood>
+		<startingwood>400</startingwood>
+		<startinggold>400</startinggold>
+		<startingstone>400</startingstone>
+		<aislidervariables/>
+		<aiflagvariables/>
+	</playersettings>
+	<playersettings id="2">
+		<team>2</team>
+		<color>2</color>
+		<tributablebehavior>Default</tributablebehavior>
+		<playertype>Computer</playertype>
+		<personality>$$2287$$</personality>
+		<script>CORE\Turtle_Heavy</script>
+		<dataset>C02\C02_Libyan_T2</dataset>
+		<cooponly>false</cooponly>
+		<startingfood>400</startingfood>
+		<startingwood>400</startingwood>
+		<startinggold>400</startinggold>
+		<startingstone>400</startingstone>
+		<aislidervariables>
+			<aivariable>
+				<key>NavyBias</key>
+				<value>0.2</value>
+			</aivariable>
+		</aislidervariables>
+		<aiflagvariables/>
+	</playersettings>
+	<playersettings id="3">
+		<team>1</team>
+		<color>7</color>
+		<tributablebehavior>Default</tributablebehavior>
+		<playertype>Human</playertype>
+		<cooponly>true</cooponly>
+		<startingfood>400</startingfood>
+		<startingwood>400</startingwood>
+		<startinggold>400</startinggold>
+		<startingstone>400</startingstone>
+		<aislidervariables/>
+		<aiflagvariables/>
+	</playersettings>
+	<diplomacysettings/>
+	<randommap>
+		<map>Core\Shared\Shared_RM_Naval_CenterIsland</map>
+		<randommap>true</randommap>
+		<numplayers>3</numplayers>
+		<mapvariables>
+			<variable name="EnemiesDefeatedQuestID" type="Int">395</variable>
+			<variable name="region" type="String">Egyptian Marsh</variable>
+			<variable name="lighting" type="String"/>
+			<variable name="mapSize" type="String">Large</variable>
+		</mapvariables>
+		<nuggetoverrides/>
+		<mapregionname>Egyptian Marsh</mapregionname>
+		<mapsizename>Large</mapsizename>
+	</randommap>
+	<questgivers>
+		<protounit>C02_R3_LostAdmiral</protounit>
+	</questgivers>
+	<questreturners>
+		<protounit>C02_R3_LostAdmiral</protounit>
+	</questreturners>
+	<maplocationx>0.8</maplocationx>
+	<maplocationy>0.32</maplocationy>
+	<mapmarker>QuestDefault</mapmarker>
+	<mappage>Libya</mappage>
+	<elitespawnchance>0.025</elitespawnchance>
+	<questbasescale>0</questbasescale>
+	<victoryconditions/>
+</quest>

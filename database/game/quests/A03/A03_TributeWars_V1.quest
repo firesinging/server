@@ -1,0 +1,275 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<quest xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xsd="http://www.w3.org/2001/XMLSchema" uniqueid="1301" version="104">
+	<displayname>$$9753$$</displayname>
+	<level>43</level>
+	<repeatable>true</repeatable>
+	<timer>
+		<events/>
+		<hideonui>false</hideonui>
+	</timer>
+	<canplaycoop>true</canplaycoop>
+	<cooprequired>false</cooprequired>
+	<ranked>false</ranked>
+	<description>$$15$$</description>
+	<completiontext>$$5$$</completiontext>
+	<inprogresstext>$$1224$$</inprogresstext>
+	<summarytext>$$1832$$</summarytext>
+	<repeatableduration>12</repeatableduration>
+	<canabandon>true</canabandon>
+	<hiddenquest>false</hiddenquest>
+	<friendonly>false</friendonly>
+	<suppressnotifications>false</suppressnotifications>
+	<customquest>false</customquest>
+	<questtype>RandomMap</questtype>
+	<questgamemodetype>Normal</questgamemodetype>
+	<prereqs>
+		<values>
+			<level>
+				<min>40</min>
+				<max>99</max>
+			</level>
+		</values>
+	</prereqs>
+	<equipmentprereqs/>
+	<targets>
+		<grouping>
+			<cooponly>false</cooponly>
+			<forcetocenter>false</forcetocenter>
+			<name>Player1</name>
+			<count>1</count>
+			<team>1</team>
+			<area>Player1</area>
+			<groupfilename>shared_start_barracks</groupfilename>
+			<rottype>Rotate0</rottype>
+			<rotateunitorientations>true</rotateunitorientations>
+		</grouping>
+		<grouping>
+			<cooponly>true</cooponly>
+			<forcetocenter>false</forcetocenter>
+			<name>Player2</name>
+			<count>1</count>
+			<team>3</team>
+			<area>Player2</area>
+			<groupfilename>shared_start_barracks</groupfilename>
+			<rottype>Rotate0</rottype>
+			<rotateunitorientations>true</rotateunitorientations>
+		</grouping>
+	</targets>
+	<objectives id="0" mustfailall="false">
+		<values>
+			<or id="1" mustfailall="false">
+				<values>
+					<reduceunitsto id="2">
+						<type>LogicalTypeNeededForVictory</type>
+						<count>0</count>
+						<includeteam>true</includeteam>
+						<includeunderconstruction>false</includeunderconstruction>
+						<canuncomplete>false</canuncomplete>
+						<causesfailure>true</causesfailure>
+						<playerid>1</playerid>
+					</reduceunitsto>
+					<dummy id="3">
+						<description>$$3802$$</description>
+						<objectivename>UNUSED</objectivename>
+						<autocomplete>false</autocomplete>
+					</dummy>
+					<and id="4" mustfailall="false">
+						<values>
+							<reduceunitsto id="5">
+								<type>LogicalTypeNeededForVictory</type>
+								<count>0</count>
+								<includeteam>true</includeteam>
+								<includeunderconstruction>false</includeunderconstruction>
+								<canuncomplete>false</canuncomplete>
+								<causesfailure>false</causesfailure>
+								<playerid>2</playerid>
+							</reduceunitsto>
+							<reduceunitsto id="6">
+								<type>LogicalTypeNeededForVictory</type>
+								<count>0</count>
+								<includeteam>true</includeteam>
+								<includeunderconstruction>false</includeunderconstruction>
+								<canuncomplete>false</canuncomplete>
+								<causesfailure>false</causesfailure>
+								<playerid>5</playerid>
+							</reduceunitsto>
+							<reduceunitsto id="7">
+								<type>LogicalTypeNeededForVictory</type>
+								<count>0</count>
+								<includeteam>true</includeteam>
+								<includeunderconstruction>false</includeunderconstruction>
+								<canuncomplete>false</canuncomplete>
+								<causesfailure>false</causesfailure>
+								<playerid>7</playerid>
+							</reduceunitsto>
+						</values>
+					</and>
+				</values>
+			</or>
+		</values>
+	</objectives>
+	<onaccept/>
+	<rewards visible="true"/>
+	<playersettings id="1">
+		<team>1</team>
+		<color>1</color>
+		<tributablebehavior>Default</tributablebehavior>
+		<playertype>Human</playertype>
+		<cooponly>false</cooponly>
+		<startingfood>300</startingfood>
+		<startingwood>300</startingwood>
+		<startinggold>300</startinggold>
+		<startingstone>300</startingstone>
+		<aislidervariables/>
+		<aiflagvariables/>
+	</playersettings>
+	<playersettings id="2">
+		<team>2</team>
+		<color>2</color>
+		<tributablebehavior>Default</tributablebehavior>
+		<playertype>Computer</playertype>
+		<personality>$$9516$$</personality>
+		<script>Shared_Alliance\Alliance_TributeWars</script>
+		<character/>
+		<dataset>C02\C02_CoreRamp_T4</dataset>
+		<cooponly>false</cooponly>
+		<startingfood>-1</startingfood>
+		<startingwood>-1</startingwood>
+		<startinggold>-1</startinggold>
+		<startingstone>-1</startingstone>
+		<aislidervariables/>
+		<aiflagvariables/>
+	</playersettings>
+	<playersettings id="3">
+		<team>1</team>
+		<color>7</color>
+		<tributablebehavior>Default</tributablebehavior>
+		<playertype>Computer</playertype>
+		<personality/>
+		<script/>
+		<character/>
+		<cooponly>true</cooponly>
+		<startingfood>300</startingfood>
+		<startingwood>300</startingwood>
+		<startinggold>300</startinggold>
+		<startingstone>300</startingstone>
+		<aislidervariables/>
+		<aiflagvariables/>
+	</playersettings>
+	<playersettings id="4">
+		<team>2</team>
+		<color>2</color>
+		<tributablebehavior>Default</tributablebehavior>
+		<playertype>Computer</playertype>
+		<personality>$$9516$$</personality>
+		<script/>
+		<character/>
+		<dataset>C02\C02_CoreRamp_T4</dataset>
+		<cooponly>false</cooponly>
+		<startingfood>-1</startingfood>
+		<startingwood>-1</startingwood>
+		<startinggold>-1</startinggold>
+		<startingstone>-1</startingstone>
+		<aislidervariables/>
+		<aiflagvariables/>
+	</playersettings>
+	<playersettings id="5">
+		<team>3</team>
+		<color>6</color>
+		<tributablebehavior>Default</tributablebehavior>
+		<playertype>Computer</playertype>
+		<personality>$$9518$$</personality>
+		<script>Shared_Alliance\Alliance_TributeWars</script>
+		<character/>
+		<dataset>C04\C04_CoreRamp_T4</dataset>
+		<cooponly>false</cooponly>
+		<startingfood>-1</startingfood>
+		<startingwood>-1</startingwood>
+		<startinggold>-1</startinggold>
+		<startingstone>-1</startingstone>
+		<aislidervariables/>
+		<aiflagvariables/>
+	</playersettings>
+	<playersettings id="6">
+		<team>3</team>
+		<color>6</color>
+		<tributablebehavior>Default</tributablebehavior>
+		<playertype>Computer</playertype>
+		<personality>$$9518$$</personality>
+		<script/>
+		<character/>
+		<dataset>C04\C04_CoreRamp_T4</dataset>
+		<cooponly>false</cooponly>
+		<startingfood>-1</startingfood>
+		<startingwood>-1</startingwood>
+		<startinggold>-1</startinggold>
+		<startingstone>-1</startingstone>
+		<aislidervariables/>
+		<aiflagvariables/>
+	</playersettings>
+	<playersettings id="7">
+		<team>4</team>
+		<color>4</color>
+		<tributablebehavior>Default</tributablebehavior>
+		<playertype>Computer</playertype>
+		<personality>$$9517$$</personality>
+		<script>Shared_Alliance\Alliance_TributeWars</script>
+		<character/>
+		<dataset>C02\C02_CoreRamp_T4</dataset>
+		<cooponly>false</cooponly>
+		<startingfood>-1</startingfood>
+		<startingwood>-1</startingwood>
+		<startinggold>-1</startinggold>
+		<startingstone>-1</startingstone>
+		<aislidervariables/>
+		<aiflagvariables/>
+	</playersettings>
+	<playersettings id="8">
+		<team>4</team>
+		<color>4</color>
+		<tributablebehavior>Default</tributablebehavior>
+		<playertype>Computer</playertype>
+		<personality>$$9517$$</personality>
+		<dataset>C02\C02_CoreRamp_T4</dataset>
+		<cooponly>false</cooponly>
+		<startingfood>-1</startingfood>
+		<startingwood>-1</startingwood>
+		<startinggold>-1</startinggold>
+		<startingstone>-1</startingstone>
+		<aislidervariables/>
+		<aiflagvariables/>
+	</playersettings>
+	<diplomacysettings>
+		<diplomacy relation="Ally" team1="2" team2="3" sharedlos="true"/>
+		<diplomacy relation="Ally" team1="3" team2="2" sharedlos="true"/>
+		<diplomacy relation="Ally" team1="2" team2="4" sharedlos="true"/>
+		<diplomacy relation="Ally" team1="4" team2="2" sharedlos="true"/>
+		<diplomacy relation="Ally" team1="3" team2="4" sharedlos="true"/>
+		<diplomacy relation="Ally" team1="4" team2="3" sharedlos="true"/>
+	</diplomacysettings>
+	<randommap>
+		<map>core\shared_alliance\alliance_tributewars</map>
+		<randommap>true</randommap>
+		<numplayers>8</numplayers>
+		<mapvariables>
+			<variable name="QuestID" type="Int">1301</variable>
+			<variable name="scenarioFile" type="String">Shared_Alliance/Alliance_TributeWars_V1</variable>
+			<variable name="region" type="String">Persian Rock</variable>
+			<variable name="mapSize" type="String">Standard</variable>
+		</mapvariables>
+		<nuggetoverrides/>
+		<mapregionname>Persian Rock</mapregionname>
+		<lightsetname>&lt;Not Specified&gt;</lightsetname>
+		<mapsizename>Standard</mapsizename>
+	</randommap>
+	<questgivers/>
+	<questreturners/>
+	<maplocationx>0.75</maplocationx>
+	<maplocationy>0.625</maplocationy>
+	<mapmarker>QuestRepeatable</mapmarker>
+	<mappage>Persia</mappage>
+	<elitespawnchance>0</elitespawnchance>
+	<questbasescale>0</questbasescale>
+	<victoryconditions/>
+</quest>

@@ -1,0 +1,355 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<quest xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xsd="http://www.w3.org/2001/XMLSchema" uniqueid="3017" version="117">
+	<displayname>$$8142$$</displayname>
+	<level>43</level>
+	<difficultycoloroverride>2</difficultycoloroverride>
+	<repeatable>true</repeatable>
+	<offertype>eOfferNone</offertype>
+	<timer>
+		<time>00:40:00</time>
+		<events/>
+		<hideonui>false</hideonui>
+	</timer>
+	<canplaycoop>true</canplaycoop>
+	<cooprequired>false</cooprequired>
+	<ranked>false</ranked>
+	<alliance>eAllianceNone</alliance>
+	<questtype>RandomMap</questtype>
+	<description>$$6526$$</description>
+	<completiontext>$$6268$$</completiontext>
+	<inprogresstext>$$6243$$</inprogresstext>
+	<summarytext>$$6527$$</summarytext>
+	<repeatableduration>12</repeatableduration>
+	<canabandon>true</canabandon>
+	<hiddenquest>false</hiddenquest>
+	<friendonly>false</friendonly>
+	<suppressnotifications>false</suppressnotifications>
+	<customquest>false</customquest>
+	<questgamemodetype>Normal</questgamemodetype>
+	<prereqs>
+		<values>
+			<questcomplete>
+				<id>3001</id>
+			</questcomplete>
+			<level>
+				<min>40</min>
+				<max>99</max>
+			</level>
+		</values>
+	</prereqs>
+	<equipmentprereqs/>
+	<targets>
+		<grouping>
+			<cooponly>false</cooponly>
+			<forcetocenter>false</forcetocenter>
+			<name>Player1</name>
+			<count>1</count>
+			<team>1</team>
+			<area>Player1</area>
+			<groupfilename>Shared_Player1_Age3_Fortress</groupfilename>
+			<rottype>Rotate0</rottype>
+			<rotateunitorientations>false</rotateunitorientations>
+		</grouping>
+		<grouping>
+			<cooponly>true</cooponly>
+			<forcetocenter>false</forcetocenter>
+			<name>Player2</name>
+			<count>1</count>
+			<team>3</team>
+			<area>Player2</area>
+			<groupfilename>Shared_Player3_Age3_Fortress</groupfilename>
+			<rottype>Rotate0</rottype>
+			<rotateunitorientations>false</rotateunitorientations>
+		</grouping>
+		<protounit>
+			<cooponly>false</cooponly>
+			<forcetocenter>false</forcetocenter>
+			<name>CyprusGeneral01</name>
+			<protoname>CyprusGeneral</protoname>
+			<count>1</count>
+			<team>6</team>
+			<area>Quest_Area_A</area>
+			<overrides parent="NPC_CyprusGeneral">
+				<displaynameid>45757</displaynameid>
+				<visualscale>1.2</visualscale>
+				<initialhitpoints>5000</initialhitpoints>
+				<maxhitpoints>5000</maxhitpoints>
+				<convertresist>100</convertresist>
+			</overrides>
+			<usequesttargetindicator>true</usequesttargetindicator>
+		</protounit>
+	</targets>
+	<objectives id="0" mustfailall="false">
+		<values>
+			<or id="1" mustfailall="false">
+				<values>
+					<timer id="2">
+						<description>$$2471$$</description>
+						<failonexpire>true</failonexpire>
+					</timer>
+					<and id="3" mustfailall="false">
+						<values>
+							<kill id="4">
+								<description>$$2507$$</description>
+								<type>Gr_Bldg_Fortress</type>
+								<count>5</count>
+								<includeconversion>true</includeconversion>
+								<onlycountelites>false</onlycountelites>
+							</kill>
+							<kill id="5">
+								<description>$$6490$$</description>
+								<type>CyprusGeneral</type>
+								<count>1</count>
+								<includeconversion>true</includeconversion>
+								<onlycountelites>false</onlycountelites>
+							</kill>
+						</values>
+					</and>
+					<and id="6" mustfailall="true">
+						<values>
+							<reduceunitsto id="7">
+								<type>LogicalTypeNeededForVictory</type>
+								<count>0</count>
+								<includeteam>false</includeteam>
+								<includeunderconstruction>false</includeunderconstruction>
+								<canuncomplete>false</canuncomplete>
+								<causesfailure>true</causesfailure>
+								<playerid>1</playerid>
+							</reduceunitsto>
+							<reduceunitsto id="8">
+								<type>LogicalTypeNeededForVictory</type>
+								<count>0</count>
+								<includeteam>false</includeteam>
+								<includeunderconstruction>false</includeunderconstruction>
+								<canuncomplete>false</canuncomplete>
+								<causesfailure>true</causesfailure>
+								<playerid>3</playerid>
+							</reduceunitsto>
+						</values>
+					</and>
+				</values>
+			</or>
+		</values>
+	</objectives>
+	<secondaryobjectives id="9" mustfailall="false" rewardname="Optional">
+		<description>$$9658$$</description>
+		<values>
+			<or id="10" mustfailall="false">
+				<values>
+					<timer id="11">
+						<description>$$2471$$</description>
+						<failonexpire>true</failonexpire>
+					</timer>
+					<dummy id="12">
+						<description>$$10416$$</description>
+						<objectivename>TimeFailed</objectivename>
+						<autocomplete>false</autocomplete>
+					</dummy>
+					<and id="13" mustfailall="false">
+						<values>
+							<kill id="14">
+								<description/>
+								<type>Gr_Bldg_Fortress</type>
+								<count>5</count>
+								<includeconversion>true</includeconversion>
+								<onlycountelites>false</onlycountelites>
+							</kill>
+							<kill id="15">
+								<description/>
+								<type>CyprusGeneral</type>
+								<count>1</count>
+								<includeconversion>true</includeconversion>
+								<onlycountelites>false</onlycountelites>
+							</kill>
+						</values>
+					</and>
+				</values>
+			</or>
+		</values>
+	</secondaryobjectives>
+	<onaccept/>
+	<rewards visible="true">
+		<alliancepoints visible="true">
+			<amount>20</amount>
+		</alliancepoints>
+		<capitalresource visible="true">
+			<capitalresource>cCapResCoin</capitalresource>
+			<amount>1000</amount>
+		</capitalresource>
+		<loottable visible="true">general_legendary</loottable>
+		<loottable visible="true">general_legendary</loottable>
+		<loottable visible="true">general_legendary</loottable>
+	</rewards>
+	<secondaryrewards visible="true" name="Optional">
+		<capitalresource visible="true">
+			<capitalresource>cCapResCoin</capitalresource>
+			<amount>500</amount>
+		</capitalresource>
+		<loottable visible="true">general_legendary</loottable>
+		<loottable visible="true">general_legendary</loottable>
+	</secondaryrewards>
+	<playersettings id="1">
+		<team>1</team>
+		<color>1</color>
+		<tributablebehavior>Default</tributablebehavior>
+		<playertype>Human</playertype>
+		<cooponly>false</cooponly>
+		<startingfood>500</startingfood>
+		<startingwood>500</startingwood>
+		<startinggold>500</startinggold>
+		<startingstone>500</startingstone>
+		<aislidervariables/>
+		<aiflagvariables/>
+	</playersettings>
+	<playersettings id="2">
+		<team>2</team>
+		<color>2</color>
+		<tributablebehavior>Default</tributablebehavior>
+		<playertype>Computer</playertype>
+		<personality>$$6594$$</personality>
+		<script>CORE\Ramp_Hardcore</script>
+		<dataset>C01\C01_CyprusRamp_T4</dataset>
+		<cooponly>false</cooponly>
+		<startingfood>0</startingfood>
+		<startingwood>0</startingwood>
+		<startinggold>0</startinggold>
+		<startingstone>0</startingstone>
+		<aislidervariables>
+			<aivariable>
+				<key>EconomyHandicap</key>
+				<value>0.5</value>
+			</aivariable>
+		</aislidervariables>
+		<aiflagvariables>
+			<aivariable>
+				<key>NoResign</key>
+				<value>0</value>
+			</aivariable>
+		</aiflagvariables>
+	</playersettings>
+	<playersettings id="3">
+		<team>1</team>
+		<color>7</color>
+		<tributablebehavior>Default</tributablebehavior>
+		<playertype>Human</playertype>
+		<cooponly>true</cooponly>
+		<startingfood>500</startingfood>
+		<startingwood>500</startingwood>
+		<startinggold>500</startinggold>
+		<startingstone>500</startingstone>
+		<aislidervariables/>
+		<aiflagvariables/>
+	</playersettings>
+	<playersettings id="4">
+		<team>2</team>
+		<color>2</color>
+		<tributablebehavior>Default</tributablebehavior>
+		<playertype>Computer</playertype>
+		<personality>$$6594$$</personality>
+		<script>Custom\Cyprus_Popcorn_Heavy</script>
+		<dataset>C01\C01_CyprusRush_T4</dataset>
+		<cooponly>false</cooponly>
+		<startingfood>100</startingfood>
+		<startingwood>100</startingwood>
+		<startinggold>100</startinggold>
+		<startingstone>100</startingstone>
+		<aislidervariables>
+			<aivariable>
+				<key>ArcherBias</key>
+				<value>0.3</value>
+			</aivariable>
+			<aivariable>
+				<key>EconomyHandicap</key>
+				<value>0.4</value>
+			</aivariable>
+		</aislidervariables>
+		<aiflagvariables>
+			<aivariable>
+				<key>NoResign</key>
+				<value>0</value>
+			</aivariable>
+		</aiflagvariables>
+	</playersettings>
+	<playersettings id="5">
+		<team>2</team>
+		<color>2</color>
+		<tributablebehavior>Default</tributablebehavior>
+		<playertype>Computer</playertype>
+		<personality>$$6594$$</personality>
+		<script>CORE\Ramp_Hardcore</script>
+		<dataset>C01\C01_CyprusRamp_T4</dataset>
+		<cooponly>false</cooponly>
+		<startingfood>0</startingfood>
+		<startingwood>0</startingwood>
+		<startinggold>0</startinggold>
+		<startingstone>0</startingstone>
+		<aislidervariables>
+			<aivariable>
+				<key>ArcherBias</key>
+				<value>0.5</value>
+			</aivariable>
+		</aislidervariables>
+		<aiflagvariables>
+			<aivariable>
+				<key>NoResign</key>
+				<value>0</value>
+			</aivariable>
+		</aiflagvariables>
+	</playersettings>
+	<playersettings id="6">
+		<team>2</team>
+		<color>2</color>
+		<tributablebehavior>Default</tributablebehavior>
+		<playertype>Computer</playertype>
+		<personality>$$6594$$</personality>
+		<script>Custom\AIDoNothing</script>
+		<dataset>C01\C01_CyprusRush_T4</dataset>
+		<cooponly>false</cooponly>
+		<startingfood>100</startingfood>
+		<startingwood>100</startingwood>
+		<startinggold>100</startinggold>
+		<startingstone>100</startingstone>
+		<aislidervariables/>
+		<aiflagvariables/>
+	</playersettings>
+	<diplomacysettings/>
+	<randommap>
+		<map>Core\Shared_Cyprus\Cyprus_a_Loader</map>
+		<randommap>true</randommap>
+		<numplayers>6</numplayers>
+		<mapvariables>
+			<variable name="scenarioFile" type="String">Shared_Cyprus/Cyprus_12Kingdoms_Soloi</variable>
+			<variable name="IsREPEAT" type="Bool">true</variable>
+			<variable name="IsLEGENDARY" type="Bool">true</variable>
+			<variable name="GeneralsPlayerID" type="Int">6</variable>
+			<variable name="P2AddMarketManager" type="Bool">true</variable>
+			<variable name="P4AddMarketManager" type="Bool">true</variable>
+			<variable name="P5AddMarketManager" type="Bool">true</variable>
+			<variable name="QuestID" type="Int">3017</variable>
+			<variable name="TimeFailedMinutes" type="Int">25</variable>
+			<variable name="OptionalRestrictTime" type="Bool">true</variable>
+			<variable name="region" type="String">Greek Inland</variable>
+		</mapvariables>
+		<nuggetoverrides>
+			<nuggetoverride overrideweight="10000000">Legendary_40-50_01</nuggetoverride>
+		</nuggetoverrides>
+		<mapregionname>Greek Inland</mapregionname>
+		<lightsetname>&lt;Not Specified&gt;</lightsetname>
+		<mapsizename>&lt;Not Specified&gt;</mapsizename>
+	</randommap>
+	<questgivers>
+		<protounit>CyprusLeaderV2</protounit>
+	</questgivers>
+	<questreturners>
+		<protounit>CyprusLeaderV2</protounit>
+	</questreturners>
+	<maplocationx>0.31</maplocationx>
+	<maplocationy>0.44</maplocationy>
+	<mapmarker>QuestRepeatable</mapmarker>
+	<mappage>Cyprus</mappage>
+	<elitespawnchance>1</elitespawnchance>
+	<linkedquestid>0</linkedquestid>
+	<questbasescale>0</questbasescale>
+	<victoryconditions/>
+</quest>

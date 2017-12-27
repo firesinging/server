@@ -1,0 +1,327 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<quest xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xsd="http://www.w3.org/2001/XMLSchema" uniqueid="13500" version="114">
+	<displayname>$$7530$$</displayname>
+	<level>20</level>
+	<repeatable>false</repeatable>
+	<timer>
+		<events/>
+		<hideonui>false</hideonui>
+	</timer>
+	<canplaycoop>false</canplaycoop>
+	<cooprequired>false</cooprequired>
+	<ranked>false</ranked>
+	<alliance>eAllianceNone</alliance>
+	<questtype>RandomMap</questtype>
+	<description>$$9347$$</description>
+	<completiontext>$$7526$$</completiontext>
+	<inprogresstext>$$7527$$</inprogresstext>
+	<summarytext>$$7528$$</summarytext>
+	<canabandon>true</canabandon>
+	<hiddenquest>false</hiddenquest>
+	<friendonly>false</friendonly>
+	<suppressnotifications>false</suppressnotifications>
+	<customquest>false</customquest>
+	<questgamemodetype>Normal</questgamemodetype>
+	<prereqs>
+		<values>
+			<civilization>
+				<id>6</id>
+			</civilization>
+			<level>
+				<min>19</min>
+				<max>99</max>
+			</level>
+		</values>
+	</prereqs>
+	<equipmentprereqs/>
+	<targets/>
+	<objectives id="0" mustfailall="false">
+		<values>
+			<or id="1" mustfailall="false">
+				<values>
+					<protectunit id="2">
+						<description>$$2502$$</description>
+						<type>Ce_Cap_MassalianPalaceA</type>
+						<owningplayerid>7</owningplayerid>
+					</protectunit>
+					<dummy id="3">
+						<description>$$3802$$</description>
+						<objectivename>EnemiesDefeated</objectivename>
+						<autocomplete>false</autocomplete>
+					</dummy>
+					<reduceunitsto id="4">
+						<type>LogicalTypeNeededForVictory</type>
+						<count>0</count>
+						<includeteam>false</includeteam>
+						<includeunderconstruction>false</includeunderconstruction>
+						<canuncomplete>false</canuncomplete>
+						<causesfailure>true</causesfailure>
+						<playerid>1</playerid>
+					</reduceunitsto>
+				</values>
+			</or>
+		</values>
+	</objectives>
+	<onaccept/>
+	<rewards visible="true">
+		<gamecurrency visible="true">
+			<gamecurrency>cGameCurEmpirePoints</gamecurrency>
+			<amount>12</amount>
+		</gamecurrency>
+		<xp visible="true">120000</xp>
+		<capitalresource visible="true">
+			<capitalresource>cCapResCoin</capitalresource>
+			<amount>150</amount>
+		</capitalresource>
+		<loottable visible="true">general</loottable>
+		<loottable visible="true">tables\_coreloot_celthigh_reward</loottable>
+		<or visible="true">
+			<trait visible="true">
+				ArmorClth_E101
+				<traitlevel>23</traitlevel>
+			</trait>
+			<trait visible="true">
+				Torc_E101
+				<traitlevel>23</traitlevel>
+			</trait>
+			<loottable visible="true">general</loottable>
+		</or>
+	</rewards>
+	<playersettings id="1">
+		<team>1</team>
+		<color>1</color>
+		<tributablebehavior>Default</tributablebehavior>
+		<playertype>Human</playertype>
+		<cooponly>false</cooponly>
+		<startingfood>750</startingfood>
+		<startingwood>750</startingwood>
+		<startinggold>750</startinggold>
+		<startingstone>750</startingstone>
+		<aislidervariables/>
+		<aiflagvariables/>
+	</playersettings>
+	<playersettings id="2">
+		<team>3</team>
+		<color>3</color>
+		<tributablebehavior>Default</tributablebehavior>
+		<playertype>Computer</playertype>
+		<personality>$$7240$$</personality>
+		<dataset>c01\c01_vanilla_t0</dataset>
+		<cooponly>false</cooponly>
+		<startingfood>0</startingfood>
+		<startingwood>0</startingwood>
+		<startinggold>0</startinggold>
+		<startingstone>0</startingstone>
+		<aislidervariables/>
+		<aiflagvariables/>
+	</playersettings>
+	<playersettings id="3">
+		<team>2</team>
+		<color>2</color>
+		<tributablebehavior>Default</tributablebehavior>
+		<playertype>Computer</playertype>
+		<personality>$$2243$$</personality>
+		<script>CORE\Rush_Moderate</script>
+		<dataset>C01\C01_SeaPeople_T2</dataset>
+		<cooponly>false</cooponly>
+		<startingfood>-1</startingfood>
+		<startingwood>-1</startingwood>
+		<startinggold>-1</startinggold>
+		<startingstone>-1</startingstone>
+		<aislidervariables>
+			<aivariable>
+				<key>SiegeBias</key>
+				<value>-1</value>
+			</aivariable>
+			<aivariable>
+				<key>CavalryBias</key>
+				<value>-1</value>
+			</aivariable>
+			<aivariable>
+				<key>NavyBias</key>
+				<value>-1</value>
+			</aivariable>
+		</aislidervariables>
+		<aiflagvariables>
+			<aivariable>
+				<key>NoResign</key>
+				<value>0</value>
+			</aivariable>
+			<aivariable>
+				<key>UseWaves</key>
+				<value>0</value>
+			</aivariable>
+			<aivariable>
+				<key>NoTrainNavy</key>
+				<value>0</value>
+			</aivariable>
+			<aivariable>
+				<key>NoFish</key>
+				<value>0</value>
+			</aivariable>
+		</aiflagvariables>
+	</playersettings>
+	<playersettings id="4">
+		<team>2</team>
+		<color>2</color>
+		<tributablebehavior>Default</tributablebehavior>
+		<playertype>Computer</playertype>
+		<personality>$$2243$$</personality>
+		<script>CORE\Rush_Moderate</script>
+		<dataset>C01\C01_SeaPeople_T2</dataset>
+		<cooponly>false</cooponly>
+		<startingfood>0</startingfood>
+		<startingwood>0</startingwood>
+		<startinggold>0</startinggold>
+		<startingstone>0</startingstone>
+		<aislidervariables>
+			<aivariable>
+				<key>SiegeBias</key>
+				<value>-1</value>
+			</aivariable>
+			<aivariable>
+				<key>NavyBias</key>
+				<value>-1</value>
+			</aivariable>
+		</aislidervariables>
+		<aiflagvariables>
+			<aivariable>
+				<key>NoResign</key>
+				<value>0</value>
+			</aivariable>
+			<aivariable>
+				<key>UseWaves</key>
+				<value>0</value>
+			</aivariable>
+			<aivariable>
+				<key>NoTrainNavy</key>
+				<value>0</value>
+			</aivariable>
+			<aivariable>
+				<key>NoFish</key>
+				<value>0</value>
+			</aivariable>
+		</aiflagvariables>
+	</playersettings>
+	<playersettings id="5">
+		<team>2</team>
+		<color>2</color>
+		<tributablebehavior>Default</tributablebehavior>
+		<playertype>Computer</playertype>
+		<personality>$$2243$$</personality>
+		<script>CORE\Rush_Moderate</script>
+		<character>C01\SeaPeople\C01_SeaPeople_Custom_NoNavy</character>
+		<cooponly>false</cooponly>
+		<startingfood>0</startingfood>
+		<startingwood>0</startingwood>
+		<startinggold>0</startinggold>
+		<startingstone>0</startingstone>
+		<aislidervariables>
+			<aivariable>
+				<key>SiegeBias</key>
+				<value>-1</value>
+			</aivariable>
+			<aivariable>
+				<key>CavalryBias</key>
+				<value>-1</value>
+			</aivariable>
+			<aivariable>
+				<key>ArcherBias</key>
+				<value>-1</value>
+			</aivariable>
+			<aivariable>
+				<key>InfantryBias</key>
+				<value>0.5</value>
+			</aivariable>
+		</aislidervariables>
+		<aiflagvariables>
+			<aivariable>
+				<key>NoResign</key>
+				<value>0</value>
+			</aivariable>
+		</aiflagvariables>
+	</playersettings>
+	<playersettings id="6">
+		<team>2</team>
+		<color>2</color>
+		<tributablebehavior>Default</tributablebehavior>
+		<playertype>Computer</playertype>
+		<personality>$$2243$$</personality>
+		<dataset>C01\C01_SeaPeople_T2</dataset>
+		<cooponly>false</cooponly>
+		<startingfood>-1</startingfood>
+		<startingwood>-1</startingwood>
+		<startinggold>-1</startinggold>
+		<startingstone>-1</startingstone>
+		<aislidervariables/>
+		<aiflagvariables/>
+	</playersettings>
+	<playersettings id="7">
+		<team>1</team>
+		<color>3</color>
+		<tributablebehavior>Default</tributablebehavior>
+		<playertype>Computer</playertype>
+		<personality>$$8329$$</personality>
+		<dataset>c01\c01_vanilla_t0</dataset>
+		<cooponly>false</cooponly>
+		<startingfood>0</startingfood>
+		<startingwood>0</startingwood>
+		<startinggold>0</startinggold>
+		<startingstone>0</startingstone>
+		<aislidervariables/>
+		<aiflagvariables/>
+	</playersettings>
+	<playersettings id="8">
+		<team>2</team>
+		<color>2</color>
+		<tributablebehavior>Default</tributablebehavior>
+		<playertype>Computer</playertype>
+		<personality>$$2243$$</personality>
+		<dataset>C01\C01_SeaPeople_T2</dataset>
+		<cooponly>false</cooponly>
+		<startingfood>-1</startingfood>
+		<startingwood>-1</startingwood>
+		<startinggold>-1</startinggold>
+		<startingstone>-1</startingstone>
+		<aislidervariables/>
+		<aiflagvariables/>
+	</playersettings>
+	<diplomacysettings>
+		<diplomacy relation="Neutral" team1="1" team2="3" sharedlos="true"/>
+		<diplomacy relation="Neutral" team1="3" team2="1" sharedlos="true"/>
+		<diplomacy relation="Neutral" team1="3" team2="2" sharedlos="false"/>
+		<diplomacy relation="Neutral" team1="2" team2="3" sharedlos="false"/>
+	</diplomacysettings>
+	<randommap>
+		<map>scenarioloader</map>
+		<randommap>true</randommap>
+		<numplayers>8</numplayers>
+		<mapvariables>
+			<variable name="scenarioFile" type="String">C03/C03_R3M91_DefendMassalia</variable>
+			<variable name="EnemiesDefeatedQuestID" type="Int">13500</variable>
+			<variable name="region" type="String">Celtic Shore</variable>
+			<variable name="lighting" type="String">Morning</variable>
+			<variable name="mapSize" type="String">Standard</variable>
+		</mapvariables>
+		<nuggetoverrides/>
+		<mapregionname>Celtic Shore</mapregionname>
+		<lightsetname>Morning</lightsetname>
+		<mapsizename>Standard</mapsizename>
+	</randommap>
+	<questgivers>
+		<protounit>C03_R2_Protis</protounit>
+		<protounit>C03_R1_Leader</protounit>
+		<protounit>C03_R3_Brennos</protounit>
+	</questgivers>
+	<questreturners>
+		<protounit>C03_R1_Leader</protounit>
+	</questreturners>
+	<maplocationx>0.3</maplocationx>
+	<maplocationy>0.87</maplocationy>
+	<mapmarker>QuestDefault</mapmarker>
+	<mappage>C03_Celtica</mappage>
+	<elitespawnchance>0</elitespawnchance>
+	<questbasescale>0</questbasescale>
+	<victoryconditions/>
+</quest>

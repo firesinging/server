@@ -1,0 +1,175 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<quest xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xsd="http://www.w3.org/2001/XMLSchema" uniqueid="398" version="56">
+	<displayname>$$358$$</displayname>
+	<level>-1</level>
+	<repeatable>true</repeatable>
+	<timer>
+		<events/>
+		<hideonui>false</hideonui>
+	</timer>
+	<canplaycoop>false</canplaycoop>
+	<cooprequired>false</cooprequired>
+	<ranked>false</ranked>
+	<alliance>eAllianceNone</alliance>
+	<questtype>RandomMap</questtype>
+	<description>$$359$$</description>
+	<completiontext>$$360$$</completiontext>
+	<inprogresstext>$$1385$$</inprogresstext>
+	<summarytext>$$1386$$</summarytext>
+	<repeatableduration>144</repeatableduration>
+	<canabandon>true</canabandon>
+	<hiddenquest>false</hiddenquest>
+	<friendonly>false</friendonly>
+	<suppressnotifications>false</suppressnotifications>
+	<customquest>false</customquest>
+	<questgamemodetype>Normal</questgamemodetype>
+	<prereqs>
+		<values>
+			<level>
+				<min>15</min>
+				<max>99</max>
+			</level>
+		</values>
+	</prereqs>
+	<equipmentprereqs/>
+	<targets/>
+	<objectives id="0" mustfailall="false">
+		<values>
+			<or id="1" mustfailall="false">
+				<description>$$2408$$</description>
+				<values>
+					<dummy id="2">
+						<objectivename>BellaHome</objectivename>
+						<autocomplete>false</autocomplete>
+					</dummy>
+					<and id="3" mustfailall="true">
+						<values>
+							<reduceunitsto id="4">
+								<type>LogicalTypeNeededForVictory</type>
+								<count>0</count>
+								<includeteam>false</includeteam>
+								<includeunderconstruction>false</includeunderconstruction>
+								<canuncomplete>false</canuncomplete>
+								<causesfailure>true</causesfailure>
+								<playerid>1</playerid>
+							</reduceunitsto>
+							<reduceunitsto id="5">
+								<type>UnitTypeScout1</type>
+								<count>0</count>
+								<includeteam>false</includeteam>
+								<includeunderconstruction>false</includeunderconstruction>
+								<canuncomplete>false</canuncomplete>
+								<causesfailure>true</causesfailure>
+								<playerid>1</playerid>
+							</reduceunitsto>
+						</values>
+					</and>
+					<and id="6" mustfailall="true">
+						<values>
+							<reduceunitsto id="7">
+								<type>Bella</type>
+								<count>0</count>
+								<includeteam>false</includeteam>
+								<includeunderconstruction>false</includeunderconstruction>
+								<canuncomplete>false</canuncomplete>
+								<causesfailure>true</causesfailure>
+								<playerid>1</playerid>
+							</reduceunitsto>
+							<reduceunitsto id="8">
+								<type>Bella</type>
+								<count>0</count>
+								<includeteam>false</includeteam>
+								<includeunderconstruction>false</includeunderconstruction>
+								<canuncomplete>false</canuncomplete>
+								<causesfailure>true</causesfailure>
+								<playerid>2</playerid>
+							</reduceunitsto>
+						</values>
+					</and>
+				</values>
+			</or>
+		</values>
+	</objectives>
+	<onaccept/>
+	<rewards visible="true">
+		<xp visible="true">10000</xp>
+		<capitalresource visible="true">
+			<capitalresource>cCapResCoin</capitalresource>
+			<amount>50</amount>
+		</capitalresource>
+		<loottable visible="true">general</loottable>
+	</rewards>
+	<playersettings id="1">
+		<team>1</team>
+		<color>1</color>
+		<tributablebehavior>Default</tributablebehavior>
+		<playertype>Human</playertype>
+		<cooponly>false</cooponly>
+		<startingfood>200</startingfood>
+		<startingwood>200</startingwood>
+		<startinggold>200</startinggold>
+		<startingstone>200</startingstone>
+		<aislidervariables/>
+		<aiflagvariables/>
+	</playersettings>
+	<playersettings id="2">
+		<team>2</team>
+		<color>3</color>
+		<tributablebehavior>Default</tributablebehavior>
+		<playertype>Computer</playertype>
+		<personality>$$2321$$</personality>
+		<dataset>c01\c01_vanilla_t0</dataset>
+		<cooponly>false</cooponly>
+		<startingfood>0</startingfood>
+		<startingwood>0</startingwood>
+		<startinggold>0</startinggold>
+		<startingstone>0</startingstone>
+		<aislidervariables/>
+		<aiflagvariables/>
+	</playersettings>
+	<playersettings id="3">
+		<team>1</team>
+		<color>3</color>
+		<tributablebehavior>ForceFalse</tributablebehavior>
+		<playertype>Computer</playertype>
+		<personality>$$2321$$</personality>
+		<dataset>c01\c01_vanilla_t0</dataset>
+		<cooponly>false</cooponly>
+		<startingfood>0</startingfood>
+		<startingwood>0</startingwood>
+		<startinggold>0</startinggold>
+		<startingstone>0</startingstone>
+		<aislidervariables/>
+		<aiflagvariables/>
+	</playersettings>
+	<diplomacysettings/>
+	<randommap>
+		<map>Core\MISC\Misc_FindBella</map>
+		<randommap>true</randommap>
+		<numplayers>3</numplayers>
+		<mapvariables>
+			<variable name="scenarioFile" type="String">MISC/Misc_FindBella</variable>
+			<variable name="region" type="String">Greek Inland</variable>
+			<variable name="lighting" type="String">Evening</variable>
+		</mapvariables>
+		<nuggetoverrides/>
+		<mapregionname>Greek Inland</mapregionname>
+		<lightsetname>Evening</lightsetname>
+		<mapsizename>&lt;Not Specified&gt;</mapsizename>
+	</randommap>
+	<questgivers>
+		<protounit>GEN_OlManFischer</protounit>
+	</questgivers>
+	<questreturners>
+		<protounit>GEN_OlManFischer</protounit>
+	</questreturners>
+	<maplocationx>0.16</maplocationx>
+	<maplocationy>0.236</maplocationy>
+	<mapmarker>QuestRepeatable</mapmarker>
+	<mappage>Greece</mappage>
+	<elitespawnchance>0</elitespawnchance>
+	<linkedquestid>0</linkedquestid>
+	<questbasescale>0</questbasescale>
+	<victoryconditions/>
+</quest>

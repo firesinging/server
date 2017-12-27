@@ -1,0 +1,293 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<quest xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xsd="http://www.w3.org/2001/XMLSchema" uniqueid="320" version="50">
+	<displayname>$$6923$$</displayname>
+	<level>11</level>
+	<repeatable>false</repeatable>
+	<offertype>eOfferNone</offertype>
+	<timer>
+		<events/>
+		<hideonui>false</hideonui>
+	</timer>
+	<canplaycoop>false</canplaycoop>
+	<cooprequired>false</cooprequired>
+	<ranked>false</ranked>
+	<alliance>eAllianceNone</alliance>
+	<questtype>RandomMap</questtype>
+	<description>$$6924$$</description>
+	<completiontext>$$8260$$</completiontext>
+	<inprogresstext>$$6926$$</inprogresstext>
+	<summarytext>$$6927$$</summarytext>
+	<canabandon>true</canabandon>
+	<hiddenquest>false</hiddenquest>
+	<friendonly>false</friendonly>
+	<suppressnotifications>false</suppressnotifications>
+	<customquest>false</customquest>
+	<questgamemodetype>Normal</questgamemodetype>
+	<prereqs>
+		<values>
+			<civilization>
+				<id>3</id>
+			</civilization>
+			<questcomplete>
+				<id>317</id>
+			</questcomplete>
+		</values>
+	</prereqs>
+	<equipmentprereqs/>
+	<targets>
+		<grouping>
+			<cooponly>false</cooponly>
+			<forcetocenter>false</forcetocenter>
+			<name>Player1</name>
+			<count>1</count>
+			<team>1</team>
+			<area>Player1</area>
+			<groupfilename>Shared_Start_Small</groupfilename>
+			<rottype>Rotate0</rottype>
+			<rotateunitorientations>false</rotateunitorientations>
+		</grouping>
+		<grouping>
+			<cooponly>false</cooponly>
+			<forcetocenter>false</forcetocenter>
+			<name>Enemy1</name>
+			<count>1</count>
+			<team>2</team>
+			<area>Quest_Area_A</area>
+			<groupfilename>c02\nubian\c02_nubian_largestart_01</groupfilename>
+			<rottype>Rotate0</rottype>
+			<rotateunitorientations>false</rotateunitorientations>
+		</grouping>
+		<grouping>
+			<cooponly>false</cooponly>
+			<forcetocenter>false</forcetocenter>
+			<name>Cliff1</name>
+			<count>1</count>
+			<team>2</team>
+			<area>Quest_Area_B</area>
+			<groupfilename>shared\shared_terrain_desertcliff_01</groupfilename>
+			<rottype>Rotate90</rottype>
+			<rotateunitorientations>true</rotateunitorientations>
+		</grouping>
+		<grouping>
+			<cooponly>false</cooponly>
+			<forcetocenter>false</forcetocenter>
+			<name>Cliff2</name>
+			<count>1</count>
+			<team>2</team>
+			<area>Quest_Area_E</area>
+			<groupfilename>Shared\Shared_Terrain_DesertCliff_02</groupfilename>
+			<rottype>Rotate0</rottype>
+			<rotateunitorientations>false</rotateunitorientations>
+		</grouping>
+		<grouping>
+			<cooponly>false</cooponly>
+			<forcetocenter>false</forcetocenter>
+			<name>Compound</name>
+			<count>1</count>
+			<team>3</team>
+			<area>Quest_Area_C</area>
+			<groupfilename>C02\Custom\C02_R2M63_TempleHill</groupfilename>
+			<rottype>Rotate0</rottype>
+			<rotateunitorientations>false</rotateunitorientations>
+		</grouping>
+		<protounit>
+			<cooponly>false</cooponly>
+			<forcetocenter>false</forcetocenter>
+			<name>Desert_Wolf</name>
+			<protoname>Desert_Wolf</protoname>
+			<count>12</count>
+			<team>0</team>
+			<area>Quest_Area_C</area>
+			<overrides parent="Wolf">
+				<displaynameid>57681</displaynameid>
+				<animfile>World\Animals\Wolf\Wolf.xml</animfile>
+				<initialhitpoints>400</initialhitpoints>
+				<maxhitpoints>400</maxhitpoints>
+				<convertresist>100</convertresist>
+				<bounty>1</bounty>
+			</overrides>
+			<usequesttargetindicator>false</usequesttargetindicator>
+		</protounit>
+		<grouping>
+			<cooponly>false</cooponly>
+			<forcetocenter>false</forcetocenter>
+			<name>Cliff3</name>
+			<count>1</count>
+			<team>2</team>
+			<area>Quest_Area_D</area>
+			<groupfilename>Shared\Shared_Terrain_DesertCliff_01</groupfilename>
+			<rottype>Rotate270</rottype>
+			<rotateunitorientations>true</rotateunitorientations>
+		</grouping>
+		<protounit>
+			<cooponly>false</cooponly>
+			<forcetocenter>false</forcetocenter>
+			<name>EnemySpearmen</name>
+			<protoname>NPC_Nubian_Warrior</protoname>
+			<count>3</count>
+			<team>2</team>
+			<area>Quest_Area_A</area>
+			<usequesttargetindicator>false</usequesttargetindicator>
+		</protounit>
+	</targets>
+	<objectives id="0" mustfailall="false">
+		<values>
+			<or id="1" mustfailall="false">
+				<values>
+					<unitinarea id="2">
+						<description>$$2563$$</description>
+						<area>Quest_Area_C</area>
+						<type>Eg_Spc_PriestRa</type>
+						<count>10</count>
+						<radius>10</radius>
+						<aidefend>true</aidefend>
+					</unitinarea>
+					<reduceunitsto id="3">
+						<type>LogicalTypeNeededForVictory</type>
+						<count>0</count>
+						<includeteam>false</includeteam>
+						<includeunderconstruction>false</includeunderconstruction>
+						<canuncomplete>false</canuncomplete>
+						<causesfailure>true</causesfailure>
+						<playerid>1</playerid>
+					</reduceunitsto>
+					<and id="4" mustfailall="true">
+						<values>
+							<reduceunitsto id="5">
+								<type>AbstractTownCenter</type>
+								<count>0</count>
+								<includeteam>false</includeteam>
+								<includeunderconstruction>false</includeunderconstruction>
+								<canuncomplete>false</canuncomplete>
+								<causesfailure>true</causesfailure>
+								<playerid>1</playerid>
+							</reduceunitsto>
+							<reduceunitsto id="6">
+								<type>UnitTypeVillager1</type>
+								<count>0</count>
+								<includeteam>false</includeteam>
+								<includeunderconstruction>false</includeunderconstruction>
+								<canuncomplete>false</canuncomplete>
+								<causesfailure>true</causesfailure>
+								<playerid>1</playerid>
+							</reduceunitsto>
+							<reduceunitsto id="7">
+								<type>Eg_Bldg_Temple1</type>
+								<count>0</count>
+								<includeteam>false</includeteam>
+								<includeunderconstruction>false</includeunderconstruction>
+								<canuncomplete>false</canuncomplete>
+								<causesfailure>true</causesfailure>
+								<playerid>1</playerid>
+							</reduceunitsto>
+							<reduceunitsto id="8">
+								<type>Eg_Spc_PriestRa</type>
+								<count>9</count>
+								<includeteam>false</includeteam>
+								<includeunderconstruction>false</includeunderconstruction>
+								<canuncomplete>false</canuncomplete>
+								<causesfailure>true</causesfailure>
+								<playerid>1</playerid>
+							</reduceunitsto>
+						</values>
+					</and>
+				</values>
+			</or>
+		</values>
+	</objectives>
+	<onaccept/>
+	<rewards visible="true">
+		<xp visible="true">15000</xp>
+		<capitalresource visible="true">
+			<capitalresource>cCapResCoin</capitalresource>
+			<amount>120</amount>
+		</capitalresource>
+		<loottable visible="true">general</loottable>
+		<loottable visible="true">general</loottable>
+	</rewards>
+	<playersettings id="1">
+		<team>1</team>
+		<color>1</color>
+		<tributablebehavior>Default</tributablebehavior>
+		<playertype>Human</playertype>
+		<cooponly>false</cooponly>
+		<startingfood>-1</startingfood>
+		<startingwood>-1</startingwood>
+		<startinggold>-1</startinggold>
+		<startingstone>-1</startingstone>
+		<aislidervariables/>
+		<aiflagvariables/>
+	</playersettings>
+	<playersettings id="2">
+		<team>2</team>
+		<color>2</color>
+		<tributablebehavior>Default</tributablebehavior>
+		<playertype>Computer</playertype>
+		<personality>$$2262$$</personality>
+		<script>CORE\Rush_Moderate</script>
+		<dataset>C02\C02_Nubian_T2</dataset>
+		<cooponly>false</cooponly>
+		<startingfood>-1</startingfood>
+		<startingwood>-1</startingwood>
+		<startinggold>-1</startinggold>
+		<startingstone>-1</startingstone>
+		<aislidervariables>
+			<aivariable>
+				<key>InfantryBias</key>
+				<value>0</value>
+			</aivariable>
+			<aivariable>
+				<key>SiegeBias</key>
+				<value>-1</value>
+			</aivariable>
+		</aislidervariables>
+		<aiflagvariables/>
+	</playersettings>
+	<playersettings id="3">
+		<team>3</team>
+		<color>5</color>
+		<tributablebehavior>ForceFalse</tributablebehavior>
+		<playertype>Computer</playertype>
+		<personality>$$2263$$</personality>
+		<dataset>C02\C02_CoreRamp_T1</dataset>
+		<cooponly>false</cooponly>
+		<startingfood>0</startingfood>
+		<startingwood>0</startingwood>
+		<startinggold>0</startinggold>
+		<startingstone>0</startingstone>
+		<aislidervariables/>
+		<aiflagvariables/>
+	</playersettings>
+	<diplomacysettings>
+		<diplomacy relation="Ally" team1="1" team2="3" sharedlos="true"/>
+		<diplomacy relation="Neutral" team1="2" team2="3" sharedlos="false"/>
+	</diplomacysettings>
+	<randommap>
+		<map>Core\C02\C02_R2M63_Skirmish</map>
+		<randommap>true</randommap>
+		<numplayers>3</numplayers>
+		<mapvariables>
+			<variable name="region" type="String">Egyptian Sand</variable>
+			<variable name="lighting" type="String">Evening</variable>
+			<variable name="mapSize" type="String">Large</variable>
+		</mapvariables>
+		<nuggetoverrides/>
+		<mapregionname>Egyptian Sand</mapregionname>
+		<lightsetname>Evening</lightsetname>
+		<mapsizename>Large</mapsizename>
+	</randommap>
+	<questgivers>
+		<protounit>C02_R2_Sesostris</protounit>
+	</questgivers>
+	<questreturners>
+		<protounit>C02_R2_Sesostris</protounit>
+	</questreturners>
+	<maplocationx>0.887</maplocationx>
+	<maplocationy>0.126</maplocationy>
+	<mapmarker>QuestDefault</mapmarker>
+	<mappage>Nubia</mappage>
+	<elitespawnchance>0</elitespawnchance>
+	<questbasescale>0</questbasescale>
+	<victoryconditions/>
+</quest>

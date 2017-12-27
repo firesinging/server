@@ -1,0 +1,276 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<quest xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xsd="http://www.w3.org/2001/XMLSchema" uniqueid="43" version="40">
+	<displayname>$$720$$</displayname>
+	<level>12</level>
+	<repeatable>false</repeatable>
+	<timer>
+		<events/>
+		<hideonui>false</hideonui>
+	</timer>
+	<canplaycoop>true</canplaycoop>
+	<cooprequired>false</cooprequired>
+	<ranked>false</ranked>
+	<alliance>eAllianceNone</alliance>
+	<questtype>RandomMap</questtype>
+	<description>$$4078$$</description>
+	<completiontext>$$4077$$</completiontext>
+	<inprogresstext>$$1595$$</inprogresstext>
+	<summarytext>$$3556$$</summarytext>
+	<canabandon>true</canabandon>
+	<hiddenquest>false</hiddenquest>
+	<friendonly>false</friendonly>
+	<suppressnotifications>false</suppressnotifications>
+	<customquest>false</customquest>
+	<questgamemodetype>Normal</questgamemodetype>
+	<prereqs>
+		<values>
+			<civilization>
+				<id>1</id>
+			</civilization>
+			<questcomplete>
+				<id>62</id>
+			</questcomplete>
+		</values>
+	</prereqs>
+	<equipmentprereqs/>
+	<targets>
+		<grouping>
+			<cooponly>false</cooponly>
+			<forcetocenter>false</forcetocenter>
+			<name>Player1</name>
+			<count>1</count>
+			<team>1</team>
+			<area>Player1</area>
+			<groupfilename>C01\C01_P1Base_WithParkingLot</groupfilename>
+			<rottype>Rotate0</rottype>
+			<rotateunitorientations>false</rotateunitorientations>
+		</grouping>
+		<protounit>
+			<cooponly>false</cooponly>
+			<forcetocenter>false</forcetocenter>
+			<name>GeneralHeron</name>
+			<protoname>Npc_GeneralHeron</protoname>
+			<count>1</count>
+			<team>2</team>
+			<area>Quest_Area_A</area>
+			<overrides parent="Qst_Convertable">
+				<displaynameid>57820</displaynameid>
+				<animfile>CivGreek\Units\Mounted\Podromos\Podromos.xml</animfile>
+				<icon>UserInterface\Icons\Units\Prodromos64_ua</icon>
+				<portraiticon>UserInterface\Icons\Units\AvatarPodromos_ua</portraiticon>
+				<maxvelocity>9.00</maxvelocity>
+				<maxrunvelocity>13.50</maxrunvelocity>
+			</overrides>
+			<usequesttargetindicator>true</usequesttargetindicator>
+		</protounit>
+		<protounit>
+			<cooponly>false</cooponly>
+			<forcetocenter>false</forcetocenter>
+			<name>Agathon</name>
+			<protoname>Npc_Agathon</protoname>
+			<count>1</count>
+			<team>4</team>
+			<area>Quest_Area_B</area>
+			<overrides parent="Qst_Convertable">
+				<displaynameid>57821</displaynameid>
+				<animfile>CivGreek\Units\Civilian\Villager\VillagerMale.xml</animfile>
+				<icon>UserInterface\Icons\Units\VillagerMale64_ua</icon>
+				<portraiticon>UserInterface\Icons\Units\AvatarVillagerMale_ua</portraiticon>
+				<maxvelocity>6.0</maxvelocity>
+				<maxrunvelocity>7.0</maxrunvelocity>
+				<soundfile>Qst_Craftsmen</soundfile>
+			</overrides>
+			<usequesttargetindicator>true</usequesttargetindicator>
+		</protounit>
+		<grouping>
+			<cooponly>true</cooponly>
+			<forcetocenter>false</forcetocenter>
+			<name>Player2</name>
+			<count>1</count>
+			<team>3</team>
+			<area>Player2</area>
+			<groupfilename>Shared_Player3_Age2_Barracks</groupfilename>
+			<rottype>Rotate0</rottype>
+			<rotateunitorientations>false</rotateunitorientations>
+		</grouping>
+	</targets>
+	<objectives id="0" mustfailall="false">
+		<values>
+			<or id="1" mustfailall="false">
+				<values>
+					<and id="2" mustfailall="false">
+						<values>
+							<unitinarea id="3">
+								<description>$$2528$$</description>
+								<area>Player1</area>
+								<type>Npc_GeneralHeron</type>
+								<count>1</count>
+								<radius>20</radius>
+								<aidefend>true</aidefend>
+							</unitinarea>
+							<unitinarea id="4">
+								<description>$$2529$$</description>
+								<area>Player1</area>
+								<type>Npc_Agathon</type>
+								<count>1</count>
+								<radius>20</radius>
+								<aidefend>true</aidefend>
+							</unitinarea>
+						</values>
+					</and>
+					<reduceunitsto id="5">
+						<type>LogicalTypeNeededForVictory</type>
+						<count>0</count>
+						<includeteam>true</includeteam>
+						<includeunderconstruction>false</includeunderconstruction>
+						<canuncomplete>false</canuncomplete>
+						<causesfailure>true</causesfailure>
+						<playerid>1</playerid>
+					</reduceunitsto>
+				</values>
+			</or>
+		</values>
+	</objectives>
+	<onaccept/>
+	<rewards visible="true">
+		<xp visible="true">20000</xp>
+		<capitalresource visible="true">
+			<capitalresource>cCapResCoin</capitalresource>
+			<amount>120</amount>
+		</capitalresource>
+		<loottable visible="true">general</loottable>
+		<loottable visible="true">general</loottable>
+		<or visible="true">
+			<advisor visible="true">Agathon_R_I</advisor>
+			<advisor visible="true">Heron_R_II</advisor>
+		</or>
+	</rewards>
+	<playersettings id="1">
+		<team>1</team>
+		<color>1</color>
+		<tributablebehavior>Default</tributablebehavior>
+		<playertype>Human</playertype>
+		<cooponly>false</cooponly>
+		<startingfood>500</startingfood>
+		<startingwood>500</startingwood>
+		<startinggold>500</startinggold>
+		<startingstone>500</startingstone>
+		<aislidervariables/>
+		<aiflagvariables/>
+	</playersettings>
+	<playersettings id="2">
+		<team>2</team>
+		<color>2</color>
+		<tributablebehavior>Default</tributablebehavior>
+		<playertype>Computer</playertype>
+		<personality>$$2234$$</personality>
+		<script>core\rush_weak</script>
+		<dataset>C01\C01_Mycenae_T2</dataset>
+		<cooponly>false</cooponly>
+		<startingfood>-1</startingfood>
+		<startingwood>-1</startingwood>
+		<startinggold>-1</startinggold>
+		<startingstone>-1</startingstone>
+		<aislidervariables>
+			<aivariable>
+				<key>EconomyHandicap</key>
+				<value>-0.2</value>
+			</aivariable>
+			<aivariable>
+				<key>SiegeBias</key>
+				<value>-1</value>
+			</aivariable>
+			<aivariable>
+				<key>ArcherBias</key>
+				<value>-1</value>
+			</aivariable>
+			<aivariable>
+				<key>CavalryBias</key>
+				<value>-1</value>
+			</aivariable>
+			<aivariable>
+				<key>InfantryBias</key>
+				<value>0.2</value>
+			</aivariable>
+		</aislidervariables>
+		<aiflagvariables>
+			<aivariable>
+				<value>0</value>
+			</aivariable>
+		</aiflagvariables>
+	</playersettings>
+	<playersettings id="3">
+		<team>1</team>
+		<color>7</color>
+		<tributablebehavior>Default</tributablebehavior>
+		<playertype>Human</playertype>
+		<cooponly>true</cooponly>
+		<startingfood>500</startingfood>
+		<startingwood>500</startingwood>
+		<startinggold>500</startinggold>
+		<startingstone>500</startingstone>
+		<aislidervariables/>
+		<aiflagvariables/>
+	</playersettings>
+	<playersettings id="4">
+		<team>2</team>
+		<color>2</color>
+		<tributablebehavior>Default</tributablebehavior>
+		<playertype>Computer</playertype>
+		<personality>$$2234$$</personality>
+		<script>core\rush_weak</script>
+		<dataset>C01\C01_Mycenae_T2</dataset>
+		<cooponly>false</cooponly>
+		<startingfood>-1</startingfood>
+		<startingwood>2000</startingwood>
+		<startinggold>-1</startinggold>
+		<startingstone>-1</startingstone>
+		<aislidervariables>
+			<aivariable>
+				<key>CavalryBias</key>
+				<value>-1</value>
+			</aivariable>
+			<aivariable>
+				<key>EconomyHandicap</key>
+				<value>-0.3</value>
+			</aivariable>
+			<aivariable>
+				<key>SiegeBias</key>
+				<value>-1</value>
+			</aivariable>
+		</aislidervariables>
+		<aiflagvariables/>
+	</playersettings>
+	<diplomacysettings/>
+	<randommap>
+		<map>scenarioloader</map>
+		<randommap>true</randommap>
+		<numplayers>4</numplayers>
+		<mapvariables>
+			<variable name="P2AddMarketManager" type="Bool">True</variable>
+			<variable name="P4AddMarketManager" type="Bool">True</variable>
+			<variable name="scenarioFile" type="String">C01/C01_M54_Mycenae_Rescue</variable>
+			<variable name="P2AttackDelayMod" type="Int">6</variable>
+			<variable name="region" type="String">Greek Coast</variable>
+		</mapvariables>
+		<nuggetoverrides/>
+		<mapregionname>Greek Coast</mapregionname>
+		<lightsetname>&lt;Not Specified&gt;</lightsetname>
+		<mapsizename>&lt;Not Specified&gt;</mapsizename>
+	</randommap>
+	<questgivers>
+		<protounit>C01_R2_KingAgamemnon</protounit>
+	</questgivers>
+	<questreturners>
+		<protounit>C01_R2_KingAgamemnon</protounit>
+	</questreturners>
+	<maplocationx>0.79</maplocationx>
+	<maplocationy>0.525</maplocationy>
+	<mapmarker>QuestDefault</mapmarker>
+	<mappage>Greece</mappage>
+	<elitespawnchance>0.025</elitespawnchance>
+	<linkedquestid>0</linkedquestid>
+	<questbasescale>0</questbasescale>
+	<victoryconditions/>
+</quest>

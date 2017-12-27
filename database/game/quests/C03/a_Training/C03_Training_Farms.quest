@@ -1,0 +1,173 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<quest xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xsd="http://www.w3.org/2001/XMLSchema" uniqueid="13406" version="144">
+	<displayname>$$6253$$</displayname>
+	<level>3</level>
+	<repeatable>false</repeatable>
+	<timer>
+		<time>00:8:00</time>
+		<events/>
+		<hideonui>false</hideonui>
+	</timer>
+	<canplaycoop>false</canplaycoop>
+	<cooprequired>false</cooprequired>
+	<ranked>false</ranked>
+	<description>$$8637$$</description>
+	<completiontext>$$7310$$</completiontext>
+	<inprogresstext>$$7311$$</inprogresstext>
+	<summarytext>$$5630$$</summarytext>
+	<canabandon>true</canabandon>
+	<hiddenquest>false</hiddenquest>
+	<friendonly>false</friendonly>
+	<suppressnotifications>false</suppressnotifications>
+	<customquest>false</customquest>
+	<questtype>RandomMap</questtype>
+	<questgamemodetype>Normal</questgamemodetype>
+	<prereqs>
+		<values>
+			<civilization>
+				<id>6</id>
+			</civilization>
+			<questcomplete>
+				<id>13008</id>
+			</questcomplete>
+			<level>
+				<min>3</min>
+				<max>8</max>
+			</level>
+		</values>
+	</prereqs>
+	<equipmentprereqs/>
+	<targets>
+		<grouping>
+			<cooponly>false</cooponly>
+			<forcetocenter>false</forcetocenter>
+			<name>Player1</name>
+			<count>1</count>
+			<team>1</team>
+			<area>Quest_Area_C</area>
+			<groupfilename>Shared_Start_Barracks</groupfilename>
+			<rottype>Rotate0</rottype>
+			<rotateunitorientations>true</rotateunitorientations>
+		</grouping>
+		<grouping>
+			<cooponly>false</cooponly>
+			<forcetocenter>false</forcetocenter>
+			<name>Tips</name>
+			<count>1</count>
+			<team>1</team>
+			<area>Quest_Area_C</area>
+			<groupfilename>Shared\Shared_ProTipTrigger_FarmTraining</groupfilename>
+			<rottype>Rotate0</rottype>
+			<rotateunitorientations>true</rotateunitorientations>
+		</grouping>
+	</targets>
+	<objectives id="0" mustfailall="false">
+		<values>
+			<or id="1" mustfailall="false">
+				<values>
+					<timer id="2">
+						<description>$$2471$$</description>
+						<failonexpire>true</failonexpire>
+					</timer>
+					<and id="3" mustfailall="false">
+						<values>
+							<techstatus id="4">
+								<description>$$2464$$</description>
+								<name>CeltCapAge2</name>
+								<status>Active</status>
+							</techstatus>
+							<buildunit id="5">
+								<description>$$2467$$</description>
+								<type>Ce_Bldg_Farm</type>
+								<count>4</count>
+							</buildunit>
+						</values>
+					</and>
+					<reduceunitsto id="6">
+						<type>LogicalTypeNeededForVictory</type>
+						<count>0</count>
+						<includeteam>false</includeteam>
+						<includeunderconstruction>false</includeunderconstruction>
+						<canuncomplete>false</canuncomplete>
+						<causesfailure>true</causesfailure>
+						<playerid>1</playerid>
+					</reduceunitsto>
+					<and id="7" mustfailall="true">
+						<values>
+							<reduceunitsto id="8">
+								<type>AbstractTownCenter</type>
+								<count>0</count>
+								<includeteam>false</includeteam>
+								<includeunderconstruction>false</includeunderconstruction>
+								<canuncomplete>false</canuncomplete>
+								<causesfailure>true</causesfailure>
+								<playerid>1</playerid>
+							</reduceunitsto>
+							<reduceunitsto id="9">
+								<type>UnitTypeVillager1</type>
+								<count>0</count>
+								<includeteam>false</includeteam>
+								<includeunderconstruction>false</includeunderconstruction>
+								<canuncomplete>false</canuncomplete>
+								<causesfailure>true</causesfailure>
+								<playerid>1</playerid>
+							</reduceunitsto>
+						</values>
+					</and>
+				</values>
+			</or>
+		</values>
+	</objectives>
+	<onaccept/>
+	<rewards visible="true">
+		<xp visible="true">1000</xp>
+		<capitalresource visible="true">
+			<capitalresource>cCapResCoin</capitalresource>
+			<amount>25</amount>
+		</capitalresource>
+		<trait visible="true">
+			Tool1H_U020
+			<traitlevel>6</traitlevel>
+		</trait>
+	</rewards>
+	<playersettings id="1">
+		<team>1</team>
+		<color>1</color>
+		<playertype>Human</playertype>
+		<cooponly>false</cooponly>
+		<startingfood>-1</startingfood>
+		<startingwood>-1</startingwood>
+		<startinggold>-1</startinggold>
+		<startingstone>-1</startingstone>
+		<aislidervariables/>
+		<aiflagvariables/>
+	</playersettings>
+	<diplomacysettings/>
+	<randommap>
+		<map>Core\Shared\Shared_RM_Land_Maze</map>
+		<randommap>true</randommap>
+		<numplayers>1</numplayers>
+		<mapvariables>
+			<variable name="region" type="String">Celtic Valley</variable>
+			<variable name="lighting" type="String">Morning</variable>
+			<variable name="mapSize" type="String">Small</variable>
+		</mapvariables>
+		<nuggetoverrides/>
+		<mapregionname>Celtic Valley</mapregionname>
+		<lightsetname>Morning</lightsetname>
+		<mapsizename>Small</mapsizename>
+	</randommap>
+	<questgivers>
+		<protounit>C03_R1_PortMaster</protounit>
+	</questgivers>
+	<questreturners>
+		<protounit>C03_R1_PortMaster</protounit>
+	</questreturners>
+	<maplocationx>0.45</maplocationx>
+	<maplocationy>0.38</maplocationy>
+	<mapmarker>QuestDefault</mapmarker>
+	<mappage>C03_Celtica</mappage>
+	<elitespawnchance>0</elitespawnchance>
+	<victoryconditions/>
+</quest>

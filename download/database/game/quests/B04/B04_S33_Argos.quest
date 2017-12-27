@@ -1,0 +1,222 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<quest xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xsd="http://www.w3.org/2001/XMLSchema" uniqueid="104033" version="85">
+	<displayname>$$12635$$</displayname>
+	<level>-1</level>
+	<repeatable>false</repeatable>
+	<offertype>eOfferBooster4</offertype>
+	<timer>
+		<events/>
+		<hideonui>false</hideonui>
+	</timer>
+	<canplaycoop>true</canplaycoop>
+	<cooprequired>false</cooprequired>
+	<ranked>false</ranked>
+	<alliance>eAllianceNone</alliance>
+	<questtype>RandomMap</questtype>
+	<description>$$12816$$</description>
+	<completiontext>$$12817$$</completiontext>
+	<inprogresstext>$$12818$$</inprogresstext>
+	<summarytext>$$12864$$</summarytext>
+	<canabandon>true</canabandon>
+	<hiddenquest>false</hiddenquest>
+	<friendonly>false</friendonly>
+	<suppressnotifications>false</suppressnotifications>
+	<customquest>false</customquest>
+	<questgamemodetype>Normal</questgamemodetype>
+	<prereqs>
+		<values>
+			<questcomplete>
+				<id>104031</id>
+			</questcomplete>
+		</values>
+	</prereqs>
+	<equipmentprereqs/>
+	<targets/>
+	<objectives id="0" mustfailall="false">
+		<values>
+			<or id="1" mustfailall="false">
+				<values>
+					<dummy id="2">
+						<description>$$12683$$</description>
+						<objectivename>UNUSED</objectivename>
+						<autocomplete>false</autocomplete>
+					</dummy>
+					<ownsunit id="3">
+						<description>$$12108$$</description>
+						<type>Qst_CounterObject</type>
+						<count>60</count>
+						<owningplayerid>4</owningplayerid>
+						<causesfailure>false</causesfailure>
+					</ownsunit>
+					<ownsunit id="4">
+						<description>$$12109$$</description>
+						<type>Qst_CounterObject</type>
+						<count>60</count>
+						<owningplayerid>2</owningplayerid>
+						<causesfailure>true</causesfailure>
+					</ownsunit>
+				</values>
+			</or>
+		</values>
+	</objectives>
+	<onaccept/>
+	<rewards visible="true">
+		<gamecurrency visible="true">
+			<gamecurrency>cGameCurEmpirePoints</gamecurrency>
+			<amount>6</amount>
+		</gamecurrency>
+		<xp visible="true">
+			1
+			<lookuptable>B04Long</lookuptable>
+		</xp>
+		<capitalresource visible="true">
+			<capitalresource>cCapResCoin</capitalresource>
+			<amount>1</amount>
+			<lookuptable>B04Long</lookuptable>
+		</capitalresource>
+		<loottable visible="true">general</loottable>
+		<loottable visible="true">general</loottable>
+	</rewards>
+	<playersettings id="1">
+		<team>1</team>
+		<color>1</color>
+		<tributablebehavior>Default</tributablebehavior>
+		<playertype>Human</playertype>
+		<cooponly>false</cooponly>
+		<startingfood>0</startingfood>
+		<startingwood>0</startingwood>
+		<startinggold>50</startinggold>
+		<startingstone>0</startingstone>
+		<aislidervariables/>
+		<aiflagvariables/>
+	</playersettings>
+	<playersettings id="2">
+		<team>2</team>
+		<color>2</color>
+		<tributablebehavior>Default</tributablebehavior>
+		<playertype>Computer</playertype>
+		<personality>$$12698$$</personality>
+		<script>ainodecapturecore</script>
+		<character/>
+		<dataset>b04\b04_c07_dataset</dataset>
+		<cooponly>false</cooponly>
+		<startingfood>0</startingfood>
+		<startingwood>0</startingwood>
+		<startinggold>50</startinggold>
+		<startingstone>0</startingstone>
+		<aislidervariables/>
+		<aiflagvariables/>
+	</playersettings>
+	<playersettings id="3">
+		<team>1</team>
+		<color>7</color>
+		<tributablebehavior>Default</tributablebehavior>
+		<playertype>Human</playertype>
+		<cooponly>true</cooponly>
+		<startingfood>0</startingfood>
+		<startingwood>0</startingwood>
+		<startinggold>50</startinggold>
+		<startingstone>0</startingstone>
+		<aislidervariables/>
+		<aiflagvariables/>
+	</playersettings>
+	<playersettings id="4">
+		<team>1</team>
+		<color>1</color>
+		<tributablebehavior>Default</tributablebehavior>
+		<playertype>Computer</playertype>
+		<personality>$$12701$$</personality>
+		<cooponly>false</cooponly>
+		<startingfood>-1</startingfood>
+		<startingwood>-1</startingwood>
+		<startinggold>-1</startinggold>
+		<startingstone>-1</startingstone>
+		<aislidervariables/>
+		<aiflagvariables/>
+	</playersettings>
+	<playersettings id="5">
+		<team>3</team>
+		<color>5</color>
+		<tributablebehavior>Default</tributablebehavior>
+		<playertype>Computer</playertype>
+		<personality>$$12702$$</personality>
+		<character>c01\skirmish\c01_skirmish_l40</character>
+		<dataset>c01\c01_vanilla_t0</dataset>
+		<cooponly>false</cooponly>
+		<startingfood>-1</startingfood>
+		<startingwood>-1</startingwood>
+		<startinggold>-1</startinggold>
+		<startingstone>-1</startingstone>
+		<aislidervariables/>
+		<aiflagvariables/>
+	</playersettings>
+	<playersettings id="6">
+		<team>3</team>
+		<color>3</color>
+		<tributablebehavior>Default</tributablebehavior>
+		<playertype>Computer</playertype>
+		<character>c01\skirmish\c01_skirmish_l40</character>
+		<dataset>c01\c01_vanilla_t0</dataset>
+		<cooponly>false</cooponly>
+		<startingfood>-1</startingfood>
+		<startingwood>-1</startingwood>
+		<startinggold>-1</startinggold>
+		<startingstone>-1</startingstone>
+		<aislidervariables/>
+		<aiflagvariables/>
+	</playersettings>
+	<playersettings id="7">
+		<team>2</team>
+		<color>2</color>
+		<tributablebehavior>Default</tributablebehavior>
+		<playertype>Computer</playertype>
+		<personality>$$12705$$</personality>
+		<dataset>b04\b04_c07_dataset</dataset>
+		<cooponly>false</cooponly>
+		<startingfood>-1</startingfood>
+		<startingwood>-1</startingwood>
+		<startinggold>-1</startinggold>
+		<startingstone>-1</startingstone>
+		<aislidervariables/>
+		<aiflagvariables/>
+	</playersettings>
+	<diplomacysettings>
+		<diplomacy relation="Enemy" team1="1" team2="2" sharedlos="false"/>
+		<diplomacy relation="Enemy" team1="2" team2="1" sharedlos="false"/>
+		<diplomacy relation="Neutral" team1="1" team2="3" sharedlos="false"/>
+		<diplomacy relation="Neutral" team1="3" team2="1" sharedlos="false"/>
+		<diplomacy relation="Neutral" team1="2" team2="3" sharedlos="false"/>
+		<diplomacy relation="Neutral" team1="3" team2="2" sharedlos="false"/>
+	</diplomacysettings>
+	<randommap>
+		<map>Core\B04\B04_Arc3_Mode3A_Argos</map>
+		<randommap>true</randommap>
+		<numplayers>7</numplayers>
+		<mapvariables>
+			<variable name="scenarioFile" type="String">B04/B04_Arc3_Mode3A_Argos</variable>
+			<variable name="isRepeatable" type="Bool">false</variable>
+			<variable name="isFlipMode" type="Bool">false</variable>
+			<variable name="region" type="String">Greek Coast</variable>
+			<variable name="mapSize" type="String">Standard</variable>
+		</mapvariables>
+		<nuggetoverrides/>
+		<mapregionname>Greek Coast</mapregionname>
+		<lightsetname>&lt;Not Specified&gt;</lightsetname>
+		<mapsizename>Standard</mapsizename>
+	</randommap>
+	<questgivers>
+		<protounit>B04_PrimaryQG</protounit>
+	</questgivers>
+	<questreturners>
+		<protounit>B04_PrimaryQG</protounit>
+	</questreturners>
+	<maplocationx>0.45</maplocationx>
+	<maplocationy>0.6</maplocationy>
+	<mapmarker>QuestDefault</mapmarker>
+	<mappage>Greece</mappage>
+	<elitespawnchance>0</elitespawnchance>
+	<linkedquestid>0</linkedquestid>
+	<questbasescale>0</questbasescale>
+	<victoryconditions/>
+</quest>

@@ -1,0 +1,422 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<quest xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xsd="http://www.w3.org/2001/XMLSchema" uniqueid="3016" version="108">
+	<displayname>$$6087$$</displayname>
+	<level>-1</level>
+	<difficultycoloroverride>1</difficultycoloroverride>
+	<repeatable>true</repeatable>
+	<offertype>eOfferNone</offertype>
+	<timer>
+		<time>00:07:00</time>
+		<events/>
+		<hideonui>false</hideonui>
+	</timer>
+	<canplaycoop>true</canplaycoop>
+	<cooprequired>false</cooprequired>
+	<ranked>false</ranked>
+	<alliance>eAllianceNone</alliance>
+	<questtype>RandomMap</questtype>
+	<description>$$6271$$</description>
+	<completiontext>$$6270$$</completiontext>
+	<inprogresstext>$$6243$$</inprogresstext>
+	<summarytext>$$6525$$</summarytext>
+	<repeatableduration>12</repeatableduration>
+	<canabandon>true</canabandon>
+	<hiddenquest>false</hiddenquest>
+	<friendonly>false</friendonly>
+	<suppressnotifications>false</suppressnotifications>
+	<customquest>false</customquest>
+	<questgamemodetype>Normal</questgamemodetype>
+	<prereqs>
+		<values>
+			<questcomplete>
+				<id>3001</id>
+			</questcomplete>
+			<level>
+				<min>38</min>
+				<max>99</max>
+			</level>
+		</values>
+	</prereqs>
+	<equipmentprereqs/>
+	<targets>
+		<grouping>
+			<cooponly>false</cooponly>
+			<forcetocenter>false</forcetocenter>
+			<name>Player1</name>
+			<count>1</count>
+			<team>1</team>
+			<area>Player1</area>
+			<groupfilename>Shared_Start_Small</groupfilename>
+			<rottype>Rotate0</rottype>
+			<rotateunitorientations>false</rotateunitorientations>
+		</grouping>
+		<grouping>
+			<cooponly>true</cooponly>
+			<forcetocenter>false</forcetocenter>
+			<name>Player2</name>
+			<count>1</count>
+			<team>3</team>
+			<area>Player2</area>
+			<groupfilename>Shared_Start_Small</groupfilename>
+			<rottype>Rotate0</rottype>
+			<rotateunitorientations>false</rotateunitorientations>
+		</grouping>
+		<protounit>
+			<cooponly>true</cooponly>
+			<forcetocenter>false</forcetocenter>
+			<name>CoopGoldMine</name>
+			<protoname>MineGold</protoname>
+			<count>1</count>
+			<team>0</team>
+			<area>Player3</area>
+			<usequesttargetindicator>false</usequesttargetindicator>
+		</protounit>
+		<protounit>
+			<cooponly>true</cooponly>
+			<forcetocenter>false</forcetocenter>
+			<name>CoopStoneMine</name>
+			<protoname>MineStone</protoname>
+			<count>1</count>
+			<team>0</team>
+			<area>Player4</area>
+			<usequesttargetindicator>false</usequesttargetindicator>
+		</protounit>
+	</targets>
+	<objectives id="0" mustfailall="false">
+		<values>
+			<or id="1" mustfailall="false">
+				<values>
+					<and id="2" mustfailall="false">
+						<values>
+							<dummy id="3">
+								<description>$$6181$$</description>
+								<objectivename>C12_CaptureGoldMine</objectivename>
+								<autocomplete>false</autocomplete>
+							</dummy>
+							<dummy id="4">
+								<description>$$6182$$</description>
+								<objectivename>C12_CaptureStoneMine</objectivename>
+								<autocomplete>false</autocomplete>
+							</dummy>
+							<kill id="5">
+								<description>$$2507$$</description>
+								<type>Gr_Bldg_Fortress</type>
+								<count>2</count>
+								<includeconversion>true</includeconversion>
+								<onlycountelites>false</onlycountelites>
+							</kill>
+						</values>
+					</and>
+					<and id="6" mustfailall="true">
+						<values>
+							<reduceunitsto id="7">
+								<type>LogicalTypeNeededForVictory</type>
+								<count>0</count>
+								<includeteam>false</includeteam>
+								<includeunderconstruction>false</includeunderconstruction>
+								<canuncomplete>false</canuncomplete>
+								<causesfailure>true</causesfailure>
+								<playerid>1</playerid>
+							</reduceunitsto>
+							<reduceunitsto id="8">
+								<type>LogicalTypeNeededForVictory</type>
+								<count>0</count>
+								<includeteam>false</includeteam>
+								<includeunderconstruction>false</includeunderconstruction>
+								<canuncomplete>false</canuncomplete>
+								<causesfailure>true</causesfailure>
+								<playerid>3</playerid>
+							</reduceunitsto>
+						</values>
+					</and>
+				</values>
+			</or>
+		</values>
+	</objectives>
+	<secondaryobjectives id="9" mustfailall="false" rewardname="OptionalOne">
+		<description>$$9656$$</description>
+		<values>
+			<or id="10" mustfailall="false">
+				<values>
+					<timer id="11">
+						<description>$$9656$$</description>
+						<failonexpire>true</failonexpire>
+					</timer>
+					<dummy id="12">
+						<description>$$10413$$</description>
+						<objectivename>OptionalGold</objectivename>
+						<autocomplete>false</autocomplete>
+					</dummy>
+					<dummy id="13">
+						<description/>
+						<objectivename>C12_CaptureGoldMine</objectivename>
+						<autocomplete>false</autocomplete>
+					</dummy>
+				</values>
+			</or>
+		</values>
+	</secondaryobjectives>
+	<secondaryobjectives id="14" mustfailall="false" rewardname="OptionalTwo">
+		<description>$$9656$$</description>
+		<values>
+			<or id="15" mustfailall="false">
+				<values>
+					<timer id="16">
+						<description>$$9656$$</description>
+						<failonexpire>true</failonexpire>
+					</timer>
+					<dummy id="17">
+						<description>$$10414$$</description>
+						<objectivename>OptionalStone</objectivename>
+						<autocomplete>false</autocomplete>
+					</dummy>
+					<dummy id="18">
+						<description/>
+						<objectivename>C12_CaptureStoneMine</objectivename>
+						<autocomplete>false</autocomplete>
+					</dummy>
+				</values>
+			</or>
+		</values>
+	</secondaryobjectives>
+	<onaccept/>
+	<rewards visible="true">
+		<alliancepoints visible="true">
+			<amount>10</amount>
+		</alliancepoints>
+		<xp visible="true">
+			1
+			<lookuptable>SQVLong</lookuptable>
+		</xp>
+		<capitalresource visible="true">
+			<capitalresource>cCapResCoin</capitalresource>
+			<amount>1</amount>
+			<lookuptable>SQVLong</lookuptable>
+		</capitalresource>
+		<loottable visible="true">general</loottable>
+		<loottable visible="true">general</loottable>
+	</rewards>
+	<secondaryrewards visible="true" name="OptionalOne">
+		<capitalresource visible="true">
+			<capitalresource>cCapResCoin</capitalresource>
+			<amount>1</amount>
+			<lookuptable>OptCoin</lookuptable>
+		</capitalresource>
+		<loottable visible="true">general</loottable>
+	</secondaryrewards>
+	<secondaryrewards visible="true" name="OptionalTwo">
+		<capitalresource visible="true">
+			<capitalresource>cCapResCoin</capitalresource>
+			<amount>1</amount>
+			<lookuptable>OptCoin</lookuptable>
+		</capitalresource>
+		<loottable visible="true">general</loottable>
+	</secondaryrewards>
+	<playersettings id="1">
+		<team>1</team>
+		<color>1</color>
+		<tributablebehavior>Default</tributablebehavior>
+		<playertype>Human</playertype>
+		<cooponly>false</cooponly>
+		<startingfood>-1</startingfood>
+		<startingwood>-1</startingwood>
+		<startinggold>-1</startinggold>
+		<startingstone>-1</startingstone>
+		<aislidervariables/>
+		<aiflagvariables/>
+	</playersettings>
+	<playersettings id="2">
+		<team>2</team>
+		<color>2</color>
+		<tributablebehavior>Default</tributablebehavior>
+		<playertype>Computer</playertype>
+		<personality>$$6595$$</personality>
+		<script>CORE\Rush_Moderate</script>
+		<dataset>C01\C01_CyprusRush_T4</dataset>
+		<cooponly>false</cooponly>
+		<startingfood>0</startingfood>
+		<startingwood>0</startingwood>
+		<startinggold>0</startinggold>
+		<startingstone>0</startingstone>
+		<aislidervariables>
+			<aivariable>
+				<key>InfantryBias</key>
+				<value>0.2</value>
+			</aivariable>
+			<aivariable>
+				<key>ArcherBias</key>
+				<value>0.2</value>
+			</aivariable>
+			<aivariable>
+				<key>CavalryBias</key>
+				<value>-1</value>
+			</aivariable>
+		</aislidervariables>
+		<aiflagvariables>
+			<aivariable>
+				<key>NoResign</key>
+				<value>0</value>
+			</aivariable>
+		</aiflagvariables>
+	</playersettings>
+	<playersettings id="3">
+		<team>1</team>
+		<color>7</color>
+		<tributablebehavior>Default</tributablebehavior>
+		<playertype>Human</playertype>
+		<cooponly>true</cooponly>
+		<startingfood>-1</startingfood>
+		<startingwood>-1</startingwood>
+		<startinggold>-1</startinggold>
+		<startingstone>-1</startingstone>
+		<aislidervariables/>
+		<aiflagvariables/>
+	</playersettings>
+	<playersettings id="4">
+		<team>2</team>
+		<color>2</color>
+		<tributablebehavior>Default</tributablebehavior>
+		<playertype>Computer</playertype>
+		<personality>$$6595$$</personality>
+		<script>CORE\Rush_Moderate</script>
+		<dataset>C01\C01_CyprusRush_T4</dataset>
+		<cooponly>false</cooponly>
+		<startingfood>100</startingfood>
+		<startingwood>100</startingwood>
+		<startinggold>100</startinggold>
+		<startingstone>100</startingstone>
+		<aislidervariables>
+			<aivariable>
+				<key>CavalryBias</key>
+				<value>-1</value>
+			</aivariable>
+			<aivariable>
+				<key>ArcherBias</key>
+				<value>-1</value>
+			</aivariable>
+			<aivariable>
+				<key>SiegeBias</key>
+				<value>-1</value>
+			</aivariable>
+			<aivariable>
+				<key>NavyBias</key>
+				<value>-1</value>
+			</aivariable>
+		</aislidervariables>
+		<aiflagvariables>
+			<aivariable>
+				<key>NoTrainNavy</key>
+				<value>0</value>
+			</aivariable>
+			<aivariable>
+				<key>NoResign</key>
+				<value>0</value>
+			</aivariable>
+			<aivariable>
+				<key>NoFish</key>
+				<value>0</value>
+			</aivariable>
+		</aiflagvariables>
+	</playersettings>
+	<playersettings id="5">
+		<team>2</team>
+		<color>2</color>
+		<tributablebehavior>Default</tributablebehavior>
+		<playertype>Computer</playertype>
+		<personality>$$6595$$</personality>
+		<script>CORE\Ramp_Moderate</script>
+		<dataset>C01\C01_CyprusRamp_T3</dataset>
+		<cooponly>false</cooponly>
+		<startingfood>100</startingfood>
+		<startingwood>100</startingwood>
+		<startinggold>100</startinggold>
+		<startingstone>100</startingstone>
+		<aislidervariables>
+			<aivariable>
+				<key>CavalryBias</key>
+				<value>-1</value>
+			</aivariable>
+			<aivariable>
+				<key>ArcherBias</key>
+				<value>-1</value>
+			</aivariable>
+			<aivariable>
+				<key>SiegeBias</key>
+				<value>-1</value>
+			</aivariable>
+			<aivariable>
+				<key>NavyBias</key>
+				<value>-1</value>
+			</aivariable>
+		</aislidervariables>
+		<aiflagvariables>
+			<aivariable>
+				<key>NoTrainNavy</key>
+				<value>0</value>
+			</aivariable>
+			<aivariable>
+				<key>NoResign</key>
+				<value>0</value>
+			</aivariable>
+			<aivariable>
+				<key>NoFish</key>
+				<value>0</value>
+			</aivariable>
+		</aiflagvariables>
+	</playersettings>
+	<playersettings id="6">
+		<team>3</team>
+		<color>2</color>
+		<tributablebehavior>Default</tributablebehavior>
+		<playertype>Computer</playertype>
+		<personality>$$6595$$</personality>
+		<script/>
+		<dataset>C01\C01_CyprusRush_T4</dataset>
+		<cooponly>false</cooponly>
+		<startingfood>100</startingfood>
+		<startingwood>100</startingwood>
+		<startinggold>100</startinggold>
+		<startingstone>100</startingstone>
+		<aislidervariables/>
+		<aiflagvariables>
+			<aivariable>
+				<key>NoResign</key>
+				<value>0</value>
+			</aivariable>
+		</aiflagvariables>
+	</playersettings>
+	<diplomacysettings>
+		<diplomacy relation="Neutral" team1="3" team2="2" sharedlos="false"/>
+		<diplomacy relation="Neutral" team1="2" team2="3" sharedlos="false"/>
+	</diplomacysettings>
+	<randommap>
+		<map>Core\Shared_Cyprus\Cyprus_a_Loader</map>
+		<randommap>true</randommap>
+		<numplayers>6</numplayers>
+		<mapvariables>
+			<variable name="scenarioFile" type="String">Shared_Cyprus/Cyprus_12Kingdoms_Tamassos</variable>
+			<variable name="IsREPEAT" type="Bool">true</variable>
+			<variable name="TamassosID" type="Int">3016</variable>
+			<variable name="region" type="String">Greek Inland</variable>
+		</mapvariables>
+		<nuggetoverrides/>
+		<mapregionname>Greek Inland</mapregionname>
+		<lightsetname>&lt;Not Specified&gt;</lightsetname>
+		<mapsizename>&lt;Not Specified&gt;</mapsizename>
+	</randommap>
+	<questgivers>
+		<protounit>CyprusLeaderV2</protounit>
+	</questgivers>
+	<questreturners>
+		<protounit>CyprusLeaderV2</protounit>
+	</questreturners>
+	<maplocationx>0.43</maplocationx>
+	<maplocationy>0.49</maplocationy>
+	<mapmarker>QuestRepeatable</mapmarker>
+	<mappage>Cyprus</mappage>
+	<elitespawnchance>0.025</elitespawnchance>
+	<linkedquestid>3088</linkedquestid>
+	<questbasescale>3</questbasescale>
+	<victoryconditions/>
+</quest>

@@ -1,0 +1,215 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<quest xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xsd="http://www.w3.org/2001/XMLSchema" uniqueid="13037" version="85">
+	<displayname>$$8584$$</displayname>
+	<level>17</level>
+	<repeatable>false</repeatable>
+	<timer>
+		<events/>
+		<hideonui>false</hideonui>
+	</timer>
+	<canplaycoop>true</canplaycoop>
+	<cooprequired>false</cooprequired>
+	<ranked>false</ranked>
+	<description>$$7743$$</description>
+	<completiontext>$$276$$</completiontext>
+	<inprogresstext>$$8621$$</inprogresstext>
+	<summarytext>$$7744$$</summarytext>
+	<canabandon>true</canabandon>
+	<hiddenquest>false</hiddenquest>
+	<friendonly>false</friendonly>
+	<suppressnotifications>false</suppressnotifications>
+	<customquest>false</customquest>
+	<questtype>RandomMap</questtype>
+	<questgamemodetype>Normal</questgamemodetype>
+	<prereqs>
+		<values>
+			<civilization>
+				<id>6</id>
+			</civilization>
+			<questcomplete>
+				<id>13036</id>
+			</questcomplete>
+		</values>
+	</prereqs>
+	<equipmentprereqs/>
+	<targets>
+		<grouping>
+			<cooponly>true</cooponly>
+			<forcetocenter>false</forcetocenter>
+			<name>CoopStart</name>
+			<count>1</count>
+			<team>3</team>
+			<area>Player2</area>
+			<groupfilename>shared_player3_age2_barrackstowers</groupfilename>
+			<rottype>Rotate0</rottype>
+			<rotateunitorientations>true</rotateunitorientations>
+		</grouping>
+	</targets>
+	<objectives id="0" mustfailall="false">
+		<values>
+			<or id="1" mustfailall="false">
+				<values>
+					<reduceunitsto id="2">
+						<type>LogicalTypeNeededForVictory</type>
+						<count>0</count>
+						<includeteam>true</includeteam>
+						<includeunderconstruction>false</includeunderconstruction>
+						<canuncomplete>false</canuncomplete>
+						<causesfailure>true</causesfailure>
+						<playerid>1</playerid>
+					</reduceunitsto>
+					<and id="3" mustfailall="false">
+						<values>
+							<kill id="4">
+								<description>$$3247$$</description>
+								<type>UnitTypeBldgStables</type>
+								<count>3</count>
+								<includeconversion>true</includeconversion>
+								<onlycountelites>false</onlycountelites>
+							</kill>
+							<kill id="5">
+								<description>$$3244$$</description>
+								<type>UnitTypeBldgBarracks</type>
+								<count>7</count>
+								<includeconversion>true</includeconversion>
+								<onlycountelites>false</onlycountelites>
+							</kill>
+							<kill id="6">
+								<description>$$8972$$</description>
+								<type>UnitTypeBldgArcheryRange</type>
+								<count>5</count>
+								<includeconversion>true</includeconversion>
+								<onlycountelites>false</onlycountelites>
+							</kill>
+							<dummy id="7">
+								<description>$$3802$$</description>
+								<objectivename>CrossThermopylae</objectivename>
+								<autocomplete>false</autocomplete>
+							</dummy>
+						</values>
+					</and>
+				</values>
+			</or>
+		</values>
+	</objectives>
+	<onaccept/>
+	<rewards visible="true">
+		<gamecurrency visible="true">
+			<gamecurrency>cGameCurEmpirePoints</gamecurrency>
+			<amount>4</amount>
+		</gamecurrency>
+		<xp visible="true">50000</xp>
+		<capitalresource visible="true">
+			<capitalresource>cCapResCoin</capitalresource>
+			<amount>150</amount>
+		</capitalresource>
+		<loottable visible="true">general</loottable>
+		<loottable visible="true">tables\_coreloot_celthigh_reward</loottable>
+		<or visible="true">
+			<trait visible="true">
+				Bow1H_E101
+				<traitlevel>22</traitlevel>
+			</trait>
+			<trait visible="true">
+				Bow1H_E102
+				<traitlevel>22</traitlevel>
+			</trait>
+			<loottable visible="true">general</loottable>
+		</or>
+	</rewards>
+	<playersettings id="1">
+		<team>1</team>
+		<color>1</color>
+		<playertype>Human</playertype>
+		<cooponly>false</cooponly>
+		<startingfood>500</startingfood>
+		<startingwood>500</startingwood>
+		<startinggold>500</startinggold>
+		<startingstone>0</startingstone>
+		<aislidervariables/>
+		<aiflagvariables/>
+	</playersettings>
+	<playersettings id="2">
+		<team>2</team>
+		<color>2</color>
+		<playertype>Computer</playertype>
+		<personality>$$2304$$</personality>
+		<dataset>C01\C01_CoreRush_T2</dataset>
+		<cooponly>false</cooponly>
+		<startingfood>0</startingfood>
+		<startingwood>0</startingwood>
+		<startinggold>0</startinggold>
+		<startingstone>0</startingstone>
+		<aislidervariables/>
+		<aiflagvariables/>
+	</playersettings>
+	<playersettings id="3">
+		<team>1</team>
+		<color>7</color>
+		<playertype>Human</playertype>
+		<cooponly>true</cooponly>
+		<startingfood>-1</startingfood>
+		<startingwood>-1</startingwood>
+		<startinggold>-1</startinggold>
+		<startingstone>-1</startingstone>
+		<aislidervariables/>
+		<aiflagvariables/>
+	</playersettings>
+	<playersettings id="4">
+		<team>2</team>
+		<color>2</color>
+		<playertype>Computer</playertype>
+		<personality>$$2304$$</personality>
+		<dataset>C01\C01_CoreRush_T2</dataset>
+		<cooponly>false</cooponly>
+		<startingfood>0</startingfood>
+		<startingwood>0</startingwood>
+		<startinggold>0</startinggold>
+		<startingstone>0</startingstone>
+		<aislidervariables/>
+		<aiflagvariables/>
+	</playersettings>
+	<playersettings id="5">
+		<team>2</team>
+		<color>2</color>
+		<playertype>Computer</playertype>
+		<personality>$$2304$$</personality>
+		<script>CORE\Rush_Moderate</script>
+		<dataset>C01\C01_CoreRush_T2</dataset>
+		<cooponly>false</cooponly>
+		<startingfood>0</startingfood>
+		<startingwood>0</startingwood>
+		<startinggold>0</startinggold>
+		<startingstone>0</startingstone>
+		<aislidervariables/>
+		<aiflagvariables/>
+	</playersettings>
+	<diplomacysettings/>
+	<randommap>
+		<map>Core/C03/C03_R3M87_Thermopylae</map>
+		<randommap>true</randommap>
+		<numplayers>5</numplayers>
+		<mapvariables>
+			<variable name="scenarioFile" type="String">C03/C03_R3M87_Thermopylae</variable>
+			<variable name="region" type="String">Greek Inland</variable>
+			<variable name="lighting" type="String">Afternoon</variable>
+		</mapvariables>
+		<nuggetoverrides/>
+		<mapregionname>Greek Inland</mapregionname>
+		<lightsetname>Afternoon</lightsetname>
+		<mapsizename>&lt;Not Specified&gt;</mapsizename>
+	</randommap>
+	<questgivers>
+		<protounit>C03_R3_Brennos</protounit>
+	</questgivers>
+	<questreturners>
+		<protounit>C03_R3_Brennos</protounit>
+	</questreturners>
+	<maplocationx>0.32</maplocationx>
+	<maplocationy>0.775</maplocationy>
+	<mapmarker>QuestDefault</mapmarker>
+	<mappage>Thrace</mappage>
+	<elitespawnchance>0.025</elitespawnchance>
+	<victoryconditions/>
+</quest>

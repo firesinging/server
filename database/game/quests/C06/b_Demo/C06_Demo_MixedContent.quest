@@ -1,0 +1,313 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<quest xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xsd="http://www.w3.org/2001/XMLSchema" uniqueid="16701" version="64">
+	<displayname>$$10395$$</displayname>
+	<level>0</level>
+	<repeatable>true</repeatable>
+	<timer>
+		<events/>
+		<hideonui>false</hideonui>
+	</timer>
+	<canplaycoop>false</canplaycoop>
+	<cooprequired>false</cooprequired>
+	<ranked>false</ranked>
+	<alliance>eAllianceNone</alliance>
+	<questtype>RandomMap</questtype>
+	<description>$$11490$$</description>
+	<completiontext>$$11494$$</completiontext>
+	<inprogresstext>$$10996$$</inprogresstext>
+	<summarytext>$$12434$$</summarytext>
+	<repeatableduration>12</repeatableduration>
+	<canabandon>true</canabandon>
+	<hiddenquest>false</hiddenquest>
+	<friendonly>false</friendonly>
+	<suppressnotifications>false</suppressnotifications>
+	<customquest>false</customquest>
+	<questgamemodetype>Normal</questgamemodetype>
+	<prereqs>
+		<values>
+			<or>
+				<values>
+					<civilization>
+						<id>1</id>
+					</civilization>
+					<civilization>
+						<id>3</id>
+					</civilization>
+					<civilization>
+						<id>6</id>
+					</civilization>
+					<civilization>
+						<id>8</id>
+					</civilization>
+					<civilization>
+						<id>24</id>
+					</civilization>
+				</values>
+			</or>
+		</values>
+	</prereqs>
+	<equipmentprereqs/>
+	<targets>
+		<protounit>
+			<cooponly>false</cooponly>
+			<forcetocenter>false</forcetocenter>
+			<name>C06_BadGuy_Leader</name>
+			<protoname>C06_BadGuy_Leader</protoname>
+			<count>1</count>
+			<team>7</team>
+			<area>Quest_Area_E</area>
+			<overrides parent="Ba_Inf_ShieldBearer">
+				<visualscale>1.3</visualscale>
+				<initialhitpoints>4000</initialhitpoints>
+				<maxhitpoints>4000</maxhitpoints>
+				<displaynameid>66991</displaynameid>
+				<convertresist>100</convertresist>
+			</overrides>
+			<usequesttargetindicator>true</usequesttargetindicator>
+		</protounit>
+	</targets>
+	<objectives id="0" mustfailall="false">
+		<values>
+			<or id="1" mustfailall="false">
+				<values>
+					<and id="2" mustfailall="false">
+						<values>
+							<unitdiscovered id="3">
+								<description>$$10884$$</description>
+								<type>AIStart</type>
+								<count>4</count>
+							</unitdiscovered>
+							<kill id="4">
+								<description>$$10886$$</description>
+								<type>C06_BadGuy_Leader</type>
+								<count>1</count>
+								<includeconversion>false</includeconversion>
+								<onlycountelites>false</onlycountelites>
+							</kill>
+						</values>
+					</and>
+					<reduceunitsto id="5">
+						<type>LogicalTypeNeededForVictory</type>
+						<count>0</count>
+						<includeteam>false</includeteam>
+						<includeunderconstruction>false</includeunderconstruction>
+						<canuncomplete>false</canuncomplete>
+						<causesfailure>true</causesfailure>
+						<playerid>1</playerid>
+					</reduceunitsto>
+				</values>
+			</or>
+		</values>
+	</objectives>
+	<onaccept/>
+	<rewards visible="true">
+		<protip visible="false">TIP_C06_DemoTurnIn</protip>
+		<or visible="true">
+			<consumable visible="true">
+				<consumablename>ConsumableBanditArcher_U</consumablename>
+				<count>3</count>
+			</consumable>
+			<consumable visible="true">
+				<consumablename>ConsumableBanditHippikon_U</consumablename>
+				<count>3</count>
+			</consumable>
+			<consumable visible="true">
+				<consumablename>ConsumableBanditHorseHunter_U</consumablename>
+				<count>3</count>
+			</consumable>
+		</or>
+	</rewards>
+	<playersettings id="1">
+		<team>1</team>
+		<color>1</color>
+		<tributablebehavior>Default</tributablebehavior>
+		<playertype>Human</playertype>
+		<cooponly>false</cooponly>
+		<startingfood>3000</startingfood>
+		<startingwood>3000</startingwood>
+		<startinggold>3000</startinggold>
+		<startingstone>3000</startingstone>
+		<aislidervariables/>
+		<aiflagvariables/>
+	</playersettings>
+	<playersettings id="2">
+		<team>2</team>
+		<color>2</color>
+		<tributablebehavior>Default</tributablebehavior>
+		<playertype>Computer</playertype>
+		<personality>$$11961$$</personality>
+		<script/>
+		<character/>
+		<dataset>c06\c06_corerush_t2</dataset>
+		<cooponly>false</cooponly>
+		<startingfood>0</startingfood>
+		<startingwood>0</startingwood>
+		<startinggold>0</startinggold>
+		<startingstone>0</startingstone>
+		<aislidervariables/>
+		<aiflagvariables/>
+	</playersettings>
+	<playersettings id="3">
+		<team>3</team>
+		<color>3</color>
+		<tributablebehavior>Default</tributablebehavior>
+		<playertype>Computer</playertype>
+		<personality>$$2233$$</personality>
+		<script/>
+		<character/>
+		<dataset>c06\c06_corerush_t2</dataset>
+		<cooponly>false</cooponly>
+		<startingfood>0</startingfood>
+		<startingwood>0</startingwood>
+		<startinggold>0</startinggold>
+		<startingstone>0</startingstone>
+		<aislidervariables/>
+		<aiflagvariables/>
+	</playersettings>
+	<playersettings id="4">
+		<team>4</team>
+		<color>3</color>
+		<tributablebehavior>Default</tributablebehavior>
+		<playertype>Computer</playertype>
+		<personality>$$11962$$</personality>
+		<script/>
+		<character/>
+		<dataset>c06\c06_corerush_t2</dataset>
+		<cooponly>false</cooponly>
+		<startingfood>0</startingfood>
+		<startingwood>0</startingwood>
+		<startinggold>0</startinggold>
+		<startingstone>0</startingstone>
+		<aislidervariables/>
+		<aiflagvariables/>
+	</playersettings>
+	<playersettings id="5">
+		<team>2</team>
+		<color>2</color>
+		<tributablebehavior>Default</tributablebehavior>
+		<playertype>Computer</playertype>
+		<personality>$$11961$$</personality>
+		<script/>
+		<character/>
+		<dataset>c06\c06_corerush_t2</dataset>
+		<cooponly>false</cooponly>
+		<startingfood>0</startingfood>
+		<startingwood>0</startingwood>
+		<startinggold>0</startinggold>
+		<startingstone>0</startingstone>
+		<aislidervariables/>
+		<aiflagvariables/>
+	</playersettings>
+	<playersettings id="6">
+		<team>2</team>
+		<color>2</color>
+		<tributablebehavior>Default</tributablebehavior>
+		<playertype>Computer</playertype>
+		<personality>$$11961$$</personality>
+		<script>custom\aidominimal</script>
+		<character/>
+		<dataset>c06\c06_corerush_t2</dataset>
+		<cooponly>false</cooponly>
+		<startingfood>0</startingfood>
+		<startingwood>0</startingwood>
+		<startinggold>0</startinggold>
+		<startingstone>0</startingstone>
+		<aislidervariables/>
+		<aiflagvariables/>
+	</playersettings>
+	<playersettings id="7">
+		<team>2</team>
+		<color>2</color>
+		<tributablebehavior>Default</tributablebehavior>
+		<playertype>Computer</playertype>
+		<personality>$$11961$$</personality>
+		<character/>
+		<dataset>c06\c06_corerush_t2</dataset>
+		<cooponly>false</cooponly>
+		<startingfood>0</startingfood>
+		<startingwood>0</startingwood>
+		<startinggold>0</startinggold>
+		<startingstone>0</startingstone>
+		<aislidervariables/>
+		<aiflagvariables/>
+	</playersettings>
+	<playersettings id="8">
+		<team>2</team>
+		<color>2</color>
+		<tributablebehavior>Default</tributablebehavior>
+		<playertype>Computer</playertype>
+		<personality>$$11961$$</personality>
+		<script>core\popcorn_moderate</script>
+		<dataset>c06\c06_corerush_t2</dataset>
+		<cooponly>false</cooponly>
+		<startingfood>-1</startingfood>
+		<startingwood>-1</startingwood>
+		<startinggold>-1</startinggold>
+		<startingstone>-1</startingstone>
+		<aislidervariables>
+			<aivariable>
+				<key>EconomyHandicap</key>
+				<value>-0.3</value>
+			</aivariable>
+			<aivariable>
+				<key>InfantryBias</key>
+				<value>0.3</value>
+			</aivariable>
+			<aivariable>
+				<key>SiegeBias</key>
+				<value>-1</value>
+			</aivariable>
+			<aivariable>
+				<key>CavalryBias</key>
+				<value>-0.4</value>
+			</aivariable>
+		</aislidervariables>
+		<aiflagvariables>
+			<aivariable>
+				<value>0</value>
+			</aivariable>
+		</aiflagvariables>
+	</playersettings>
+	<diplomacysettings>
+		<diplomacy relation="Ally" team1="1" team2="3" sharedlos="false"/>
+		<diplomacy relation="Ally" team1="3" team2="1" sharedlos="false"/>
+		<diplomacy relation="Neutral" team1="2" team2="3" sharedlos="false"/>
+		<diplomacy relation="Neutral" team1="3" team2="2" sharedlos="false"/>
+		<diplomacy relation="Enemy" team1="2" team2="4" sharedlos="false"/>
+		<diplomacy relation="Ally" team1="1" team2="4" sharedlos="true"/>
+		<diplomacy relation="Neutral" team1="4" team2="1" sharedlos="false"/>
+		<diplomacy relation="Neutral" team1="1" team2="4" sharedlos="false"/>
+		<diplomacy relation="Neutral" team1="4" team2="3" sharedlos="false"/>
+		<diplomacy relation="Neutral" team1="3" team2="4" sharedlos="false"/>
+		<diplomacy relation="Enemy" team1="4" team2="2" sharedlos="false"/>
+	</diplomacysettings>
+	<randommap>
+		<map>Core\C06\C06_Demo</map>
+		<randommap>true</randommap>
+		<numplayers>8</numplayers>
+		<mapvariables>
+			<variable name="scenarioFile" type="String">C06\C06_Demo</variable>
+			<variable name="region" type="String">Meso Valley</variable>
+			<variable name="lighting" type="String">Morning</variable>
+		</mapvariables>
+		<nuggetoverrides/>
+		<mapregionname>Meso Valley</mapregionname>
+		<lightsetname>Morning</lightsetname>
+		<mapsizename>&lt;Not Specified&gt;</mapsizename>
+	</randommap>
+	<questgivers>
+		<protounit>Babylon_Trader</protounit>
+	</questgivers>
+	<questreturners>
+		<protounit>Babylon_Trader</protounit>
+	</questreturners>
+	<customloadscreen>loadscreentips\load_shared_upsell_c06.xml</customloadscreen>
+	<maplocationx>0.208</maplocationx>
+	<maplocationy>0.79</maplocationy>
+	<mapmarker>QuestRepeatable</mapmarker>
+	<mappage>Persia</mappage>
+	<elitespawnchance>0</elitespawnchance>
+	<questbasescale>0</questbasescale>
+	<victoryconditions/>
+</quest>

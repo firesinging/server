@@ -1,0 +1,395 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<quest xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xsd="http://www.w3.org/2001/XMLSchema" uniqueid="175" version="62">
+	<displayname>$$1109$$</displayname>
+	<level>14</level>
+	<repeatable>false</repeatable>
+	<timer>
+		<events/>
+		<hideonui>false</hideonui>
+	</timer>
+	<canplaycoop>false</canplaycoop>
+	<cooprequired>false</cooprequired>
+	<ranked>false</ranked>
+	<alliance>eAllianceNone</alliance>
+	<questtype>RandomMap</questtype>
+	<description>$$3388$$</description>
+	<completiontext>$$1111$$</completiontext>
+	<inprogresstext>$$3389$$</inprogresstext>
+	<summarytext>$$3391$$</summarytext>
+	<canabandon>true</canabandon>
+	<hiddenquest>false</hiddenquest>
+	<friendonly>false</friendonly>
+	<suppressnotifications>false</suppressnotifications>
+	<customquest>false</customquest>
+	<questgamemodetype>Normal</questgamemodetype>
+	<prereqs>
+		<values>
+			<civilization>
+				<id>1</id>
+			</civilization>
+			<questcomplete>
+				<id>44</id>
+			</questcomplete>
+		</values>
+	</prereqs>
+	<equipmentprereqs/>
+	<targets>
+		<grouping>
+			<cooponly>false</cooponly>
+			<forcetocenter>false</forcetocenter>
+			<name>ProTips</name>
+			<count>1</count>
+			<team>1</team>
+			<area>Player1</area>
+			<groupfilename>C01\Custom\C01_R2M55_TroyTrireme_ProTips</groupfilename>
+			<rottype>Rotate0</rottype>
+			<rotateunitorientations>false</rotateunitorientations>
+		</grouping>
+	</targets>
+	<objectives id="0" mustfailall="false">
+		<values>
+			<or id="1" mustfailall="false">
+				<values>
+					<and id="2" mustfailall="false">
+						<values>
+							<kill id="3">
+								<description>$$2507$$</description>
+								<type>Gr_Bldg_Fortress</type>
+								<count>2</count>
+								<includeconversion>true</includeconversion>
+								<onlycountelites>false</onlycountelites>
+							</kill>
+							<kill id="4">
+								<description>$$2508$$</description>
+								<type>Gr_Bldg_TownCenter</type>
+								<count>3</count>
+								<includeconversion>true</includeconversion>
+								<onlycountelites>false</onlycountelites>
+							</kill>
+						</values>
+					</and>
+					<and id="5" mustfailall="true">
+						<values>
+							<reduceunitsto id="6">
+								<type>Qst_Shp_TroyTrireme</type>
+								<count>0</count>
+								<includeteam>false</includeteam>
+								<includeunderconstruction>false</includeunderconstruction>
+								<canuncomplete>false</canuncomplete>
+								<causesfailure>true</causesfailure>
+								<playerid>1</playerid>
+							</reduceunitsto>
+							<reduceunitsto id="7">
+								<type>LogicalTypeNeededForVictory</type>
+								<count>0</count>
+								<includeteam>false</includeteam>
+								<includeunderconstruction>false</includeunderconstruction>
+								<canuncomplete>false</canuncomplete>
+								<causesfailure>true</causesfailure>
+								<playerid>1</playerid>
+							</reduceunitsto>
+						</values>
+					</and>
+				</values>
+			</or>
+		</values>
+	</objectives>
+	<onaccept/>
+	<rewards visible="true">
+		<gamecurrency visible="true">
+			<gamecurrency>cGameCurEmpirePoints</gamecurrency>
+			<amount>4</amount>
+		</gamecurrency>
+		<xp visible="true">35000</xp>
+		<capitalresource visible="true">
+			<capitalresource>cCapResCoin</capitalresource>
+			<amount>150</amount>
+		</capitalresource>
+		<consumable visible="true">
+			<consumablename>ConsumableSpy_U</consumablename>
+			<count>5</count>
+		</consumable>
+		<unlockregion visible="false">1</unlockregion>
+		<loottable visible="true">general</loottable>
+		<loottable visible="true">general</loottable>
+		<or visible="true">
+			<trait visible="true">
+				SWORD1H_R017
+				<traitlevel>15</traitlevel>
+			</trait>
+			<trait visible="true">
+				Gear_R032
+				<traitlevel>15</traitlevel>
+			</trait>
+		</or>
+	</rewards>
+	<playersettings id="1">
+		<team>1</team>
+		<color>1</color>
+		<tributablebehavior>Default</tributablebehavior>
+		<playertype>Human</playertype>
+		<cooponly>false</cooponly>
+		<startingfood>10000</startingfood>
+		<startingwood>10000</startingwood>
+		<startinggold>10000</startinggold>
+		<startingstone>0</startingstone>
+		<aislidervariables/>
+		<aiflagvariables/>
+	</playersettings>
+	<playersettings id="2">
+		<team>2</team>
+		<color>2</color>
+		<tributablebehavior>Default</tributablebehavior>
+		<playertype>Computer</playertype>
+		<personality>$$2239$$</personality>
+		<script>core\Rush_Weak</script>
+		<dataset>C01\C01_Trojan_T2</dataset>
+		<cooponly>false</cooponly>
+		<startingfood>-1</startingfood>
+		<startingwood>-1</startingwood>
+		<startinggold>-1</startinggold>
+		<startingstone>-1</startingstone>
+		<aislidervariables>
+			<aivariable>
+				<key>SiegeBias</key>
+				<value>-1</value>
+			</aivariable>
+			<aivariable>
+				<key>CavalryBias</key>
+				<value>-0.5</value>
+			</aivariable>
+			<aivariable>
+				<key>EconomyHandicap</key>
+				<value>-0.4</value>
+			</aivariable>
+		</aislidervariables>
+		<aiflagvariables>
+			<aivariable>
+				<key>NoFish</key>
+				<value>0</value>
+			</aivariable>
+			<aivariable>
+				<key>NoTrainNavy</key>
+				<value>0</value>
+			</aivariable>
+			<aivariable>
+				<key>NoResign</key>
+				<value>0</value>
+			</aivariable>
+			<aivariable>
+				<value>0</value>
+			</aivariable>
+		</aiflagvariables>
+	</playersettings>
+	<playersettings id="3">
+		<team>2</team>
+		<color>2</color>
+		<tributablebehavior>Default</tributablebehavior>
+		<playertype>Computer</playertype>
+		<personality>$$2239$$</personality>
+		<script>CORE\Turtle_Weak</script>
+		<dataset>C01\C01_Trojan_T2</dataset>
+		<cooponly>false</cooponly>
+		<startingfood>0</startingfood>
+		<startingwood>0</startingwood>
+		<startinggold>0</startinggold>
+		<startingstone>0</startingstone>
+		<aislidervariables/>
+		<aiflagvariables>
+			<aivariable>
+				<key>NoAttack</key>
+				<value>0</value>
+			</aivariable>
+			<aivariable>
+				<key>NoBuild</key>
+				<value>0</value>
+			</aivariable>
+			<aivariable>
+				<key>NoFish</key>
+				<value>0</value>
+			</aivariable>
+			<aivariable>
+				<key>NoResearchEcon</key>
+				<value>0</value>
+			</aivariable>
+			<aivariable>
+				<key>NoResearchMilitary</key>
+				<value>0</value>
+			</aivariable>
+			<aivariable>
+				<key>NoResign</key>
+				<value>0</value>
+			</aivariable>
+			<aivariable>
+				<key>NoScout</key>
+				<value>0</value>
+			</aivariable>
+			<aivariable>
+				<key>NoTrainArmy</key>
+				<value>0</value>
+			</aivariable>
+			<aivariable>
+				<key>NoTrainNavy</key>
+				<value>0</value>
+			</aivariable>
+		</aiflagvariables>
+	</playersettings>
+	<playersettings id="4">
+		<team>2</team>
+		<color>2</color>
+		<tributablebehavior>Default</tributablebehavior>
+		<playertype>Computer</playertype>
+		<personality>$$2239$$</personality>
+		<script>CORE\Turtle_Weak</script>
+		<dataset>C01\C01_Trojan_T2</dataset>
+		<cooponly>false</cooponly>
+		<startingfood>0</startingfood>
+		<startingwood>0</startingwood>
+		<startinggold>0</startinggold>
+		<startingstone>0</startingstone>
+		<aislidervariables/>
+		<aiflagvariables>
+			<aivariable>
+				<key>NoAttack</key>
+				<value>0</value>
+			</aivariable>
+			<aivariable>
+				<key>NoBuild</key>
+				<value>0</value>
+			</aivariable>
+			<aivariable>
+				<key>NoFish</key>
+				<value>0</value>
+			</aivariable>
+			<aivariable>
+				<key>NoResearchEcon</key>
+				<value>0</value>
+			</aivariable>
+			<aivariable>
+				<key>NoResign</key>
+				<value>0</value>
+			</aivariable>
+			<aivariable>
+				<key>NoScout</key>
+				<value>0</value>
+			</aivariable>
+			<aivariable>
+				<key>NoTrainArmy</key>
+				<value>0</value>
+			</aivariable>
+			<aivariable>
+				<key>NoTrainNavy</key>
+				<value>0</value>
+			</aivariable>
+			<aivariable>
+				<key>NoResearchMilitary</key>
+				<value>0</value>
+			</aivariable>
+		</aiflagvariables>
+	</playersettings>
+	<playersettings id="5">
+		<team>2</team>
+		<color>2</color>
+		<tributablebehavior>Default</tributablebehavior>
+		<playertype>Computer</playertype>
+		<personality>$$2239$$</personality>
+		<script/>
+		<dataset>C01\C01_Trojan_T2</dataset>
+		<cooponly>false</cooponly>
+		<startingfood>0</startingfood>
+		<startingwood>0</startingwood>
+		<startinggold>0</startinggold>
+		<startingstone>0</startingstone>
+		<aislidervariables/>
+		<aiflagvariables>
+			<aivariable>
+				<key>NoAttack</key>
+				<value>0</value>
+			</aivariable>
+			<aivariable>
+				<key>NoBuild</key>
+				<value>0</value>
+			</aivariable>
+			<aivariable>
+				<key>NoFish</key>
+				<value>0</value>
+			</aivariable>
+			<aivariable>
+				<key>NoResearchEcon</key>
+				<value>0</value>
+			</aivariable>
+			<aivariable>
+				<key>NoResearchMilitary</key>
+				<value>0</value>
+			</aivariable>
+			<aivariable>
+				<key>NoResign</key>
+				<value>0</value>
+			</aivariable>
+			<aivariable>
+				<key>NoScout</key>
+				<value>0</value>
+			</aivariable>
+			<aivariable>
+				<key>NoTrainArmy</key>
+				<value>0</value>
+			</aivariable>
+			<aivariable>
+				<key>NoTrainNavy</key>
+				<value>0</value>
+			</aivariable>
+		</aiflagvariables>
+	</playersettings>
+	<playersettings id="6">
+		<team>1</team>
+		<color>3</color>
+		<tributablebehavior>Default</tributablebehavior>
+		<playertype>Computer</playertype>
+		<personality>$$2239$$</personality>
+		<dataset>c01\c01_trojan_t2</dataset>
+		<cooponly>false</cooponly>
+		<startingfood>0</startingfood>
+		<startingwood>0</startingwood>
+		<startinggold>0</startinggold>
+		<startingstone>0</startingstone>
+		<aislidervariables/>
+		<aiflagvariables/>
+	</playersettings>
+	<diplomacysettings/>
+	<randommap>
+		<map>scenarioloader</map>
+		<randommap>true</randommap>
+		<numplayers>6</numplayers>
+		<mapvariables>
+			<variable name="scenarioFile" type="String">C01/C01_R2M55_TroyBeach</variable>
+			<variable name="P2LandPatrolCount" type="Int">12</variable>
+			<variable name="P3LandPatrolCount" type="Int">12</variable>
+			<variable name="P4LandPatrolCount" type="Int">6</variable>
+			<variable name="P2AllowResourcePatrol" type="Bool">false</variable>
+			<variable name="P3AllowResourcePatrol" type="Bool">false</variable>
+			<variable name="P4AllowResourcePatrol" type="Bool">false</variable>
+			<variable name="P2AddMarketManager" type="Bool">true</variable>
+			<variable name="P2AllowTCBuilding" type="Bool">false</variable>
+			<variable name="region" type="String">Greek Coast</variable>
+		</mapvariables>
+		<nuggetoverrides/>
+		<mapregionname>Greek Coast</mapregionname>
+		<lightsetname>&lt;Not Specified&gt;</lightsetname>
+		<mapsizename>&lt;Not Specified&gt;</mapsizename>
+	</randommap>
+	<questgivers>
+		<protounit>C01_R2_KingAgamemnon</protounit>
+	</questgivers>
+	<questreturners>
+		<protounit>C01_R2_KingAgamemnon</protounit>
+	</questreturners>
+	<maplocationx>0.23</maplocationx>
+	<maplocationy>0.325</maplocationy>
+	<mapmarker>QuestDefault</mapmarker>
+	<mappage>Troy</mappage>
+	<elitespawnchance>0</elitespawnchance>
+	<linkedquestid>0</linkedquestid>
+	<questbasescale>0</questbasescale>
+	<victoryconditions/>
+</quest>

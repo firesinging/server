@@ -1,0 +1,126 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<quest xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xsd="http://www.w3.org/2001/XMLSchema" uniqueid="9003" version="51">
+	<displayname>$$3485$$</displayname>
+	<repeatable>true</repeatable>
+	<timer>
+		<events/>
+		<hideonui>false</hideonui>
+	</timer>
+	<canplaycoop>false</canplaycoop>
+	<cooprequired>false</cooprequired>
+	<ranked>false</ranked>
+	<description>$$344$$</description>
+	<completiontext>$$344$$</completiontext>
+	<inprogresstext>$$344$$</inprogresstext>
+	<summarytext>$$344$$</summarytext>
+	<canabandon>true</canabandon>
+	<hiddenquest>false</hiddenquest>
+	<friendonly>false</friendonly>
+	<suppressnotifications>false</suppressnotifications>
+	<customquest>false</customquest>
+	<questtype>RandomMap</questtype>
+	<questgamemodetype>Normal</questgamemodetype>
+	<prereqs>
+		<values>
+			<or>
+				<values>
+					<civilization>
+						<id>1</id>
+					</civilization>
+					<civilization>
+						<id>0</id>
+					</civilization>
+					<civilization>
+						<id>0</id>
+					</civilization>
+				</values>
+			</or>
+		</values>
+	</prereqs>
+	<equipmentprereqs/>
+	<targets/>
+	<objectives id="0" mustfailall="false">
+		<values>
+			<collectresource id="1">
+				<description>$$2389$$</description>
+				<type>Wood</type>
+				<amount>999999</amount>
+				<includeexisting>false</includeexisting>
+			</collectresource>
+		</values>
+	</objectives>
+	<onaccept/>
+	<rewards visible="true">
+		<xp visible="true"/>
+		<capitalresource visible="true">
+			<capitalresource>cCapResCoin</capitalresource>
+			<amount>1</amount>
+		</capitalresource>
+	</rewards>
+	<playersettings id="1">
+		<team>1</team>
+		<color>1</color>
+		<playertype>Human</playertype>
+		<cooponly>false</cooponly>
+		<startingfood>-1</startingfood>
+		<startingwood>-1</startingwood>
+		<startinggold>-1</startinggold>
+		<startingstone>-1</startingstone>
+		<aislidervariables/>
+		<aiflagvariables/>
+	</playersettings>
+	<playersettings id="2">
+		<team>2</team>
+		<color>2</color>
+		<playertype>Computer</playertype>
+		<cooponly>false</cooponly>
+		<startingfood>-1</startingfood>
+		<startingwood>-1</startingwood>
+		<startinggold>-1</startinggold>
+		<startingstone>-1</startingstone>
+		<aislidervariables/>
+		<aiflagvariables/>
+	</playersettings>
+	<playersettings id="3">
+		<team>1</team>
+		<color>7</color>
+		<playertype>Human</playertype>
+		<cooponly>true</cooponly>
+		<startingfood>-1</startingfood>
+		<startingwood>-1</startingwood>
+		<startinggold>-1</startinggold>
+		<startingstone>-1</startingstone>
+		<aislidervariables/>
+		<aiflagvariables/>
+	</playersettings>
+	<diplomacysettings/>
+	<randommap>
+		<map>scenarioloader</map>
+		<randommap>true</randommap>
+		<numplayers>3</numplayers>
+		<mapvariables>
+			<variable name="scenarioFile" type="String">DEV/DEV_UNIT_MUSEUM_C03</variable>
+			<variable name="region" type="String">Greek Coast</variable>
+			<variable name="mapSize" type="String">Standard</variable>
+		</mapvariables>
+		<nuggetoverrides/>
+		<mapregionname>Greek Coast</mapregionname>
+		<lightsetname>&lt;Not Specified&gt;</lightsetname>
+		<mapsizename>Standard</mapsizename>
+	</randommap>
+	<questgivers>
+		<protounit>C03_R1_TUNING_CHEAT</protounit>
+	</questgivers>
+	<questreturners>
+		<protounit>C03_R1_TUNING_CHEAT</protounit>
+		<protounit>C01_R1_VillageElder</protounit>
+		<protounit>C02_R1_KingNarmer</protounit>
+	</questreturners>
+	<maplocationx>0.5</maplocationx>
+	<maplocationy>0.5</maplocationy>
+	<mapmarker>QuestDefault</mapmarker>
+	<mappage>C03_Celtica</mappage>
+	<elitespawnchance>0.025</elitespawnchance>
+	<victoryconditions/>
+</quest>

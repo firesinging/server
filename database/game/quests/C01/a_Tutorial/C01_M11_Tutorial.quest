@@ -1,0 +1,121 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<quest xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xsd="http://www.w3.org/2001/XMLSchema" uniqueid="11011" version="126">
+	<displayname>$$4346$$</displayname>
+	<level>0</level>
+	<repeatable>false</repeatable>
+	<timer>
+		<events/>
+		<hideonui>false</hideonui>
+	</timer>
+	<canplaycoop>false</canplaycoop>
+	<cooprequired>false</cooprequired>
+	<ranked>false</ranked>
+	<description>$$3101$$</description>
+	<completiontext>$$2085$$</completiontext>
+	<inprogresstext>$$4348$$</inprogresstext>
+	<summarytext>$$4347$$</summarytext>
+	<canabandon>true</canabandon>
+	<hiddenquest>false</hiddenquest>
+	<friendonly>false</friendonly>
+	<suppressnotifications>false</suppressnotifications>
+	<customquest>false</customquest>
+	<questtype>CapitolCity</questtype>
+	<questgamemodetype>Normal</questgamemodetype>
+	<prereqs>
+		<values>
+			<civilization>
+				<id>1</id>
+			</civilization>
+			<questcomplete>
+				<id>11029</id>
+			</questcomplete>
+		</values>
+	</prereqs>
+	<equipmentprereqs/>
+	<targets/>
+	<objectives id="0" mustfailall="false">
+		<values>
+			<or id="1" mustfailall="false">
+				<description>$$4349$$</description>
+				<values>
+					<ownsequipment id="2">
+						<equipmentid>3</equipmentid>
+					</ownsequipment>
+					<ownsequipment id="3">
+						<equipmentid>44</equipmentid>
+					</ownsequipment>
+					<ownsequipment id="4">
+						<equipmentid>47</equipmentid>
+					</ownsequipment>
+					<ownsequipment id="5">
+						<equipmentid>50</equipmentid>
+					</ownsequipment>
+					<ownsequipment id="6">
+						<equipmentid>53</equipmentid>
+					</ownsequipment>
+					<ownsequipment id="7">
+						<equipmentid>71</equipmentid>
+					</ownsequipment>
+					<ownsequipment id="8">
+						<equipmentid>67</equipmentid>
+					</ownsequipment>
+					<ownsequipment id="9">
+						<equipmentid>838</equipmentid>
+					</ownsequipment>
+					<ownsequipment id="10">
+						<equipmentid>93</equipmentid>
+					</ownsequipment>
+					<ownsequipment id="11">
+						<equipmentid>102</equipmentid>
+					</ownsequipment>
+					<ownsequipment id="12">
+						<equipmentid>58</equipmentid>
+					</ownsequipment>
+				</values>
+			</or>
+		</values>
+	</objectives>
+	<onaccept>
+		<unlockequipment visible="true"/>
+	</onaccept>
+	<rewards visible="true">
+		<xp visible="true">100</xp>
+		<capitalresource visible="true">
+			<capitalresource>cCapResCoin</capitalresource>
+			<amount>20</amount>
+		</capitalresource>
+		<consumable visible="true">
+			<consumablename>ConsumableBanditArcher_U</consumablename>
+			<count>2</count>
+		</consumable>
+		<capitaltech visible="true">
+			<captechid>111</captechid>
+		</capitaltech>
+		<enableprotip visible="false">TIP_UI_TechTree_Reset</enableprotip>
+		<protip visible="false">TIP_C01_QuestTechUnlock_Farm</protip>
+	</rewards>
+	<diplomacysettings/>
+	<randommap>
+		<randommap>false</randommap>
+		<numplayers>0</numplayers>
+		<mapvariables/>
+		<nuggetoverrides/>
+		<mapregionname>&lt;Not Specified&gt;</mapregionname>
+		<lightsetname>&lt;Not Specified&gt;</lightsetname>
+		<mapsizename>&lt;Not Specified&gt;</mapsizename>
+	</randommap>
+	<questgivers>
+		<protounit>C01_R1_VillageElder</protounit>
+	</questgivers>
+	<questreturners>
+		<protounit>C01_R1_VillageElder</protounit>
+	</questreturners>
+	<maplocationx>0.5</maplocationx>
+	<maplocationy>0.5</maplocationy>
+	<mapmarker>Blank</mapmarker>
+	<mappage>Greece</mappage>
+	<elitespawnchance>0</elitespawnchance>
+	<questbasescale>0</questbasescale>
+	<victoryconditions/>
+</quest>

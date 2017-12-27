@@ -1,0 +1,270 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<quest xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xsd="http://www.w3.org/2001/XMLSchema" uniqueid="13925" version="13">
+	<displayname>$$12887$$</displayname>
+	<level>-1</level>
+	<difficultycoloroverride>2</difficultycoloroverride>
+	<repeatable>true</repeatable>
+	<timer>
+		<time>00:11:00</time>
+		<events/>
+		<hideonui>false</hideonui>
+	</timer>
+	<canplaycoop>false</canplaycoop>
+	<cooprequired>false</cooprequired>
+	<ranked>false</ranked>
+	<alliance>eAllianceNone</alliance>
+	<questtype>RandomMap</questtype>
+	<description>$$9021$$</description>
+	<completiontext>$$7835$$</completiontext>
+	<inprogresstext>$$9022$$</inprogresstext>
+	<summarytext>$$9023$$</summarytext>
+	<repeatableduration>12</repeatableduration>
+	<canabandon>true</canabandon>
+	<hiddenquest>false</hiddenquest>
+	<friendonly>false</friendonly>
+	<suppressnotifications>false</suppressnotifications>
+	<customquest>false</customquest>
+	<questgamemodetype>Normal</questgamemodetype>
+	<prereqs>
+		<values>
+			<civilization>
+				<id>6</id>
+			</civilization>
+			<questcomplete>
+				<id>13020</id>
+			</questcomplete>
+		</values>
+	</prereqs>
+	<equipmentprereqs/>
+	<targets>
+		<grouping>
+			<cooponly>false</cooponly>
+			<forcetocenter>false</forcetocenter>
+			<name>EnemySpawn</name>
+			<count>1</count>
+			<team>2</team>
+			<area>Quest_Area_A</area>
+			<groupfilename>C03\Custom\C03_Side_LevelScale</groupfilename>
+			<rottype>Rotate0</rottype>
+			<rotateunitorientations>false</rotateunitorientations>
+		</grouping>
+	</targets>
+	<objectives id="0" mustfailall="false">
+		<values>
+			<or id="1" mustfailall="false">
+				<values>
+					<timer id="2">
+						<description>$$2471$$</description>
+						<failonexpire>true</failonexpire>
+					</timer>
+					<kill id="3">
+						<description>$$3707$$</description>
+						<type>Ce_Bldg_TownCenter</type>
+						<count>1</count>
+						<includeconversion>true</includeconversion>
+						<onlycountelites>false</onlycountelites>
+					</kill>
+					<reduceunitsto id="4">
+						<type>LogicalTypeNeededForVictory</type>
+						<count>0</count>
+						<includeteam>true</includeteam>
+						<includeunderconstruction>false</includeunderconstruction>
+						<canuncomplete>false</canuncomplete>
+						<causesfailure>true</causesfailure>
+						<playerid>1</playerid>
+					</reduceunitsto>
+				</values>
+			</or>
+		</values>
+	</objectives>
+	<secondaryobjectives id="5" mustfailall="false" rewardname="Optional">
+		<description>$$9658$$</description>
+		<values>
+			<or id="6" mustfailall="false">
+				<values>
+					<timer id="7">
+						<description>$$2471$$</description>
+						<failonexpire>true</failonexpire>
+					</timer>
+					<dummy id="8">
+						<description>$$10089$$</description>
+						<objectivename>TimeFailed</objectivename>
+						<autocomplete>false</autocomplete>
+					</dummy>
+					<kill id="9">
+						<description/>
+						<type>Ce_Bldg_TownCenter</type>
+						<count>1</count>
+						<includeconversion>true</includeconversion>
+						<onlycountelites>false</onlycountelites>
+					</kill>
+				</values>
+			</or>
+		</values>
+	</secondaryobjectives>
+	<onaccept/>
+	<rewards visible="true">
+		<xp visible="true">
+			1
+			<lookuptable>EliteVShort</lookuptable>
+		</xp>
+		<capitalresource visible="true">
+			<capitalresource>cCapResCoin</capitalresource>
+			<amount>1</amount>
+			<lookuptable>EliteVShort</lookuptable>
+		</capitalresource>
+		<loottable visible="true">general</loottable>
+		<loottable visible="true">general</loottable>
+	</rewards>
+	<secondaryrewards visible="true" name="Optional">
+		<capitalresource visible="true">
+			<capitalresource>cCapResCoin</capitalresource>
+			<amount>1</amount>
+			<lookuptable>EliteOptCoin</lookuptable>
+		</capitalresource>
+		<loottable visible="true">general</loottable>
+	</secondaryrewards>
+	<playersettings id="1">
+		<team>1</team>
+		<color>1</color>
+		<tributablebehavior>Default</tributablebehavior>
+		<playertype>Human</playertype>
+		<cooponly>false</cooponly>
+		<startingfood>-1</startingfood>
+		<startingwood>-1</startingwood>
+		<startinggold>-1</startinggold>
+		<startingstone>-1</startingstone>
+		<aislidervariables/>
+		<aiflagvariables/>
+	</playersettings>
+	<playersettings id="2">
+		<team>2</team>
+		<color>2</color>
+		<tributablebehavior>Default</tributablebehavior>
+		<playertype>Computer</playertype>
+		<personality>$$8970$$</personality>
+		<script>CORE\Rush_Moderate</script>
+		<dataset>C03\C03_CoreRushAllLevels</dataset>
+		<cooponly>false</cooponly>
+		<startingfood>2000</startingfood>
+		<startingwood>600</startingwood>
+		<startinggold>600</startinggold>
+		<startingstone>600</startingstone>
+		<aislidervariables>
+			<aivariable>
+				<key>ArcherBias</key>
+				<value>-1</value>
+			</aivariable>
+			<aivariable>
+				<key>CavalryBias</key>
+				<value>-1</value>
+			</aivariable>
+			<aivariable>
+				<key>SiegeBias</key>
+				<value>-1</value>
+			</aivariable>
+			<aivariable>
+				<key>NavyBias</key>
+				<value>-1</value>
+			</aivariable>
+			<aivariable>
+				<key>EconomyHandicap</key>
+				<value>-0.6</value>
+			</aivariable>
+		</aislidervariables>
+		<aiflagvariables>
+			<aivariable>
+				<key>NoResign</key>
+				<value>0</value>
+			</aivariable>
+		</aiflagvariables>
+	</playersettings>
+	<playersettings id="3">
+		<team>3</team>
+		<color>2</color>
+		<tributablebehavior>Default</tributablebehavior>
+		<playertype>Computer</playertype>
+		<personality>$$8970$$</personality>
+		<dataset>C03\C03_CoreRushAllLevels</dataset>
+		<cooponly>false</cooponly>
+		<startingfood>-1</startingfood>
+		<startingwood>-1</startingwood>
+		<startinggold>-1</startinggold>
+		<startingstone>-1</startingstone>
+		<aislidervariables/>
+		<aiflagvariables/>
+	</playersettings>
+	<playersettings id="4">
+		<team>2</team>
+		<color>2</color>
+		<tributablebehavior>Default</tributablebehavior>
+		<playertype>Computer</playertype>
+		<personality>$$8970$$</personality>
+		<script/>
+		<dataset>C03\C03_CoreRushAllLevels</dataset>
+		<cooponly>false</cooponly>
+		<startingfood>0</startingfood>
+		<startingwood>0</startingwood>
+		<startinggold>0</startinggold>
+		<startingstone>0</startingstone>
+		<aislidervariables>
+			<aivariable>
+				<key>ArcherBias</key>
+				<value>1</value>
+			</aivariable>
+			<aivariable>
+				<value>0</value>
+			</aivariable>
+		</aislidervariables>
+		<aiflagvariables>
+			<aivariable>
+				<key>NoResign</key>
+				<value>0</value>
+			</aivariable>
+			<aivariable>
+				<key>UseWaves</key>
+				<value>0</value>
+			</aivariable>
+		</aiflagvariables>
+	</playersettings>
+	<diplomacysettings>
+		<diplomacy relation="Neutral" team1="2" team2="3" sharedlos="false"/>
+		<diplomacy relation="Neutral" team1="3" team2="2" sharedlos="false"/>
+	</diplomacysettings>
+	<randommap>
+		<map>Core\C03\C03_Side_RushTactics</map>
+		<randommap>true</randommap>
+		<numplayers>4</numplayers>
+		<mapvariables>
+			<variable name="scenarioFile" type="String">C03/C03_Side_RushTactics</variable>
+			<variable name="QuestID" type="Int">13925</variable>
+			<variable name="OptionalRestrictTime" type="Bool">true</variable>
+			<variable name="TimeFailedMinutes" type="Int">3</variable>
+			<variable name="P2AddMarketManager" type="Bool">true</variable>
+			<variable name="bIsELITE" type="Bool">true</variable>
+			<variable name="ForcedPlayerLevel" type="Int">7</variable>
+			<variable name="region" type="String">Celtic Valley</variable>
+			<variable name="lighting" type="String">Afternoon</variable>
+			<variable name="mapSize" type="String">Standard</variable>
+		</mapvariables>
+		<nuggetoverrides/>
+		<mapregionname>Celtic Valley</mapregionname>
+		<lightsetname>Afternoon</lightsetname>
+		<mapsizename>Standard</mapsizename>
+	</randommap>
+	<questgivers>
+		<protounit>C03_R1_Explorer</protounit>
+	</questgivers>
+	<questreturners>
+		<protounit>C03_R1_Explorer</protounit>
+	</questreturners>
+	<maplocationx>0.31</maplocationx>
+	<maplocationy>0.51</maplocationy>
+	<mapmarker>QuestRepeatable</mapmarker>
+	<mappage>C03_Celtica</mappage>
+	<elitespawnchance>1</elitespawnchance>
+	<linkedquestid>0</linkedquestid>
+	<questbasescale>3</questbasescale>
+	<victoryconditions/>
+</quest>

@@ -1,0 +1,109 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<quest xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xsd="http://www.w3.org/2001/XMLSchema" uniqueid="11202" version="77">
+	<displayname>$$2834$$</displayname>
+	<level>0</level>
+	<repeatable>false</repeatable>
+	<timer>
+		<events/>
+		<hideonui>false</hideonui>
+	</timer>
+	<canplaycoop>false</canplaycoop>
+	<cooprequired>false</cooprequired>
+	<ranked>false</ranked>
+	<description>$$2075$$</description>
+	<completiontext>$$2076$$</completiontext>
+	<inprogresstext>$$2077$$</inprogresstext>
+	<summarytext>$$2078$$</summarytext>
+	<canabandon>false</canabandon>
+	<hiddenquest>false</hiddenquest>
+	<friendonly>false</friendonly>
+	<suppressnotifications>false</suppressnotifications>
+	<customquest>false</customquest>
+	<questtype>CapitolCity</questtype>
+	<questgamemodetype>Normal</questgamemodetype>
+	<prereqs>
+		<values>
+			<civilization>
+				<id>1</id>
+			</civilization>
+			<questcomplete>
+				<id>11201</id>
+			</questcomplete>
+		</values>
+	</prereqs>
+	<equipmentprereqs/>
+	<targets/>
+	<objectives id="0" mustfailall="false">
+		<values>
+			<ownsunit id="1">
+				<description>$$3649$$</description>
+				<type>Gr_Cap_SkillBuilding</type>
+				<count>1</count>
+			</ownsunit>
+		</values>
+	</objectives>
+	<onaccept>
+		<blueprint visible="false">GreekSkillBldg</blueprint>
+		<enableprotip visible="false">TIP_UI_GearHall_FirstUse</enableprotip>
+		<protip visible="false" proto="Gr_Cap_Warehouse03Starting">TIP_Shared_BuildingBlueprintUsage</protip>
+	</onaccept>
+	<rewards visible="true">
+		<xp visible="true">100</xp>
+		<trait visible="true">
+			ArmorMed_R002
+			<traitlevel>5</traitlevel>
+		</trait>
+		<trait visible="true">
+			ArmorBldg_U013
+			<traitlevel>5</traitlevel>
+		</trait>
+		<trait visible="true">
+			Gear_U017
+			<traitlevel>5</traitlevel>
+		</trait>
+		<trait visible="true">
+			Scout1H_U001
+			<traitlevel>6</traitlevel>
+		</trait>
+		<trait visible="true">
+			ArmorLgt_U012
+			<traitlevel>6</traitlevel>
+		</trait>
+		<trait visible="true">
+			ArmorPlt_U020
+			<traitlevel>6</traitlevel>
+		</trait>
+		<trait visible="true">
+			FishingNet1H_U008
+			<traitlevel>6</traitlevel>
+		</trait>
+		<trait visible="true">
+			Tool1H_U020
+			<traitlevel>6</traitlevel>
+		</trait>
+		<protip visible="false" proto="Gr_Cap_Warehouse03Starting">TIP_Shared_FirstNewGear</protip>
+	</rewards>
+	<diplomacysettings/>
+	<randommap>
+		<randommap>false</randommap>
+		<numplayers>0</numplayers>
+		<mapvariables/>
+		<nuggetoverrides/>
+		<mapregionname>&lt;Not Specified&gt;</mapregionname>
+		<lightsetname>&lt;Not Specified&gt;</lightsetname>
+		<mapsizename>&lt;Not Specified&gt;</mapsizename>
+	</randommap>
+	<questgivers>
+		<protounit>C01_R1_VillageElder</protounit>
+	</questgivers>
+	<questreturners>
+		<protounit>C01_R1_VillageElder</protounit>
+	</questreturners>
+	<maplocationx>0.5</maplocationx>
+	<maplocationy>0.5</maplocationy>
+	<mapmarker>QuestDefault</mapmarker>
+	<mappage>Greece</mappage>
+	<elitespawnchance>0</elitespawnchance>
+	<victoryconditions/>
+</quest>

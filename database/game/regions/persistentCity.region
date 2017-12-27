@@ -1,0 +1,11 @@
+<?xml version="1.0"?>
+<Region xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xsd="http://www.w3.org/2001/XMLSchema" ID="0">
+  <Name>My Capital City</Name>
+  <MapLocationX>0.228</MapLocationX>
+  <MapLocationY>0.206</MapLocationY>
+  <MapMarker>CapitalCity</MapMarker>
+  <MapPage>Greece</MapPage>
+  <LoadScreen />
+  <DescriptionStringID>53213</DescriptionStringID>
+  <DisplayNameStringID>-1</DisplayNameStringID>
+</Region>

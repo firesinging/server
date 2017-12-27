@@ -1,0 +1,16 @@
+<?xml version="1.0"?>
+<Region xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xsd="http://www.w3.org/2001/XMLSchema" ID="22">
+    <Name>Carthage</Name>
+    <PlayList>Carthage</PlayList>
+    <MapName>Regions/REGION_A03_Carthage</MapName>
+    <MapLocationX>0.225</MapLocationX>
+    <MapLocationY>0.225</MapLocationY>
+    <MapMarker>RegionDefault</MapMarker>
+    <MapPage>Egypt</MapPage>
+    <LoadScreen>UserInterface/LoadingScreens/CarthageLoading_df</LoadScreen>
+    <DescriptionStringID>65727</DescriptionStringID>
+    <DisplayNameStringID>65720</DisplayNameStringID>
+    <AvatarShield>UserInterface\Avatar\RegionShield_Alliance_Carthage</AvatarShield>
+    <FlagIcon>UserInterface\Icons\Regions\RegionFlagArgos_ua</FlagIcon>
+    <Alliance>true</Alliance>
+</Region>

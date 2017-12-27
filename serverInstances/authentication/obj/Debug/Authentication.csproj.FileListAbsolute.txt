@@ -1,0 +1,14 @@
+D:\Development\server\serverInstances\authentication\bin\Debug\Authentication.dll
+D:\Development\server\serverInstances\authentication\bin\Debug\Authentication.pdb
+D:\Development\server\serverInstances\authentication\bin\Debug\Libraries.dll
+D:\Development\server\serverInstances\authentication\bin\Debug\SuperSocket.Facility.dll
+D:\Development\server\serverInstances\authentication\bin\Debug\SuperSocket.SocketBase.dll
+D:\Development\server\serverInstances\authentication\bin\Debug\SuperSocket.Common.dll
+D:\Development\server\serverInstances\authentication\bin\Debug\Libraries.pdb
+D:\Development\server\serverInstances\authentication\bin\Debug\SuperSocket.Facility.xml
+D:\Development\server\serverInstances\authentication\bin\Debug\SuperSocket.SocketBase.xml
+D:\Development\server\serverInstances\authentication\bin\Debug\SuperSocket.Common.xml
+D:\Development\server\serverInstances\authentication\obj\Debug\Authentication.csprojResolveAssemblyReference.cache
+D:\Development\server\serverInstances\authentication\obj\Debug\Authentication.dll
+D:\Development\server\serverInstances\authentication\obj\Debug\Authentication.pdb
+D:\Development\server\serverInstances\authentication\bin\Debug\Ionic.Zip.dll

@@ -1,0 +1,91 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<quest xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xsd="http://www.w3.org/2001/XMLSchema" uniqueid="12051" version="42">
+	<displayname>$$4624$$</displayname>
+	<level>0</level>
+	<repeatable>false</repeatable>
+	<timer>
+		<time/>
+		<events/>
+		<hideonui>false</hideonui>
+	</timer>
+	<canplaycoop>false</canplaycoop>
+	<cooprequired>false</cooprequired>
+	<ranked>false</ranked>
+	<description>$$5717$$</description>
+	<completiontext>$$5093$$</completiontext>
+	<inprogresstext>$$5716$$</inprogresstext>
+	<summarytext>$$4494$$</summarytext>
+	<canabandon>false</canabandon>
+	<hiddenquest>false</hiddenquest>
+	<friendonly>false</friendonly>
+	<suppressnotifications>true</suppressnotifications>
+	<customquest>false</customquest>
+	<questtype>CapitolCity</questtype>
+	<questgamemodetype>Normal</questgamemodetype>
+	<prereqs>
+		<values>
+			<civilization>
+				<id>3</id>
+			</civilization>
+			<questcomplete>
+				<id>141</id>
+			</questcomplete>
+		</values>
+	</prereqs>
+	<equipmentprereqs/>
+	<targets/>
+	<objectives id="0" mustfailall="false">
+		<description/>
+		<values>
+			<or id="1" mustfailall="false">
+				<description>$$4623$$</description>
+				<values>
+					<unitdiscovered id="2">
+						<type>C02_R1_CitySesostris</type>
+						<count>1</count>
+					</unitdiscovered>
+					<ownsunit id="3">
+						<type>C02_R1_CitySesostris</type>
+						<count>1</count>
+					</ownsunit>
+				</values>
+			</or>
+		</values>
+	</objectives>
+	<onaccept>
+		<questgiver visible="false">
+			<name>C02_R1_CitySesostris</name>
+			<status>Available</status>
+		</questgiver>
+	</onaccept>
+	<rewards visible="true">
+		<capitalresource visible="true">
+			<capitalresource>cCapResCoin</capitalresource>
+			<amount>50</amount>
+		</capitalresource>
+	</rewards>
+	<diplomacysettings/>
+	<randommap>
+		<map/>
+		<randommap>false</randommap>
+		<numplayers>0</numplayers>
+		<mapvariables/>
+		<nuggetoverrides/>
+		<mapregionname>&lt;Not Specified&gt;</mapregionname>
+		<lightsetname>&lt;Not Specified&gt;</lightsetname>
+		<mapsizename>&lt;Not Specified&gt;</mapsizename>
+	</randommap>
+	<questgivers>
+		<protounit>C02_R1_KingNarmer</protounit>
+	</questgivers>
+	<questreturners>
+		<protounit>C02_R1_CitySesostris</protounit>
+	</questreturners>
+	<maplocationx>0.5</maplocationx>
+	<maplocationy>0.5</maplocationy>
+	<mapmarker>Blank</mapmarker>
+	<mappage>Egypt</mappage>
+	<elitespawnchance>0</elitespawnchance>
+	<victoryconditions/>
+</quest>

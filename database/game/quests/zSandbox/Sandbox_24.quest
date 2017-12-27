@@ -1,0 +1,178 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<quest xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xsd="http://www.w3.org/2001/XMLSchema" uniqueid="10124" version="128">
+	<displayname>$$3896$$</displayname>
+	<level>-1</level>
+	<repeatable>false</repeatable>
+	<timer>
+		<time>00:04:00</time>
+		<events/>
+		<hideonui>false</hideonui>
+	</timer>
+	<canplaycoop>false</canplaycoop>
+	<cooprequired>false</cooprequired>
+	<ranked>false</ranked>
+	<alliance>eAllianceNone</alliance>
+	<questtype>RandomMap</questtype>
+	<description>$$15$$</description>
+	<completiontext>$$5$$</completiontext>
+	<inprogresstext>$$1224$$</inprogresstext>
+	<summarytext>$$1832$$</summarytext>
+	<canabandon>true</canabandon>
+	<hiddenquest>false</hiddenquest>
+	<friendonly>false</friendonly>
+	<suppressnotifications>false</suppressnotifications>
+	<customquest>false</customquest>
+	<questgamemodetype>Normal</questgamemodetype>
+	<prereqs>
+		<values>
+			<civilization>
+				<id>1</id>
+			</civilization>
+			<level>
+				<min>99</min>
+				<max>99</max>
+			</level>
+		</values>
+	</prereqs>
+	<equipmentprereqs/>
+	<targets/>
+	<objectives id="0" mustfailall="false">
+		<description>$$9656$$</description>
+		<values>
+			<or id="1" mustfailall="false">
+				<values>
+					<timer id="2">
+						<description>$$2471$$</description>
+						<failonexpire>false</failonexpire>
+					</timer>
+					<protectunit id="3">
+						<description>$$13277$$</description>
+						<type>UnitTypeBldgFortress</type>
+						<owningplayerid>1</owningplayerid>
+					</protectunit>
+				</values>
+			</or>
+		</values>
+	</objectives>
+	<secondaryobjectives id="4" mustfailall="false" rewardname="Optional_One">
+		<description>$$9507$$</description>
+		<values>
+			<or id="5" mustfailall="false">
+				<values>
+					<timer id="6">
+						<description/>
+						<failonexpire>false</failonexpire>
+					</timer>
+					<dummy id="7">
+						<description>$$13319$$</description>
+						<objectivename>OptionalRestrictLoseNoFactories</objectivename>
+						<autocomplete>false</autocomplete>
+					</dummy>
+				</values>
+			</or>
+		</values>
+	</secondaryobjectives>
+	<secondaryobjectives id="8" mustfailall="false" rewardname="Optional_Two">
+		<description>$$9508$$</description>
+		<values>
+			<or id="9" mustfailall="false">
+				<values>
+					<timer id="10">
+						<description/>
+						<failonexpire>false</failonexpire>
+					</timer>
+					<dummy id="11">
+						<description>$$13318$$</description>
+						<objectivename>OptionalRestrictTraining</objectivename>
+						<autocomplete>false</autocomplete>
+					</dummy>
+				</values>
+			</or>
+		</values>
+	</secondaryobjectives>
+	<onaccept/>
+	<rewards visible="true">
+		<xp visible="true"/>
+		<capitalresource visible="true">
+			<capitalresource>cCapResCoin</capitalresource>
+			<amount>1</amount>
+		</capitalresource>
+	</rewards>
+	<secondaryrewards visible="true" name="Optional_One">
+		<capitalresource visible="true">
+			<capitalresource>cCapResCoin</capitalresource>
+			<amount>1</amount>
+		</capitalresource>
+	</secondaryrewards>
+	<secondaryrewards visible="true" name="Optional_Two">
+		<capitalresource visible="true">
+			<capitalresource>cCapResCoin</capitalresource>
+			<amount>1</amount>
+		</capitalresource>
+	</secondaryrewards>
+	<playersettings id="1">
+		<team>1</team>
+		<color>1</color>
+		<tributablebehavior>Default</tributablebehavior>
+		<playertype>Human</playertype>
+		<cooponly>false</cooponly>
+		<startingfood>5000</startingfood>
+		<startingwood>5000</startingwood>
+		<startinggold>5000</startinggold>
+		<startingstone>0</startingstone>
+		<aislidervariables/>
+		<aiflagvariables/>
+	</playersettings>
+	<playersettings id="2">
+		<team>2</team>
+		<color>2</color>
+		<tributablebehavior>Default</tributablebehavior>
+		<playertype>Computer</playertype>
+		<dataset/>
+		<cooponly>false</cooponly>
+		<startingfood>5000</startingfood>
+		<startingwood>5000</startingwood>
+		<startinggold>5000</startinggold>
+		<startingstone>5000</startingstone>
+		<aislidervariables/>
+		<aiflagvariables/>
+	</playersettings>
+	<diplomacysettings/>
+	<randommap>
+		<map>core\shared\shared_survival</map>
+		<randommap>true</randommap>
+		<numplayers>2</numplayers>
+		<mapvariables>
+			<variable name="scenarioFile" type="String">Shared/Shared_Survival</variable>
+			<variable name="QuestID" type="Int">10124</variable>
+			<variable name="OptionalRestrictTraining" type="Bool">true</variable>
+			<variable name="MainPlayerID" type="Int">1</variable>
+			<variable name="OptionalRestrictInf" type="Bool">true</variable>
+			<variable name="OptionalRestrictArc" type="Bool">true</variable>
+			<variable name="OptionalRestrictSie" type="Bool">true</variable>
+			<variable name="OptionalRestrictSpc" type="Bool">true</variable>
+			<variable name="OptionalRestrictShp" type="Bool">true</variable>
+			<variable name="OptionalRestrictCav" type="Bool">true</variable>
+			<variable name="OptionalRestrictLoseNoFactories" type="Bool">true</variable>
+			<variable name="InfFactoryCount" type="Int">2</variable>
+			<variable name="ArcFactoryCount" type="Int">2</variable>
+			<variable name="CavFactoryCount" type="Int">2</variable>
+			<variable name="region" type="String">Italian Country</variable>
+		</mapvariables>
+		<nuggetoverrides/>
+		<mapregionname>Italian Country</mapregionname>
+		<lightsetname>&lt;Not Specified&gt;</lightsetname>
+		<mapsizename>&lt;Not Specified&gt;</mapsizename>
+	</randommap>
+	<questgivers/>
+	<questreturners/>
+	<maplocationx>0.5</maplocationx>
+	<maplocationy>0.5</maplocationy>
+	<mapmarker>QuestDefault</mapmarker>
+	<mappage>Greece</mappage>
+	<elitespawnchance>0.025</elitespawnchance>
+	<linkedquestid>0</linkedquestid>
+	<questbasescale>0</questbasescale>
+	<victoryconditions/>
+</quest>

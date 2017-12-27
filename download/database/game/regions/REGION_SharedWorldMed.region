@@ -1,0 +1,9 @@
+<?xml version="1.0"?>
+<Region xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xsd="http://www.w3.org/2001/XMLSchema" ID="16">
+  <Name>Mediterranean</Name>
+  <MapMarker>RegionDefault</MapMarker>
+  <MapPage>WorldMapMed</MapPage>
+  <LoadScreen />
+  <DescriptionStringID>25513</DescriptionStringID>
+  <DisplayNameStringID>51256</DisplayNameStringID>
+</Region>

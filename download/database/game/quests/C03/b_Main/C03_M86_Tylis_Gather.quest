@@ -1,0 +1,212 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<quest xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xsd="http://www.w3.org/2001/XMLSchema" uniqueid="13035" version="99">
+	<displayname>$$7729$$</displayname>
+	<level>16</level>
+	<repeatable>false</repeatable>
+	<timer>
+		<events/>
+		<hideonui>false</hideonui>
+	</timer>
+	<canplaycoop>false</canplaycoop>
+	<cooprequired>false</cooprequired>
+	<ranked>false</ranked>
+	<alliance>eAllianceNone</alliance>
+	<questtype>RandomMap</questtype>
+	<description>$$9350$$</description>
+	<completiontext>$$270$$</completiontext>
+	<inprogresstext>$$7731$$</inprogresstext>
+	<summarytext>$$8905$$</summarytext>
+	<canabandon>true</canabandon>
+	<hiddenquest>false</hiddenquest>
+	<friendonly>false</friendonly>
+	<suppressnotifications>false</suppressnotifications>
+	<customquest>false</customquest>
+	<questgamemodetype>Normal</questgamemodetype>
+	<prereqs>
+		<values>
+			<civilization>
+				<id>6</id>
+			</civilization>
+			<questcomplete>
+				<id>13034</id>
+			</questcomplete>
+		</values>
+	</prereqs>
+	<equipmentprereqs/>
+	<targets>
+		<protounit>
+			<cooponly>false</cooponly>
+			<forcetocenter>false</forcetocenter>
+			<name>Auggie</name>
+			<protoname>NPC_AuggieR3</protoname>
+			<count>1</count>
+			<team>1</team>
+			<area>Player1</area>
+			<usequesttargetindicator>true</usequesttargetindicator>
+		</protounit>
+	</targets>
+	<objectives id="0" mustfailall="false">
+		<values>
+			<or id="1" mustfailall="false">
+				<values>
+					<and id="2" mustfailall="false">
+						<values>
+							<convertunit id="3">
+								<description>$$2342$$</description>
+								<type>UnitTypeVillager1</type>
+								<count>10</count>
+							</convertunit>
+							<collectresource id="4">
+								<description>$$2373$$</description>
+								<type>Wood</type>
+								<amount>2000</amount>
+								<includeexisting>true</includeexisting>
+							</collectresource>
+							<unitinarea id="5">
+								<description>$$7044$$</description>
+								<area>Quest_Area_A</area>
+								<type>UnitTypeCaravan1</type>
+								<count>1</count>
+								<radius>-1</radius>
+								<aidefend>false</aidefend>
+							</unitinarea>
+						</values>
+					</and>
+					<reduceunitsto id="6">
+						<type>LogicalTypeNeededForVictory</type>
+						<count>0</count>
+						<includeteam>false</includeteam>
+						<includeunderconstruction>false</includeunderconstruction>
+						<canuncomplete>false</canuncomplete>
+						<causesfailure>true</causesfailure>
+						<playerid>1</playerid>
+					</reduceunitsto>
+					<protectunit id="7">
+						<description>$$8355$$</description>
+						<type>NPC_AuggieR3</type>
+						<owningplayerid>1</owningplayerid>
+					</protectunit>
+					<protectunit id="8">
+						<description>$$8356$$</description>
+						<type>Ce_Civ_Caravan</type>
+						<owningplayerid>1</owningplayerid>
+					</protectunit>
+				</values>
+			</or>
+		</values>
+	</objectives>
+	<onaccept/>
+	<rewards visible="true">
+		<xp visible="true">30000</xp>
+		<capitalresource visible="true">
+			<capitalresource>cCapResCoin</capitalresource>
+			<amount>100</amount>
+		</capitalresource>
+		<loottable visible="true">general</loottable>
+		<loottable visible="true">general</loottable>
+		<or visible="true">
+			<trait visible="true">
+				Staff2H_R101
+				<traitlevel>20</traitlevel>
+			</trait>
+			<trait visible="true">
+				Gear_Prst_E101
+				<traitlevel>20</traitlevel>
+			</trait>
+		</or>
+	</rewards>
+	<playersettings id="1">
+		<team>1</team>
+		<color>1</color>
+		<tributablebehavior>Default</tributablebehavior>
+		<playertype>Human</playertype>
+		<cooponly>false</cooponly>
+		<startingfood>0</startingfood>
+		<startingwood>0</startingwood>
+		<startinggold>0</startinggold>
+		<startingstone>0</startingstone>
+		<aislidervariables/>
+		<aiflagvariables/>
+	</playersettings>
+	<playersettings id="2">
+		<team>2</team>
+		<color>2</color>
+		<tributablebehavior>Default</tributablebehavior>
+		<playertype>Computer</playertype>
+		<personality>$$2304$$</personality>
+		<script/>
+		<dataset>C01\C01_CoreRamp_T1</dataset>
+		<cooponly>false</cooponly>
+		<startingfood>0</startingfood>
+		<startingwood>0</startingwood>
+		<startinggold>0</startinggold>
+		<startingstone>0</startingstone>
+		<aislidervariables/>
+		<aiflagvariables/>
+	</playersettings>
+	<playersettings id="3">
+		<team>2</team>
+		<color>2</color>
+		<tributablebehavior>Default</tributablebehavior>
+		<playertype>Computer</playertype>
+		<personality>$$2304$$</personality>
+		<dataset>C01\C01_CoreRush_T1</dataset>
+		<cooponly>false</cooponly>
+		<startingfood>-1</startingfood>
+		<startingwood>-1</startingwood>
+		<startinggold>-1</startinggold>
+		<startingstone>-1</startingstone>
+		<aislidervariables/>
+		<aiflagvariables/>
+	</playersettings>
+	<playersettings id="4">
+		<team>3</team>
+		<color>3</color>
+		<tributablebehavior>Default</tributablebehavior>
+		<playertype>Computer</playertype>
+		<personality>$$8123$$</personality>
+		<dataset>C03\C03_CoreRamp_T1</dataset>
+		<cooponly>false</cooponly>
+		<startingfood>0</startingfood>
+		<startingwood>0</startingwood>
+		<startinggold>0</startinggold>
+		<startingstone>0</startingstone>
+		<aislidervariables/>
+		<aiflagvariables/>
+	</playersettings>
+	<diplomacysettings>
+		<diplomacy relation="Neutral" team1="3" team2="2" sharedlos="false"/>
+		<diplomacy relation="Ally" team1="1" team2="3" sharedlos="true"/>
+		<diplomacy relation="Ally" team1="3" team2="1" sharedlos="true"/>
+		<diplomacy relation="Neutral" team1="2" team2="3" sharedlos="false"/>
+	</diplomacysettings>
+	<randommap>
+		<map>Core/C03/C03_R3M85_GatherWood</map>
+		<randommap>true</randommap>
+		<numplayers>4</numplayers>
+		<mapvariables>
+			<variable name="scenarioFile" type="String">C03/C03_R3M85_GatherWood</variable>
+			<variable name="region" type="String">Greek Inland</variable>
+			<variable name="lighting" type="String">Afternoon</variable>
+		</mapvariables>
+		<nuggetoverrides/>
+		<mapregionname>Greek Inland</mapregionname>
+		<lightsetname>Afternoon</lightsetname>
+		<mapsizename>&lt;Not Specified&gt;</mapsizename>
+	</randommap>
+	<questgivers>
+		<protounit>C03_R3_Brennos</protounit>
+	</questgivers>
+	<questreturners>
+		<protounit>C03_R3_Brennos</protounit>
+	</questreturners>
+	<maplocationx>0.27</maplocationx>
+	<maplocationy>0.67</maplocationy>
+	<mapmarker>QuestDefault</mapmarker>
+	<mappage>Thrace</mappage>
+	<elitespawnchance>0</elitespawnchance>
+	<linkedquestid>0</linkedquestid>
+	<questbasescale>0</questbasescale>
+	<victoryconditions/>
+</quest>

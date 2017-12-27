@@ -1,0 +1,336 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<quest xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xsd="http://www.w3.org/2001/XMLSchema" uniqueid="103001" version="64">
+	<displayname>$$11161$$</displayname>
+	<level>21</level>
+	<repeatable>false</repeatable>
+	<offertype>eOfferNone</offertype>
+	<timer>
+		<events/>
+		<hideonui>false</hideonui>
+	</timer>
+	<canplaycoop>true</canplaycoop>
+	<cooprequired>false</cooprequired>
+	<ranked>false</ranked>
+	<alliance>eAllianceNone</alliance>
+	<questtype>RandomMap</questtype>
+	<description>$$11779$$</description>
+	<completiontext>$$11189$$</completiontext>
+	<inprogresstext>$$11178$$</inprogresstext>
+	<summarytext>$$12486$$</summarytext>
+	<canabandon>true</canabandon>
+	<hiddenquest>false</hiddenquest>
+	<friendonly>false</friendonly>
+	<suppressnotifications>false</suppressnotifications>
+	<customquest>false</customquest>
+	<questgamemodetype>Normal</questgamemodetype>
+	<prereqs>
+		<values>
+			<or>
+				<values>
+					<questcomplete>
+						<id>103000</id>
+					</questcomplete>
+					<questcomplete>
+						<id>103420</id>
+					</questcomplete>
+				</values>
+			</or>
+		</values>
+	</prereqs>
+	<equipmentprereqs/>
+	<targets>
+		<grouping>
+			<cooponly>false</cooponly>
+			<forcetocenter>false</forcetocenter>
+			<name>Player Start</name>
+			<count>1</count>
+			<team>1</team>
+			<area>Player1</area>
+			<groupfilename>shared_player1_age2_barracks</groupfilename>
+			<rottype>Rotate0</rottype>
+			<rotateunitorientations>true</rotateunitorientations>
+		</grouping>
+		<grouping>
+			<cooponly>true</cooponly>
+			<forcetocenter>false</forcetocenter>
+			<name>Player 2 Start</name>
+			<count>1</count>
+			<team>3</team>
+			<area>Player2</area>
+			<groupfilename>shared_player3_age2_barracks</groupfilename>
+			<rottype>Rotate0</rottype>
+			<rotateunitorientations>true</rotateunitorientations>
+		</grouping>
+	</targets>
+	<objectives id="0" mustfailall="false">
+		<values>
+			<or id="1" mustfailall="false">
+				<values>
+					<and id="2" mustfailall="false">
+						<values>
+							<tribute id="3">
+								<description>$$11599$$</description>
+								<type>Stone</type>
+								<amount>1000</amount>
+								<destplayer>5</destplayer>
+							</tribute>
+							<tribute id="4">
+								<description>$$11534$$</description>
+								<type>Gold</type>
+								<amount>1000</amount>
+								<destplayer>4</destplayer>
+							</tribute>
+							<dummy id="5">
+								<description>$$11781$$</description>
+								<objectivename>EnemiesDefeated</objectivename>
+								<autocomplete>false</autocomplete>
+							</dummy>
+						</values>
+					</and>
+					<dummy id="6">
+						<description>$$11777$$</description>
+						<objectivename>UNUSED</objectivename>
+						<autocomplete>false</autocomplete>
+					</dummy>
+					<protectunit id="7">
+						<description/>
+						<type>UnitTypeBldgTownCenter</type>
+						<owningplayerid>4</owningplayerid>
+					</protectunit>
+					<protectunit id="8">
+						<description/>
+						<type>UnitTypeBldgTownCenter</type>
+						<owningplayerid>5</owningplayerid>
+					</protectunit>
+					<reduceunitsto id="9">
+						<type>LogicalTypeNeededForVictory</type>
+						<count>0</count>
+						<includeteam>false</includeteam>
+						<includeunderconstruction>false</includeunderconstruction>
+						<canuncomplete>false</canuncomplete>
+						<causesfailure>true</causesfailure>
+						<playerid>1</playerid>
+					</reduceunitsto>
+				</values>
+			</or>
+		</values>
+	</objectives>
+	<onaccept/>
+	<rewards visible="true">
+		<xp visible="true">90000</xp>
+		<capitalresource visible="true">
+			<capitalresource>cCapResCoin</capitalresource>
+			<amount>150</amount>
+		</capitalresource>
+		<loottable visible="true">general</loottable>
+		<loottable visible="true">general</loottable>
+		<protip visible="false">TIP_B03_DemoTurnIn</protip>
+	</rewards>
+	<playersettings id="1">
+		<team>1</team>
+		<color>1</color>
+		<tributablebehavior>Default</tributablebehavior>
+		<playertype>Human</playertype>
+		<cooponly>false</cooponly>
+		<startingfood>-1</startingfood>
+		<startingwood>-1</startingwood>
+		<startinggold>-1</startinggold>
+		<startingstone>-1</startingstone>
+		<aislidervariables/>
+		<aiflagvariables/>
+	</playersettings>
+	<playersettings id="2">
+		<team>2</team>
+		<color>2</color>
+		<tributablebehavior>Default</tributablebehavior>
+		<playertype>Computer</playertype>
+		<personality>$$11161$$</personality>
+		<script>core\rush_heavy</script>
+		<dataset>c06\c06_corerush_t2</dataset>
+		<cooponly>false</cooponly>
+		<startingfood>-1</startingfood>
+		<startingwood>-1</startingwood>
+		<startinggold>-1</startinggold>
+		<startingstone>-1</startingstone>
+		<aislidervariables>
+			<aivariable>
+				<key>InfantryBias</key>
+				<value>1</value>
+			</aivariable>
+			<aivariable>
+				<key>CavalryBias</key>
+				<value>-1</value>
+			</aivariable>
+			<aivariable>
+				<key>ArcherBias</key>
+				<value>-1</value>
+			</aivariable>
+			<aivariable>
+				<key>SiegeBias</key>
+				<value>-1</value>
+			</aivariable>
+		</aislidervariables>
+		<aiflagvariables/>
+	</playersettings>
+	<playersettings id="3">
+		<team>1</team>
+		<color>7</color>
+		<tributablebehavior>Default</tributablebehavior>
+		<playertype>Human</playertype>
+		<cooponly>true</cooponly>
+		<startingfood>-1</startingfood>
+		<startingwood>-1</startingwood>
+		<startinggold>-1</startinggold>
+		<startingstone>-1</startingstone>
+		<aislidervariables/>
+		<aiflagvariables/>
+	</playersettings>
+	<playersettings id="4">
+		<team>3</team>
+		<color>6</color>
+		<tributablebehavior>Default</tributablebehavior>
+		<playertype>Computer</playertype>
+		<personality>$$11328$$</personality>
+		<script>shared_babylon\babylon_reluctantally</script>
+		<dataset>c06\c06_coreramp_t2</dataset>
+		<cooponly>false</cooponly>
+		<startingfood>0</startingfood>
+		<startingwood>0</startingwood>
+		<startinggold>0</startinggold>
+		<startingstone>0</startingstone>
+		<aislidervariables>
+			<aivariable>
+				<key>CavalryBias</key>
+				<value>1</value>
+			</aivariable>
+			<aivariable>
+				<key>ArcherBias</key>
+				<value>-1</value>
+			</aivariable>
+			<aivariable>
+				<key>InfantryBias</key>
+				<value>-1</value>
+			</aivariable>
+			<aivariable>
+				<key>SiegeBias</key>
+				<value>-1</value>
+			</aivariable>
+		</aislidervariables>
+		<aiflagvariables/>
+	</playersettings>
+	<playersettings id="5">
+		<team>3</team>
+		<color>5</color>
+		<tributablebehavior>Default</tributablebehavior>
+		<playertype>Computer</playertype>
+		<personality>$$11186$$</personality>
+		<script>shared_babylon\babylon_reluctantally</script>
+		<dataset>c06\c06_coreramp_t2</dataset>
+		<cooponly>false</cooponly>
+		<startingfood>0</startingfood>
+		<startingwood>0</startingwood>
+		<startinggold>0</startinggold>
+		<startingstone>0</startingstone>
+		<aislidervariables>
+			<aivariable>
+				<key>SiegeBias</key>
+				<value>0.7</value>
+			</aivariable>
+			<aivariable>
+				<key>InfantryBias</key>
+				<value>0.3</value>
+			</aivariable>
+			<aivariable>
+				<key>CavalryBias</key>
+				<value>-1</value>
+			</aivariable>
+			<aivariable>
+				<key>ArcherBias</key>
+				<value>-1</value>
+			</aivariable>
+		</aislidervariables>
+		<aiflagvariables/>
+	</playersettings>
+	<playersettings id="6">
+		<team>2</team>
+		<color>2</color>
+		<tributablebehavior>Default</tributablebehavior>
+		<playertype>Computer</playertype>
+		<personality>$$11161$$</personality>
+		<script/>
+		<dataset>c06\c06_corerush_t2</dataset>
+		<cooponly>false</cooponly>
+		<startingfood>-1</startingfood>
+		<startingwood>-1</startingwood>
+		<startinggold>-1</startinggold>
+		<startingstone>-1</startingstone>
+		<aislidervariables/>
+		<aiflagvariables/>
+	</playersettings>
+	<playersettings id="7">
+		<team>3</team>
+		<color>6</color>
+		<tributablebehavior>ForceFalse</tributablebehavior>
+		<playertype>Computer</playertype>
+		<personality>$$11328$$</personality>
+		<script/>
+		<dataset>c06\c06_coreramp_t2</dataset>
+		<cooponly>false</cooponly>
+		<startingfood>0</startingfood>
+		<startingwood>0</startingwood>
+		<startinggold>0</startinggold>
+		<startingstone>0</startingstone>
+		<aislidervariables/>
+		<aiflagvariables/>
+	</playersettings>
+	<playersettings id="8">
+		<team>3</team>
+		<color>5</color>
+		<tributablebehavior>ForceFalse</tributablebehavior>
+		<playertype>Computer</playertype>
+		<personality>$$11186$$</personality>
+		<script/>
+		<dataset>c06\c06_coreramp_t2</dataset>
+		<cooponly>false</cooponly>
+		<startingfood>0</startingfood>
+		<startingwood>0</startingwood>
+		<startinggold>0</startinggold>
+		<startingstone>0</startingstone>
+		<aislidervariables/>
+		<aiflagvariables/>
+	</playersettings>
+	<diplomacysettings>
+		<diplomacy relation="Ally" team1="1" team2="3" sharedlos="true"/>
+		<diplomacy relation="Ally" team1="3" team2="1" sharedlos="true"/>
+	</diplomacysettings>
+	<randommap>
+		<map>scenarioloader</map>
+		<randommap>true</randommap>
+		<numplayers>8</numplayers>
+		<mapvariables>
+			<variable name="scenarioFile" type="String">shared_babylon\babylon_m11_babylon_intro</variable>
+			<variable name="EnemiesDefeatedQuestID" type="Int">103001</variable>
+			<variable name="region" type="String">Meso Valley</variable>
+			<variable name="mapSize" type="String">Standard</variable>
+		</mapvariables>
+		<nuggetoverrides/>
+		<mapregionname>Meso Valley</mapregionname>
+		<lightsetname>&lt;Not Specified&gt;</lightsetname>
+		<mapsizename>Standard</mapsizename>
+	</randommap>
+	<questgivers>
+		<protounit>Babylon_Leader</protounit>
+	</questgivers>
+	<questreturners>
+		<protounit>Babylon_Leader</protounit>
+	</questreturners>
+	<customloadscreen>loadscreentips\randoms\load_random_upsell_b03.xml</customloadscreen>
+	<maplocationx>0.52</maplocationx>
+	<maplocationy>0.69</maplocationy>
+	<mapmarker>QuestDefault</mapmarker>
+	<mappage>Persia</mappage>
+	<elitespawnchance>0</elitespawnchance>
+	<questbasescale>0</questbasescale>
+	<victoryconditions/>
+</quest>

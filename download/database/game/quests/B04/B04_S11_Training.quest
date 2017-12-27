@@ -1,0 +1,164 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<quest xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xsd="http://www.w3.org/2001/XMLSchema" uniqueid="104011" version="94">
+	<displayname>$$12638$$</displayname>
+	<level>-1</level>
+	<repeatable>false</repeatable>
+	<offertype>eOfferBooster4</offertype>
+	<timer>
+		<time>00:15:00</time>
+		<events/>
+		<hideonui>false</hideonui>
+	</timer>
+	<canplaycoop>false</canplaycoop>
+	<cooprequired>false</cooprequired>
+	<ranked>false</ranked>
+	<alliance>eAllianceNone</alliance>
+	<questtype>RandomMap</questtype>
+	<description>$$13151$$</description>
+	<completiontext>$$13152$$</completiontext>
+	<inprogresstext>$$13153$$</inprogresstext>
+	<summarytext>$$13001$$</summarytext>
+	<canabandon>true</canabandon>
+	<hiddenquest>false</hiddenquest>
+	<friendonly>false</friendonly>
+	<suppressnotifications>false</suppressnotifications>
+	<customquest>false</customquest>
+	<questgamemodetype>Normal</questgamemodetype>
+	<prereqs>
+		<values>
+			<questcomplete>
+				<id>104001</id>
+			</questcomplete>
+		</values>
+	</prereqs>
+	<equipmentprereqs/>
+	<targets/>
+	<objectives id="0" mustfailall="false">
+		<values>
+			<or id="1" mustfailall="false">
+				<values>
+					<timer id="2">
+						<description>$$2471$$</description>
+						<failonexpire>false</failonexpire>
+					</timer>
+					<protectunit id="3">
+						<description>$$10080$$</description>
+						<type>Ce_Bldg_SacredGrove</type>
+						<owningplayerid>4</owningplayerid>
+					</protectunit>
+					<protectunit id="4">
+						<description>$$12659$$</description>
+						<type>NPC_NorthernHero01</type>
+						<owningplayerid>1</owningplayerid>
+					</protectunit>
+				</values>
+			</or>
+		</values>
+	</objectives>
+	<onaccept/>
+	<rewards visible="true">
+		<xp visible="true">
+			1
+			<lookuptable>B04Short</lookuptable>
+		</xp>
+		<capitalresource visible="true">
+			<capitalresource>cCapResCoin</capitalresource>
+			<amount>1</amount>
+			<lookuptable>B04Short</lookuptable>
+		</capitalresource>
+		<loottable visible="true">general</loottable>
+		<loottable visible="true">general</loottable>
+	</rewards>
+	<playersettings id="1">
+		<team>1</team>
+		<color>1</color>
+		<tributablebehavior>Default</tributablebehavior>
+		<playertype>Human</playertype>
+		<cooponly>false</cooponly>
+		<startingfood>0</startingfood>
+		<startingwood>0</startingwood>
+		<startinggold>50</startinggold>
+		<startingstone>0</startingstone>
+		<aislidervariables/>
+		<aiflagvariables/>
+	</playersettings>
+	<playersettings id="2">
+		<team>2</team>
+		<color>2</color>
+		<tributablebehavior>Default</tributablebehavior>
+		<playertype>Computer</playertype>
+		<personality>$$12666$$</personality>
+		<dataset>c07\c07_vanilla_t0</dataset>
+		<cooponly>false</cooponly>
+		<startingfood>-1</startingfood>
+		<startingwood>-1</startingwood>
+		<startinggold>-1</startinggold>
+		<startingstone>-1</startingstone>
+		<aislidervariables/>
+		<aiflagvariables/>
+	</playersettings>
+	<playersettings id="3">
+		<team>3</team>
+		<color>3</color>
+		<tributablebehavior>Default</tributablebehavior>
+		<playertype>Computer</playertype>
+		<personality>$$12672$$</personality>
+		<dataset>c03\c03_vanilla_t0</dataset>
+		<cooponly>false</cooponly>
+		<startingfood>-1</startingfood>
+		<startingwood>-1</startingwood>
+		<startinggold>-1</startinggold>
+		<startingstone>-1</startingstone>
+		<aislidervariables/>
+		<aiflagvariables/>
+	</playersettings>
+	<playersettings id="4">
+		<team>1</team>
+		<color>3</color>
+		<tributablebehavior>Default</tributablebehavior>
+		<playertype>Computer</playertype>
+		<personality>$$12672$$</personality>
+		<dataset>c03\c03_vanilla_t0</dataset>
+		<cooponly>false</cooponly>
+		<startingfood>-1</startingfood>
+		<startingwood>-1</startingwood>
+		<startinggold>-1</startinggold>
+		<startingstone>-1</startingstone>
+		<aislidervariables/>
+		<aiflagvariables/>
+	</playersettings>
+	<diplomacysettings>
+		<diplomacy relation="Ally" team1="3" team2="1" sharedlos="true"/>
+		<diplomacy relation="Ally" team1="1" team2="3" sharedlos="true"/>
+		<diplomacy relation="Neutral" team1="2" team2="3" sharedlos="false"/>
+	</diplomacysettings>
+	<randommap>
+		<map>Core\B04\B04_Arc1_1</map>
+		<randommap>true</randommap>
+		<numplayers>4</numplayers>
+		<mapvariables>
+			<variable name="scenarioFile" type="String">B04/B04_Arc1_1</variable>
+			<variable name="region" type="String">Celtic Valley</variable>
+			<variable name="mapSize" type="String">Standard</variable>
+		</mapvariables>
+		<nuggetoverrides/>
+		<mapregionname>Celtic Valley</mapregionname>
+		<lightsetname>&lt;Not Specified&gt;</lightsetname>
+		<mapsizename>Standard</mapsizename>
+	</randommap>
+	<questgivers>
+		<protounit>B04_PrimaryQG</protounit>
+	</questgivers>
+	<questreturners>
+		<protounit>B04_PrimaryQG</protounit>
+	</questreturners>
+	<maplocationx>0.6</maplocationx>
+	<maplocationy>0.45</maplocationy>
+	<mapmarker>QuestDefault</mapmarker>
+	<mappage>C03_Celtica</mappage>
+	<elitespawnchance>0</elitespawnchance>
+	<linkedquestid>0</linkedquestid>
+	<questbasescale>0</questbasescale>
+	<victoryconditions/>
+</quest>

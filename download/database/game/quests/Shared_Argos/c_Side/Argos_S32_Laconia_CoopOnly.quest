@@ -1,0 +1,221 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<quest xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xsd="http://www.w3.org/2001/XMLSchema" uniqueid="383" version="46">
+	<displayname>$$790$$</displayname>
+	<level>27</level>
+	<repeatable>false</repeatable>
+	<offertype>eOfferNone</offertype>
+	<timer>
+		<time>00:61:00</time>
+		<events/>
+		<hideonui>true</hideonui>
+	</timer>
+	<canplaycoop>true</canplaycoop>
+	<cooprequired>true</cooprequired>
+	<ranked>false</ranked>
+	<alliance>eAllianceNone</alliance>
+	<questtype>RandomMap</questtype>
+	<description>$$791$$</description>
+	<completiontext>$$792$$</completiontext>
+	<inprogresstext>$$1636$$</inprogresstext>
+	<summarytext>$$3804$$</summarytext>
+	<canabandon>true</canabandon>
+	<hiddenquest>false</hiddenquest>
+	<friendonly>false</friendonly>
+	<suppressnotifications>false</suppressnotifications>
+	<customquest>false</customquest>
+	<questgamemodetype>Normal</questgamemodetype>
+	<prereqs>
+		<values>
+			<questcomplete>
+				<id>368</id>
+			</questcomplete>
+		</values>
+	</prereqs>
+	<equipmentprereqs/>
+	<targets>
+		<grouping>
+			<cooponly>false</cooponly>
+			<forcetocenter>false</forcetocenter>
+			<name>Player1</name>
+			<count>1</count>
+			<team>1</team>
+			<area>Player1</area>
+			<groupfilename>Shared_Player1_Age2_Barracks</groupfilename>
+			<rottype>Rotate0</rottype>
+			<rotateunitorientations>false</rotateunitorientations>
+		</grouping>
+		<grouping>
+			<cooponly>false</cooponly>
+			<forcetocenter>false</forcetocenter>
+			<name>BadGuy1</name>
+			<count>1</count>
+			<team>2</team>
+			<area>Quest_Area_B</area>
+			<groupfilename>Shared_Start_Barracks</groupfilename>
+			<rottype>RotateRandom</rottype>
+			<rotateunitorientations>false</rotateunitorientations>
+		</grouping>
+		<grouping>
+			<cooponly>false</cooponly>
+			<forcetocenter>false</forcetocenter>
+			<name>BadGuy2</name>
+			<count>1</count>
+			<team>4</team>
+			<area>Quest_Area_C</area>
+			<groupfilename>Shared_Start_Barracks</groupfilename>
+			<rottype>RotateRandom</rottype>
+			<rotateunitorientations>false</rotateunitorientations>
+		</grouping>
+		<grouping>
+			<cooponly>true</cooponly>
+			<forcetocenter>false</forcetocenter>
+			<name>Player2</name>
+			<count>1</count>
+			<team>3</team>
+			<area>Player2</area>
+			<groupfilename>Shared_Player3_Age2_Barracks</groupfilename>
+			<rottype>Rotate0</rottype>
+			<rotateunitorientations>false</rotateunitorientations>
+		</grouping>
+	</targets>
+	<objectives id="0" mustfailall="false">
+		<values>
+			<or id="1" mustfailall="false">
+				<values>
+					<dummy id="2">
+						<description>$$3802$$</description>
+						<objectivename>EnemiesDefeated</objectivename>
+						<autocomplete>false</autocomplete>
+					</dummy>
+					<reduceunitsto id="3">
+						<type>LogicalTypeNeededForVictory</type>
+						<count>0</count>
+						<includeteam>true</includeteam>
+						<includeunderconstruction>false</includeunderconstruction>
+						<canuncomplete>false</canuncomplete>
+						<causesfailure>true</causesfailure>
+						<playerid>1</playerid>
+					</reduceunitsto>
+				</values>
+			</or>
+		</values>
+	</objectives>
+	<onaccept/>
+	<rewards visible="true">
+		<gamecurrency visible="true">
+			<gamecurrency>cGameCurEmpirePoints</gamecurrency>
+			<amount>4</amount>
+		</gamecurrency>
+		<xp visible="true">40000</xp>
+		<capitalresource visible="true">
+			<capitalresource>cCapResCoin</capitalresource>
+			<amount>400</amount>
+		</capitalresource>
+		<loottable visible="true">general</loottable>
+		<loottable visible="true">general</loottable>
+	</rewards>
+	<playersettings id="1">
+		<team>1</team>
+		<color>1</color>
+		<tributablebehavior>Default</tributablebehavior>
+		<playertype>Human</playertype>
+		<cooponly>false</cooponly>
+		<startingfood>-1</startingfood>
+		<startingwood>-1</startingwood>
+		<startinggold>-1</startinggold>
+		<startingstone>-1</startingstone>
+		<aislidervariables/>
+		<aiflagvariables/>
+	</playersettings>
+	<playersettings id="2">
+		<team>2</team>
+		<color>2</color>
+		<tributablebehavior>Default</tributablebehavior>
+		<playertype>Computer</playertype>
+		<personality>$$2313$$</personality>
+		<script>CORE\Rush_Heavy</script>
+		<dataset>C01\C01_Clearchus_T3</dataset>
+		<cooponly>false</cooponly>
+		<startingfood>250</startingfood>
+		<startingwood>250</startingwood>
+		<startinggold>250</startinggold>
+		<startingstone>250</startingstone>
+		<aislidervariables>
+			<aivariable>
+				<key>ArcherBias</key>
+				<value>1</value>
+			</aivariable>
+			<aivariable>
+				<key>EconomyHandicap</key>
+				<value>0.3</value>
+			</aivariable>
+		</aislidervariables>
+		<aiflagvariables/>
+	</playersettings>
+	<playersettings id="3">
+		<team>1</team>
+		<color>7</color>
+		<tributablebehavior>Default</tributablebehavior>
+		<playertype>Human</playertype>
+		<cooponly>true</cooponly>
+		<startingfood>-1</startingfood>
+		<startingwood>-1</startingwood>
+		<startinggold>-1</startinggold>
+		<startingstone>-1</startingstone>
+		<aislidervariables/>
+		<aiflagvariables/>
+	</playersettings>
+	<playersettings id="4">
+		<team>2</team>
+		<color>2</color>
+		<tributablebehavior>Default</tributablebehavior>
+		<playertype>Computer</playertype>
+		<personality>$$2313$$</personality>
+		<script>CORE\Ramp_Heavy</script>
+		<dataset>C01\C01_Clearchus_T3</dataset>
+		<cooponly>false</cooponly>
+		<startingfood>200</startingfood>
+		<startingwood>200</startingwood>
+		<startinggold>200</startinggold>
+		<startingstone>200</startingstone>
+		<aislidervariables>
+			<aivariable>
+				<key>EconomyHandicap</key>
+				<value>0.2</value>
+			</aivariable>
+		</aislidervariables>
+		<aiflagvariables/>
+	</playersettings>
+	<diplomacysettings/>
+	<randommap>
+		<map>Core\Shared_Argos\Argos_RM_FairFight</map>
+		<randommap>true</randommap>
+		<numplayers>4</numplayers>
+		<mapvariables>
+			<variable name="EnemiesDefeatedQuestID" type="Int">383</variable>
+			<variable name="P2TrainBonusMod" type="Int">100</variable>
+			<variable name="P4TrainBonusMod" type="Int">100</variable>
+			<variable name="region" type="String">Greek Isles</variable>
+			<variable name="lighting" type="String">Noon</variable>
+			<variable name="mapSize" type="String">Large</variable>
+		</mapvariables>
+		<nuggetoverrides/>
+		<mapregionname>Greek Isles</mapregionname>
+		<lightsetname>Noon</lightsetname>
+		<mapsizename>Large</mapsizename>
+	</randommap>
+	<questgivers>
+		<protounit>ArgosCaptain</protounit>
+	</questgivers>
+	<questreturners>
+		<protounit>ArgosCaptain</protounit>
+	</questreturners>
+	<maplocationx>0.65</maplocationx>
+	<maplocationy>0.65</maplocationy>
+	<mapmarker>QuestDefault</mapmarker>
+	<mappage>Greece</mappage>
+	<elitespawnchance>0.025</elitespawnchance>
+	<questbasescale>0</questbasescale>
+	<victoryconditions/>
+</quest>

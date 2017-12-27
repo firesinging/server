@@ -1,0 +1,91 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<quest xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xsd="http://www.w3.org/2001/XMLSchema" uniqueid="104103" version="43">
+	<displayname>$$12982$$</displayname>
+	<level>-1</level>
+	<difficultycoloroverride>1</difficultycoloroverride>
+	<repeatable>false</repeatable>
+	<offertype>eOfferBooster4</offertype>
+	<timer>
+		<events/>
+		<hideonui>false</hideonui>
+	</timer>
+	<canplaycoop>false</canplaycoop>
+	<cooprequired>false</cooprequired>
+	<ranked>false</ranked>
+	<alliance>eAllianceNone</alliance>
+	<questtype>Global</questtype>
+	<description>$$13086$$</description>
+	<completiontext>$$13139$$</completiontext>
+	<inprogresstext>$$13088$$</inprogresstext>
+	<summarytext>$$12983$$</summarytext>
+	<canabandon>true</canabandon>
+	<hiddenquest>false</hiddenquest>
+	<friendonly>false</friendonly>
+	<suppressnotifications>false</suppressnotifications>
+	<customquest>false</customquest>
+	<questgamemodetype>Normal</questgamemodetype>
+	<prereqs>
+		<values>
+			<questcomplete>
+				<id>104012</id>
+			</questcomplete>
+		</values>
+	</prereqs>
+	<equipmentprereqs/>
+	<targets/>
+	<objectives id="0" mustfailall="false">
+		<values>
+			<or id="1" mustfailall="false">
+				<values>
+					<counter id="2">
+						<description>$$13142$$</description>
+						<objectivename>DEFENSE_COMPLETE</objectivename>
+						<reqcount>30</reqcount>
+					</counter>
+					<kill id="3">
+						<type>AILandPoint1</type>
+						<count>1</count>
+						<includeconversion>false</includeconversion>
+						<onlycountelites>false</onlycountelites>
+					</kill>
+				</values>
+			</or>
+		</values>
+	</objectives>
+	<onaccept/>
+	<rewards visible="true">
+		<capitalresource visible="true">
+			<capitalresource>cCapResCoin</capitalresource>
+			<amount>1</amount>
+			<lookuptable>B04Global</lookuptable>
+		</capitalresource>
+		<blueprint visible="true">Van_Cap_Nh_Chief</blueprint>
+		<loottable visible="true">general</loottable>
+		<loottable visible="true">general</loottable>
+	</rewards>
+	<diplomacysettings/>
+	<randommap>
+		<randommap>true</randommap>
+		<numplayers>0</numplayers>
+		<mapvariables/>
+		<nuggetoverrides/>
+		<mapregionname>&lt;Not Specified&gt;</mapregionname>
+		<lightsetname>&lt;Not Specified&gt;</lightsetname>
+		<mapsizename>&lt;Not Specified&gt;</mapsizename>
+	</randommap>
+	<questgivers>
+		<protounit>B04_Bard</protounit>
+	</questgivers>
+	<questreturners>
+		<protounit>B04_Bard</protounit>
+	</questreturners>
+	<maplocationx>0.5</maplocationx>
+	<maplocationy>0.5</maplocationy>
+	<mapmarker>Blank</mapmarker>
+	<mappage>Norse</mappage>
+	<elitespawnchance>0</elitespawnchance>
+	<linkedquestid>0</linkedquestid>
+	<questbasescale>3</questbasescale>
+	<victoryconditions/>
+</quest>

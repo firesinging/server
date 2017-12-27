@@ -1,0 +1,15 @@
+<?xml version="1.0"?>
+<Region xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xsd="http://www.w3.org/2001/XMLSchema" ID="19">
+  <Name>Vanity Island</Name>
+  <CivID>1</CivID>
+  <MapName>Regions/REGION_SharedVanity</MapName>
+  <MapLocationX>0.775</MapLocationX>
+  <MapLocationY>0.425</MapLocationY>
+  <MapMarker>RegionDefault</MapMarker>
+  <MapPage>Greece</MapPage>
+  <LoadScreen>UserInterface\LoadingScreens\VanityIslandLoading_df</LoadScreen>
+  <DescriptionStringID>65732</DescriptionStringID>
+  <DisplayNameStringID>65716</DisplayNameStringID>
+  <AvatarShield>UserInterface\Avatar\RegionShieldVanityIsland</AvatarShield>
+  <FlagIcon>UserInterface\Icons\Regions\RegionFlagArgos_ua</FlagIcon>
+</Region>

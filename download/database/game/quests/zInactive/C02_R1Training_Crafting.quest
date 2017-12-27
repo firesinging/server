@@ -1,0 +1,120 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<quest xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xsd="http://www.w3.org/2001/XMLSchema" uniqueid="12066" version="46">
+	<displayname>$$3130$$</displayname>
+	<level>0</level>
+	<repeatable>false</repeatable>
+	<timer>
+		<events/>
+		<hideonui>false</hideonui>
+	</timer>
+	<canplaycoop>false</canplaycoop>
+	<cooprequired>false</cooprequired>
+	<ranked>false</ranked>
+	<alliance>eAllianceNone</alliance>
+	<questtype>CapitolCity</questtype>
+	<description>$$6639$$</description>
+	<completiontext>$$3884$$</completiontext>
+	<inprogresstext>$$9600$$</inprogresstext>
+	<summarytext>$$3143$$</summarytext>
+	<canabandon>false</canabandon>
+	<hiddenquest>false</hiddenquest>
+	<friendonly>false</friendonly>
+	<suppressnotifications>false</suppressnotifications>
+	<customquest>false</customquest>
+	<questgamemodetype>Normal</questgamemodetype>
+	<prereqs>
+		<values>
+			<civilization>
+				<id>3</id>
+			</civilization>
+			<level>
+				<min>6</min>
+				<max>99</max>
+			</level>
+		</values>
+	</prereqs>
+	<equipmentprereqs/>
+	<targets/>
+	<objectives id="0" mustfailall="false">
+		<description/>
+		<values>
+			<ownsunit id="1">
+				<description>$$3658$$</description>
+				<type>Eg_Craft_Chooser</type>
+				<count>1</count>
+				<owningplayerid>1</owningplayerid>
+				<causesfailure>false</causesfailure>
+			</ownsunit>
+			<ownsunit id="2">
+				<description>$$13222$$</description>
+				<type>Eg_Cap_StoreStore01</type>
+				<count>1</count>
+				<owningplayerid>1</owningplayerid>
+				<causesfailure>false</causesfailure>
+			</ownsunit>
+		</values>
+	</objectives>
+	<onaccept>
+		<enableprotip visible="false">TIP_UI_CraftingHall_FirstUse</enableprotip>
+		<enableprotip visible="false">TIP_UI_CraftingSchool_FirstUse</enableprotip>
+		<blueprint visible="false">EgyptGuild</blueprint>
+		<blueprint visible="false">EgStoreStore01</blueprint>
+	</onaccept>
+	<rewards visible="true">
+		<capitalresource visible="true">
+			<capitalresource>cCapResCoin</capitalresource>
+			<amount>100</amount>
+		</capitalresource>
+		<or visible="true">
+			<material visible="true">
+				<materialname>CopperIngot</materialname>
+				<count>100</count>
+			</material>
+			<material visible="true">
+				<materialname>PinePlank</materialname>
+				<count>100</count>
+			</material>
+			<material visible="true">
+				<materialname>StoneBlock</materialname>
+				<count>100</count>
+			</material>
+			<material visible="true">
+				<materialname>Grain</materialname>
+				<count>100</count>
+			</material>
+			<material visible="true">
+				<materialname>AnimalHide</materialname>
+				<count>100</count>
+			</material>
+		</or>
+	</rewards>
+	<diplomacysettings/>
+	<randommap>
+		<randommap>false</randommap>
+		<numplayers>0</numplayers>
+		<mapvariables/>
+		<nuggetoverrides/>
+		<mapregionname>&lt;Not Specified&gt;</mapregionname>
+		<lightsetname>&lt;Not Specified&gt;</lightsetname>
+		<mapsizename>&lt;Not Specified&gt;</mapsizename>
+	</randommap>
+	<questgivers>
+		<protounit>C02_R1_KingNarmer</protounit>
+		<protounit>C02_R1_PharoahSesostris</protounit>
+		<protounit>C02_R1_CitySesostris_V2</protounit>
+	</questgivers>
+	<questreturners>
+		<protounit>C02_R1_GuildMaster</protounit>
+		<protounit>C02_R1_PharoahSesostris</protounit>
+		<protounit>C02_R1_CitySesostris_V2</protounit>
+	</questreturners>
+	<maplocationx>0.5</maplocationx>
+	<maplocationy>0.5</maplocationy>
+	<mapmarker>Blank</mapmarker>
+	<mappage>Egypt</mappage>
+	<elitespawnchance>0</elitespawnchance>
+	<linkedquestid>0</linkedquestid>
+	<questbasescale>0</questbasescale>
+	<victoryconditions/>
+</quest>

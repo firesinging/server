@@ -1,0 +1,114 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<quest xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xsd="http://www.w3.org/2001/XMLSchema" uniqueid="453" version="62">
+	<displayname>$$382$$</displayname>
+	<level>0</level>
+	<repeatable>false</repeatable>
+	<timer>
+		<time/>
+		<events/>
+		<hideonui>false</hideonui>
+	</timer>
+	<canplaycoop>false</canplaycoop>
+	<cooprequired>false</cooprequired>
+	<ranked>false</ranked>
+	<description>$$4843$$</description>
+	<completiontext>$$4701$$</completiontext>
+	<inprogresstext>$$4702$$</inprogresstext>
+	<summarytext>$$4618$$</summarytext>
+	<canabandon>false</canabandon>
+	<hiddenquest>false</hiddenquest>
+	<friendonly>false</friendonly>
+	<suppressnotifications>false</suppressnotifications>
+	<customquest>false</customquest>
+	<questtype>CapitolCity</questtype>
+	<questgamemodetype>Normal</questgamemodetype>
+	<prereqs>
+		<values>
+			<civilization>
+				<id>3</id>
+			</civilization>
+			<questcomplete>
+				<id>12011</id>
+			</questcomplete>
+		</values>
+	</prereqs>
+	<equipmentprereqs/>
+	<targets/>
+	<objectives id="0" mustfailall="false">
+		<values>
+			<and id="1" mustfailall="false">
+				<values>
+					<or id="2" mustfailall="false">
+						<description>$$2354$$</description>
+						<values>
+							<unitdiscovered id="3">
+								<type>C02_R2_Trader</type>
+								<count>1</count>
+							</unitdiscovered>
+						</values>
+					</or>
+				</values>
+			</and>
+			<and id="4" mustfailall="false">
+				<values>
+					<or id="5" mustfailall="false">
+						<description>$$4392$$</description>
+						<values>
+							<unitdiscovered id="6">
+								<description/>
+								<type>C02_R2_Trader_V2</type>
+								<count>1</count>
+							</unitdiscovered>
+						</values>
+					</or>
+				</values>
+			</and>
+		</values>
+	</objectives>
+	<onaccept>
+		<protip visible="false" proto="">TIP_Shared_FirstRegionTravel</protip>
+		<unlockregion visible="false">7</unlockregion>
+	</onaccept>
+	<rewards visible="true">
+		<capitalresource visible="true">
+			<capitalresource>cCapResCoin</capitalresource>
+			<amount>50</amount>
+		</capitalresource>
+		<capitaltech visible="true">
+			<captechid>210</captechid>
+		</capitaltech>
+		<capitaltech visible="true">
+			<captechid>211</captechid>
+		</capitaltech>
+		<questgiver visible="true">
+			<name>C02_R1_EgyptPortMaster</name>
+			<status>Available</status>
+		</questgiver>
+		<protip visible="false">TIP_C02_NewQuests_FirstNewQuestGivers</protip>
+		<protip visible="false">TIP_C02_QuestTechUnlock_Dock</protip>
+	</rewards>
+	<diplomacysettings/>
+	<randommap>
+		<map/>
+		<randommap>false</randommap>
+		<numplayers>0</numplayers>
+		<mapvariables/>
+		<nuggetoverrides/>
+		<mapregionname>&lt;Not Specified&gt;</mapregionname>
+		<lightsetname>&lt;Not Specified&gt;</lightsetname>
+		<mapsizename>&lt;Not Specified&gt;</mapsizename>
+	</randommap>
+	<questgivers>
+		<protounit>C02_R1_KingNarmer</protounit>
+	</questgivers>
+	<questreturners>
+		<protounit>C02_R1_KingNarmer</protounit>
+	</questreturners>
+	<maplocationx>0.5</maplocationx>
+	<maplocationy>0.5</maplocationy>
+	<mapmarker>Blank</mapmarker>
+	<mappage>Nubia</mappage>
+	<elitespawnchance>0</elitespawnchance>
+	<victoryconditions/>
+</quest>

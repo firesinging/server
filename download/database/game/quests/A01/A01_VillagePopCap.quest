@@ -1,0 +1,250 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<quest xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xsd="http://www.w3.org/2001/XMLSchema" uniqueid="1111" version="113">
+	<displayname>$$9763$$</displayname>
+	<level>43</level>
+	<repeatable>true</repeatable>
+	<timer>
+		<time>00:12:00</time>
+		<events/>
+		<hideonui>false</hideonui>
+	</timer>
+	<canplaycoop>false</canplaycoop>
+	<cooprequired>false</cooprequired>
+	<ranked>false</ranked>
+	<description>$$10217$$</description>
+	<completiontext>$$9653$$</completiontext>
+	<inprogresstext>$$9654$$</inprogresstext>
+	<summarytext>$$9769$$</summarytext>
+	<alliance>eAllianceDelianLeague</alliance>
+	<repeatableduration>12</repeatableduration>
+	<canabandon>true</canabandon>
+	<hiddenquest>false</hiddenquest>
+	<friendonly>false</friendonly>
+	<suppressnotifications>false</suppressnotifications>
+	<customquest>false</customquest>
+	<questtype>RandomMap</questtype>
+	<questgamemodetype>Normal</questgamemodetype>
+	<prereqs>
+		<values>
+			<level>
+				<min>40</min>
+				<max>99</max>
+			</level>
+			<questcomplete>
+				<id>1100</id>
+			</questcomplete>
+		</values>
+	</prereqs>
+	<equipmentprereqs/>
+	<targets/>
+	<objectives id="0" mustfailall="false">
+		<values>
+			<or id="1" mustfailall="false">
+				<values>
+					<timer id="2">
+						<description>$$2471$$</description>
+						<failonexpire>true</failonexpire>
+					</timer>
+					<unitdiscovered id="3">
+						<description>$$9759$$</description>
+						<type>Qst_SpawnPoint1</type>
+						<count>10</count>
+					</unitdiscovered>
+					<reduceunitsto id="4">
+						<type>LogicalTypeNeededForVictory</type>
+						<count>0</count>
+						<includeteam>true</includeteam>
+						<includeunderconstruction>false</includeunderconstruction>
+						<canuncomplete>false</canuncomplete>
+						<causesfailure>true</causesfailure>
+						<playerid>1</playerid>
+					</reduceunitsto>
+				</values>
+			</or>
+		</values>
+	</objectives>
+	<secondaryobjectives id="5" mustfailall="false" rewardname="OptionalOne">
+		<description>$$9507$$</description>
+		<values>
+			<or id="6" mustfailall="false">
+				<values>
+					<timer id="7">
+						<description/>
+						<failonexpire>true</failonexpire>
+					</timer>
+					<dummy id="8">
+						<description>$$9765$$</description>
+						<objectivename>OPTIONAL_01</objectivename>
+						<autocomplete>false</autocomplete>
+					</dummy>
+					<unitdiscovered id="9">
+						<description/>
+						<type>Qst_SpawnPoint1</type>
+						<count>10</count>
+					</unitdiscovered>
+				</values>
+			</or>
+		</values>
+	</secondaryobjectives>
+	<secondaryobjectives id="10" mustfailall="false" rewardname="OptionalTwo">
+		<description>$$9508$$</description>
+		<values>
+			<or id="11" mustfailall="false">
+				<values>
+					<timer id="12">
+						<description/>
+						<failonexpire>true</failonexpire>
+					</timer>
+					<dummy id="13">
+						<description>$$9766$$</description>
+						<objectivename>OPTIONAL_02</objectivename>
+						<autocomplete>false</autocomplete>
+					</dummy>
+					<unitdiscovered id="14">
+						<description/>
+						<type>Qst_SpawnPoint1</type>
+						<count>10</count>
+					</unitdiscovered>
+				</values>
+			</or>
+		</values>
+	</secondaryobjectives>
+	<secondaryobjectives id="15" mustfailall="false" rewardname="OptionalThree">
+		<description>$$9509$$</description>
+		<values>
+			<or id="16" mustfailall="false">
+				<values>
+					<timer id="17">
+						<description/>
+						<failonexpire>true</failonexpire>
+					</timer>
+					<dummy id="18">
+						<description>$$9767$$</description>
+						<objectivename>OPTIONAL_03</objectivename>
+						<autocomplete>false</autocomplete>
+					</dummy>
+					<unitdiscovered id="19">
+						<description/>
+						<type>Qst_SpawnPoint1</type>
+						<count>10</count>
+					</unitdiscovered>
+				</values>
+			</or>
+		</values>
+	</secondaryobjectives>
+	<onaccept/>
+	<rewards visible="true">
+		<alliancepoints visible="true">
+			<amount>8</amount>
+		</alliancepoints>
+		<capitalresource visible="true">
+			<capitalresource>cCapResCoin</capitalresource>
+			<amount>300</amount>
+		</capitalresource>
+		<loottable visible="true">general</loottable>
+	</rewards>
+	<secondaryrewards visible="true" name="OptionalOne">
+		<capitalresource visible="true">
+			<capitalresource>cCapResCoin</capitalresource>
+			<amount>300</amount>
+		</capitalresource>
+		<loottable visible="true">general</loottable>
+	</secondaryrewards>
+	<secondaryrewards visible="true" name="OptionalTwo">
+		<capitalresource visible="true">
+			<capitalresource>cCapResCoin</capitalresource>
+			<amount>400</amount>
+		</capitalresource>
+		<loottable visible="true">general</loottable>
+	</secondaryrewards>
+	<secondaryrewards visible="true" name="OptionalThree">
+		<capitalresource visible="true">
+			<capitalresource>cCapResCoin</capitalresource>
+			<amount>500</amount>
+		</capitalresource>
+		<loottable visible="true">general_legendary</loottable>
+		<loottable visible="true">general_legendary</loottable>
+	</secondaryrewards>
+	<playersettings id="1">
+		<team>1</team>
+		<color>1</color>
+		<tributablebehavior>Default</tributablebehavior>
+		<playertype>Human</playertype>
+		<cooponly>false</cooponly>
+		<startingfood>0</startingfood>
+		<startingwood>0</startingwood>
+		<startinggold>0</startinggold>
+		<startingstone>0</startingstone>
+		<aislidervariables/>
+		<aiflagvariables/>
+	</playersettings>
+	<playersettings id="2">
+		<team>2</team>
+		<color>4</color>
+		<tributablebehavior>Default</tributablebehavior>
+		<playertype>Computer</playertype>
+		<personality>$$9576$$</personality>
+		<script>Custom\AIDoNothing</script>
+		<character/>
+		<dataset>c04\c04_coreramp_t2</dataset>
+		<cooponly>false</cooponly>
+		<startingfood>-1</startingfood>
+		<startingwood>-1</startingwood>
+		<startinggold>-1</startinggold>
+		<startingstone>-1</startingstone>
+		<aislidervariables/>
+		<aiflagvariables/>
+	</playersettings>
+	<playersettings id="3">
+		<team>3</team>
+		<color>3</color>
+		<tributablebehavior>Default</tributablebehavior>
+		<playertype>Computer</playertype>
+		<personality>$$9762$$</personality>
+		<script/>
+		<character/>
+		<dataset>c04\c04_coreramp_t2</dataset>
+		<cooponly>false</cooponly>
+		<startingfood>-1</startingfood>
+		<startingwood>-1</startingwood>
+		<startinggold>-1</startinggold>
+		<startingstone>-1</startingstone>
+		<aislidervariables/>
+		<aiflagvariables/>
+	</playersettings>
+	<diplomacysettings>
+		<diplomacy relation="Neutral" team1="1" team2="3" sharedlos="false"/>
+		<diplomacy relation="Neutral" team1="2" team2="3" sharedlos="false"/>
+		<diplomacy relation="Ally" team1="3" team2="2" sharedlos="false"/>
+	</diplomacysettings>
+	<randommap>
+		<map>core\shared_alliance\alliance_villagepopcap</map>
+		<randommap>true</randommap>
+		<numplayers>3</numplayers>
+		<mapvariables>
+			<variable name="HumanAlliance" type="Int">1</variable>
+			<variable name="QuestID" type="Int">1111</variable>
+			<variable name="QuestMinuteLength" type="Int">12</variable>
+			<variable name="region" type="String">Persian Rock</variable>
+			<variable name="mapSize" type="String">Standard</variable>
+		</mapvariables>
+		<nuggetoverrides/>
+		<mapregionname>Persian Rock</mapregionname>
+		<lightsetname>&lt;Not Specified&gt;</lightsetname>
+		<mapsizename>Standard</mapsizename>
+	</randommap>
+	<questgivers>
+		<protounit>A01_AllianceLeader</protounit>
+	</questgivers>
+	<questreturners>
+		<protounit>A01_AllianceLeader</protounit>
+	</questreturners>
+	<maplocationx>0.55</maplocationx>
+	<maplocationy>0.54</maplocationy>
+	<mapmarker>QuestRepeatable</mapmarker>
+	<mappage>Persia</mappage>
+	<elitespawnchance>0</elitespawnchance>
+	<questbasescale>0</questbasescale>
+	<victoryconditions/>
+</quest>

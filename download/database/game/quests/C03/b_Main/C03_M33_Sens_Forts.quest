@@ -1,0 +1,215 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<quest xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xsd="http://www.w3.org/2001/XMLSchema" uniqueid="13015" version="97">
+	<displayname>$$7726$$</displayname>
+	<level>8</level>
+	<repeatable>false</repeatable>
+	<timer>
+		<events/>
+		<hideonui>false</hideonui>
+	</timer>
+	<canplaycoop>true</canplaycoop>
+	<cooprequired>false</cooprequired>
+	<ranked>false</ranked>
+	<description>$$8037$$</description>
+	<completiontext>$$7436$$</completiontext>
+	<inprogresstext>$$7376$$</inprogresstext>
+	<summarytext>$$7440$$</summarytext>
+	<canabandon>true</canabandon>
+	<hiddenquest>false</hiddenquest>
+	<friendonly>false</friendonly>
+	<suppressnotifications>false</suppressnotifications>
+	<customquest>false</customquest>
+	<questtype>RandomMap</questtype>
+	<questgamemodetype>Normal</questgamemodetype>
+	<prereqs>
+		<values>
+			<civilization>
+				<id>6</id>
+			</civilization>
+			<questcomplete>
+				<id>13014</id>
+			</questcomplete>
+		</values>
+	</prereqs>
+	<equipmentprereqs/>
+	<targets>
+		<protounit>
+			<cooponly>false</cooponly>
+			<forcetocenter>false</forcetocenter>
+			<name>Brennos</name>
+			<protoname>Ce_QG_Brennos</protoname>
+			<count>1</count>
+			<team>1</team>
+			<area>Quest_Area_A</area>
+			<usequesttargetindicator>true</usequesttargetindicator>
+		</protounit>
+		<grouping>
+			<cooponly>true</cooponly>
+			<forcetocenter>false</forcetocenter>
+			<name>CoopStart</name>
+			<count>1</count>
+			<team>3</team>
+			<area>Player2</area>
+			<groupfilename>shared_player3_age2_barracks</groupfilename>
+			<rottype>Rotate0</rottype>
+			<rotateunitorientations>true</rotateunitorientations>
+		</grouping>
+	</targets>
+	<objectives id="0" mustfailall="false">
+		<values>
+			<or id="1" mustfailall="false">
+				<values>
+					<kill id="2">
+						<description>$$9029$$</description>
+						<type>Npc_Barbarian_Fortress</type>
+						<count>1</count>
+						<includeconversion>true</includeconversion>
+						<onlycountelites>false</onlycountelites>
+					</kill>
+					<protectunit id="3">
+						<description>$$7535$$</description>
+						<type>Ce_QG_Brennos</type>
+						<owningplayerid>1</owningplayerid>
+					</protectunit>
+				</values>
+			</or>
+		</values>
+	</objectives>
+	<onaccept/>
+	<rewards visible="true">
+		<gamecurrency visible="true">
+			<gamecurrency>cGameCurEmpirePoints</gamecurrency>
+			<amount>2</amount>
+		</gamecurrency>
+		<xp visible="true">10000</xp>
+		<capitalresource visible="true">
+			<capitalresource>cCapResCoin</capitalresource>
+			<amount>50</amount>
+		</capitalresource>
+		<loottable visible="true">tables\_coreloot_celtwarrior_reward</loottable>
+		<trait visible="true">
+			Sword1H_R101
+			<traitlevel>11</traitlevel>
+		</trait>
+		<or visible="true">
+			<trait visible="true">
+				ArmorClth_U017
+				<traitlevel>9</traitlevel>
+			</trait>
+			<trait visible="true">
+				ArmorBldg_U014
+				<traitlevel>9</traitlevel>
+			</trait>
+			<trait visible="true">
+				ArmorPlt_U021
+				<traitlevel>9</traitlevel>
+			</trait>
+			<trait visible="true">
+				ArmorMed_U012
+				<traitlevel>9</traitlevel>
+			</trait>
+			<trait visible="true">
+				ArmorLgt_U013
+				<traitlevel>9</traitlevel>
+			</trait>
+		</or>
+	</rewards>
+	<playersettings id="1">
+		<team>1</team>
+		<color>1</color>
+		<playertype>Human</playertype>
+		<cooponly>false</cooponly>
+		<startingfood>-1</startingfood>
+		<startingwood>-1</startingwood>
+		<startinggold>-1</startinggold>
+		<startingstone>-1</startingstone>
+		<aislidervariables/>
+		<aiflagvariables/>
+	</playersettings>
+	<playersettings id="2">
+		<team>2</team>
+		<color>2</color>
+		<playertype>Computer</playertype>
+		<personality>$$2296$$</personality>
+		<script>CORE\Rush_Moderate</script>
+		<dataset>C03\C03_Barbarian_T0</dataset>
+		<cooponly>false</cooponly>
+		<startingfood>2000</startingfood>
+		<startingwood>2000</startingwood>
+		<startinggold>2000</startinggold>
+		<startingstone>0</startingstone>
+		<aislidervariables>
+			<aivariable>
+				<key>NavyBias</key>
+				<value>-1</value>
+			</aivariable>
+		</aislidervariables>
+		<aiflagvariables>
+			<aivariable>
+				<key>NoTrainNavy</key>
+				<value>0</value>
+			</aivariable>
+			<aivariable>
+				<key>NoResign</key>
+				<value>0</value>
+			</aivariable>
+		</aiflagvariables>
+	</playersettings>
+	<playersettings id="3">
+		<team>1</team>
+		<color>7</color>
+		<playertype>Human</playertype>
+		<cooponly>true</cooponly>
+		<startingfood>-1</startingfood>
+		<startingwood>-1</startingwood>
+		<startinggold>-1</startinggold>
+		<startingstone>-1</startingstone>
+		<aislidervariables/>
+		<aiflagvariables/>
+	</playersettings>
+	<playersettings id="4">
+		<team>2</team>
+		<color>2</color>
+		<playertype>Computer</playertype>
+		<personality>$$2296$$</personality>
+		<script/>
+		<dataset>C03\C03_Barbarian_T0</dataset>
+		<cooponly>false</cooponly>
+		<startingfood>2000</startingfood>
+		<startingwood>2000</startingwood>
+		<startinggold>2000</startinggold>
+		<startingstone>0</startingstone>
+		<aislidervariables/>
+		<aiflagvariables/>
+	</playersettings>
+	<diplomacysettings/>
+	<randommap>
+		<map>scenarioloader</map>
+		<randommap>true</randommap>
+		<numplayers>4</numplayers>
+		<mapvariables>
+			<variable name="scenarioFile" type="String">C03/C03_R1M33_DestroyFortress</variable>
+			<variable name="region" type="String">Celtic Alps</variable>
+			<variable name="lighting" type="String">Evening</variable>
+			<variable name="mapSize" type="String">Standard</variable>
+		</mapvariables>
+		<nuggetoverrides/>
+		<mapregionname>Celtic Alps</mapregionname>
+		<lightsetname>Evening</lightsetname>
+		<mapsizename>Standard</mapsizename>
+	</randommap>
+	<questgivers>
+		<protounit>C03_R1_SensBrennos</protounit>
+	</questgivers>
+	<questreturners>
+		<protounit>C03_R1_SensBrennos</protounit>
+	</questreturners>
+	<customloadscreen>loadscreentips\load_c03_specialunit_longbowman.xml</customloadscreen>
+	<maplocationx>0.61</maplocationx>
+	<maplocationy>0.17</maplocationy>
+	<mapmarker>QuestDefault</mapmarker>
+	<mappage>C03_Celtica</mappage>
+	<elitespawnchance>0</elitespawnchance>
+	<victoryconditions/>
+</quest>

@@ -1,0 +1,439 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<quest xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xsd="http://www.w3.org/2001/XMLSchema" uniqueid="3007" version="122">
+	<displayname>$$6071$$</displayname>
+	<level>40</level>
+	<repeatable>false</repeatable>
+	<offertype>eOfferNone</offertype>
+	<timer>
+		<time>99:99:99</time>
+		<events>
+			<timerevent event="spawnsiege">00:10:00</timerevent>
+			<timerevent event="spawnsiege">00:20:00</timerevent>
+			<timerevent event="spawnsiege">00:25:00</timerevent>
+			<timerevent event="spawnsiege">00:30:00</timerevent>
+			<timerevent event="spawnsiege">00:35:00</timerevent>
+			<timerevent event="spawnsiege">00:40:00</timerevent>
+			<timerevent event="spawnsiege">00:45:00</timerevent>
+			<timerevent event="spawnsiege">00:50:00</timerevent>
+			<timerevent event="spawnsiege">00:55:00</timerevent>
+			<timerevent event="spawnsiege">00:60:00</timerevent>
+			<timerevent event="spawnsiege">00:65:00</timerevent>
+			<timerevent event="spawnsiege">00:70:00</timerevent>
+			<timerevent event="spawnsiege">00:75:00</timerevent>
+			<timerevent event="spawnsiege">00:80:00</timerevent>
+			<timerevent event="spawnsiege">00:85:00</timerevent>
+			<timerevent event="spawnsiege">00:90:00</timerevent>
+		</events>
+		<hideonui>true</hideonui>
+	</timer>
+	<canplaycoop>true</canplaycoop>
+	<cooprequired>false</cooprequired>
+	<ranked>false</ranked>
+	<alliance>eAllianceNone</alliance>
+	<questtype>RandomMap</questtype>
+	<description>$$6637$$</description>
+	<completiontext>$$6539$$</completiontext>
+	<inprogresstext>$$6217$$</inprogresstext>
+	<summarytext>$$6567$$</summarytext>
+	<canabandon>true</canabandon>
+	<hiddenquest>false</hiddenquest>
+	<friendonly>false</friendonly>
+	<suppressnotifications>false</suppressnotifications>
+	<customquest>false</customquest>
+	<questgamemodetype>Normal</questgamemodetype>
+	<prereqs>
+		<values>
+			<questcomplete>
+				<id>3013</id>
+			</questcomplete>
+			<questcomplete>
+				<id>3012</id>
+			</questcomplete>
+			<questcomplete>
+				<id>3006</id>
+			</questcomplete>
+			<questcomplete>
+				<id>3011</id>
+			</questcomplete>
+			<questcomplete>
+				<id>3003</id>
+			</questcomplete>
+			<questcomplete>
+				<id>3010</id>
+			</questcomplete>
+			<questcomplete>
+				<id>3002</id>
+			</questcomplete>
+			<questcomplete>
+				<id>3004</id>
+			</questcomplete>
+			<questcomplete>
+				<id>3009</id>
+			</questcomplete>
+			<questcomplete>
+				<id>3005</id>
+			</questcomplete>
+			<questcomplete>
+				<id>3008</id>
+			</questcomplete>
+		</values>
+	</prereqs>
+	<equipmentprereqs/>
+	<targets>
+		<grouping>
+			<cooponly>false</cooponly>
+			<forcetocenter>false</forcetocenter>
+			<name>Player1</name>
+			<count>1</count>
+			<team>1</team>
+			<area>Player1</area>
+			<groupfilename>Shared_Player1_Age3_Fortress</groupfilename>
+			<rottype>Rotate0</rottype>
+			<rotateunitorientations>false</rotateunitorientations>
+		</grouping>
+		<grouping>
+			<cooponly>true</cooponly>
+			<forcetocenter>false</forcetocenter>
+			<name>Player2</name>
+			<count>1</count>
+			<team>3</team>
+			<area>Player2</area>
+			<groupfilename>Shared_Player3_Age3_Fortress</groupfilename>
+			<rottype>Rotate0</rottype>
+			<rotateunitorientations>false</rotateunitorientations>
+		</grouping>
+		<protounit>
+			<cooponly>false</cooponly>
+			<forcetocenter>false</forcetocenter>
+			<name>CyprusGeneral01</name>
+			<protoname>CyprusGeneral</protoname>
+			<count>1</count>
+			<team>6</team>
+			<area>Quest_Area_A</area>
+			<overrides parent="NPC_CyprusGeneral">
+				<displaynameid>45757</displaynameid>
+				<visualscale>1.5</visualscale>
+				<initialhitpoints>2500</initialhitpoints>
+				<maxhitpoints>2500</maxhitpoints>
+				<convertresist>100</convertresist>
+			</overrides>
+			<usequesttargetindicator>true</usequesttargetindicator>
+		</protounit>
+		<protounit>
+			<cooponly>false</cooponly>
+			<forcetocenter>false</forcetocenter>
+			<name>CyprusGeneral02</name>
+			<protoname>CyprusGeneral</protoname>
+			<count>1</count>
+			<team>6</team>
+			<area>Quest_Area_B</area>
+			<overrides parent="NPC_CyprusGeneral">
+				<displaynameid>45757</displaynameid>
+				<visualscale>1.5</visualscale>
+				<initialhitpoints>2500</initialhitpoints>
+				<maxhitpoints>2500</maxhitpoints>
+				<convertresist>100</convertresist>
+			</overrides>
+			<usequesttargetindicator>true</usequesttargetindicator>
+		</protounit>
+		<protounit>
+			<cooponly>false</cooponly>
+			<forcetocenter>false</forcetocenter>
+			<name>CyprusGeneral03</name>
+			<protoname>CyprusGeneral</protoname>
+			<count>1</count>
+			<team>6</team>
+			<area>Quest_Area_C</area>
+			<overrides parent="NPC_CyprusGeneral">
+				<displaynameid>45757</displaynameid>
+				<visualscale>1.5</visualscale>
+				<initialhitpoints>2500</initialhitpoints>
+				<maxhitpoints>2500</maxhitpoints>
+				<convertresist>100</convertresist>
+			</overrides>
+			<usequesttargetindicator>true</usequesttargetindicator>
+		</protounit>
+	</targets>
+	<objectives id="0" mustfailall="false">
+		<values>
+			<or id="1" mustfailall="false">
+				<values>
+					<and id="2" mustfailall="false">
+						<values>
+							<kill id="3">
+								<description>$$2507$$</description>
+								<type>Gr_Bldg_Fortress</type>
+								<count>5</count>
+								<includeconversion>true</includeconversion>
+								<onlycountelites>false</onlycountelites>
+							</kill>
+							<kill id="4">
+								<description>$$6585$$</description>
+								<type>CyprusGeneral</type>
+								<count>3</count>
+								<includeconversion>true</includeconversion>
+								<onlycountelites>false</onlycountelites>
+							</kill>
+						</values>
+					</and>
+					<and id="5" mustfailall="true">
+						<values>
+							<reduceunitsto id="6">
+								<type>LogicalTypeNeededForVictory</type>
+								<count>0</count>
+								<includeteam>false</includeteam>
+								<includeunderconstruction>false</includeunderconstruction>
+								<canuncomplete>false</canuncomplete>
+								<causesfailure>true</causesfailure>
+								<playerid>1</playerid>
+							</reduceunitsto>
+							<reduceunitsto id="7">
+								<type>LogicalTypeNeededForVictory</type>
+								<count>0</count>
+								<includeteam>false</includeteam>
+								<includeunderconstruction>false</includeunderconstruction>
+								<canuncomplete>false</canuncomplete>
+								<causesfailure>true</causesfailure>
+								<playerid>3</playerid>
+							</reduceunitsto>
+						</values>
+					</and>
+					<and id="8" mustfailall="false">
+						<values>
+							<dummy id="9">
+								<objectivename>TIMER_EFFECT_BUGFIX</objectivename>
+								<autocomplete>false</autocomplete>
+							</dummy>
+							<timer id="10">
+								<failonexpire>false</failonexpire>
+							</timer>
+						</values>
+					</and>
+				</values>
+			</or>
+		</values>
+	</objectives>
+	<onaccept/>
+	<timereffects event="spawnsiege">
+		<spawnunit visible="true">
+			<count>3</count>
+			<placeunittype>Gr_Sie_Ballista</placeunittype>
+			<asplayer>2</asplayer>
+			<spawntype>SpawnForPlayer</spawntype>
+			<nearunittype>Gr_Bldg_SiegeWorkshop</nearunittype>
+			<radius>15</radius>
+			<useboneposition>false</useboneposition>
+			<overrides/>
+		</spawnunit>
+	</timereffects>
+	<rewards visible="true">
+		<gamecurrency visible="true">
+			<gamecurrency>cGameCurEmpirePoints</gamecurrency>
+			<amount>8</amount>
+		</gamecurrency>
+		<questgiver visible="false">
+			<name>CyprusFlagMarion</name>
+			<status>Available</status>
+		</questgiver>
+		<xp visible="true">300000</xp>
+		<capitalresource visible="true">
+			<capitalresource>cCapResCoin</capitalresource>
+			<amount>300</amount>
+		</capitalresource>
+		<loottable visible="true">general</loottable>
+		<loottable visible="true">general</loottable>
+		<loottable visible="true">general</loottable>
+	</rewards>
+	<playersettings id="1">
+		<team>1</team>
+		<color>1</color>
+		<tributablebehavior>Default</tributablebehavior>
+		<playertype>Human</playertype>
+		<cooponly>false</cooponly>
+		<startingfood>1000</startingfood>
+		<startingwood>1000</startingwood>
+		<startinggold>1000</startinggold>
+		<startingstone>1000</startingstone>
+		<aislidervariables/>
+		<aiflagvariables/>
+	</playersettings>
+	<playersettings id="2">
+		<team>2</team>
+		<color>2</color>
+		<tributablebehavior>Default</tributablebehavior>
+		<playertype>Computer</playertype>
+		<personality>$$6603$$</personality>
+		<script>CORE\Turtle_Hardcore</script>
+		<dataset>C01\C01_CyprusRamp_T3</dataset>
+		<cooponly>false</cooponly>
+		<startingfood>0</startingfood>
+		<startingwood>0</startingwood>
+		<startinggold>0</startinggold>
+		<startingstone>0</startingstone>
+		<aislidervariables/>
+		<aiflagvariables>
+			<aivariable>
+				<key>NoResign</key>
+				<value>0</value>
+			</aivariable>
+			<aivariable>
+				<key>NoTrainNavy</key>
+				<value>0</value>
+			</aivariable>
+			<aivariable>
+				<key>UseWaves</key>
+				<value>0</value>
+			</aivariable>
+		</aiflagvariables>
+	</playersettings>
+	<playersettings id="3">
+		<team>1</team>
+		<color>7</color>
+		<tributablebehavior>Default</tributablebehavior>
+		<playertype>Human</playertype>
+		<cooponly>true</cooponly>
+		<startingfood>1000</startingfood>
+		<startingwood>1000</startingwood>
+		<startinggold>1000</startinggold>
+		<startingstone>1000</startingstone>
+		<aislidervariables/>
+		<aiflagvariables/>
+	</playersettings>
+	<playersettings id="4">
+		<team>2</team>
+		<color>2</color>
+		<tributablebehavior>Default</tributablebehavior>
+		<playertype>Computer</playertype>
+		<personality>$$6603$$</personality>
+		<script>CORE\Rush_Heavy</script>
+		<dataset>C01\C01_CyprusRush_T3</dataset>
+		<cooponly>false</cooponly>
+		<startingfood>0</startingfood>
+		<startingwood>0</startingwood>
+		<startinggold>0</startinggold>
+		<startingstone>0</startingstone>
+		<aislidervariables>
+			<aivariable>
+				<key>InfantryBias</key>
+				<value>-1</value>
+			</aivariable>
+			<aivariable>
+				<key>CavalryBias</key>
+				<value>1</value>
+			</aivariable>
+			<aivariable>
+				<key>ArcherBias</key>
+				<value>-1</value>
+			</aivariable>
+			<aivariable>
+				<key>SiegeBias</key>
+				<value>-1</value>
+			</aivariable>
+			<aivariable>
+				<key>NavyBias</key>
+				<value>-1</value>
+			</aivariable>
+		</aislidervariables>
+		<aiflagvariables>
+			<aivariable>
+				<key>NoResign</key>
+				<value>0</value>
+			</aivariable>
+			<aivariable>
+				<key>NoTrainNavy</key>
+				<value>0</value>
+			</aivariable>
+		</aiflagvariables>
+	</playersettings>
+	<playersettings id="5">
+		<team>2</team>
+		<color>2</color>
+		<tributablebehavior>Default</tributablebehavior>
+		<playertype>Computer</playertype>
+		<personality>$$6603$$</personality>
+		<script>CORE\Rush_Moderate</script>
+		<dataset>C01\C01_CyprusRush_T3</dataset>
+		<cooponly>false</cooponly>
+		<startingfood>0</startingfood>
+		<startingwood>0</startingwood>
+		<startinggold>0</startinggold>
+		<startingstone>0</startingstone>
+		<aislidervariables>
+			<aivariable>
+				<key>InfantryBias</key>
+				<value>-1</value>
+			</aivariable>
+			<aivariable>
+				<key>CavalryBias</key>
+				<value>1</value>
+			</aivariable>
+			<aivariable>
+				<key>ArcherBias</key>
+				<value>-1</value>
+			</aivariable>
+			<aivariable>
+				<key>SiegeBias</key>
+				<value>-1</value>
+			</aivariable>
+			<aivariable>
+				<key>NavyBias</key>
+				<value>-1</value>
+			</aivariable>
+		</aislidervariables>
+		<aiflagvariables>
+			<aivariable>
+				<key>NoResign</key>
+				<value>0</value>
+			</aivariable>
+			<aivariable>
+				<key>NoTrainNavy</key>
+				<value>0</value>
+			</aivariable>
+		</aiflagvariables>
+	</playersettings>
+	<playersettings id="6">
+		<team>2</team>
+		<color>2</color>
+		<tributablebehavior>Default</tributablebehavior>
+		<playertype>Computer</playertype>
+		<personality>$$6603$$</personality>
+		<script/>
+		<dataset>C01\C01_CyprusRush_T3</dataset>
+		<cooponly>false</cooponly>
+		<startingfood>100</startingfood>
+		<startingwood>100</startingwood>
+		<startinggold>100</startinggold>
+		<startingstone>100</startingstone>
+		<aislidervariables/>
+		<aiflagvariables/>
+	</playersettings>
+	<diplomacysettings/>
+	<randommap>
+		<map>Core\Shared_Cyprus\Cyprus_a_Loader</map>
+		<randommap>true</randommap>
+		<numplayers>6</numplayers>
+		<mapvariables>
+			<variable name="scenarioFile" type="String">Shared_Cyprus/Cyprus_12Kingdoms_Marion</variable>
+			<variable name="region" type="String">Minoan Crete</variable>
+		</mapvariables>
+		<nuggetoverrides/>
+		<mapregionname>Minoan Crete</mapregionname>
+		<lightsetname>&lt;Not Specified&gt;</lightsetname>
+		<mapsizename>&lt;Not Specified&gt;</mapsizename>
+	</randommap>
+	<questgivers>
+		<protounit>CyprusLeaderV2</protounit>
+	</questgivers>
+	<questreturners>
+		<protounit>CyprusLeaderV2</protounit>
+	</questreturners>
+	<maplocationx>0.16</maplocationx>
+	<maplocationy>0.52</maplocationy>
+	<mapmarker>QuestDefault</mapmarker>
+	<mappage>Cyprus</mappage>
+	<elitespawnchance>0.025</elitespawnchance>
+	<linkedquestid>0</linkedquestid>
+	<questbasescale>0</questbasescale>
+	<victoryconditions/>
+</quest>

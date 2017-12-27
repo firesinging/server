@@ -1,0 +1,345 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<quest xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xsd="http://www.w3.org/2001/XMLSchema" uniqueid="61" version="41">
+	<displayname>$$1094$$</displayname>
+	<level>16</level>
+	<repeatable>false</repeatable>
+	<offertype>eOfferNone</offertype>
+	<timer>
+		<events/>
+		<hideonui>false</hideonui>
+	</timer>
+	<canplaycoop>true</canplaycoop>
+	<cooprequired>false</cooprequired>
+	<ranked>false</ranked>
+	<alliance>eAllianceNone</alliance>
+	<questtype>RandomMap</questtype>
+	<description>$$3407$$</description>
+	<completiontext>$$3409$$</completiontext>
+	<inprogresstext>$$1803$$</inprogresstext>
+	<summarytext>$$3408$$</summarytext>
+	<canabandon>true</canabandon>
+	<hiddenquest>false</hiddenquest>
+	<friendonly>false</friendonly>
+	<suppressnotifications>false</suppressnotifications>
+	<customquest>false</customquest>
+	<questgamemodetype>Normal</questgamemodetype>
+	<prereqs>
+		<values>
+			<civilization>
+				<id>1</id>
+			</civilization>
+			<questcomplete>
+				<id>60</id>
+			</questcomplete>
+		</values>
+	</prereqs>
+	<equipmentprereqs/>
+	<targets>
+		<grouping>
+			<cooponly>false</cooponly>
+			<forcetocenter>false</forcetocenter>
+			<name>Player</name>
+			<count>1</count>
+			<team>1</team>
+			<area>Player1</area>
+			<groupfilename>C01\Custom\C01_R3M64_AchillesBase</groupfilename>
+			<rottype>Rotate0</rottype>
+			<rotateunitorientations>false</rotateunitorientations>
+		</grouping>
+		<grouping>
+			<cooponly>false</cooponly>
+			<forcetocenter>false</forcetocenter>
+			<name>Trojan camp1</name>
+			<count>1</count>
+			<team>2</team>
+			<area>Quest_Area_A</area>
+			<groupfilename>C01\Troy\C01_Troy_BeachCamp_01</groupfilename>
+			<rottype>Rotate0</rottype>
+			<rotateunitorientations>true</rotateunitorientations>
+		</grouping>
+		<grouping>
+			<cooponly>false</cooponly>
+			<forcetocenter>false</forcetocenter>
+			<name>Trojan camp2</name>
+			<count>1</count>
+			<team>2</team>
+			<area>Quest_Area_D</area>
+			<groupfilename>C01\Troy\C01_Troy_FwdBaseRax_01</groupfilename>
+			<rottype>Rotate0</rottype>
+			<rotateunitorientations>true</rotateunitorientations>
+		</grouping>
+		<grouping>
+			<cooponly>false</cooponly>
+			<forcetocenter>false</forcetocenter>
+			<name>Village_1</name>
+			<count>1</count>
+			<team>2</team>
+			<area>Quest_Area_C</area>
+			<groupfilename>C01\C01_SmallVillage_02</groupfilename>
+			<rottype>Rotate0</rottype>
+			<rotateunitorientations>true</rotateunitorientations>
+		</grouping>
+		<grouping>
+			<cooponly>false</cooponly>
+			<forcetocenter>false</forcetocenter>
+			<name>Village_2</name>
+			<count>1</count>
+			<team>2</team>
+			<area>Quest_Area_B</area>
+			<groupfilename>C01\C01_SmallVillage_01</groupfilename>
+			<rottype>Rotate0</rottype>
+			<rotateunitorientations>true</rotateunitorientations>
+		</grouping>
+		<grouping>
+			<cooponly>false</cooponly>
+			<forcetocenter>false</forcetocenter>
+			<name>Village_3</name>
+			<count>1</count>
+			<team>2</team>
+			<area>Quest_Area_E</area>
+			<groupfilename>C01\C01_SmallVillage_03</groupfilename>
+			<rottype>Rotate0</rottype>
+			<rotateunitorientations>true</rotateunitorientations>
+		</grouping>
+		<protounit>
+			<cooponly>false</cooponly>
+			<forcetocenter>false</forcetocenter>
+			<name>Hector</name>
+			<protoname>Hector</protoname>
+			<count>1</count>
+			<team>3</team>
+			<area>Quest_Area_A</area>
+			<overrides parent="Gr_Cav_Hetairoi_U">
+				<displaynameid>57665</displaynameid>
+				<visualscale>1.125</visualscale>
+				<maxhitpoints>4000</maxhitpoints>
+				<initialhitpoints>4000</initialhitpoints>
+				<maxvelocity>6</maxvelocity>
+				<icon>UserInterface\Icons\Units\Hetairoi64_ua</icon>
+				<soundfile>Gr_Cav_Hetairoi</soundfile>
+				<convertresist>100</convertresist>
+			</overrides>
+			<usequesttargetindicator>true</usequesttargetindicator>
+		</protounit>
+		<protounit>
+			<cooponly>false</cooponly>
+			<forcetocenter>false</forcetocenter>
+			<name>Elite Guard1</name>
+			<protoname>Elite_Guard</protoname>
+			<count>3</count>
+			<team>3</team>
+			<area>Quest_Area_A</area>
+			<overrides parent="Gr_Inf_Pezhetairoi_U">
+				<displaynameid>57666</displaynameid>
+				<initialhitpoints>1000</initialhitpoints>
+				<maxhitpoints>1000</maxhitpoints>
+				<maxvelocity>5</maxvelocity>
+				<visualscale>1.0625</visualscale>
+				<convertresist>100</convertresist>
+			</overrides>
+			<usequesttargetindicator>false</usequesttargetindicator>
+		</protounit>
+		<protounit>
+			<cooponly>false</cooponly>
+			<forcetocenter>false</forcetocenter>
+			<name>Elite Guard2</name>
+			<protoname>Elite_Guard</protoname>
+			<count>3</count>
+			<team>3</team>
+			<area>Quest_Area_B</area>
+			<overrides parent="Gr_Inf_Pezhetairoi_U"/>
+			<usequesttargetindicator>false</usequesttargetindicator>
+		</protounit>
+		<protounit>
+			<cooponly>false</cooponly>
+			<forcetocenter>false</forcetocenter>
+			<name>Elite Guard3</name>
+			<protoname>Elite_Guard</protoname>
+			<count>3</count>
+			<team>3</team>
+			<area>Quest_Area_C</area>
+			<overrides parent="Gr_Inf_Pezhetairoi_U"/>
+			<usequesttargetindicator>false</usequesttargetindicator>
+		</protounit>
+		<protounit>
+			<cooponly>false</cooponly>
+			<forcetocenter>false</forcetocenter>
+			<name>Elite Guard4</name>
+			<protoname>Elite_Guard</protoname>
+			<count>3</count>
+			<team>3</team>
+			<area>Quest_Area_D</area>
+			<overrides parent="Gr_Inf_Pezhetairoi_U"/>
+			<usequesttargetindicator>false</usequesttargetindicator>
+		</protounit>
+		<protounit>
+			<cooponly>false</cooponly>
+			<forcetocenter>false</forcetocenter>
+			<name>Elite Guard5</name>
+			<protoname>Elite_Guard</protoname>
+			<count>3</count>
+			<team>3</team>
+			<area>Quest_Area_E</area>
+			<overrides parent="Gr_Inf_Pezhetairoi_U"/>
+			<usequesttargetindicator>false</usequesttargetindicator>
+		</protounit>
+		<grouping>
+			<cooponly>true</cooponly>
+			<forcetocenter>false</forcetocenter>
+			<name>Player2</name>
+			<count>1</count>
+			<team>4</team>
+			<area>Player2</area>
+			<groupfilename>Shared_Start_Small</groupfilename>
+			<rottype>Rotate90</rottype>
+			<rotateunitorientations>false</rotateunitorientations>
+		</grouping>
+	</targets>
+	<objectives id="0" mustfailall="false">
+		<values>
+			<or id="1" mustfailall="false">
+				<values>
+					<and id="2" mustfailall="false">
+						<values>
+							<kill id="3">
+								<description>$$4063$$</description>
+								<type>Hector</type>
+								<count>1</count>
+								<includeconversion>true</includeconversion>
+								<onlycountelites>false</onlycountelites>
+							</kill>
+							<kill id="4">
+								<description>$$4064$$</description>
+								<type>Elite_Guard</type>
+								<count>10</count>
+								<includeconversion>true</includeconversion>
+								<onlycountelites>false</onlycountelites>
+							</kill>
+						</values>
+					</and>
+					<reduceunitsto id="5">
+						<type>LogicalTypeNeededForVictory</type>
+						<count>0</count>
+						<includeteam>true</includeteam>
+						<includeunderconstruction>false</includeunderconstruction>
+						<canuncomplete>false</canuncomplete>
+						<causesfailure>true</causesfailure>
+						<playerid>1</playerid>
+					</reduceunitsto>
+				</values>
+			</or>
+		</values>
+	</objectives>
+	<onaccept/>
+	<rewards visible="true">
+		<gamecurrency visible="true">
+			<gamecurrency>cGameCurEmpirePoints</gamecurrency>
+			<amount>4</amount>
+		</gamecurrency>
+		<xp visible="true">60000</xp>
+		<capitalresource visible="true">
+			<capitalresource>cCapResCoin</capitalresource>
+			<amount>150</amount>
+		</capitalresource>
+		<loottable visible="true">general</loottable>
+		<loottable visible="true">general</loottable>
+		<or visible="true">
+			<trait visible="true">
+				Sword1H_R014
+				<traitlevel>19</traitlevel>
+			</trait>
+			<trait visible="true">
+				Shield1H_R014
+				<traitlevel>19</traitlevel>
+			</trait>
+		</or>
+	</rewards>
+	<playersettings id="1">
+		<team>1</team>
+		<color>1</color>
+		<tributablebehavior>Default</tributablebehavior>
+		<playertype>Human</playertype>
+		<cooponly>false</cooponly>
+		<startingfood>500</startingfood>
+		<startingwood>500</startingwood>
+		<startinggold>500</startinggold>
+		<startingstone>500</startingstone>
+		<aislidervariables/>
+		<aiflagvariables/>
+	</playersettings>
+	<playersettings id="2">
+		<team>2</team>
+		<color>2</color>
+		<tributablebehavior>Default</tributablebehavior>
+		<playertype>Computer</playertype>
+		<personality>$$2239$$</personality>
+		<script>core\rush_heavy</script>
+		<dataset>C01\C01_Trojan_T2</dataset>
+		<cooponly>false</cooponly>
+		<startingfood>-1</startingfood>
+		<startingwood>-1</startingwood>
+		<startinggold>-1</startinggold>
+		<startingstone>-1</startingstone>
+		<aislidervariables/>
+		<aiflagvariables/>
+	</playersettings>
+	<playersettings id="3">
+		<team>2</team>
+		<color>2</color>
+		<tributablebehavior>Default</tributablebehavior>
+		<playertype>Computer</playertype>
+		<personality>$$2239$$</personality>
+		<dataset>c01\c01_trojan_t2</dataset>
+		<cooponly>false</cooponly>
+		<startingfood>0</startingfood>
+		<startingwood>0</startingwood>
+		<startinggold>0</startinggold>
+		<startingstone>0</startingstone>
+		<aislidervariables/>
+		<aiflagvariables/>
+	</playersettings>
+	<playersettings id="4">
+		<team>1</team>
+		<color>7</color>
+		<tributablebehavior>Default</tributablebehavior>
+		<playertype>Human</playertype>
+		<cooponly>true</cooponly>
+		<startingfood>500</startingfood>
+		<startingwood>500</startingwood>
+		<startinggold>500</startinggold>
+		<startingstone>500</startingstone>
+		<aislidervariables/>
+		<aiflagvariables/>
+	</playersettings>
+	<diplomacysettings/>
+	<randommap>
+		<map>Core\C01\C01_R3M64_HectorMustFall</map>
+		<randommap>true</randommap>
+		<numplayers>4</numplayers>
+		<mapvariables>
+			<variable name="P2AttackDelayMod" type="Int">6</variable>
+			<variable name="P2AddMarketManager" type="Bool">True</variable>
+			<variable name="region" type="String">Greek Coast</variable>
+			<variable name="lighting" type="String">Noon</variable>
+		</mapvariables>
+		<nuggetoverrides/>
+		<mapregionname>Greek Coast</mapregionname>
+		<lightsetname>Noon</lightsetname>
+		<mapsizename>&lt;Not Specified&gt;</mapsizename>
+	</randommap>
+	<questgivers>
+		<protounit>C01_R3_WarriorAgamemnon</protounit>
+	</questgivers>
+	<questreturners>
+		<protounit>C01_R3_WarriorAgamemnon</protounit>
+	</questreturners>
+	<maplocationx>0.607</maplocationx>
+	<maplocationy>0.489</maplocationy>
+	<mapmarker>QuestDefault</mapmarker>
+	<mappage>Troy</mappage>
+	<elitespawnchance>0.025</elitespawnchance>
+	<linkedquestid>0</linkedquestid>
+	<questbasescale>0</questbasescale>
+	<victoryconditions/>
+</quest>

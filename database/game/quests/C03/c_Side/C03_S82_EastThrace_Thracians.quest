@@ -1,0 +1,230 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<quest xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xsd="http://www.w3.org/2001/XMLSchema" uniqueid="13061" version="106">
+	<displayname>$$7850$$</displayname>
+	<level>16</level>
+	<repeatable>false</repeatable>
+	<timer>
+		<events/>
+		<hideonui>false</hideonui>
+	</timer>
+	<canplaycoop>false</canplaycoop>
+	<cooprequired>false</cooprequired>
+	<ranked>false</ranked>
+	<alliance>eAllianceNone</alliance>
+	<questtype>RandomMap</questtype>
+	<description>$$9082$$</description>
+	<completiontext>$$7853$$</completiontext>
+	<inprogresstext>$$7854$$</inprogresstext>
+	<summarytext>$$7855$$</summarytext>
+	<canabandon>true</canabandon>
+	<hiddenquest>false</hiddenquest>
+	<friendonly>false</friendonly>
+	<suppressnotifications>false</suppressnotifications>
+	<customquest>false</customquest>
+	<questgamemodetype>Normal</questgamemodetype>
+	<prereqs>
+		<values>
+			<civilization>
+				<id>6</id>
+			</civilization>
+			<questcomplete>
+				<id>13060</id>
+			</questcomplete>
+		</values>
+	</prereqs>
+	<equipmentprereqs/>
+	<targets>
+		<grouping>
+			<cooponly>false</cooponly>
+			<forcetocenter>false</forcetocenter>
+			<name>Player1Start</name>
+			<count>1</count>
+			<team>1</team>
+			<area>Player1</area>
+			<groupfilename>c03\player1\c03_player1_531_barracks_age2</groupfilename>
+			<rottype>Rotate0</rottype>
+			<rotateunitorientations>true</rotateunitorientations>
+		</grouping>
+		<grouping>
+			<cooponly>true</cooponly>
+			<forcetocenter>false</forcetocenter>
+			<name>CoOpStart</name>
+			<count>1</count>
+			<team>3</team>
+			<area>Player2</area>
+			<groupfilename>c03\player3\c03_player3_531_barracks_age2</groupfilename>
+			<rottype>Rotate0</rottype>
+			<rotateunitorientations>true</rotateunitorientations>
+		</grouping>
+	</targets>
+	<objectives id="0" mustfailall="false">
+		<values>
+			<or id="1" mustfailall="false">
+				<description/>
+				<values>
+					<dummy id="2">
+						<description>$$3802$$</description>
+						<objectivename>EnemiesDefeated</objectivename>
+						<autocomplete>false</autocomplete>
+					</dummy>
+					<reduceunitsto id="3">
+						<type>LogicalTypeNeededForVictory</type>
+						<count>0</count>
+						<includeteam>true</includeteam>
+						<includeunderconstruction>false</includeunderconstruction>
+						<canuncomplete>false</canuncomplete>
+						<causesfailure>true</causesfailure>
+						<playerid>1</playerid>
+					</reduceunitsto>
+				</values>
+			</or>
+		</values>
+	</objectives>
+	<onaccept/>
+	<rewards visible="true">
+		<xp visible="true">15000</xp>
+		<capitalresource visible="true">
+			<capitalresource>cCapResCoin</capitalresource>
+			<amount>150</amount>
+		</capitalresource>
+		<loottable visible="true">general</loottable>
+		<loottable visible="true">general</loottable>
+		<or visible="true">
+			<consumable visible="true">
+				<consumablename>ConsumableFireShips_U</consumablename>
+				<count>3</count>
+			</consumable>
+			<consumable visible="true">
+				<consumablename>ConsumableFireShips_R</consumablename>
+				<count>3</count>
+			</consumable>
+		</or>
+	</rewards>
+	<playersettings id="1">
+		<team>1</team>
+		<color>1</color>
+		<tributablebehavior>Default</tributablebehavior>
+		<playertype>Human</playertype>
+		<cooponly>false</cooponly>
+		<startingfood>-1</startingfood>
+		<startingwood>-1</startingwood>
+		<startinggold>-1</startinggold>
+		<startingstone>-1</startingstone>
+		<aislidervariables/>
+		<aiflagvariables/>
+	</playersettings>
+	<playersettings id="2">
+		<team>2</team>
+		<color>2</color>
+		<tributablebehavior>Default</tributablebehavior>
+		<playertype>Computer</playertype>
+		<personality>$$2303$$</personality>
+		<script/>
+		<dataset>C01\C01_CoreRush_T2</dataset>
+		<cooponly>false</cooponly>
+		<startingfood>150</startingfood>
+		<startingwood>500</startingwood>
+		<startinggold>500</startinggold>
+		<startingstone>0</startingstone>
+		<aislidervariables/>
+		<aiflagvariables/>
+	</playersettings>
+	<playersettings id="3">
+		<team>1</team>
+		<color>7</color>
+		<tributablebehavior>Default</tributablebehavior>
+		<playertype>Human</playertype>
+		<personality/>
+		<script/>
+		<character/>
+		<cooponly>true</cooponly>
+		<startingfood>-1</startingfood>
+		<startingwood>-1</startingwood>
+		<startinggold>-1</startinggold>
+		<startingstone>-1</startingstone>
+		<aislidervariables/>
+		<aiflagvariables/>
+	</playersettings>
+	<playersettings id="4">
+		<team>2</team>
+		<color>2</color>
+		<tributablebehavior>Default</tributablebehavior>
+		<playertype>Computer</playertype>
+		<personality>$$2303$$</personality>
+		<script/>
+		<dataset>C01\C01_Thracian_T2</dataset>
+		<cooponly>false</cooponly>
+		<startingfood>500</startingfood>
+		<startingwood>500</startingwood>
+		<startinggold>500</startinggold>
+		<startingstone>0</startingstone>
+		<aislidervariables/>
+		<aiflagvariables>
+			<aivariable>
+				<key>NoResign</key>
+				<value>0</value>
+			</aivariable>
+		</aiflagvariables>
+	</playersettings>
+	<playersettings id="5">
+		<team>2</team>
+		<color>2</color>
+		<tributablebehavior>Default</tributablebehavior>
+		<playertype>Computer</playertype>
+		<personality>$$2303$$</personality>
+		<script>Custom\Thracian_HorsemanRush</script>
+		<dataset>C01\C01_Thracian_T2</dataset>
+		<cooponly>false</cooponly>
+		<startingfood>-1</startingfood>
+		<startingwood>-1</startingwood>
+		<startinggold>-1</startinggold>
+		<startingstone>-1</startingstone>
+		<aislidervariables/>
+		<aiflagvariables>
+			<aivariable>
+				<key>NoResign</key>
+				<value>0</value>
+			</aivariable>
+			<aivariable>
+				<key>NoTrainNavy</key>
+				<value>0</value>
+			</aivariable>
+			<aivariable>
+				<key>NoFish</key>
+				<value>0</value>
+			</aivariable>
+		</aiflagvariables>
+	</playersettings>
+	<diplomacysettings/>
+	<randommap>
+		<map>Core\C03\C03_Side_Thracian_02</map>
+		<randommap>true</randommap>
+		<numplayers>5</numplayers>
+		<mapvariables>
+			<variable name="scenarioFile" type="String">C03/C03_Side_Thracian_02</variable>
+			<variable name="EnemiesDefeatedQuestID" type="Int">13061</variable>
+			<variable name="region" type="String">Greek Inland</variable>
+			<variable name="lighting" type="String">Afternoon</variable>
+			<variable name="mapSize" type="String">Large</variable>
+		</mapvariables>
+		<nuggetoverrides/>
+		<mapregionname>Greek Inland</mapregionname>
+		<lightsetname>Afternoon</lightsetname>
+		<mapsizename>Large</mapsizename>
+	</randommap>
+	<questgivers>
+		<protounit>C03_R3_Acichorios</protounit>
+	</questgivers>
+	<questreturners>
+		<protounit>C03_R3_Acichorios</protounit>
+	</questreturners>
+	<maplocationx>0.62</maplocationx>
+	<maplocationy>0.35</maplocationy>
+	<mapmarker>QuestDefault</mapmarker>
+	<mappage>Thrace</mappage>
+	<elitespawnchance>0</elitespawnchance>
+	<linkedquestid>0</linkedquestid>
+	<questbasescale>0</questbasescale>
+	<victoryconditions/>
+</quest>

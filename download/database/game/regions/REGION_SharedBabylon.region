@@ -1,0 +1,15 @@
+<?xml version="1.0"?>
+<Region xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xsd="http://www.w3.org/2001/XMLSchema" ID="23">
+  <Name>Babylon</Name>
+  <CivID>1</CivID>
+  <MapName>Regions/REGION_SharedBabylon</MapName>
+  <MapLocationX>0.39</MapLocationX>
+  <MapLocationY>0.645</MapLocationY>
+  <MapMarker>RegionDefault</MapMarker>
+  <MapPage>Persia</MapPage>
+  <LoadScreen>UserInterface\LoadingScreens\BabylonLoading_df</LoadScreen>
+  <DescriptionStringID>66982</DescriptionStringID>
+  <DisplayNameStringID>66981</DisplayNameStringID>
+  <AvatarShield>UserInterface\Avatar\RegionShieldBabylon_ua</AvatarShield>
+  <FlagIcon>UserInterface\Icons\Regions\RegionFlagArgos_ua</FlagIcon>
+</Region>

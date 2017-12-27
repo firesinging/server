@@ -1,0 +1,199 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<quest xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xsd="http://www.w3.org/2001/XMLSchema" uniqueid="17701" version="40">
+	<displayname>$$12547$$</displayname>
+	<level>0</level>
+	<repeatable>false</repeatable>
+	<timer>
+		<events/>
+		<hideonui>false</hideonui>
+	</timer>
+	<canplaycoop>false</canplaycoop>
+	<cooprequired>false</cooprequired>
+	<ranked>false</ranked>
+	<alliance>eAllianceNone</alliance>
+	<questtype>RandomMap</questtype>
+	<description>$$12970$$</description>
+	<completiontext>$$12596$$</completiontext>
+	<inprogresstext>$$12597$$</inprogresstext>
+	<summarytext>$$12546$$</summarytext>
+	<canabandon>true</canabandon>
+	<hiddenquest>false</hiddenquest>
+	<friendonly>false</friendonly>
+	<suppressnotifications>false</suppressnotifications>
+	<customquest>false</customquest>
+	<questgamemodetype>Normal</questgamemodetype>
+	<prereqs>
+		<values>
+			<or>
+				<values>
+					<civilization>
+						<id>1</id>
+					</civilization>
+					<civilization>
+						<id>3</id>
+					</civilization>
+					<civilization>
+						<id>6</id>
+					</civilization>
+					<civilization>
+						<id>8</id>
+					</civilization>
+					<civilization>
+						<id>22</id>
+					</civilization>
+				</values>
+			</or>
+		</values>
+	</prereqs>
+	<equipmentprereqs/>
+	<targets/>
+	<objectives id="0" mustfailall="false">
+		<values>
+			<or id="1" mustfailall="false">
+				<values>
+					<kill id="2">
+						<description>$$2507$$</description>
+						<type>Ce_Bldg_Fortress</type>
+						<count>3</count>
+						<includeconversion>true</includeconversion>
+						<onlycountelites>false</onlycountelites>
+					</kill>
+					<reduceunitsto id="3">
+						<type>LogicalTypeNeededForVictory</type>
+						<count>0</count>
+						<includeteam>true</includeteam>
+						<includeunderconstruction>false</includeunderconstruction>
+						<canuncomplete>false</canuncomplete>
+						<causesfailure>true</causesfailure>
+						<playerid>1</playerid>
+					</reduceunitsto>
+				</values>
+			</or>
+		</values>
+	</objectives>
+	<onaccept/>
+	<rewards visible="true">
+		<protip visible="false">TIP_C07_DemoTurnIn</protip>
+		<or visible="true">
+			<consumable visible="true">
+				<consumablename>ConsumableBanditArcher_U</consumablename>
+				<count>3</count>
+			</consumable>
+			<consumable visible="true">
+				<consumablename>ConsumableBanditHippikon_U</consumablename>
+				<count>3</count>
+			</consumable>
+			<consumable visible="true">
+				<consumablename>ConsumableBanditHorseHunter_U</consumablename>
+				<count>3</count>
+			</consumable>
+		</or>
+	</rewards>
+	<playersettings id="1">
+		<team>1</team>
+		<color>1</color>
+		<tributablebehavior>Default</tributablebehavior>
+		<playertype>Human</playertype>
+		<cooponly>false</cooponly>
+		<startingfood>3000</startingfood>
+		<startingwood>3000</startingwood>
+		<startinggold>3000</startinggold>
+		<startingstone>3000</startingstone>
+		<aislidervariables/>
+		<aiflagvariables/>
+	</playersettings>
+	<playersettings id="2">
+		<team>2</team>
+		<color>2</color>
+		<tributablebehavior>Default</tributablebehavior>
+		<playertype>Computer</playertype>
+		<personality>$$12536$$</personality>
+		<script>Core\Ramp_Moderate</script>
+		<dataset>C03\C03_CoreRamp_T2</dataset>
+		<cooponly>false</cooponly>
+		<startingfood>-1</startingfood>
+		<startingwood>-1</startingwood>
+		<startinggold>-1</startinggold>
+		<startingstone>-1</startingstone>
+		<aislidervariables>
+			<aivariable>
+				<key>SiegeBias</key>
+				<value>-1</value>
+			</aivariable>
+			<aivariable>
+				<key>EconomyHandicap</key>
+				<value>0.3</value>
+			</aivariable>
+			<aivariable>
+				<key>InfantryBias</key>
+				<value>0.3</value>
+			</aivariable>
+			<aivariable>
+				<key>NavyBias</key>
+				<value>-0.8</value>
+			</aivariable>
+		</aislidervariables>
+		<aiflagvariables/>
+	</playersettings>
+	<playersettings id="3">
+		<team>1</team>
+		<color>7</color>
+		<tributablebehavior>Default</tributablebehavior>
+		<playertype>Human</playertype>
+		<cooponly>true</cooponly>
+		<startingfood>0</startingfood>
+		<startingwood>0</startingwood>
+		<startinggold>0</startinggold>
+		<startingstone>0</startingstone>
+		<aislidervariables/>
+		<aiflagvariables/>
+	</playersettings>
+	<playersettings id="4">
+		<team>2</team>
+		<color>2</color>
+		<tributablebehavior>Default</tributablebehavior>
+		<playertype>Computer</playertype>
+		<personality>$$12536$$</personality>
+		<script/>
+		<dataset>C03\C03_CoreRush_T1</dataset>
+		<cooponly>false</cooponly>
+		<startingfood>-1</startingfood>
+		<startingwood>-1</startingwood>
+		<startinggold>-1</startinggold>
+		<startingstone>-1</startingstone>
+		<aislidervariables/>
+		<aiflagvariables/>
+	</playersettings>
+	<diplomacysettings/>
+	<randommap>
+		<map>Core\C07\C07_Demo</map>
+		<randommap>true</randommap>
+		<numplayers>4</numplayers>
+		<mapvariables>
+			<variable name="scenariofile" type="String">C07\C07_Demo</variable>
+			<variable name="P2IncreaseBaseScale" type="Int">4</variable>
+			<variable name="P2AddMarketManager" type="Bool">true</variable>
+			<variable name="region" type="String">Celtic Alps</variable>
+			<variable name="mapSize" type="String">Standard</variable>
+		</mapvariables>
+		<nuggetoverrides/>
+		<mapregionname>Celtic Alps</mapregionname>
+		<lightsetname>&lt;Not Specified&gt;</lightsetname>
+		<mapsizename>Standard</mapsizename>
+	</randommap>
+	<questgivers>
+		<protounit>B04_PortMaster</protounit>
+	</questgivers>
+	<questreturners>
+		<protounit>B04_PortMaster</protounit>
+	</questreturners>
+	<maplocationx>0.435</maplocationx>
+	<maplocationy>0.755</maplocationy>
+	<mapmarker>QuestDefault</mapmarker>
+	<mappage>Norse</mappage>
+	<elitespawnchance>0</elitespawnchance>
+	<linkedquestid>0</linkedquestid>
+	<questbasescale>0</questbasescale>
+	<victoryconditions/>
+</quest>

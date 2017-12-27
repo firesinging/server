@@ -1,0 +1,2866 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<rewardtables>
+	<rewardtable name="pvpLoserXP">
+		<rewards minlevel="0" maxlevel="1">
+			<xp>150</xp>
+		</rewards>
+		<rewards minlevel="2" maxlevel="2">
+			<xp>200</xp>
+		</rewards>
+		<rewards minlevel="3" maxlevel="3">
+			<xp>400</xp>
+		</rewards>
+		<rewards minlevel="4" maxlevel="4">
+			<xp>900</xp>
+		</rewards>
+		<rewards minlevel="5" maxlevel="6">
+			<xp>1500</xp>
+		</rewards>
+		<rewards minlevel="7" maxlevel="8">
+			<xp>2000</xp>
+		</rewards>
+		<rewards minlevel="9" maxlevel="10">
+			<xp>3000</xp>
+		</rewards>
+		<rewards minlevel="11" maxlevel="14">
+			<xp>4500</xp>
+		</rewards>
+		<rewards minlevel="15" maxlevel="20">
+			<xp>6000</xp>
+		</rewards>
+		<rewards minlevel="21" maxlevel="25">
+			<xp>9000</xp>
+		</rewards>
+		<rewards minlevel="26" maxlevel="30">
+			<xp>12000</xp>
+		</rewards>
+		<rewards minlevel="31" maxlevel="35">
+			<xp>17000</xp>
+		</rewards>
+		<rewards minlevel="36" maxlevel="99">
+			<xp>24000</xp>
+		</rewards>
+	</rewardtable>
+	<rewardtable name="pvp1v1">
+		<rewards minlevel="0" maxlevel="1">
+			<xp>450</xp>
+			<capitalresource visible="true">
+				<capitalresource>cCapResCoin</capitalresource>
+				<amount>30</amount>
+			</capitalresource>
+		</rewards>
+		<rewards minlevel="2" maxlevel="2">
+			<xp>600</xp>
+			<capitalresource visible="true">
+				<capitalresource>cCapResCoin</capitalresource>
+				<amount>30</amount>
+			</capitalresource>
+		</rewards>
+		<rewards minlevel="3" maxlevel="3">
+			<xp>1200</xp>
+			<capitalresource visible="true">
+				<capitalresource>cCapResCoin</capitalresource>
+				<amount>30</amount>
+			</capitalresource>
+		</rewards>
+		<rewards minlevel="4" maxlevel="4">
+			<xp>2700</xp>
+			<capitalresource visible="true">
+				<capitalresource>cCapResCoin</capitalresource>
+				<amount>30</amount>
+			</capitalresource>
+		</rewards>
+		<rewards minlevel="5" maxlevel="6">
+			<xp>4500</xp>
+			<capitalresource visible="true">
+				<capitalresource>cCapResCoin</capitalresource>
+				<amount>40</amount>
+			</capitalresource>
+		</rewards>
+		<rewards minlevel="7" maxlevel="8">
+			<xp>6000</xp>
+			<capitalresource visible="true">
+				<capitalresource>cCapResCoin</capitalresource>
+				<amount>50</amount>
+			</capitalresource>
+		</rewards>
+		<rewards minlevel="9" maxlevel="10">
+			<xp>9000</xp>
+			<capitalresource visible="true">
+				<capitalresource>cCapResCoin</capitalresource>
+				<amount>80</amount>
+			</capitalresource>
+		</rewards>
+		<rewards minlevel="11" maxlevel="14">
+			<xp>13500</xp>
+			<capitalresource visible="true">
+				<capitalresource>cCapResCoin</capitalresource>
+				<amount>100</amount>
+			</capitalresource>
+		</rewards>
+		<rewards minlevel="15" maxlevel="20">
+			<xp>18000</xp>
+			<capitalresource visible="true">
+				<capitalresource>cCapResCoin</capitalresource>
+				<amount>120</amount>
+			</capitalresource>
+		</rewards>
+		<rewards minlevel="21" maxlevel="25">
+			<xp>27000</xp>
+			<capitalresource visible="true">
+				<capitalresource>cCapResCoin</capitalresource>
+				<amount>150</amount>
+			</capitalresource>
+		</rewards>
+		<rewards minlevel="26" maxlevel="30">
+			<xp>36000</xp>
+			<capitalresource visible="true">
+				<capitalresource>cCapResCoin</capitalresource>
+				<amount>200</amount>
+			</capitalresource>
+		</rewards>
+		<rewards minlevel="31" maxlevel="35">
+			<xp>51000</xp>
+			<capitalresource visible="true">
+				<capitalresource>cCapResCoin</capitalresource>
+				<amount>250</amount>
+			</capitalresource>
+		</rewards>
+		<rewards minlevel="36" maxlevel="99">
+			<xp>72000</xp>
+			<capitalresource visible="true">
+				<capitalresource>cCapResCoin</capitalresource>
+				<amount>300</amount>
+			</capitalresource>
+		</rewards>
+	</rewardtable>
+	<rewardtable name="pvp2v2">
+		<rewards minlevel="0" maxlevel="1">
+			<xp>450</xp>
+			<capitalresource visible="true">
+				<capitalresource>cCapResCoin</capitalresource>
+				<amount>30</amount>
+			</capitalresource>
+		</rewards>
+		<rewards minlevel="2" maxlevel="2">
+			<xp>600</xp>
+			<capitalresource visible="true">
+				<capitalresource>cCapResCoin</capitalresource>
+				<amount>30</amount>
+			</capitalresource>
+		</rewards>
+		<rewards minlevel="3" maxlevel="3">
+			<xp>1200</xp>
+			<capitalresource visible="true">
+				<capitalresource>cCapResCoin</capitalresource>
+				<amount>30</amount>
+			</capitalresource>
+		</rewards>
+		<rewards minlevel="4" maxlevel="4">
+			<xp>2700</xp>
+			<capitalresource visible="true">
+				<capitalresource>cCapResCoin</capitalresource>
+				<amount>30</amount>
+			</capitalresource>
+		</rewards>
+		<rewards minlevel="5" maxlevel="6">
+			<xp>4500</xp>
+			<capitalresource visible="true">
+				<capitalresource>cCapResCoin</capitalresource>
+				<amount>40</amount>
+			</capitalresource>
+		</rewards>
+		<rewards minlevel="7" maxlevel="8">
+			<xp>6000</xp>
+			<capitalresource visible="true">
+				<capitalresource>cCapResCoin</capitalresource>
+				<amount>50</amount>
+			</capitalresource>
+		</rewards>
+		<rewards minlevel="9" maxlevel="10">
+			<xp>9000</xp>
+			<capitalresource visible="true">
+				<capitalresource>cCapResCoin</capitalresource>
+				<amount>80</amount>
+			</capitalresource>
+		</rewards>
+		<rewards minlevel="11" maxlevel="14">
+			<xp>13500</xp>
+			<capitalresource visible="true">
+				<capitalresource>cCapResCoin</capitalresource>
+				<amount>100</amount>
+			</capitalresource>
+		</rewards>
+		<rewards minlevel="15" maxlevel="20">
+			<xp>18000</xp>
+			<capitalresource visible="true">
+				<capitalresource>cCapResCoin</capitalresource>
+				<amount>120</amount>
+			</capitalresource>
+		</rewards>
+		<rewards minlevel="21" maxlevel="25">
+			<xp>27000</xp>
+			<capitalresource visible="true">
+				<capitalresource>cCapResCoin</capitalresource>
+				<amount>150</amount>
+			</capitalresource>
+		</rewards>
+		<rewards minlevel="26" maxlevel="30">
+			<xp>36000</xp>
+			<capitalresource visible="true">
+				<capitalresource>cCapResCoin</capitalresource>
+				<amount>200</amount>
+			</capitalresource>
+		</rewards>
+		<rewards minlevel="31" maxlevel="35">
+			<xp>51000</xp>
+			<capitalresource visible="true">
+				<capitalresource>cCapResCoin</capitalresource>
+				<amount>250</amount>
+			</capitalresource>
+		</rewards>
+		<rewards minlevel="36" maxlevel="99">
+			<xp>72000</xp>
+			<capitalresource visible="true">
+				<capitalresource>cCapResCoin</capitalresource>
+				<amount>300</amount>
+			</capitalresource>
+		</rewards>
+	</rewardtable>
+	<rewardtable name="pvp1v1Ranked">
+		<rewards minlevel="0" maxlevel="1">
+			<xp>450</xp>
+			<capitalresource visible="true">
+				<capitalresource>cCapResCoin</capitalresource>
+				<amount>30</amount>
+			</capitalresource>
+		</rewards>
+		<rewards minlevel="2" maxlevel="2">
+			<xp>600</xp>
+			<capitalresource visible="true">
+				<capitalresource>cCapResCoin</capitalresource>
+				<amount>30</amount>
+			</capitalresource>
+		</rewards>
+		<rewards minlevel="3" maxlevel="3">
+			<xp>1200</xp>
+			<capitalresource visible="true">
+				<capitalresource>cCapResCoin</capitalresource>
+				<amount>30</amount>
+			</capitalresource>
+		</rewards>
+		<rewards minlevel="4" maxlevel="4">
+			<xp>2700</xp>
+			<capitalresource visible="true">
+				<capitalresource>cCapResCoin</capitalresource>
+				<amount>30</amount>
+			</capitalresource>
+		</rewards>
+		<rewards minlevel="5" maxlevel="6">
+			<xp>4500</xp>
+			<capitalresource visible="true">
+				<capitalresource>cCapResCoin</capitalresource>
+				<amount>40</amount>
+			</capitalresource>
+		</rewards>
+		<rewards minlevel="7" maxlevel="8">
+			<xp>6000</xp>
+			<capitalresource visible="true">
+				<capitalresource>cCapResCoin</capitalresource>
+				<amount>50</amount>
+			</capitalresource>
+		</rewards>
+		<rewards minlevel="9" maxlevel="10">
+			<xp>9000</xp>
+			<capitalresource visible="true">
+				<capitalresource>cCapResCoin</capitalresource>
+				<amount>80</amount>
+			</capitalresource>
+		</rewards>
+		<rewards minlevel="11" maxlevel="14">
+			<xp>13500</xp>
+			<capitalresource visible="true">
+				<capitalresource>cCapResCoin</capitalresource>
+				<amount>100</amount>
+			</capitalresource>
+		</rewards>
+		<rewards minlevel="15" maxlevel="20">
+			<xp>18000</xp>
+			<capitalresource visible="true">
+				<capitalresource>cCapResCoin</capitalresource>
+				<amount>120</amount>
+			</capitalresource>
+		</rewards>
+		<rewards minlevel="21" maxlevel="25">
+			<xp>27000</xp>
+			<capitalresource visible="true">
+				<capitalresource>cCapResCoin</capitalresource>
+				<amount>150</amount>
+			</capitalresource>
+		</rewards>
+		<rewards minlevel="26" maxlevel="30">
+			<xp>36000</xp>
+			<capitalresource visible="true">
+				<capitalresource>cCapResCoin</capitalresource>
+				<amount>200</amount>
+			</capitalresource>
+		</rewards>
+		<rewards minlevel="31" maxlevel="35">
+			<xp>51000</xp>
+			<capitalresource visible="true">
+				<capitalresource>cCapResCoin</capitalresource>
+				<amount>250</amount>
+			</capitalresource>
+		</rewards>
+		<rewards minlevel="36" maxlevel="99">
+			<xp>72000</xp>
+			<capitalresource visible="true">
+				<capitalresource>cCapResCoin</capitalresource>
+				<amount>300</amount>
+			</capitalresource>
+		</rewards>
+	</rewardtable>
+	<rewardtable name="pvp2v2Ranked">
+		<rewards minlevel="0" maxlevel="1">
+			<xp>450</xp>
+			<capitalresource visible="true">
+				<capitalresource>cCapResCoin</capitalresource>
+				<amount>30</amount>
+			</capitalresource>
+		</rewards>
+		<rewards minlevel="2" maxlevel="2">
+			<xp>600</xp>
+			<capitalresource visible="true">
+				<capitalresource>cCapResCoin</capitalresource>
+				<amount>30</amount>
+			</capitalresource>
+		</rewards>
+		<rewards minlevel="3" maxlevel="3">
+			<xp>1200</xp>
+			<capitalresource visible="true">
+				<capitalresource>cCapResCoin</capitalresource>
+				<amount>30</amount>
+			</capitalresource>
+		</rewards>
+		<rewards minlevel="4" maxlevel="4">
+			<xp>2700</xp>
+			<capitalresource visible="true">
+				<capitalresource>cCapResCoin</capitalresource>
+				<amount>30</amount>
+			</capitalresource>
+		</rewards>
+		<rewards minlevel="5" maxlevel="6">
+			<xp>4500</xp>
+			<capitalresource visible="true">
+				<capitalresource>cCapResCoin</capitalresource>
+				<amount>40</amount>
+			</capitalresource>
+		</rewards>
+		<rewards minlevel="7" maxlevel="8">
+			<xp>6000</xp>
+			<capitalresource visible="true">
+				<capitalresource>cCapResCoin</capitalresource>
+				<amount>50</amount>
+			</capitalresource>
+		</rewards>
+		<rewards minlevel="9" maxlevel="10">
+			<xp>9000</xp>
+			<capitalresource visible="true">
+				<capitalresource>cCapResCoin</capitalresource>
+				<amount>80</amount>
+			</capitalresource>
+		</rewards>
+		<rewards minlevel="11" maxlevel="14">
+			<xp>13500</xp>
+			<capitalresource visible="true">
+				<capitalresource>cCapResCoin</capitalresource>
+				<amount>100</amount>
+			</capitalresource>
+		</rewards>
+		<rewards minlevel="15" maxlevel="20">
+			<xp>18000</xp>
+			<capitalresource visible="true">
+				<capitalresource>cCapResCoin</capitalresource>
+				<amount>120</amount>
+			</capitalresource>
+		</rewards>
+		<rewards minlevel="21" maxlevel="25">
+			<xp>27000</xp>
+			<capitalresource visible="true">
+				<capitalresource>cCapResCoin</capitalresource>
+				<amount>150</amount>
+			</capitalresource>
+		</rewards>
+		<rewards minlevel="26" maxlevel="30">
+			<xp>36000</xp>
+			<capitalresource visible="true">
+				<capitalresource>cCapResCoin</capitalresource>
+				<amount>200</amount>
+			</capitalresource>
+		</rewards>
+		<rewards minlevel="31" maxlevel="35">
+			<xp>51000</xp>
+			<capitalresource visible="true">
+				<capitalresource>cCapResCoin</capitalresource>
+				<amount>250</amount>
+			</capitalresource>
+		</rewards>
+		<rewards minlevel="36" maxlevel="99">
+			<xp>72000</xp>
+			<capitalresource visible="true">
+				<capitalresource>cCapResCoin</capitalresource>
+				<amount>300</amount>
+			</capitalresource>
+		</rewards>
+	</rewardtable>
+	<rewardtable name="socialQuests">
+		<rewards minlevel="0" maxlevel="1">
+			<xp>500</xp>
+			<capitalresource visible="true">
+				<capitalresource>cCapResCoin</capitalresource>
+				<amount>10</amount>
+			</capitalresource>
+		</rewards>
+		<rewards minlevel="2" maxlevel="2">
+			<xp>800</xp>
+			<capitalresource visible="true">
+				<capitalresource>cCapResCoin</capitalresource>
+				<amount>10</amount>
+			</capitalresource>
+		</rewards>
+		<rewards minlevel="3" maxlevel="3">
+			<xp>1500</xp>
+			<capitalresource visible="true">
+				<capitalresource>cCapResCoin</capitalresource>
+				<amount>10</amount>
+			</capitalresource>
+		</rewards>
+		<rewards minlevel="4" maxlevel="4">
+			<xp>2500</xp>
+			<capitalresource visible="true">
+				<capitalresource>cCapResCoin</capitalresource>
+				<amount>10</amount>
+			</capitalresource>
+		</rewards>
+		<rewards minlevel="5" maxlevel="6">
+			<xp>3500</xp>
+			<capitalresource visible="true">
+				<capitalresource>cCapResCoin</capitalresource>
+				<amount>20</amount>
+			</capitalresource>
+		</rewards>
+		<rewards minlevel="7" maxlevel="8">
+			<xp>6000</xp>
+			<capitalresource visible="true">
+				<capitalresource>cCapResCoin</capitalresource>
+				<amount>25</amount>
+			</capitalresource>
+		</rewards>
+		<rewards minlevel="9" maxlevel="10">
+			<xp>8000</xp>
+			<capitalresource visible="true">
+				<capitalresource>cCapResCoin</capitalresource>
+				<amount>30</amount>
+			</capitalresource>
+		</rewards>
+		<rewards minlevel="11" maxlevel="14">
+			<xp>10000</xp>
+			<capitalresource visible="true">
+				<capitalresource>cCapResCoin</capitalresource>
+				<amount>40</amount>
+			</capitalresource>
+		</rewards>
+		<rewards minlevel="15" maxlevel="20">
+			<xp>15000</xp>
+			<capitalresource visible="true">
+				<capitalresource>cCapResCoin</capitalresource>
+				<amount>60</amount>
+			</capitalresource>
+		</rewards>
+		<rewards minlevel="21" maxlevel="25">
+			<xp>25000</xp>
+			<capitalresource visible="true">
+				<capitalresource>cCapResCoin</capitalresource>
+				<amount>100</amount>
+			</capitalresource>
+		</rewards>
+		<rewards minlevel="26" maxlevel="30">
+			<xp>35000</xp>
+			<capitalresource visible="true">
+				<capitalresource>cCapResCoin</capitalresource>
+				<amount>150</amount>
+			</capitalresource>
+		</rewards>
+		<rewards minlevel="31" maxlevel="35">
+			<xp>50000</xp>
+			<capitalresource visible="true">
+				<capitalresource>cCapResCoin</capitalresource>
+				<amount>150</amount>
+			</capitalresource>
+		</rewards>
+		<rewards minlevel="36" maxlevel="99">
+			<xp>50000</xp>
+			<capitalresource visible="true">
+				<capitalresource>cCapResCoin</capitalresource>
+				<amount>150</amount>
+			</capitalresource>
+		</rewards>
+	</rewardtable>
+	<rewardtable name="b01cycle1">
+		<rewards minlevel="0" maxlevel="1">
+			<xp>4500</xp>
+			<capitalresource visible="true">
+				<capitalresource>cCapResCoin</capitalresource>
+				<amount>20</amount>
+			</capitalresource>
+		</rewards>
+		<rewards minlevel="2" maxlevel="2">
+			<xp>4500</xp>
+			<capitalresource visible="true">
+				<capitalresource>cCapResCoin</capitalresource>
+				<amount>20</amount>
+			</capitalresource>
+		</rewards>
+		<rewards minlevel="3" maxlevel="3">
+			<xp>4500</xp>
+			<capitalresource visible="true">
+				<capitalresource>cCapResCoin</capitalresource>
+				<amount>20</amount>
+			</capitalresource>
+		</rewards>
+		<rewards minlevel="4" maxlevel="4">
+			<xp>4500</xp>
+			<capitalresource visible="true">
+				<capitalresource>cCapResCoin</capitalresource>
+				<amount>20</amount>
+			</capitalresource>
+		</rewards>
+		<rewards minlevel="5" maxlevel="6">
+			<xp>4500</xp>
+			<capitalresource visible="true">
+				<capitalresource>cCapResCoin</capitalresource>
+				<amount>20</amount>
+			</capitalresource>
+		</rewards>
+		<rewards minlevel="7" maxlevel="8">
+			<xp>6000</xp>
+			<capitalresource visible="true">
+				<capitalresource>cCapResCoin</capitalresource>
+				<amount>30</amount>
+			</capitalresource>
+		</rewards>
+		<rewards minlevel="9" maxlevel="10">
+			<xp>7000</xp>
+			<capitalresource visible="true">
+				<capitalresource>cCapResCoin</capitalresource>
+				<amount>30</amount>
+			</capitalresource>
+		</rewards>
+		<rewards minlevel="11" maxlevel="14">
+			<xp>10000</xp>
+			<capitalresource visible="true">
+				<capitalresource>cCapResCoin</capitalresource>
+				<amount>40</amount>
+			</capitalresource>
+		</rewards>
+		<rewards minlevel="15" maxlevel="20">
+			<xp>15000</xp>
+			<capitalresource visible="true">
+				<capitalresource>cCapResCoin</capitalresource>
+				<amount>50</amount>
+			</capitalresource>
+		</rewards>
+		<rewards minlevel="21" maxlevel="25">
+			<xp>20000</xp>
+			<capitalresource visible="true">
+				<capitalresource>cCapResCoin</capitalresource>
+				<amount>80</amount>
+			</capitalresource>
+		</rewards>
+		<rewards minlevel="26" maxlevel="30">
+			<xp>25000</xp>
+			<capitalresource visible="true">
+				<capitalresource>cCapResCoin</capitalresource>
+				<amount>120</amount>
+			</capitalresource>
+		</rewards>
+		<rewards minlevel="31" maxlevel="42">
+			<xp>35000</xp>
+			<capitalresource visible="true">
+				<capitalresource>cCapResCoin</capitalresource>
+				<amount>150</amount>
+			</capitalresource>
+		</rewards>
+		<rewards minlevel="43" maxlevel="99">
+			<xp>40000</xp>
+			<capitalresource visible="true">
+				<capitalresource>cCapResCoin</capitalresource>
+				<amount>200</amount>
+			</capitalresource>
+		</rewards>
+	</rewardtable>
+	<rewardtable name="b01cycle2">
+		<rewards minlevel="0" maxlevel="1">
+			<xp>7700</xp>
+			<capitalresource visible="true">
+				<capitalresource>cCapResCoin</capitalresource>
+				<amount>50</amount>
+			</capitalresource>
+		</rewards>
+		<rewards minlevel="2" maxlevel="2">
+			<xp>7700</xp>
+			<capitalresource visible="true">
+				<capitalresource>cCapResCoin</capitalresource>
+				<amount>50</amount>
+			</capitalresource>
+		</rewards>
+		<rewards minlevel="3" maxlevel="3">
+			<xp>7700</xp>
+			<capitalresource visible="true">
+				<capitalresource>cCapResCoin</capitalresource>
+				<amount>50</amount>
+			</capitalresource>
+		</rewards>
+		<rewards minlevel="4" maxlevel="4">
+			<xp>7700</xp>
+			<capitalresource visible="true">
+				<capitalresource>cCapResCoin</capitalresource>
+				<amount>50</amount>
+			</capitalresource>
+		</rewards>
+		<rewards minlevel="5" maxlevel="6">
+			<xp>7700</xp>
+			<capitalresource visible="true">
+				<capitalresource>cCapResCoin</capitalresource>
+				<amount>50</amount>
+			</capitalresource>
+		</rewards>
+		<rewards minlevel="7" maxlevel="8">
+			<xp>9900</xp>
+			<capitalresource visible="true">
+				<capitalresource>cCapResCoin</capitalresource>
+				<amount>70</amount>
+			</capitalresource>
+		</rewards>
+		<rewards minlevel="9" maxlevel="10">
+			<xp>14000</xp>
+			<capitalresource visible="true">
+				<capitalresource>cCapResCoin</capitalresource>
+				<amount>100</amount>
+			</capitalresource>
+		</rewards>
+		<rewards minlevel="11" maxlevel="14">
+			<xp>24000</xp>
+			<capitalresource visible="true">
+				<capitalresource>cCapResCoin</capitalresource>
+				<amount>150</amount>
+			</capitalresource>
+		</rewards>
+		<rewards minlevel="15" maxlevel="20">
+			<xp>39000</xp>
+			<capitalresource visible="true">
+				<capitalresource>cCapResCoin</capitalresource>
+				<amount>200</amount>
+			</capitalresource>
+		</rewards>
+		<rewards minlevel="21" maxlevel="25">
+			<xp>59000</xp>
+			<capitalresource visible="true">
+				<capitalresource>cCapResCoin</capitalresource>
+				<amount>250</amount>
+			</capitalresource>
+		</rewards>
+		<rewards minlevel="26" maxlevel="30">
+			<xp>79000</xp>
+			<capitalresource visible="true">
+				<capitalresource>cCapResCoin</capitalresource>
+				<amount>300</amount>
+			</capitalresource>
+		</rewards>
+		<rewards minlevel="31" maxlevel="42">
+			<xp>104000</xp>
+			<capitalresource visible="true">
+				<capitalresource>cCapResCoin</capitalresource>
+				<amount>400</amount>
+			</capitalresource>
+		</rewards>
+		<rewards minlevel="43" maxlevel="99">
+			<xp>139000</xp>
+			<capitalresource visible="true">
+				<capitalresource>cCapResCoin</capitalresource>
+				<amount>500</amount>
+			</capitalresource>
+		</rewards>
+	</rewardtable>
+	<rewardtable name="b01cycle3">
+		<rewards minlevel="0" maxlevel="1">
+			<xp>11000</xp>
+			<capitalresource visible="true">
+				<capitalresource>cCapResCoin</capitalresource>
+				<amount>120</amount>
+			</capitalresource>
+		</rewards>
+		<rewards minlevel="2" maxlevel="2">
+			<xp>11000</xp>
+			<capitalresource visible="true">
+				<capitalresource>cCapResCoin</capitalresource>
+				<amount>120</amount>
+			</capitalresource>
+		</rewards>
+		<rewards minlevel="3" maxlevel="3">
+			<xp>11000</xp>
+			<capitalresource visible="true">
+				<capitalresource>cCapResCoin</capitalresource>
+				<amount>120</amount>
+			</capitalresource>
+		</rewards>
+		<rewards minlevel="4" maxlevel="4">
+			<xp>11000</xp>
+			<capitalresource visible="true">
+				<capitalresource>cCapResCoin</capitalresource>
+				<amount>120</amount>
+			</capitalresource>
+		</rewards>
+		<rewards minlevel="5" maxlevel="6">
+			<xp>11000</xp>
+			<capitalresource visible="true">
+				<capitalresource>cCapResCoin</capitalresource>
+				<amount>120</amount>
+			</capitalresource>
+		</rewards>
+		<rewards minlevel="7" maxlevel="8">
+			<xp>16000</xp>
+			<capitalresource visible="true">
+				<capitalresource>cCapResCoin</capitalresource>
+				<amount>150</amount>
+			</capitalresource>
+		</rewards>
+		<rewards minlevel="9" maxlevel="10">
+			<xp>24000</xp>
+			<capitalresource visible="true">
+				<capitalresource>cCapResCoin</capitalresource>
+				<amount>200</amount>
+			</capitalresource>
+		</rewards>
+		<rewards minlevel="11" maxlevel="14">
+			<xp>34000</xp>
+			<capitalresource visible="true">
+				<capitalresource>cCapResCoin</capitalresource>
+				<amount>250</amount>
+			</capitalresource>
+		</rewards>
+		<rewards minlevel="15" maxlevel="20">
+			<xp>54000</xp>
+			<capitalresource visible="true">
+				<capitalresource>cCapResCoin</capitalresource>
+				<amount>300</amount>
+			</capitalresource>
+		</rewards>
+		<rewards minlevel="21" maxlevel="25">
+			<xp>84000</xp>
+			<capitalresource visible="true">
+				<capitalresource>cCapResCoin</capitalresource>
+				<amount>400</amount>
+			</capitalresource>
+		</rewards>
+		<rewards minlevel="26" maxlevel="30">
+			<xp>109000</xp>
+			<capitalresource visible="true">
+				<capitalresource>cCapResCoin</capitalresource>
+				<amount>500</amount>
+			</capitalresource>
+		</rewards>
+		<rewards minlevel="31" maxlevel="42">
+			<xp>144000</xp>
+			<capitalresource visible="true">
+				<capitalresource>cCapResCoin</capitalresource>
+				<amount>600</amount>
+			</capitalresource>
+		</rewards>
+		<rewards minlevel="43" maxlevel="99">
+			<xp>189000</xp>
+			<capitalresource visible="true">
+				<capitalresource>cCapResCoin</capitalresource>
+				<amount>700</amount>
+			</capitalresource>
+		</rewards>
+	</rewardtable>
+	<rewardtable name="b02Cycle">
+		<rewards minlevel="0" maxlevel="0">
+			<xp>500</xp>
+			<capitalresource visible="true">
+				<capitalresource>cCapResCoin</capitalresource>
+				<amount>5</amount>
+			</capitalresource>
+		</rewards>
+		<rewards minlevel="1" maxlevel="1">
+			<xp>700</xp>
+			<capitalresource visible="true">
+				<capitalresource>cCapResCoin</capitalresource>
+				<amount>5</amount>
+			</capitalresource>
+		</rewards>
+		<rewards minlevel="2" maxlevel="2">
+			<xp>1000</xp>
+			<capitalresource visible="true">
+				<capitalresource>cCapResCoin</capitalresource>
+				<amount>10</amount>
+			</capitalresource>
+		</rewards>
+		<rewards minlevel="3" maxlevel="3">
+			<xp>1500</xp>
+			<capitalresource visible="true">
+				<capitalresource>cCapResCoin</capitalresource>
+				<amount>15</amount>
+			</capitalresource>
+		</rewards>
+		<rewards minlevel="4" maxlevel="4">
+			<xp>2500</xp>
+			<capitalresource visible="true">
+				<capitalresource>cCapResCoin</capitalresource>
+				<amount>20</amount>
+			</capitalresource>
+		</rewards>
+		<rewards minlevel="5" maxlevel="5">
+			<xp>3500</xp>
+			<capitalresource visible="true">
+				<capitalresource>cCapResCoin</capitalresource>
+				<amount>25</amount>
+			</capitalresource>
+		</rewards>
+		<rewards minlevel="6" maxlevel="6">
+			<xp>4500</xp>
+			<capitalresource visible="true">
+				<capitalresource>cCapResCoin</capitalresource>
+				<amount>30</amount>
+			</capitalresource>
+		</rewards>
+		<rewards minlevel="7" maxlevel="7">
+			<xp>5500</xp>
+			<capitalresource visible="true">
+				<capitalresource>cCapResCoin</capitalresource>
+				<amount>35</amount>
+			</capitalresource>
+		</rewards>
+		<rewards minlevel="8" maxlevel="8">
+			<xp>6500</xp>
+			<capitalresource visible="true">
+				<capitalresource>cCapResCoin</capitalresource>
+				<amount>40</amount>
+			</capitalresource>
+		</rewards>
+		<rewards minlevel="9" maxlevel="9">
+			<xp>7500</xp>
+			<capitalresource visible="true">
+				<capitalresource>cCapResCoin</capitalresource>
+				<amount>45</amount>
+			</capitalresource>
+		</rewards>
+		<rewards minlevel="10" maxlevel="10">
+			<xp>8500</xp>
+			<capitalresource visible="true">
+				<capitalresource>cCapResCoin</capitalresource>
+				<amount>50</amount>
+			</capitalresource>
+		</rewards>
+		<rewards minlevel="11" maxlevel="11">
+			<xp>9500</xp>
+			<capitalresource visible="true">
+				<capitalresource>cCapResCoin</capitalresource>
+				<amount>55</amount>
+			</capitalresource>
+		</rewards>
+		<rewards minlevel="12" maxlevel="12">
+			<xp>10500</xp>
+			<capitalresource visible="true">
+				<capitalresource>cCapResCoin</capitalresource>
+				<amount>60</amount>
+			</capitalresource>
+		</rewards>
+		<rewards minlevel="13" maxlevel="13">
+			<xp>11500</xp>
+			<capitalresource visible="true">
+				<capitalresource>cCapResCoin</capitalresource>
+				<amount>65</amount>
+			</capitalresource>
+		</rewards>
+		<rewards minlevel="14" maxlevel="14">
+			<xp>12500</xp>
+			<capitalresource visible="true">
+				<capitalresource>cCapResCoin</capitalresource>
+				<amount>70</amount>
+			</capitalresource>
+		</rewards>
+		<rewards minlevel="15" maxlevel="15">
+			<xp>14000</xp>
+			<capitalresource visible="true">
+				<capitalresource>cCapResCoin</capitalresource>
+				<amount>75</amount>
+			</capitalresource>
+		</rewards>
+		<rewards minlevel="16" maxlevel="16">
+			<xp>16000</xp>
+			<capitalresource visible="true">
+				<capitalresource>cCapResCoin</capitalresource>
+				<amount>80</amount>
+			</capitalresource>
+		</rewards>
+		<rewards minlevel="17" maxlevel="17">
+			<xp>18000</xp>
+			<capitalresource visible="true">
+				<capitalresource>cCapResCoin</capitalresource>
+				<amount>85</amount>
+			</capitalresource>
+		</rewards>
+		<rewards minlevel="18" maxlevel="18">
+			<xp>20000</xp>
+			<capitalresource visible="true">
+				<capitalresource>cCapResCoin</capitalresource>
+				<amount>90</amount>
+			</capitalresource>
+		</rewards>
+		<rewards minlevel="19" maxlevel="19">
+			<xp>22000</xp>
+			<capitalresource visible="true">
+				<capitalresource>cCapResCoin</capitalresource>
+				<amount>95</amount>
+			</capitalresource>
+		</rewards>
+		<rewards minlevel="20" maxlevel="20">
+			<xp>24000</xp>
+			<capitalresource visible="true">
+				<capitalresource>cCapResCoin</capitalresource>
+				<amount>100</amount>
+			</capitalresource>
+		</rewards>
+		<rewards minlevel="21" maxlevel="21">
+			<xp>26000</xp>
+			<capitalresource visible="true">
+				<capitalresource>cCapResCoin</capitalresource>
+				<amount>105</amount>
+			</capitalresource>
+		</rewards>
+		<rewards minlevel="22" maxlevel="22">
+			<xp>28000</xp>
+			<capitalresource visible="true">
+				<capitalresource>cCapResCoin</capitalresource>
+				<amount>110</amount>
+			</capitalresource>
+		</rewards>
+		<rewards minlevel="23" maxlevel="23">
+			<xp>30000</xp>
+			<capitalresource visible="true">
+				<capitalresource>cCapResCoin</capitalresource>
+				<amount>115</amount>
+			</capitalresource>
+		</rewards>
+		<rewards minlevel="24" maxlevel="24">
+			<xp>32000</xp>
+			<capitalresource visible="true">
+				<capitalresource>cCapResCoin</capitalresource>
+				<amount>120</amount>
+			</capitalresource>
+		</rewards>
+		<rewards minlevel="25" maxlevel="25">
+			<xp>34000</xp>
+			<capitalresource visible="true">
+				<capitalresource>cCapResCoin</capitalresource>
+				<amount>125</amount>
+			</capitalresource>
+		</rewards>
+		<rewards minlevel="26" maxlevel="26">
+			<xp>36000</xp>
+			<capitalresource visible="true">
+				<capitalresource>cCapResCoin</capitalresource>
+				<amount>130</amount>
+			</capitalresource>
+		</rewards>
+		<rewards minlevel="27" maxlevel="27">
+			<xp>38000</xp>
+			<capitalresource visible="true">
+				<capitalresource>cCapResCoin</capitalresource>
+				<amount>135</amount>
+			</capitalresource>
+		</rewards>
+		<rewards minlevel="28" maxlevel="28">
+			<xp>40000</xp>
+			<capitalresource visible="true">
+				<capitalresource>cCapResCoin</capitalresource>
+				<amount>140</amount>
+			</capitalresource>
+		</rewards>
+		<rewards minlevel="29" maxlevel="29">
+			<xp>42000</xp>
+			<capitalresource visible="true">
+				<capitalresource>cCapResCoin</capitalresource>
+				<amount>145</amount>
+			</capitalresource>
+		</rewards>
+		<rewards minlevel="30" maxlevel="30">
+			<xp>44000</xp>
+			<capitalresource visible="true">
+				<capitalresource>cCapResCoin</capitalresource>
+				<amount>150</amount>
+			</capitalresource>
+		</rewards>
+		<rewards minlevel="31" maxlevel="31">
+			<xp>46000</xp>
+			<capitalresource visible="true">
+				<capitalresource>cCapResCoin</capitalresource>
+				<amount>155</amount>
+			</capitalresource>
+		</rewards>
+		<rewards minlevel="32" maxlevel="32">
+			<xp>48000</xp>
+			<capitalresource visible="true">
+				<capitalresource>cCapResCoin</capitalresource>
+				<amount>160</amount>
+			</capitalresource>
+		</rewards>
+		<rewards minlevel="33" maxlevel="33">
+			<xp>50000</xp>
+			<capitalresource visible="true">
+				<capitalresource>cCapResCoin</capitalresource>
+				<amount>165</amount>
+			</capitalresource>
+		</rewards>
+		<rewards minlevel="34" maxlevel="34">
+			<xp>52000</xp>
+			<capitalresource visible="true">
+				<capitalresource>cCapResCoin</capitalresource>
+				<amount>170</amount>
+			</capitalresource>
+		</rewards>
+		<rewards minlevel="35" maxlevel="35">
+			<xp>54000</xp>
+			<capitalresource visible="true">
+				<capitalresource>cCapResCoin</capitalresource>
+				<amount>175</amount>
+			</capitalresource>
+		</rewards>
+		<rewards minlevel="36" maxlevel="36">
+			<xp>56000</xp>
+			<capitalresource visible="true">
+				<capitalresource>cCapResCoin</capitalresource>
+				<amount>180</amount>
+			</capitalresource>
+		</rewards>
+		<rewards minlevel="37" maxlevel="37">
+			<xp>58000</xp>
+			<capitalresource visible="true">
+				<capitalresource>cCapResCoin</capitalresource>
+				<amount>185</amount>
+			</capitalresource>
+		</rewards>
+		<rewards minlevel="38" maxlevel="38">
+			<xp>60000</xp>
+			<capitalresource visible="true">
+				<capitalresource>cCapResCoin</capitalresource>
+				<amount>190</amount>
+			</capitalresource>
+		</rewards>
+		<rewards minlevel="39" maxlevel="39">
+			<xp>62000</xp>
+			<capitalresource visible="true">
+				<capitalresource>cCapResCoin</capitalresource>
+				<amount>195</amount>
+			</capitalresource>
+		</rewards>
+		<rewards minlevel="40" maxlevel="40">
+			<xp>64000</xp>
+			<capitalresource visible="true">
+				<capitalresource>cCapResCoin</capitalresource>
+				<amount>200</amount>
+			</capitalresource>
+		</rewards>
+		<rewards minlevel="41" maxlevel="41">
+			<xp>66000</xp>
+			<capitalresource visible="true">
+				<capitalresource>cCapResCoin</capitalresource>
+				<amount>205</amount>
+			</capitalresource>
+		</rewards>
+		<rewards minlevel="42" maxlevel="42">
+			<xp>68000</xp>
+			<capitalresource visible="true">
+				<capitalresource>cCapResCoin</capitalresource>
+				<amount>210</amount>
+			</capitalresource>
+		</rewards>
+		<rewards minlevel="43" maxlevel="99">
+			<xp>70000</xp>
+			<capitalresource visible="true">
+				<capitalresource>cCapResCoin</capitalresource>
+				<amount>225</amount>
+			</capitalresource>
+		</rewards>
+	</rewardtable>
+	<rewardtable name="b02Global">
+		<rewards minlevel="0" maxlevel="1">
+			<xp>3000</xp>
+			<capitalresource visible="true">
+				<capitalresource>cCapResCoin</capitalresource>
+				<amount>10</amount>
+			</capitalresource>
+		</rewards>
+		<rewards minlevel="2" maxlevel="2">
+			<xp>3000</xp>
+			<capitalresource visible="true">
+				<capitalresource>cCapResCoin</capitalresource>
+				<amount>15</amount>
+			</capitalresource>
+		</rewards>
+		<rewards minlevel="3" maxlevel="3">
+			<xp>3000</xp>
+			<capitalresource visible="true">
+				<capitalresource>cCapResCoin</capitalresource>
+				<amount>20</amount>
+			</capitalresource>
+		</rewards>
+		<rewards minlevel="4" maxlevel="4">
+			<xp>3000</xp>
+			<capitalresource visible="true">
+				<capitalresource>cCapResCoin</capitalresource>
+				<amount>25</amount>
+			</capitalresource>
+		</rewards>
+		<rewards minlevel="5" maxlevel="6">
+			<xp>5000</xp>
+			<capitalresource visible="true">
+				<capitalresource>cCapResCoin</capitalresource>
+				<amount>30</amount>
+			</capitalresource>
+		</rewards>
+		<rewards minlevel="7" maxlevel="8">
+			<xp>8000</xp>
+			<capitalresource visible="true">
+				<capitalresource>cCapResCoin</capitalresource>
+				<amount>40</amount>
+			</capitalresource>
+		</rewards>
+		<rewards minlevel="9" maxlevel="10">
+			<xp>12000</xp>
+			<capitalresource visible="true">
+				<capitalresource>cCapResCoin</capitalresource>
+				<amount>50</amount>
+			</capitalresource>
+		</rewards>
+		<rewards minlevel="11" maxlevel="14">
+			<xp>18000</xp>
+			<capitalresource visible="true">
+				<capitalresource>cCapResCoin</capitalresource>
+				<amount>70</amount>
+			</capitalresource>
+		</rewards>
+		<rewards minlevel="15" maxlevel="20">
+			<xp>25000</xp>
+			<capitalresource visible="true">
+				<capitalresource>cCapResCoin</capitalresource>
+				<amount>100</amount>
+			</capitalresource>
+		</rewards>
+		<rewards minlevel="21" maxlevel="25">
+			<xp>35000</xp>
+			<capitalresource visible="true">
+				<capitalresource>cCapResCoin</capitalresource>
+				<amount>125</amount>
+			</capitalresource>
+		</rewards>
+		<rewards minlevel="26" maxlevel="30">
+			<xp>50000</xp>
+			<capitalresource visible="true">
+				<capitalresource>cCapResCoin</capitalresource>
+				<amount>150</amount>
+			</capitalresource>
+		</rewards>
+		<rewards minlevel="31" maxlevel="35">
+			<xp>70000</xp>
+			<capitalresource visible="true">
+				<capitalresource>cCapResCoin</capitalresource>
+				<amount>175</amount>
+			</capitalresource>
+		</rewards>
+		<rewards minlevel="36" maxlevel="99">
+			<xp>90000</xp>
+			<capitalresource visible="true">
+				<capitalresource>cCapResCoin</capitalresource>
+				<amount>200</amount>
+			</capitalresource>
+		</rewards>
+	</rewardtable>
+	<rewardtable name="b02Global2">
+		<rewards minlevel="0" maxlevel="1">
+			<xp>4000</xp>
+			<capitalresource visible="true">
+				<capitalresource>cCapResCoin</capitalresource>
+				<amount>20</amount>
+			</capitalresource>
+		</rewards>
+		<rewards minlevel="2" maxlevel="2">
+			<xp>4000</xp>
+			<capitalresource visible="true">
+				<capitalresource>cCapResCoin</capitalresource>
+				<amount>25</amount>
+			</capitalresource>
+		</rewards>
+		<rewards minlevel="3" maxlevel="3">
+			<xp>4000</xp>
+			<capitalresource visible="true">
+				<capitalresource>cCapResCoin</capitalresource>
+				<amount>30</amount>
+			</capitalresource>
+		</rewards>
+		<rewards minlevel="4" maxlevel="4">
+			<xp>4000</xp>
+			<capitalresource visible="true">
+				<capitalresource>cCapResCoin</capitalresource>
+				<amount>40</amount>
+			</capitalresource>
+		</rewards>
+		<rewards minlevel="5" maxlevel="6">
+			<xp>6000</xp>
+			<capitalresource visible="true">
+				<capitalresource>cCapResCoin</capitalresource>
+				<amount>50</amount>
+			</capitalresource>
+		</rewards>
+		<rewards minlevel="7" maxlevel="8">
+			<xp>9500</xp>
+			<capitalresource visible="true">
+				<capitalresource>cCapResCoin</capitalresource>
+				<amount>70</amount>
+			</capitalresource>
+		</rewards>
+		<rewards minlevel="9" maxlevel="10">
+			<xp>14000</xp>
+			<capitalresource visible="true">
+				<capitalresource>cCapResCoin</capitalresource>
+				<amount>100</amount>
+			</capitalresource>
+		</rewards>
+		<rewards minlevel="11" maxlevel="14">
+			<xp>21000</xp>
+			<capitalresource visible="true">
+				<capitalresource>cCapResCoin</capitalresource>
+				<amount>125</amount>
+			</capitalresource>
+		</rewards>
+		<rewards minlevel="15" maxlevel="20">
+			<xp>29000</xp>
+			<capitalresource visible="true">
+				<capitalresource>cCapResCoin</capitalresource>
+				<amount>150</amount>
+			</capitalresource>
+		</rewards>
+		<rewards minlevel="21" maxlevel="25">
+			<xp>40000</xp>
+			<capitalresource visible="true">
+				<capitalresource>cCapResCoin</capitalresource>
+				<amount>175</amount>
+			</capitalresource>
+		</rewards>
+		<rewards minlevel="26" maxlevel="30">
+			<xp>56000</xp>
+			<capitalresource visible="true">
+				<capitalresource>cCapResCoin</capitalresource>
+				<amount>200</amount>
+			</capitalresource>
+		</rewards>
+		<rewards minlevel="31" maxlevel="35">
+			<xp>78000</xp>
+			<capitalresource visible="true">
+				<capitalresource>cCapResCoin</capitalresource>
+				<amount>250</amount>
+			</capitalresource>
+		</rewards>
+		<rewards minlevel="36" maxlevel="99">
+			<xp>100000</xp>
+			<capitalresource visible="true">
+				<capitalresource>cCapResCoin</capitalresource>
+				<amount>300</amount>
+			</capitalresource>
+		</rewards>
+	</rewardtable>
+	<rewardtable name="b02Global3">
+		<rewards minlevel="0" maxlevel="1">
+			<xp>5000</xp>
+			<capitalresource visible="true">
+				<capitalresource>cCapResCoin</capitalresource>
+				<amount>30</amount>
+			</capitalresource>
+		</rewards>
+		<rewards minlevel="2" maxlevel="2">
+			<xp>5000</xp>
+			<capitalresource visible="true">
+				<capitalresource>cCapResCoin</capitalresource>
+				<amount>40</amount>
+			</capitalresource>
+		</rewards>
+		<rewards minlevel="3" maxlevel="3">
+			<xp>5000</xp>
+			<capitalresource visible="true">
+				<capitalresource>cCapResCoin</capitalresource>
+				<amount>50</amount>
+			</capitalresource>
+		</rewards>
+		<rewards minlevel="4" maxlevel="4">
+			<xp>5000</xp>
+			<capitalresource visible="true">
+				<capitalresource>cCapResCoin</capitalresource>
+				<amount>70</amount>
+			</capitalresource>
+		</rewards>
+		<rewards minlevel="5" maxlevel="6">
+			<xp>7000</xp>
+			<capitalresource visible="true">
+				<capitalresource>cCapResCoin</capitalresource>
+				<amount>100</amount>
+			</capitalresource>
+		</rewards>
+		<rewards minlevel="7" maxlevel="8">
+			<xp>11000</xp>
+			<capitalresource visible="true">
+				<capitalresource>cCapResCoin</capitalresource>
+				<amount>125</amount>
+			</capitalresource>
+		</rewards>
+		<rewards minlevel="9" maxlevel="10">
+			<xp>16000</xp>
+			<capitalresource visible="true">
+				<capitalresource>cCapResCoin</capitalresource>
+				<amount>150</amount>
+			</capitalresource>
+		</rewards>
+		<rewards minlevel="11" maxlevel="14">
+			<xp>24000</xp>
+			<capitalresource visible="true">
+				<capitalresource>cCapResCoin</capitalresource>
+				<amount>175</amount>
+			</capitalresource>
+		</rewards>
+		<rewards minlevel="15" maxlevel="20">
+			<xp>33000</xp>
+			<capitalresource visible="true">
+				<capitalresource>cCapResCoin</capitalresource>
+				<amount>200</amount>
+			</capitalresource>
+		</rewards>
+		<rewards minlevel="21" maxlevel="25">
+			<xp>45000</xp>
+			<capitalresource visible="true">
+				<capitalresource>cCapResCoin</capitalresource>
+				<amount>250</amount>
+			</capitalresource>
+		</rewards>
+		<rewards minlevel="26" maxlevel="30">
+			<xp>62000</xp>
+			<capitalresource visible="true">
+				<capitalresource>cCapResCoin</capitalresource>
+				<amount>300</amount>
+			</capitalresource>
+		</rewards>
+		<rewards minlevel="31" maxlevel="35">
+			<xp>86000</xp>
+			<capitalresource visible="true">
+				<capitalresource>cCapResCoin</capitalresource>
+				<amount>350</amount>
+			</capitalresource>
+		</rewards>
+		<rewards minlevel="36" maxlevel="99">
+			<xp>110000</xp>
+			<capitalresource visible="true">
+				<capitalresource>cCapResCoin</capitalresource>
+				<amount>400</amount>
+			</capitalresource>
+		</rewards>
+	</rewardtable>
+	<rewardtable name="SQVShort">
+		<rewards minlevel="0" maxlevel="1">
+			<xp>500</xp>
+			<capitalresource visible="true">
+				<capitalresource>cCapResCoin</capitalresource>
+				<amount>10</amount>
+			</capitalresource>
+		</rewards>
+		<rewards minlevel="2" maxlevel="2">
+			<xp>800</xp>
+			<capitalresource visible="true">
+				<capitalresource>cCapResCoin</capitalresource>
+				<amount>10</amount>
+			</capitalresource>
+		</rewards>
+		<rewards minlevel="3" maxlevel="3">
+			<xp>1500</xp>
+			<capitalresource visible="true">
+				<capitalresource>cCapResCoin</capitalresource>
+				<amount>10</amount>
+			</capitalresource>
+		</rewards>
+		<rewards minlevel="4" maxlevel="4">
+			<xp>2500</xp>
+			<capitalresource visible="true">
+				<capitalresource>cCapResCoin</capitalresource>
+				<amount>10</amount>
+			</capitalresource>
+		</rewards>
+		<rewards minlevel="5" maxlevel="6">
+			<xp>3000</xp>
+			<capitalresource visible="true">
+				<capitalresource>cCapResCoin</capitalresource>
+				<amount>20</amount>
+			</capitalresource>
+		</rewards>
+		<rewards minlevel="7" maxlevel="8">
+			<xp>4500</xp>
+			<capitalresource visible="true">
+				<capitalresource>cCapResCoin</capitalresource>
+				<amount>30</amount>
+			</capitalresource>
+		</rewards>
+		<rewards minlevel="9" maxlevel="10">
+			<xp>6000</xp>
+			<capitalresource visible="true">
+				<capitalresource>cCapResCoin</capitalresource>
+				<amount>40</amount>
+			</capitalresource>
+		</rewards>
+		<rewards minlevel="11" maxlevel="14">
+			<xp>8000</xp>
+			<capitalresource visible="true">
+				<capitalresource>cCapResCoin</capitalresource>
+				<amount>50</amount>
+			</capitalresource>
+		</rewards>
+		<rewards minlevel="15" maxlevel="20">
+			<xp>11000</xp>
+			<capitalresource visible="true">
+				<capitalresource>cCapResCoin</capitalresource>
+				<amount>80</amount>
+			</capitalresource>
+		</rewards>
+		<rewards minlevel="21" maxlevel="25">
+			<xp>16000</xp>
+			<capitalresource visible="true">
+				<capitalresource>cCapResCoin</capitalresource>
+				<amount>100</amount>
+			</capitalresource>
+		</rewards>
+		<rewards minlevel="26" maxlevel="30">
+			<xp>25000</xp>
+			<capitalresource visible="true">
+				<capitalresource>cCapResCoin</capitalresource>
+				<amount>100</amount>
+			</capitalresource>
+		</rewards>
+		<rewards minlevel="31" maxlevel="35">
+			<xp>35000</xp>
+			<capitalresource visible="true">
+				<capitalresource>cCapResCoin</capitalresource>
+				<amount>100</amount>
+			</capitalresource>
+		</rewards>
+		<rewards minlevel="36" maxlevel="99">
+			<xp>35000</xp>
+			<capitalresource visible="true">
+				<capitalresource>cCapResCoin</capitalresource>
+				<amount>100</amount>
+			</capitalresource>
+		</rewards>
+	</rewardtable>
+	<rewardtable name="SQShort">
+		<rewards minlevel="0" maxlevel="1">
+			<xp>500</xp>
+			<capitalresource visible="true">
+				<capitalresource>cCapResCoin</capitalresource>
+				<amount>10</amount>
+			</capitalresource>
+		</rewards>
+		<rewards minlevel="2" maxlevel="2">
+			<xp>800</xp>
+			<capitalresource visible="true">
+				<capitalresource>cCapResCoin</capitalresource>
+				<amount>10</amount>
+			</capitalresource>
+		</rewards>
+		<rewards minlevel="3" maxlevel="3">
+			<xp>1500</xp>
+			<capitalresource visible="true">
+				<capitalresource>cCapResCoin</capitalresource>
+				<amount>10</amount>
+			</capitalresource>
+		</rewards>
+		<rewards minlevel="4" maxlevel="4">
+			<xp>2500</xp>
+			<capitalresource visible="true">
+				<capitalresource>cCapResCoin</capitalresource>
+				<amount>10</amount>
+			</capitalresource>
+		</rewards>
+		<rewards minlevel="5" maxlevel="6">
+			<xp>3500</xp>
+			<capitalresource visible="true">
+				<capitalresource>cCapResCoin</capitalresource>
+				<amount>20</amount>
+			</capitalresource>
+		</rewards>
+		<rewards minlevel="7" maxlevel="8">
+			<xp>6000</xp>
+			<capitalresource visible="true">
+				<capitalresource>cCapResCoin</capitalresource>
+				<amount>30</amount>
+			</capitalresource>
+		</rewards>
+		<rewards minlevel="9" maxlevel="10">
+			<xp>8000</xp>
+			<capitalresource visible="true">
+				<capitalresource>cCapResCoin</capitalresource>
+				<amount>50</amount>
+			</capitalresource>
+		</rewards>
+		<rewards minlevel="11" maxlevel="14">
+			<xp>10000</xp>
+			<capitalresource visible="true">
+				<capitalresource>cCapResCoin</capitalresource>
+				<amount>80</amount>
+			</capitalresource>
+		</rewards>
+		<rewards minlevel="15" maxlevel="20">
+			<xp>15000</xp>
+			<capitalresource visible="true">
+				<capitalresource>cCapResCoin</capitalresource>
+				<amount>100</amount>
+			</capitalresource>
+		</rewards>
+		<rewards minlevel="21" maxlevel="25">
+			<xp>25000</xp>
+			<capitalresource visible="true">
+				<capitalresource>cCapResCoin</capitalresource>
+				<amount>150</amount>
+			</capitalresource>
+		</rewards>
+		<rewards minlevel="26" maxlevel="30">
+			<xp>35000</xp>
+			<capitalresource visible="true">
+				<capitalresource>cCapResCoin</capitalresource>
+				<amount>150</amount>
+			</capitalresource>
+		</rewards>
+		<rewards minlevel="31" maxlevel="35">
+			<xp>50000</xp>
+			<capitalresource visible="true">
+				<capitalresource>cCapResCoin</capitalresource>
+				<amount>150</amount>
+			</capitalresource>
+		</rewards>
+		<rewards minlevel="36" maxlevel="99">
+			<xp>50000</xp>
+			<capitalresource visible="true">
+				<capitalresource>cCapResCoin</capitalresource>
+				<amount>150</amount>
+			</capitalresource>
+		</rewards>
+	</rewardtable>
+	<rewardtable name="SQMedium">
+		<rewards minlevel="0" maxlevel="1">
+			<xp>500</xp>
+			<capitalresource visible="true">
+				<capitalresource>cCapResCoin</capitalresource>
+				<amount>20</amount>
+			</capitalresource>
+		</rewards>
+		<rewards minlevel="2" maxlevel="2">
+			<xp>800</xp>
+			<capitalresource visible="true">
+				<capitalresource>cCapResCoin</capitalresource>
+				<amount>20</amount>
+			</capitalresource>
+		</rewards>
+		<rewards minlevel="3" maxlevel="3">
+			<xp>1500</xp>
+			<capitalresource visible="true">
+				<capitalresource>cCapResCoin</capitalresource>
+				<amount>20</amount>
+			</capitalresource>
+		</rewards>
+		<rewards minlevel="4" maxlevel="4">
+			<xp>2500</xp>
+			<capitalresource visible="true">
+				<capitalresource>cCapResCoin</capitalresource>
+				<amount>20</amount>
+			</capitalresource>
+		</rewards>
+		<rewards minlevel="5" maxlevel="6">
+			<xp>3500</xp>
+			<capitalresource visible="true">
+				<capitalresource>cCapResCoin</capitalresource>
+				<amount>50</amount>
+			</capitalresource>
+		</rewards>
+		<rewards minlevel="7" maxlevel="8">
+			<xp>7000</xp>
+			<capitalresource visible="true">
+				<capitalresource>cCapResCoin</capitalresource>
+				<amount>50</amount>
+			</capitalresource>
+		</rewards>
+		<rewards minlevel="9" maxlevel="10">
+			<xp>10000</xp>
+			<capitalresource visible="true">
+				<capitalresource>cCapResCoin</capitalresource>
+				<amount>50</amount>
+			</capitalresource>
+		</rewards>
+		<rewards minlevel="11" maxlevel="14">
+			<xp>15000</xp>
+			<capitalresource visible="true">
+				<capitalresource>cCapResCoin</capitalresource>
+				<amount>100</amount>
+			</capitalresource>
+		</rewards>
+		<rewards minlevel="15" maxlevel="20">
+			<xp>20000</xp>
+			<capitalresource visible="true">
+				<capitalresource>cCapResCoin</capitalresource>
+				<amount>150</amount>
+			</capitalresource>
+		</rewards>
+		<rewards minlevel="21" maxlevel="25">
+			<xp>30000</xp>
+			<capitalresource visible="true">
+				<capitalresource>cCapResCoin</capitalresource>
+				<amount>200</amount>
+			</capitalresource>
+		</rewards>
+		<rewards minlevel="26" maxlevel="30">
+			<xp>40000</xp>
+			<capitalresource visible="true">
+				<capitalresource>cCapResCoin</capitalresource>
+				<amount>200</amount>
+			</capitalresource>
+		</rewards>
+		<rewards minlevel="31" maxlevel="35">
+			<xp>60000</xp>
+			<capitalresource visible="true">
+				<capitalresource>cCapResCoin</capitalresource>
+				<amount>200</amount>
+			</capitalresource>
+		</rewards>
+		<rewards minlevel="36" maxlevel="99">
+			<xp>70000</xp>
+			<capitalresource visible="true">
+				<capitalresource>cCapResCoin</capitalresource>
+				<amount>200</amount>
+			</capitalresource>
+		</rewards>
+	</rewardtable>
+	<rewardtable name="SQLong">
+		<rewards minlevel="0" maxlevel="1">
+			<xp>500</xp>
+			<capitalresource visible="true">
+				<capitalresource>cCapResCoin</capitalresource>
+				<amount>30</amount>
+			</capitalresource>
+		</rewards>
+		<rewards minlevel="2" maxlevel="2">
+			<xp>800</xp>
+			<capitalresource visible="true">
+				<capitalresource>cCapResCoin</capitalresource>
+				<amount>30</amount>
+			</capitalresource>
+		</rewards>
+		<rewards minlevel="3" maxlevel="3">
+			<xp>1500</xp>
+			<capitalresource visible="true">
+				<capitalresource>cCapResCoin</capitalresource>
+				<amount>30</amount>
+			</capitalresource>
+		</rewards>
+		<rewards minlevel="4" maxlevel="4">
+			<xp>3000</xp>
+			<capitalresource visible="true">
+				<capitalresource>cCapResCoin</capitalresource>
+				<amount>30</amount>
+			</capitalresource>
+		</rewards>
+		<rewards minlevel="5" maxlevel="6">
+			<xp>5000</xp>
+			<capitalresource visible="true">
+				<capitalresource>cCapResCoin</capitalresource>
+				<amount>50</amount>
+			</capitalresource>
+		</rewards>
+		<rewards minlevel="7" maxlevel="8">
+			<xp>8000</xp>
+			<capitalresource visible="true">
+				<capitalresource>cCapResCoin</capitalresource>
+				<amount>80</amount>
+			</capitalresource>
+		</rewards>
+		<rewards minlevel="9" maxlevel="10">
+			<xp>12000</xp>
+			<capitalresource visible="true">
+				<capitalresource>cCapResCoin</capitalresource>
+				<amount>100</amount>
+			</capitalresource>
+		</rewards>
+		<rewards minlevel="11" maxlevel="14">
+			<xp>18000</xp>
+			<capitalresource visible="true">
+				<capitalresource>cCapResCoin</capitalresource>
+				<amount>150</amount>
+			</capitalresource>
+		</rewards>
+		<rewards minlevel="15" maxlevel="20">
+			<xp>25000</xp>
+			<capitalresource visible="true">
+				<capitalresource>cCapResCoin</capitalresource>
+				<amount>200</amount>
+			</capitalresource>
+		</rewards>
+		<rewards minlevel="21" maxlevel="25">
+			<xp>35000</xp>
+			<capitalresource visible="true">
+				<capitalresource>cCapResCoin</capitalresource>
+				<amount>300</amount>
+			</capitalresource>
+		</rewards>
+		<rewards minlevel="26" maxlevel="30">
+			<xp>50000</xp>
+			<capitalresource visible="true">
+				<capitalresource>cCapResCoin</capitalresource>
+				<amount>300</amount>
+			</capitalresource>
+		</rewards>
+		<rewards minlevel="31" maxlevel="35">
+			<xp>70000</xp>
+			<capitalresource visible="true">
+				<capitalresource>cCapResCoin</capitalresource>
+				<amount>300</amount>
+			</capitalresource>
+		</rewards>
+		<rewards minlevel="36" maxlevel="99">
+			<xp>90000</xp>
+			<capitalresource visible="true">
+				<capitalresource>cCapResCoin</capitalresource>
+				<amount>300</amount>
+			</capitalresource>
+		</rewards>
+	</rewardtable>
+	<rewardtable name="SQVLong">
+		<rewards minlevel="0" maxlevel="1">
+			<xp>500</xp>
+			<capitalresource visible="true">
+				<capitalresource>cCapResCoin</capitalresource>
+				<amount>30</amount>
+			</capitalresource>
+		</rewards>
+		<rewards minlevel="2" maxlevel="2">
+			<xp>800</xp>
+			<capitalresource visible="true">
+				<capitalresource>cCapResCoin</capitalresource>
+				<amount>30</amount>
+			</capitalresource>
+		</rewards>
+		<rewards minlevel="3" maxlevel="3">
+			<xp>1500</xp>
+			<capitalresource visible="true">
+				<capitalresource>cCapResCoin</capitalresource>
+				<amount>30</amount>
+			</capitalresource>
+		</rewards>
+		<rewards minlevel="4" maxlevel="4">
+			<xp>3000</xp>
+			<capitalresource visible="true">
+				<capitalresource>cCapResCoin</capitalresource>
+				<amount>30</amount>
+			</capitalresource>
+		</rewards>
+		<rewards minlevel="5" maxlevel="6">
+			<xp>6000</xp>
+			<capitalresource visible="true">
+				<capitalresource>cCapResCoin</capitalresource>
+				<amount>50</amount>
+			</capitalresource>
+		</rewards>
+		<rewards minlevel="7" maxlevel="8">
+			<xp>9000</xp>
+			<capitalresource visible="true">
+				<capitalresource>cCapResCoin</capitalresource>
+				<amount>100</amount>
+			</capitalresource>
+		</rewards>
+		<rewards minlevel="9" maxlevel="10">
+			<xp>14000</xp>
+			<capitalresource visible="true">
+				<capitalresource>cCapResCoin</capitalresource>
+				<amount>150</amount>
+			</capitalresource>
+		</rewards>
+		<rewards minlevel="11" maxlevel="14">
+			<xp>20000</xp>
+			<capitalresource visible="true">
+				<capitalresource>cCapResCoin</capitalresource>
+				<amount>200</amount>
+			</capitalresource>
+		</rewards>
+		<rewards minlevel="15" maxlevel="20">
+			<xp>30000</xp>
+			<capitalresource visible="true">
+				<capitalresource>cCapResCoin</capitalresource>
+				<amount>250</amount>
+			</capitalresource>
+		</rewards>
+		<rewards minlevel="21" maxlevel="25">
+			<xp>45000</xp>
+			<capitalresource visible="true">
+				<capitalresource>cCapResCoin</capitalresource>
+				<amount>400</amount>
+			</capitalresource>
+		</rewards>
+		<rewards minlevel="26" maxlevel="30">
+			<xp>60000</xp>
+			<capitalresource visible="true">
+				<capitalresource>cCapResCoin</capitalresource>
+				<amount>400</amount>
+			</capitalresource>
+		</rewards>
+		<rewards minlevel="31" maxlevel="35">
+			<xp>80000</xp>
+			<capitalresource visible="true">
+				<capitalresource>cCapResCoin</capitalresource>
+				<amount>500</amount>
+			</capitalresource>
+		</rewards>
+		<rewards minlevel="36" maxlevel="99">
+			<xp>110000</xp>
+			<capitalresource visible="true">
+				<capitalresource>cCapResCoin</capitalresource>
+				<amount>500</amount>
+			</capitalresource>
+		</rewards>
+	</rewardtable>
+	<rewardtable name="EliteVShort">
+		<rewards minlevel="0" maxlevel="1">
+			<xp>500</xp>
+			<capitalresource visible="true">
+				<capitalresource>cCapResCoin</capitalresource>
+				<amount>20</amount>
+			</capitalresource>
+		</rewards>
+		<rewards minlevel="2" maxlevel="2">
+			<xp>800</xp>
+			<capitalresource visible="true">
+				<capitalresource>cCapResCoin</capitalresource>
+				<amount>20</amount>
+			</capitalresource>
+		</rewards>
+		<rewards minlevel="3" maxlevel="3">
+			<xp>1500</xp>
+			<capitalresource visible="true">
+				<capitalresource>cCapResCoin</capitalresource>
+				<amount>20</amount>
+			</capitalresource>
+		</rewards>
+		<rewards minlevel="4" maxlevel="4">
+			<xp>2500</xp>
+			<capitalresource visible="true">
+				<capitalresource>cCapResCoin</capitalresource>
+				<amount>20</amount>
+			</capitalresource>
+		</rewards>
+		<rewards minlevel="5" maxlevel="6">
+			<xp>3500</xp>
+			<capitalresource visible="true">
+				<capitalresource>cCapResCoin</capitalresource>
+				<amount>50</amount>
+			</capitalresource>
+		</rewards>
+		<rewards minlevel="7" maxlevel="8">
+			<xp>7000</xp>
+			<capitalresource visible="true">
+				<capitalresource>cCapResCoin</capitalresource>
+				<amount>50</amount>
+			</capitalresource>
+		</rewards>
+		<rewards minlevel="9" maxlevel="10">
+			<xp>10000</xp>
+			<capitalresource visible="true">
+				<capitalresource>cCapResCoin</capitalresource>
+				<amount>50</amount>
+			</capitalresource>
+		</rewards>
+		<rewards minlevel="11" maxlevel="14">
+			<xp>15000</xp>
+			<capitalresource visible="true">
+				<capitalresource>cCapResCoin</capitalresource>
+				<amount>100</amount>
+			</capitalresource>
+		</rewards>
+		<rewards minlevel="15" maxlevel="20">
+			<xp>20000</xp>
+			<capitalresource visible="true">
+				<capitalresource>cCapResCoin</capitalresource>
+				<amount>150</amount>
+			</capitalresource>
+		</rewards>
+		<rewards minlevel="21" maxlevel="25">
+			<xp>30000</xp>
+			<capitalresource visible="true">
+				<capitalresource>cCapResCoin</capitalresource>
+				<amount>200</amount>
+			</capitalresource>
+		</rewards>
+		<rewards minlevel="26" maxlevel="30">
+			<xp>40000</xp>
+			<capitalresource visible="true">
+				<capitalresource>cCapResCoin</capitalresource>
+				<amount>200</amount>
+			</capitalresource>
+		</rewards>
+		<rewards minlevel="31" maxlevel="35">
+			<xp>60000</xp>
+			<capitalresource visible="true">
+				<capitalresource>cCapResCoin</capitalresource>
+				<amount>200</amount>
+			</capitalresource>
+		</rewards>
+		<rewards minlevel="36" maxlevel="99">
+			<xp>70000</xp>
+			<capitalresource visible="true">
+				<capitalresource>cCapResCoin</capitalresource>
+				<amount>200</amount>
+			</capitalresource>
+		</rewards>
+	</rewardtable>
+	<rewardtable name="EliteShort">
+		<rewards minlevel="0" maxlevel="1">
+			<xp>500</xp>
+			<capitalresource visible="true">
+				<capitalresource>cCapResCoin</capitalresource>
+				<amount>30</amount>
+			</capitalresource>
+		</rewards>
+		<rewards minlevel="2" maxlevel="2">
+			<xp>800</xp>
+			<capitalresource visible="true">
+				<capitalresource>cCapResCoin</capitalresource>
+				<amount>30</amount>
+			</capitalresource>
+		</rewards>
+		<rewards minlevel="3" maxlevel="3">
+			<xp>1500</xp>
+			<capitalresource visible="true">
+				<capitalresource>cCapResCoin</capitalresource>
+				<amount>30</amount>
+			</capitalresource>
+		</rewards>
+		<rewards minlevel="4" maxlevel="4">
+			<xp>3000</xp>
+			<capitalresource visible="true">
+				<capitalresource>cCapResCoin</capitalresource>
+				<amount>30</amount>
+			</capitalresource>
+		</rewards>
+		<rewards minlevel="5" maxlevel="6">
+			<xp>5000</xp>
+			<capitalresource visible="true">
+				<capitalresource>cCapResCoin</capitalresource>
+				<amount>50</amount>
+			</capitalresource>
+		</rewards>
+		<rewards minlevel="7" maxlevel="8">
+			<xp>8000</xp>
+			<capitalresource visible="true">
+				<capitalresource>cCapResCoin</capitalresource>
+				<amount>80</amount>
+			</capitalresource>
+		</rewards>
+		<rewards minlevel="9" maxlevel="10">
+			<xp>12000</xp>
+			<capitalresource visible="true">
+				<capitalresource>cCapResCoin</capitalresource>
+				<amount>100</amount>
+			</capitalresource>
+		</rewards>
+		<rewards minlevel="11" maxlevel="14">
+			<xp>18000</xp>
+			<capitalresource visible="true">
+				<capitalresource>cCapResCoin</capitalresource>
+				<amount>150</amount>
+			</capitalresource>
+		</rewards>
+		<rewards minlevel="15" maxlevel="20">
+			<xp>25000</xp>
+			<capitalresource visible="true">
+				<capitalresource>cCapResCoin</capitalresource>
+				<amount>200</amount>
+			</capitalresource>
+		</rewards>
+		<rewards minlevel="21" maxlevel="25">
+			<xp>35000</xp>
+			<capitalresource visible="true">
+				<capitalresource>cCapResCoin</capitalresource>
+				<amount>300</amount>
+			</capitalresource>
+		</rewards>
+		<rewards minlevel="26" maxlevel="30">
+			<xp>50000</xp>
+			<capitalresource visible="true">
+				<capitalresource>cCapResCoin</capitalresource>
+				<amount>300</amount>
+			</capitalresource>
+		</rewards>
+		<rewards minlevel="31" maxlevel="35">
+			<xp>70000</xp>
+			<capitalresource visible="true">
+				<capitalresource>cCapResCoin</capitalresource>
+				<amount>300</amount>
+			</capitalresource>
+		</rewards>
+		<rewards minlevel="36" maxlevel="99">
+			<xp>90000</xp>
+			<capitalresource visible="true">
+				<capitalresource>cCapResCoin</capitalresource>
+				<amount>300</amount>
+			</capitalresource>
+		</rewards>
+	</rewardtable>
+	<rewardtable name="EliteMedium">
+		<rewards minlevel="0" maxlevel="1">
+			<xp>500</xp>
+			<capitalresource visible="true">
+				<capitalresource>cCapResCoin</capitalresource>
+				<amount>30</amount>
+			</capitalresource>
+		</rewards>
+		<rewards minlevel="2" maxlevel="2">
+			<xp>800</xp>
+			<capitalresource visible="true">
+				<capitalresource>cCapResCoin</capitalresource>
+				<amount>30</amount>
+			</capitalresource>
+		</rewards>
+		<rewards minlevel="3" maxlevel="3">
+			<xp>1500</xp>
+			<capitalresource visible="true">
+				<capitalresource>cCapResCoin</capitalresource>
+				<amount>30</amount>
+			</capitalresource>
+		</rewards>
+		<rewards minlevel="4" maxlevel="4">
+			<xp>3000</xp>
+			<capitalresource visible="true">
+				<capitalresource>cCapResCoin</capitalresource>
+				<amount>30</amount>
+			</capitalresource>
+		</rewards>
+		<rewards minlevel="5" maxlevel="6">
+			<xp>6000</xp>
+			<capitalresource visible="true">
+				<capitalresource>cCapResCoin</capitalresource>
+				<amount>50</amount>
+			</capitalresource>
+		</rewards>
+		<rewards minlevel="7" maxlevel="8">
+			<xp>9000</xp>
+			<capitalresource visible="true">
+				<capitalresource>cCapResCoin</capitalresource>
+				<amount>100</amount>
+			</capitalresource>
+		</rewards>
+		<rewards minlevel="9" maxlevel="10">
+			<xp>14000</xp>
+			<capitalresource visible="true">
+				<capitalresource>cCapResCoin</capitalresource>
+				<amount>150</amount>
+			</capitalresource>
+		</rewards>
+		<rewards minlevel="11" maxlevel="14">
+			<xp>20000</xp>
+			<capitalresource visible="true">
+				<capitalresource>cCapResCoin</capitalresource>
+				<amount>200</amount>
+			</capitalresource>
+		</rewards>
+		<rewards minlevel="15" maxlevel="20">
+			<xp>30000</xp>
+			<capitalresource visible="true">
+				<capitalresource>cCapResCoin</capitalresource>
+				<amount>250</amount>
+			</capitalresource>
+		</rewards>
+		<rewards minlevel="21" maxlevel="25">
+			<xp>45000</xp>
+			<capitalresource visible="true">
+				<capitalresource>cCapResCoin</capitalresource>
+				<amount>300</amount>
+			</capitalresource>
+		</rewards>
+		<rewards minlevel="26" maxlevel="30">
+			<xp>60000</xp>
+			<capitalresource visible="true">
+				<capitalresource>cCapResCoin</capitalresource>
+				<amount>400</amount>
+			</capitalresource>
+		</rewards>
+		<rewards minlevel="31" maxlevel="35">
+			<xp>80000</xp>
+			<capitalresource visible="true">
+				<capitalresource>cCapResCoin</capitalresource>
+				<amount>500</amount>
+			</capitalresource>
+		</rewards>
+		<rewards minlevel="36" maxlevel="99">
+			<xp>110000</xp>
+			<capitalresource visible="true">
+				<capitalresource>cCapResCoin</capitalresource>
+				<amount>500</amount>
+			</capitalresource>
+		</rewards>
+	</rewardtable>
+	<rewardtable name="EliteLong">
+		<rewards minlevel="0" maxlevel="1">
+			<xp>500</xp>
+			<capitalresource visible="true">
+				<capitalresource>cCapResCoin</capitalresource>
+				<amount>50</amount>
+			</capitalresource>
+		</rewards>
+		<rewards minlevel="2" maxlevel="2">
+			<xp>800</xp>
+			<capitalresource visible="true">
+				<capitalresource>cCapResCoin</capitalresource>
+				<amount>50</amount>
+			</capitalresource>
+		</rewards>
+		<rewards minlevel="3" maxlevel="3">
+			<xp>1500</xp>
+			<capitalresource visible="true">
+				<capitalresource>cCapResCoin</capitalresource>
+				<amount>50</amount>
+			</capitalresource>
+		</rewards>
+		<rewards minlevel="4" maxlevel="4">
+			<xp>3000</xp>
+			<capitalresource visible="true">
+				<capitalresource>cCapResCoin</capitalresource>
+				<amount>50</amount>
+			</capitalresource>
+		</rewards>
+		<rewards minlevel="5" maxlevel="6">
+			<xp>8000</xp>
+			<capitalresource visible="true">
+				<capitalresource>cCapResCoin</capitalresource>
+				<amount>100</amount>
+			</capitalresource>
+		</rewards>
+		<rewards minlevel="7" maxlevel="8">
+			<xp>13000</xp>
+			<capitalresource visible="true">
+				<capitalresource>cCapResCoin</capitalresource>
+				<amount>150</amount>
+			</capitalresource>
+		</rewards>
+		<rewards minlevel="9" maxlevel="10">
+			<xp>20000</xp>
+			<capitalresource visible="true">
+				<capitalresource>cCapResCoin</capitalresource>
+				<amount>200</amount>
+			</capitalresource>
+		</rewards>
+		<rewards minlevel="11" maxlevel="14">
+			<xp>28000</xp>
+			<capitalresource visible="true">
+				<capitalresource>cCapResCoin</capitalresource>
+				<amount>250</amount>
+			</capitalresource>
+		</rewards>
+		<rewards minlevel="15" maxlevel="20">
+			<xp>40000</xp>
+			<capitalresource visible="true">
+				<capitalresource>cCapResCoin</capitalresource>
+				<amount>300</amount>
+			</capitalresource>
+		</rewards>
+		<rewards minlevel="21" maxlevel="25">
+			<xp>60000</xp>
+			<capitalresource visible="true">
+				<capitalresource>cCapResCoin</capitalresource>
+				<amount>400</amount>
+			</capitalresource>
+		</rewards>
+		<rewards minlevel="26" maxlevel="30">
+			<xp>80000</xp>
+			<capitalresource visible="true">
+				<capitalresource>cCapResCoin</capitalresource>
+				<amount>500</amount>
+			</capitalresource>
+		</rewards>
+		<rewards minlevel="31" maxlevel="35">
+			<xp>110000</xp>
+			<capitalresource visible="true">
+				<capitalresource>cCapResCoin</capitalresource>
+				<amount>700</amount>
+			</capitalresource>
+		</rewards>
+		<rewards minlevel="36" maxlevel="99">
+			<xp>150000</xp>
+			<capitalresource visible="true">
+				<capitalresource>cCapResCoin</capitalresource>
+				<amount>1000</amount>
+			</capitalresource>
+		</rewards>
+	</rewardtable>
+	<rewardtable name="EliteVLong">
+		<rewards minlevel="0" maxlevel="1">
+			<xp>500</xp>
+			<capitalresource visible="true">
+				<capitalresource>cCapResCoin</capitalresource>
+				<amount>50</amount>
+			</capitalresource>
+		</rewards>
+		<rewards minlevel="2" maxlevel="2">
+			<xp>800</xp>
+			<capitalresource visible="true">
+				<capitalresource>cCapResCoin</capitalresource>
+				<amount>50</amount>
+			</capitalresource>
+		</rewards>
+		<rewards minlevel="3" maxlevel="3">
+			<xp>1500</xp>
+			<capitalresource visible="true">
+				<capitalresource>cCapResCoin</capitalresource>
+				<amount>50</amount>
+			</capitalresource>
+		</rewards>
+		<rewards minlevel="4" maxlevel="4">
+			<xp>3500</xp>
+			<capitalresource visible="true">
+				<capitalresource>cCapResCoin</capitalresource>
+				<amount>50</amount>
+			</capitalresource>
+		</rewards>
+		<rewards minlevel="5" maxlevel="6">
+			<xp>9000</xp>
+			<capitalresource visible="true">
+				<capitalresource>cCapResCoin</capitalresource>
+				<amount>100</amount>
+			</capitalresource>
+		</rewards>
+		<rewards minlevel="7" maxlevel="8">
+			<xp>15000</xp>
+			<capitalresource visible="true">
+				<capitalresource>cCapResCoin</capitalresource>
+				<amount>150</amount>
+			</capitalresource>
+		</rewards>
+		<rewards minlevel="9" maxlevel="10">
+			<xp>25000</xp>
+			<capitalresource visible="true">
+				<capitalresource>cCapResCoin</capitalresource>
+				<amount>200</amount>
+			</capitalresource>
+		</rewards>
+		<rewards minlevel="11" maxlevel="14">
+			<xp>35000</xp>
+			<capitalresource visible="true">
+				<capitalresource>cCapResCoin</capitalresource>
+				<amount>300</amount>
+			</capitalresource>
+		</rewards>
+		<rewards minlevel="15" maxlevel="20">
+			<xp>50000</xp>
+			<capitalresource visible="true">
+				<capitalresource>cCapResCoin</capitalresource>
+				<amount>400</amount>
+			</capitalresource>
+		</rewards>
+		<rewards minlevel="21" maxlevel="25">
+			<xp>80000</xp>
+			<capitalresource visible="true">
+				<capitalresource>cCapResCoin</capitalresource>
+				<amount>500</amount>
+			</capitalresource>
+		</rewards>
+		<rewards minlevel="26" maxlevel="30">
+			<xp>100000</xp>
+			<capitalresource visible="true">
+				<capitalresource>cCapResCoin</capitalresource>
+				<amount>700</amount>
+			</capitalresource>
+		</rewards>
+		<rewards minlevel="31" maxlevel="35">
+			<xp>140000</xp>
+			<capitalresource visible="true">
+				<capitalresource>cCapResCoin</capitalresource>
+				<amount>1000</amount>
+			</capitalresource>
+		</rewards>
+		<rewards minlevel="36" maxlevel="99">
+			<xp>190000</xp>
+			<capitalresource visible="true">
+				<capitalresource>cCapResCoin</capitalresource>
+				<amount>1500</amount>
+			</capitalresource>
+		</rewards>
+	</rewardtable>
+	<rewardtable name="OptCoin">
+		<rewards minlevel="0" maxlevel="1">
+			<capitalresource visible="true">
+				<capitalresource>cCapResCoin</capitalresource>
+				<amount>30</amount>
+			</capitalresource>
+		</rewards>
+		<rewards minlevel="2" maxlevel="2">
+			<capitalresource visible="true">
+				<capitalresource>cCapResCoin</capitalresource>
+				<amount>30</amount>
+			</capitalresource>
+		</rewards>
+		<rewards minlevel="3" maxlevel="3">
+			<capitalresource visible="true">
+				<capitalresource>cCapResCoin</capitalresource>
+				<amount>30</amount>
+			</capitalresource>
+		</rewards>
+		<rewards minlevel="4" maxlevel="4">
+			<capitalresource visible="true">
+				<capitalresource>cCapResCoin</capitalresource>
+				<amount>30</amount>
+			</capitalresource>
+		</rewards>
+		<rewards minlevel="5" maxlevel="6">
+			<capitalresource visible="true">
+				<capitalresource>cCapResCoin</capitalresource>
+				<amount>30</amount>
+			</capitalresource>
+		</rewards>
+		<rewards minlevel="7" maxlevel="8">
+			<capitalresource visible="true">
+				<capitalresource>cCapResCoin</capitalresource>
+				<amount>30</amount>
+			</capitalresource>
+		</rewards>
+		<rewards minlevel="9" maxlevel="10">
+			<capitalresource visible="true">
+				<capitalresource>cCapResCoin</capitalresource>
+				<amount>50</amount>
+			</capitalresource>
+		</rewards>
+		<rewards minlevel="11" maxlevel="14">
+			<capitalresource visible="true">
+				<capitalresource>cCapResCoin</capitalresource>
+				<amount>50</amount>
+			</capitalresource>
+		</rewards>
+		<rewards minlevel="15" maxlevel="20">
+			<capitalresource visible="true">
+				<capitalresource>cCapResCoin</capitalresource>
+				<amount>80</amount>
+			</capitalresource>
+		</rewards>
+		<rewards minlevel="21" maxlevel="25">
+			<capitalresource visible="true">
+				<capitalresource>cCapResCoin</capitalresource>
+				<amount>100</amount>
+			</capitalresource>
+		</rewards>
+		<rewards minlevel="26" maxlevel="30">
+			<capitalresource visible="true">
+				<capitalresource>cCapResCoin</capitalresource>
+				<amount>150</amount>
+			</capitalresource>
+		</rewards>
+		<rewards minlevel="31" maxlevel="35">
+			<capitalresource visible="true">
+				<capitalresource>cCapResCoin</capitalresource>
+				<amount>200</amount>
+			</capitalresource>
+		</rewards>
+		<rewards minlevel="36" maxlevel="99">
+			<capitalresource visible="true">
+				<capitalresource>cCapResCoin</capitalresource>
+				<amount>300</amount>
+			</capitalresource>
+		</rewards>
+		<rewards minlevel="36" maxlevel="99">
+			<capitalresource visible="true">
+				<capitalresource>cCapResCoin</capitalresource>
+				<amount>300</amount>
+			</capitalresource>
+		</rewards>
+	</rewardtable>
+	<rewardtable name="EliteOptCoin">
+		<rewards minlevel="0" maxlevel="1">
+			<capitalresource visible="true">
+				<capitalresource>cCapResCoin</capitalresource>
+				<amount>80</amount>
+			</capitalresource>
+		</rewards>
+		<rewards minlevel="2" maxlevel="2">
+			<capitalresource visible="true">
+				<capitalresource>cCapResCoin</capitalresource>
+				<amount>80</amount>
+			</capitalresource>
+		</rewards>
+		<rewards minlevel="3" maxlevel="3">
+			<capitalresource visible="true">
+				<capitalresource>cCapResCoin</capitalresource>
+				<amount>80</amount>
+			</capitalresource>
+		</rewards>
+		<rewards minlevel="4" maxlevel="4">
+			<capitalresource visible="true">
+				<capitalresource>cCapResCoin</capitalresource>
+				<amount>80</amount>
+			</capitalresource>
+		</rewards>
+		<rewards minlevel="5" maxlevel="6">
+			<capitalresource visible="true">
+				<capitalresource>cCapResCoin</capitalresource>
+				<amount>80</amount>
+			</capitalresource>
+		</rewards>
+		<rewards minlevel="7" maxlevel="8">
+			<capitalresource visible="true">
+				<capitalresource>cCapResCoin</capitalresource>
+				<amount>80</amount>
+			</capitalresource>
+		</rewards>
+		<rewards minlevel="9" maxlevel="10">
+			<capitalresource visible="true">
+				<capitalresource>cCapResCoin</capitalresource>
+				<amount>120</amount>
+			</capitalresource>
+		</rewards>
+		<rewards minlevel="11" maxlevel="14">
+			<capitalresource visible="true">
+				<capitalresource>cCapResCoin</capitalresource>
+				<amount>120</amount>
+			</capitalresource>
+		</rewards>
+		<rewards minlevel="15" maxlevel="20">
+			<capitalresource visible="true">
+				<capitalresource>cCapResCoin</capitalresource>
+				<amount>200</amount>
+			</capitalresource>
+		</rewards>
+		<rewards minlevel="21" maxlevel="25">
+			<capitalresource visible="true">
+				<capitalresource>cCapResCoin</capitalresource>
+				<amount>250</amount>
+			</capitalresource>
+		</rewards>
+		<rewards minlevel="26" maxlevel="30">
+			<capitalresource visible="true">
+				<capitalresource>cCapResCoin</capitalresource>
+				<amount>400</amount>
+			</capitalresource>
+		</rewards>
+		<rewards minlevel="31" maxlevel="35">
+			<capitalresource visible="true">
+				<capitalresource>cCapResCoin</capitalresource>
+				<amount>500</amount>
+			</capitalresource>
+		</rewards>
+		<rewards minlevel="36" maxlevel="99">
+			<capitalresource visible="true">
+				<capitalresource>cCapResCoin</capitalresource>
+				<amount>500</amount>
+			</capitalresource>
+		</rewards>
+		<rewards minlevel="36" maxlevel="99">
+			<capitalresource visible="true">
+				<capitalresource>cCapResCoin</capitalresource>
+				<amount>500</amount>
+			</capitalresource>
+		</rewards>
+	</rewardtable>
+	<rewardtable name="B04Short">
+		<rewards minlevel="0" maxlevel="1">
+			<xp>500</xp>
+			<capitalresource visible="true">
+				<capitalresource>cCapResCoin</capitalresource>
+				<amount>50</amount>
+			</capitalresource>
+		</rewards>
+		<rewards minlevel="2" maxlevel="2">
+			<xp>800</xp>
+			<capitalresource visible="true">
+				<capitalresource>cCapResCoin</capitalresource>
+				<amount>50</amount>
+			</capitalresource>
+		</rewards>
+		<rewards minlevel="3" maxlevel="3">
+			<xp>1500</xp>
+			<capitalresource visible="true">
+				<capitalresource>cCapResCoin</capitalresource>
+				<amount>50</amount>
+			</capitalresource>
+		</rewards>
+		<rewards minlevel="4" maxlevel="4">
+			<xp>3000</xp>
+			<capitalresource visible="true">
+				<capitalresource>cCapResCoin</capitalresource>
+				<amount>50</amount>
+			</capitalresource>
+		</rewards>
+		<rewards minlevel="5" maxlevel="6">
+			<xp>5000</xp>
+			<capitalresource visible="true">
+				<capitalresource>cCapResCoin</capitalresource>
+				<amount>50</amount>
+			</capitalresource>
+		</rewards>
+		<rewards minlevel="7" maxlevel="8">
+			<xp>8000</xp>
+			<capitalresource visible="true">
+				<capitalresource>cCapResCoin</capitalresource>
+				<amount>50</amount>
+			</capitalresource>
+		</rewards>
+		<rewards minlevel="9" maxlevel="10">
+			<xp>15000</xp>
+			<capitalresource visible="true">
+				<capitalresource>cCapResCoin</capitalresource>
+				<amount>100</amount>
+			</capitalresource>
+		</rewards>
+		<rewards minlevel="11" maxlevel="14">
+			<xp>30000</xp>
+			<capitalresource visible="true">
+				<capitalresource>cCapResCoin</capitalresource>
+				<amount>150</amount>
+			</capitalresource>
+		</rewards>
+		<rewards minlevel="15" maxlevel="20">
+			<xp>40000</xp>
+			<capitalresource visible="true">
+				<capitalresource>cCapResCoin</capitalresource>
+				<amount>150</amount>
+			</capitalresource>
+		</rewards>
+		<rewards minlevel="21" maxlevel="23">
+			<xp>50000</xp>
+			<capitalresource visible="true">
+				<capitalresource>cCapResCoin</capitalresource>
+				<amount>200</amount>
+			</capitalresource>
+		</rewards>
+		<rewards minlevel="24" maxlevel="99">
+			<xp>60000</xp>
+			<capitalresource visible="true">
+				<capitalresource>cCapResCoin</capitalresource>
+				<amount>200</amount>
+			</capitalresource>
+		</rewards>
+	</rewardtable>
+	<rewardtable name="B04Med">
+		<rewards minlevel="0" maxlevel="1">
+			<xp>500</xp>
+			<capitalresource visible="true">
+				<capitalresource>cCapResCoin</capitalresource>
+				<amount>50</amount>
+			</capitalresource>
+		</rewards>
+		<rewards minlevel="2" maxlevel="2">
+			<xp>800</xp>
+			<capitalresource visible="true">
+				<capitalresource>cCapResCoin</capitalresource>
+				<amount>50</amount>
+			</capitalresource>
+		</rewards>
+		<rewards minlevel="3" maxlevel="3">
+			<xp>1500</xp>
+			<capitalresource visible="true">
+				<capitalresource>cCapResCoin</capitalresource>
+				<amount>50</amount>
+			</capitalresource>
+		</rewards>
+		<rewards minlevel="4" maxlevel="4">
+			<xp>3000</xp>
+			<capitalresource visible="true">
+				<capitalresource>cCapResCoin</capitalresource>
+				<amount>50</amount>
+			</capitalresource>
+		</rewards>
+		<rewards minlevel="5" maxlevel="6">
+			<xp>8000</xp>
+			<capitalresource visible="true">
+				<capitalresource>cCapResCoin</capitalresource>
+				<amount>50</amount>
+			</capitalresource>
+		</rewards>
+		<rewards minlevel="7" maxlevel="8">
+			<xp>15000</xp>
+			<capitalresource visible="true">
+				<capitalresource>cCapResCoin</capitalresource>
+				<amount>100</amount>
+			</capitalresource>
+		</rewards>
+		<rewards minlevel="9" maxlevel="10">
+			<xp>30000</xp>
+			<capitalresource visible="true">
+				<capitalresource>cCapResCoin</capitalresource>
+				<amount>150</amount>
+			</capitalresource>
+		</rewards>
+		<rewards minlevel="11" maxlevel="14">
+			<xp>50000</xp>
+			<capitalresource visible="true">
+				<capitalresource>cCapResCoin</capitalresource>
+				<amount>200</amount>
+			</capitalresource>
+		</rewards>
+		<rewards minlevel="15" maxlevel="20">
+			<xp>60000</xp>
+			<capitalresource visible="true">
+				<capitalresource>cCapResCoin</capitalresource>
+				<amount>250</amount>
+			</capitalresource>
+		</rewards>
+		<rewards minlevel="21" maxlevel="23">
+			<xp>80000</xp>
+			<capitalresource visible="true">
+				<capitalresource>cCapResCoin</capitalresource>
+				<amount>300</amount>
+			</capitalresource>
+		</rewards>
+		<rewards minlevel="24" maxlevel="99">
+			<xp>90000</xp>
+			<capitalresource visible="true">
+				<capitalresource>cCapResCoin</capitalresource>
+				<amount>300</amount>
+			</capitalresource>
+		</rewards>
+	</rewardtable>
+	<rewardtable name="B04Long">
+		<rewards minlevel="0" maxlevel="1">
+			<xp>500</xp>
+			<capitalresource visible="true">
+				<capitalresource>cCapResCoin</capitalresource>
+				<amount>50</amount>
+			</capitalresource>
+		</rewards>
+		<rewards minlevel="2" maxlevel="2">
+			<xp>800</xp>
+			<capitalresource visible="true">
+				<capitalresource>cCapResCoin</capitalresource>
+				<amount>50</amount>
+			</capitalresource>
+		</rewards>
+		<rewards minlevel="3" maxlevel="3">
+			<xp>1500</xp>
+			<capitalresource visible="true">
+				<capitalresource>cCapResCoin</capitalresource>
+				<amount>50</amount>
+			</capitalresource>
+		</rewards>
+		<rewards minlevel="4" maxlevel="4">
+			<xp>3000</xp>
+			<capitalresource visible="true">
+				<capitalresource>cCapResCoin</capitalresource>
+				<amount>50</amount>
+			</capitalresource>
+		</rewards>
+		<rewards minlevel="5" maxlevel="6">
+			<xp>8000</xp>
+			<capitalresource visible="true">
+				<capitalresource>cCapResCoin</capitalresource>
+				<amount>50</amount>
+			</capitalresource>
+		</rewards>
+		<rewards minlevel="7" maxlevel="8">
+			<xp>15000</xp>
+			<capitalresource visible="true">
+				<capitalresource>cCapResCoin</capitalresource>
+				<amount>100</amount>
+			</capitalresource>
+		</rewards>
+		<rewards minlevel="9" maxlevel="10">
+			<xp>30000</xp>
+			<capitalresource visible="true">
+				<capitalresource>cCapResCoin</capitalresource>
+				<amount>150</amount>
+			</capitalresource>
+		</rewards>
+		<rewards minlevel="11" maxlevel="14">
+			<xp>50000</xp>
+			<capitalresource visible="true">
+				<capitalresource>cCapResCoin</capitalresource>
+				<amount>200</amount>
+			</capitalresource>
+		</rewards>
+		<rewards minlevel="15" maxlevel="20">
+			<xp>80000</xp>
+			<capitalresource visible="true">
+				<capitalresource>cCapResCoin</capitalresource>
+				<amount>300</amount>
+			</capitalresource>
+		</rewards>
+		<rewards minlevel="21" maxlevel="23">
+			<xp>120000</xp>
+			<capitalresource visible="true">
+				<capitalresource>cCapResCoin</capitalresource>
+				<amount>400</amount>
+			</capitalresource>
+		</rewards>
+		<rewards minlevel="24" maxlevel="99">
+			<xp>150000</xp>
+			<capitalresource visible="true">
+				<capitalresource>cCapResCoin</capitalresource>
+				<amount>500</amount>
+			</capitalresource>
+		</rewards>
+	</rewardtable>
+	<rewardtable name="B04VLong">
+		<rewards minlevel="0" maxlevel="1">
+			<xp>500</xp>
+			<capitalresource visible="true">
+				<capitalresource>cCapResCoin</capitalresource>
+				<amount>50</amount>
+			</capitalresource>
+		</rewards>
+		<rewards minlevel="2" maxlevel="2">
+			<xp>800</xp>
+			<capitalresource visible="true">
+				<capitalresource>cCapResCoin</capitalresource>
+				<amount>50</amount>
+			</capitalresource>
+		</rewards>
+		<rewards minlevel="3" maxlevel="3">
+			<xp>1500</xp>
+			<capitalresource visible="true">
+				<capitalresource>cCapResCoin</capitalresource>
+				<amount>50</amount>
+			</capitalresource>
+		</rewards>
+		<rewards minlevel="4" maxlevel="4">
+			<xp>3000</xp>
+			<capitalresource visible="true">
+				<capitalresource>cCapResCoin</capitalresource>
+				<amount>50</amount>
+			</capitalresource>
+		</rewards>
+		<rewards minlevel="5" maxlevel="6">
+			<xp>8000</xp>
+			<capitalresource visible="true">
+				<capitalresource>cCapResCoin</capitalresource>
+				<amount>50</amount>
+			</capitalresource>
+		</rewards>
+		<rewards minlevel="7" maxlevel="8">
+			<xp>15000</xp>
+			<capitalresource visible="true">
+				<capitalresource>cCapResCoin</capitalresource>
+				<amount>100</amount>
+			</capitalresource>
+		</rewards>
+		<rewards minlevel="9" maxlevel="10">
+			<xp>30000</xp>
+			<capitalresource visible="true">
+				<capitalresource>cCapResCoin</capitalresource>
+				<amount>150</amount>
+			</capitalresource>
+		</rewards>
+		<rewards minlevel="11" maxlevel="14">
+			<xp>60000</xp>
+			<capitalresource visible="true">
+				<capitalresource>cCapResCoin</capitalresource>
+				<amount>200</amount>
+			</capitalresource>
+		</rewards>
+		<rewards minlevel="15" maxlevel="20">
+			<xp>120000</xp>
+			<capitalresource visible="true">
+				<capitalresource>cCapResCoin</capitalresource>
+				<amount>500</amount>
+			</capitalresource>
+		</rewards>
+		<rewards minlevel="21" maxlevel="23">
+			<xp>180000</xp>
+			<capitalresource visible="true">
+				<capitalresource>cCapResCoin</capitalresource>
+				<amount>700</amount>
+			</capitalresource>
+		</rewards>
+		<rewards minlevel="24" maxlevel="99">
+			<xp>200000</xp>
+			<capitalresource visible="true">
+				<capitalresource>cCapResCoin</capitalresource>
+				<amount>1000</amount>
+			</capitalresource>
+		</rewards>
+	</rewardtable>
+	<rewardtable name="B04Global">
+		<rewards minlevel="0" maxlevel="9">
+			<capitalresource visible="true">
+				<capitalresource>cCapResCoin</capitalresource>
+				<amount>50</amount>
+			</capitalresource>
+		</rewards>
+		<rewards minlevel="10" maxlevel="19">
+			<capitalresource visible="true">
+				<capitalresource>cCapResCoin</capitalresource>
+				<amount>500</amount>
+			</capitalresource>
+		</rewards>
+		<rewards minlevel="20" maxlevel="21">
+			<capitalresource visible="true">
+				<capitalresource>cCapResCoin</capitalresource>
+				<amount>1000</amount>
+			</capitalresource>
+		</rewards>
+		<rewards minlevel="22" maxlevel="23">
+			<capitalresource visible="true">
+				<capitalresource>cCapResCoin</capitalresource>
+				<amount>1500</amount>
+			</capitalresource>
+		</rewards>
+		<rewards minlevel="24" maxlevel="99">
+			<capitalresource visible="true">
+				<capitalresource>cCapResCoin</capitalresource>
+				<amount>2000</amount>
+			</capitalresource>
+		</rewards>
+	</rewardtable>
+	<rewardtable name="EliteGlobal">
+		<rewards minlevel="0" maxlevel="14">
+			<capitalresource visible="true">
+				<capitalresource>cCapResCoin</capitalresource>
+				<amount>2000</amount>
+			</capitalresource>
+		</rewards>
+		<rewards minlevel="15" maxlevel="19">
+			<capitalresource visible="true">
+				<capitalresource>cCapResCoin</capitalresource>
+				<amount>3000</amount>
+			</capitalresource>
+		</rewards>
+		<rewards minlevel="20" maxlevel="24">
+			<capitalresource visible="true">
+				<capitalresource>cCapResCoin</capitalresource>
+				<amount>4000</amount>
+			</capitalresource>
+		</rewards>
+		<rewards minlevel="25" maxlevel="29">
+			<capitalresource visible="true">
+				<capitalresource>cCapResCoin</capitalresource>
+				<amount>6000</amount>
+			</capitalresource>
+		</rewards>
+		<rewards minlevel="30" maxlevel="34">
+			<capitalresource visible="true">
+				<capitalresource>cCapResCoin</capitalresource>
+				<amount>8000</amount>
+			</capitalresource>
+		</rewards>
+		<rewards minlevel="35" maxlevel="99">
+			<capitalresource visible="true">
+				<capitalresource>cCapResCoin</capitalresource>
+				<amount>10000</amount>
+			</capitalresource>
+		</rewards>
+	</rewardtable>
+</rewardtables>

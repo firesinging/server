@@ -1,0 +1,162 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<quest xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xsd="http://www.w3.org/2001/XMLSchema" uniqueid="255" version="67">
+	<displayname>$$4498$$</displayname>
+	<level>9</level>
+	<repeatable>false</repeatable>
+	<timer>
+		<events/>
+		<hideonui>false</hideonui>
+	</timer>
+	<canplaycoop>false</canplaycoop>
+	<cooprequired>false</cooprequired>
+	<ranked>false</ranked>
+	<description>$$5726$$</description>
+	<completiontext>$$5112$$</completiontext>
+	<inprogresstext>$$5113$$</inprogresstext>
+	<summarytext>$$5109$$</summarytext>
+	<canabandon>true</canabandon>
+	<hiddenquest>false</hiddenquest>
+	<friendonly>false</friendonly>
+	<suppressnotifications>false</suppressnotifications>
+	<customquest>false</customquest>
+	<questtype>RandomMap</questtype>
+	<questgamemodetype>Normal</questgamemodetype>
+	<prereqs>
+		<values>
+			<civilization>
+				<id>3</id>
+			</civilization>
+			<questcomplete>
+				<id>253</id>
+			</questcomplete>
+		</values>
+	</prereqs>
+	<equipmentprereqs/>
+	<targets/>
+	<objectives id="0" mustfailall="false">
+		<values>
+			<or id="1" mustfailall="false">
+				<values>
+					<and id="2" mustfailall="false">
+						<values>
+							<dummy id="3">
+								<description>$$5239$$</description>
+								<objectivename>ElephantCampA</objectivename>
+								<autocomplete>false</autocomplete>
+							</dummy>
+							<dummy id="4">
+								<description>$$5240$$</description>
+								<objectivename>ElephantCampB</objectivename>
+								<autocomplete>false</autocomplete>
+							</dummy>
+							<dummy id="5">
+								<description>$$5241$$</description>
+								<objectivename>ElephantCampC</objectivename>
+								<autocomplete>false</autocomplete>
+							</dummy>
+							<kill id="6">
+								<description>$$4735$$</description>
+								<type>Eg_Bldg_SiegeWorkshop</type>
+								<count>2</count>
+								<includeconversion>true</includeconversion>
+								<onlycountelites>false</onlycountelites>
+							</kill>
+						</values>
+					</and>
+					<reduceunitsto id="7">
+						<type>LogicalTypeNeededForVictory</type>
+						<count>0</count>
+						<includeteam>false</includeteam>
+						<includeunderconstruction>false</includeunderconstruction>
+						<canuncomplete>false</canuncomplete>
+						<causesfailure>true</causesfailure>
+						<playerid>1</playerid>
+					</reduceunitsto>
+				</values>
+			</or>
+		</values>
+	</objectives>
+	<onaccept/>
+	<rewards visible="true">
+		<xp visible="true">12000</xp>
+		<capitalresource visible="true">
+			<capitalresource>cCapResCoin</capitalresource>
+			<amount>50</amount>
+		</capitalresource>
+		<loottable visible="true">general</loottable>
+		<loottable visible="true">general</loottable>
+	</rewards>
+	<playersettings id="1">
+		<team>1</team>
+		<color>1</color>
+		<playertype>Human</playertype>
+		<cooponly>false</cooponly>
+		<startingfood>0</startingfood>
+		<startingwood>0</startingwood>
+		<startinggold>0</startinggold>
+		<startingstone>0</startingstone>
+		<aislidervariables/>
+		<aiflagvariables/>
+	</playersettings>
+	<playersettings id="2">
+		<team>2</team>
+		<color>2</color>
+		<playertype>Computer</playertype>
+		<personality>$$2255$$</personality>
+		<dataset>C02\C02_Badari_T0</dataset>
+		<cooponly>false</cooponly>
+		<startingfood>0</startingfood>
+		<startingwood>0</startingwood>
+		<startinggold>0</startinggold>
+		<startingstone>0</startingstone>
+		<aislidervariables/>
+		<aiflagvariables/>
+	</playersettings>
+	<playersettings id="3">
+		<team>3</team>
+		<color>3</color>
+		<playertype>Computer</playertype>
+		<personality>$$2258$$</personality>
+		<dataset>C02\C02_Badari_T0</dataset>
+		<cooponly>false</cooponly>
+		<startingfood>0</startingfood>
+		<startingwood>0</startingwood>
+		<startinggold>0</startinggold>
+		<startingstone>0</startingstone>
+		<aislidervariables/>
+		<aiflagvariables/>
+	</playersettings>
+	<diplomacysettings>
+		<diplomacy relation="Neutral" team1="1" team2="3" sharedlos="false"/>
+		<diplomacy relation="Neutral" team1="3" team2="1" sharedlos="false"/>
+		<diplomacy relation="Neutral" team1="2" team2="3" sharedlos="true"/>
+		<diplomacy relation="Neutral" team1="3" team2="2" sharedlos="true"/>
+	</diplomacysettings>
+	<randommap>
+		<map>scenarioloader</map>
+		<randommap>true</randommap>
+		<numplayers>3</numplayers>
+		<mapvariables>
+			<variable name="scenarioFile" type="String">C02/C02_R1M54_CaptureElephants</variable>
+			<variable name="region" type="String">Egyptian Sand</variable>
+			<variable name="lighting" type="String">Evening</variable>
+		</mapvariables>
+		<nuggetoverrides/>
+		<mapregionname>Egyptian Sand</mapregionname>
+		<lightsetname>Evening</lightsetname>
+		<mapsizename>&lt;Not Specified&gt;</mapsizename>
+	</randommap>
+	<questgivers>
+		<protounit>C02_R1_CitySesostris</protounit>
+	</questgivers>
+	<questreturners>
+		<protounit>C02_R1_CitySesostris</protounit>
+	</questreturners>
+	<maplocationx>0.362</maplocationx>
+	<maplocationy>0.778</maplocationy>
+	<mapmarker>QuestDefault</mapmarker>
+	<mappage>Egypt</mappage>
+	<elitespawnchance>0</elitespawnchance>
+	<victoryconditions/>
+</quest>

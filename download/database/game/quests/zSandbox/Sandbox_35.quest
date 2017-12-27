@@ -1,0 +1,318 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<quest xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xsd="http://www.w3.org/2001/XMLSchema" uniqueid="10135" version="105">
+	<displayname>$$3890$$</displayname>
+	<level>-1</level>
+	<repeatable>true</repeatable>
+	<timer>
+		<events/>
+		<hideonui>false</hideonui>
+	</timer>
+	<canplaycoop>true</canplaycoop>
+	<cooprequired>false</cooprequired>
+	<ranked>false</ranked>
+	<alliance>eAllianceNone</alliance>
+	<questtype>RandomMap</questtype>
+	<description>$$13402$$</description>
+	<completiontext>$$12521$$</completiontext>
+	<inprogresstext>$$12521$$</inprogresstext>
+	<summarytext>$$13403$$</summarytext>
+	<canabandon>true</canabandon>
+	<hiddenquest>false</hiddenquest>
+	<friendonly>false</friendonly>
+	<suppressnotifications>false</suppressnotifications>
+	<customquest>false</customquest>
+	<questgamemodetype>Normal</questgamemodetype>
+	<prereqs>
+		<values>
+			<civilization>
+				<id>1</id>
+			</civilization>
+			<level>
+				<min>99</min>
+				<max>99</max>
+			</level>
+		</values>
+	</prereqs>
+	<equipmentprereqs/>
+	<targets>
+		<grouping>
+			<cooponly>false</cooponly>
+			<forcetocenter>true</forcetocenter>
+			<name>Player1Start</name>
+			<count>1</count>
+			<team>1</team>
+			<area>Player1</area>
+			<groupfilename>shared\shared_marketblitz_start</groupfilename>
+			<rottype>Rotate0</rottype>
+			<rotateunitorientations>true</rotateunitorientations>
+		</grouping>
+		<grouping>
+			<cooponly>true</cooponly>
+			<forcetocenter>true</forcetocenter>
+			<name>Player2Start</name>
+			<count>1</count>
+			<team>3</team>
+			<area>Player2</area>
+			<groupfilename>shared\shared_marketblitz_start_p3</groupfilename>
+			<rottype>Rotate0</rottype>
+			<rotateunitorientations>true</rotateunitorientations>
+		</grouping>
+		<grouping>
+			<cooponly>false</cooponly>
+			<forcetocenter>true</forcetocenter>
+			<name>enemy1Start</name>
+			<count>1</count>
+			<team>2</team>
+			<area>Player3</area>
+			<groupfilename>shared_start_small</groupfilename>
+			<rottype>Rotate0</rottype>
+			<rotateunitorientations>true</rotateunitorientations>
+		</grouping>
+		<grouping>
+			<cooponly>false</cooponly>
+			<forcetocenter>true</forcetocenter>
+			<name>enemy2Start</name>
+			<count>1</count>
+			<team>4</team>
+			<area>Player4</area>
+			<groupfilename>shared_start_small</groupfilename>
+			<rottype>Rotate0</rottype>
+			<rotateunitorientations>true</rotateunitorientations>
+		</grouping>
+		<grouping>
+			<cooponly>false</cooponly>
+			<forcetocenter>true</forcetocenter>
+			<name>enemy3Start</name>
+			<count>1</count>
+			<team>5</team>
+			<area>Player5</area>
+			<groupfilename>shared_start_small</groupfilename>
+			<rottype>Rotate0</rottype>
+			<rotateunitorientations>true</rotateunitorientations>
+		</grouping>
+	</targets>
+	<objectives id="0" mustfailall="false">
+		<values>
+			<or id="1" mustfailall="false">
+				<values>
+					<collectresource id="2">
+						<description>$$2523$$</description>
+						<type>Gold</type>
+						<amount>3000</amount>
+						<includeexisting>true</includeexisting>
+					</collectresource>
+					<protectunit id="3">
+						<description>$$9003$$</description>
+						<type>AbstractMarket</type>
+						<owningplayerid>1</owningplayerid>
+					</protectunit>
+				</values>
+			</or>
+		</values>
+	</objectives>
+	<secondaryobjectives id="4" mustfailall="false" rewardname="OptionalOne">
+		<description>$$9658$$</description>
+		<values>
+			<dummy id="5">
+				<description>$$13401$$</description>
+				<objectivename>maraudersDefeated</objectivename>
+				<autocomplete>false</autocomplete>
+			</dummy>
+		</values>
+	</secondaryobjectives>
+	<onaccept/>
+	<rewards visible="true">
+		<xp visible="true"/>
+		<capitalresource visible="true">
+			<capitalresource>cCapResCoin</capitalresource>
+			<amount>1</amount>
+		</capitalresource>
+	</rewards>
+	<secondaryrewards visible="true" name="OptionalOne"/>
+	<playersettings id="1">
+		<team>1</team>
+		<color>1</color>
+		<tributablebehavior>Default</tributablebehavior>
+		<playertype>Human</playertype>
+		<cooponly>false</cooponly>
+		<startingfood>0</startingfood>
+		<startingwood>0</startingwood>
+		<startinggold>1000</startinggold>
+		<startingstone>0</startingstone>
+		<aislidervariables/>
+		<aiflagvariables/>
+	</playersettings>
+	<playersettings id="2">
+		<team>2</team>
+		<color>2</color>
+		<tributablebehavior>Default</tributablebehavior>
+		<playertype>Computer</playertype>
+		<personality>$$4054$$</personality>
+		<script>custom\shared_caravanblitz</script>
+		<dataset>c01\c01_corerush_t1</dataset>
+		<cooponly>false</cooponly>
+		<startingfood>-1</startingfood>
+		<startingwood>-1</startingwood>
+		<startinggold>-1</startinggold>
+		<startingstone>-1</startingstone>
+		<aislidervariables>
+			<aivariable>
+				<key>CavalryBias</key>
+				<value>-1</value>
+			</aivariable>
+			<aivariable>
+				<key>ArcherBias</key>
+				<value>-0.3</value>
+			</aivariable>
+		</aislidervariables>
+		<aiflagvariables/>
+	</playersettings>
+	<playersettings id="3">
+		<team>1</team>
+		<color>7</color>
+		<tributablebehavior>Default</tributablebehavior>
+		<playertype>Human</playertype>
+		<cooponly>true</cooponly>
+		<startingfood>0</startingfood>
+		<startingwood>0</startingwood>
+		<startinggold>1000</startinggold>
+		<startingstone>0</startingstone>
+		<aislidervariables/>
+		<aiflagvariables/>
+	</playersettings>
+	<playersettings id="4">
+		<team>2</team>
+		<color>2</color>
+		<tributablebehavior>Default</tributablebehavior>
+		<playertype>Computer</playertype>
+		<personality>$$4054$$</personality>
+		<script>custom\shared_caravanblitz</script>
+		<dataset>c01\c01_corerush_t1</dataset>
+		<cooponly>false</cooponly>
+		<startingfood>-1</startingfood>
+		<startingwood>-1</startingwood>
+		<startinggold>-1</startinggold>
+		<startingstone>-1</startingstone>
+		<aislidervariables>
+			<aivariable>
+				<key>CavalryBias</key>
+				<value>-1</value>
+			</aivariable>
+			<aivariable>
+				<key>ArcherBias</key>
+				<value>-0.3</value>
+			</aivariable>
+		</aislidervariables>
+		<aiflagvariables/>
+	</playersettings>
+	<playersettings id="5">
+		<team>2</team>
+		<color>2</color>
+		<tributablebehavior>Default</tributablebehavior>
+		<playertype>Computer</playertype>
+		<personality>$$4054$$</personality>
+		<script>custom\shared_caravanblitz</script>
+		<dataset>c01\c01_corerush_t1</dataset>
+		<cooponly>false</cooponly>
+		<startingfood>-1</startingfood>
+		<startingwood>-1</startingwood>
+		<startinggold>-1</startinggold>
+		<startingstone>-1</startingstone>
+		<aislidervariables>
+			<aivariable>
+				<key>CavalryBias</key>
+				<value>-1</value>
+			</aivariable>
+			<aivariable>
+				<key>ArcherBias</key>
+				<value>-0.3</value>
+			</aivariable>
+		</aislidervariables>
+		<aiflagvariables/>
+	</playersettings>
+	<playersettings id="6">
+		<team>3</team>
+		<color>5</color>
+		<tributablebehavior>ForceFalse</tributablebehavior>
+		<playertype>Computer</playertype>
+		<personality>$$2233$$</personality>
+		<dataset>c01\c01_vanilla_t0</dataset>
+		<cooponly>false</cooponly>
+		<startingfood>-1</startingfood>
+		<startingwood>-1</startingwood>
+		<startinggold>-1</startinggold>
+		<startingstone>-1</startingstone>
+		<aislidervariables/>
+		<aiflagvariables/>
+	</playersettings>
+	<playersettings id="7">
+		<team>4</team>
+		<color>3</color>
+		<tributablebehavior>Default</tributablebehavior>
+		<playertype>Computer</playertype>
+		<personality>$$4054$$</personality>
+		<script/>
+		<dataset>c01\c01_vanilla_t0</dataset>
+		<cooponly>false</cooponly>
+		<startingfood>-1</startingfood>
+		<startingwood>-1</startingwood>
+		<startinggold>-1</startinggold>
+		<startingstone>-1</startingstone>
+		<aislidervariables/>
+		<aiflagvariables/>
+	</playersettings>
+	<playersettings id="8">
+		<team>2</team>
+		<color>2</color>
+		<tributablebehavior>Default</tributablebehavior>
+		<playertype>Computer</playertype>
+		<personality>$$4054$$</personality>
+		<script/>
+		<dataset>c01\c01_corerush_t1</dataset>
+		<cooponly>false</cooponly>
+		<startingfood>-1</startingfood>
+		<startingwood>-1</startingwood>
+		<startinggold>-1</startinggold>
+		<startingstone>-1</startingstone>
+		<aislidervariables/>
+		<aiflagvariables/>
+	</playersettings>
+	<diplomacysettings>
+		<diplomacy relation="Ally" team1="1" team2="3" sharedlos="false"/>
+		<diplomacy relation="Neutral" team1="1" team2="4" sharedlos="false"/>
+		<diplomacy relation="Neutral" team1="2" team2="3" sharedlos="false"/>
+		<diplomacy relation="Ally" team1="2" team2="4" sharedlos="false"/>
+		<diplomacy relation="Ally" team1="3" team2="1" sharedlos="false"/>
+		<diplomacy relation="Neutral" team1="3" team2="2" sharedlos="false"/>
+		<diplomacy relation="Neutral" team1="3" team2="4" sharedlos="false"/>
+		<diplomacy relation="Neutral" team1="4" team2="1" sharedlos="false"/>
+		<diplomacy relation="Ally" team1="4" team2="2" sharedlos="false"/>
+		<diplomacy relation="Neutral" team1="4" team2="3" sharedlos="false"/>
+	</diplomacysettings>
+	<randommap>
+		<map>core\shared\shared_caravanblitzagain</map>
+		<randommap>true</randommap>
+		<numplayers>8</numplayers>
+		<mapvariables>
+			<variable name="secondaryObjectiveName" type="String">maraudersDefeated</variable>
+			<variable name="questID" type="Int">10135</variable>
+			<variable name="region" type="String">Greek Coast</variable>
+			<variable name="mapSize" type="String">Standard</variable>
+		</mapvariables>
+		<nuggetoverrides/>
+		<mapregionname>Greek Coast</mapregionname>
+		<lightsetname>&lt;Not Specified&gt;</lightsetname>
+		<mapsizename>Standard</mapsizename>
+	</randommap>
+	<questgivers/>
+	<questreturners/>
+	<maplocationx>0.5</maplocationx>
+	<maplocationy>0.5</maplocationy>
+	<mapmarker>QuestDefault</mapmarker>
+	<mappage>Greece</mappage>
+	<elitespawnchance>0</elitespawnchance>
+	<linkedquestid>0</linkedquestid>
+	<questbasescale>0</questbasescale>
+	<victoryconditions/>
+</quest>

@@ -1,0 +1,244 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<quest xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xsd="http://www.w3.org/2001/XMLSchema" uniqueid="387" version="46">
+	<displayname>$$646$$</displayname>
+	<level>16</level>
+	<repeatable>false</repeatable>
+	<offertype>eOfferNone</offertype>
+	<timer>
+		<events/>
+		<hideonui>false</hideonui>
+	</timer>
+	<canplaycoop>true</canplaycoop>
+	<cooprequired>false</cooprequired>
+	<ranked>false</ranked>
+	<alliance>eAllianceNone</alliance>
+	<questtype>RandomMap</questtype>
+	<description>$$4958$$</description>
+	<completiontext>$$4957$$</completiontext>
+	<inprogresstext>$$4956$$</inprogresstext>
+	<summarytext>$$4954$$</summarytext>
+	<canabandon>true</canabandon>
+	<hiddenquest>false</hiddenquest>
+	<friendonly>false</friendonly>
+	<suppressnotifications>false</suppressnotifications>
+	<customquest>false</customquest>
+	<questgamemodetype>Normal</questgamemodetype>
+	<prereqs>
+		<values>
+			<civilization>
+				<id>3</id>
+			</civilization>
+			<questcomplete>
+				<id>388</id>
+			</questcomplete>
+		</values>
+	</prereqs>
+	<equipmentprereqs/>
+	<targets>
+		<grouping>
+			<cooponly>false</cooponly>
+			<forcetocenter>false</forcetocenter>
+			<name>Player1</name>
+			<count>1</count>
+			<team>1</team>
+			<area>Player1</area>
+			<groupfilename>C02\C02_P1Base_WithCorral</groupfilename>
+			<rottype>Rotate0</rottype>
+			<rotateunitorientations>false</rotateunitorientations>
+		</grouping>
+		<grouping>
+			<cooponly>true</cooponly>
+			<forcetocenter>false</forcetocenter>
+			<name>Player2</name>
+			<count>1</count>
+			<team>4</team>
+			<area>Player2</area>
+			<groupfilename>Shared_Start_Small</groupfilename>
+			<rottype>Rotate0</rottype>
+			<rotateunitorientations>false</rotateunitorientations>
+		</grouping>
+		<grouping>
+			<cooponly>false</cooponly>
+			<forcetocenter>true</forcetocenter>
+			<name>Lib1</name>
+			<count>1</count>
+			<team>2</team>
+			<area>Quest_Area_A</area>
+			<groupfilename>C02\C02_Egypt_LargeBase01</groupfilename>
+			<rottype>Rotate270</rottype>
+			<rotateunitorientations>true</rotateunitorientations>
+		</grouping>
+		<grouping>
+			<cooponly>false</cooponly>
+			<forcetocenter>false</forcetocenter>
+			<name>Lib2</name>
+			<count>1</count>
+			<team>2</team>
+			<area>Quest_Area_B</area>
+			<groupfilename>Shared\Shared_Terrain_DesertCliff_01</groupfilename>
+			<rottype>Rotate0</rottype>
+			<rotateunitorientations>false</rotateunitorientations>
+		</grouping>
+		<grouping>
+			<cooponly>false</cooponly>
+			<forcetocenter>false</forcetocenter>
+			<name>Lib3</name>
+			<count>1</count>
+			<team>2</team>
+			<area>Quest_Area_C</area>
+			<groupfilename>Shared\Shared_Terrain_DesertCliff_02</groupfilename>
+			<rottype>Rotate0</rottype>
+			<rotateunitorientations>true</rotateunitorientations>
+		</grouping>
+		<protounit>
+			<cooponly>false</cooponly>
+			<forcetocenter>true</forcetocenter>
+			<name>First_Mate</name>
+			<protoname>First_Mate</protoname>
+			<count>1</count>
+			<team>3</team>
+			<area>Quest_Area_A</area>
+			<overrides parent="Qst_Convertable">
+				<animfile>NPC\CivNubian\Units\Infantry\Warrior\Warrior.xml</animfile>
+				<displaynameid>56424</displaynameid>
+				<icon>UserInterface\Icons\Units\NubianSpearman64_ua</icon>
+				<portraiticon>UserInterface\Icons\Units\AvatarNubianSpearman_ua</portraiticon>
+				<soundfile>NPC_Nubian_Warrior</soundfile>
+			</overrides>
+			<usequesttargetindicator>true</usequesttargetindicator>
+		</protounit>
+		<protounit>
+			<cooponly>false</cooponly>
+			<forcetocenter>false</forcetocenter>
+			<name>Guards</name>
+			<protoname>guards</protoname>
+			<count>10</count>
+			<team>3</team>
+			<area>Quest_Area_A</area>
+			<overrides parent="Eg_Arc_NomadArc_E">
+				<displaynameid>57716</displaynameid>
+			</overrides>
+			<usequesttargetindicator>false</usequesttargetindicator>
+		</protounit>
+	</targets>
+	<objectives id="0" mustfailall="false">
+		<values>
+			<or id="1" mustfailall="false">
+				<values>
+					<unitinarea id="2">
+						<description>$$2609$$</description>
+						<area>Player1</area>
+						<type>First_Mate</type>
+						<count>1</count>
+						<radius>20</radius>
+						<aidefend>true</aidefend>
+					</unitinarea>
+					<reduceunitsto id="3">
+						<type>LogicalTypeNeededForVictory</type>
+						<count>0</count>
+						<includeteam>true</includeteam>
+						<includeunderconstruction>false</includeunderconstruction>
+						<canuncomplete>false</canuncomplete>
+						<causesfailure>true</causesfailure>
+						<playerid>1</playerid>
+					</reduceunitsto>
+				</values>
+			</or>
+		</values>
+	</objectives>
+	<onaccept/>
+	<rewards visible="true">
+		<xp visible="true">15000</xp>
+		<capitalresource visible="true">
+			<capitalresource>cCapResCoin</capitalresource>
+			<amount>150</amount>
+		</capitalresource>
+		<loottable visible="true">general</loottable>
+		<loottable visible="true">general</loottable>
+	</rewards>
+	<playersettings id="1">
+		<team>1</team>
+		<color>1</color>
+		<tributablebehavior>Default</tributablebehavior>
+		<playertype>Human</playertype>
+		<cooponly>false</cooponly>
+		<startingfood>-1</startingfood>
+		<startingwood>-1</startingwood>
+		<startinggold>-1</startinggold>
+		<startingstone>-1</startingstone>
+		<aislidervariables/>
+		<aiflagvariables/>
+	</playersettings>
+	<playersettings id="2">
+		<team>2</team>
+		<color>2</color>
+		<tributablebehavior>Default</tributablebehavior>
+		<playertype>Computer</playertype>
+		<personality>$$2287$$</personality>
+		<script>CORE\Turtle_Moderate</script>
+		<dataset>C02\C02_Libyan_T2</dataset>
+		<cooponly>false</cooponly>
+		<startingfood>300</startingfood>
+		<startingwood>200</startingwood>
+		<startinggold>100</startinggold>
+		<startingstone>0</startingstone>
+		<aislidervariables/>
+		<aiflagvariables/>
+	</playersettings>
+	<playersettings id="3">
+		<team>2</team>
+		<color>2</color>
+		<tributablebehavior>Default</tributablebehavior>
+		<playertype>Computer</playertype>
+		<personality>$$2288$$</personality>
+		<dataset>C02\C02_Libyan_T2</dataset>
+		<cooponly>false</cooponly>
+		<startingfood>-1</startingfood>
+		<startingwood>-1</startingwood>
+		<startinggold>-1</startinggold>
+		<startingstone>-1</startingstone>
+		<aislidervariables/>
+		<aiflagvariables/>
+	</playersettings>
+	<playersettings id="4">
+		<team>1</team>
+		<color>7</color>
+		<tributablebehavior>Default</tributablebehavior>
+		<playertype>Human</playertype>
+		<cooponly>true</cooponly>
+		<startingfood>-1</startingfood>
+		<startingwood>-1</startingwood>
+		<startinggold>-1</startinggold>
+		<startingstone>-1</startingstone>
+		<aislidervariables/>
+		<aiflagvariables/>
+	</playersettings>
+	<diplomacysettings/>
+	<randommap>
+		<map>Core\C02\C02_Side_Admiral_FindFirstMate</map>
+		<randommap>true</randommap>
+		<numplayers>4</numplayers>
+		<mapvariables>
+			<variable name="region" type="String">Egyptian Marsh</variable>
+			<variable name="lighting" type="String"/>
+			<variable name="mapSize" type="String">Large</variable>
+		</mapvariables>
+		<nuggetoverrides/>
+		<mapregionname>Egyptian Marsh</mapregionname>
+		<mapsizename>Large</mapsizename>
+	</randommap>
+	<questgivers>
+		<protounit>C02_R3_LostAdmiral</protounit>
+	</questgivers>
+	<questreturners>
+		<protounit>C02_R3_LostAdmiral</protounit>
+	</questreturners>
+	<maplocationx>0.25</maplocationx>
+	<maplocationy>0.275</maplocationy>
+	<mapmarker>QuestDefault</mapmarker>
+	<mappage>Libya</mappage>
+	<elitespawnchance>0.025</elitespawnchance>
+	<questbasescale>0</questbasescale>
+	<victoryconditions/>
+</quest>

@@ -1,0 +1,182 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<quest xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xsd="http://www.w3.org/2001/XMLSchema" uniqueid="405" version="80">
+	<displayname>$$361$$</displayname>
+	<level>-1</level>
+	<repeatable>true</repeatable>
+	<timer>
+		<events/>
+		<hideonui>false</hideonui>
+	</timer>
+	<canplaycoop>false</canplaycoop>
+	<cooprequired>false</cooprequired>
+	<ranked>false</ranked>
+	<alliance>eAllianceNone</alliance>
+	<questtype>RandomMap</questtype>
+	<description>$$4085$$</description>
+	<completiontext>$$363$$</completiontext>
+	<inprogresstext>$$1387$$</inprogresstext>
+	<summarytext>$$6184$$</summarytext>
+	<repeatableduration>144</repeatableduration>
+	<canabandon>true</canabandon>
+	<hiddenquest>false</hiddenquest>
+	<friendonly>false</friendonly>
+	<suppressnotifications>false</suppressnotifications>
+	<customquest>false</customquest>
+	<questgamemodetype>Normal</questgamemodetype>
+	<prereqs>
+		<values>
+			<level>
+				<min>15</min>
+				<max>99</max>
+			</level>
+		</values>
+	</prereqs>
+	<equipmentprereqs/>
+	<targets/>
+	<objectives id="0" mustfailall="false">
+		<values>
+			<or id="1" mustfailall="false">
+				<values>
+					<and id="2" mustfailall="false">
+						<values>
+							<ownsunit id="3">
+								<description>$$2698$$</description>
+								<type>Npc_PeePaw</type>
+								<count>1</count>
+								<owningplayerid>1</owningplayerid>
+								<causesfailure>false</causesfailure>
+							</ownsunit>
+							<collectmaterial id="4">
+								<description>$$4086$$</description>
+								<type>!MapleSap</type>
+								<amount>5</amount>
+								<includeexisting>true</includeexisting>
+							</collectmaterial>
+							<unitinarea id="5">
+								<description>$$4087$$</description>
+								<area>Quest_Area_D</area>
+								<type>Npc_PeePaw</type>
+								<count>1</count>
+								<radius>-1</radius>
+								<aidefend>false</aidefend>
+							</unitinarea>
+						</values>
+					</and>
+					<or id="6" mustfailall="false">
+						<values>
+							<reduceunitsto id="7">
+								<type>Gr_Bldg_House</type>
+								<count>0</count>
+								<includeteam>false</includeteam>
+								<includeunderconstruction>false</includeunderconstruction>
+								<canuncomplete>false</canuncomplete>
+								<causesfailure>true</causesfailure>
+								<playerid>2</playerid>
+							</reduceunitsto>
+							<reduceunitsto id="8">
+								<type>EquipmentFilterMilitary</type>
+								<count>0</count>
+								<includeteam>false</includeteam>
+								<includeunderconstruction>false</includeunderconstruction>
+								<canuncomplete>false</canuncomplete>
+								<causesfailure>true</causesfailure>
+								<playerid>1</playerid>
+							</reduceunitsto>
+						</values>
+					</or>
+				</values>
+			</or>
+		</values>
+	</objectives>
+	<onaccept/>
+	<rewards visible="true">
+		<xp visible="true">10000</xp>
+		<capitalresource visible="true">
+			<capitalresource>cCapResCoin</capitalresource>
+			<amount>50</amount>
+		</capitalresource>
+		<loottable visible="true">general</loottable>
+		<consumematerial visible="false">
+			<materialname>!MapleSap</materialname>
+			<count>5</count>
+		</consumematerial>
+	</rewards>
+	<playersettings id="1">
+		<team>1</team>
+		<color>1</color>
+		<tributablebehavior>Default</tributablebehavior>
+		<playertype>Human</playertype>
+		<cooponly>false</cooponly>
+		<startingfood>200</startingfood>
+		<startingwood>200</startingwood>
+		<startinggold>200</startinggold>
+		<startingstone>200</startingstone>
+		<aislidervariables/>
+		<aiflagvariables/>
+	</playersettings>
+	<playersettings id="2">
+		<team>2</team>
+		<color>5</color>
+		<tributablebehavior>ForceFalse</tributablebehavior>
+		<playertype>Computer</playertype>
+		<personality>$$361$$</personality>
+		<dataset>c01\c01_vanilla_t0</dataset>
+		<cooponly>false</cooponly>
+		<startingfood>0</startingfood>
+		<startingwood>0</startingwood>
+		<startinggold>0</startinggold>
+		<startingstone>0</startingstone>
+		<aislidervariables/>
+		<aiflagvariables/>
+	</playersettings>
+	<playersettings id="3">
+		<team>3</team>
+		<color>2</color>
+		<tributablebehavior>Default</tributablebehavior>
+		<playertype>Computer</playertype>
+		<personality>$$2296$$</personality>
+		<dataset>c01\c01_vanilla_t0</dataset>
+		<cooponly>false</cooponly>
+		<startingfood>-1</startingfood>
+		<startingwood>-1</startingwood>
+		<startinggold>-1</startinggold>
+		<startingstone>-1</startingstone>
+		<aislidervariables/>
+		<aiflagvariables/>
+	</playersettings>
+	<diplomacysettings>
+		<diplomacy relation="Neutral" team1="1" team2="2" sharedlos="false"/>
+		<diplomacy relation="Neutral" team1="2" team2="1" sharedlos="false"/>
+	</diplomacysettings>
+	<randommap>
+		<map>Core\MISC\Misc_GoodOlPeepaw</map>
+		<randommap>true</randommap>
+		<numplayers>3</numplayers>
+		<mapvariables>
+			<variable name="scenarioFile" type="String">MISC/Misc_GoodOlPeepaw</variable>
+			<variable name="RestrictNuggetScaling" type="Bool">true</variable>
+			<variable name="region" type="String">Greek Inland</variable>
+		</mapvariables>
+		<nuggetoverrides>
+			<nuggetoverride overrideweight="1000000">Quest_MapleTreeNugget</nuggetoverride>
+		</nuggetoverrides>
+		<mapregionname>Greek Inland</mapregionname>
+		<lightsetname>&lt;Not Specified&gt;</lightsetname>
+		<mapsizename>&lt;Not Specified&gt;</mapsizename>
+	</randommap>
+	<questgivers>
+		<protounit>GEN_MamuShannon</protounit>
+	</questgivers>
+	<questreturners>
+		<protounit>GEN_MamuShannon</protounit>
+	</questreturners>
+	<maplocationx>0.927</maplocationx>
+	<maplocationy>0.569</maplocationy>
+	<mapmarker>QuestRepeatable</mapmarker>
+	<mappage>Troy</mappage>
+	<elitespawnchance>0</elitespawnchance>
+	<linkedquestid>0</linkedquestid>
+	<questbasescale>0</questbasescale>
+	<victoryconditions/>
+</quest>

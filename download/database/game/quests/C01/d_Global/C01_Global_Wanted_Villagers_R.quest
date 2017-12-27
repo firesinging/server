@@ -1,0 +1,83 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<quest xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xsd="http://www.w3.org/2001/XMLSchema" uniqueid="153" version="19">
+	<displayname>$$726$$</displayname>
+	<level>-1</level>
+	<repeatable>true</repeatable>
+	<timer>
+		<events/>
+		<hideonui>false</hideonui>
+	</timer>
+	<canplaycoop>false</canplaycoop>
+	<cooprequired>false</cooprequired>
+	<ranked>false</ranked>
+	<alliance>eAllianceNone</alliance>
+	<questtype>Global</questtype>
+	<description>$$4074$$</description>
+	<completiontext>$$728$$</completiontext>
+	<inprogresstext>$$1599$$</inprogresstext>
+	<summarytext>$$3542$$</summarytext>
+	<repeatableduration>12</repeatableduration>
+	<canabandon>true</canabandon>
+	<hiddenquest>false</hiddenquest>
+	<friendonly>false</friendonly>
+	<suppressnotifications>false</suppressnotifications>
+	<customquest>false</customquest>
+	<questgamemodetype>Normal</questgamemodetype>
+	<prereqs>
+		<values>
+			<civilization>
+				<id>1</id>
+			</civilization>
+			<questcomplete>
+				<id>58</id>
+			</questcomplete>
+		</values>
+	</prereqs>
+	<equipmentprereqs/>
+	<targets/>
+	<objectives id="0" mustfailall="false">
+		<values>
+			<convertunit id="1">
+				<description>$$2342$$</description>
+				<type>UnitTypeVillager1</type>
+				<count>30</count>
+			</convertunit>
+		</values>
+	</objectives>
+	<onaccept/>
+	<rewards visible="true">
+		<capitalresource visible="true">
+			<capitalresource>cCapResCoin</capitalresource>
+			<amount>200</amount>
+		</capitalresource>
+		<loottable visible="true">general</loottable>
+	</rewards>
+	<diplomacysettings/>
+	<randommap>
+		<map/>
+		<randommap>false</randommap>
+		<numplayers>0</numplayers>
+		<mapvariables>
+			<variable name="region" type="String">Greek Inland</variable>
+		</mapvariables>
+		<nuggetoverrides/>
+		<mapregionname>Greek Inland</mapregionname>
+		<lightsetname>&lt;Not Specified&gt;</lightsetname>
+		<mapsizename>&lt;Not Specified&gt;</mapsizename>
+	</randommap>
+	<questgivers>
+		<protounit>C01_R1_Oracle</protounit>
+	</questgivers>
+	<questreturners>
+		<protounit>C01_R1_Oracle</protounit>
+	</questreturners>
+	<maplocationx>0.5</maplocationx>
+	<maplocationy>0.5</maplocationy>
+	<mapmarker>Blank</mapmarker>
+	<mappage>Greece</mappage>
+	<elitespawnchance>0</elitespawnchance>
+	<linkedquestid>0</linkedquestid>
+	<questbasescale>0</questbasescale>
+	<victoryconditions/>
+</quest>

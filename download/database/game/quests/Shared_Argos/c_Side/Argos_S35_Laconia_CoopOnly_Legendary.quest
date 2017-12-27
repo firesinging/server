@@ -1,0 +1,282 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<quest xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xsd="http://www.w3.org/2001/XMLSchema" uniqueid="3193" version="15">
+	<displayname>$$12560$$</displayname>
+	<level>43</level>
+	<difficultycoloroverride>2</difficultycoloroverride>
+	<repeatable>true</repeatable>
+	<offertype>eOfferNone</offertype>
+	<timer>
+		<time>00:20:00</time>
+		<events/>
+		<hideonui>false</hideonui>
+	</timer>
+	<canplaycoop>true</canplaycoop>
+	<cooprequired>true</cooprequired>
+	<ranked>false</ranked>
+	<alliance>eAllianceNone</alliance>
+	<questtype>RandomMap</questtype>
+	<description>$$12585$$</description>
+	<completiontext>$$12582$$</completiontext>
+	<inprogresstext>$$12583$$</inprogresstext>
+	<summarytext>$$12584$$</summarytext>
+	<repeatableduration>12</repeatableduration>
+	<canabandon>true</canabandon>
+	<hiddenquest>false</hiddenquest>
+	<friendonly>false</friendonly>
+	<suppressnotifications>false</suppressnotifications>
+	<customquest>false</customquest>
+	<questgamemodetype>Normal</questgamemodetype>
+	<prereqs>
+		<values>
+			<questcomplete>
+				<id>390</id>
+			</questcomplete>
+			<level>
+				<min>40</min>
+				<max>99</max>
+			</level>
+		</values>
+	</prereqs>
+	<equipmentprereqs/>
+	<targets>
+		<grouping>
+			<cooponly>false</cooponly>
+			<forcetocenter>false</forcetocenter>
+			<name>Player1</name>
+			<count>1</count>
+			<team>1</team>
+			<area>Player1</area>
+			<groupfilename>Shared_Player1_Age2_BarracksTowers</groupfilename>
+			<rottype>Rotate0</rottype>
+			<rotateunitorientations>false</rotateunitorientations>
+		</grouping>
+		<grouping>
+			<cooponly>false</cooponly>
+			<forcetocenter>false</forcetocenter>
+			<name>BadGuys_Main</name>
+			<count>1</count>
+			<team>2</team>
+			<area>Quest_Area_D</area>
+			<groupfilename>C01\Clearchus\C01_Clearchus_Fortress</groupfilename>
+			<rottype>Rotate0</rottype>
+			<rotateunitorientations>false</rotateunitorientations>
+		</grouping>
+		<grouping>
+			<cooponly>false</cooponly>
+			<forcetocenter>false</forcetocenter>
+			<name>BadGuys_A</name>
+			<count>1</count>
+			<team>4</team>
+			<area>Quest_Area_A</area>
+			<groupfilename>Shared_Start_BarracksTowers</groupfilename>
+			<rottype>Rotate0</rottype>
+			<rotateunitorientations>false</rotateunitorientations>
+		</grouping>
+		<grouping>
+			<cooponly>false</cooponly>
+			<forcetocenter>false</forcetocenter>
+			<name>BadGuys_B</name>
+			<count>1</count>
+			<team>4</team>
+			<area>Quest_Area_B</area>
+			<groupfilename>Shared_Start_BarracksTowers</groupfilename>
+			<rottype>Rotate0</rottype>
+			<rotateunitorientations>false</rotateunitorientations>
+		</grouping>
+		<grouping>
+			<cooponly>true</cooponly>
+			<forcetocenter>false</forcetocenter>
+			<name>Player2</name>
+			<count>1</count>
+			<team>3</team>
+			<area>Player2</area>
+			<groupfilename>Shared_Player3_Age2_BarracksTowers</groupfilename>
+			<rottype>Rotate0</rottype>
+			<rotateunitorientations>false</rotateunitorientations>
+		</grouping>
+	</targets>
+	<objectives id="0" mustfailall="false">
+		<values>
+			<or id="1" mustfailall="false">
+				<values>
+					<dummy id="2">
+						<description>$$3802$$</description>
+						<objectivename>EnemiesDefeated</objectivename>
+						<autocomplete>false</autocomplete>
+					</dummy>
+					<reduceunitsto id="3">
+						<type>LogicalTypeNeededForVictory</type>
+						<count>0</count>
+						<includeteam>true</includeteam>
+						<includeunderconstruction>false</includeunderconstruction>
+						<canuncomplete>false</canuncomplete>
+						<causesfailure>true</causesfailure>
+						<playerid>1</playerid>
+					</reduceunitsto>
+				</values>
+			</or>
+		</values>
+	</objectives>
+	<secondaryobjectives id="4" mustfailall="false" rewardname="Optional">
+		<description>$$9656$$</description>
+		<values>
+			<or id="5" mustfailall="false">
+				<values>
+					<timer id="6">
+						<description>$$9656$$</description>
+						<failonexpire>true</failonexpire>
+					</timer>
+					<kill id="7">
+						<description>$$10600$$</description>
+						<type>LogicalTypeLandMilitary</type>
+						<count>300</count>
+						<includeconversion>true</includeconversion>
+						<onlycountelites>true</onlycountelites>
+					</kill>
+				</values>
+			</or>
+		</values>
+	</secondaryobjectives>
+	<onaccept/>
+	<rewards visible="true">
+		<alliancepoints visible="true">
+			<amount>30</amount>
+		</alliancepoints>
+		<capitalresource visible="true">
+			<capitalresource>cCapResCoin</capitalresource>
+			<amount>2000</amount>
+		</capitalresource>
+		<loottable visible="true">general_legendary</loottable>
+		<loottable visible="true">general_legendary</loottable>
+		<loottable visible="true">general_legendary</loottable>
+		<loottable visible="true">general_legendary</loottable>
+	</rewards>
+	<secondaryrewards visible="true" name="Optional">
+		<capitalresource visible="true">
+			<capitalresource>cCapResCoin</capitalresource>
+			<amount>1000</amount>
+		</capitalresource>
+		<loottable visible="true">general_legendary</loottable>
+		<loottable visible="true">general_legendary</loottable>
+	</secondaryrewards>
+	<playersettings id="1">
+		<team>1</team>
+		<color>1</color>
+		<tributablebehavior>Default</tributablebehavior>
+		<playertype>Human</playertype>
+		<cooponly>false</cooponly>
+		<startingfood>500</startingfood>
+		<startingwood>500</startingwood>
+		<startinggold>500</startinggold>
+		<startingstone>500</startingstone>
+		<aislidervariables/>
+		<aiflagvariables/>
+	</playersettings>
+	<playersettings id="2">
+		<team>2</team>
+		<color>2</color>
+		<tributablebehavior>Default</tributablebehavior>
+		<playertype>Computer</playertype>
+		<personality>$$2316$$</personality>
+		<script>core\ramp_heavy</script>
+		<character/>
+		<dataset>C01\C01_Clearchus_T4</dataset>
+		<cooponly>false</cooponly>
+		<startingfood>-1</startingfood>
+		<startingwood>-1</startingwood>
+		<startinggold>-1</startinggold>
+		<startingstone>-1</startingstone>
+		<aislidervariables>
+			<aivariable>
+				<key>ArcherBias</key>
+				<value>0.2</value>
+			</aivariable>
+			<aivariable>
+				<key>EconomyHandicap</key>
+				<value>0</value>
+			</aivariable>
+		</aislidervariables>
+		<aiflagvariables/>
+	</playersettings>
+	<playersettings id="3">
+		<team>1</team>
+		<color>7</color>
+		<tributablebehavior>Default</tributablebehavior>
+		<playertype>Human</playertype>
+		<cooponly>true</cooponly>
+		<startingfood>500</startingfood>
+		<startingwood>500</startingwood>
+		<startinggold>500</startinggold>
+		<startingstone>500</startingstone>
+		<aislidervariables/>
+		<aiflagvariables/>
+	</playersettings>
+	<playersettings id="4">
+		<team>2</team>
+		<color>2</color>
+		<tributablebehavior>Default</tributablebehavior>
+		<playertype>Computer</playertype>
+		<personality>$$2316$$</personality>
+		<script>core\rush_heavy</script>
+		<character/>
+		<dataset>C01\C01_Clearchus_T4</dataset>
+		<cooponly>false</cooponly>
+		<startingfood>-1</startingfood>
+		<startingwood>-1</startingwood>
+		<startinggold>-1</startinggold>
+		<startingstone>-1</startingstone>
+		<aislidervariables>
+			<aivariable>
+				<key>CavalryBias</key>
+				<value>0.2</value>
+			</aivariable>
+			<aivariable>
+				<key>EconomyHandicap</key>
+				<value>0</value>
+			</aivariable>
+		</aislidervariables>
+		<aiflagvariables/>
+	</playersettings>
+	<diplomacysettings/>
+	<randommap>
+		<map>Core\Shared_Argos\Argos_RM_ResourceWar</map>
+		<randommap>true</randommap>
+		<numplayers>4</numplayers>
+		<mapvariables>
+			<variable name="EnemiesDefeatedQuestID" type="Int">3193</variable>
+			<variable name="P2TrainBonusMod" type="Int">100</variable>
+			<variable name="P4TrainBonusMod" type="Int">100</variable>
+			<variable name="IsLEGENDARY" type="Bool">true</variable>
+			<variable name="P2AllowResourcePatrol" type="Bool">False</variable>
+			<variable name="P4AllowResourcePatrol" type="Bool">False</variable>
+			<variable name="P2AddMarketManager" type="Bool">True</variable>
+			<variable name="P4AddMarketManager" type="Bool">True</variable>
+			<variable name="P2AttackDelayMod" type="Int">15</variable>
+			<variable name="P4AttackDelayMod" type="Int">8</variable>
+			<variable name="region" type="String">Greek Inland</variable>
+			<variable name="lighting" type="String">Noon</variable>
+			<variable name="mapSize" type="String">Large</variable>
+		</mapvariables>
+		<nuggetoverrides>
+			<nuggetoverride overrideweight="10000000">Legendary_40-50_01</nuggetoverride>
+		</nuggetoverrides>
+		<mapregionname>Greek Inland</mapregionname>
+		<lightsetname>Noon</lightsetname>
+		<mapsizename>Large</mapsizename>
+	</randommap>
+	<questgivers>
+		<protounit>ArgosCaptain</protounit>
+	</questgivers>
+	<questreturners>
+		<protounit>ArgosCaptain</protounit>
+	</questreturners>
+	<maplocationx>0.69</maplocationx>
+	<maplocationy>0.6</maplocationy>
+	<mapmarker>QuestRepeatable</mapmarker>
+	<mappage>Greece</mappage>
+	<elitespawnchance>1</elitespawnchance>
+	<linkedquestid>0</linkedquestid>
+	<questbasescale>0</questbasescale>
+	<victoryconditions/>
+</quest>

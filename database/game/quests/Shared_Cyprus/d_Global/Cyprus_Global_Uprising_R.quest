@@ -1,0 +1,121 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<quest xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xsd="http://www.w3.org/2001/XMLSchema" uniqueid="3029" version="96">
+	<displayname>$$6088$$</displayname>
+	<level>-1</level>
+	<difficultycoloroverride>1</difficultycoloroverride>
+	<repeatable>true</repeatable>
+	<offertype>eOfferNone</offertype>
+	<timer>
+		<time/>
+		<events/>
+		<hideonui>false</hideonui>
+	</timer>
+	<canplaycoop>false</canplaycoop>
+	<cooprequired>false</cooprequired>
+	<ranked>false</ranked>
+	<alliance>eAllianceNone</alliance>
+	<questtype>Global</questtype>
+	<description>$$6503$$</description>
+	<completiontext>$$6506$$</completiontext>
+	<inprogresstext>$$6505$$</inprogresstext>
+	<summarytext>$$6572$$</summarytext>
+	<repeatableduration>12</repeatableduration>
+	<canabandon>true</canabandon>
+	<hiddenquest>false</hiddenquest>
+	<friendonly>false</friendonly>
+	<suppressnotifications>false</suppressnotifications>
+	<customquest>false</customquest>
+	<questgamemodetype>Normal</questgamemodetype>
+	<prereqs>
+		<values>
+			<questcomplete>
+				<id>3001</id>
+			</questcomplete>
+		</values>
+	</prereqs>
+	<equipmentprereqs/>
+	<targets/>
+	<objectives id="0" mustfailall="false">
+		<values>
+			<kill id="1">
+				<description>$$6501$$</description>
+				<type>CyprusGeneral</type>
+				<count>20</count>
+				<includeconversion>true</includeconversion>
+				<onlycountelites>false</onlycountelites>
+			</kill>
+		</values>
+	</objectives>
+	<onaccept/>
+	<rewards visible="true">
+		<loottable visible="true">general</loottable>
+		<or visible="true">
+			<material visible="true">
+				<materialname>4ArchimedesTool</materialname>
+				<count>4</count>
+			</material>
+			<material visible="true">
+				<materialname>4ArcticFoxFur</materialname>
+				<count>4</count>
+			</material>
+			<material visible="true">
+				<materialname>4FlawlessDiamond</materialname>
+				<count>4</count>
+			</material>
+			<material visible="true">
+				<materialname>4GuayacanPlank</materialname>
+				<count>4</count>
+			</material>
+			<material visible="true">
+				<materialname>4IlluminatedCodex</materialname>
+				<count>4</count>
+			</material>
+			<material visible="true">
+				<materialname>4ObsidianBlock</materialname>
+				<count>4</count>
+			</material>
+			<material visible="true">
+				<materialname>4PhilosopherStone</materialname>
+				<count>4</count>
+			</material>
+			<material visible="true">
+				<materialname>4PureGoldIngot</materialname>
+				<count>4</count>
+			</material>
+			<material visible="true">
+				<materialname>4SilkCloth</materialname>
+				<count>4</count>
+			</material>
+			<material visible="true">
+				<materialname>4WhiteHoney</materialname>
+				<count>4</count>
+			</material>
+		</or>
+	</rewards>
+	<diplomacysettings/>
+	<randommap>
+		<map/>
+		<randommap>true</randommap>
+		<numplayers>0</numplayers>
+		<mapvariables/>
+		<nuggetoverrides/>
+		<mapregionname>&lt;Not Specified&gt;</mapregionname>
+		<lightsetname>&lt;Not Specified&gt;</lightsetname>
+		<mapsizename>&lt;Not Specified&gt;</mapsizename>
+	</randommap>
+	<questgivers>
+		<protounit>CyprusTrader</protounit>
+	</questgivers>
+	<questreturners>
+		<protounit>CyprusTrader</protounit>
+	</questreturners>
+	<maplocationx>0.1</maplocationx>
+	<maplocationy>0.1</maplocationy>
+	<mapmarker>Blank</mapmarker>
+	<mappage>Cyprus</mappage>
+	<elitespawnchance>0</elitespawnchance>
+	<linkedquestid>0</linkedquestid>
+	<questbasescale>3</questbasescale>
+	<victoryconditions/>
+</quest>

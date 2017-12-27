@@ -1,0 +1,394 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<quest xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xsd="http://www.w3.org/2001/XMLSchema" uniqueid="5" version="54">
+	<displayname>$$3343$$</displayname>
+	<level>8</level>
+	<repeatable>false</repeatable>
+	<timer>
+		<time>00:15:00</time>
+		<events>
+			<timerevent event="Clubman">00:04:30</timerevent>
+			<timerevent event="Bandits">00:04:30</timerevent>
+			<timerevent event="Clubman">00:06:30</timerevent>
+			<timerevent event="Bandits">00:06:30</timerevent>
+			<timerevent event="Clubman">00:08:00</timerevent>
+			<timerevent event="Bandits">00:08:01</timerevent>
+			<timerevent event="Clubman">00:10:00</timerevent>
+			<timerevent event="Bandits">00:10:00</timerevent>
+			<timerevent event="Clubman">00:12:00</timerevent>
+			<timerevent event="Bandits">00:12:00</timerevent>
+			<timerevent event="Clubman">00:13:00</timerevent>
+			<timerevent event="Bandits">00:14:00</timerevent>
+			<timerevent event="Clubman">00:03:30</timerevent>
+			<timerevent/>
+		</events>
+		<hideonui>false</hideonui>
+	</timer>
+	<canplaycoop>true</canplaycoop>
+	<cooprequired>false</cooprequired>
+	<ranked>false</ranked>
+	<alliance>eAllianceNone</alliance>
+	<questtype>RandomMap</questtype>
+	<description>$$9339$$</description>
+	<completiontext>$$3724$$</completiontext>
+	<inprogresstext>$$3725$$</inprogresstext>
+	<summarytext>$$3726$$</summarytext>
+	<canabandon>true</canabandon>
+	<hiddenquest>false</hiddenquest>
+	<friendonly>false</friendonly>
+	<suppressnotifications>false</suppressnotifications>
+	<customquest>false</customquest>
+	<questgamemodetype>Normal</questgamemodetype>
+	<prereqs>
+		<values>
+			<civilization>
+				<id>1</id>
+			</civilization>
+			<questcomplete>
+				<id>10</id>
+			</questcomplete>
+		</values>
+	</prereqs>
+	<equipmentprereqs/>
+	<targets>
+		<grouping>
+			<cooponly>false</cooponly>
+			<forcetocenter>false</forcetocenter>
+			<name>Player1</name>
+			<count>1</count>
+			<team>1</team>
+			<area>Quest_Area_C</area>
+			<groupfilename>C01\C01_P1Base</groupfilename>
+			<rottype>Rotate0</rottype>
+			<rotateunitorientations>true</rotateunitorientations>
+		</grouping>
+		<grouping>
+			<cooponly>true</cooponly>
+			<forcetocenter>false</forcetocenter>
+			<name>Player2</name>
+			<count>1</count>
+			<team>3</team>
+			<area>Quest_Area_E</area>
+			<groupfilename>Shared_Start_Small</groupfilename>
+			<rottype>Rotate0</rottype>
+			<rotateunitorientations>true</rotateunitorientations>
+		</grouping>
+		<grouping>
+			<cooponly>false</cooponly>
+			<forcetocenter>false</forcetocenter>
+			<name>Bad Banditos Area A</name>
+			<count>1</count>
+			<team>2</team>
+			<area>Quest_Area_A</area>
+			<groupfilename>C01\Bandit\C01_Bandit_BarracksBase_01</groupfilename>
+			<rottype>RotateRandom</rottype>
+			<rotateunitorientations>false</rotateunitorientations>
+		</grouping>
+		<grouping>
+			<cooponly>false</cooponly>
+			<forcetocenter>false</forcetocenter>
+			<name>Bad Banditos Area B</name>
+			<count>1</count>
+			<team>4</team>
+			<area>Quest_Area_B</area>
+			<groupfilename>C01\Bandit\C01_Bandit_BarracksBase_01</groupfilename>
+			<rottype>RotateRandom</rottype>
+			<rotateunitorientations>false</rotateunitorientations>
+		</grouping>
+		<grouping>
+			<cooponly>false</cooponly>
+			<forcetocenter>true</forcetocenter>
+			<name>Bad Banditos Area D</name>
+			<count>1</count>
+			<team>5</team>
+			<area>Quest_Area_D</area>
+			<groupfilename>C01\Bandit\C01_Bandit_BarracksBase_01</groupfilename>
+			<rottype>RotateRandom</rottype>
+			<rotateunitorientations>false</rotateunitorientations>
+		</grouping>
+		<protounit>
+			<cooponly>false</cooponly>
+			<forcetocenter>false</forcetocenter>
+			<name>ClitusEscort</name>
+			<protoname>Npc_Inf_Bandit</protoname>
+			<count>5</count>
+			<team>6</team>
+			<area>Quest_Area_A</area>
+			<usequesttargetindicator>false</usequesttargetindicator>
+		</protounit>
+		<protounit>
+			<cooponly>false</cooponly>
+			<forcetocenter>false</forcetocenter>
+			<name>ClitusSpawn</name>
+			<protoname>Npc_BanditLeader_02</protoname>
+			<count>1</count>
+			<team>6</team>
+			<area>Quest_Area_A</area>
+			<overrides parent="Npc_BanditLeader_01">
+				<displaynameid>57572</displaynameid>
+				<visualscale>1.5</visualscale>
+				<initialhitpoints>2500</initialhitpoints>
+				<maxhitpoints>2500</maxhitpoints>
+				<shortrollovertextid>57571</shortrollovertextid>
+			</overrides>
+			<usequesttargetindicator>true</usequesttargetindicator>
+		</protounit>
+	</targets>
+	<objectives id="0" mustfailall="false">
+		<values>
+			<or id="1" mustfailall="false">
+				<values>
+					<and id="2" mustfailall="false">
+						<values>
+							<kill id="3">
+								<description>$$2347$$</description>
+								<type>Npc_BanditLeader_02</type>
+								<count>1</count>
+								<includeconversion>true</includeconversion>
+								<onlycountelites>false</onlycountelites>
+							</kill>
+							<timer id="4">
+								<description>$$2471$$</description>
+								<failonexpire>false</failonexpire>
+							</timer>
+						</values>
+					</and>
+					<protectunit id="5">
+						<description>$$2472$$</description>
+						<type>Gr_Bldg_TownCenter</type>
+						<owningplayerid>1</owningplayerid>
+					</protectunit>
+					<reduceunitsto id="6">
+						<type>LogicalTypeNeededForVictory</type>
+						<count>0</count>
+						<includeteam>true</includeteam>
+						<includeunderconstruction>false</includeunderconstruction>
+						<canuncomplete>false</canuncomplete>
+						<causesfailure>true</causesfailure>
+						<playerid>1</playerid>
+					</reduceunitsto>
+					<reduceunitsto id="7">
+						<type>LogicalTypeNeededForVictory</type>
+						<count>0</count>
+						<includeteam>true</includeteam>
+						<includeunderconstruction>false</includeunderconstruction>
+						<canuncomplete>false</canuncomplete>
+						<causesfailure>false</causesfailure>
+						<playerid>2</playerid>
+					</reduceunitsto>
+				</values>
+			</or>
+		</values>
+	</objectives>
+	<onaccept/>
+	<timereffects event="Clubman">
+		<spawnunit visible="false">
+			<count>4</count>
+			<placeunittype>Gr_Inf_Clubman</placeunittype>
+			<asplayer>2</asplayer>
+			<spawntype>SpawnForAllies</spawntype>
+			<nearunittype>Gr_Bldg_TownCenter</nearunittype>
+			<radius>20</radius>
+			<useboneposition>false</useboneposition>
+			<overrides/>
+		</spawnunit>
+	</timereffects>
+	<timereffects event="Bandits">
+		<spawnunit visible="true">
+			<count>4</count>
+			<placeunittype>Npc_Inf_Bandit</placeunittype>
+			<asplayer>2</asplayer>
+			<spawntype>SpawnForAllies</spawntype>
+			<nearunittype>Gr_Bldg_TownCenter</nearunittype>
+			<radius>20</radius>
+			<useboneposition>false</useboneposition>
+			<overrides/>
+		</spawnunit>
+	</timereffects>
+	<rewards visible="true">
+		<xp visible="true">5000</xp>
+		<capitalresource visible="true">
+			<capitalresource>cCapResCoin</capitalresource>
+			<amount>50</amount>
+		</capitalresource>
+		<loottable visible="true">general</loottable>
+		<loottable visible="true">general</loottable>
+	</rewards>
+	<playersettings id="1">
+		<team>1</team>
+		<color>1</color>
+		<tributablebehavior>Default</tributablebehavior>
+		<playertype>Human</playertype>
+		<cooponly>false</cooponly>
+		<startingfood>-1</startingfood>
+		<startingwood>-1</startingwood>
+		<startinggold>-1</startinggold>
+		<startingstone>-1</startingstone>
+		<aislidervariables/>
+		<aiflagvariables/>
+	</playersettings>
+	<playersettings id="2">
+		<team>2</team>
+		<color>2</color>
+		<tributablebehavior>Default</tributablebehavior>
+		<playertype>Computer</playertype>
+		<personality>$$2232$$</personality>
+		<script>CORE\Rush_Moderate</script>
+		<dataset>C01\C01_Bandit_T1</dataset>
+		<cooponly>false</cooponly>
+		<startingfood>-1</startingfood>
+		<startingwood>-1</startingwood>
+		<startinggold>-1</startinggold>
+		<startingstone>-1</startingstone>
+		<aislidervariables>
+			<aivariable>
+				<key>CavalryBias</key>
+				<value>-0.8</value>
+			</aivariable>
+			<aivariable>
+				<key>SiegeBias</key>
+				<value>-0.8</value>
+			</aivariable>
+			<aivariable>
+				<key>InfantryBias</key>
+				<value>1</value>
+			</aivariable>
+			<aivariable>
+				<key>ArcherBias</key>
+				<value>0.7</value>
+			</aivariable>
+			<aivariable>
+				<key>EconomyHandicap</key>
+				<value>-0.3</value>
+			</aivariable>
+		</aislidervariables>
+		<aiflagvariables>
+			<aivariable>
+				<key>NoTrainNavy</key>
+				<value>0</value>
+			</aivariable>
+		</aiflagvariables>
+	</playersettings>
+	<playersettings id="3">
+		<team>1</team>
+		<color>7</color>
+		<tributablebehavior>Default</tributablebehavior>
+		<playertype>Human</playertype>
+		<cooponly>true</cooponly>
+		<startingfood>-1</startingfood>
+		<startingwood>-1</startingwood>
+		<startinggold>-1</startinggold>
+		<startingstone>-1</startingstone>
+		<aislidervariables/>
+		<aiflagvariables/>
+	</playersettings>
+	<playersettings id="4">
+		<team>2</team>
+		<color>2</color>
+		<tributablebehavior>Default</tributablebehavior>
+		<playertype>Computer</playertype>
+		<personality>$$2232$$</personality>
+		<script>CORE\Rush_Moderate</script>
+		<dataset>C01\C01_Bandit_T1</dataset>
+		<cooponly>false</cooponly>
+		<startingfood>-1</startingfood>
+		<startingwood>-1</startingwood>
+		<startinggold>-1</startinggold>
+		<startingstone>-1</startingstone>
+		<aislidervariables>
+			<aivariable>
+				<key>CavalryBias</key>
+				<value>-0.8</value>
+			</aivariable>
+			<aivariable>
+				<key>SiegeBias</key>
+				<value>-0.8</value>
+			</aivariable>
+			<aivariable>
+				<key>InfantryBias</key>
+				<value>1</value>
+			</aivariable>
+			<aivariable>
+				<key>ArcherBias</key>
+				<value>0.7</value>
+			</aivariable>
+			<aivariable>
+				<key>EconomyHandicap</key>
+				<value>-0.3</value>
+			</aivariable>
+		</aislidervariables>
+		<aiflagvariables/>
+	</playersettings>
+	<playersettings id="5">
+		<team>2</team>
+		<color>2</color>
+		<tributablebehavior>Default</tributablebehavior>
+		<playertype>Computer</playertype>
+		<personality>$$2232$$</personality>
+		<script>CORE\Rush_Moderate</script>
+		<dataset>C01\C01_Bandit_T1</dataset>
+		<cooponly>false</cooponly>
+		<startingfood>-1</startingfood>
+		<startingwood>-1</startingwood>
+		<startinggold>-1</startinggold>
+		<startingstone>-1</startingstone>
+		<aislidervariables>
+			<aivariable>
+				<key>EconomyHandicap</key>
+				<value>-0.3</value>
+			</aivariable>
+		</aislidervariables>
+		<aiflagvariables/>
+	</playersettings>
+	<playersettings id="6">
+		<team>2</team>
+		<color>2</color>
+		<tributablebehavior>Default</tributablebehavior>
+		<playertype>Computer</playertype>
+		<personality>$$2232$$</personality>
+		<script/>
+		<character/>
+		<dataset>c01\c01_bandit_t1</dataset>
+		<cooponly>false</cooponly>
+		<startingfood>0</startingfood>
+		<startingwood>0</startingwood>
+		<startinggold>0</startinggold>
+		<startingstone>0</startingstone>
+		<aislidervariables>
+			<aivariable>
+				<key>EconomyHandicap</key>
+				<value>-0.3</value>
+			</aivariable>
+		</aislidervariables>
+		<aiflagvariables/>
+	</playersettings>
+	<diplomacysettings/>
+	<randommap>
+		<map>core\c01\c01_side_warleader_clitus</map>
+		<randommap>true</randommap>
+		<numplayers>6</numplayers>
+		<mapvariables>
+			<variable name="region" type="String">Greek Coast</variable>
+			<variable name="lighting" type="String">Afternoon</variable>
+			<variable name="mapSize" type="String">Standard</variable>
+		</mapvariables>
+		<nuggetoverrides/>
+		<mapregionname>Greek Coast</mapregionname>
+		<lightsetname>Afternoon</lightsetname>
+		<mapsizename>Standard</mapsizename>
+	</randommap>
+	<questgivers>
+		<protounit>C01_R1_VillageScout_V2</protounit>
+	</questgivers>
+	<questreturners>
+		<protounit>C01_R1_VillageScout_V2</protounit>
+	</questreturners>
+	<maplocationx>0.13</maplocationx>
+	<maplocationy>0.35</maplocationy>
+	<mapmarker>QuestDefault</mapmarker>
+	<mappage>Greece</mappage>
+	<elitespawnchance>0</elitespawnchance>
+	<linkedquestid>0</linkedquestid>
+	<questbasescale>0</questbasescale>
+	<victoryconditions/>
+</quest>

@@ -1,0 +1,90 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<quest xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xsd="http://www.w3.org/2001/XMLSchema" uniqueid="102019" version="141">
+	<displayname>$$8341$$</displayname>
+	<level>0</level>
+	<repeatable>false</repeatable>
+	<offertype>eOfferBooster2</offertype>
+	<timer>
+		<time/>
+		<events/>
+		<hideonui>false</hideonui>
+	</timer>
+	<canplaycoop>false</canplaycoop>
+	<cooprequired>false</cooprequired>
+	<ranked>false</ranked>
+	<description>$$8707$$</description>
+	<completiontext>$$8723$$</completiontext>
+	<inprogresstext>$$8708$$</inprogresstext>
+	<summarytext>$$8817$$</summarytext>
+	<canabandon>true</canabandon>
+	<hiddenquest>true</hiddenquest>
+	<friendonly>false</friendonly>
+	<suppressnotifications>false</suppressnotifications>
+	<customquest>false</customquest>
+	<questtype>Global</questtype>
+	<questgamemodetype>Normal</questgamemodetype>
+	<prereqs>
+		<values>
+			<level>
+				<min>1</min>
+				<max>99</max>
+			</level>
+		</values>
+	</prereqs>
+	<equipmentprereqs/>
+	<targets/>
+	<objectives id="0" mustfailall="false">
+		<values>
+			<and id="1" mustfailall="false">
+				<values>
+					<dummy id="2">
+						<description>$$8769$$</description>
+						<objectivename>SKIRMISHACHIEVEMENT13-1</objectivename>
+						<autocomplete>false</autocomplete>
+					</dummy>
+					<dummy id="3">
+						<description>$$8770$$</description>
+						<objectivename>SKIRMISHACHIEVEMENT13-2</objectivename>
+						<autocomplete>false</autocomplete>
+					</dummy>
+					<dummy id="4">
+						<description>$$8771$$</description>
+						<objectivename>SKIRMISHACHIEVEMENT13-3</objectivename>
+						<autocomplete>false</autocomplete>
+					</dummy>
+				</values>
+			</and>
+		</values>
+	</objectives>
+	<onaccept/>
+	<rewards visible="true">
+		<xp visible="true">500</xp>
+		<blueprint visible="true">Van_Sk_Trophy_AllVictories</blueprint>
+	</rewards>
+	<diplomacysettings/>
+	<randommap>
+		<map/>
+		<randommap>false</randommap>
+		<numplayers>0</numplayers>
+		<mapvariables>
+			<variable name="mapSize" type="String">Standard</variable>
+		</mapvariables>
+		<nuggetoverrides/>
+		<mapregionname>&lt;Not Specified&gt;</mapregionname>
+		<lightsetname>&lt;Not Specified&gt;</lightsetname>
+		<mapsizename>Standard</mapsizename>
+	</randommap>
+	<questgivers>
+		<protounit>B02_R1_SkirmishHall</protounit>
+	</questgivers>
+	<questreturners>
+		<protounit>B02_R1_KingSkirmish</protounit>
+	</questreturners>
+	<maplocationx>0.5</maplocationx>
+	<maplocationy>0.5</maplocationy>
+	<mapmarker>Blank</mapmarker>
+	<mappage>Cyprus</mappage>
+	<elitespawnchance>0</elitespawnchance>
+	<victoryconditions/>
+</quest>

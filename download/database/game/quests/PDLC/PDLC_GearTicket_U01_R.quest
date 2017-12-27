@@ -1,0 +1,80 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<quest xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xsd="http://www.w3.org/2001/XMLSchema" uniqueid="2901" version="41">
+	<displayname>$$11087$$</displayname>
+	<level>-1</level>
+	<repeatable>true</repeatable>
+	<offertype>eOfferNone</offertype>
+	<timer>
+		<events/>
+		<hideonui>false</hideonui>
+	</timer>
+	<canplaycoop>false</canplaycoop>
+	<cooprequired>false</cooprequired>
+	<ranked>false</ranked>
+	<description>$$11108$$</description>
+	<completiontext>$$11101$$</completiontext>
+	<inprogresstext>$$11100$$</inprogresstext>
+	<summarytext>$$11099$$</summarytext>
+	<canabandon>true</canabandon>
+	<hiddenquest>false</hiddenquest>
+	<friendonly>false</friendonly>
+	<suppressnotifications>false</suppressnotifications>
+	<customquest>false</customquest>
+	<questtype>Global</questtype>
+	<questgamemodetype>Normal</questgamemodetype>
+	<prereqs>
+		<values>
+			<level>
+				<min>1</min>
+				<max>29</max>
+			</level>
+		</values>
+	</prereqs>
+	<equipmentprereqs/>
+	<targets/>
+	<objectives id="0" mustfailall="false">
+		<values>
+			<collectmaterial id="1">
+				<description>$$11076$$</description>
+				<type>!GoldenTicket</type>
+				<amount>1</amount>
+				<includeexisting>true</includeexisting>
+			</collectmaterial>
+		</values>
+	</objectives>
+	<onaccept/>
+	<rewards visible="true">
+		<loottable visible="true" binditem="true">General_GoldenTicketUncommon</loottable>
+		<loottable visible="true" binditem="true">General_GoldenTicketUncommon</loottable>
+		<loottable visible="true" binditem="true">General_GoldenTicketUncommon</loottable>
+		<loottable visible="true" binditem="true">General_GoldenTicketUncommon</loottable>
+		<consumematerial visible="true">
+			<materialname>!GoldenTicket</materialname>
+			<count>1</count>
+		</consumematerial>
+	</rewards>
+	<diplomacysettings/>
+	<randommap>
+		<randommap>true</randommap>
+		<numplayers>0</numplayers>
+		<mapvariables/>
+		<nuggetoverrides/>
+		<mapregionname>&lt;Not Specified&gt;</mapregionname>
+		<lightsetname>&lt;Not Specified&gt;</lightsetname>
+		<mapsizename>&lt;Not Specified&gt;</mapsizename>
+	</randommap>
+	<questgivers>
+		<protounit>GEN_FredTheRedeemer</protounit>
+	</questgivers>
+	<questreturners>
+		<protounit>GEN_FredTheRedeemer</protounit>
+	</questreturners>
+	<maplocationx>0.5</maplocationx>
+	<maplocationy>0.5</maplocationy>
+	<mapmarker>Blank</mapmarker>
+	<mappage>WorldMapMed</mappage>
+	<elitespawnchance>0</elitespawnchance>
+	<questbasescale>3</questbasescale>
+	<victoryconditions/>
+</quest>

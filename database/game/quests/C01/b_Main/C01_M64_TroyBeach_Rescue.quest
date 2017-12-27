@@ -1,0 +1,303 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<quest xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xsd="http://www.w3.org/2001/XMLSchema" uniqueid="60" version="34">
+	<displayname>$$1097$$</displayname>
+	<level>16</level>
+	<repeatable>false</repeatable>
+	<offertype>eOfferNone</offertype>
+	<timer>
+		<events/>
+		<hideonui>false</hideonui>
+	</timer>
+	<canplaycoop>true</canplaycoop>
+	<cooprequired>false</cooprequired>
+	<ranked>false</ranked>
+	<alliance>eAllianceNone</alliance>
+	<questtype>RandomMap</questtype>
+	<description>$$3401$$</description>
+	<completiontext>$$3402$$</completiontext>
+	<inprogresstext>$$3403$$</inprogresstext>
+	<summarytext>$$3535$$</summarytext>
+	<canabandon>true</canabandon>
+	<hiddenquest>false</hiddenquest>
+	<friendonly>false</friendonly>
+	<suppressnotifications>false</suppressnotifications>
+	<customquest>false</customquest>
+	<questgamemodetype>Normal</questgamemodetype>
+	<prereqs>
+		<values>
+			<civilization>
+				<id>1</id>
+			</civilization>
+			<questcomplete>
+				<id>56</id>
+			</questcomplete>
+		</values>
+	</prereqs>
+	<equipmentprereqs/>
+	<targets>
+		<grouping>
+			<cooponly>false</cooponly>
+			<forcetocenter>false</forcetocenter>
+			<name>Player</name>
+			<count>1</count>
+			<team>1</team>
+			<area>Player1</area>
+			<groupfilename>C01\C01_P1Base_WithParkingLot</groupfilename>
+			<rottype>Rotate0</rottype>
+			<rotateunitorientations>false</rotateunitorientations>
+		</grouping>
+		<grouping>
+			<cooponly>false</cooponly>
+			<forcetocenter>false</forcetocenter>
+			<name>Trojans</name>
+			<count>1</count>
+			<team>2</team>
+			<area>Quest_Area_C</area>
+			<groupfilename>C01\Troy\C01_Troy_BeachCamp_01</groupfilename>
+			<rottype>Rotate0</rottype>
+			<rotateunitorientations>true</rotateunitorientations>
+		</grouping>
+		<grouping>
+			<cooponly>false</cooponly>
+			<forcetocenter>false</forcetocenter>
+			<name>Pen1</name>
+			<count>1</count>
+			<team>2</team>
+			<area>Quest_Area_A</area>
+			<groupfilename>C01\Troy\C01_Troy_HeroPen_02</groupfilename>
+			<rottype>Rotate0</rottype>
+			<rotateunitorientations>true</rotateunitorientations>
+		</grouping>
+		<grouping>
+			<cooponly>false</cooponly>
+			<forcetocenter>false</forcetocenter>
+			<name>Pen2</name>
+			<count>1</count>
+			<team>2</team>
+			<area>Quest_Area_B</area>
+			<groupfilename>C01\Troy\C01_Troy_HeroPen_01</groupfilename>
+			<rottype>Rotate0</rottype>
+			<rotateunitorientations>true</rotateunitorientations>
+		</grouping>
+		<grouping>
+			<cooponly>false</cooponly>
+			<forcetocenter>false</forcetocenter>
+			<name>Shrine_3</name>
+			<count>1</count>
+			<team>2</team>
+			<area>Quest_Area_D</area>
+			<groupfilename>C01\Troy\C01_Troy_HeroPen_01</groupfilename>
+			<rottype>Rotate0</rottype>
+			<rotateunitorientations>true</rotateunitorientations>
+		</grouping>
+		<protounit>
+			<cooponly>false</cooponly>
+			<forcetocenter>false</forcetocenter>
+			<name>Hero_1</name>
+			<protoname>HeroTroy</protoname>
+			<count>1</count>
+			<team>3</team>
+			<area>Quest_Area_A</area>
+			<overrides parent="Qst_Convertable">
+				<animfile>NPC\CivMycenaean\Units\Infantry\Chieftan\Chieftan.xml</animfile>
+				<portraiticon>UserInterface\Icons\Units\AvatarMycenaeanHoplite_ua</portraiticon>
+				<visualscale>1.125</visualscale>
+				<displaynameid>57667</displaynameid>
+				<maxvelocity>6</maxvelocity>
+				<initialhitpoints>1000</initialhitpoints>
+				<maxhitpoints>1000</maxhitpoints>
+				<containedattack>50</containedattack>
+				<soundfile>Gr_Inf_Hoplite</soundfile>
+				<icon>UserInterface\Icons\Units\MycenaeanHoplite64_ua</icon>
+			</overrides>
+			<usequesttargetindicator>true</usequesttargetindicator>
+		</protounit>
+		<protounit>
+			<cooponly>false</cooponly>
+			<forcetocenter>false</forcetocenter>
+			<name>Hero_2</name>
+			<protoname>HeroTroy</protoname>
+			<count>1</count>
+			<team>3</team>
+			<area>Quest_Area_B</area>
+			<overrides parent="Qst_Convertable"/>
+			<usequesttargetindicator>true</usequesttargetindicator>
+		</protounit>
+		<protounit>
+			<cooponly>false</cooponly>
+			<forcetocenter>false</forcetocenter>
+			<name>Hero_3</name>
+			<protoname>HeroTroy</protoname>
+			<count>1</count>
+			<team>3</team>
+			<area>Quest_Area_D</area>
+			<overrides parent="Qst_Convertable"/>
+			<usequesttargetindicator>true</usequesttargetindicator>
+		</protounit>
+		<grouping>
+			<cooponly>true</cooponly>
+			<forcetocenter>false</forcetocenter>
+			<name>Player2</name>
+			<count>1</count>
+			<team>4</team>
+			<area>Player2</area>
+			<groupfilename>Shared_Start_Small</groupfilename>
+			<rottype>Rotate0</rottype>
+			<rotateunitorientations>false</rotateunitorientations>
+		</grouping>
+		<protounit>
+			<cooponly>false</cooponly>
+			<forcetocenter>false</forcetocenter>
+			<name>P2 Farms</name>
+			<protoname>Gr_Bldg_Farm</protoname>
+			<count>6</count>
+			<team>2</team>
+			<area>Quest_Area_C</area>
+			<usequesttargetindicator>false</usequesttargetindicator>
+		</protounit>
+	</targets>
+	<objectives id="0" mustfailall="false">
+		<values>
+			<or id="1" mustfailall="false">
+				<values>
+					<unitinarea id="2">
+						<description>$$2497$$</description>
+						<area>Player1</area>
+						<type>HeroTroy</type>
+						<count>3</count>
+						<radius>20</radius>
+						<aidefend>true</aidefend>
+					</unitinarea>
+					<and id="3" mustfailall="true">
+						<values>
+							<reduceunitsto id="4">
+								<type>LogicalTypeNeededForVictory</type>
+								<count>0</count>
+								<includeteam>false</includeteam>
+								<includeunderconstruction>false</includeunderconstruction>
+								<canuncomplete>false</canuncomplete>
+								<causesfailure>true</causesfailure>
+								<playerid>1</playerid>
+							</reduceunitsto>
+							<reduceunitsto id="5">
+								<type>LogicalTypeNeededForVictory</type>
+								<count>0</count>
+								<includeteam>false</includeteam>
+								<includeunderconstruction>false</includeunderconstruction>
+								<canuncomplete>false</canuncomplete>
+								<causesfailure>true</causesfailure>
+								<playerid>4</playerid>
+							</reduceunitsto>
+						</values>
+					</and>
+				</values>
+			</or>
+		</values>
+	</objectives>
+	<onaccept/>
+	<rewards visible="true">
+		<xp visible="true">45000</xp>
+		<capitalresource visible="true">
+			<capitalresource>cCapResCoin</capitalresource>
+			<amount>150</amount>
+		</capitalresource>
+		<loottable visible="true">general</loottable>
+		<loottable visible="true">general</loottable>
+		<or visible="true">
+			<advisor visible="true">Herakleides_U_II</advisor>
+			<advisor visible="true">Gaiana_U_II</advisor>
+		</or>
+	</rewards>
+	<playersettings id="1">
+		<team>1</team>
+		<color>1</color>
+		<tributablebehavior>Default</tributablebehavior>
+		<playertype>Human</playertype>
+		<cooponly>false</cooponly>
+		<startingfood>200</startingfood>
+		<startingwood>150</startingwood>
+		<startinggold>100</startinggold>
+		<startingstone>-1</startingstone>
+		<aislidervariables/>
+		<aiflagvariables/>
+	</playersettings>
+	<playersettings id="2">
+		<team>2</team>
+		<color>2</color>
+		<tributablebehavior>Default</tributablebehavior>
+		<playertype>Computer</playertype>
+		<personality>$$2239$$</personality>
+		<script>core\turtle_moderate</script>
+		<dataset>C01\C01_Trojan_T2</dataset>
+		<cooponly>false</cooponly>
+		<startingfood>-1</startingfood>
+		<startingwood>-1</startingwood>
+		<startinggold>-1</startinggold>
+		<startingstone>-1</startingstone>
+		<aislidervariables>
+			<aivariable>
+				<key>InfantryBias</key>
+				<value>0.6</value>
+			</aivariable>
+		</aislidervariables>
+		<aiflagvariables/>
+	</playersettings>
+	<playersettings id="3">
+		<team>2</team>
+		<color>3</color>
+		<tributablebehavior>Default</tributablebehavior>
+		<playertype>Computer</playertype>
+		<personality>$$2240$$</personality>
+		<dataset>c01\c01_trojan_t2</dataset>
+		<cooponly>false</cooponly>
+		<startingfood>-1</startingfood>
+		<startingwood>-1</startingwood>
+		<startinggold>-1</startinggold>
+		<startingstone>-1</startingstone>
+		<aislidervariables/>
+		<aiflagvariables/>
+	</playersettings>
+	<playersettings id="4">
+		<team>1</team>
+		<color>7</color>
+		<tributablebehavior>Default</tributablebehavior>
+		<playertype>Human</playertype>
+		<cooponly>true</cooponly>
+		<startingfood>200</startingfood>
+		<startingwood>150</startingwood>
+		<startinggold>100</startinggold>
+		<startingstone>-1</startingstone>
+		<aislidervariables/>
+		<aiflagvariables/>
+	</playersettings>
+	<diplomacysettings/>
+	<randommap>
+		<map>Core\Shared\Shared_RM_Land_Baseline</map>
+		<randommap>true</randommap>
+		<numplayers>4</numplayers>
+		<mapvariables>
+			<variable name="P2AddMarketManager" type="Bool">true</variable>
+			<variable name="region" type="String">Greek Coast</variable>
+			<variable name="lighting" type="String">Morning</variable>
+		</mapvariables>
+		<nuggetoverrides/>
+		<mapregionname>Greek Coast</mapregionname>
+		<lightsetname>Morning</lightsetname>
+		<mapsizename>&lt;Not Specified&gt;</mapsizename>
+	</randommap>
+	<questgivers>
+		<protounit>C01_R3_WarriorAgamemnon</protounit>
+	</questgivers>
+	<questreturners>
+		<protounit>C01_R3_WarriorAgamemnon</protounit>
+	</questreturners>
+	<maplocationx>0.328</maplocationx>
+	<maplocationy>0.329</maplocationy>
+	<mapmarker>QuestDefault</mapmarker>
+	<mappage>Troy</mappage>
+	<elitespawnchance>0.025</elitespawnchance>
+	<linkedquestid>0</linkedquestid>
+	<questbasescale>0</questbasescale>
+	<victoryconditions/>
+</quest>

@@ -1,0 +1,15 @@
+<?xml version="1.0"?>
+<Region xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xsd="http://www.w3.org/2001/XMLSchema" ID="3">
+  <Name>Mycenae</Name>
+  <CivID>1</CivID>
+  <MapName>Regions/REGION_C01R2_Mycenae</MapName>
+  <MapLocationX>0.485</MapLocationX>
+  <MapLocationY>0.438</MapLocationY>
+  <MapMarker>RegionDefault</MapMarker>
+  <MapPage>Greece</MapPage>
+  <LoadScreen>UserInterface\LoadingScreens\ShipMycenaeLoading_df</LoadScreen>
+  <DescriptionStringID>53212</DescriptionStringID>
+  <DisplayNameStringID>53216</DisplayNameStringID>
+  <AvatarShield>UserInterface\Avatar\RegionShieldMycenae_ua</AvatarShield>
+  <FlagIcon>UserInterface\Icons\Regions\RegionFlagMycenae_ua</FlagIcon>
+</Region>

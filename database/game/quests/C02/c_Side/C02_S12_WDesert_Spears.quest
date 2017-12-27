@@ -1,0 +1,169 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<quest xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xsd="http://www.w3.org/2001/XMLSchema" uniqueid="235" version="46">
+	<displayname>$$2214$$</displayname>
+	<level>-1</level>
+	<repeatable>false</repeatable>
+	<timer>
+		<time>00:08:00</time>
+		<events/>
+		<hideonui>false</hideonui>
+	</timer>
+	<canplaycoop>false</canplaycoop>
+	<cooprequired>false</cooprequired>
+	<ranked>false</ranked>
+	<alliance>eAllianceNone</alliance>
+	<questtype>RandomMap</questtype>
+	<description>$$5654$$</description>
+	<completiontext>$$420$$</completiontext>
+	<inprogresstext>$$1421$$</inprogresstext>
+	<summarytext>$$5180$$</summarytext>
+	<canabandon>true</canabandon>
+	<hiddenquest>false</hiddenquest>
+	<friendonly>false</friendonly>
+	<suppressnotifications>false</suppressnotifications>
+	<customquest>false</customquest>
+	<questgamemodetype>Normal</questgamemodetype>
+	<prereqs>
+		<values>
+			<civilization>
+				<id>3</id>
+			</civilization>
+			<questcomplete>
+				<id>233</id>
+			</questcomplete>
+		</values>
+	</prereqs>
+	<equipmentprereqs/>
+	<targets>
+		<grouping>
+			<cooponly>false</cooponly>
+			<forcetocenter>false</forcetocenter>
+			<name>Player1</name>
+			<count>1</count>
+			<team>1</team>
+			<area>Quest_Area_A</area>
+			<groupfilename>Shared_Start_Spearmen</groupfilename>
+			<rottype>Rotate0</rottype>
+			<rotateunitorientations>false</rotateunitorientations>
+		</grouping>
+	</targets>
+	<objectives id="0" mustfailall="false">
+		<values>
+			<or id="1" mustfailall="false">
+				<values>
+					<timer id="2">
+						<description>$$2471$$</description>
+						<failonexpire>true</failonexpire>
+					</timer>
+					<and id="3" mustfailall="false">
+						<values>
+							<buildunit id="4">
+								<description>$$4509$$</description>
+								<type>Eg_Bldg_Temple1</type>
+								<count>1</count>
+							</buildunit>
+							<buildunit id="5">
+								<description>$$2462$$</description>
+								<type>Eg_Inf_Spearman</type>
+								<count>20</count>
+							</buildunit>
+						</values>
+					</and>
+					<reduceunitsto id="6">
+						<type>LogicalTypeNeededForVictory</type>
+						<count>0</count>
+						<includeteam>false</includeteam>
+						<includeunderconstruction>false</includeunderconstruction>
+						<canuncomplete>false</canuncomplete>
+						<causesfailure>true</causesfailure>
+						<playerid>1</playerid>
+					</reduceunitsto>
+					<and id="7" mustfailall="true">
+						<values>
+							<reduceunitsto id="8">
+								<type>AbstractTownCenter</type>
+								<count>0</count>
+								<includeteam>false</includeteam>
+								<includeunderconstruction>false</includeunderconstruction>
+								<canuncomplete>false</canuncomplete>
+								<causesfailure>true</causesfailure>
+								<playerid>1</playerid>
+							</reduceunitsto>
+							<reduceunitsto id="9">
+								<type>UnitTypeVillager1</type>
+								<count>0</count>
+								<includeteam>false</includeteam>
+								<includeunderconstruction>false</includeunderconstruction>
+								<canuncomplete>false</canuncomplete>
+								<causesfailure>true</causesfailure>
+								<playerid>1</playerid>
+							</reduceunitsto>
+						</values>
+					</and>
+				</values>
+			</or>
+		</values>
+	</objectives>
+	<onaccept>
+		<protip visible="false">TIP_Shared_QuestType_Challenge_02</protip>
+	</onaccept>
+	<rewards visible="true">
+		<xp visible="true">
+			5000
+			<lookuptable/>
+		</xp>
+		<capitalresource visible="true">
+			<capitalresource>cCapResCoin</capitalresource>
+			<amount>50</amount>
+			<lookuptable/>
+		</capitalresource>
+		<loottable visible="true">general</loottable>
+	</rewards>
+	<playersettings id="1">
+		<team>1</team>
+		<color>1</color>
+		<tributablebehavior>Default</tributablebehavior>
+		<playertype>Human</playertype>
+		<cooponly>false</cooponly>
+		<startingfood>-1</startingfood>
+		<startingwood>-1</startingwood>
+		<startinggold>-1</startinggold>
+		<startingstone>-1</startingstone>
+		<aislidervariables/>
+		<aiflagvariables/>
+	</playersettings>
+	<diplomacysettings/>
+	<randommap>
+		<map>Core\C02\C02_Side_AgeUpAndSpears</map>
+		<randommap>true</randommap>
+		<numplayers>1</numplayers>
+		<mapvariables>
+			<variable name="region" type="String">Egyptian Rock</variable>
+			<variable name="lighting" type="String">Noon</variable>
+			<variable name="mapSize" type="String">Small</variable>
+		</mapvariables>
+		<nuggetoverrides/>
+		<mapregionname>Egyptian Rock</mapregionname>
+		<lightsetname>Noon</lightsetname>
+		<mapsizename>Small</mapsizename>
+	</randommap>
+	<questgivers>
+		<protounit>C02_R1_KingNarmer</protounit>
+		<protounit>C02_R1_PharoahSesostris</protounit>
+		<protounit>C02_R1_CitySesostris_V2</protounit>
+	</questgivers>
+	<questreturners>
+		<protounit>C02_R1_KingNarmer</protounit>
+		<protounit>C02_R1_PharoahSesostris</protounit>
+		<protounit>C02_R1_CitySesostris_V2</protounit>
+	</questreturners>
+	<maplocationx>0.64</maplocationx>
+	<maplocationy>0.438</maplocationy>
+	<mapmarker>QuestDefault</mapmarker>
+	<mappage>Egypt</mappage>
+	<elitespawnchance>0</elitespawnchance>
+	<linkedquestid>0</linkedquestid>
+	<questbasescale>0</questbasescale>
+	<victoryconditions/>
+</quest>

@@ -1,0 +1,300 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<quest xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xsd="http://www.w3.org/2001/XMLSchema" uniqueid="331" version="36">
+	<displayname>$$532$$</displayname>
+	<level>14</level>
+	<repeatable>false</repeatable>
+	<offertype>eOfferNone</offertype>
+	<timer>
+		<time>00:15:00</time>
+		<events>
+			<timerevent event="Slingers">00:03:00</timerevent>
+			<timerevent event="Slingers">00:06:00</timerevent>
+			<timerevent event="Slingers">00:09:00</timerevent>
+			<timerevent event="Slingers">00:12:00</timerevent>
+			<timerevent event="Caravan">00:03:00</timerevent>
+			<timerevent event="Caravan">00:06:00</timerevent>
+			<timerevent event="Caravan">00:09:00</timerevent>
+			<timerevent event="Caravan">00:12:00</timerevent>
+		</events>
+		<hideonui>false</hideonui>
+	</timer>
+	<canplaycoop>true</canplaycoop>
+	<cooprequired>false</cooprequired>
+	<ranked>false</ranked>
+	<alliance>eAllianceNone</alliance>
+	<questtype>RandomMap</questtype>
+	<description>$$5806$$</description>
+	<completiontext>$$5808$$</completiontext>
+	<inprogresstext>$$5809$$</inprogresstext>
+	<summarytext>$$5807$$</summarytext>
+	<canabandon>true</canabandon>
+	<hiddenquest>false</hiddenquest>
+	<friendonly>false</friendonly>
+	<suppressnotifications>false</suppressnotifications>
+	<customquest>false</customquest>
+	<questgamemodetype>Normal</questgamemodetype>
+	<prereqs>
+		<values>
+			<civilization>
+				<id>3</id>
+			</civilization>
+			<questcomplete>
+				<id>324</id>
+			</questcomplete>
+		</values>
+	</prereqs>
+	<equipmentprereqs/>
+	<targets>
+		<grouping>
+			<cooponly>true</cooponly>
+			<forcetocenter>false</forcetocenter>
+			<name>player2</name>
+			<count>1</count>
+			<team>4</team>
+			<area>Player2</area>
+			<groupfilename>Shared_Start_Small</groupfilename>
+			<rottype>Rotate0</rottype>
+			<rotateunitorientations>false</rotateunitorientations>
+		</grouping>
+	</targets>
+	<objectives id="0" mustfailall="false">
+		<values>
+			<or id="1" mustfailall="false">
+				<values>
+					<timer id="2">
+						<description>$$2471$$</description>
+						<failonexpire>true</failonexpire>
+					</timer>
+					<collectresource id="3">
+						<description>$$2523$$</description>
+						<type>Gold</type>
+						<amount>5000</amount>
+						<includeexisting>true</includeexisting>
+					</collectresource>
+					<and id="4" mustfailall="true">
+						<values>
+							<reduceunitsto id="5">
+								<type>LogicalTypeNeededForVictory</type>
+								<count>0</count>
+								<includeteam>false</includeteam>
+								<includeunderconstruction>false</includeunderconstruction>
+								<canuncomplete>false</canuncomplete>
+								<causesfailure>true</causesfailure>
+								<playerid>1</playerid>
+							</reduceunitsto>
+							<reduceunitsto id="6">
+								<type>LogicalTypeNeededForVictory</type>
+								<count>0</count>
+								<includeteam>false</includeteam>
+								<includeunderconstruction>false</includeunderconstruction>
+								<canuncomplete>false</canuncomplete>
+								<causesfailure>true</causesfailure>
+								<playerid>4</playerid>
+							</reduceunitsto>
+						</values>
+					</and>
+					<and id="7" mustfailall="true">
+						<values>
+							<reduceunitsto id="8">
+								<type>AbstractTownCenter</type>
+								<count>0</count>
+								<includeteam>false</includeteam>
+								<includeunderconstruction>false</includeunderconstruction>
+								<canuncomplete>false</canuncomplete>
+								<causesfailure>true</causesfailure>
+								<playerid>1</playerid>
+							</reduceunitsto>
+							<reduceunitsto id="9">
+								<type>UnitTypeVillager1</type>
+								<count>0</count>
+								<includeteam>false</includeteam>
+								<includeunderconstruction>false</includeunderconstruction>
+								<canuncomplete>false</canuncomplete>
+								<causesfailure>true</causesfailure>
+								<playerid>1</playerid>
+							</reduceunitsto>
+							<reduceunitsto id="10">
+								<type>AbstractMarket</type>
+								<count>0</count>
+								<includeteam>false</includeteam>
+								<includeunderconstruction>false</includeunderconstruction>
+								<canuncomplete>false</canuncomplete>
+								<causesfailure>true</causesfailure>
+								<playerid>1</playerid>
+							</reduceunitsto>
+							<reduceunitsto id="11">
+								<type>AbstractMarket</type>
+								<count>0</count>
+								<includeteam>false</includeteam>
+								<includeunderconstruction>false</includeunderconstruction>
+								<canuncomplete>false</canuncomplete>
+								<causesfailure>true</causesfailure>
+								<playerid>4</playerid>
+							</reduceunitsto>
+							<reduceunitsto id="12">
+								<type>AbstractTownCenter</type>
+								<count>0</count>
+								<includeteam>false</includeteam>
+								<includeunderconstruction>false</includeunderconstruction>
+								<canuncomplete>false</canuncomplete>
+								<causesfailure>true</causesfailure>
+								<playerid>4</playerid>
+							</reduceunitsto>
+							<reduceunitsto id="13">
+								<type>UnitTypeVillager1</type>
+								<count>0</count>
+								<includeteam>false</includeteam>
+								<includeunderconstruction>false</includeunderconstruction>
+								<canuncomplete>false</canuncomplete>
+								<causesfailure>true</causesfailure>
+								<playerid>4</playerid>
+							</reduceunitsto>
+						</values>
+					</and>
+					<protectunit id="14">
+						<description>$$7970$$</description>
+						<type>Eg_Bldg_TownCenter</type>
+						<owningplayerid>3</owningplayerid>
+					</protectunit>
+				</values>
+			</or>
+		</values>
+	</objectives>
+	<onaccept/>
+	<timereffects event="Slingers">
+		<spawnunit visible="false">
+			<count>4</count>
+			<placeunittype>NPC_Nubian_Archer</placeunittype>
+			<asplayer>2</asplayer>
+			<spawntype>SpawnForAllies</spawntype>
+			<nearunittype>AIStart</nearunittype>
+			<radius>10</radius>
+			<useboneposition>false</useboneposition>
+			<overrides/>
+		</spawnunit>
+	</timereffects>
+	<timereffects event="Caravan">
+		<spawnunit visible="true">
+			<count>1</count>
+			<placeunittype>Eg_Civ_Caravan</placeunittype>
+			<asplayer>2</asplayer>
+			<spawntype>SpawnForAllies</spawntype>
+			<nearunittype>AIStart</nearunittype>
+			<radius>10</radius>
+			<useboneposition>false</useboneposition>
+			<overrides/>
+		</spawnunit>
+	</timereffects>
+	<rewards visible="true">
+		<xp visible="true">20000</xp>
+		<capitalresource visible="true">
+			<capitalresource>cCapResCoin</capitalresource>
+			<amount>150</amount>
+		</capitalresource>
+		<loottable visible="true">general</loottable>
+		<loottable visible="true">general</loottable>
+	</rewards>
+	<playersettings id="1">
+		<team>1</team>
+		<color>1</color>
+		<tributablebehavior>Default</tributablebehavior>
+		<playertype>Human</playertype>
+		<cooponly>false</cooponly>
+		<startingfood>200</startingfood>
+		<startingwood>150</startingwood>
+		<startinggold>2000</startinggold>
+		<startingstone>100</startingstone>
+		<aislidervariables/>
+		<aiflagvariables/>
+	</playersettings>
+	<playersettings id="2">
+		<team>2</team>
+		<color>2</color>
+		<tributablebehavior>Default</tributablebehavior>
+		<playertype>Computer</playertype>
+		<personality>$$2267$$</personality>
+		<script>core\rush_moderate</script>
+		<dataset>C02\C02_Nubian_T2</dataset>
+		<cooponly>false</cooponly>
+		<startingfood>150</startingfood>
+		<startingwood>150</startingwood>
+		<startinggold>1500</startinggold>
+		<startingstone>100</startingstone>
+		<aislidervariables>
+			<aivariable>
+				<key>SiegeBias</key>
+				<value>-1</value>
+			</aivariable>
+		</aislidervariables>
+		<aiflagvariables>
+			<aivariable>
+				<value>0</value>
+			</aivariable>
+		</aiflagvariables>
+	</playersettings>
+	<playersettings id="3">
+		<team>1</team>
+		<color>3</color>
+		<tributablebehavior>Default</tributablebehavior>
+		<playertype>Computer</playertype>
+		<personality>$$2262$$</personality>
+		<script>CORE\Turtle_Moderate</script>
+		<dataset>C02\C02_Nubian_T2</dataset>
+		<cooponly>false</cooponly>
+		<startingfood>200</startingfood>
+		<startingwood>150</startingwood>
+		<startinggold>1500</startinggold>
+		<startingstone>100</startingstone>
+		<aislidervariables/>
+		<aiflagvariables>
+			<aivariable>
+				<key>NoTrainArmy</key>
+				<value>0</value>
+			</aivariable>
+		</aiflagvariables>
+	</playersettings>
+	<playersettings id="4">
+		<team>1</team>
+		<color>7</color>
+		<tributablebehavior>Default</tributablebehavior>
+		<playertype>Human</playertype>
+		<cooponly>true</cooponly>
+		<startingfood>200</startingfood>
+		<startingwood>150</startingwood>
+		<startinggold>2000</startinggold>
+		<startingstone>100</startingstone>
+		<aislidervariables/>
+		<aiflagvariables/>
+	</playersettings>
+	<diplomacysettings/>
+	<randommap>
+		<map>scenarioloader</map>
+		<randommap>true</randommap>
+		<numplayers>4</numplayers>
+		<mapvariables>
+			<variable name="scenarioFile" type="String">C02/C02_R2M67_GoldOneWay</variable>
+			<variable name="ForcedPlayerLevel" type="Int">7</variable>
+			<variable name="P2HatedEnemyOverride" type="Int">3</variable>
+			<variable name="region" type="String">Egyptian Rock</variable>
+			<variable name="lighting" type="String"/>
+			<variable name="mapSize" type="String"/>
+		</mapvariables>
+		<nuggetoverrides/>
+		<mapregionname>Egyptian Rock</mapregionname>
+	</randommap>
+	<questgivers>
+		<protounit>C02_R2_Sesostris</protounit>
+	</questgivers>
+	<questreturners>
+		<protounit>C02_R2_Sesostris</protounit>
+	</questreturners>
+	<maplocationx>0.831</maplocationx>
+	<maplocationy>0.111</maplocationy>
+	<mapmarker>QuestDefault</mapmarker>
+	<mappage>Nubia</mappage>
+	<elitespawnchance>0</elitespawnchance>
+	<linkedquestid>0</linkedquestid>
+	<questbasescale>0</questbasescale>
+	<victoryconditions/>
+</quest>

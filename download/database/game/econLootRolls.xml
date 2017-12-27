@@ -1,0 +1,76 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<lootrolls xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xsd="http://www.w3.org/2001/XMLSchema">
+	<lootroll name="Level5Chest">
+		<icon>UserInterface\Icons\Treasure\Chest64_ua</icon>
+		<rollovertextid>57474</rollovertextid>
+		<displaynameid>57466</displaynameid>
+		<itemlevel>8</itemlevel>
+		<rarity>cRarityCommon</rarity>
+		<loottable>general_gambling</loottable>
+	</lootroll>
+	<lootroll name="Level10Chest">
+		<icon>UserInterface\Icons\Treasure\Chest64_ua</icon>
+		<rollovertextid>57474</rollovertextid>
+		<displaynameid>57467</displaynameid>
+		<itemlevel>13</itemlevel>
+		<rarity>cRarityCommon</rarity>
+		<loottable>general_gambling</loottable>
+	</lootroll>
+	<lootroll name="Level15Chest">
+		<icon>UserInterface\Icons\Treasure\Chest64_ua</icon>
+		<rollovertextid>57474</rollovertextid>
+		<displaynameid>57468</displaynameid>
+		<itemlevel>18</itemlevel>
+		<rarity>cRarityCommon</rarity>
+		<loottable>general_gambling</loottable>
+	</lootroll>
+	<lootroll name="Level20Chest">
+		<icon>UserInterface\Icons\Treasure\Chest64_ua</icon>
+		<rollovertextid>57474</rollovertextid>
+		<displaynameid>57469</displaynameid>
+		<itemlevel>23</itemlevel>
+		<rarity>cRarityCommon</rarity>
+		<loottable>general_gambling</loottable>
+	</lootroll>
+	<lootroll name="Level25Chest">
+		<icon>UserInterface\Icons\Treasure\Chest64_ua</icon>
+		<rollovertextid>57474</rollovertextid>
+		<displaynameid>57470</displaynameid>
+		<itemlevel>28</itemlevel>
+		<rarity>cRarityCommon</rarity>
+		<loottable>general_gambling</loottable>
+	</lootroll>
+	<lootroll name="Level30Chest">
+		<icon>UserInterface\Icons\Treasure\Chest64_ua</icon>
+		<rollovertextid>57474</rollovertextid>
+		<displaynameid>57471</displaynameid>
+		<itemlevel>33</itemlevel>
+		<rarity>cRarityCommon</rarity>
+		<loottable>general_gambling</loottable>
+	</lootroll>
+	<lootroll name="Level35Chest">
+		<icon>UserInterface\Icons\Treasure\Chest64_ua</icon>
+		<rollovertextid>57474</rollovertextid>
+		<displaynameid>57472</displaynameid>
+		<itemlevel>38</itemlevel>
+		<rarity>cRarityCommon</rarity>
+		<loottable>general_gambling</loottable>
+	</lootroll>
+	<lootroll name="Level40Chest">
+		<icon>UserInterface\Icons\Treasure\Chest64_ua</icon>
+		<rollovertextid>57474</rollovertextid>
+		<displaynameid>57473</displaynameid>
+		<itemlevel>43</itemlevel>
+		<rarity>cRarityCommon</rarity>
+		<loottable>general_gambling</loottable>
+	</lootroll>
+	<lootroll name="Ticket">
+		<icon>UserInterface\Icons\Treasure\Chest64_ua</icon>
+		<rollovertextid>60387</rollovertextid>
+		<displaynameid>60452</displaynameid>
+		<itemlevel>1</itemlevel>
+		<rarity>cRarityCommon</rarity>
+		<loottable>tables\_coreloot_ticket</loottable>
+	</lootroll>
+</lootrolls>

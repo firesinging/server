@@ -1,0 +1,14 @@
+<?xml version="1.0"?>
+<Region xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xsd="http://www.w3.org/2001/XMLSchema" ID="9">
+  <Name>Massalia</Name>
+  <CivID>6</CivID>
+  <MapName>Regions/REGION_C03R2_Massalia</MapName>
+  <MapLocationX>0.3</MapLocationX>
+  <MapLocationY>0.93</MapLocationY>
+  <MapMarker>RegionDefault</MapMarker>
+  <MapPage>C03_Celtica</MapPage>
+  <LoadScreen>UserInterface\LoadingScreens\C03MassaliaLoading_df</LoadScreen>
+  <AvatarShield>UserInterface\Avatar\RegionShieldMassalia_ua</AvatarShield>
+  <DescriptionStringID>63608</DescriptionStringID>
+  <DisplayNameStringID>64435</DisplayNameStringID>
+</Region>

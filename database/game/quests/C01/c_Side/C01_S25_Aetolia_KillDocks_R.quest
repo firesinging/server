@@ -1,0 +1,266 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<quest xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xsd="http://www.w3.org/2001/XMLSchema" uniqueid="404" version="53">
+	<displayname>$$1013$$</displayname>
+	<level>-1</level>
+	<repeatable>true</repeatable>
+	<timer>
+		<time>00:15:00</time>
+		<events/>
+		<hideonui>false</hideonui>
+	</timer>
+	<canplaycoop>true</canplaycoop>
+	<cooprequired>false</cooprequired>
+	<ranked>false</ranked>
+	<alliance>eAllianceNone</alliance>
+	<questtype>RandomMap</questtype>
+	<description>$$3364$$</description>
+	<completiontext>$$1015$$</completiontext>
+	<inprogresstext>$$1610$$</inprogresstext>
+	<summarytext>$$12923$$</summarytext>
+	<repeatableduration>12</repeatableduration>
+	<canabandon>true</canabandon>
+	<hiddenquest>false</hiddenquest>
+	<friendonly>false</friendonly>
+	<suppressnotifications>false</suppressnotifications>
+	<customquest>false</customquest>
+	<questgamemodetype>Normal</questgamemodetype>
+	<prereqs>
+		<values>
+			<civilization>
+				<id>1</id>
+			</civilization>
+			<questcomplete>
+				<id>164</id>
+			</questcomplete>
+		</values>
+	</prereqs>
+	<equipmentprereqs/>
+	<targets>
+		<grouping>
+			<cooponly>true</cooponly>
+			<forcetocenter>false</forcetocenter>
+			<name>Player2</name>
+			<count>1</count>
+			<team>3</team>
+			<area>Player2</area>
+			<groupfilename>Shared_Start_Barracks</groupfilename>
+			<rottype>Rotate0</rottype>
+			<rotateunitorientations>false</rotateunitorientations>
+		</grouping>
+	</targets>
+	<objectives id="0" mustfailall="false">
+		<values>
+			<or id="1" mustfailall="false">
+				<description/>
+				<values>
+					<timer id="2">
+						<description>$$2471$$</description>
+						<failonexpire>true</failonexpire>
+					</timer>
+					<dummy id="3">
+						<description>$$2349$$</description>
+						<objectivename>UNUSED</objectivename>
+						<autocomplete>false</autocomplete>
+					</dummy>
+					<reduceunitsto id="4">
+						<description/>
+						<type>LogicalTypeNeededForVictory</type>
+						<count>0</count>
+						<includeteam>true</includeteam>
+						<includeunderconstruction>false</includeunderconstruction>
+						<canuncomplete>false</canuncomplete>
+						<causesfailure>true</causesfailure>
+						<playerid>1</playerid>
+					</reduceunitsto>
+					<reduceunitsto id="5">
+						<type>Gr_Bldg_Dock</type>
+						<count>0</count>
+						<includeteam>false</includeteam>
+						<includeunderconstruction>false</includeunderconstruction>
+						<canuncomplete>false</canuncomplete>
+						<causesfailure>false</causesfailure>
+						<playerid>2</playerid>
+					</reduceunitsto>
+				</values>
+			</or>
+		</values>
+	</objectives>
+	<secondaryobjectives id="6" mustfailall="false" rewardname="Optional">
+		<description>$$9658$$</description>
+		<values>
+			<or id="7" mustfailall="false">
+				<values>
+					<timer id="8">
+						<description/>
+						<failonexpire>true</failonexpire>
+					</timer>
+					<dummy id="9">
+						<description>$$10089$$</description>
+						<objectivename>TimeFailed</objectivename>
+						<autocomplete>false</autocomplete>
+					</dummy>
+					<reduceunitsto id="10">
+						<type>Gr_Bldg_Dock</type>
+						<count>0</count>
+						<includeteam>false</includeteam>
+						<includeunderconstruction>false</includeunderconstruction>
+						<canuncomplete>false</canuncomplete>
+						<causesfailure>false</causesfailure>
+						<playerid>2</playerid>
+					</reduceunitsto>
+				</values>
+			</or>
+		</values>
+	</secondaryobjectives>
+	<onaccept>
+		<protip visible="false">TIP_Shared_QuestType_Repeatable_01</protip>
+	</onaccept>
+	<rewards visible="true">
+		<xp visible="true">
+			1
+			<lookuptable>SQVShort</lookuptable>
+		</xp>
+		<capitalresource visible="true">
+			<capitalresource>cCapResCoin</capitalresource>
+			<amount>1</amount>
+			<lookuptable>SQVShort</lookuptable>
+		</capitalresource>
+		<loottable visible="true">general</loottable>
+		<or visible="true">
+			<trait visible="true">
+				ArrowOH_R016
+				<traitlevel>10</traitlevel>
+			</trait>
+			<trait visible="true">
+				ArmorClth_U017
+				<traitlevel>10</traitlevel>
+			</trait>
+			<trait visible="true">
+				ArmorBldg_U014
+				<traitlevel>10</traitlevel>
+			</trait>
+			<trait visible="true">
+				ArmorPlt_U021
+				<traitlevel>10</traitlevel>
+			</trait>
+			<trait visible="true">
+				ArmorMed_U012
+				<traitlevel>10</traitlevel>
+			</trait>
+			<trait visible="true">
+				ArmorLgt_U013
+				<traitlevel>10</traitlevel>
+			</trait>
+			<loottable visible="true">general</loottable>
+		</or>
+	</rewards>
+	<secondaryrewards visible="true" name="Optional">
+		<capitalresource visible="true">
+			<capitalresource>cCapResCoin</capitalresource>
+			<amount>1</amount>
+			<lookuptable>OptCoin</lookuptable>
+		</capitalresource>
+		<loottable visible="true">general</loottable>
+	</secondaryrewards>
+	<playersettings id="1">
+		<team>1</team>
+		<color>1</color>
+		<tributablebehavior>Default</tributablebehavior>
+		<playertype>Human</playertype>
+		<cooponly>false</cooponly>
+		<startingfood>-1</startingfood>
+		<startingwood>-1</startingwood>
+		<startinggold>-1</startinggold>
+		<startingstone>-1</startingstone>
+		<aislidervariables/>
+		<aiflagvariables/>
+	</playersettings>
+	<playersettings id="2">
+		<team>2</team>
+		<color>2</color>
+		<tributablebehavior>Default</tributablebehavior>
+		<playertype>Computer</playertype>
+		<personality>$$2232$$</personality>
+		<script>CORE\Ramp_Moderate</script>
+		<dataset>C01\C01_BanditAllLevels</dataset>
+		<cooponly>false</cooponly>
+		<startingfood>-1</startingfood>
+		<startingwood>-1</startingwood>
+		<startinggold>3000</startinggold>
+		<startingstone>-1</startingstone>
+		<aislidervariables>
+			<aivariable>
+				<key>EconomyHandicap</key>
+				<value>-0.3</value>
+			</aivariable>
+		</aislidervariables>
+		<aiflagvariables/>
+	</playersettings>
+	<playersettings id="3">
+		<team>1</team>
+		<color>7</color>
+		<tributablebehavior>Default</tributablebehavior>
+		<playertype>Human</playertype>
+		<personality>$$2248$$</personality>
+		<cooponly>true</cooponly>
+		<startingfood>-1</startingfood>
+		<startingwood>-1</startingwood>
+		<startinggold>-1</startinggold>
+		<startingstone>-1</startingstone>
+		<aislidervariables/>
+		<aiflagvariables/>
+	</playersettings>
+	<playersettings id="4">
+		<team>2</team>
+		<color>2</color>
+		<tributablebehavior>Default</tributablebehavior>
+		<playertype>Computer</playertype>
+		<personality>$$2232$$</personality>
+		<script/>
+		<dataset>C01\C01_BanditAllLevels</dataset>
+		<cooponly>false</cooponly>
+		<startingfood>-1</startingfood>
+		<startingwood>-1</startingwood>
+		<startinggold>-1</startinggold>
+		<startingstone>-1</startingstone>
+		<aislidervariables/>
+		<aiflagvariables/>
+	</playersettings>
+	<diplomacysettings/>
+	<randommap>
+		<map>scenarioloader</map>
+		<randommap>true</randommap>
+		<numplayers>4</numplayers>
+		<mapvariables>
+			<variable name="scenarioFile" type="String">C01/C01_Side_KillTheDocks</variable>
+			<variable name="QuestID" type="Int">404</variable>
+			<variable name="TimeFailedMinutes" type="Int">10</variable>
+			<variable name="OptionalRestrictTime" type="Bool">true</variable>
+			<variable name="region" type="String">Greek Coast</variable>
+			<variable name="lighting" type="String">Evening</variable>
+			<variable name="mapSize" type="String"/>
+		</mapvariables>
+		<nuggetoverrides/>
+		<mapregionname>Greek Coast</mapregionname>
+		<lightsetname>Evening</lightsetname>
+	</randommap>
+	<questgivers>
+		<protounit>C01_R1_PortMaster</protounit>
+		<protounit>C01_R1_PortMaster_V2</protounit>
+		<protounit>C01_R1_PortMaster_V3</protounit>
+	</questgivers>
+	<questreturners>
+		<protounit>C01_R1_PortMaster</protounit>
+		<protounit>C01_R1_PortMaster_V2</protounit>
+		<protounit>C01_R1_PortMaster_V3</protounit>
+	</questreturners>
+	<maplocationx>0.285</maplocationx>
+	<maplocationy>0.18</maplocationy>
+	<mapmarker>QuestRepeatable</mapmarker>
+	<mappage>Greece</mappage>
+	<elitespawnchance>0</elitespawnchance>
+	<linkedquestid>11925</linkedquestid>
+	<questbasescale>0</questbasescale>
+	<victoryconditions/>
+</quest>

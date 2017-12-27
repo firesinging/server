@@ -1,0 +1,15 @@
+<?xml version="1.0"?>
+<Region xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xsd="http://www.w3.org/2001/XMLSchema" ID="13">
+  <Name>Sparta</Name>
+  <CivID>1</CivID>
+  <MapName>Regions/REGION_SharedPvP</MapName>
+  <MapLocationX>0.298</MapLocationX>
+  <MapLocationY>0.594</MapLocationY>
+  <MapMarker>RegionPvP</MapMarker>
+  <MapPage>Greece</MapPage>
+  <LoadScreen>UserInterface\LoadingScreens\ShipSparta_df</LoadScreen>
+  <DisplayNameStringID>60433</DisplayNameStringID>
+  <DescriptionStringID>60432</DescriptionStringID>
+  <AvatarShield>UserInterface\Avatar\RegionShieldSparta_ua</AvatarShield>
+  <FlagIcon>UserInterface\Icons\Regions\RegionFlagSparta_ua</FlagIcon>
+</Region>

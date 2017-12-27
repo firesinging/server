@@ -1,0 +1,83 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<quest xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xsd="http://www.w3.org/2001/XMLSchema" uniqueid="3033" version="99">
+	<displayname>$$6612$$</displayname>
+	<level>-1</level>
+	<difficultycoloroverride>1</difficultycoloroverride>
+	<repeatable>true</repeatable>
+	<offertype>eOfferNone</offertype>
+	<timer>
+		<time/>
+		<events/>
+		<hideonui>false</hideonui>
+	</timer>
+	<canplaycoop>false</canplaycoop>
+	<cooprequired>false</cooprequired>
+	<ranked>false</ranked>
+	<alliance>eAllianceNone</alliance>
+	<questtype>Global</questtype>
+	<description>$$9340$$</description>
+	<completiontext>$$6625$$</completiontext>
+	<inprogresstext>$$6622$$</inprogresstext>
+	<summarytext>$$6627$$</summarytext>
+	<repeatableduration>12</repeatableduration>
+	<canabandon>true</canabandon>
+	<hiddenquest>false</hiddenquest>
+	<friendonly>false</friendonly>
+	<suppressnotifications>false</suppressnotifications>
+	<customquest>false</customquest>
+	<questgamemodetype>Normal</questgamemodetype>
+	<prereqs>
+		<values>
+			<questcomplete>
+				<id>3001</id>
+			</questcomplete>
+		</values>
+	</prereqs>
+	<equipmentprereqs/>
+	<targets/>
+	<objectives id="0" mustfailall="false">
+		<values>
+			<kill id="1">
+				<description>$$6626$$</description>
+				<type>Eg_Shp_Trireme</type>
+				<count>20</count>
+				<includeconversion>true</includeconversion>
+				<onlycountelites>true</onlycountelites>
+			</kill>
+		</values>
+	</objectives>
+	<onaccept/>
+	<rewards visible="true">
+		<loottable visible="true">general</loottable>
+		<consumable visible="true">
+			<consumablename>ConsumableFireShips_E</consumablename>
+			<count>5</count>
+		</consumable>
+	</rewards>
+	<diplomacysettings/>
+	<randommap>
+		<map/>
+		<randommap>false</randommap>
+		<numplayers>0</numplayers>
+		<mapvariables/>
+		<nuggetoverrides/>
+		<mapregionname>&lt;Not Specified&gt;</mapregionname>
+		<lightsetname>&lt;Not Specified&gt;</lightsetname>
+		<mapsizename>&lt;Not Specified&gt;</mapsizename>
+	</randommap>
+	<questgivers>
+		<protounit>CyprusPortMaster</protounit>
+	</questgivers>
+	<questreturners>
+		<protounit>CyprusPortMaster</protounit>
+	</questreturners>
+	<maplocationx>0.1</maplocationx>
+	<maplocationy>0.1</maplocationy>
+	<mapmarker>Blank</mapmarker>
+	<mappage>Cyprus</mappage>
+	<elitespawnchance>0</elitespawnchance>
+	<linkedquestid>0</linkedquestid>
+	<questbasescale>3</questbasescale>
+	<victoryconditions/>
+</quest>

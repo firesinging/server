@@ -1,0 +1,169 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<quest xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xsd="http://www.w3.org/2001/XMLSchema" uniqueid="177" version="37">
+	<displayname>$$2206$$</displayname>
+	<level>-1</level>
+	<repeatable>false</repeatable>
+	<offertype>eOfferNone</offertype>
+	<timer>
+		<time>00:06:00</time>
+		<events>
+			<timerevent event="Wolves">00:02:00</timerevent>
+			<timerevent event="Wolves">00:04:50</timerevent>
+			<timerevent event="Wolves">00:05:00</timerevent>
+			<timerevent event="Wolves">00:05:30</timerevent>
+		</events>
+		<hideonui>false</hideonui>
+	</timer>
+	<canplaycoop>false</canplaycoop>
+	<cooprequired>false</cooprequired>
+	<ranked>false</ranked>
+	<alliance>eAllianceNone</alliance>
+	<questtype>RandomMap</questtype>
+	<description>$$4343$$</description>
+	<completiontext>$$1009$$</completiontext>
+	<inprogresstext>$$1754$$</inprogresstext>
+	<summarytext>$$3851$$</summarytext>
+	<canabandon>true</canabandon>
+	<hiddenquest>false</hiddenquest>
+	<friendonly>false</friendonly>
+	<suppressnotifications>false</suppressnotifications>
+	<customquest>false</customquest>
+	<questgamemodetype>Normal</questgamemodetype>
+	<prereqs>
+		<values>
+			<civilization>
+				<id>1</id>
+			</civilization>
+			<questcomplete>
+				<id>176</id>
+			</questcomplete>
+		</values>
+	</prereqs>
+	<equipmentprereqs/>
+	<targets>
+		<grouping>
+			<cooponly>false</cooponly>
+			<forcetocenter>false</forcetocenter>
+			<name>Player</name>
+			<count>1</count>
+			<team>1</team>
+			<area>Quest_Area_C</area>
+			<groupfilename>Shared_Start_Barracks</groupfilename>
+			<rottype>Rotate0</rottype>
+			<rotateunitorientations>true</rotateunitorientations>
+		</grouping>
+	</targets>
+	<objectives id="0" mustfailall="false">
+		<values>
+			<or id="1" mustfailall="false">
+				<values>
+					<timer id="2">
+						<description>$$2471$$</description>
+						<failonexpire>true</failonexpire>
+					</timer>
+					<buildunit id="3">
+						<description>$$2467$$</description>
+						<type>Gr_Bldg_Farm</type>
+						<count>10</count>
+					</buildunit>
+					<reduceunitsto id="4">
+						<type>LogicalTypeNeededForVictory</type>
+						<count>0</count>
+						<includeteam>false</includeteam>
+						<includeunderconstruction>false</includeunderconstruction>
+						<canuncomplete>false</canuncomplete>
+						<causesfailure>true</causesfailure>
+						<playerid>1</playerid>
+					</reduceunitsto>
+					<and id="5" mustfailall="true">
+						<values>
+							<reduceunitsto id="6">
+								<type>AbstractTownCenter</type>
+								<count>0</count>
+								<includeteam>false</includeteam>
+								<includeunderconstruction>false</includeunderconstruction>
+								<canuncomplete>false</canuncomplete>
+								<causesfailure>true</causesfailure>
+								<playerid>1</playerid>
+							</reduceunitsto>
+							<reduceunitsto id="7">
+								<type>UnitTypeVillager1</type>
+								<count>0</count>
+								<includeteam>false</includeteam>
+								<includeunderconstruction>false</includeunderconstruction>
+								<canuncomplete>false</canuncomplete>
+								<causesfailure>true</causesfailure>
+								<playerid>1</playerid>
+							</reduceunitsto>
+						</values>
+					</and>
+				</values>
+			</or>
+		</values>
+	</objectives>
+	<onaccept/>
+	<timereffects event="Wolves">
+		<spawnunit visible="true">
+			<count>3</count>
+			<placeunittype>Wolf</placeunittype>
+			<asplayer>1</asplayer>
+			<spawntype>SpawnForAllies</spawntype>
+			<nearunittype>Gr_Bldg_TownCenter</nearunittype>
+			<radius>20</radius>
+			<useboneposition>false</useboneposition>
+			<overrides/>
+		</spawnunit>
+	</timereffects>
+	<rewards visible="true">
+		<xp visible="true">5000</xp>
+		<capitalresource visible="true">
+			<capitalresource>cCapResCoin</capitalresource>
+			<amount>50</amount>
+		</capitalresource>
+		<loottable visible="true">general</loottable>
+		<loottable visible="true">general</loottable>
+	</rewards>
+	<playersettings id="1">
+		<team>1</team>
+		<color>1</color>
+		<tributablebehavior>Default</tributablebehavior>
+		<playertype>Human</playertype>
+		<cooponly>false</cooponly>
+		<startingfood>100</startingfood>
+		<startingwood>100</startingwood>
+		<startinggold>0</startinggold>
+		<startingstone>0</startingstone>
+		<aislidervariables/>
+		<aiflagvariables/>
+	</playersettings>
+	<diplomacysettings/>
+	<randommap>
+		<map>Core\Shared\Shared_RM_Land_Maze</map>
+		<randommap>true</randommap>
+		<numplayers>1</numplayers>
+		<mapvariables>
+			<variable name="region" type="String">Greek Inland</variable>
+			<variable name="lighting" type="String">Morning</variable>
+			<variable name="mapSize" type="String">Small</variable>
+		</mapvariables>
+		<nuggetoverrides/>
+		<mapregionname>Greek Inland</mapregionname>
+		<lightsetname>Morning</lightsetname>
+		<mapsizename>Small</mapsizename>
+	</randommap>
+	<questgivers>
+		<protounit>C01_R1_HeliceMerchant</protounit>
+	</questgivers>
+	<questreturners>
+		<protounit>C01_R1_HeliceMerchant</protounit>
+	</questreturners>
+	<maplocationx>0.236</maplocationx>
+	<maplocationy>0.277</maplocationy>
+	<mapmarker>QuestDefault</mapmarker>
+	<mappage>Greece</mappage>
+	<elitespawnchance>0</elitespawnchance>
+	<linkedquestid>0</linkedquestid>
+	<questbasescale>0</questbasescale>
+	<victoryconditions/>
+</quest>

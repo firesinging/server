@@ -1,0 +1,4256 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<materials xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xsd="http://www.w3.org/2001/XMLSchema">
+	<material name="!!LottoTicket1">
+		<icon>UserInterface\Icons\Materials\MatIconsSackGold_ua</icon>
+		<rollovertextid>60293</rollovertextid>
+		<displaynameid>60291</displaynameid>
+		<stackable/>
+		<stacksize>1</stacksize>
+		<offertype>eOfferNone</offertype>
+		<itemlevel>0</itemlevel>
+		<sellable>true</sellable>
+		<tradeable>true</tradeable>
+		<destroyable>true</destroyable>
+		<sellcostoverride>
+			<capitalresource quantity="1">cCapResCoin</capitalresource>
+		</sellcostoverride>
+		<rarity>cRarityCommon</rarity>
+		<budgetcost>1</budgetcost>
+		<contentpack>1</contentpack>
+	</material>
+	<material name="!!LottoTicket2">
+		<icon>UserInterface\Icons\Materials\MatIconsSackGold_ua</icon>
+		<rollovertextid>60293</rollovertextid>
+		<displaynameid>60291</displaynameid>
+		<stackable/>
+		<stacksize>1</stacksize>
+		<offertype>eOfferNone</offertype>
+		<itemlevel>0</itemlevel>
+		<sellable>true</sellable>
+		<tradeable>true</tradeable>
+		<destroyable>true</destroyable>
+		<sellcostoverride>
+			<capitalresource quantity="10">cCapResCoin</capitalresource>
+		</sellcostoverride>
+		<rarity>cRarityCommon</rarity>
+		<budgetcost>1</budgetcost>
+		<contentpack>1</contentpack>
+	</material>
+	<material name="!!LottoTicket3">
+		<icon>UserInterface\Icons\Materials\MatIconsSackGold_ua</icon>
+		<rollovertextid>60293</rollovertextid>
+		<displaynameid>60291</displaynameid>
+		<stackable/>
+		<stacksize>1</stacksize>
+		<offertype>eOfferNone</offertype>
+		<itemlevel>0</itemlevel>
+		<sellable>true</sellable>
+		<tradeable>true</tradeable>
+		<destroyable>true</destroyable>
+		<sellcostoverride>
+			<capitalresource quantity="50">cCapResCoin</capitalresource>
+		</sellcostoverride>
+		<rarity>cRarityUncommon</rarity>
+		<budgetcost>1</budgetcost>
+		<contentpack>1</contentpack>
+	</material>
+	<material name="!!LottoTicket4">
+		<icon>UserInterface\Icons\Materials\MatIconsSackGold_ua</icon>
+		<rollovertextid>60293</rollovertextid>
+		<displaynameid>60291</displaynameid>
+		<stackable/>
+		<stacksize>1</stacksize>
+		<offertype>eOfferNone</offertype>
+		<itemlevel>0</itemlevel>
+		<sellable>true</sellable>
+		<tradeable>true</tradeable>
+		<destroyable>true</destroyable>
+		<sellcostoverride>
+			<capitalresource quantity="100">cCapResCoin</capitalresource>
+		</sellcostoverride>
+		<rarity>cRarityUncommon</rarity>
+		<budgetcost>1</budgetcost>
+		<contentpack>1</contentpack>
+	</material>
+	<material name="!!LottoTicket5">
+		<icon>UserInterface\Icons\Materials\MatIconsSackGold_ua</icon>
+		<rollovertextid>60293</rollovertextid>
+		<displaynameid>60291</displaynameid>
+		<stackable/>
+		<stacksize>1</stacksize>
+		<offertype>eOfferNone</offertype>
+		<itemlevel>0</itemlevel>
+		<sellable>true</sellable>
+		<tradeable>true</tradeable>
+		<destroyable>true</destroyable>
+		<sellcostoverride>
+			<capitalresource quantity="500">cCapResCoin</capitalresource>
+		</sellcostoverride>
+		<rarity>cRarityRare</rarity>
+		<budgetcost>1</budgetcost>
+		<contentpack>1</contentpack>
+	</material>
+	<material name="!!LottoTicket6">
+		<icon>UserInterface\Icons\Materials\MatIconsSackGold_ua</icon>
+		<rollovertextid>60293</rollovertextid>
+		<displaynameid>60291</displaynameid>
+		<stackable/>
+		<stacksize>1</stacksize>
+		<offertype>eOfferNone</offertype>
+		<itemlevel>0</itemlevel>
+		<sellable>true</sellable>
+		<tradeable>true</tradeable>
+		<destroyable>true</destroyable>
+		<sellcostoverride>
+			<capitalresource quantity="1000">cCapResCoin</capitalresource>
+		</sellcostoverride>
+		<rarity>cRarityRare</rarity>
+		<budgetcost>1</budgetcost>
+		<contentpack>1</contentpack>
+	</material>
+	<material name="!!LottoTicket7">
+		<icon>UserInterface\Icons\Materials\MatIconsSackGold_ua</icon>
+		<rollovertextid>60293</rollovertextid>
+		<displaynameid>60291</displaynameid>
+		<stackable/>
+		<stacksize>1</stacksize>
+		<offertype>eOfferNone</offertype>
+		<itemlevel>0</itemlevel>
+		<sellable>true</sellable>
+		<tradeable>true</tradeable>
+		<destroyable>true</destroyable>
+		<sellcostoverride>
+			<capitalresource quantity="5000">cCapResCoin</capitalresource>
+		</sellcostoverride>
+		<rarity>cRarityEpic</rarity>
+		<budgetcost>1</budgetcost>
+		<contentpack>1</contentpack>
+	</material>
+	<material name="!!LottoTicket8">
+		<icon>UserInterface\Icons\Materials\MatIconsSackGold_ua</icon>
+		<rollovertextid>60293</rollovertextid>
+		<displaynameid>60291</displaynameid>
+		<stackable/>
+		<stacksize>1</stacksize>
+		<offertype>eOfferNone</offertype>
+		<itemlevel>0</itemlevel>
+		<sellable>true</sellable>
+		<tradeable>true</tradeable>
+		<destroyable>true</destroyable>
+		<sellcostoverride>
+			<capitalresource quantity="10000">cCapResCoin</capitalresource>
+		</sellcostoverride>
+		<rarity>cRarityEpic</rarity>
+		<budgetcost>1</budgetcost>
+		<contentpack>1</contentpack>
+	</material>
+	<material name="!!LottoTicket9">
+		<icon>UserInterface\Icons\Materials\MatIconsSackGold_ua</icon>
+		<rollovertextid>60293</rollovertextid>
+		<displaynameid>60291</displaynameid>
+		<stackable/>
+		<stacksize>1</stacksize>
+		<offertype>eOfferNone</offertype>
+		<itemlevel>0</itemlevel>
+		<sellable>true</sellable>
+		<tradeable>true</tradeable>
+		<destroyable>true</destroyable>
+		<sellcostoverride>
+			<capitalresource quantity="25000">cCapResCoin</capitalresource>
+		</sellcostoverride>
+		<rarity>cRarityEpic</rarity>
+		<budgetcost>1</budgetcost>
+		<contentpack>1</contentpack>
+	</material>
+	<material name="!Charcoal">
+		<icon>UserInterface\Icons\Materials\MatIconsCelticCharcoal_ua</icon>
+		<rollovertextid>53132</rollovertextid>
+		<displaynameid>800231</displaynameid>
+		<stackable/>
+		<stacksize>100</stacksize>
+		<offertype>eOfferNone</offertype>
+		<itemlevel>0</itemlevel>
+		<sellable>true</sellable>
+		<tradeable>true</tradeable>
+		<destroyable>true</destroyable>
+		<sellcostoverride>
+			<capitalresource quantity="1">cCapResCoin</capitalresource>
+		</sellcostoverride>
+		<rarity>cRarityRare</rarity>
+		<budgetcost>5</budgetcost>
+		<contentpack>1</contentpack>
+	</material>
+	<material name="!CypressWood">
+		<icon>UserInterface\Icons\Materials\MatIconsCypressWood_ua</icon>
+		<rollovertextid>62028</rollovertextid>
+		<displaynameid>800746</displaynameid>
+		<stackable/>
+		<stacksize>100</stacksize>
+		<offertype>eOfferNone</offertype>
+		<itemlevel>0</itemlevel>
+		<sellable>true</sellable>
+		<tradeable>false</tradeable>
+		<destroyable>true</destroyable>
+		<sellcostoverride>
+			<capitalresource quantity="1">cCapResCoin</capitalresource>
+		</sellcostoverride>
+		<rarity>cRarityRare</rarity>
+		<budgetcost>5</budgetcost>
+		<contentpack>1</contentpack>
+	</material>
+	<material name="!DelphiLimestone">
+		<icon>UserInterface\Icons\Materials\MatIconsDelphiLimestone_ua</icon>
+		<rollovertextid>53132</rollovertextid>
+		<displaynameid>800092</displaynameid>
+		<stackable/>
+		<stacksize>100</stacksize>
+		<offertype>eOfferNone</offertype>
+		<itemlevel>0</itemlevel>
+		<sellable>true</sellable>
+		<tradeable>true</tradeable>
+		<destroyable>true</destroyable>
+		<sellcostoverride>
+			<capitalresource quantity="1">cCapResCoin</capitalresource>
+		</sellcostoverride>
+		<rarity>cRarityRare</rarity>
+		<budgetcost>5</budgetcost>
+		<contentpack>1</contentpack>
+	</material>
+	<material name="!GizaLimestone">
+		<icon>UserInterface\Icons\Materials\MatIconsGizaLimestone_ua</icon>
+		<rollovertextid>53132</rollovertextid>
+		<displaynameid>800041</displaynameid>
+		<stackable/>
+		<stacksize>100</stacksize>
+		<offertype>eOfferNone</offertype>
+		<itemlevel>0</itemlevel>
+		<sellable>true</sellable>
+		<tradeable>true</tradeable>
+		<destroyable>true</destroyable>
+		<sellcostoverride>
+			<capitalresource quantity="1">cCapResCoin</capitalresource>
+		</sellcostoverride>
+		<rarity>cRarityRare</rarity>
+		<budgetcost>5</budgetcost>
+		<contentpack>1</contentpack>
+	</material>
+	<material name="!GoldenTicket">
+		<icon>UserInterface\Icons\Materials\MatIconsGoldenTicket_ua</icon>
+		<rollovertextid>66748</rollovertextid>
+		<displaynameid>801726</displaynameid>
+		<stacksize>10</stacksize>
+		<offertype>eOfferNone</offertype>
+		<itemlevel>0</itemlevel>
+		<sellable>false</sellable>
+		<tradeable>false</tradeable>
+		<destroyable>true</destroyable>
+		<rarity>cRarityCommon</rarity>
+		<budgetcost>1</budgetcost>
+		<contentpack>1</contentpack>
+	</material>
+	<material name="!KnossosMarble">
+		<icon>UserInterface\Icons\Materials\MatIconsKnossosMarble_ua</icon>
+		<rollovertextid>62028</rollovertextid>
+		<displaynameid>800748</displaynameid>
+		<stackable/>
+		<stacksize>100</stacksize>
+		<offertype>eOfferNone</offertype>
+		<itemlevel>0</itemlevel>
+		<sellable>true</sellable>
+		<tradeable>false</tradeable>
+		<destroyable>true</destroyable>
+		<sellcostoverride>
+			<capitalresource quantity="1">cCapResCoin</capitalresource>
+		</sellcostoverride>
+		<rarity>cRarityRare</rarity>
+		<budgetcost>5</budgetcost>
+		<contentpack>1</contentpack>
+	</material>
+	<material name="!MapleSap">
+		<icon>UserInterface\Icons\Materials\MatIconsMapleSap_ua</icon>
+		<rollovertextid>57483</rollovertextid>
+		<displaynameid>800207</displaynameid>
+		<stackable/>
+		<stacksize>1</stacksize>
+		<offertype>eOfferNone</offertype>
+		<itemlevel>0</itemlevel>
+		<sellable>true</sellable>
+		<tradeable>false</tradeable>
+		<destroyable>true</destroyable>
+		<sellcostoverride>
+			<capitalresource quantity="1">cCapResCoin</capitalresource>
+		</sellcostoverride>
+		<rarity>cRarityEpic</rarity>
+		<budgetcost>1</budgetcost>
+		<contentpack>1</contentpack>
+	</material>
+	<material name="!MinoanTools">
+		<icon>UserInterface/Icons/Materials/MatIconsTools2_ua</icon>
+		<rollovertextid>62028</rollovertextid>
+		<displaynameid>800750</displaynameid>
+		<stackable/>
+		<stacksize>100</stacksize>
+		<offertype>eOfferNone</offertype>
+		<itemlevel>0</itemlevel>
+		<sellable>true</sellable>
+		<tradeable>false</tradeable>
+		<destroyable>true</destroyable>
+		<sellcostoverride>
+			<capitalresource quantity="1">cCapResCoin</capitalresource>
+		</sellcostoverride>
+		<rarity>cRarityRare</rarity>
+		<budgetcost>5</budgetcost>
+		<contentpack>1</contentpack>
+	</material>
+	<material name="!MosiacTile">
+		<icon>UserInterface\Icons\Materials\MatIconsMosaic_ua</icon>
+		<rollovertextid>53132</rollovertextid>
+		<displaynameid>800093</displaynameid>
+		<stackable/>
+		<stacksize>100</stacksize>
+		<offertype>eOfferNone</offertype>
+		<itemlevel>0</itemlevel>
+		<sellable>true</sellable>
+		<tradeable>true</tradeable>
+		<destroyable>true</destroyable>
+		<sellcostoverride>
+			<capitalresource quantity="1">cCapResCoin</capitalresource>
+		</sellcostoverride>
+		<rarity>cRarityRare</rarity>
+		<budgetcost>10</budgetcost>
+		<contentpack>1</contentpack>
+	</material>
+	<material name="!VanityTicket">
+		<icon>UserInterface\Icons\Materials\VanityGearTicket_ua</icon>
+		<rollovertextid>66328</rollovertextid>
+		<displaynameid>801724</displaynameid>
+		<stacksize>10</stacksize>
+		<offertype>eOfferNone</offertype>
+		<itemlevel>0</itemlevel>
+		<sellable>false</sellable>
+		<tradeable>false</tradeable>
+		<destroyable>true</destroyable>
+		<rarity>cRarityCommon</rarity>
+		<budgetcost>1</budgetcost>
+		<contentpack>1</contentpack>
+	</material>
+	<material name="2BronzeIngot">
+		<icon>UserInterface\Icons\Materials\MatIconsBronzeIngot_ua</icon>
+		<rollovertextid>53132</rollovertextid>
+		<displaynameid>800001</displaynameid>
+		<stackable/>
+		<stacksize>500</stacksize>
+		<offertype>eOfferNone</offertype>
+		<itemlevel>0</itemlevel>
+		<sellable>true</sellable>
+		<tradeable>true</tradeable>
+		<destroyable>true</destroyable>
+		<sellcostoverride>
+			<capitalresource quantity="0.2">cCapResCoin</capitalresource>
+		</sellcostoverride>
+		<rarity>cRarityUncommon</rarity>
+		<budgetcost>2</budgetcost>
+		<contentpack>1</contentpack>
+	</material>
+	<material name="2Garnet">
+		<icon>UserInterface\Icons\Materials\MatIconsGarnet_ua</icon>
+		<rollovertextid>53132</rollovertextid>
+		<displaynameid>800007</displaynameid>
+		<stackable/>
+		<stacksize>500</stacksize>
+		<offertype>eOfferNone</offertype>
+		<itemlevel>0</itemlevel>
+		<sellable>true</sellable>
+		<tradeable>true</tradeable>
+		<destroyable>true</destroyable>
+		<sellcostoverride>
+			<capitalresource quantity="0.3">cCapResCoin</capitalresource>
+		</sellcostoverride>
+		<rarity>cRarityUncommon</rarity>
+		<budgetcost>2</budgetcost>
+		<contentpack>1</contentpack>
+	</material>
+	<material name="2GraniteBlock">
+		<icon>UserInterface\Icons\Materials\MatIconsGraniteBlock_ua</icon>
+		<rollovertextid>53132</rollovertextid>
+		<displaynameid>800009</displaynameid>
+		<stackable/>
+		<stacksize>500</stacksize>
+		<offertype>eOfferNone</offertype>
+		<itemlevel>0</itemlevel>
+		<sellable>true</sellable>
+		<tradeable>true</tradeable>
+		<destroyable>true</destroyable>
+		<sellcostoverride>
+			<capitalresource quantity="0.2">cCapResCoin</capitalresource>
+		</sellcostoverride>
+		<rarity>cRarityUncommon</rarity>
+		<budgetcost>2</budgetcost>
+		<contentpack>1</contentpack>
+	</material>
+	<material name="2Leather">
+		<icon>UserInterface\Icons\Materials\MatIconsLeather_ua</icon>
+		<rollovertextid>53132</rollovertextid>
+		<displaynameid>800012</displaynameid>
+		<stackable/>
+		<stacksize>500</stacksize>
+		<offertype>eOfferNone</offertype>
+		<itemlevel>0</itemlevel>
+		<sellable>true</sellable>
+		<tradeable>true</tradeable>
+		<destroyable>true</destroyable>
+		<sellcostoverride>
+			<capitalresource quantity="0.2">cCapResCoin</capitalresource>
+		</sellcostoverride>
+		<rarity>cRarityUncommon</rarity>
+		<budgetcost>2</budgetcost>
+		<contentpack>1</contentpack>
+	</material>
+	<material name="2LoreScroll">
+		<icon>UserInterface\Icons\Materials\MatIconsWarLore_ua</icon>
+		<rollovertextid>53132</rollovertextid>
+		<displaynameid>800023</displaynameid>
+		<stackable/>
+		<stacksize>500</stacksize>
+		<offertype>eOfferNone</offertype>
+		<itemlevel>0</itemlevel>
+		<sellable>true</sellable>
+		<tradeable>true</tradeable>
+		<destroyable>true</destroyable>
+		<sellcostoverride>
+			<capitalresource quantity="0.3">cCapResCoin</capitalresource>
+		</sellcostoverride>
+		<rarity>cRarityUncommon</rarity>
+		<budgetcost>2</budgetcost>
+		<contentpack>1</contentpack>
+	</material>
+	<material name="2OakPlank">
+		<icon>UserInterface\Icons\Materials\MatIconsOakPlanks_ua</icon>
+		<rollovertextid>53132</rollovertextid>
+		<displaynameid>800016</displaynameid>
+		<stackable/>
+		<stacksize>500</stacksize>
+		<offertype>eOfferNone</offertype>
+		<itemlevel>0</itemlevel>
+		<sellable>true</sellable>
+		<tradeable>true</tradeable>
+		<destroyable>true</destroyable>
+		<sellcostoverride>
+			<capitalresource quantity="0.2">cCapResCoin</capitalresource>
+		</sellcostoverride>
+		<rarity>cRarityUncommon</rarity>
+		<budgetcost>2</budgetcost>
+		<contentpack>1</contentpack>
+	</material>
+	<material name="2OliveOil">
+		<icon>UserInterface\Icons\Materials\MatIconsOliveOil_ua</icon>
+		<rollovertextid>53132</rollovertextid>
+		<displaynameid>800017</displaynameid>
+		<stackable/>
+		<stacksize>500</stacksize>
+		<offertype>eOfferNone</offertype>
+		<itemlevel>0</itemlevel>
+		<sellable>true</sellable>
+		<tradeable>true</tradeable>
+		<destroyable>true</destroyable>
+		<sellcostoverride>
+			<capitalresource quantity="0.2">cCapResCoin</capitalresource>
+		</sellcostoverride>
+		<rarity>cRarityUncommon</rarity>
+		<budgetcost>2</budgetcost>
+		<contentpack>1</contentpack>
+	</material>
+	<material name="2Resin">
+		<icon>UserInterface\Icons\Materials\MatIconsInk_ua</icon>
+		<rollovertextid>53132</rollovertextid>
+		<displaynameid>800010</displaynameid>
+		<stackable/>
+		<stacksize>500</stacksize>
+		<offertype>eOfferNone</offertype>
+		<itemlevel>0</itemlevel>
+		<sellable>true</sellable>
+		<tradeable>true</tradeable>
+		<destroyable>true</destroyable>
+		<sellcostoverride>
+			<capitalresource quantity="0.3">cCapResCoin</capitalresource>
+		</sellcostoverride>
+		<rarity>cRarityUncommon</rarity>
+		<budgetcost>2</budgetcost>
+		<contentpack>1</contentpack>
+	</material>
+	<material name="2Wool">
+		<icon>UserInterface\Icons\Materials\MatIconsWool_ua</icon>
+		<rollovertextid>53132</rollovertextid>
+		<displaynameid>800025</displaynameid>
+		<stackable/>
+		<stacksize>500</stacksize>
+		<offertype>eOfferNone</offertype>
+		<itemlevel>0</itemlevel>
+		<sellable>true</sellable>
+		<tradeable>true</tradeable>
+		<destroyable>true</destroyable>
+		<sellcostoverride>
+			<capitalresource quantity="0.3">cCapResCoin</capitalresource>
+		</sellcostoverride>
+		<rarity>cRarityUncommon</rarity>
+		<budgetcost>2</budgetcost>
+		<contentpack>1</contentpack>
+	</material>
+	<material name="2WorkTool">
+		<icon>UserInterface/Icons/Materials/MatIconsTools1_ua</icon>
+		<rollovertextid>53132</rollovertextid>
+		<displaynameid>800018</displaynameid>
+		<stackable/>
+		<stacksize>500</stacksize>
+		<offertype>eOfferNone</offertype>
+		<itemlevel>0</itemlevel>
+		<sellable>true</sellable>
+		<tradeable>true</tradeable>
+		<destroyable>true</destroyable>
+		<sellcostoverride>
+			<capitalresource quantity="0.3">cCapResCoin</capitalresource>
+		</sellcostoverride>
+		<rarity>cRarityUncommon</rarity>
+		<budgetcost>2</budgetcost>
+		<contentpack>1</contentpack>
+	</material>
+	<material name="3BitumenGlue">
+		<icon>UserInterface\Icons\Materials\MatIconsBitumenGlue2_ua</icon>
+		<rollovertextid>53132</rollovertextid>
+		<displaynameid>800815</displaynameid>
+		<stackable/>
+		<stacksize>250</stacksize>
+		<offertype>eOfferNone</offertype>
+		<itemlevel>0</itemlevel>
+		<sellable>true</sellable>
+		<tradeable>true</tradeable>
+		<destroyable>true</destroyable>
+		<sellcostoverride>
+			<capitalresource quantity="1.2">cCapResCoin</capitalresource>
+		</sellcostoverride>
+		<rarity>cRarityRare</rarity>
+		<budgetcost>4</budgetcost>
+		<contentpack>1</contentpack>
+	</material>
+	<material name="3ConcreteBlock">
+		<icon>UserInterface/Icons/Materials/MatIconsConcreteBlock_ua</icon>
+		<rollovertextid>53132</rollovertextid>
+		<displaynameid>800805</displaynameid>
+		<stackable/>
+		<stacksize>250</stacksize>
+		<offertype>eOfferNone</offertype>
+		<itemlevel>0</itemlevel>
+		<sellable>true</sellable>
+		<tradeable>true</tradeable>
+		<destroyable>true</destroyable>
+		<sellcostoverride>
+			<capitalresource quantity="0.8">cCapResCoin</capitalresource>
+		</sellcostoverride>
+		<rarity>cRarityRare</rarity>
+		<budgetcost>4</budgetcost>
+		<contentpack>1</contentpack>
+	</material>
+	<material name="3CottonCloth">
+		<icon>UserInterface\Icons\Materials\MatIconsLinen_ua</icon>
+		<rollovertextid>53132</rollovertextid>
+		<displaynameid>800809</displaynameid>
+		<stackable/>
+		<stacksize>250</stacksize>
+		<offertype>eOfferNone</offertype>
+		<itemlevel>0</itemlevel>
+		<sellable>true</sellable>
+		<tradeable>true</tradeable>
+		<destroyable>true</destroyable>
+		<sellcostoverride>
+			<capitalresource quantity="1.2">cCapResCoin</capitalresource>
+		</sellcostoverride>
+		<rarity>cRarityRare</rarity>
+		<budgetcost>4</budgetcost>
+		<contentpack>1</contentpack>
+	</material>
+	<material name="3EbonyPlank">
+		<icon>UserInterface/Icons/Materials/MatIconsEbonyPlanks_ua</icon>
+		<rollovertextid>53132</rollovertextid>
+		<displaynameid>800803</displaynameid>
+		<stackable/>
+		<stacksize>250</stacksize>
+		<offertype>eOfferNone</offertype>
+		<itemlevel>0</itemlevel>
+		<sellable>true</sellable>
+		<tradeable>true</tradeable>
+		<destroyable>true</destroyable>
+		<sellcostoverride>
+			<capitalresource quantity="0.8">cCapResCoin</capitalresource>
+		</sellcostoverride>
+		<rarity>cRarityRare</rarity>
+		<budgetcost>4</budgetcost>
+		<contentpack>1</contentpack>
+	</material>
+	<material name="3FineLeather">
+		<icon>UserInterface/Icons/Materials/MatIconsFineLeather_ua</icon>
+		<rollovertextid>53132</rollovertextid>
+		<displaynameid>800801</displaynameid>
+		<stackable/>
+		<stacksize>250</stacksize>
+		<offertype>eOfferNone</offertype>
+		<itemlevel>0</itemlevel>
+		<sellable>true</sellable>
+		<tradeable>true</tradeable>
+		<destroyable>true</destroyable>
+		<sellcostoverride>
+			<capitalresource quantity="0.8">cCapResCoin</capitalresource>
+		</sellcostoverride>
+		<rarity>cRarityRare</rarity>
+		<budgetcost>4</budgetcost>
+		<contentpack>1</contentpack>
+	</material>
+	<material name="3Gemstone">
+		<icon>UserInterface\Icons\Materials\MatIconsGemstones_ua</icon>
+		<rollovertextid>53132</rollovertextid>
+		<displaynameid>800813</displaynameid>
+		<stackable/>
+		<stacksize>250</stacksize>
+		<offertype>eOfferNone</offertype>
+		<itemlevel>0</itemlevel>
+		<sellable>true</sellable>
+		<tradeable>true</tradeable>
+		<destroyable>true</destroyable>
+		<sellcostoverride>
+			<capitalresource quantity="1.2">cCapResCoin</capitalresource>
+		</sellcostoverride>
+		<rarity>cRarityRare</rarity>
+		<budgetcost>4</budgetcost>
+		<contentpack>1</contentpack>
+	</material>
+	<material name="3IronIngot">
+		<icon>UserInterface/Icons/Materials/MatIconsIronIngot_ua</icon>
+		<rollovertextid>53132</rollovertextid>
+		<displaynameid>800807</displaynameid>
+		<stackable/>
+		<stacksize>250</stacksize>
+		<offertype>eOfferNone</offertype>
+		<itemlevel>0</itemlevel>
+		<sellable>true</sellable>
+		<tradeable>true</tradeable>
+		<destroyable>true</destroyable>
+		<sellcostoverride>
+			<capitalresource quantity="0.8">cCapResCoin</capitalresource>
+		</sellcostoverride>
+		<rarity>cRarityRare</rarity>
+		<budgetcost>4</budgetcost>
+		<contentpack>1</contentpack>
+	</material>
+	<material name="3PrecisionTool">
+		<icon>UserInterface/Icons/Materials/MatIconsMinoanTools_ua</icon>
+		<rollovertextid>53132</rollovertextid>
+		<displaynameid>800022</displaynameid>
+		<stackable/>
+		<stacksize>250</stacksize>
+		<offertype>eOfferNone</offertype>
+		<itemlevel>0</itemlevel>
+		<sellable>true</sellable>
+		<tradeable>true</tradeable>
+		<destroyable>true</destroyable>
+		<sellcostoverride>
+			<capitalresource quantity="1.2">cCapResCoin</capitalresource>
+		</sellcostoverride>
+		<rarity>cRarityRare</rarity>
+		<budgetcost>4</budgetcost>
+		<contentpack>1</contentpack>
+	</material>
+	<material name="3Spice">
+		<icon>UserInterface/Icons/Materials/MatIconsSpices_ua</icon>
+		<rollovertextid>53132</rollovertextid>
+		<displaynameid>800798</displaynameid>
+		<stackable/>
+		<stacksize>250</stacksize>
+		<offertype>eOfferNone</offertype>
+		<itemlevel>0</itemlevel>
+		<sellable>true</sellable>
+		<tradeable>true</tradeable>
+		<destroyable>true</destroyable>
+		<sellcostoverride>
+			<capitalresource quantity="0.8">cCapResCoin</capitalresource>
+		</sellcostoverride>
+		<rarity>cRarityRare</rarity>
+		<budgetcost>4</budgetcost>
+		<contentpack>1</contentpack>
+	</material>
+	<material name="3VellumScript">
+		<icon>UserInterface/Icons/Materials/MatIconsVellum_ua</icon>
+		<rollovertextid>53132</rollovertextid>
+		<displaynameid>800811</displaynameid>
+		<stackable/>
+		<stacksize>250</stacksize>
+		<offertype>eOfferNone</offertype>
+		<itemlevel>0</itemlevel>
+		<sellable>true</sellable>
+		<tradeable>true</tradeable>
+		<destroyable>true</destroyable>
+		<sellcostoverride>
+			<capitalresource quantity="1.2">cCapResCoin</capitalresource>
+		</sellcostoverride>
+		<rarity>cRarityRare</rarity>
+		<budgetcost>4</budgetcost>
+		<contentpack>1</contentpack>
+	</material>
+	<material name="4ArchimedesTool">
+		<icon>UserInterface/Icons/Materials/MatIconsArchimedesTools_ua</icon>
+		<rollovertextid>53132</rollovertextid>
+		<displaynameid>800835</displaynameid>
+		<stackable/>
+		<stacksize>100</stacksize>
+		<offertype>eOfferNone</offertype>
+		<itemlevel>0</itemlevel>
+		<sellable>true</sellable>
+		<tradeable>true</tradeable>
+		<destroyable>true</destroyable>
+		<sellcostoverride>
+			<capitalresource quantity="3.6">cCapResCoin</capitalresource>
+		</sellcostoverride>
+		<rarity>cRarityEpic</rarity>
+		<budgetcost>5</budgetcost>
+		<contentpack>1</contentpack>
+	</material>
+	<material name="4ArcticFoxFur">
+		<icon>UserInterface/Icons/Materials/MatIconsArcticFox_ua</icon>
+		<rollovertextid>53132</rollovertextid>
+		<displaynameid>800819</displaynameid>
+		<stackable/>
+		<stacksize>100</stacksize>
+		<offertype>eOfferNone</offertype>
+		<itemlevel>0</itemlevel>
+		<sellable>true</sellable>
+		<tradeable>true</tradeable>
+		<destroyable>true</destroyable>
+		<sellcostoverride>
+			<capitalresource quantity="2.4">cCapResCoin</capitalresource>
+		</sellcostoverride>
+		<rarity>cRarityEpic</rarity>
+		<budgetcost>5</budgetcost>
+		<contentpack>1</contentpack>
+	</material>
+	<material name="4FlawlessDiamond">
+		<icon>UserInterface\Icons\Materials\MatIconsFlawlessDiamond_ua</icon>
+		<rollovertextid>53132</rollovertextid>
+		<displaynameid>800833</displaynameid>
+		<stackable/>
+		<stacksize>100</stacksize>
+		<offertype>eOfferNone</offertype>
+		<itemlevel>0</itemlevel>
+		<sellable>true</sellable>
+		<tradeable>true</tradeable>
+		<destroyable>true</destroyable>
+		<sellcostoverride>
+			<capitalresource quantity="3.6">cCapResCoin</capitalresource>
+		</sellcostoverride>
+		<rarity>cRarityEpic</rarity>
+		<budgetcost>5</budgetcost>
+		<contentpack>1</contentpack>
+	</material>
+	<material name="4GuayacanPlank">
+		<icon>UserInterface/Icons/Materials/MatIconsGuayacanWood_ua</icon>
+		<rollovertextid>53132</rollovertextid>
+		<displaynameid>800821</displaynameid>
+		<stackable/>
+		<stacksize>100</stacksize>
+		<offertype>eOfferNone</offertype>
+		<itemlevel>0</itemlevel>
+		<sellable>true</sellable>
+		<tradeable>true</tradeable>
+		<destroyable>true</destroyable>
+		<sellcostoverride>
+			<capitalresource quantity="2.4">cCapResCoin</capitalresource>
+		</sellcostoverride>
+		<rarity>cRarityEpic</rarity>
+		<budgetcost>5</budgetcost>
+		<contentpack>1</contentpack>
+	</material>
+	<material name="4IlluminatedCodex">
+		<icon>UserInterface/Icons/Materials/MatIconsIlluminatedCodex_ua</icon>
+		<rollovertextid>53132</rollovertextid>
+		<displaynameid>800831</displaynameid>
+		<stackable/>
+		<stacksize>100</stacksize>
+		<offertype>eOfferNone</offertype>
+		<itemlevel>0</itemlevel>
+		<sellable>true</sellable>
+		<tradeable>true</tradeable>
+		<destroyable>true</destroyable>
+		<sellcostoverride>
+			<capitalresource quantity="3.6">cCapResCoin</capitalresource>
+		</sellcostoverride>
+		<rarity>cRarityEpic</rarity>
+		<budgetcost>5</budgetcost>
+		<contentpack>1</contentpack>
+	</material>
+	<material name="4ObsidianBlock">
+		<icon>UserInterface/Icons/Materials/MatIconsObsidianBlocks_ua</icon>
+		<rollovertextid>53132</rollovertextid>
+		<displaynameid>800823</displaynameid>
+		<stackable/>
+		<stacksize>100</stacksize>
+		<offertype>eOfferNone</offertype>
+		<itemlevel>0</itemlevel>
+		<sellable>true</sellable>
+		<tradeable>true</tradeable>
+		<destroyable>true</destroyable>
+		<sellcostoverride>
+			<capitalresource quantity="2.4">cCapResCoin</capitalresource>
+		</sellcostoverride>
+		<rarity>cRarityEpic</rarity>
+		<budgetcost>5</budgetcost>
+		<contentpack>1</contentpack>
+	</material>
+	<material name="4PhilosopherStone">
+		<icon>UserInterface\Icons\Materials\MatIconsPhilosophersStone_ua</icon>
+		<rollovertextid>53132</rollovertextid>
+		<displaynameid>800827</displaynameid>
+		<stackable/>
+		<stacksize>100</stacksize>
+		<offertype>eOfferNone</offertype>
+		<itemlevel>0</itemlevel>
+		<sellable>true</sellable>
+		<tradeable>true</tradeable>
+		<destroyable>true</destroyable>
+		<sellcostoverride>
+			<capitalresource quantity="3.6">cCapResCoin</capitalresource>
+		</sellcostoverride>
+		<rarity>cRarityEpic</rarity>
+		<budgetcost>5</budgetcost>
+		<contentpack>1</contentpack>
+	</material>
+	<material name="4PureGoldIngot">
+		<icon>UserInterface/Icons/Materials/MatIconsGoldIngot_ua</icon>
+		<rollovertextid>53132</rollovertextid>
+		<displaynameid>800825</displaynameid>
+		<stackable/>
+		<stacksize>100</stacksize>
+		<offertype>eOfferNone</offertype>
+		<itemlevel>0</itemlevel>
+		<sellable>true</sellable>
+		<tradeable>true</tradeable>
+		<destroyable>true</destroyable>
+		<sellcostoverride>
+			<capitalresource quantity="2.4">cCapResCoin</capitalresource>
+		</sellcostoverride>
+		<rarity>cRarityEpic</rarity>
+		<budgetcost>5</budgetcost>
+		<contentpack>1</contentpack>
+	</material>
+	<material name="4SilkCloth">
+		<icon>UserInterface\Icons\Materials\MatIconsSilkCloth_ua</icon>
+		<rollovertextid>53132</rollovertextid>
+		<displaynameid>800829</displaynameid>
+		<stackable/>
+		<stacksize>100</stacksize>
+		<offertype>eOfferNone</offertype>
+		<itemlevel>0</itemlevel>
+		<sellable>true</sellable>
+		<tradeable>true</tradeable>
+		<destroyable>true</destroyable>
+		<sellcostoverride>
+			<capitalresource quantity="3.6">cCapResCoin</capitalresource>
+		</sellcostoverride>
+		<rarity>cRarityEpic</rarity>
+		<budgetcost>5</budgetcost>
+		<contentpack>1</contentpack>
+	</material>
+	<material name="4WhiteHoney">
+		<icon>UserInterface/Icons/Materials/MatIconsWhiteHoney_ua</icon>
+		<rollovertextid>53132</rollovertextid>
+		<displaynameid>800817</displaynameid>
+		<stackable/>
+		<stacksize>100</stacksize>
+		<offertype>eOfferNone</offertype>
+		<itemlevel>0</itemlevel>
+		<sellable>true</sellable>
+		<tradeable>true</tradeable>
+		<destroyable>true</destroyable>
+		<sellcostoverride>
+			<capitalresource quantity="2.4">cCapResCoin</capitalresource>
+		</sellcostoverride>
+		<rarity>cRarityEpic</rarity>
+		<budgetcost>5</budgetcost>
+		<contentpack>1</contentpack>
+	</material>
+	<material name="AnimalHide">
+		<icon>UserInterface\Icons\Materials\MatIconsAnimalHide_ua</icon>
+		<rollovertextid>53132</rollovertextid>
+		<displaynameid>800000</displaynameid>
+		<stackable/>
+		<stacksize>1000</stacksize>
+		<offertype>eOfferNone</offertype>
+		<itemlevel>0</itemlevel>
+		<sellable>true</sellable>
+		<tradeable>true</tradeable>
+		<destroyable>true</destroyable>
+		<sellcostoverride>
+			<capitalresource quantity="0.1">cCapResCoin</capitalresource>
+		</sellcostoverride>
+		<rarity>cRarityCommon</rarity>
+		<budgetcost>1</budgetcost>
+		<contentpack>1</contentpack>
+	</material>
+	<material name="CopperIngot">
+		<icon>UserInterface\Icons\Materials\MatIconsCopperIngot_ua</icon>
+		<rollovertextid>53132</rollovertextid>
+		<displaynameid>800003</displaynameid>
+		<stackable/>
+		<stacksize>1000</stacksize>
+		<offertype>eOfferNone</offertype>
+		<itemlevel>0</itemlevel>
+		<sellable>true</sellable>
+		<tradeable>true</tradeable>
+		<destroyable>true</destroyable>
+		<sellcostoverride>
+			<capitalresource quantity="0.1">cCapResCoin</capitalresource>
+		</sellcostoverride>
+		<rarity>cRarityCommon</rarity>
+		<budgetcost>1</budgetcost>
+		<contentpack>1</contentpack>
+	</material>
+	<material name="FillerLoot_ArmorBldg_01">
+		<icon>UserInterface\Icons\Equipment\ArmorBldg_C001_ua</icon>
+		<rollovertextid>60580</rollovertextid>
+		<displaynameid>800909</displaynameid>
+		<stackable/>
+		<stacksize>1</stacksize>
+		<offertype>eOfferNone</offertype>
+		<itemlevel>0</itemlevel>
+		<sellable>true</sellable>
+		<tradeable>true</tradeable>
+		<destroyable>true</destroyable>
+		<sellcostoverride>
+			<capitalresource quantity="4">cCapResCoin</capitalresource>
+		</sellcostoverride>
+		<rarity>cRarityJunk</rarity>
+		<budgetcost>1</budgetcost>
+		<contentpack>1</contentpack>
+	</material>
+	<material name="FillerLoot_ArmorBldg_02">
+		<icon>UserInterface\Icons\Equipment\ArmorBldg_C002_ua</icon>
+		<rollovertextid>60580</rollovertextid>
+		<displaynameid>800911</displaynameid>
+		<stackable/>
+		<stacksize>1</stacksize>
+		<offertype>eOfferNone</offertype>
+		<itemlevel>0</itemlevel>
+		<sellable>true</sellable>
+		<tradeable>true</tradeable>
+		<destroyable>true</destroyable>
+		<sellcostoverride>
+			<capitalresource quantity="5">cCapResCoin</capitalresource>
+		</sellcostoverride>
+		<rarity>cRarityJunk</rarity>
+		<budgetcost>1</budgetcost>
+		<contentpack>1</contentpack>
+	</material>
+	<material name="FillerLoot_ArmorBldg_03">
+		<icon>UserInterface\Icons\Equipment\ArmorBldg_C003_ua</icon>
+		<rollovertextid>60580</rollovertextid>
+		<displaynameid>800913</displaynameid>
+		<stackable/>
+		<stacksize>1</stacksize>
+		<offertype>eOfferNone</offertype>
+		<itemlevel>0</itemlevel>
+		<sellable>true</sellable>
+		<tradeable>true</tradeable>
+		<destroyable>true</destroyable>
+		<sellcostoverride>
+			<capitalresource quantity="5">cCapResCoin</capitalresource>
+		</sellcostoverride>
+		<rarity>cRarityJunk</rarity>
+		<budgetcost>1</budgetcost>
+		<contentpack>1</contentpack>
+	</material>
+	<material name="FillerLoot_ArmorClth_01">
+		<icon>UserInterface\Icons\Equipment\ArmorClth_C001_ua</icon>
+		<rollovertextid>60580</rollovertextid>
+		<displaynameid>800915</displaynameid>
+		<stackable/>
+		<stacksize>1</stacksize>
+		<offertype>eOfferNone</offertype>
+		<itemlevel>0</itemlevel>
+		<sellable>true</sellable>
+		<tradeable>true</tradeable>
+		<destroyable>true</destroyable>
+		<sellcostoverride>
+			<capitalresource quantity="5">cCapResCoin</capitalresource>
+		</sellcostoverride>
+		<rarity>cRarityJunk</rarity>
+		<budgetcost>1</budgetcost>
+		<contentpack>1</contentpack>
+	</material>
+	<material name="FillerLoot_ArmorClth_02">
+		<icon>UserInterface\Icons\Equipment\ArmorClth_C002_ua</icon>
+		<rollovertextid>60580</rollovertextid>
+		<displaynameid>800917</displaynameid>
+		<stackable/>
+		<stacksize>1</stacksize>
+		<offertype>eOfferNone</offertype>
+		<itemlevel>0</itemlevel>
+		<sellable>true</sellable>
+		<tradeable>true</tradeable>
+		<destroyable>true</destroyable>
+		<sellcostoverride>
+			<capitalresource quantity="5">cCapResCoin</capitalresource>
+		</sellcostoverride>
+		<rarity>cRarityJunk</rarity>
+		<budgetcost>1</budgetcost>
+		<contentpack>1</contentpack>
+	</material>
+	<material name="FillerLoot_ArmorClth_03">
+		<icon>UserInterface\Icons\Equipment\ArmorClth_C003_ua</icon>
+		<rollovertextid>60580</rollovertextid>
+		<displaynameid>800919</displaynameid>
+		<stackable/>
+		<stacksize>1</stacksize>
+		<offertype>eOfferNone</offertype>
+		<itemlevel>0</itemlevel>
+		<sellable>true</sellable>
+		<tradeable>true</tradeable>
+		<destroyable>true</destroyable>
+		<sellcostoverride>
+			<capitalresource quantity="9">cCapResCoin</capitalresource>
+		</sellcostoverride>
+		<rarity>cRarityJunk</rarity>
+		<budgetcost>1</budgetcost>
+		<contentpack>1</contentpack>
+	</material>
+	<material name="FillerLoot_ArmorLgt_01">
+		<icon>UserInterface\Icons\Equipment\ArmorLgt_C001_ua</icon>
+		<rollovertextid>60580</rollovertextid>
+		<displaynameid>800951</displaynameid>
+		<stackable/>
+		<stacksize>1</stacksize>
+		<offertype>eOfferNone</offertype>
+		<itemlevel>0</itemlevel>
+		<sellable>true</sellable>
+		<tradeable>true</tradeable>
+		<destroyable>true</destroyable>
+		<sellcostoverride>
+			<capitalresource quantity="4">cCapResCoin</capitalresource>
+		</sellcostoverride>
+		<rarity>cRarityJunk</rarity>
+		<budgetcost>1</budgetcost>
+		<contentpack>1</contentpack>
+	</material>
+	<material name="FillerLoot_ArmorLgt_02">
+		<icon>UserInterface\Icons\Equipment\ArmorLgt_C002_ua</icon>
+		<rollovertextid>60580</rollovertextid>
+		<displaynameid>800953</displaynameid>
+		<stackable/>
+		<stacksize>1</stacksize>
+		<offertype>eOfferNone</offertype>
+		<itemlevel>0</itemlevel>
+		<sellable>true</sellable>
+		<tradeable>true</tradeable>
+		<destroyable>true</destroyable>
+		<sellcostoverride>
+			<capitalresource quantity="5">cCapResCoin</capitalresource>
+		</sellcostoverride>
+		<rarity>cRarityJunk</rarity>
+		<budgetcost>1</budgetcost>
+		<contentpack>1</contentpack>
+	</material>
+	<material name="FillerLoot_ArmorLgt_03">
+		<icon>UserInterface\Icons\Equipment\ArmorLgt_C003_ua</icon>
+		<rollovertextid>60580</rollovertextid>
+		<displaynameid>800955</displaynameid>
+		<stackable/>
+		<stacksize>1</stacksize>
+		<offertype>eOfferNone</offertype>
+		<itemlevel>0</itemlevel>
+		<sellable>true</sellable>
+		<tradeable>true</tradeable>
+		<destroyable>true</destroyable>
+		<sellcostoverride>
+			<capitalresource quantity="21">cCapResCoin</capitalresource>
+		</sellcostoverride>
+		<rarity>cRarityJunk</rarity>
+		<budgetcost>1</budgetcost>
+		<contentpack>1</contentpack>
+	</material>
+	<material name="FillerLoot_ArmorMed_01">
+		<icon>UserInterface\Icons\Equipment\ArmorMed_C001_ua</icon>
+		<rollovertextid>60580</rollovertextid>
+		<displaynameid>800933</displaynameid>
+		<stackable/>
+		<stacksize>1</stacksize>
+		<offertype>eOfferNone</offertype>
+		<itemlevel>0</itemlevel>
+		<sellable>true</sellable>
+		<tradeable>true</tradeable>
+		<destroyable>true</destroyable>
+		<sellcostoverride>
+			<capitalresource quantity="4">cCapResCoin</capitalresource>
+		</sellcostoverride>
+		<rarity>cRarityJunk</rarity>
+		<budgetcost>1</budgetcost>
+		<contentpack>1</contentpack>
+	</material>
+	<material name="FillerLoot_ArmorMed_02">
+		<icon>UserInterface\Icons\Equipment\ArmorMed_C002_ua</icon>
+		<rollovertextid>60580</rollovertextid>
+		<displaynameid>800935</displaynameid>
+		<stackable/>
+		<stacksize>1</stacksize>
+		<offertype>eOfferNone</offertype>
+		<itemlevel>0</itemlevel>
+		<sellable>true</sellable>
+		<tradeable>true</tradeable>
+		<destroyable>true</destroyable>
+		<sellcostoverride>
+			<capitalresource quantity="7">cCapResCoin</capitalresource>
+		</sellcostoverride>
+		<rarity>cRarityJunk</rarity>
+		<budgetcost>1</budgetcost>
+		<contentpack>1</contentpack>
+	</material>
+	<material name="FillerLoot_ArmorMed_03">
+		<icon>UserInterface\Icons\Equipment\ArmorMed_C003_ua</icon>
+		<rollovertextid>60580</rollovertextid>
+		<displaynameid>800937</displaynameid>
+		<stackable/>
+		<stacksize>1</stacksize>
+		<offertype>eOfferNone</offertype>
+		<itemlevel>0</itemlevel>
+		<sellable>true</sellable>
+		<tradeable>true</tradeable>
+		<destroyable>true</destroyable>
+		<sellcostoverride>
+			<capitalresource quantity="49">cCapResCoin</capitalresource>
+		</sellcostoverride>
+		<rarity>cRarityJunk</rarity>
+		<budgetcost>1</budgetcost>
+		<contentpack>1</contentpack>
+	</material>
+	<material name="FillerLoot_ArmorPlt_01">
+		<icon>UserInterface\Icons\Equipment\ArmorPlt_C001_ua</icon>
+		<rollovertextid>60580</rollovertextid>
+		<displaynameid>801001</displaynameid>
+		<stackable/>
+		<stacksize>1</stacksize>
+		<offertype>eOfferNone</offertype>
+		<itemlevel>0</itemlevel>
+		<sellable>true</sellable>
+		<tradeable>true</tradeable>
+		<destroyable>true</destroyable>
+		<sellcostoverride>
+			<capitalresource quantity="4">cCapResCoin</capitalresource>
+		</sellcostoverride>
+		<rarity>cRarityJunk</rarity>
+		<budgetcost>1</budgetcost>
+		<contentpack>1</contentpack>
+	</material>
+	<material name="FillerLoot_ArmorPlt_02">
+		<icon>UserInterface\Icons\Equipment\ArmorPlt_C002_ua</icon>
+		<rollovertextid>60580</rollovertextid>
+		<displaynameid>801003</displaynameid>
+		<stackable/>
+		<stacksize>1</stacksize>
+		<offertype>eOfferNone</offertype>
+		<itemlevel>0</itemlevel>
+		<sellable>true</sellable>
+		<tradeable>true</tradeable>
+		<destroyable>true</destroyable>
+		<sellcostoverride>
+			<capitalresource quantity="5">cCapResCoin</capitalresource>
+		</sellcostoverride>
+		<rarity>cRarityJunk</rarity>
+		<budgetcost>1</budgetcost>
+		<contentpack>1</contentpack>
+	</material>
+	<material name="FillerLoot_ArmorPlt_03">
+		<icon>UserInterface\Icons\Equipment\ArmorPlt_C003_ua</icon>
+		<rollovertextid>60580</rollovertextid>
+		<displaynameid>801005</displaynameid>
+		<stackable/>
+		<stacksize>1</stacksize>
+		<offertype>eOfferNone</offertype>
+		<itemlevel>0</itemlevel>
+		<sellable>true</sellable>
+		<tradeable>true</tradeable>
+		<destroyable>true</destroyable>
+		<sellcostoverride>
+			<capitalresource quantity="16">cCapResCoin</capitalresource>
+		</sellcostoverride>
+		<rarity>cRarityJunk</rarity>
+		<budgetcost>1</budgetcost>
+		<contentpack>1</contentpack>
+	</material>
+	<material name="FillerLoot_ArrowOH_01">
+		<icon>UserInterface\Icons\Equipment\Arrow_C001_ua</icon>
+		<rollovertextid>60580</rollovertextid>
+		<displaynameid>800891</displaynameid>
+		<stackable/>
+		<stacksize>1</stacksize>
+		<offertype>eOfferNone</offertype>
+		<itemlevel>0</itemlevel>
+		<sellable>true</sellable>
+		<tradeable>true</tradeable>
+		<destroyable>true</destroyable>
+		<sellcostoverride>
+			<capitalresource quantity="4">cCapResCoin</capitalresource>
+		</sellcostoverride>
+		<rarity>cRarityJunk</rarity>
+		<budgetcost>1</budgetcost>
+		<contentpack>1</contentpack>
+	</material>
+	<material name="FillerLoot_ArrowOH_02">
+		<icon>UserInterface\Icons\Equipment\Arrow_C002_ua</icon>
+		<rollovertextid>60580</rollovertextid>
+		<displaynameid>800893</displaynameid>
+		<stackable/>
+		<stacksize>1</stacksize>
+		<offertype>eOfferNone</offertype>
+		<itemlevel>0</itemlevel>
+		<sellable>true</sellable>
+		<tradeable>true</tradeable>
+		<destroyable>true</destroyable>
+		<sellcostoverride>
+			<capitalresource quantity="5">cCapResCoin</capitalresource>
+		</sellcostoverride>
+		<rarity>cRarityJunk</rarity>
+		<budgetcost>1</budgetcost>
+		<contentpack>1</contentpack>
+	</material>
+	<material name="FillerLoot_ArrowOH_03">
+		<icon>UserInterface\Icons\Equipment\Arrow_C003_ua</icon>
+		<rollovertextid>60580</rollovertextid>
+		<displaynameid>800895</displaynameid>
+		<stackable/>
+		<stacksize>1</stacksize>
+		<offertype>eOfferNone</offertype>
+		<itemlevel>0</itemlevel>
+		<sellable>true</sellable>
+		<tradeable>true</tradeable>
+		<destroyable>true</destroyable>
+		<sellcostoverride>
+			<capitalresource quantity="11">cCapResCoin</capitalresource>
+		</sellcostoverride>
+		<rarity>cRarityJunk</rarity>
+		<budgetcost>1</budgetcost>
+		<contentpack>1</contentpack>
+	</material>
+	<material name="FillerLoot_Ballista2H_01">
+		<icon>UserInterface\Icons\Equipment\Ballista2H_C001_ua</icon>
+		<rollovertextid>60580</rollovertextid>
+		<displaynameid>801007</displaynameid>
+		<stackable/>
+		<stacksize>1</stacksize>
+		<offertype>eOfferNone</offertype>
+		<itemlevel>0</itemlevel>
+		<sellable>true</sellable>
+		<tradeable>true</tradeable>
+		<destroyable>true</destroyable>
+		<sellcostoverride>
+			<capitalresource quantity="5">cCapResCoin</capitalresource>
+		</sellcostoverride>
+		<rarity>cRarityJunk</rarity>
+		<budgetcost>1</budgetcost>
+		<contentpack>1</contentpack>
+	</material>
+	<material name="FillerLoot_Ballista2H_02">
+		<icon>UserInterface\Icons\Equipment\Ballista2H_C002_ua</icon>
+		<rollovertextid>60580</rollovertextid>
+		<displaynameid>801009</displaynameid>
+		<stackable/>
+		<stacksize>1</stacksize>
+		<offertype>eOfferNone</offertype>
+		<itemlevel>0</itemlevel>
+		<sellable>true</sellable>
+		<tradeable>true</tradeable>
+		<destroyable>true</destroyable>
+		<sellcostoverride>
+			<capitalresource quantity="5">cCapResCoin</capitalresource>
+		</sellcostoverride>
+		<rarity>cRarityJunk</rarity>
+		<budgetcost>1</budgetcost>
+		<contentpack>1</contentpack>
+	</material>
+	<material name="FillerLoot_Ballista2H_03">
+		<icon>UserInterface\Icons\Equipment\Ballista2H_C003_ua</icon>
+		<rollovertextid>60580</rollovertextid>
+		<displaynameid>801011</displaynameid>
+		<stackable/>
+		<stacksize>1</stacksize>
+		<offertype>eOfferNone</offertype>
+		<itemlevel>0</itemlevel>
+		<sellable>true</sellable>
+		<tradeable>true</tradeable>
+		<destroyable>true</destroyable>
+		<sellcostoverride>
+			<capitalresource quantity="7">cCapResCoin</capitalresource>
+		</sellcostoverride>
+		<rarity>cRarityJunk</rarity>
+		<budgetcost>1</budgetcost>
+		<contentpack>1</contentpack>
+	</material>
+	<material name="FillerLoot_Bow1H_01">
+		<icon>UserInterface\Icons\Equipment\Bow1H_C001_ua</icon>
+		<rollovertextid>60580</rollovertextid>
+		<displaynameid>800903</displaynameid>
+		<stackable/>
+		<stacksize>1</stacksize>
+		<offertype>eOfferNone</offertype>
+		<itemlevel>0</itemlevel>
+		<sellable>true</sellable>
+		<tradeable>true</tradeable>
+		<destroyable>true</destroyable>
+		<sellcostoverride>
+			<capitalresource quantity="5">cCapResCoin</capitalresource>
+		</sellcostoverride>
+		<rarity>cRarityJunk</rarity>
+		<budgetcost>1</budgetcost>
+		<contentpack>1</contentpack>
+	</material>
+	<material name="FillerLoot_Bow1H_02">
+		<icon>UserInterface\Icons\Equipment\Bow1H_C002_ua</icon>
+		<rollovertextid>60580</rollovertextid>
+		<displaynameid>800905</displaynameid>
+		<stackable/>
+		<stacksize>1</stacksize>
+		<offertype>eOfferNone</offertype>
+		<itemlevel>0</itemlevel>
+		<sellable>true</sellable>
+		<tradeable>true</tradeable>
+		<destroyable>true</destroyable>
+		<sellcostoverride>
+			<capitalresource quantity="6">cCapResCoin</capitalresource>
+		</sellcostoverride>
+		<rarity>cRarityJunk</rarity>
+		<budgetcost>1</budgetcost>
+		<contentpack>1</contentpack>
+	</material>
+	<material name="FillerLoot_Bow1H_03">
+		<icon>UserInterface\Icons\Equipment\Bow1H_C003_ua</icon>
+		<rollovertextid>60580</rollovertextid>
+		<displaynameid>800907</displaynameid>
+		<stackable/>
+		<stacksize>1</stacksize>
+		<offertype>eOfferNone</offertype>
+		<itemlevel>0</itemlevel>
+		<sellable>true</sellable>
+		<tradeable>true</tradeable>
+		<destroyable>true</destroyable>
+		<sellcostoverride>
+			<capitalresource quantity="13">cCapResCoin</capitalresource>
+		</sellcostoverride>
+		<rarity>cRarityJunk</rarity>
+		<budgetcost>1</budgetcost>
+		<contentpack>1</contentpack>
+	</material>
+	<material name="FillerLoot_FireThrower2H_01">
+		<icon>UserInterface\Icons\Equipment\FireThrower2H_C001_ua</icon>
+		<rollovertextid>60580</rollovertextid>
+		<displaynameid>801031</displaynameid>
+		<stackable/>
+		<stacksize>1</stacksize>
+		<offertype>eOfferNone</offertype>
+		<itemlevel>0</itemlevel>
+		<sellable>true</sellable>
+		<tradeable>true</tradeable>
+		<destroyable>true</destroyable>
+		<sellcostoverride>
+			<capitalresource quantity="4">cCapResCoin</capitalresource>
+		</sellcostoverride>
+		<rarity>cRarityJunk</rarity>
+		<budgetcost>1</budgetcost>
+		<contentpack>1</contentpack>
+	</material>
+	<material name="FillerLoot_FireThrower2H_02">
+		<icon>UserInterface\Icons\Equipment\FireThrower2H_C002_ua</icon>
+		<rollovertextid>60580</rollovertextid>
+		<displaynameid>801033</displaynameid>
+		<stackable/>
+		<stacksize>1</stacksize>
+		<offertype>eOfferNone</offertype>
+		<itemlevel>0</itemlevel>
+		<sellable>true</sellable>
+		<tradeable>true</tradeable>
+		<destroyable>true</destroyable>
+		<sellcostoverride>
+			<capitalresource quantity="5">cCapResCoin</capitalresource>
+		</sellcostoverride>
+		<rarity>cRarityJunk</rarity>
+		<budgetcost>1</budgetcost>
+		<contentpack>1</contentpack>
+	</material>
+	<material name="FillerLoot_FireThrower2H_03">
+		<icon>UserInterface\Icons\Equipment\FireThrower2H_C003_ua</icon>
+		<rollovertextid>60580</rollovertextid>
+		<displaynameid>801035</displaynameid>
+		<stackable/>
+		<stacksize>1</stacksize>
+		<offertype>eOfferNone</offertype>
+		<itemlevel>0</itemlevel>
+		<sellable>true</sellable>
+		<tradeable>true</tradeable>
+		<destroyable>true</destroyable>
+		<sellcostoverride>
+			<capitalresource quantity="12">cCapResCoin</capitalresource>
+		</sellcostoverride>
+		<rarity>cRarityJunk</rarity>
+		<budgetcost>1</budgetcost>
+		<contentpack>1</contentpack>
+	</material>
+	<material name="FillerLoot_FishingNet1H_01">
+		<icon>UserInterface\Icons\Equipment\FishingNet1H_C001_ua</icon>
+		<rollovertextid>60580</rollovertextid>
+		<displaynameid>801037</displaynameid>
+		<stackable/>
+		<stacksize>1</stacksize>
+		<offertype>eOfferNone</offertype>
+		<itemlevel>0</itemlevel>
+		<sellable>true</sellable>
+		<tradeable>true</tradeable>
+		<destroyable>true</destroyable>
+		<sellcostoverride>
+			<capitalresource quantity="5">cCapResCoin</capitalresource>
+		</sellcostoverride>
+		<rarity>cRarityJunk</rarity>
+		<budgetcost>1</budgetcost>
+		<contentpack>1</contentpack>
+	</material>
+	<material name="FillerLoot_FishingNet1H_02">
+		<icon>UserInterface\Icons\Equipment\FishingNet1H_C002_ua</icon>
+		<rollovertextid>60580</rollovertextid>
+		<displaynameid>801039</displaynameid>
+		<stackable/>
+		<stacksize>1</stacksize>
+		<offertype>eOfferNone</offertype>
+		<itemlevel>0</itemlevel>
+		<sellable>true</sellable>
+		<tradeable>true</tradeable>
+		<destroyable>true</destroyable>
+		<sellcostoverride>
+			<capitalresource quantity="5">cCapResCoin</capitalresource>
+		</sellcostoverride>
+		<rarity>cRarityJunk</rarity>
+		<budgetcost>1</budgetcost>
+		<contentpack>1</contentpack>
+	</material>
+	<material name="FillerLoot_FishingNet1H_03">
+		<icon>UserInterface\Icons\Equipment\FishingNet1H_C003_ua</icon>
+		<rollovertextid>60580</rollovertextid>
+		<displaynameid>801041</displaynameid>
+		<stackable/>
+		<stacksize>1</stacksize>
+		<offertype>eOfferNone</offertype>
+		<itemlevel>0</itemlevel>
+		<sellable>true</sellable>
+		<tradeable>true</tradeable>
+		<destroyable>true</destroyable>
+		<sellcostoverride>
+			<capitalresource quantity="20">cCapResCoin</capitalresource>
+		</sellcostoverride>
+		<rarity>cRarityJunk</rarity>
+		<budgetcost>1</budgetcost>
+		<contentpack>1</contentpack>
+	</material>
+	<material name="FillerLoot_Gear_01">
+		<icon>UserInterface\Icons\Equipment\Gear_Inf_C001_ua</icon>
+		<rollovertextid>60580</rollovertextid>
+		<displaynameid>801013</displaynameid>
+		<stackable/>
+		<stacksize>1</stacksize>
+		<offertype>eOfferNone</offertype>
+		<itemlevel>0</itemlevel>
+		<sellable>true</sellable>
+		<tradeable>true</tradeable>
+		<destroyable>true</destroyable>
+		<sellcostoverride>
+			<capitalresource quantity="5">cCapResCoin</capitalresource>
+		</sellcostoverride>
+		<rarity>cRarityJunk</rarity>
+		<budgetcost>1</budgetcost>
+		<contentpack>1</contentpack>
+	</material>
+	<material name="FillerLoot_Gear_02">
+		<icon>UserInterface\Icons\Equipment\Gear_Inf_C002_ua</icon>
+		<rollovertextid>60580</rollovertextid>
+		<displaynameid>801015</displaynameid>
+		<stackable/>
+		<stacksize>1</stacksize>
+		<offertype>eOfferNone</offertype>
+		<itemlevel>0</itemlevel>
+		<sellable>true</sellable>
+		<tradeable>true</tradeable>
+		<destroyable>true</destroyable>
+		<sellcostoverride>
+			<capitalresource quantity="5">cCapResCoin</capitalresource>
+		</sellcostoverride>
+		<rarity>cRarityJunk</rarity>
+		<budgetcost>1</budgetcost>
+		<contentpack>1</contentpack>
+	</material>
+	<material name="FillerLoot_Gear_03">
+		<icon>UserInterface\Icons\Equipment\Gear_Inf_C003_ua</icon>
+		<rollovertextid>60580</rollovertextid>
+		<displaynameid>801017</displaynameid>
+		<stackable/>
+		<stacksize>1</stacksize>
+		<offertype>eOfferNone</offertype>
+		<itemlevel>0</itemlevel>
+		<sellable>true</sellable>
+		<tradeable>true</tradeable>
+		<destroyable>true</destroyable>
+		<sellcostoverride>
+			<capitalresource quantity="11">cCapResCoin</capitalresource>
+		</sellcostoverride>
+		<rarity>cRarityJunk</rarity>
+		<budgetcost>1</budgetcost>
+		<contentpack>1</contentpack>
+	</material>
+	<material name="FillerLoot_Gear_Bldg_01">
+		<icon>UserInterface\Icons\Equipment\Gear_Bldg_C001_ua</icon>
+		<rollovertextid>60580</rollovertextid>
+		<displaynameid>800921</displaynameid>
+		<stackable/>
+		<stacksize>1</stacksize>
+		<offertype>eOfferNone</offertype>
+		<itemlevel>0</itemlevel>
+		<sellable>true</sellable>
+		<tradeable>true</tradeable>
+		<destroyable>true</destroyable>
+		<sellcostoverride>
+			<capitalresource quantity="5">cCapResCoin</capitalresource>
+		</sellcostoverride>
+		<rarity>cRarityJunk</rarity>
+		<budgetcost>1</budgetcost>
+		<contentpack>1</contentpack>
+	</material>
+	<material name="FillerLoot_Gear_Bldg_02">
+		<icon>UserInterface\Icons\Equipment\Gear_Bldg_C002_ua</icon>
+		<rollovertextid>60580</rollovertextid>
+		<displaynameid>800923</displaynameid>
+		<stackable/>
+		<stacksize>1</stacksize>
+		<offertype>eOfferNone</offertype>
+		<itemlevel>0</itemlevel>
+		<sellable>true</sellable>
+		<tradeable>true</tradeable>
+		<destroyable>true</destroyable>
+		<sellcostoverride>
+			<capitalresource quantity="7">cCapResCoin</capitalresource>
+		</sellcostoverride>
+		<rarity>cRarityJunk</rarity>
+		<budgetcost>1</budgetcost>
+		<contentpack>1</contentpack>
+	</material>
+	<material name="FillerLoot_Gear_Bldg_03">
+		<icon>UserInterface\Icons\Equipment\Gear_Bldg_C003_ua</icon>
+		<rollovertextid>60580</rollovertextid>
+		<displaynameid>800925</displaynameid>
+		<stackable/>
+		<stacksize>1</stacksize>
+		<offertype>eOfferNone</offertype>
+		<itemlevel>0</itemlevel>
+		<sellable>true</sellable>
+		<tradeable>true</tradeable>
+		<destroyable>true</destroyable>
+		<sellcostoverride>
+			<capitalresource quantity="11">cCapResCoin</capitalresource>
+		</sellcostoverride>
+		<rarity>cRarityJunk</rarity>
+		<budgetcost>1</budgetcost>
+		<contentpack>1</contentpack>
+	</material>
+	<material name="FillerLoot_Gear_Boat_01">
+		<icon>UserInterface\Icons\Equipment\BoatGear_C001_ua</icon>
+		<rollovertextid>60580</rollovertextid>
+		<displaynameid>800897</displaynameid>
+		<stackable/>
+		<stacksize>1</stacksize>
+		<offertype>eOfferNone</offertype>
+		<itemlevel>0</itemlevel>
+		<sellable>true</sellable>
+		<tradeable>true</tradeable>
+		<destroyable>true</destroyable>
+		<sellcostoverride>
+			<capitalresource quantity="5">cCapResCoin</capitalresource>
+		</sellcostoverride>
+		<rarity>cRarityJunk</rarity>
+		<budgetcost>1</budgetcost>
+		<contentpack>1</contentpack>
+	</material>
+	<material name="FillerLoot_Gear_Boat_02">
+		<icon>UserInterface\Icons\Equipment\BoatGear_C002_ua</icon>
+		<rollovertextid>60580</rollovertextid>
+		<displaynameid>800899</displaynameid>
+		<stackable/>
+		<stacksize>1</stacksize>
+		<offertype>eOfferNone</offertype>
+		<itemlevel>0</itemlevel>
+		<sellable>true</sellable>
+		<tradeable>true</tradeable>
+		<destroyable>true</destroyable>
+		<sellcostoverride>
+			<capitalresource quantity="7">cCapResCoin</capitalresource>
+		</sellcostoverride>
+		<rarity>cRarityJunk</rarity>
+		<budgetcost>1</budgetcost>
+		<contentpack>1</contentpack>
+	</material>
+	<material name="FillerLoot_Gear_Boat_03">
+		<icon>UserInterface\Icons\Equipment\BoatGear_C003_ua</icon>
+		<rollovertextid>60580</rollovertextid>
+		<displaynameid>800901</displaynameid>
+		<stackable/>
+		<stacksize>1</stacksize>
+		<offertype>eOfferNone</offertype>
+		<itemlevel>0</itemlevel>
+		<sellable>true</sellable>
+		<tradeable>true</tradeable>
+		<destroyable>true</destroyable>
+		<sellcostoverride>
+			<capitalresource quantity="15">cCapResCoin</capitalresource>
+		</sellcostoverride>
+		<rarity>cRarityJunk</rarity>
+		<budgetcost>1</budgetcost>
+		<contentpack>1</contentpack>
+	</material>
+	<material name="FillerLoot_Gear_Prst_01">
+		<icon>UserInterface\Icons\Equipment\Gear_Prst_C001_ua</icon>
+		<rollovertextid>60580</rollovertextid>
+		<displaynameid>800969</displaynameid>
+		<stackable/>
+		<stacksize>1</stacksize>
+		<offertype>eOfferNone</offertype>
+		<itemlevel>0</itemlevel>
+		<sellable>true</sellable>
+		<tradeable>true</tradeable>
+		<destroyable>true</destroyable>
+		<sellcostoverride>
+			<capitalresource quantity="4">cCapResCoin</capitalresource>
+		</sellcostoverride>
+		<rarity>cRarityJunk</rarity>
+		<budgetcost>1</budgetcost>
+		<contentpack>1</contentpack>
+	</material>
+	<material name="FillerLoot_Gear_Prst_02">
+		<icon>UserInterface\Icons\Equipment\Gear_Prst_C003_ua</icon>
+		<rollovertextid>60580</rollovertextid>
+		<displaynameid>800971</displaynameid>
+		<stackable/>
+		<stacksize>1</stacksize>
+		<offertype>eOfferNone</offertype>
+		<itemlevel>0</itemlevel>
+		<sellable>true</sellable>
+		<tradeable>true</tradeable>
+		<destroyable>true</destroyable>
+		<sellcostoverride>
+			<capitalresource quantity="5">cCapResCoin</capitalresource>
+		</sellcostoverride>
+		<rarity>cRarityJunk</rarity>
+		<budgetcost>1</budgetcost>
+		<contentpack>1</contentpack>
+	</material>
+	<material name="FillerLoot_Gear_Prst_03">
+		<icon>UserInterface\Icons\Equipment\Gear_Prst_C002_ua</icon>
+		<rollovertextid>60580</rollovertextid>
+		<displaynameid>800973</displaynameid>
+		<stackable/>
+		<stacksize>1</stacksize>
+		<offertype>eOfferNone</offertype>
+		<itemlevel>0</itemlevel>
+		<sellable>true</sellable>
+		<tradeable>true</tradeable>
+		<destroyable>true</destroyable>
+		<sellcostoverride>
+			<capitalresource quantity="37">cCapResCoin</capitalresource>
+		</sellcostoverride>
+		<rarity>cRarityJunk</rarity>
+		<budgetcost>1</budgetcost>
+		<contentpack>1</contentpack>
+	</material>
+	<material name="FillerLoot_Gear_Siege_01">
+		<icon>UserInterface\Icons\Equipment\Gear_Siege_C001_ua</icon>
+		<rollovertextid>60580</rollovertextid>
+		<displaynameid>800995</displaynameid>
+		<stackable/>
+		<stacksize>1</stacksize>
+		<offertype>eOfferNone</offertype>
+		<itemlevel>0</itemlevel>
+		<sellable>true</sellable>
+		<tradeable>true</tradeable>
+		<destroyable>true</destroyable>
+		<sellcostoverride>
+			<capitalresource quantity="5">cCapResCoin</capitalresource>
+		</sellcostoverride>
+		<rarity>cRarityJunk</rarity>
+		<budgetcost>1</budgetcost>
+		<contentpack>1</contentpack>
+	</material>
+	<material name="FillerLoot_Gear_Siege_02">
+		<icon>UserInterface\Icons\Equipment\Gear_Siege_C002_ua</icon>
+		<rollovertextid>60580</rollovertextid>
+		<displaynameid>800997</displaynameid>
+		<stackable/>
+		<stacksize>1</stacksize>
+		<offertype>eOfferNone</offertype>
+		<itemlevel>0</itemlevel>
+		<sellable>true</sellable>
+		<tradeable>true</tradeable>
+		<destroyable>true</destroyable>
+		<sellcostoverride>
+			<capitalresource quantity="5">cCapResCoin</capitalresource>
+		</sellcostoverride>
+		<rarity>cRarityJunk</rarity>
+		<budgetcost>1</budgetcost>
+		<contentpack>1</contentpack>
+	</material>
+	<material name="FillerLoot_Gear_Siege_03">
+		<icon>UserInterface\Icons\Equipment\Gear_Siege_C003_ua</icon>
+		<rollovertextid>60580</rollovertextid>
+		<displaynameid>800999</displaynameid>
+		<stackable/>
+		<stacksize>1</stacksize>
+		<offertype>eOfferNone</offertype>
+		<itemlevel>0</itemlevel>
+		<sellable>true</sellable>
+		<tradeable>true</tradeable>
+		<destroyable>true</destroyable>
+		<sellcostoverride>
+			<capitalresource quantity="9">cCapResCoin</capitalresource>
+		</sellcostoverride>
+		<rarity>cRarityJunk</rarity>
+		<budgetcost>1</budgetcost>
+		<contentpack>1</contentpack>
+	</material>
+	<material name="FillerLoot_Gear_Vill_01">
+		<icon>UserInterface\Icons\Equipment\Gear_Vill_C001_ua</icon>
+		<rollovertextid>60580</rollovertextid>
+		<displaynameid>800945</displaynameid>
+		<stackable/>
+		<stacksize>1</stacksize>
+		<offertype>eOfferNone</offertype>
+		<itemlevel>0</itemlevel>
+		<sellable>true</sellable>
+		<tradeable>true</tradeable>
+		<destroyable>true</destroyable>
+		<sellcostoverride>
+			<capitalresource quantity="5">cCapResCoin</capitalresource>
+		</sellcostoverride>
+		<rarity>cRarityJunk</rarity>
+		<budgetcost>1</budgetcost>
+		<contentpack>1</contentpack>
+	</material>
+	<material name="FillerLoot_Gear_Vill_02">
+		<icon>UserInterface\Icons\Equipment\Gear_Vill_C002_ua</icon>
+		<rollovertextid>60580</rollovertextid>
+		<displaynameid>800947</displaynameid>
+		<stackable/>
+		<stacksize>1</stacksize>
+		<offertype>eOfferNone</offertype>
+		<itemlevel>0</itemlevel>
+		<sellable>true</sellable>
+		<tradeable>true</tradeable>
+		<destroyable>true</destroyable>
+		<sellcostoverride>
+			<capitalresource quantity="5">cCapResCoin</capitalresource>
+		</sellcostoverride>
+		<rarity>cRarityJunk</rarity>
+		<budgetcost>1</budgetcost>
+		<contentpack>1</contentpack>
+	</material>
+	<material name="FillerLoot_Gear_Vill_03">
+		<icon>UserInterface\Icons\Equipment\Gear_Vill_C003_ua</icon>
+		<rollovertextid>60580</rollovertextid>
+		<displaynameid>800949</displaynameid>
+		<stackable/>
+		<stacksize>1</stacksize>
+		<offertype>eOfferNone</offertype>
+		<itemlevel>0</itemlevel>
+		<sellable>true</sellable>
+		<tradeable>true</tradeable>
+		<destroyable>true</destroyable>
+		<sellcostoverride>
+			<capitalresource quantity="10">cCapResCoin</capitalresource>
+		</sellcostoverride>
+		<rarity>cRarityJunk</rarity>
+		<budgetcost>1</budgetcost>
+		<contentpack>1</contentpack>
+	</material>
+	<material name="FillerLoot_Javelin2H_01">
+		<icon>UserInterface\Icons\Equipment\Javelin2H_C001_ua</icon>
+		<rollovertextid>60580</rollovertextid>
+		<displaynameid>800939</displaynameid>
+		<stackable/>
+		<stacksize>1</stacksize>
+		<offertype>eOfferNone</offertype>
+		<itemlevel>0</itemlevel>
+		<sellable>true</sellable>
+		<tradeable>true</tradeable>
+		<destroyable>true</destroyable>
+		<sellcostoverride>
+			<capitalresource quantity="5">cCapResCoin</capitalresource>
+		</sellcostoverride>
+		<rarity>cRarityJunk</rarity>
+		<budgetcost>1</budgetcost>
+		<contentpack>1</contentpack>
+	</material>
+	<material name="FillerLoot_Javelin2H_02">
+		<icon>UserInterface\Icons\Equipment\Javelin2H_C002_ua</icon>
+		<rollovertextid>60580</rollovertextid>
+		<displaynameid>800941</displaynameid>
+		<stackable/>
+		<stacksize>1</stacksize>
+		<offertype>eOfferNone</offertype>
+		<itemlevel>0</itemlevel>
+		<sellable>true</sellable>
+		<tradeable>true</tradeable>
+		<destroyable>true</destroyable>
+		<sellcostoverride>
+			<capitalresource quantity="6">cCapResCoin</capitalresource>
+		</sellcostoverride>
+		<rarity>cRarityJunk</rarity>
+		<budgetcost>1</budgetcost>
+		<contentpack>1</contentpack>
+	</material>
+	<material name="FillerLoot_Javelin2H_03">
+		<icon>UserInterface\Icons\Equipment\Javelin2H_C003_ua</icon>
+		<rollovertextid>60580</rollovertextid>
+		<displaynameid>800943</displaynameid>
+		<stackable/>
+		<stacksize>1</stacksize>
+		<offertype>eOfferNone</offertype>
+		<itemlevel>0</itemlevel>
+		<sellable>true</sellable>
+		<tradeable>true</tradeable>
+		<destroyable>true</destroyable>
+		<sellcostoverride>
+			<capitalresource quantity="14">cCapResCoin</capitalresource>
+		</sellcostoverride>
+		<rarity>cRarityJunk</rarity>
+		<budgetcost>1</budgetcost>
+		<contentpack>1</contentpack>
+	</material>
+	<material name="FillerLoot_Merchant2H_01">
+		<icon>UserInterface\Icons\Equipment\Merchant2H_C001_ua</icon>
+		<rollovertextid>60580</rollovertextid>
+		<displaynameid>800963</displaynameid>
+		<stackable/>
+		<stacksize>1</stacksize>
+		<offertype>eOfferNone</offertype>
+		<itemlevel>0</itemlevel>
+		<sellable>true</sellable>
+		<tradeable>true</tradeable>
+		<destroyable>true</destroyable>
+		<sellcostoverride>
+			<capitalresource quantity="5">cCapResCoin</capitalresource>
+		</sellcostoverride>
+		<rarity>cRarityJunk</rarity>
+		<budgetcost>1</budgetcost>
+		<contentpack>1</contentpack>
+	</material>
+	<material name="FillerLoot_Merchant2H_02">
+		<icon>UserInterface\Icons\Equipment\Merchant2H_C002_ua</icon>
+		<rollovertextid>60580</rollovertextid>
+		<displaynameid>800965</displaynameid>
+		<stackable/>
+		<stacksize>1</stacksize>
+		<offertype>eOfferNone</offertype>
+		<itemlevel>0</itemlevel>
+		<sellable>true</sellable>
+		<tradeable>true</tradeable>
+		<destroyable>true</destroyable>
+		<sellcostoverride>
+			<capitalresource quantity="7">cCapResCoin</capitalresource>
+		</sellcostoverride>
+		<rarity>cRarityJunk</rarity>
+		<budgetcost>1</budgetcost>
+		<contentpack>1</contentpack>
+	</material>
+	<material name="FillerLoot_Merchant2H_03">
+		<icon>UserInterface\Icons\Equipment\Merchant2H_C003_ua</icon>
+		<rollovertextid>60580</rollovertextid>
+		<displaynameid>800967</displaynameid>
+		<stackable/>
+		<stacksize>1</stacksize>
+		<offertype>eOfferNone</offertype>
+		<itemlevel>0</itemlevel>
+		<sellable>true</sellable>
+		<tradeable>true</tradeable>
+		<destroyable>true</destroyable>
+		<sellcostoverride>
+			<capitalresource quantity="19">cCapResCoin</capitalresource>
+		</sellcostoverride>
+		<rarity>cRarityJunk</rarity>
+		<budgetcost>1</budgetcost>
+		<contentpack>1</contentpack>
+	</material>
+	<material name="FillerLoot_RamHead2H_01">
+		<icon>UserInterface\Icons\Equipment\RamHead2H_C001_ua</icon>
+		<rollovertextid>60580</rollovertextid>
+		<displaynameid>800981</displaynameid>
+		<stackable/>
+		<stacksize>1</stacksize>
+		<offertype>eOfferNone</offertype>
+		<itemlevel>0</itemlevel>
+		<sellable>true</sellable>
+		<tradeable>true</tradeable>
+		<destroyable>true</destroyable>
+		<sellcostoverride>
+			<capitalresource quantity="5">cCapResCoin</capitalresource>
+		</sellcostoverride>
+		<rarity>cRarityJunk</rarity>
+		<budgetcost>1</budgetcost>
+		<contentpack>1</contentpack>
+	</material>
+	<material name="FillerLoot_RamHead2H_02">
+		<icon>UserInterface\Icons\Equipment\RamHead2H_C002_ua</icon>
+		<rollovertextid>60580</rollovertextid>
+		<displaynameid>800983</displaynameid>
+		<stackable/>
+		<stacksize>1</stacksize>
+		<offertype>eOfferNone</offertype>
+		<itemlevel>0</itemlevel>
+		<sellable>true</sellable>
+		<tradeable>true</tradeable>
+		<destroyable>true</destroyable>
+		<sellcostoverride>
+			<capitalresource quantity="7">cCapResCoin</capitalresource>
+		</sellcostoverride>
+		<rarity>cRarityJunk</rarity>
+		<budgetcost>1</budgetcost>
+		<contentpack>1</contentpack>
+	</material>
+	<material name="FillerLoot_RamHead2H_03">
+		<icon>UserInterface\Icons\Equipment\RamHead2H_C003_ua</icon>
+		<rollovertextid>60580</rollovertextid>
+		<displaynameid>800985</displaynameid>
+		<stackable/>
+		<stacksize>1</stacksize>
+		<offertype>eOfferNone</offertype>
+		<itemlevel>0</itemlevel>
+		<sellable>true</sellable>
+		<tradeable>true</tradeable>
+		<destroyable>true</destroyable>
+		<sellcostoverride>
+			<capitalresource quantity="15">cCapResCoin</capitalresource>
+		</sellcostoverride>
+		<rarity>cRarityJunk</rarity>
+		<budgetcost>1</budgetcost>
+		<contentpack>1</contentpack>
+	</material>
+	<material name="FillerLoot_Scout1H_01">
+		<icon>UserInterface\Icons\Equipment\Scout1H_C001_ua</icon>
+		<rollovertextid>60580</rollovertextid>
+		<displaynameid>800987</displaynameid>
+		<stackable/>
+		<stacksize>1</stacksize>
+		<offertype>eOfferNone</offertype>
+		<itemlevel>0</itemlevel>
+		<sellable>true</sellable>
+		<tradeable>true</tradeable>
+		<destroyable>true</destroyable>
+		<sellcostoverride>
+			<capitalresource quantity="53">cCapResCoin</capitalresource>
+		</sellcostoverride>
+		<rarity>cRarityJunk</rarity>
+		<budgetcost>1</budgetcost>
+		<contentpack>1</contentpack>
+	</material>
+	<material name="FillerLoot_Shield1H_01">
+		<icon>UserInterface\Icons\Equipment\Shield1H_C001_ua</icon>
+		<rollovertextid>60580</rollovertextid>
+		<displaynameid>800989</displaynameid>
+		<stackable/>
+		<stacksize>1</stacksize>
+		<offertype>eOfferNone</offertype>
+		<itemlevel>0</itemlevel>
+		<sellable>true</sellable>
+		<tradeable>true</tradeable>
+		<destroyable>true</destroyable>
+		<sellcostoverride>
+			<capitalresource quantity="5">cCapResCoin</capitalresource>
+		</sellcostoverride>
+		<rarity>cRarityJunk</rarity>
+		<budgetcost>1</budgetcost>
+		<contentpack>1</contentpack>
+	</material>
+	<material name="FillerLoot_Shield1H_02">
+		<icon>UserInterface\Icons\Equipment\Shield1H_C002_ua</icon>
+		<rollovertextid>60580</rollovertextid>
+		<displaynameid>800991</displaynameid>
+		<stackable/>
+		<stacksize>1</stacksize>
+		<offertype>eOfferNone</offertype>
+		<itemlevel>0</itemlevel>
+		<sellable>true</sellable>
+		<tradeable>true</tradeable>
+		<destroyable>true</destroyable>
+		<sellcostoverride>
+			<capitalresource quantity="6">cCapResCoin</capitalresource>
+		</sellcostoverride>
+		<rarity>cRarityJunk</rarity>
+		<budgetcost>1</budgetcost>
+		<contentpack>1</contentpack>
+	</material>
+	<material name="FillerLoot_Shield1H_03">
+		<icon>UserInterface\Icons\Equipment\Shield1H_C003_ua</icon>
+		<rollovertextid>60580</rollovertextid>
+		<displaynameid>800993</displaynameid>
+		<stackable/>
+		<stacksize>1</stacksize>
+		<offertype>eOfferNone</offertype>
+		<itemlevel>0</itemlevel>
+		<sellable>true</sellable>
+		<tradeable>true</tradeable>
+		<destroyable>true</destroyable>
+		<sellcostoverride>
+			<capitalresource quantity="4">cCapResCoin</capitalresource>
+		</sellcostoverride>
+		<rarity>cRarityJunk</rarity>
+		<budgetcost>1</budgetcost>
+		<contentpack>1</contentpack>
+	</material>
+	<material name="FillerLoot_Spear1H_01">
+		<icon>UserInterface\Icons\Equipment\Spear1H_C001_ua</icon>
+		<rollovertextid>60580</rollovertextid>
+		<displaynameid>800957</displaynameid>
+		<stackable/>
+		<stacksize>1</stacksize>
+		<offertype>eOfferNone</offertype>
+		<itemlevel>0</itemlevel>
+		<sellable>true</sellable>
+		<tradeable>true</tradeable>
+		<destroyable>true</destroyable>
+		<sellcostoverride>
+			<capitalresource quantity="5">cCapResCoin</capitalresource>
+		</sellcostoverride>
+		<rarity>cRarityJunk</rarity>
+		<budgetcost>1</budgetcost>
+		<contentpack>1</contentpack>
+	</material>
+	<material name="FillerLoot_Spear1H_02">
+		<icon>UserInterface\Icons\Equipment\Spear1H_C002_ua</icon>
+		<rollovertextid>60580</rollovertextid>
+		<displaynameid>800959</displaynameid>
+		<stackable/>
+		<stacksize>1</stacksize>
+		<offertype>eOfferNone</offertype>
+		<itemlevel>0</itemlevel>
+		<sellable>true</sellable>
+		<tradeable>true</tradeable>
+		<destroyable>true</destroyable>
+		<sellcostoverride>
+			<capitalresource quantity="6">cCapResCoin</capitalresource>
+		</sellcostoverride>
+		<rarity>cRarityJunk</rarity>
+		<budgetcost>1</budgetcost>
+		<contentpack>1</contentpack>
+	</material>
+	<material name="FillerLoot_Spear1H_03">
+		<icon>UserInterface\Icons\Equipment\Spear1H_C003_ua</icon>
+		<rollovertextid>60580</rollovertextid>
+		<displaynameid>800961</displaynameid>
+		<stackable/>
+		<stacksize>1</stacksize>
+		<offertype>eOfferNone</offertype>
+		<itemlevel>0</itemlevel>
+		<sellable>true</sellable>
+		<tradeable>true</tradeable>
+		<destroyable>true</destroyable>
+		<sellcostoverride>
+			<capitalresource quantity="8">cCapResCoin</capitalresource>
+		</sellcostoverride>
+		<rarity>cRarityJunk</rarity>
+		<budgetcost>1</budgetcost>
+		<contentpack>1</contentpack>
+	</material>
+	<material name="FillerLoot_Spear2H_01">
+		<icon>UserInterface\Icons\Equipment\Spear2H_C001_ua</icon>
+		<rollovertextid>60580</rollovertextid>
+		<displaynameid>800927</displaynameid>
+		<stackable/>
+		<stacksize>1</stacksize>
+		<offertype>eOfferNone</offertype>
+		<itemlevel>0</itemlevel>
+		<sellable>true</sellable>
+		<tradeable>true</tradeable>
+		<destroyable>true</destroyable>
+		<sellcostoverride>
+			<capitalresource quantity="5">cCapResCoin</capitalresource>
+		</sellcostoverride>
+		<rarity>cRarityJunk</rarity>
+		<budgetcost>1</budgetcost>
+		<contentpack>1</contentpack>
+	</material>
+	<material name="FillerLoot_Spear2H_02">
+		<icon>UserInterface\Icons\Equipment\Spear2H_C002_ua</icon>
+		<rollovertextid>60580</rollovertextid>
+		<displaynameid>800929</displaynameid>
+		<stackable/>
+		<stacksize>1</stacksize>
+		<offertype>eOfferNone</offertype>
+		<itemlevel>0</itemlevel>
+		<sellable>true</sellable>
+		<tradeable>true</tradeable>
+		<destroyable>true</destroyable>
+		<sellcostoverride>
+			<capitalresource quantity="4">cCapResCoin</capitalresource>
+		</sellcostoverride>
+		<rarity>cRarityJunk</rarity>
+		<budgetcost>1</budgetcost>
+		<contentpack>1</contentpack>
+	</material>
+	<material name="FillerLoot_Spear2H_03">
+		<icon>UserInterface\Icons\Equipment\Spear2H_C003_ua</icon>
+		<rollovertextid>60580</rollovertextid>
+		<displaynameid>800931</displaynameid>
+		<stackable/>
+		<stacksize>1</stacksize>
+		<offertype>eOfferNone</offertype>
+		<itemlevel>0</itemlevel>
+		<sellable>true</sellable>
+		<tradeable>true</tradeable>
+		<destroyable>true</destroyable>
+		<sellcostoverride>
+			<capitalresource quantity="42">cCapResCoin</capitalresource>
+		</sellcostoverride>
+		<rarity>cRarityJunk</rarity>
+		<budgetcost>1</budgetcost>
+		<contentpack>1</contentpack>
+	</material>
+	<material name="FillerLoot_Staff2H_01">
+		<icon>UserInterface\Icons\Equipment\Staff2H_C001_ua</icon>
+		<rollovertextid>60580</rollovertextid>
+		<displaynameid>800975</displaynameid>
+		<stackable/>
+		<stacksize>1</stacksize>
+		<offertype>eOfferNone</offertype>
+		<itemlevel>0</itemlevel>
+		<sellable>true</sellable>
+		<tradeable>true</tradeable>
+		<destroyable>true</destroyable>
+		<sellcostoverride>
+			<capitalresource quantity="5">cCapResCoin</capitalresource>
+		</sellcostoverride>
+		<rarity>cRarityJunk</rarity>
+		<budgetcost>1</budgetcost>
+		<contentpack>1</contentpack>
+	</material>
+	<material name="FillerLoot_Staff2H_02">
+		<icon>UserInterface\Icons\Equipment\Staff2H_C002_ua</icon>
+		<rollovertextid>60580</rollovertextid>
+		<displaynameid>800977</displaynameid>
+		<stackable/>
+		<stacksize>1</stacksize>
+		<offertype>eOfferNone</offertype>
+		<itemlevel>0</itemlevel>
+		<sellable>true</sellable>
+		<tradeable>true</tradeable>
+		<destroyable>true</destroyable>
+		<sellcostoverride>
+			<capitalresource quantity="5">cCapResCoin</capitalresource>
+		</sellcostoverride>
+		<rarity>cRarityJunk</rarity>
+		<budgetcost>1</budgetcost>
+		<contentpack>1</contentpack>
+	</material>
+	<material name="FillerLoot_Staff2H_03">
+		<icon>UserInterface\Icons\Equipment\Staff2H_C003_ua</icon>
+		<rollovertextid>60580</rollovertextid>
+		<displaynameid>800979</displaynameid>
+		<stackable/>
+		<stacksize>1</stacksize>
+		<offertype>eOfferNone</offertype>
+		<itemlevel>0</itemlevel>
+		<sellable>true</sellable>
+		<tradeable>true</tradeable>
+		<destroyable>true</destroyable>
+		<sellcostoverride>
+			<capitalresource quantity="15">cCapResCoin</capitalresource>
+		</sellcostoverride>
+		<rarity>cRarityJunk</rarity>
+		<budgetcost>1</budgetcost>
+		<contentpack>1</contentpack>
+	</material>
+	<material name="FillerLoot_Sword1H_01">
+		<icon>UserInterface\Icons\Equipment\Sword1H_C001_ua</icon>
+		<rollovertextid>60580</rollovertextid>
+		<displaynameid>801019</displaynameid>
+		<stackable/>
+		<stacksize>1</stacksize>
+		<offertype>eOfferNone</offertype>
+		<itemlevel>0</itemlevel>
+		<sellable>true</sellable>
+		<tradeable>true</tradeable>
+		<destroyable>true</destroyable>
+		<sellcostoverride>
+			<capitalresource quantity="4">cCapResCoin</capitalresource>
+		</sellcostoverride>
+		<rarity>cRarityJunk</rarity>
+		<budgetcost>1</budgetcost>
+		<contentpack>1</contentpack>
+	</material>
+	<material name="FillerLoot_Sword1H_02">
+		<icon>UserInterface\Icons\Equipment\Sword1H_C002_ua</icon>
+		<rollovertextid>60580</rollovertextid>
+		<displaynameid>801021</displaynameid>
+		<stackable/>
+		<stacksize>1</stacksize>
+		<offertype>eOfferNone</offertype>
+		<itemlevel>0</itemlevel>
+		<sellable>true</sellable>
+		<tradeable>true</tradeable>
+		<destroyable>true</destroyable>
+		<sellcostoverride>
+			<capitalresource quantity="7">cCapResCoin</capitalresource>
+		</sellcostoverride>
+		<rarity>cRarityJunk</rarity>
+		<budgetcost>1</budgetcost>
+		<contentpack>1</contentpack>
+	</material>
+	<material name="FillerLoot_Sword1H_03">
+		<icon>UserInterface\Icons\Equipment\Sword1H_C003_ua</icon>
+		<rollovertextid>60580</rollovertextid>
+		<displaynameid>801023</displaynameid>
+		<stackable/>
+		<stacksize>1</stacksize>
+		<offertype>eOfferNone</offertype>
+		<itemlevel>0</itemlevel>
+		<sellable>true</sellable>
+		<tradeable>true</tradeable>
+		<destroyable>true</destroyable>
+		<sellcostoverride>
+			<capitalresource quantity="33">cCapResCoin</capitalresource>
+		</sellcostoverride>
+		<rarity>cRarityJunk</rarity>
+		<budgetcost>1</budgetcost>
+		<contentpack>1</contentpack>
+	</material>
+	<material name="FillerLoot_Tool1H_01">
+		<icon>UserInterface\Icons\Equipment\Tool1H_C001_ua</icon>
+		<rollovertextid>60580</rollovertextid>
+		<displaynameid>801025</displaynameid>
+		<stackable/>
+		<stacksize>1</stacksize>
+		<offertype>eOfferNone</offertype>
+		<itemlevel>0</itemlevel>
+		<sellable>true</sellable>
+		<tradeable>true</tradeable>
+		<destroyable>true</destroyable>
+		<sellcostoverride>
+			<capitalresource quantity="5">cCapResCoin</capitalresource>
+		</sellcostoverride>
+		<rarity>cRarityJunk</rarity>
+		<budgetcost>1</budgetcost>
+		<contentpack>1</contentpack>
+	</material>
+	<material name="FillerLoot_Tool1H_02">
+		<icon>UserInterface\Icons\Equipment\Tool1H_C002_ua</icon>
+		<rollovertextid>60580</rollovertextid>
+		<displaynameid>801027</displaynameid>
+		<stackable/>
+		<stacksize>1</stacksize>
+		<offertype>eOfferNone</offertype>
+		<itemlevel>0</itemlevel>
+		<sellable>true</sellable>
+		<tradeable>true</tradeable>
+		<destroyable>true</destroyable>
+		<sellcostoverride>
+			<capitalresource quantity="6">cCapResCoin</capitalresource>
+		</sellcostoverride>
+		<rarity>cRarityJunk</rarity>
+		<budgetcost>1</budgetcost>
+		<contentpack>1</contentpack>
+	</material>
+	<material name="FillerLoot_Tool1H_03">
+		<icon>UserInterface\Icons\Equipment\Tool1H_C003_ua</icon>
+		<rollovertextid>60580</rollovertextid>
+		<displaynameid>801029</displaynameid>
+		<stackable/>
+		<stacksize>1</stacksize>
+		<offertype>eOfferNone</offertype>
+		<itemlevel>0</itemlevel>
+		<sellable>true</sellable>
+		<tradeable>true</tradeable>
+		<destroyable>true</destroyable>
+		<sellcostoverride>
+			<capitalresource quantity="8">cCapResCoin</capitalresource>
+		</sellcostoverride>
+		<rarity>cRarityJunk</rarity>
+		<budgetcost>1</budgetcost>
+		<contentpack>1</contentpack>
+	</material>
+	<material name="FillerLootNew_011">
+		<icon>UserInterface\Icons\FillerLoot\Aloe_ua</icon>
+		<rollovertextid>60580</rollovertextid>
+		<displaynameid>801477</displaynameid>
+		<stacksize>1</stacksize>
+		<offertype>eOfferNone</offertype>
+		<itemlevel>0</itemlevel>
+		<sellable>true</sellable>
+		<tradeable>true</tradeable>
+		<destroyable>true</destroyable>
+		<sellcostoverride>
+			<capitalresource quantity="1">cCapResCoin</capitalresource>
+		</sellcostoverride>
+		<rarity>cRarityJunk</rarity>
+		<budgetcost>1</budgetcost>
+		<contentpack>1</contentpack>
+	</material>
+	<material name="FillerLootNew_012">
+		<icon>UserInterface\Icons\FillerLoot\Aloe_ua</icon>
+		<rollovertextid>60580</rollovertextid>
+		<displaynameid>801475</displaynameid>
+		<stacksize>1</stacksize>
+		<offertype>eOfferNone</offertype>
+		<itemlevel>0</itemlevel>
+		<sellable>true</sellable>
+		<tradeable>true</tradeable>
+		<destroyable>true</destroyable>
+		<sellcostoverride>
+			<capitalresource quantity="2">cCapResCoin</capitalresource>
+		</sellcostoverride>
+		<rarity>cRarityJunk</rarity>
+		<budgetcost>1</budgetcost>
+		<contentpack>1</contentpack>
+	</material>
+	<material name="FillerLootNew_013">
+		<icon>UserInterface\Icons\FillerLoot\Aloe_ua</icon>
+		<rollovertextid>60580</rollovertextid>
+		<displaynameid>801473</displaynameid>
+		<stacksize>1</stacksize>
+		<offertype>eOfferNone</offertype>
+		<itemlevel>0</itemlevel>
+		<sellable>true</sellable>
+		<tradeable>true</tradeable>
+		<destroyable>true</destroyable>
+		<sellcostoverride>
+			<capitalresource quantity="7">cCapResCoin</capitalresource>
+		</sellcostoverride>
+		<rarity>cRarityJunk</rarity>
+		<budgetcost>1</budgetcost>
+		<contentpack>1</contentpack>
+	</material>
+	<material name="FillerLootNew_014">
+		<icon>UserInterface\Icons\FillerLoot\Aloe_ua</icon>
+		<rollovertextid>60580</rollovertextid>
+		<displaynameid>801478</displaynameid>
+		<stacksize>1</stacksize>
+		<offertype>eOfferNone</offertype>
+		<itemlevel>0</itemlevel>
+		<sellable>true</sellable>
+		<tradeable>true</tradeable>
+		<destroyable>true</destroyable>
+		<sellcostoverride>
+			<capitalresource quantity="9">cCapResCoin</capitalresource>
+		</sellcostoverride>
+		<rarity>cRarityJunk</rarity>
+		<budgetcost>1</budgetcost>
+		<contentpack>1</contentpack>
+	</material>
+	<material name="FillerLootNew_015">
+		<icon>UserInterface\Icons\FillerLoot\Aloe_ua</icon>
+		<rollovertextid>60580</rollovertextid>
+		<displaynameid>801479</displaynameid>
+		<stacksize>1</stacksize>
+		<offertype>eOfferNone</offertype>
+		<itemlevel>0</itemlevel>
+		<sellable>true</sellable>
+		<tradeable>true</tradeable>
+		<destroyable>true</destroyable>
+		<sellcostoverride>
+			<capitalresource quantity="12">cCapResCoin</capitalresource>
+		</sellcostoverride>
+		<rarity>cRarityJunk</rarity>
+		<budgetcost>1</budgetcost>
+		<contentpack>1</contentpack>
+	</material>
+	<material name="FillerLootNew_016">
+		<icon>UserInterface\Icons\FillerLoot\Aloe_ua</icon>
+		<rollovertextid>60580</rollovertextid>
+		<displaynameid>66327</displaynameid>
+		<stacksize>1</stacksize>
+		<offertype>eOfferNone</offertype>
+		<itemlevel>0</itemlevel>
+		<sellable>true</sellable>
+		<tradeable>true</tradeable>
+		<destroyable>true</destroyable>
+		<sellcostoverride>
+			<capitalresource quantity="20">cCapResCoin</capitalresource>
+		</sellcostoverride>
+		<rarity>cRarityJunk</rarity>
+		<budgetcost>1</budgetcost>
+		<contentpack>1</contentpack>
+	</material>
+	<material name="FillerLootNew_021">
+		<icon>UserInterface\Icons\FillerLoot\Bust_ua</icon>
+		<rollovertextid>60580</rollovertextid>
+		<displaynameid>801480</displaynameid>
+		<stacksize>1</stacksize>
+		<offertype>eOfferNone</offertype>
+		<itemlevel>0</itemlevel>
+		<sellable>true</sellable>
+		<tradeable>true</tradeable>
+		<destroyable>true</destroyable>
+		<sellcostoverride>
+			<capitalresource quantity="10">cCapResCoin</capitalresource>
+		</sellcostoverride>
+		<rarity>cRarityJunk</rarity>
+		<budgetcost>1</budgetcost>
+		<contentpack>1</contentpack>
+	</material>
+	<material name="FillerLootNew_022">
+		<icon>UserInterface\Icons\FillerLoot\Bust_ua</icon>
+		<rollovertextid>60580</rollovertextid>
+		<displaynameid>801481</displaynameid>
+		<stacksize>1</stacksize>
+		<offertype>eOfferNone</offertype>
+		<itemlevel>0</itemlevel>
+		<sellable>true</sellable>
+		<tradeable>true</tradeable>
+		<destroyable>true</destroyable>
+		<sellcostoverride>
+			<capitalresource quantity="15">cCapResCoin</capitalresource>
+		</sellcostoverride>
+		<rarity>cRarityJunk</rarity>
+		<budgetcost>1</budgetcost>
+		<contentpack>1</contentpack>
+	</material>
+	<material name="FillerLootNew_023">
+		<icon>UserInterface\Icons\FillerLoot\Bust_ua</icon>
+		<rollovertextid>60580</rollovertextid>
+		<displaynameid>801482</displaynameid>
+		<stacksize>1</stacksize>
+		<offertype>eOfferNone</offertype>
+		<itemlevel>0</itemlevel>
+		<sellable>true</sellable>
+		<tradeable>true</tradeable>
+		<destroyable>true</destroyable>
+		<sellcostoverride>
+			<capitalresource quantity="20">cCapResCoin</capitalresource>
+		</sellcostoverride>
+		<rarity>cRarityJunk</rarity>
+		<budgetcost>1</budgetcost>
+		<contentpack>1</contentpack>
+	</material>
+	<material name="FillerLootNew_024">
+		<icon>UserInterface\Icons\FillerLoot\Bust_ua</icon>
+		<rollovertextid>60580</rollovertextid>
+		<displaynameid>801483</displaynameid>
+		<stacksize>1</stacksize>
+		<offertype>eOfferNone</offertype>
+		<itemlevel>0</itemlevel>
+		<sellable>true</sellable>
+		<tradeable>true</tradeable>
+		<destroyable>true</destroyable>
+		<sellcostoverride>
+			<capitalresource quantity="25">cCapResCoin</capitalresource>
+		</sellcostoverride>
+		<rarity>cRarityJunk</rarity>
+		<budgetcost>1</budgetcost>
+		<contentpack>1</contentpack>
+	</material>
+	<material name="FillerLootNew_025">
+		<icon>UserInterface\Icons\FillerLoot\Bust_ua</icon>
+		<rollovertextid>60580</rollovertextid>
+		<displaynameid>801484</displaynameid>
+		<stacksize>1</stacksize>
+		<offertype>eOfferNone</offertype>
+		<itemlevel>0</itemlevel>
+		<sellable>true</sellable>
+		<tradeable>true</tradeable>
+		<destroyable>true</destroyable>
+		<sellcostoverride>
+			<capitalresource quantity="50">cCapResCoin</capitalresource>
+		</sellcostoverride>
+		<rarity>cRarityJunk</rarity>
+		<budgetcost>1</budgetcost>
+		<contentpack>1</contentpack>
+	</material>
+	<material name="FillerLootNew_026">
+		<icon>UserInterface\Icons\FillerLoot\Bust_ua</icon>
+		<rollovertextid>60580</rollovertextid>
+		<displaynameid>801485</displaynameid>
+		<stacksize>1</stacksize>
+		<offertype>eOfferNone</offertype>
+		<itemlevel>0</itemlevel>
+		<sellable>true</sellable>
+		<tradeable>true</tradeable>
+		<destroyable>true</destroyable>
+		<sellcostoverride>
+			<capitalresource quantity="100">cCapResCoin</capitalresource>
+		</sellcostoverride>
+		<rarity>cRarityJunk</rarity>
+		<budgetcost>1</budgetcost>
+		<contentpack>1</contentpack>
+	</material>
+	<material name="FillerLootNew_031">
+		<icon>UserInterface\Icons\FillerLoot\Candles_ua</icon>
+		<rollovertextid>60580</rollovertextid>
+		<displaynameid>801492</displaynameid>
+		<stacksize>1</stacksize>
+		<offertype>eOfferNone</offertype>
+		<itemlevel>0</itemlevel>
+		<sellable>true</sellable>
+		<tradeable>true</tradeable>
+		<destroyable>true</destroyable>
+		<sellcostoverride>
+			<capitalresource quantity="1">cCapResCoin</capitalresource>
+		</sellcostoverride>
+		<rarity>cRarityJunk</rarity>
+		<budgetcost>1</budgetcost>
+		<contentpack>1</contentpack>
+	</material>
+	<material name="FillerLootNew_032">
+		<icon>UserInterface\Icons\FillerLoot\Candles_ua</icon>
+		<rollovertextid>60580</rollovertextid>
+		<displaynameid>801493</displaynameid>
+		<stacksize>1</stacksize>
+		<offertype>eOfferNone</offertype>
+		<itemlevel>0</itemlevel>
+		<sellable>true</sellable>
+		<tradeable>true</tradeable>
+		<destroyable>true</destroyable>
+		<sellcostoverride>
+			<capitalresource quantity="4">cCapResCoin</capitalresource>
+		</sellcostoverride>
+		<rarity>cRarityJunk</rarity>
+		<budgetcost>1</budgetcost>
+		<contentpack>1</contentpack>
+	</material>
+	<material name="FillerLootNew_033">
+		<icon>UserInterface\Icons\FillerLoot\Candles_ua</icon>
+		<rollovertextid>60580</rollovertextid>
+		<displaynameid>801494</displaynameid>
+		<stacksize>1</stacksize>
+		<offertype>eOfferNone</offertype>
+		<itemlevel>0</itemlevel>
+		<sellable>true</sellable>
+		<tradeable>true</tradeable>
+		<destroyable>true</destroyable>
+		<sellcostoverride>
+			<capitalresource quantity="6">cCapResCoin</capitalresource>
+		</sellcostoverride>
+		<rarity>cRarityJunk</rarity>
+		<budgetcost>1</budgetcost>
+		<contentpack>1</contentpack>
+	</material>
+	<material name="FillerLootNew_034">
+		<icon>UserInterface\Icons\FillerLoot\Candles_ua</icon>
+		<rollovertextid>60580</rollovertextid>
+		<displaynameid>801495</displaynameid>
+		<stacksize>1</stacksize>
+		<offertype>eOfferNone</offertype>
+		<itemlevel>0</itemlevel>
+		<sellable>true</sellable>
+		<tradeable>true</tradeable>
+		<destroyable>true</destroyable>
+		<sellcostoverride>
+			<capitalresource quantity="7">cCapResCoin</capitalresource>
+		</sellcostoverride>
+		<rarity>cRarityJunk</rarity>
+		<budgetcost>1</budgetcost>
+		<contentpack>1</contentpack>
+	</material>
+	<material name="FillerLootNew_035">
+		<icon>UserInterface\Icons\FillerLoot\Candles_ua</icon>
+		<rollovertextid>60580</rollovertextid>
+		<displaynameid>801496</displaynameid>
+		<stacksize>1</stacksize>
+		<offertype>eOfferNone</offertype>
+		<itemlevel>0</itemlevel>
+		<sellable>true</sellable>
+		<tradeable>true</tradeable>
+		<destroyable>true</destroyable>
+		<sellcostoverride>
+			<capitalresource quantity="9">cCapResCoin</capitalresource>
+		</sellcostoverride>
+		<rarity>cRarityJunk</rarity>
+		<budgetcost>1</budgetcost>
+		<contentpack>1</contentpack>
+	</material>
+	<material name="FillerLootNew_036">
+		<icon>UserInterface\Icons\FillerLoot\Candles_ua</icon>
+		<rollovertextid>60580</rollovertextid>
+		<displaynameid>801497</displaynameid>
+		<stacksize>1</stacksize>
+		<offertype>eOfferNone</offertype>
+		<itemlevel>0</itemlevel>
+		<sellable>true</sellable>
+		<tradeable>true</tradeable>
+		<destroyable>true</destroyable>
+		<sellcostoverride>
+			<capitalresource quantity="11">cCapResCoin</capitalresource>
+		</sellcostoverride>
+		<rarity>cRarityJunk</rarity>
+		<budgetcost>1</budgetcost>
+		<contentpack>1</contentpack>
+	</material>
+	<material name="FillerLootNew_041">
+		<icon>UserInterface\Icons\FillerLoot\Cheese_ua</icon>
+		<rollovertextid>60580</rollovertextid>
+		<displaynameid>801504</displaynameid>
+		<stacksize>1</stacksize>
+		<offertype>eOfferNone</offertype>
+		<itemlevel>0</itemlevel>
+		<sellable>true</sellable>
+		<tradeable>true</tradeable>
+		<destroyable>true</destroyable>
+		<sellcostoverride>
+			<capitalresource quantity="2">cCapResCoin</capitalresource>
+		</sellcostoverride>
+		<rarity>cRarityJunk</rarity>
+		<budgetcost>1</budgetcost>
+		<contentpack>1</contentpack>
+	</material>
+	<material name="FillerLootNew_042">
+		<icon>UserInterface\Icons\FillerLoot\Cheese_ua</icon>
+		<rollovertextid>60580</rollovertextid>
+		<displaynameid>801505</displaynameid>
+		<stacksize>1</stacksize>
+		<offertype>eOfferNone</offertype>
+		<itemlevel>0</itemlevel>
+		<sellable>true</sellable>
+		<tradeable>true</tradeable>
+		<destroyable>true</destroyable>
+		<sellcostoverride>
+			<capitalresource quantity="3">cCapResCoin</capitalresource>
+		</sellcostoverride>
+		<rarity>cRarityJunk</rarity>
+		<budgetcost>1</budgetcost>
+		<contentpack>1</contentpack>
+	</material>
+	<material name="FillerLootNew_043">
+		<icon>UserInterface\Icons\FillerLoot\Cheese_ua</icon>
+		<rollovertextid>60580</rollovertextid>
+		<displaynameid>801506</displaynameid>
+		<stacksize>1</stacksize>
+		<offertype>eOfferNone</offertype>
+		<itemlevel>0</itemlevel>
+		<sellable>true</sellable>
+		<tradeable>true</tradeable>
+		<destroyable>true</destroyable>
+		<sellcostoverride>
+			<capitalresource quantity="5">cCapResCoin</capitalresource>
+		</sellcostoverride>
+		<rarity>cRarityJunk</rarity>
+		<budgetcost>1</budgetcost>
+		<contentpack>1</contentpack>
+	</material>
+	<material name="FillerLootNew_044">
+		<icon>UserInterface\Icons\FillerLoot\Cheese_ua</icon>
+		<rollovertextid>60580</rollovertextid>
+		<displaynameid>801507</displaynameid>
+		<stacksize>1</stacksize>
+		<offertype>eOfferNone</offertype>
+		<itemlevel>0</itemlevel>
+		<sellable>true</sellable>
+		<tradeable>true</tradeable>
+		<destroyable>true</destroyable>
+		<sellcostoverride>
+			<capitalresource quantity="10">cCapResCoin</capitalresource>
+		</sellcostoverride>
+		<rarity>cRarityJunk</rarity>
+		<budgetcost>1</budgetcost>
+		<contentpack>1</contentpack>
+	</material>
+	<material name="FillerLootNew_045">
+		<icon>UserInterface\Icons\FillerLoot\Cheese_ua</icon>
+		<rollovertextid>60580</rollovertextid>
+		<displaynameid>801508</displaynameid>
+		<stacksize>1</stacksize>
+		<offertype>eOfferNone</offertype>
+		<itemlevel>0</itemlevel>
+		<sellable>true</sellable>
+		<tradeable>true</tradeable>
+		<destroyable>true</destroyable>
+		<sellcostoverride>
+			<capitalresource quantity="32">cCapResCoin</capitalresource>
+		</sellcostoverride>
+		<rarity>cRarityJunk</rarity>
+		<budgetcost>1</budgetcost>
+		<contentpack>1</contentpack>
+	</material>
+	<material name="FillerLootNew_046">
+		<icon>UserInterface\Icons\FillerLoot\Cheese_ua</icon>
+		<rollovertextid>60580</rollovertextid>
+		<displaynameid>801509</displaynameid>
+		<stacksize>1</stacksize>
+		<offertype>eOfferNone</offertype>
+		<itemlevel>0</itemlevel>
+		<sellable>true</sellable>
+		<tradeable>true</tradeable>
+		<destroyable>true</destroyable>
+		<sellcostoverride>
+			<capitalresource quantity="42">cCapResCoin</capitalresource>
+		</sellcostoverride>
+		<rarity>cRarityJunk</rarity>
+		<budgetcost>1</budgetcost>
+		<contentpack>1</contentpack>
+	</material>
+	<material name="FillerLootNew_051">
+		<icon>UserInterface\Icons\FillerLoot\Chickens_ua</icon>
+		<rollovertextid>60580</rollovertextid>
+		<displaynameid>801516</displaynameid>
+		<stacksize>1</stacksize>
+		<offertype>eOfferNone</offertype>
+		<itemlevel>0</itemlevel>
+		<sellable>true</sellable>
+		<tradeable>true</tradeable>
+		<destroyable>true</destroyable>
+		<sellcostoverride>
+			<capitalresource quantity="3">cCapResCoin</capitalresource>
+		</sellcostoverride>
+		<rarity>cRarityJunk</rarity>
+		<budgetcost>1</budgetcost>
+		<contentpack>1</contentpack>
+	</material>
+	<material name="FillerLootNew_052">
+		<icon>UserInterface\Icons\FillerLoot\Chickens_ua</icon>
+		<rollovertextid>60580</rollovertextid>
+		<displaynameid>801517</displaynameid>
+		<stacksize>1</stacksize>
+		<offertype>eOfferNone</offertype>
+		<itemlevel>0</itemlevel>
+		<sellable>true</sellable>
+		<tradeable>true</tradeable>
+		<destroyable>true</destroyable>
+		<sellcostoverride>
+			<capitalresource quantity="4">cCapResCoin</capitalresource>
+		</sellcostoverride>
+		<rarity>cRarityJunk</rarity>
+		<budgetcost>1</budgetcost>
+		<contentpack>1</contentpack>
+	</material>
+	<material name="FillerLootNew_053">
+		<icon>UserInterface\Icons\FillerLoot\Chickens_ua</icon>
+		<rollovertextid>60580</rollovertextid>
+		<displaynameid>801518</displaynameid>
+		<stacksize>1</stacksize>
+		<offertype>eOfferNone</offertype>
+		<itemlevel>0</itemlevel>
+		<sellable>true</sellable>
+		<tradeable>true</tradeable>
+		<destroyable>true</destroyable>
+		<sellcostoverride>
+			<capitalresource quantity="6">cCapResCoin</capitalresource>
+		</sellcostoverride>
+		<rarity>cRarityJunk</rarity>
+		<budgetcost>1</budgetcost>
+		<contentpack>1</contentpack>
+	</material>
+	<material name="FillerLootNew_054">
+		<icon>UserInterface\Icons\FillerLoot\Chickens_ua</icon>
+		<rollovertextid>60580</rollovertextid>
+		<displaynameid>801519</displaynameid>
+		<stacksize>1</stacksize>
+		<offertype>eOfferNone</offertype>
+		<itemlevel>0</itemlevel>
+		<sellable>true</sellable>
+		<tradeable>true</tradeable>
+		<destroyable>true</destroyable>
+		<sellcostoverride>
+			<capitalresource quantity="10">cCapResCoin</capitalresource>
+		</sellcostoverride>
+		<rarity>cRarityJunk</rarity>
+		<budgetcost>1</budgetcost>
+		<contentpack>1</contentpack>
+	</material>
+	<material name="FillerLootNew_055">
+		<icon>UserInterface\Icons\FillerLoot\Chickens_ua</icon>
+		<rollovertextid>60580</rollovertextid>
+		<displaynameid>801520</displaynameid>
+		<stacksize>1</stacksize>
+		<offertype>eOfferNone</offertype>
+		<itemlevel>0</itemlevel>
+		<sellable>true</sellable>
+		<tradeable>true</tradeable>
+		<destroyable>true</destroyable>
+		<sellcostoverride>
+			<capitalresource quantity="12">cCapResCoin</capitalresource>
+		</sellcostoverride>
+		<rarity>cRarityJunk</rarity>
+		<budgetcost>1</budgetcost>
+		<contentpack>1</contentpack>
+	</material>
+	<material name="FillerLootNew_056">
+		<icon>UserInterface\Icons\FillerLoot\Chickens_ua</icon>
+		<rollovertextid>60580</rollovertextid>
+		<displaynameid>801521</displaynameid>
+		<stacksize>1</stacksize>
+		<offertype>eOfferNone</offertype>
+		<itemlevel>0</itemlevel>
+		<sellable>true</sellable>
+		<tradeable>true</tradeable>
+		<destroyable>true</destroyable>
+		<sellcostoverride>
+			<capitalresource quantity="18">cCapResCoin</capitalresource>
+		</sellcostoverride>
+		<rarity>cRarityJunk</rarity>
+		<budgetcost>1</budgetcost>
+		<contentpack>1</contentpack>
+	</material>
+	<material name="FillerLootNew_061">
+		<icon>UserInterface\Icons\FillerLoot\Feathers_ua</icon>
+		<rollovertextid>60580</rollovertextid>
+		<displaynameid>801528</displaynameid>
+		<stacksize>1</stacksize>
+		<offertype>eOfferNone</offertype>
+		<itemlevel>0</itemlevel>
+		<sellable>true</sellable>
+		<tradeable>true</tradeable>
+		<destroyable>true</destroyable>
+		<sellcostoverride>
+			<capitalresource quantity="2">cCapResCoin</capitalresource>
+		</sellcostoverride>
+		<rarity>cRarityJunk</rarity>
+		<budgetcost>1</budgetcost>
+		<contentpack>1</contentpack>
+	</material>
+	<material name="FillerLootNew_062">
+		<icon>UserInterface\Icons\FillerLoot\Feathers_ua</icon>
+		<rollovertextid>60580</rollovertextid>
+		<displaynameid>801529</displaynameid>
+		<stacksize>1</stacksize>
+		<offertype>eOfferNone</offertype>
+		<itemlevel>0</itemlevel>
+		<sellable>true</sellable>
+		<tradeable>true</tradeable>
+		<destroyable>true</destroyable>
+		<sellcostoverride>
+			<capitalresource quantity="7">cCapResCoin</capitalresource>
+		</sellcostoverride>
+		<rarity>cRarityJunk</rarity>
+		<budgetcost>1</budgetcost>
+		<contentpack>1</contentpack>
+	</material>
+	<material name="FillerLootNew_063">
+		<icon>UserInterface\Icons\FillerLoot\Feathers_ua</icon>
+		<rollovertextid>60580</rollovertextid>
+		<displaynameid>801530</displaynameid>
+		<stacksize>1</stacksize>
+		<offertype>eOfferNone</offertype>
+		<itemlevel>0</itemlevel>
+		<sellable>true</sellable>
+		<tradeable>true</tradeable>
+		<destroyable>true</destroyable>
+		<sellcostoverride>
+			<capitalresource quantity="12">cCapResCoin</capitalresource>
+		</sellcostoverride>
+		<rarity>cRarityJunk</rarity>
+		<budgetcost>1</budgetcost>
+		<contentpack>1</contentpack>
+	</material>
+	<material name="FillerLootNew_064">
+		<icon>UserInterface\Icons\FillerLoot\Feathers_ua</icon>
+		<rollovertextid>60580</rollovertextid>
+		<displaynameid>801531</displaynameid>
+		<stacksize>1</stacksize>
+		<offertype>eOfferNone</offertype>
+		<itemlevel>0</itemlevel>
+		<sellable>true</sellable>
+		<tradeable>true</tradeable>
+		<destroyable>true</destroyable>
+		<sellcostoverride>
+			<capitalresource quantity="14">cCapResCoin</capitalresource>
+		</sellcostoverride>
+		<rarity>cRarityJunk</rarity>
+		<budgetcost>1</budgetcost>
+		<contentpack>1</contentpack>
+	</material>
+	<material name="FillerLootNew_065">
+		<icon>UserInterface\Icons\FillerLoot\Feathers_ua</icon>
+		<rollovertextid>60580</rollovertextid>
+		<displaynameid>801532</displaynameid>
+		<stacksize>1</stacksize>
+		<offertype>eOfferNone</offertype>
+		<itemlevel>0</itemlevel>
+		<sellable>true</sellable>
+		<tradeable>true</tradeable>
+		<destroyable>true</destroyable>
+		<sellcostoverride>
+			<capitalresource quantity="16">cCapResCoin</capitalresource>
+		</sellcostoverride>
+		<rarity>cRarityJunk</rarity>
+		<budgetcost>1</budgetcost>
+		<contentpack>1</contentpack>
+	</material>
+	<material name="FillerLootNew_066">
+		<icon>UserInterface\Icons\FillerLoot\Feathers_ua</icon>
+		<rollovertextid>60580</rollovertextid>
+		<displaynameid>801533</displaynameid>
+		<stacksize>1</stacksize>
+		<offertype>eOfferNone</offertype>
+		<itemlevel>0</itemlevel>
+		<sellable>true</sellable>
+		<tradeable>true</tradeable>
+		<destroyable>true</destroyable>
+		<sellcostoverride>
+			<capitalresource quantity="20">cCapResCoin</capitalresource>
+		</sellcostoverride>
+		<rarity>cRarityJunk</rarity>
+		<budgetcost>1</budgetcost>
+		<contentpack>1</contentpack>
+	</material>
+	<material name="FillerLootNew_071">
+		<icon>UserInterface\Icons\FillerLoot\Honey_ua</icon>
+		<rollovertextid>60580</rollovertextid>
+		<displaynameid>801540</displaynameid>
+		<stacksize>1</stacksize>
+		<offertype>eOfferNone</offertype>
+		<itemlevel>0</itemlevel>
+		<sellable>true</sellable>
+		<tradeable>true</tradeable>
+		<destroyable>true</destroyable>
+		<sellcostoverride>
+			<capitalresource quantity="1">cCapResCoin</capitalresource>
+		</sellcostoverride>
+		<rarity>cRarityJunk</rarity>
+		<budgetcost>1</budgetcost>
+		<contentpack>1</contentpack>
+	</material>
+	<material name="FillerLootNew_072">
+		<icon>UserInterface\Icons\FillerLoot\Honey_ua</icon>
+		<rollovertextid>60580</rollovertextid>
+		<displaynameid>801541</displaynameid>
+		<stacksize>1</stacksize>
+		<offertype>eOfferNone</offertype>
+		<itemlevel>0</itemlevel>
+		<sellable>true</sellable>
+		<tradeable>true</tradeable>
+		<destroyable>true</destroyable>
+		<sellcostoverride>
+			<capitalresource quantity="3">cCapResCoin</capitalresource>
+		</sellcostoverride>
+		<rarity>cRarityJunk</rarity>
+		<budgetcost>1</budgetcost>
+		<contentpack>1</contentpack>
+	</material>
+	<material name="FillerLootNew_073">
+		<icon>UserInterface\Icons\FillerLoot\Honey_ua</icon>
+		<rollovertextid>60580</rollovertextid>
+		<displaynameid>801542</displaynameid>
+		<stacksize>1</stacksize>
+		<offertype>eOfferNone</offertype>
+		<itemlevel>0</itemlevel>
+		<sellable>true</sellable>
+		<tradeable>true</tradeable>
+		<destroyable>true</destroyable>
+		<sellcostoverride>
+			<capitalresource quantity="6">cCapResCoin</capitalresource>
+		</sellcostoverride>
+		<rarity>cRarityJunk</rarity>
+		<budgetcost>1</budgetcost>
+		<contentpack>1</contentpack>
+	</material>
+	<material name="FillerLootNew_074">
+		<icon>UserInterface\Icons\FillerLoot\Honey_ua</icon>
+		<rollovertextid>60580</rollovertextid>
+		<displaynameid>801543</displaynameid>
+		<stacksize>1</stacksize>
+		<offertype>eOfferNone</offertype>
+		<itemlevel>0</itemlevel>
+		<sellable>true</sellable>
+		<tradeable>true</tradeable>
+		<destroyable>true</destroyable>
+		<sellcostoverride>
+			<capitalresource quantity="12">cCapResCoin</capitalresource>
+		</sellcostoverride>
+		<rarity>cRarityJunk</rarity>
+		<budgetcost>1</budgetcost>
+		<contentpack>1</contentpack>
+	</material>
+	<material name="FillerLootNew_075">
+		<icon>UserInterface\Icons\FillerLoot\Honey_ua</icon>
+		<rollovertextid>60580</rollovertextid>
+		<displaynameid>801544</displaynameid>
+		<stacksize>1</stacksize>
+		<offertype>eOfferNone</offertype>
+		<itemlevel>0</itemlevel>
+		<sellable>true</sellable>
+		<tradeable>true</tradeable>
+		<destroyable>true</destroyable>
+		<sellcostoverride>
+			<capitalresource quantity="15">cCapResCoin</capitalresource>
+		</sellcostoverride>
+		<rarity>cRarityJunk</rarity>
+		<budgetcost>1</budgetcost>
+		<contentpack>1</contentpack>
+	</material>
+	<material name="FillerLootNew_076">
+		<icon>UserInterface\Icons\FillerLoot\Honey_ua</icon>
+		<rollovertextid>60580</rollovertextid>
+		<displaynameid>801545</displaynameid>
+		<stacksize>1</stacksize>
+		<offertype>eOfferNone</offertype>
+		<itemlevel>0</itemlevel>
+		<sellable>true</sellable>
+		<tradeable>true</tradeable>
+		<destroyable>true</destroyable>
+		<sellcostoverride>
+			<capitalresource quantity="20">cCapResCoin</capitalresource>
+		</sellcostoverride>
+		<rarity>cRarityJunk</rarity>
+		<budgetcost>1</budgetcost>
+		<contentpack>1</contentpack>
+	</material>
+	<material name="FillerLootNew_081">
+		<icon>UserInterface\Icons\FillerLoot\Incense_ua</icon>
+		<rollovertextid>60580</rollovertextid>
+		<displaynameid>801555</displaynameid>
+		<stacksize>1</stacksize>
+		<offertype>eOfferNone</offertype>
+		<itemlevel>0</itemlevel>
+		<sellable>true</sellable>
+		<tradeable>true</tradeable>
+		<destroyable>true</destroyable>
+		<sellcostoverride>
+			<capitalresource quantity="1">cCapResCoin</capitalresource>
+		</sellcostoverride>
+		<rarity>cRarityJunk</rarity>
+		<budgetcost>1</budgetcost>
+		<contentpack>1</contentpack>
+	</material>
+	<material name="FillerLootNew_082">
+		<icon>UserInterface\Icons\FillerLoot\Incense_ua</icon>
+		<rollovertextid>60580</rollovertextid>
+		<displaynameid>801557</displaynameid>
+		<stacksize>1</stacksize>
+		<offertype>eOfferNone</offertype>
+		<itemlevel>0</itemlevel>
+		<sellable>true</sellable>
+		<tradeable>true</tradeable>
+		<destroyable>true</destroyable>
+		<sellcostoverride>
+			<capitalresource quantity="2">cCapResCoin</capitalresource>
+		</sellcostoverride>
+		<rarity>cRarityJunk</rarity>
+		<budgetcost>1</budgetcost>
+		<contentpack>1</contentpack>
+	</material>
+	<material name="FillerLootNew_083">
+		<icon>UserInterface\Icons\FillerLoot\Incense_ua</icon>
+		<rollovertextid>60580</rollovertextid>
+		<displaynameid>801559</displaynameid>
+		<stacksize>1</stacksize>
+		<offertype>eOfferNone</offertype>
+		<itemlevel>0</itemlevel>
+		<sellable>true</sellable>
+		<tradeable>true</tradeable>
+		<destroyable>true</destroyable>
+		<sellcostoverride>
+			<capitalresource quantity="3">cCapResCoin</capitalresource>
+		</sellcostoverride>
+		<rarity>cRarityJunk</rarity>
+		<budgetcost>1</budgetcost>
+		<contentpack>1</contentpack>
+	</material>
+	<material name="FillerLootNew_084">
+		<icon>UserInterface\Icons\FillerLoot\Incense_ua</icon>
+		<rollovertextid>60580</rollovertextid>
+		<displaynameid>801561</displaynameid>
+		<stacksize>1</stacksize>
+		<offertype>eOfferNone</offertype>
+		<itemlevel>0</itemlevel>
+		<sellable>true</sellable>
+		<tradeable>true</tradeable>
+		<destroyable>true</destroyable>
+		<sellcostoverride>
+			<capitalresource quantity="7">cCapResCoin</capitalresource>
+		</sellcostoverride>
+		<rarity>cRarityJunk</rarity>
+		<budgetcost>1</budgetcost>
+		<contentpack>1</contentpack>
+	</material>
+	<material name="FillerLootNew_085">
+		<icon>UserInterface\Icons\FillerLoot\Incense_ua</icon>
+		<rollovertextid>60580</rollovertextid>
+		<displaynameid>801563</displaynameid>
+		<stacksize>1</stacksize>
+		<offertype>eOfferNone</offertype>
+		<itemlevel>0</itemlevel>
+		<sellable>true</sellable>
+		<tradeable>true</tradeable>
+		<destroyable>true</destroyable>
+		<sellcostoverride>
+			<capitalresource quantity="10">cCapResCoin</capitalresource>
+		</sellcostoverride>
+		<rarity>cRarityJunk</rarity>
+		<budgetcost>1</budgetcost>
+		<contentpack>1</contentpack>
+	</material>
+	<material name="FillerLootNew_086">
+		<icon>UserInterface\Icons\FillerLoot\Incense_ua</icon>
+		<rollovertextid>60580</rollovertextid>
+		<displaynameid>801553</displaynameid>
+		<stacksize>1</stacksize>
+		<offertype>eOfferNone</offertype>
+		<itemlevel>0</itemlevel>
+		<sellable>true</sellable>
+		<tradeable>true</tradeable>
+		<destroyable>true</destroyable>
+		<sellcostoverride>
+			<capitalresource quantity="14">cCapResCoin</capitalresource>
+		</sellcostoverride>
+		<rarity>cRarityJunk</rarity>
+		<budgetcost>1</budgetcost>
+		<contentpack>1</contentpack>
+	</material>
+	<material name="FillerLootNew_091">
+		<icon>UserInterface\Icons\FillerLoot\Lamps_ua</icon>
+		<rollovertextid>60580</rollovertextid>
+		<displaynameid>801565</displaynameid>
+		<stacksize>1</stacksize>
+		<offertype>eOfferNone</offertype>
+		<itemlevel>0</itemlevel>
+		<sellable>true</sellable>
+		<tradeable>true</tradeable>
+		<destroyable>true</destroyable>
+		<sellcostoverride>
+			<capitalresource quantity="5">cCapResCoin</capitalresource>
+		</sellcostoverride>
+		<rarity>cRarityJunk</rarity>
+		<budgetcost>1</budgetcost>
+		<contentpack>1</contentpack>
+	</material>
+	<material name="FillerLootNew_092">
+		<icon>UserInterface\Icons\FillerLoot\Lamps_ua</icon>
+		<rollovertextid>60580</rollovertextid>
+		<displaynameid>801567</displaynameid>
+		<stacksize>1</stacksize>
+		<offertype>eOfferNone</offertype>
+		<itemlevel>0</itemlevel>
+		<sellable>true</sellable>
+		<tradeable>true</tradeable>
+		<destroyable>true</destroyable>
+		<sellcostoverride>
+			<capitalresource quantity="15">cCapResCoin</capitalresource>
+		</sellcostoverride>
+		<rarity>cRarityJunk</rarity>
+		<budgetcost>1</budgetcost>
+		<contentpack>1</contentpack>
+	</material>
+	<material name="FillerLootNew_093">
+		<icon>UserInterface\Icons\FillerLoot\Lamps_ua</icon>
+		<rollovertextid>60580</rollovertextid>
+		<displaynameid>801569</displaynameid>
+		<stacksize>1</stacksize>
+		<offertype>eOfferNone</offertype>
+		<itemlevel>0</itemlevel>
+		<sellable>true</sellable>
+		<tradeable>true</tradeable>
+		<destroyable>true</destroyable>
+		<sellcostoverride>
+			<capitalresource quantity="30">cCapResCoin</capitalresource>
+		</sellcostoverride>
+		<rarity>cRarityJunk</rarity>
+		<budgetcost>1</budgetcost>
+		<contentpack>1</contentpack>
+	</material>
+	<material name="FillerLootNew_094">
+		<icon>UserInterface\Icons\FillerLoot\Lamps_ua</icon>
+		<rollovertextid>60580</rollovertextid>
+		<displaynameid>801571</displaynameid>
+		<stacksize>1</stacksize>
+		<offertype>eOfferNone</offertype>
+		<itemlevel>0</itemlevel>
+		<sellable>true</sellable>
+		<tradeable>true</tradeable>
+		<destroyable>true</destroyable>
+		<sellcostoverride>
+			<capitalresource quantity="75">cCapResCoin</capitalresource>
+		</sellcostoverride>
+		<rarity>cRarityJunk</rarity>
+		<budgetcost>1</budgetcost>
+		<contentpack>1</contentpack>
+	</material>
+	<material name="FillerLootNew_095">
+		<icon>UserInterface\Icons\FillerLoot\Lamps_ua</icon>
+		<rollovertextid>60580</rollovertextid>
+		<displaynameid>801573</displaynameid>
+		<stacksize>1</stacksize>
+		<offertype>eOfferNone</offertype>
+		<itemlevel>0</itemlevel>
+		<sellable>true</sellable>
+		<tradeable>true</tradeable>
+		<destroyable>true</destroyable>
+		<sellcostoverride>
+			<capitalresource quantity="100">cCapResCoin</capitalresource>
+		</sellcostoverride>
+		<rarity>cRarityJunk</rarity>
+		<budgetcost>1</budgetcost>
+		<contentpack>1</contentpack>
+	</material>
+	<material name="FillerLootNew_096">
+		<icon>UserInterface\Icons\FillerLoot\Lamps_ua</icon>
+		<rollovertextid>60580</rollovertextid>
+		<displaynameid>801575</displaynameid>
+		<stacksize>1</stacksize>
+		<offertype>eOfferNone</offertype>
+		<itemlevel>0</itemlevel>
+		<sellable>true</sellable>
+		<tradeable>true</tradeable>
+		<destroyable>true</destroyable>
+		<sellcostoverride>
+			<capitalresource quantity="150">cCapResCoin</capitalresource>
+		</sellcostoverride>
+		<rarity>cRarityJunk</rarity>
+		<budgetcost>1</budgetcost>
+		<contentpack>1</contentpack>
+	</material>
+	<material name="FillerLootNew_101">
+		<icon>UserInterface\Icons\FillerLoot\Mice_ua</icon>
+		<rollovertextid>60580</rollovertextid>
+		<displaynameid>801577</displaynameid>
+		<stacksize>1</stacksize>
+		<offertype>eOfferNone</offertype>
+		<itemlevel>0</itemlevel>
+		<sellable>true</sellable>
+		<tradeable>true</tradeable>
+		<destroyable>true</destroyable>
+		<sellcostoverride>
+			<capitalresource quantity="3">cCapResCoin</capitalresource>
+		</sellcostoverride>
+		<rarity>cRarityJunk</rarity>
+		<budgetcost>1</budgetcost>
+		<contentpack>1</contentpack>
+	</material>
+	<material name="FillerLootNew_102">
+		<icon>UserInterface\Icons\FillerLoot\Mice_ua</icon>
+		<rollovertextid>60580</rollovertextid>
+		<displaynameid>801579</displaynameid>
+		<stacksize>1</stacksize>
+		<offertype>eOfferNone</offertype>
+		<itemlevel>0</itemlevel>
+		<sellable>true</sellable>
+		<tradeable>true</tradeable>
+		<destroyable>true</destroyable>
+		<sellcostoverride>
+			<capitalresource quantity="5">cCapResCoin</capitalresource>
+		</sellcostoverride>
+		<rarity>cRarityJunk</rarity>
+		<budgetcost>1</budgetcost>
+		<contentpack>1</contentpack>
+	</material>
+	<material name="FillerLootNew_103">
+		<icon>UserInterface\Icons\FillerLoot\Mice_ua</icon>
+		<rollovertextid>60580</rollovertextid>
+		<displaynameid>801581</displaynameid>
+		<stacksize>1</stacksize>
+		<offertype>eOfferNone</offertype>
+		<itemlevel>0</itemlevel>
+		<sellable>true</sellable>
+		<tradeable>true</tradeable>
+		<destroyable>true</destroyable>
+		<sellcostoverride>
+			<capitalresource quantity="10">cCapResCoin</capitalresource>
+		</sellcostoverride>
+		<rarity>cRarityJunk</rarity>
+		<budgetcost>1</budgetcost>
+		<contentpack>1</contentpack>
+	</material>
+	<material name="FillerLootNew_104">
+		<icon>UserInterface\Icons\FillerLoot\Mice_ua</icon>
+		<rollovertextid>60580</rollovertextid>
+		<displaynameid>801583</displaynameid>
+		<stacksize>1</stacksize>
+		<offertype>eOfferNone</offertype>
+		<itemlevel>0</itemlevel>
+		<sellable>true</sellable>
+		<tradeable>true</tradeable>
+		<destroyable>true</destroyable>
+		<sellcostoverride>
+			<capitalresource quantity="15">cCapResCoin</capitalresource>
+		</sellcostoverride>
+		<rarity>cRarityJunk</rarity>
+		<budgetcost>1</budgetcost>
+		<contentpack>1</contentpack>
+	</material>
+	<material name="FillerLootNew_105">
+		<icon>UserInterface\Icons\FillerLoot\Mice_ua</icon>
+		<rollovertextid>60580</rollovertextid>
+		<displaynameid>801585</displaynameid>
+		<stacksize>1</stacksize>
+		<offertype>eOfferNone</offertype>
+		<itemlevel>0</itemlevel>
+		<sellable>true</sellable>
+		<tradeable>true</tradeable>
+		<destroyable>true</destroyable>
+		<sellcostoverride>
+			<capitalresource quantity="30">cCapResCoin</capitalresource>
+		</sellcostoverride>
+		<rarity>cRarityJunk</rarity>
+		<budgetcost>1</budgetcost>
+		<contentpack>1</contentpack>
+	</material>
+	<material name="FillerLootNew_106">
+		<icon>UserInterface\Icons\FillerLoot\Mice_ua</icon>
+		<rollovertextid>60580</rollovertextid>
+		<displaynameid>801587</displaynameid>
+		<stacksize>1</stacksize>
+		<offertype>eOfferNone</offertype>
+		<itemlevel>0</itemlevel>
+		<sellable>true</sellable>
+		<tradeable>true</tradeable>
+		<destroyable>true</destroyable>
+		<sellcostoverride>
+			<capitalresource quantity="40">cCapResCoin</capitalresource>
+		</sellcostoverride>
+		<rarity>cRarityJunk</rarity>
+		<budgetcost>1</budgetcost>
+		<contentpack>1</contentpack>
+	</material>
+	<material name="FillerLootNew_111">
+		<icon>UserInterface\Icons\FillerLoot\Perfume_ua</icon>
+		<rollovertextid>60580</rollovertextid>
+		<displaynameid>801589</displaynameid>
+		<stacksize>1</stacksize>
+		<offertype>eOfferNone</offertype>
+		<itemlevel>0</itemlevel>
+		<sellable>true</sellable>
+		<tradeable>true</tradeable>
+		<destroyable>true</destroyable>
+		<sellcostoverride>
+			<capitalresource quantity="3">cCapResCoin</capitalresource>
+		</sellcostoverride>
+		<rarity>cRarityJunk</rarity>
+		<budgetcost>1</budgetcost>
+		<contentpack>1</contentpack>
+	</material>
+	<material name="FillerLootNew_112">
+		<icon>UserInterface\Icons\FillerLoot\Perfume_ua</icon>
+		<rollovertextid>60580</rollovertextid>
+		<displaynameid>801591</displaynameid>
+		<stacksize>1</stacksize>
+		<offertype>eOfferNone</offertype>
+		<itemlevel>0</itemlevel>
+		<sellable>true</sellable>
+		<tradeable>true</tradeable>
+		<destroyable>true</destroyable>
+		<sellcostoverride>
+			<capitalresource quantity="8">cCapResCoin</capitalresource>
+		</sellcostoverride>
+		<rarity>cRarityJunk</rarity>
+		<budgetcost>1</budgetcost>
+		<contentpack>1</contentpack>
+	</material>
+	<material name="FillerLootNew_113">
+		<icon>UserInterface\Icons\FillerLoot\Perfume_ua</icon>
+		<rollovertextid>60580</rollovertextid>
+		<displaynameid>801593</displaynameid>
+		<stacksize>1</stacksize>
+		<offertype>eOfferNone</offertype>
+		<itemlevel>0</itemlevel>
+		<sellable>true</sellable>
+		<tradeable>true</tradeable>
+		<destroyable>true</destroyable>
+		<sellcostoverride>
+			<capitalresource quantity="10">cCapResCoin</capitalresource>
+		</sellcostoverride>
+		<rarity>cRarityJunk</rarity>
+		<budgetcost>1</budgetcost>
+		<contentpack>1</contentpack>
+	</material>
+	<material name="FillerLootNew_114">
+		<icon>UserInterface\Icons\FillerLoot\Perfume_ua</icon>
+		<rollovertextid>60580</rollovertextid>
+		<displaynameid>801595</displaynameid>
+		<stacksize>1</stacksize>
+		<offertype>eOfferNone</offertype>
+		<itemlevel>0</itemlevel>
+		<sellable>true</sellable>
+		<tradeable>true</tradeable>
+		<destroyable>true</destroyable>
+		<sellcostoverride>
+			<capitalresource quantity="20">cCapResCoin</capitalresource>
+		</sellcostoverride>
+		<rarity>cRarityJunk</rarity>
+		<budgetcost>1</budgetcost>
+		<contentpack>1</contentpack>
+	</material>
+	<material name="FillerLootNew_115">
+		<icon>UserInterface\Icons\FillerLoot\Perfume_ua</icon>
+		<rollovertextid>60580</rollovertextid>
+		<displaynameid>801597</displaynameid>
+		<stacksize>1</stacksize>
+		<offertype>eOfferNone</offertype>
+		<itemlevel>0</itemlevel>
+		<sellable>true</sellable>
+		<tradeable>true</tradeable>
+		<destroyable>true</destroyable>
+		<sellcostoverride>
+			<capitalresource quantity="52">cCapResCoin</capitalresource>
+		</sellcostoverride>
+		<rarity>cRarityJunk</rarity>
+		<budgetcost>1</budgetcost>
+		<contentpack>1</contentpack>
+	</material>
+	<material name="FillerLootNew_116">
+		<icon>UserInterface\Icons\FillerLoot\Perfume_ua</icon>
+		<rollovertextid>60580</rollovertextid>
+		<displaynameid>801599</displaynameid>
+		<stacksize>1</stacksize>
+		<offertype>eOfferNone</offertype>
+		<itemlevel>0</itemlevel>
+		<sellable>true</sellable>
+		<tradeable>true</tradeable>
+		<destroyable>true</destroyable>
+		<sellcostoverride>
+			<capitalresource quantity="80">cCapResCoin</capitalresource>
+		</sellcostoverride>
+		<rarity>cRarityJunk</rarity>
+		<budgetcost>1</budgetcost>
+		<contentpack>1</contentpack>
+	</material>
+	<material name="FillerLootNew_121">
+		<icon>UserInterface\Icons\FillerLoot\Toys_ua</icon>
+		<rollovertextid>60580</rollovertextid>
+		<displaynameid>801601</displaynameid>
+		<stacksize>1</stacksize>
+		<offertype>eOfferNone</offertype>
+		<itemlevel>0</itemlevel>
+		<sellable>true</sellable>
+		<tradeable>true</tradeable>
+		<destroyable>true</destroyable>
+		<sellcostoverride>
+			<capitalresource quantity="1">cCapResCoin</capitalresource>
+		</sellcostoverride>
+		<rarity>cRarityJunk</rarity>
+		<budgetcost>1</budgetcost>
+		<contentpack>1</contentpack>
+	</material>
+	<material name="FillerLootNew_122">
+		<icon>UserInterface\Icons\FillerLoot\Toys_ua</icon>
+		<rollovertextid>60580</rollovertextid>
+		<displaynameid>801603</displaynameid>
+		<stacksize>1</stacksize>
+		<offertype>eOfferNone</offertype>
+		<itemlevel>0</itemlevel>
+		<sellable>true</sellable>
+		<tradeable>true</tradeable>
+		<destroyable>true</destroyable>
+		<sellcostoverride>
+			<capitalresource quantity="3">cCapResCoin</capitalresource>
+		</sellcostoverride>
+		<rarity>cRarityJunk</rarity>
+		<budgetcost>1</budgetcost>
+		<contentpack>1</contentpack>
+	</material>
+	<material name="FillerLootNew_123">
+		<icon>UserInterface\Icons\FillerLoot\Toys_ua</icon>
+		<rollovertextid>60580</rollovertextid>
+		<displaynameid>801605</displaynameid>
+		<stacksize>1</stacksize>
+		<offertype>eOfferNone</offertype>
+		<itemlevel>0</itemlevel>
+		<sellable>true</sellable>
+		<tradeable>true</tradeable>
+		<destroyable>true</destroyable>
+		<sellcostoverride>
+			<capitalresource quantity="10">cCapResCoin</capitalresource>
+		</sellcostoverride>
+		<rarity>cRarityJunk</rarity>
+		<budgetcost>1</budgetcost>
+		<contentpack>1</contentpack>
+	</material>
+	<material name="FillerLootNew_124">
+		<icon>UserInterface\Icons\FillerLoot\Toys_ua</icon>
+		<rollovertextid>60580</rollovertextid>
+		<displaynameid>801607</displaynameid>
+		<stacksize>1</stacksize>
+		<offertype>eOfferNone</offertype>
+		<itemlevel>0</itemlevel>
+		<sellable>true</sellable>
+		<tradeable>true</tradeable>
+		<destroyable>true</destroyable>
+		<sellcostoverride>
+			<capitalresource quantity="19">cCapResCoin</capitalresource>
+		</sellcostoverride>
+		<rarity>cRarityJunk</rarity>
+		<budgetcost>1</budgetcost>
+		<contentpack>1</contentpack>
+	</material>
+	<material name="FillerLootNew_125">
+		<icon>UserInterface\Icons\FillerLoot\Toys_ua</icon>
+		<rollovertextid>60580</rollovertextid>
+		<displaynameid>801609</displaynameid>
+		<stacksize>1</stacksize>
+		<offertype>eOfferNone</offertype>
+		<itemlevel>0</itemlevel>
+		<sellable>true</sellable>
+		<tradeable>true</tradeable>
+		<destroyable>true</destroyable>
+		<sellcostoverride>
+			<capitalresource quantity="24">cCapResCoin</capitalresource>
+		</sellcostoverride>
+		<rarity>cRarityJunk</rarity>
+		<budgetcost>1</budgetcost>
+		<contentpack>1</contentpack>
+	</material>
+	<material name="FillerLootNew_126">
+		<icon>UserInterface\Icons\FillerLoot\Toys_ua</icon>
+		<rollovertextid>60580</rollovertextid>
+		<displaynameid>801611</displaynameid>
+		<stacksize>1</stacksize>
+		<offertype>eOfferNone</offertype>
+		<itemlevel>0</itemlevel>
+		<sellable>true</sellable>
+		<tradeable>true</tradeable>
+		<destroyable>true</destroyable>
+		<sellcostoverride>
+			<capitalresource quantity="130">cCapResCoin</capitalresource>
+		</sellcostoverride>
+		<rarity>cRarityJunk</rarity>
+		<budgetcost>1</budgetcost>
+		<contentpack>1</contentpack>
+	</material>
+	<material name="FillerLootNew_131">
+		<icon>UserInterface\Icons\FillerLoot\AnimalClaws_ua</icon>
+		<rollovertextid>60580</rollovertextid>
+		<displaynameid>801612</displaynameid>
+		<stacksize>1</stacksize>
+		<offertype>eOfferNone</offertype>
+		<itemlevel>0</itemlevel>
+		<sellable>true</sellable>
+		<tradeable>true</tradeable>
+		<destroyable>true</destroyable>
+		<sellcostoverride>
+			<capitalresource quantity="8">cCapResCoin</capitalresource>
+		</sellcostoverride>
+		<rarity>cRarityJunk</rarity>
+		<budgetcost>1</budgetcost>
+		<contentpack>1</contentpack>
+	</material>
+	<material name="FillerLootNew_132">
+		<icon>UserInterface\Icons\FillerLoot\AnimalClaws_ua</icon>
+		<rollovertextid>60580</rollovertextid>
+		<displaynameid>801613</displaynameid>
+		<stacksize>1</stacksize>
+		<offertype>eOfferNone</offertype>
+		<itemlevel>0</itemlevel>
+		<sellable>true</sellable>
+		<tradeable>true</tradeable>
+		<destroyable>true</destroyable>
+		<sellcostoverride>
+			<capitalresource quantity="20">cCapResCoin</capitalresource>
+		</sellcostoverride>
+		<rarity>cRarityJunk</rarity>
+		<budgetcost>1</budgetcost>
+		<contentpack>1</contentpack>
+	</material>
+	<material name="FillerLootNew_133">
+		<icon>UserInterface\Icons\FillerLoot\AnimalClaws_ua</icon>
+		<rollovertextid>60580</rollovertextid>
+		<displaynameid>801614</displaynameid>
+		<stacksize>1</stacksize>
+		<offertype>eOfferNone</offertype>
+		<itemlevel>0</itemlevel>
+		<sellable>true</sellable>
+		<tradeable>true</tradeable>
+		<destroyable>true</destroyable>
+		<sellcostoverride>
+			<capitalresource quantity="50">cCapResCoin</capitalresource>
+		</sellcostoverride>
+		<rarity>cRarityJunk</rarity>
+		<budgetcost>1</budgetcost>
+		<contentpack>1</contentpack>
+	</material>
+	<material name="FillerLootNew_141">
+		<icon>UserInterface\Icons\FillerLoot\BalesofHay_ua</icon>
+		<rollovertextid>60580</rollovertextid>
+		<displaynameid>801615</displaynameid>
+		<stacksize>1</stacksize>
+		<offertype>eOfferNone</offertype>
+		<itemlevel>0</itemlevel>
+		<sellable>true</sellable>
+		<tradeable>true</tradeable>
+		<destroyable>true</destroyable>
+		<sellcostoverride>
+			<capitalresource quantity="1">cCapResCoin</capitalresource>
+		</sellcostoverride>
+		<rarity>cRarityJunk</rarity>
+		<budgetcost>1</budgetcost>
+		<contentpack>1</contentpack>
+	</material>
+	<material name="FillerLootNew_142">
+		<icon>UserInterface\Icons\FillerLoot\BalesofHay_ua</icon>
+		<rollovertextid>60580</rollovertextid>
+		<displaynameid>801616</displaynameid>
+		<stacksize>1</stacksize>
+		<offertype>eOfferNone</offertype>
+		<itemlevel>0</itemlevel>
+		<sellable>true</sellable>
+		<tradeable>true</tradeable>
+		<destroyable>true</destroyable>
+		<sellcostoverride>
+			<capitalresource quantity="8">cCapResCoin</capitalresource>
+		</sellcostoverride>
+		<rarity>cRarityJunk</rarity>
+		<budgetcost>1</budgetcost>
+		<contentpack>1</contentpack>
+	</material>
+	<material name="FillerLootNew_143">
+		<icon>UserInterface\Icons\FillerLoot\BalesofHay_ua</icon>
+		<rollovertextid>60580</rollovertextid>
+		<displaynameid>801617</displaynameid>
+		<stacksize>1</stacksize>
+		<offertype>eOfferNone</offertype>
+		<itemlevel>0</itemlevel>
+		<sellable>true</sellable>
+		<tradeable>true</tradeable>
+		<destroyable>true</destroyable>
+		<sellcostoverride>
+			<capitalresource quantity="16">cCapResCoin</capitalresource>
+		</sellcostoverride>
+		<rarity>cRarityJunk</rarity>
+		<budgetcost>1</budgetcost>
+		<contentpack>1</contentpack>
+	</material>
+	<material name="FillerLootNew_151">
+		<icon>UserInterface\Icons\FillerLoot\Bones_ua</icon>
+		<rollovertextid>60580</rollovertextid>
+		<displaynameid>801618</displaynameid>
+		<stacksize>1</stacksize>
+		<offertype>eOfferNone</offertype>
+		<itemlevel>0</itemlevel>
+		<sellable>true</sellable>
+		<tradeable>true</tradeable>
+		<destroyable>true</destroyable>
+		<sellcostoverride>
+			<capitalresource quantity="2">cCapResCoin</capitalresource>
+		</sellcostoverride>
+		<rarity>cRarityJunk</rarity>
+		<budgetcost>1</budgetcost>
+		<contentpack>1</contentpack>
+	</material>
+	<material name="FillerLootNew_152">
+		<icon>UserInterface\Icons\FillerLoot\Bones_ua</icon>
+		<rollovertextid>60580</rollovertextid>
+		<displaynameid>801619</displaynameid>
+		<stacksize>1</stacksize>
+		<offertype>eOfferNone</offertype>
+		<itemlevel>0</itemlevel>
+		<sellable>true</sellable>
+		<tradeable>true</tradeable>
+		<destroyable>true</destroyable>
+		<sellcostoverride>
+			<capitalresource quantity="7">cCapResCoin</capitalresource>
+		</sellcostoverride>
+		<rarity>cRarityJunk</rarity>
+		<budgetcost>1</budgetcost>
+		<contentpack>1</contentpack>
+	</material>
+	<material name="FillerLootNew_153">
+		<icon>UserInterface\Icons\FillerLoot\Bones_ua</icon>
+		<rollovertextid>60580</rollovertextid>
+		<displaynameid>801620</displaynameid>
+		<stacksize>1</stacksize>
+		<offertype>eOfferNone</offertype>
+		<itemlevel>0</itemlevel>
+		<sellable>true</sellable>
+		<tradeable>true</tradeable>
+		<destroyable>true</destroyable>
+		<sellcostoverride>
+			<capitalresource quantity="12">cCapResCoin</capitalresource>
+		</sellcostoverride>
+		<rarity>cRarityJunk</rarity>
+		<budgetcost>1</budgetcost>
+		<contentpack>1</contentpack>
+	</material>
+	<material name="FillerLootNew_161">
+		<icon>UserInterface\Icons\FillerLoot\FeatherFans_ua</icon>
+		<rollovertextid>60580</rollovertextid>
+		<displaynameid>801621</displaynameid>
+		<stacksize>1</stacksize>
+		<offertype>eOfferNone</offertype>
+		<itemlevel>0</itemlevel>
+		<sellable>true</sellable>
+		<tradeable>true</tradeable>
+		<destroyable>true</destroyable>
+		<sellcostoverride>
+			<capitalresource quantity="5">cCapResCoin</capitalresource>
+		</sellcostoverride>
+		<rarity>cRarityJunk</rarity>
+		<budgetcost>1</budgetcost>
+		<contentpack>1</contentpack>
+	</material>
+	<material name="FillerLootNew_162">
+		<icon>UserInterface\Icons\FillerLoot\FeatherFans_ua</icon>
+		<rollovertextid>60580</rollovertextid>
+		<displaynameid>801622</displaynameid>
+		<stacksize>1</stacksize>
+		<offertype>eOfferNone</offertype>
+		<itemlevel>0</itemlevel>
+		<sellable>true</sellable>
+		<tradeable>true</tradeable>
+		<destroyable>true</destroyable>
+		<sellcostoverride>
+			<capitalresource quantity="8">cCapResCoin</capitalresource>
+		</sellcostoverride>
+		<rarity>cRarityJunk</rarity>
+		<budgetcost>1</budgetcost>
+		<contentpack>1</contentpack>
+	</material>
+	<material name="FillerLootNew_163">
+		<icon>UserInterface\Icons\FillerLoot\FeatherFans_ua</icon>
+		<rollovertextid>60580</rollovertextid>
+		<displaynameid>801623</displaynameid>
+		<stacksize>1</stacksize>
+		<offertype>eOfferNone</offertype>
+		<itemlevel>0</itemlevel>
+		<sellable>true</sellable>
+		<tradeable>true</tradeable>
+		<destroyable>true</destroyable>
+		<sellcostoverride>
+			<capitalresource quantity="19">cCapResCoin</capitalresource>
+		</sellcostoverride>
+		<rarity>cRarityJunk</rarity>
+		<budgetcost>1</budgetcost>
+		<contentpack>1</contentpack>
+	</material>
+	<material name="FillerLootNew_171">
+		<icon>UserInterface\Icons\FillerLoot\FineArt_ua</icon>
+		<rollovertextid>60580</rollovertextid>
+		<displaynameid>801624</displaynameid>
+		<stacksize>1</stacksize>
+		<offertype>eOfferNone</offertype>
+		<itemlevel>0</itemlevel>
+		<sellable>true</sellable>
+		<tradeable>true</tradeable>
+		<destroyable>true</destroyable>
+		<sellcostoverride>
+			<capitalresource quantity="17">cCapResCoin</capitalresource>
+		</sellcostoverride>
+		<rarity>cRarityJunk</rarity>
+		<budgetcost>1</budgetcost>
+		<contentpack>1</contentpack>
+	</material>
+	<material name="FillerLootNew_172">
+		<icon>UserInterface\Icons\FillerLoot\FineArt_ua</icon>
+		<rollovertextid>60580</rollovertextid>
+		<displaynameid>801625</displaynameid>
+		<stacksize>1</stacksize>
+		<offertype>eOfferNone</offertype>
+		<itemlevel>0</itemlevel>
+		<sellable>true</sellable>
+		<tradeable>true</tradeable>
+		<destroyable>true</destroyable>
+		<sellcostoverride>
+			<capitalresource quantity="36">cCapResCoin</capitalresource>
+		</sellcostoverride>
+		<rarity>cRarityJunk</rarity>
+		<budgetcost>1</budgetcost>
+		<contentpack>1</contentpack>
+	</material>
+	<material name="FillerLootNew_173">
+		<icon>UserInterface\Icons\FillerLoot\FineArt_ua</icon>
+		<rollovertextid>60580</rollovertextid>
+		<displaynameid>801626</displaynameid>
+		<stacksize>1</stacksize>
+		<offertype>eOfferNone</offertype>
+		<itemlevel>0</itemlevel>
+		<sellable>true</sellable>
+		<tradeable>true</tradeable>
+		<destroyable>true</destroyable>
+		<sellcostoverride>
+			<capitalresource quantity="82">cCapResCoin</capitalresource>
+		</sellcostoverride>
+		<rarity>cRarityJunk</rarity>
+		<budgetcost>1</budgetcost>
+		<contentpack>1</contentpack>
+	</material>
+	<material name="FillerLootNew_181">
+		<icon>UserInterface\Icons\FillerLoot\IvoryButtons_ua</icon>
+		<rollovertextid>60580</rollovertextid>
+		<displaynameid>801627</displaynameid>
+		<stacksize>1</stacksize>
+		<offertype>eOfferNone</offertype>
+		<itemlevel>0</itemlevel>
+		<sellable>true</sellable>
+		<tradeable>true</tradeable>
+		<destroyable>true</destroyable>
+		<sellcostoverride>
+			<capitalresource quantity="3">cCapResCoin</capitalresource>
+		</sellcostoverride>
+		<rarity>cRarityJunk</rarity>
+		<budgetcost>1</budgetcost>
+		<contentpack>1</contentpack>
+	</material>
+	<material name="FillerLootNew_182">
+		<icon>UserInterface\Icons\FillerLoot\IvoryButtons_ua</icon>
+		<rollovertextid>60580</rollovertextid>
+		<displaynameid>801628</displaynameid>
+		<stacksize>1</stacksize>
+		<offertype>eOfferNone</offertype>
+		<itemlevel>0</itemlevel>
+		<sellable>true</sellable>
+		<tradeable>true</tradeable>
+		<destroyable>true</destroyable>
+		<sellcostoverride>
+			<capitalresource quantity="9">cCapResCoin</capitalresource>
+		</sellcostoverride>
+		<rarity>cRarityJunk</rarity>
+		<budgetcost>1</budgetcost>
+		<contentpack>1</contentpack>
+	</material>
+	<material name="FillerLootNew_183">
+		<icon>UserInterface\Icons\FillerLoot\IvoryButtons_ua</icon>
+		<rollovertextid>60580</rollovertextid>
+		<displaynameid>801629</displaynameid>
+		<stacksize>1</stacksize>
+		<offertype>eOfferNone</offertype>
+		<itemlevel>0</itemlevel>
+		<sellable>true</sellable>
+		<tradeable>true</tradeable>
+		<destroyable>true</destroyable>
+		<sellcostoverride>
+			<capitalresource quantity="16">cCapResCoin</capitalresource>
+		</sellcostoverride>
+		<rarity>cRarityJunk</rarity>
+		<budgetcost>1</budgetcost>
+		<contentpack>1</contentpack>
+	</material>
+	<material name="FillerLootNew_191">
+		<icon>UserInterface\Icons\FillerLoot\MouseTraps_ua</icon>
+		<rollovertextid>60580</rollovertextid>
+		<displaynameid>801630</displaynameid>
+		<stacksize>1</stacksize>
+		<offertype>eOfferNone</offertype>
+		<itemlevel>0</itemlevel>
+		<sellable>true</sellable>
+		<tradeable>true</tradeable>
+		<destroyable>true</destroyable>
+		<sellcostoverride>
+			<capitalresource quantity="5">cCapResCoin</capitalresource>
+		</sellcostoverride>
+		<rarity>cRarityJunk</rarity>
+		<budgetcost>1</budgetcost>
+		<contentpack>1</contentpack>
+	</material>
+	<material name="FillerLootNew_192">
+		<icon>UserInterface\Icons\FillerLoot\MouseTraps_ua</icon>
+		<rollovertextid>60580</rollovertextid>
+		<displaynameid>801631</displaynameid>
+		<stacksize>1</stacksize>
+		<offertype>eOfferNone</offertype>
+		<itemlevel>0</itemlevel>
+		<sellable>true</sellable>
+		<tradeable>true</tradeable>
+		<destroyable>true</destroyable>
+		<sellcostoverride>
+			<capitalresource quantity="12">cCapResCoin</capitalresource>
+		</sellcostoverride>
+		<rarity>cRarityJunk</rarity>
+		<budgetcost>1</budgetcost>
+		<contentpack>1</contentpack>
+	</material>
+	<material name="FillerLootNew_193">
+		<icon>UserInterface\Icons\FillerLoot\MouseTraps_ua</icon>
+		<rollovertextid>60580</rollovertextid>
+		<displaynameid>801632</displaynameid>
+		<stacksize>1</stacksize>
+		<offertype>eOfferNone</offertype>
+		<itemlevel>0</itemlevel>
+		<sellable>true</sellable>
+		<tradeable>true</tradeable>
+		<destroyable>true</destroyable>
+		<sellcostoverride>
+			<capitalresource quantity="23">cCapResCoin</capitalresource>
+		</sellcostoverride>
+		<rarity>cRarityJunk</rarity>
+		<budgetcost>1</budgetcost>
+		<contentpack>1</contentpack>
+	</material>
+	<material name="FillerLootNew_201">
+		<icon>UserInterface\Icons\FillerLoot\ShinyThings_ua</icon>
+		<rollovertextid>60580</rollovertextid>
+		<displaynameid>801633</displaynameid>
+		<stacksize>1</stacksize>
+		<offertype>eOfferNone</offertype>
+		<itemlevel>0</itemlevel>
+		<sellable>true</sellable>
+		<tradeable>true</tradeable>
+		<destroyable>true</destroyable>
+		<sellcostoverride>
+			<capitalresource quantity="24">cCapResCoin</capitalresource>
+		</sellcostoverride>
+		<rarity>cRarityJunk</rarity>
+		<budgetcost>1</budgetcost>
+		<contentpack>1</contentpack>
+	</material>
+	<material name="FillerLootNew_202">
+		<icon>UserInterface\Icons\FillerLoot\ShinyThings_ua</icon>
+		<rollovertextid>60580</rollovertextid>
+		<displaynameid>801634</displaynameid>
+		<stacksize>1</stacksize>
+		<offertype>eOfferNone</offertype>
+		<itemlevel>0</itemlevel>
+		<sellable>true</sellable>
+		<tradeable>true</tradeable>
+		<destroyable>true</destroyable>
+		<sellcostoverride>
+			<capitalresource quantity="77">cCapResCoin</capitalresource>
+		</sellcostoverride>
+		<rarity>cRarityJunk</rarity>
+		<budgetcost>1</budgetcost>
+		<contentpack>1</contentpack>
+	</material>
+	<material name="FillerLootNew_203">
+		<icon>UserInterface\Icons\FillerLoot\ShinyThings_ua</icon>
+		<rollovertextid>60580</rollovertextid>
+		<displaynameid>801635</displaynameid>
+		<stacksize>1</stacksize>
+		<offertype>eOfferNone</offertype>
+		<itemlevel>0</itemlevel>
+		<sellable>true</sellable>
+		<tradeable>true</tradeable>
+		<destroyable>true</destroyable>
+		<sellcostoverride>
+			<capitalresource quantity="153">cCapResCoin</capitalresource>
+		</sellcostoverride>
+		<rarity>cRarityJunk</rarity>
+		<budgetcost>1</budgetcost>
+		<contentpack>1</contentpack>
+	</material>
+	<material name="FillerLootNew_211">
+		<icon>UserInterface\Icons\FillerLoot\Soap_ua</icon>
+		<rollovertextid>60580</rollovertextid>
+		<displaynameid>801636</displaynameid>
+		<stacksize>1</stacksize>
+		<offertype>eOfferNone</offertype>
+		<itemlevel>0</itemlevel>
+		<sellable>true</sellable>
+		<tradeable>true</tradeable>
+		<destroyable>true</destroyable>
+		<sellcostoverride>
+			<capitalresource quantity="2">cCapResCoin</capitalresource>
+		</sellcostoverride>
+		<rarity>cRarityJunk</rarity>
+		<budgetcost>1</budgetcost>
+		<contentpack>1</contentpack>
+	</material>
+	<material name="FillerLootNew_212">
+		<icon>UserInterface\Icons\FillerLoot\Soap_ua</icon>
+		<rollovertextid>60580</rollovertextid>
+		<displaynameid>801637</displaynameid>
+		<stacksize>1</stacksize>
+		<offertype>eOfferNone</offertype>
+		<itemlevel>0</itemlevel>
+		<sellable>true</sellable>
+		<tradeable>true</tradeable>
+		<destroyable>true</destroyable>
+		<sellcostoverride>
+			<capitalresource quantity="4">cCapResCoin</capitalresource>
+		</sellcostoverride>
+		<rarity>cRarityJunk</rarity>
+		<budgetcost>1</budgetcost>
+		<contentpack>1</contentpack>
+	</material>
+	<material name="FillerLootNew_213">
+		<icon>UserInterface\Icons\FillerLoot\Soap_ua</icon>
+		<rollovertextid>60580</rollovertextid>
+		<displaynameid>801638</displaynameid>
+		<stacksize>1</stacksize>
+		<offertype>eOfferNone</offertype>
+		<itemlevel>0</itemlevel>
+		<sellable>true</sellable>
+		<tradeable>true</tradeable>
+		<destroyable>true</destroyable>
+		<sellcostoverride>
+			<capitalresource quantity="6">cCapResCoin</capitalresource>
+		</sellcostoverride>
+		<rarity>cRarityJunk</rarity>
+		<budgetcost>1</budgetcost>
+		<contentpack>1</contentpack>
+	</material>
+	<material name="FillerLootNew_221">
+		<icon>UserInterface\Icons\FillerLoot\Thread_ua</icon>
+		<rollovertextid>60580</rollovertextid>
+		<displaynameid>801639</displaynameid>
+		<stacksize>1</stacksize>
+		<offertype>eOfferNone</offertype>
+		<itemlevel>0</itemlevel>
+		<sellable>true</sellable>
+		<tradeable>true</tradeable>
+		<destroyable>true</destroyable>
+		<sellcostoverride>
+			<capitalresource quantity="1">cCapResCoin</capitalresource>
+		</sellcostoverride>
+		<rarity>cRarityJunk</rarity>
+		<budgetcost>1</budgetcost>
+		<contentpack>1</contentpack>
+	</material>
+	<material name="FillerLootNew_222">
+		<icon>UserInterface\Icons\FillerLoot\Thread_ua</icon>
+		<rollovertextid>60580</rollovertextid>
+		<displaynameid>801640</displaynameid>
+		<stacksize>1</stacksize>
+		<offertype>eOfferNone</offertype>
+		<itemlevel>0</itemlevel>
+		<sellable>true</sellable>
+		<tradeable>true</tradeable>
+		<destroyable>true</destroyable>
+		<sellcostoverride>
+			<capitalresource quantity="5">cCapResCoin</capitalresource>
+		</sellcostoverride>
+		<rarity>cRarityJunk</rarity>
+		<budgetcost>1</budgetcost>
+		<contentpack>1</contentpack>
+	</material>
+	<material name="FillerLootNew_223">
+		<icon>UserInterface\Icons\FillerLoot\Thread_ua</icon>
+		<rollovertextid>60580</rollovertextid>
+		<displaynameid>801641</displaynameid>
+		<stacksize>1</stacksize>
+		<offertype>eOfferNone</offertype>
+		<itemlevel>0</itemlevel>
+		<sellable>true</sellable>
+		<tradeable>true</tradeable>
+		<destroyable>true</destroyable>
+		<sellcostoverride>
+			<capitalresource quantity="12">cCapResCoin</capitalresource>
+		</sellcostoverride>
+		<rarity>cRarityJunk</rarity>
+		<budgetcost>1</budgetcost>
+		<contentpack>1</contentpack>
+	</material>
+	<material name="FillerLootNew_231">
+		<icon>UserInterface\Icons\FillerLoot\TimePiece_ua</icon>
+		<rollovertextid>60580</rollovertextid>
+		<displaynameid>801642</displaynameid>
+		<stacksize>1</stacksize>
+		<offertype>eOfferNone</offertype>
+		<itemlevel>0</itemlevel>
+		<sellable>true</sellable>
+		<tradeable>true</tradeable>
+		<destroyable>true</destroyable>
+		<sellcostoverride>
+			<capitalresource quantity="8">cCapResCoin</capitalresource>
+		</sellcostoverride>
+		<rarity>cRarityJunk</rarity>
+		<budgetcost>1</budgetcost>
+		<contentpack>1</contentpack>
+	</material>
+	<material name="FillerLootNew_232">
+		<icon>UserInterface\Icons\FillerLoot\TimePiece_ua</icon>
+		<rollovertextid>60580</rollovertextid>
+		<displaynameid>801643</displaynameid>
+		<stacksize>1</stacksize>
+		<offertype>eOfferNone</offertype>
+		<itemlevel>0</itemlevel>
+		<sellable>true</sellable>
+		<tradeable>true</tradeable>
+		<destroyable>true</destroyable>
+		<sellcostoverride>
+			<capitalresource quantity="24">cCapResCoin</capitalresource>
+		</sellcostoverride>
+		<rarity>cRarityJunk</rarity>
+		<budgetcost>1</budgetcost>
+		<contentpack>1</contentpack>
+	</material>
+	<material name="FillerLootNew_233">
+		<icon>UserInterface\Icons\FillerLoot\TimePiece_ua</icon>
+		<rollovertextid>60580</rollovertextid>
+		<displaynameid>801644</displaynameid>
+		<stacksize>1</stacksize>
+		<offertype>eOfferNone</offertype>
+		<itemlevel>0</itemlevel>
+		<sellable>true</sellable>
+		<tradeable>true</tradeable>
+		<destroyable>true</destroyable>
+		<sellcostoverride>
+			<capitalresource quantity="39">cCapResCoin</capitalresource>
+		</sellcostoverride>
+		<rarity>cRarityJunk</rarity>
+		<budgetcost>1</budgetcost>
+		<contentpack>1</contentpack>
+	</material>
+	<material name="FillerLootNew_241">
+		<icon>UserInterface\Icons\FillerLoot\Wig_ua</icon>
+		<rollovertextid>60580</rollovertextid>
+		<displaynameid>801645</displaynameid>
+		<stacksize>1</stacksize>
+		<offertype>eOfferNone</offertype>
+		<itemlevel>0</itemlevel>
+		<sellable>true</sellable>
+		<tradeable>true</tradeable>
+		<destroyable>true</destroyable>
+		<sellcostoverride>
+			<capitalresource quantity="4">cCapResCoin</capitalresource>
+		</sellcostoverride>
+		<rarity>cRarityJunk</rarity>
+		<budgetcost>1</budgetcost>
+		<contentpack>1</contentpack>
+	</material>
+	<material name="FillerLootNew_242">
+		<icon>UserInterface\Icons\FillerLoot\Wig_ua</icon>
+		<rollovertextid>60580</rollovertextid>
+		<displaynameid>801646</displaynameid>
+		<stacksize>1</stacksize>
+		<offertype>eOfferNone</offertype>
+		<itemlevel>0</itemlevel>
+		<sellable>true</sellable>
+		<tradeable>true</tradeable>
+		<destroyable>true</destroyable>
+		<sellcostoverride>
+			<capitalresource quantity="13">cCapResCoin</capitalresource>
+		</sellcostoverride>
+		<rarity>cRarityJunk</rarity>
+		<budgetcost>1</budgetcost>
+		<contentpack>1</contentpack>
+	</material>
+	<material name="FillerLootNew_243">
+		<icon>UserInterface\Icons\FillerLoot\Wig_ua</icon>
+		<rollovertextid>60580</rollovertextid>
+		<displaynameid>801647</displaynameid>
+		<stacksize>1</stacksize>
+		<offertype>eOfferNone</offertype>
+		<itemlevel>0</itemlevel>
+		<sellable>true</sellable>
+		<tradeable>true</tradeable>
+		<destroyable>true</destroyable>
+		<sellcostoverride>
+			<capitalresource quantity="27">cCapResCoin</capitalresource>
+		</sellcostoverride>
+		<rarity>cRarityJunk</rarity>
+		<budgetcost>1</budgetcost>
+		<contentpack>1</contentpack>
+	</material>
+	<material name="Grain">
+		<icon>UserInterface\Icons\Materials\MatIconsGrain_ua</icon>
+		<rollovertextid>53132</rollovertextid>
+		<displaynameid>800008</displaynameid>
+		<stackable/>
+		<stacksize>1000</stacksize>
+		<offertype>eOfferNone</offertype>
+		<itemlevel>0</itemlevel>
+		<sellable>true</sellable>
+		<tradeable>true</tradeable>
+		<destroyable>true</destroyable>
+		<sellcostoverride>
+			<capitalresource quantity="0.1">cCapResCoin</capitalresource>
+		</sellcostoverride>
+		<rarity>cRarityCommon</rarity>
+		<budgetcost>1</budgetcost>
+		<contentpack>1</contentpack>
+	</material>
+	<material name="PinePlank">
+		<icon>UserInterface\Icons\Materials\MatIconsPinePlanks_ua</icon>
+		<rollovertextid>53132</rollovertextid>
+		<displaynameid>800019</displaynameid>
+		<stackable/>
+		<stacksize>1000</stacksize>
+		<offertype>eOfferNone</offertype>
+		<itemlevel>0</itemlevel>
+		<sellable>true</sellable>
+		<tradeable>true</tradeable>
+		<destroyable>true</destroyable>
+		<sellcostoverride>
+			<capitalresource quantity="0.1">cCapResCoin</capitalresource>
+		</sellcostoverride>
+		<rarity>cRarityCommon</rarity>
+		<budgetcost>1</budgetcost>
+		<contentpack>1</contentpack>
+	</material>
+	<material name="SH_Fungus">
+		<icon>UserInterface\Icons\Materials\MatIconsSH_Fungus_ua</icon>
+		<rollovertextid>66805</rollovertextid>
+		<displaynameid>801770</displaynameid>
+		<stacksize>10</stacksize>
+		<offertype>eOfferNone</offertype>
+		<itemlevel>0</itemlevel>
+		<sellable>false</sellable>
+		<tradeable>false</tradeable>
+		<destroyable>true</destroyable>
+		<rarity>cRarityCommon</rarity>
+		<budgetcost>1</budgetcost>
+		<contentpack>22</contentpack>
+	</material>
+	<material name="SH_Honey">
+		<icon>UserInterface\Icons\Materials\MatSH_Honey_ua</icon>
+		<rollovertextid>66808</rollovertextid>
+		<displaynameid>801773</displaynameid>
+		<stacksize>10</stacksize>
+		<offertype>eOfferNone</offertype>
+		<itemlevel>0</itemlevel>
+		<sellable>false</sellable>
+		<tradeable>false</tradeable>
+		<destroyable>true</destroyable>
+		<rarity>cRarityCommon</rarity>
+		<budgetcost>1</budgetcost>
+		<contentpack>22</contentpack>
+	</material>
+	<material name="SH_Seed">
+		<icon>UserInterface\Icons\Materials\MatIconsSH_Seeds_ua</icon>
+		<rollovertextid>66806</rollovertextid>
+		<displaynameid>801771</displaynameid>
+		<stacksize>10</stacksize>
+		<offertype>eOfferNone</offertype>
+		<itemlevel>0</itemlevel>
+		<sellable>false</sellable>
+		<tradeable>false</tradeable>
+		<destroyable>true</destroyable>
+		<rarity>cRarityCommon</rarity>
+		<budgetcost>1</budgetcost>
+		<contentpack>22</contentpack>
+	</material>
+	<material name="SH_Spice">
+		<icon>UserInterface\Icons\Materials\MatIconsSH_Spice_ua</icon>
+		<rollovertextid>66807</rollovertextid>
+		<displaynameid>801772</displaynameid>
+		<stacksize>10</stacksize>
+		<offertype>eOfferNone</offertype>
+		<itemlevel>0</itemlevel>
+		<sellable>false</sellable>
+		<tradeable>false</tradeable>
+		<destroyable>true</destroyable>
+		<rarity>cRarityCommon</rarity>
+		<budgetcost>1</budgetcost>
+		<contentpack>22</contentpack>
+	</material>
+	<material name="SH_Tears">
+		<icon>UserInterface\Icons\Materials\MatSH_Tears_ua</icon>
+		<rollovertextid>66809</rollovertextid>
+		<displaynameid>801774</displaynameid>
+		<stacksize>10</stacksize>
+		<offertype>eOfferNone</offertype>
+		<itemlevel>0</itemlevel>
+		<sellable>false</sellable>
+		<tradeable>false</tradeable>
+		<destroyable>true</destroyable>
+		<rarity>cRarityCommon</rarity>
+		<budgetcost>1</budgetcost>
+		<contentpack>22</contentpack>
+	</material>
+	<material name="SH_Umbrella">
+		<icon>UserInterface\Icons\Materials\MatSH_Umbrella_ua</icon>
+		<rollovertextid>66810</rollovertextid>
+		<displaynameid>801775</displaynameid>
+		<stacksize>10</stacksize>
+		<offertype>eOfferNone</offertype>
+		<itemlevel>0</itemlevel>
+		<sellable>false</sellable>
+		<tradeable>false</tradeable>
+		<destroyable>true</destroyable>
+		<rarity>cRarityCommon</rarity>
+		<budgetcost>1</budgetcost>
+		<contentpack>22</contentpack>
+	</material>
+	<material name="StoneBlock">
+		<icon>UserInterface\Icons\Materials\MatIconsStoneBlocks_ua</icon>
+		<rollovertextid>53132</rollovertextid>
+		<displaynameid>800021</displaynameid>
+		<stackable/>
+		<stacksize>1000</stacksize>
+		<offertype>eOfferNone</offertype>
+		<itemlevel>0</itemlevel>
+		<sellable>true</sellable>
+		<tradeable>true</tradeable>
+		<destroyable>true</destroyable>
+		<sellcostoverride>
+			<capitalresource quantity="0.1">cCapResCoin</capitalresource>
+		</sellcostoverride>
+		<rarity>cRarityCommon</rarity>
+		<budgetcost>1</budgetcost>
+		<contentpack>1</contentpack>
+	</material>
+</materials>

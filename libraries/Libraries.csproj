@@ -1,0 +1,513 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="15.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <Import Project="$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props" Condition="Exists('$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props')" />
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProjectGuid>{7DF68B8C-5A53-4FAD-B00D-7AE9DFC041C9}</ProjectGuid>
+    <OutputType>Library</OutputType>
+    <AppDesignerFolder>Properties</AppDesignerFolder>
+    <RootNamespace>Libraries</RootNamespace>
+    <AssemblyName>Libraries</AssemblyName>
+    <TargetFrameworkVersion>v4.5</TargetFrameworkVersion>
+    <FileAlignment>512</FileAlignment>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>bin\Debug\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\Release\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="Ionic.Zip">
+      <HintPath>..\packages\Unofficial.Ionic.Zip.1.9.1.8\lib\Ionic.Zip.dll</HintPath>
+    </Reference>
+    <Reference Include="log4net">
+      <HintPath>..\packages\log4net.2.0.8\lib\net45-full\log4net.dll</HintPath>
+    </Reference>
+    <Reference Include="Newtonsoft.Json">
+      <HintPath>..\packages\Newtonsoft.Json.10.0.3\lib\net45\Newtonsoft.Json.dll</HintPath>
+    </Reference>
+    <Reference Include="SuperSocket.Common">
+      <HintPath>..\packages\SuperSocket.1.6.6.1\lib\net45\SuperSocket.Common.dll</HintPath>
+    </Reference>
+    <Reference Include="SuperSocket.Facility">
+      <HintPath>..\packages\SuperSocket.1.6.6.1\lib\net45\SuperSocket.Facility.dll</HintPath>
+    </Reference>
+    <Reference Include="SuperSocket.SocketBase">
+      <HintPath>..\packages\SuperSocket.1.6.6.1\lib\net45\SuperSocket.SocketBase.dll</HintPath>
+    </Reference>
+    <Reference Include="System" />
+    <Reference Include="System.Configuration" />
+    <Reference Include="System.Core" />
+    <Reference Include="System.Xml.Linq" />
+    <Reference Include="System.Data.DataSetExtensions" />
+    <Reference Include="Microsoft.CSharp" />
+    <Reference Include="System.Data" />
+    <Reference Include="System.Net.Http" />
+    <Reference Include="System.Xml" />
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="database\Database.cs" />
+    <Compile Include="database\models\Quest.cs" />
+    <Compile Include="database\models\Quests.cs" />
+    <Compile Include="database\models\Equipment.cs" />
+    <Compile Include="database\models\Equipments.cs" />
+    <Compile Include="database\models\equipment\Rank.cs" />
+    <Compile Include="database\models\equipment\Ranks.cs" />
+    <Compile Include="database\models\Questgiver.cs" />
+    <Compile Include="database\models\Questgivers.cs" />
+    <Compile Include="database\models\base\SerializableDictionary.cs" />
+    <Compile Include="database\models\civilization\Ui.cs" />
+    <Compile Include="database\models\civilization\Greeting.cs" />
+    <Compile Include="database\models\civilization\Homecityloadscreens.cs" />
+    <Compile Include="database\models\civilization\Equipmentdialogtextures.cs" />
+    <Compile Include="database\models\civilization\Civcardinfo.cs" />
+    <Compile Include="database\models\civilization\Scenariobaseunits.cs" />
+    <Compile Include="database\models\civilization\Ignorecommandbutton.cs" />
+    <Compile Include="database\models\civilization\Charactertype .cs" />
+    <Compile Include="database\models\civilization\Allowedcharactertypes.cs" />
+    <Compile Include="database\models\civilization\Startingcity.cs" />
+    <Compile Include="database\models\civilization\Startingcities.cs" />
+    <Compile Include="database\models\civilization\Startingresources.cs" />
+    <Compile Include="database\models\civilization\Matchmakingtextures.cs" />
+    <Compile Include="database\models\civilization\Agetech.cs" />
+    <Compile Include="database\models\civilization\Welcomedialogs.cs" />
+    <Compile Include="database\models\civilization\Unitregen.cs" />
+    <Compile Include="database\models\civilization\Wall.cs" />
+    <Compile Include="database\models\generic\LootRoll.cs" />
+    <Compile Include="database\models\generic\Quest.cs" />
+    <Compile Include="database\models\generic\Advisor.cs" />
+    <Compile Include="database\models\generic\Design.cs" />
+    <Compile Include="database\models\generic\Gamecurrency.cs" />
+    <Compile Include="database\models\generic\Blueprint.cs" />
+    <Compile Include="database\models\Player.cs" />
+    <Compile Include="database\models\Players.cs" />
+    <Compile Include="database\models\Civilization.cs" />
+    <Compile Include="database\models\Civilizations.cs" />
+    <Compile Include="database\models\questgiver\Overrides.cs" />
+    <Compile Include="database\models\questgiver\Override.cs" />
+    <Compile Include="database\models\questgiver\Nearbuilding.cs" />
+    <Compile Include="database\models\questgiver\Location.cs" />
+    <Compile Include="database\models\questgiver\Spawntrigger.cs" />
+    <Compile Include="database\models\questgiver\Onunitcount.cs" />
+    <Compile Include="database\models\questgiver\Despawntrigger.cs" />
+    <Compile Include="database\models\questgiver\Onquest.cs" />
+    <Compile Include="database\models\quests\objectives\criteriatypes\Buildunit.cs" />
+    <Compile Include="database\models\quests\objectives\criteriatypes\Techstatus.cs" />
+    <Compile Include="database\models\quests\objectives\criteriatypes\Wingame.cs" />
+    <Compile Include="database\models\quests\objectives\criteriatypes\Completegame.cs" />
+    <Compile Include="database\models\quests\objectives\criteriatypes\Queststatus.cs" />
+    <Compile Include="database\models\quests\objectives\criteriatypes\Tribute.cs" />
+    <Compile Include="database\models\quests\objectives\criteriatypes\Population.cs" />
+    <Compile Include="database\models\quests\objectives\criteriatypes\Repairunit.cs" />
+    <Compile Include="database\models\quests\objectives\criteriatypes\Unitnearunit.cs" />
+    <Compile Include="database\models\quests\objectives\criteriatypes\Convertunit.cs" />
+    <Compile Include="database\models\quests\objectives\criteriatypes\Counter.cs" />
+    <Compile Include="database\models\quests\objectives\criteriatypes\Collectmaterial.cs" />
+    <Compile Include="database\models\quests\objectives\criteriatypes\Collectresource.cs" />
+    <Compile Include="database\models\quests\objectives\criteriatypes\Unitinarea.cs" />
+    <Compile Include="database\models\quests\Onaccept.cs" />
+    <Compile Include="database\models\quests\onaccept\Unlockequipment.cs" />
+    <Compile Include="database\models\quests\onaccept\Questgiver.cs" />
+    <Compile Include="database\models\quests\onaccept\Enableprotip.cs" />
+    <Compile Include="database\models\quests\onaccept\Blueprint.cs" />
+    <Compile Include="database\models\quests\onaccept\UnlockRegion.cs" />
+    <Compile Include="database\models\quests\onaccept\Protip.cs" />
+    <Compile Include="database\models\quests\prereqs\Civilization.cs" />
+    <Compile Include="database\models\quests\prereqs\AndPrereq.cs" />
+    <Compile Include="database\models\quests\prereqs\OrPrereq.cs" />
+    <Compile Include="database\models\quests\prereqs\Queststatus.cs" />
+    <Compile Include="database\models\quests\rewards\Consumable.cs" />
+    <Compile Include="database\models\quests\rewards\Capitaltech.cs" />
+    <Compile Include="database\models\quests\rewards\Enableprotip.cs" />
+    <Compile Include="database\models\quests\rewards\Gamecurrency.cs" />
+    <Compile Include="database\models\quests\rewards\Material.cs" />
+    <Compile Include="database\models\quests\rewards\Consumematerial.cs" />
+    <Compile Include="database\models\quests\rewards\Blueprint.cs" />
+    <Compile Include="database\models\quests\rewards\Trait.cs" />
+    <Compile Include="database\models\quests\rewards\Advisor.cs" />
+    <Compile Include="database\models\quests\rewards\QuestGiver.cs" />
+    <Compile Include="database\models\quests\rewards\Unlockregion.cs" />
+    <Compile Include="database\models\quests\rewards\Lockregion.cs" />
+    <Compile Include="database\models\quests\rewards\Mailreward.cs" />
+    <Compile Include="database\models\quests\rewards\Or.cs" />
+    <Compile Include="database\models\quests\rewards\Xp.cs" />
+    <Compile Include="database\models\quests\objectives\Criteria.cs" />
+    <Compile Include="database\models\quests\objectives\criteriatypes\Protectunit.cs" />
+    <Compile Include="database\models\quests\objectives\criteriatypes\Dummy.cs" />
+    <Compile Include="database\models\quests\objectives\criteriatypes\Ownsunit.cs" />
+    <Compile Include="database\models\quests\objectives\criteriatypes\Ownsequipment.cs" />
+    <Compile Include="database\models\quests\objectives\criteriatypes\Unitdiscovered.cs" />
+    <Compile Include="database\models\quests\objectives\criteriatypes\Timer.cs" />
+    <Compile Include="database\models\quests\Diplomacysettings.cs" />
+    <Compile Include="database\models\quests\Targets.cs" />
+    <Compile Include="database\models\quests\randommap\Nuggetoverride.cs" />
+    <Compile Include="database\models\quests\targets\Grouping.cs" />
+    <Compile Include="database\models\quests\targets\Overrides.cs" />
+    <Compile Include="database\models\quests\targets\Protounit.cs" />
+    <Compile Include="database\models\quests\objectives\criteriatypes\Kill.cs" />
+    <Compile Include="database\models\quests\objectives\AndObjective.cs" />
+    <Compile Include="database\models\quests\objectives\criteriatypes\Reduceunitsto.cs" />
+    <Compile Include="database\models\quests\objectives\Values.cs" />
+    <Compile Include="database\models\quests\objectives\OrObjective.cs" />
+    <Compile Include="database\models\quests\prereqs\Questcomplete.cs" />
+    <Compile Include="database\models\quests\randommap\Mapvariables.cs" />
+    <Compile Include="database\models\quests\ObjectivesSecondary.cs" />
+    <Compile Include="database\models\quests\playersettings\Aislidervariables.cs" />
+    <Compile Include="database\models\quests\playersettings\Aivariable.cs" />
+    <Compile Include="database\models\quests\playersettings\Aiflagvariables.cs" />
+    <Compile Include="database\models\quests\rewards\Protip.cs" />
+    <Compile Include="database\models\quests\randommap\Nuggetoverrides.cs" />
+    <Compile Include="database\models\quests\Playersettings.cs" />
+    <Compile Include="database\models\quests\Questreturners.cs" />
+    <Compile Include="database\models\quests\rewards\Alliancepoints.cs" />
+    <Compile Include="database\models\quests\rewards\Loottable.cs" />
+    <Compile Include="database\models\quests\rewards\Capitalresource.cs" />
+    <Compile Include="database\models\quests\RewardsSecondary.cs" />
+    <Compile Include="database\models\quests\timereffects\Spawnunit.cs" />
+    <Compile Include="database\models\quests\Timereffects.cs" />
+    <Compile Include="database\models\quests\Timer.cs" />
+    <Compile Include="database\models\quests\prereqs\Level.cs" />
+    <Compile Include="database\models\quests\prereqs\Values.cs" />
+    <Compile Include="database\models\quests\timer\Event.cs" />
+    <Compile Include="database\models\quests\timer\Events.cs" />
+    <Compile Include="database\models\quests\randommap\Mapvariable.cs" />
+    <Compile Include="database\models\quests\Prereqs.cs" />
+    <Compile Include="database\models\quests\Objectives.cs" />
+    <Compile Include="database\models\quests\Rewards.cs" />
+    <Compile Include="database\models\quests\Randommap.cs" />
+    <Compile Include="database\models\quests\Questgivers.cs" />
+    <Compile Include="database\models\Vendor.cs" />
+    <Compile Include="database\models\Vendors.cs" />
+    <Compile Include="database\models\LootRoll.cs" />
+    <Compile Include="database\models\LootRolls.cs" />
+    <Compile Include="database\models\Material.cs" />
+    <Compile Include="database\models\Materials.cs" />
+    <Compile Include="database\models\design\OutputConsumable.cs" />
+    <Compile Include="database\models\design\Input.cs" />
+    <Compile Include="database\models\generic\Trait.cs" />
+    <Compile Include="database\models\design\Output.cs" />
+    <Compile Include="database\models\Design.cs" />
+    <Compile Include="database\models\Designs.cs" />
+    <Compile Include="database\models\Consumable.cs" />
+    <Compile Include="database\models\Consumables.cs" />
+    <Compile Include="database\models\generic\Material.cs" />
+    <Compile Include="database\models\blueprint\Cost.cs" />
+    <Compile Include="database\models\Blueprint.cs" />
+    <Compile Include="database\models\Blueprints.cs" />
+    <Compile Include="database\models\characterlevel\Ageupeffect.cs" />
+    <Compile Include="database\models\characterlevel\Unlockregioneffect.cs" />
+    <Compile Include="database\models\characterlevel\Skillpointseffect.cs" />
+    <Compile Include="database\models\characterlevel\Gamecurrencyeffect.cs" />
+    <Compile Include="database\models\CharacterLevel.cs" />
+    <Compile Include="database\models\CharacterLevels.cs" />
+    <Compile Include="database\models\craftschool\Items.cs" />
+    <Compile Include="database\models\craftschool\Gear.cs" />
+    <Compile Include="database\models\craftschool\Gearicons.cs" />
+    <Compile Include="database\models\craftschool\Allowedcapitals.cs" />
+    <Compile Include="database\models\Craftschool.cs" />
+    <Compile Include="database\models\Advisor.cs" />
+    <Compile Include="database\models\Craftschools.cs" />
+    <Compile Include="database\models\Advisors.cs" />
+    <Compile Include="database\models\base\Base.cs" />
+    <Compile Include="database\models\generic\Capitalresource.cs" />
+    <Compile Include="database\models\Region.cs" />
+    <Compile Include="database\models\Regions.cs" />
+    <Compile Include="database\models\generic\Sellcostoverride.cs" />
+    <Compile Include="database\models\advisor\Techs.cs" />
+    <Compile Include="database\models\vendor\Material.cs" />
+    <Compile Include="database\models\vendor\Consumable.cs" />
+    <Compile Include="database\models\vendor\Cost.cs" />
+    <Compile Include="database\models\vendor\Purchase.cs" />
+    <Compile Include="database\models\vendor\Item.cs" />
+    <Compile Include="database\models\vendor\Items.cs" />
+    <Compile Include="database\models\vendor\Itemset.cs" />
+    <Compile Include="database\models\vendor\Itemsets.cs" />
+    <Compile Include="enums\Alliances.cs" />
+    <Compile Include="enums\Civilizations.cs" />
+    <Compile Include="enums\Offers.cs" />
+    <Compile Include="enums\PacketTypes.cs" />
+    <Compile Include="enums\PacketTypesChat.cs" />
+    <Compile Include="enums\QuestgamemodeTypes.cs" />
+    <Compile Include="enums\QuestTypes.cs" />
+    <Compile Include="enums\StringListTypes.cs" />
+    <Compile Include="exceptions\player\InvalidPasswordException.cs" />
+    <Compile Include="exceptions\player\InvalidPlayerNameException.cs" />
+    <Compile Include="helpers\Database.cs" />
+    <Compile Include="helpers\General.cs" />
+    <Compile Include="helpers\package\PackageChat.cs" />
+    <Compile Include="helpers\package\PackageChatCommandFilter.cs" />
+    <Compile Include="helpers\package\PackageCommandFilter.cs" />
+    <Compile Include="helpers\package\PackageChatParser.cs" />
+    <Compile Include="helpers\package\PackageParser.cs" />
+    <Compile Include="helpers\package\Package.cs" />
+    <Compile Include="helpers\package\PackageZipProtection.cs" />
+    <Compile Include="helpers\Pathing.cs" />
+    <Compile Include="helpers\Player.cs" />
+    <Compile Include="helpers\Random.cs" />
+    <Compile Include="helpers\Server.cs" />
+    <Compile Include="helpers\xml\serializabledictionaries\Quests.cs" />
+    <Compile Include="helpers\xml\serializabledictionaries\Equipments.cs" />
+    <Compile Include="helpers\xml\serializabledictionaries\Questgivers.cs" />
+    <Compile Include="helpers\xml\serializabledictionaries\Civilizations.cs" />
+    <Compile Include="helpers\xml\serializabledictionaries\LootRolls.cs" />
+    <Compile Include="helpers\xml\serializabledictionaries\Materials.cs" />
+    <Compile Include="helpers\xml\serializabledictionaries\CharacterLevels.cs" />
+    <Compile Include="helpers\xml\serializabledictionaries\Vendors.cs" />
+    <Compile Include="helpers\xml\serializabledictionaries\Craftschools.cs" />
+    <Compile Include="helpers\xml\serializabledictionaries\Designs.cs" />
+    <Compile Include="helpers\xml\serializabledictionaries\Consumables.cs" />
+    <Compile Include="helpers\xml\serializabledictionaries\Blueprints.cs" />
+    <Compile Include="helpers\xml\serializabledictionaries\Regions.cs" />
+    <Compile Include="helpers\xml\serializabledictionaries\Advisors.cs" />
+    <Compile Include="helpers\xml\XML.cs" />
+    <Compile Include="packages\chat\request\rqBBotNetBasePacketChatData.cs" />
+    <Compile Include="packages\chat\request\rqBBotNetBasePacketCustomChatLeaveChannelRequest.cs" />
+    <Compile Include="packages\chat\request\rqBBotNetBasePacketCustomChatMessage.cs" />
+    <Compile Include="packages\chat\request\rqBBotNetBasePacketCustomChatJoinChannelRequest.cs" />
+    <Compile Include="packages\chat\request\rqBBotNetBasePacketCustomChatConnect.cs" />
+    <Compile Include="packages\chat\request\rqBBotNetBasePacketCustomChatPing.cs" />
+    <Compile Include="packages\chat\request\rqBBotNetBasePacketCustomChatPopCountRequest.cs" />
+    <Compile Include="packages\chat\request\rqBBotNetBasePacketCustomChatWhisper.cs" />
+    <Compile Include="packages\chat\request\rqBBotNetBasePacketCustomRequestLeaveServer.cs" />
+    <Compile Include="packages\chat\request\rqBBotNetBasePacketDirectChatData.cs" />
+    <Compile Include="packages\chat\request\rqBBotNetBasePacketReportChat.cs" />
+    <Compile Include="packages\chat\response\rsBBotNetBasePacketChatData.cs" />
+    <Compile Include="packages\chat\response\rsBBotNetBasePacketCustomChatJoinChannelEvent.cs" />
+    <Compile Include="packages\chat\response\rsBBotNetBasePacketCustomChatLeaveChannelEvent.cs" />
+    <Compile Include="packages\chat\response\rsBBotNetBasePacketCustomChatPopCountEvent.cs" />
+    <Compile Include="packages\chat\response\rsBBotNetBasePacketCustomChatWhisperResponse.cs" />
+    <Compile Include="packages\chat\response\rsBBotNetBasePacketDirectChatData.cs" />
+    <Compile Include="packages\chat\response\rsEChatReceivedEvent.cs" />
+    <Compile Include="packages\chat\response\rsBBotNetBasePacketCustomChatPong.cs" />
+    <Compile Include="packages\chat\response\rsEServerAnnouncement.cs" />
+    <Compile Include="packages\chat\response\rsEWhisperRecievedEvent.cs" />
+    <Compile Include="packages\todo\request\rqBAcknowledgeBugReport.cs" />
+    <Compile Include="packages\todo\request\rqBActivateConsumableEffect.cs" />
+    <Compile Include="packages\todo\request\rqBAssetTransactionStoreAssets.cs" />
+    <Compile Include="packages\todo\request\rqBBotNetRequestPing.cs" />
+    <Compile Include="packages\todo\request\rqBBotNetUnregisterSessionIdRequest.cs" />
+    <Compile Include="packages\todo\request\rqBCharacterRewardPacket.cs" />
+    <Compile Include="packages\todo\request\rqBCityRemoveListPacket.cs" />
+    <Compile Include="packages\todo\request\rqBDeleteMailRequest.cs" />
+    <Compile Include="packages\todo\request\rqBDesignProductionComplete.cs" />
+    <Compile Include="packages\todo\request\rqBGetMailCoinRequest.cs" />
+    <Compile Include="packages\todo\request\rqBGetMailItemRequest.cs" />
+    <Compile Include="packages\game\request\rqBGetMailMessagesRequest.cs" />
+    <Compile Include="packages\todo\request\rqBgmXuidList.cs" />
+    <Compile Include="packages\todo\request\rqBKickbackInformationRequest.cs" />
+    <Compile Include="packages\todo\request\rqBMarkMailReadRequest.cs" />
+    <Compile Include="packages\todo\request\rqBModifyRegionPacket.cs" />
+    <Compile Include="packages\todo\request\rqBModifyTerritoryPacket.cs" />
+    <Compile Include="packages\todo\request\rqBOfflineActivityPacket.cs" />
+    <Compile Include="packages\todo\request\rqBQuestGiverSpawnUnitPacket.cs" />
+    <Compile Include="packages\todo\request\rqBRemoveOneTech.cs" />
+    <Compile Include="packages\todo\request\rqBRemoveTechs.cs" />
+    <Compile Include="packages\todo\request\rqBReportPvPGameComplete.cs" />
+    <Compile Include="packages\todo\request\rqBRequestAddUnitToRemoveListPacket.cs" />
+    <Compile Include="packages\todo\request\rqBRequestAdjustSkillPoints.cs" />
+    <Compile Include="packages\game\request\rqBRequestAllianceContestsStatus.cs" />
+    <Compile Include="packages\game\request\rqBRequestAndIncrementScenarioIdPacket.cs" />
+    <Compile Include="packages\game\request\rqBRequestAssignAdvisorPacket.cs" />
+    <Compile Include="packages\todo\request\rqBRequestAssignAdvisorPacketResult.cs" />
+    <Compile Include="packages\todo\request\rqBRequestAttachStoredVanityItem.cs" />
+    <Compile Include="packages\todo\request\rqBRequestAttachTraitPacket.cs" />
+    <Compile Include="packages\todo\request\rqBRequestBuyBackItem.cs" />
+    <Compile Include="packages\todo\request\rqBRequestBuyItem.cs" />
+    <Compile Include="packages\todo\request\rqBRequestChangeAllianceContestContribution.cs" />
+    <Compile Include="packages\game\request\rqBRequestCharacterConfigUpdate.cs" />
+    <Compile Include="packages\todo\request\rqBRequestChooseCraftSchool.cs" />
+    <Compile Include="packages\game\request\rqBRequestCityDataPacket.cs" />
+    <Compile Include="packages\todo\request\rqBRequestCityInfoPacket.cs" />
+    <Compile Include="packages\todo\request\rqBRequestConsoleCommand.cs" />
+    <Compile Include="packages\todo\request\rqBRequestContentLicenseFile.cs" />
+    <Compile Include="packages\todo\request\rqBRequestConvertBuildingToBlueprint.cs" />
+    <Compile Include="packages\game\request\rqBRequestCreateNewCharacter.cs" />
+    <Compile Include="packages\todo\request\rqBRequestCreatePreloadedCharacter.cs" />
+    <Compile Include="packages\todo\request\rqBRequestCurrentBonuses.cs" />
+    <Compile Include="packages\todo\request\rqBRequestDeleteCharacter.cs" />
+    <Compile Include="packages\todo\request\rqBRequestDesignProduction.cs" />
+    <Compile Include="packages\todo\request\rqBRequestDesignProductionCancel.cs" />
+    <Compile Include="packages\todo\request\rqBRequestDestroyInventoryItem.cs" />
+    <Compile Include="packages\todo\request\rqBRequestDetachStoredVanityItem.cs" />
+    <Compile Include="packages\todo\request\rqBRequestEconDataPacket.cs" />
+    <Compile Include="packages\todo\request\rqBRequestEmpireInventoryAddItem.cs" />
+    <Compile Include="packages\todo\request\rqBRequestEmpireInventoryRemoveItem.cs" />
+    <Compile Include="packages\todo\request\rqBRequestEnterRespecMode.cs" />
+    <Compile Include="packages\todo\request\rqBRequestGetContainerNumSlots.cs" />
+    <Compile Include="packages\todo\request\rqBRequestInstanceEnumeration.cs" />
+    <Compile Include="packages\game\request\rqBRequestInventoryDataPacket.cs" />
+    <Compile Include="packages\todo\request\rqBRequestJoinAlliance.cs" />
+    <Compile Include="packages\todo\request\rqBRequestLeaveAlliance.cs" />
+    <Compile Include="packages\todo\request\rqBRequestMarketplaceAddItem.cs" />
+    <Compile Include="packages\todo\request\rqBRequestMarketplaceBuyItem.cs" />
+    <Compile Include="packages\todo\request\rqBRequestMarketplaceClaimCoin.cs" />
+    <Compile Include="packages\game\request\rqBRequestMarketplaceItemsForCharacterId.cs" />
+    <Compile Include="packages\todo\request\rqBRequestMarketplaceSearch.cs" />
+    <Compile Include="packages\todo\request\rqBRequestMoveInventory.cs" />
+    <Compile Include="packages\todo\request\rqBRequestNewActiveTechPacket.cs" />
+    <Compile Include="packages\todo\request\rqBRequestNewTransfer.cs" />
+    <Compile Include="packages\todo\request\rqBRequestNuggetCompletePacket.cs" />
+    <Compile Include="packages\todo\request\rqBRequestOpenChest.cs" />
+    <Compile Include="packages\todo\request\rqBRequestPlaceBlueprintPacket.cs" />
+    <Compile Include="packages\game\request\rqBRequestPopulateVendor.cs" />
+    <Compile Include="packages\todo\request\rqBRequestPurchaseCurrencyContent.cs" />
+    <Compile Include="packages\todo\request\rqBRequestPurchaseEmpireInventorySlots.cs" />
+    <Compile Include="packages\todo\request\rqBRequestPvPGameStart.cs" />
+    <Compile Include="packages\todo\request\rqBRequestQuestOperation.cs" />
+    <Compile Include="packages\todo\request\rqBRequestQuestSaveObjectives.cs" />
+    <Compile Include="packages\todo\request\rqBRequestRefreshOfferStateData.cs" />
+    <Compile Include="packages\todo\request\rqBRequestRefreshQuestGiverSpawns.cs" />
+    <Compile Include="packages\game\request\rqBRequestRegionMap.cs" />
+    <Compile Include="packages\todo\request\rqBRequestReloadPdlc.cs" />
+    <Compile Include="packages\todo\request\rqBRequestRemoveTraitPacket.cs" />
+    <Compile Include="packages\todo\request\rqBRequestRenameCharacter.cs" />
+    <Compile Include="packages\todo\request\rqBRequestResetSkillPoints.cs" />
+    <Compile Include="packages\game\request\rqBRequestRetrieveOptions.cs" />
+    <Compile Include="packages\game\request\rqBRequestRetrievePersistentData.cs" />
+    <Compile Include="packages\todo\request\rqBRequestRetrieveScenarioDelta.cs" />
+    <Compile Include="packages\game\request\rqBRequestSavedUnitsToServerFirstTime.cs" />
+    <Compile Include="packages\todo\request\rqBRequestSelectMilestoneReward.cs" />
+    <Compile Include="packages\todo\request\rqBRequestSellItem.cs" />
+    <Compile Include="packages\game\request\rqBRequestSetCharacterFlags.cs" />
+    <Compile Include="packages\todo\request\rqBRequestSteamCheckForOutofGamePurchase.cs" />
+    <Compile Include="packages\todo\request\rqBRequestSteamEnumerateAssets.cs" />
+    <Compile Include="packages\todo\request\rqBRequestSteamFinalize.cs" />
+    <Compile Include="packages\todo\request\rqBRequestSteamSmokeTest.cs" />
+    <Compile Include="packages\todo\request\rqBRequestSteamTransaction.cs" />
+    <Compile Include="packages\todo\request\rqBRequestStoreOptions.cs" />
+    <Compile Include="packages\todo\request\rqBRequestStorePersistentData.cs" />
+    <Compile Include="packages\todo\request\rqBRequestStoreScenarioDelta.cs" />
+    <Compile Include="packages\todo\request\rqBRequestUnitKillXp.cs" />
+    <Compile Include="packages\todo\request\rqBRequestUpdateCharacterGearScore.cs" />
+    <Compile Include="packages\todo\request\rqBRequestUseConsumable.cs" />
+    <Compile Include="packages\todo\request\rqBRequestUseInventoryPacket.cs" />
+    <Compile Include="packages\todo\request\rqBRequestValidateContentList.cs" />
+    <Compile Include="packages\todo\request\rqBRequestVisitCityPacket.cs" />
+    <Compile Include="packages\todo\request\rqBSecureTradeRequestCancel.cs" />
+    <Compile Include="packages\todo\request\rqBSecureTradeRequestTrade.cs" />
+    <Compile Include="packages\todo\request\rqBSecureTradeSetAcceptance.cs" />
+    <Compile Include="packages\todo\request\rqBSecureTradeSetItems.cs" />
+    <Compile Include="packages\todo\request\rqBSendBugReport.cs" />
+    <Compile Include="packages\todo\request\rqBSendMailRequest.cs" />
+    <Compile Include="packages\todo\request\rqBServerSpawnOnClient.cs" />
+    <Compile Include="packages\todo\request\rqBUnitStatePacket.cs" />
+    <Compile Include="packages\game\request\rqBGetEmpireRequest.cs" />
+    <Compile Include="packages\todo\request\rqBUpdateResourcesPacket.cs" />
+    <Compile Include="packages\todo\response\rsBBotNetResponsePong.cs" />
+    <Compile Include="packages\game\response\rsBCharacterDetailsPacket.cs" />
+    <Compile Include="packages\game\response\rsBCharacterFlagsChanged.cs" />
+    <Compile Include="packages\game\response\rsBCharacterInitPacket.cs" />
+    <Compile Include="packages\game\response\rsBCharacterPersistenceDone.cs" />
+    <Compile Include="packages\game\response\rsBCharacterStringListPacket.cs" />
+    <Compile Include="packages\todo\response\rsBDeleteMailResponse.cs" />
+    <Compile Include="packages\todo\response\rsBEconDataDefinitionPacket.cs" />
+    <Compile Include="packages\game\response\rsBGameCurrencyPacket.cs" />
+    <Compile Include="packages\todo\response\rsBGetMailCoinResponse.cs" />
+    <Compile Include="packages\todo\response\rsBGetMailItemResponse.cs" />
+    <Compile Include="packages\game\response\rsBGetMailMessagesResponse.cs" />
+    <Compile Include="packages\todo\response\rsBMilestoneRewardPacket.cs" />
+    <Compile Include="packages\todo\response\rsBNotifyInventoryRemoved.cs" />
+    <Compile Include="packages\todo\response\rsBQuestGiverDespawnUnitPacket.cs" />
+    <Compile Include="packages\todo\response\rsBResetLearnedDesignsPacket.cs" />
+    <Compile Include="packages\todo\response\rsBResponseAdjustSkillPoints.cs" />
+    <Compile Include="packages\game\response\rsBResponseAllianceContestsStatus.cs" />
+    <Compile Include="packages\todo\response\rsBResponseAttachTraitPacket.cs" />
+    <Compile Include="packages\todo\response\rsBResponseBuyItem.cs" />
+    <Compile Include="packages\todo\response\rsBResponseChangeAllianceContestContribution.cs" />
+    <Compile Include="packages\game\response\rsBResponseCityDataCompletePacket.cs" />
+    <Compile Include="packages\game\response\rsBResponseCityDataStartPacket.cs" />
+    <Compile Include="packages\todo\response\rsBResponseCityInfoPacket.cs" />
+    <Compile Include="packages\todo\response\rsBResponseConsoleCommand.cs" />
+    <Compile Include="packages\todo\response\rsBResponseConvertBuildingToBlueprint.cs" />
+    <Compile Include="packages\game\response\rsBResponseCreateNewCharacter.cs" />
+    <Compile Include="packages\todo\response\rsBResponseCurrentBonuses.cs" />
+    <Compile Include="packages\todo\response\rsBResponseDeleteCharacter.cs" />
+    <Compile Include="packages\todo\response\rsBResponseDesignProduction.cs" />
+    <Compile Include="packages\todo\response\rsBResponseEnterRespecMode.cs" />
+    <Compile Include="packages\game\response\rsBResponseGetContainerNumSlots.cs" />
+    <Compile Include="packages\todo\response\rsBResponseInstanceEnumeration.cs" />
+    <Compile Include="packages\todo\response\rsBResponseLaunchQuestMapPacket.cs" />
+    <Compile Include="packages\todo\response\rsBResponseMarketplaceAddItem.cs" />
+    <Compile Include="packages\todo\response\rsBResponseMarketplaceBuyItem.cs" />
+    <Compile Include="packages\todo\response\rsBResponseMarketplaceClaimCoin.cs" />
+    <Compile Include="packages\todo\response\rsBResponseMarketplaceItemsForCharacterId.cs" />
+    <Compile Include="packages\todo\response\rsBResponseMarketplaceSearch.cs" />
+    <Compile Include="packages\todo\response\rsBResponseNewTransfer.cs" />
+    <Compile Include="packages\todo\response\rsBResponseNuggetCompletePacket.cs" />
+    <Compile Include="packages\todo\response\rsBResponsePlaceBlueprintPacket.cs" />
+    <Compile Include="packages\todo\response\rsBResponsePurchaseCurrencyContent.cs" />
+    <Compile Include="packages\todo\response\rsBResponsePurchaseEmpireInventorySlots.cs" />
+    <Compile Include="packages\todo\response\rsBResponsePvPGameComplete.cs" />
+    <Compile Include="packages\todo\response\rsBResponsePvPGameStart.cs" />
+    <Compile Include="packages\todo\response\rsBResponseQuestListData.cs" />
+    <Compile Include="packages\todo\response\rsBResponseQuestOperation.cs" />
+    <Compile Include="packages\todo\response\rsBResponseQuestSaveObjectives.cs" />
+    <Compile Include="packages\todo\response\rsBResponseReloadPdlc.cs" />
+    <Compile Include="packages\todo\response\rsBResponseRemoveTraitPacket.cs" />
+    <Compile Include="packages\game\response\rsBResponseRequestRegionMap.cs" />
+    <Compile Include="packages\todo\response\rsBResponseResetSkillPoints.cs" />
+    <Compile Include="packages\game\response\rsBResponseRetrieveOptions.cs" />
+    <Compile Include="packages\todo\response\rsBResponseRetrievePersistentData.cs" />
+    <Compile Include="packages\todo\response\rsBResponseRetrieveScenarioDelta.cs" />
+    <Compile Include="packages\todo\response\rsBResponseRewardNotificationPacket.cs" />
+    <Compile Include="packages\game\response\rsBResponseScenarioIdPacket.cs" />
+    <Compile Include="packages\todo\response\rsBResponseSteamFinalize.cs" />
+    <Compile Include="packages\todo\response\rsBResponseSteamSmokeTest.cs" />
+    <Compile Include="packages\todo\response\rsBResponseSteamTransaction.cs" />
+    <Compile Include="packages\todo\response\rsBResponseStoreOptions.cs" />
+    <Compile Include="packages\todo\response\rsBResponseStorePersistentData.cs" />
+    <Compile Include="packages\todo\response\rsBResponseValidateContentListComplete.cs" />
+    <Compile Include="packages\todo\response\rsBResponseValidateContentListRequestLicense.cs" />
+    <Compile Include="packages\todo\response\rsBResponseVisitCityPacket.cs" />
+    <Compile Include="packages\todo\response\rsBSecureTradeAcceptRequest.cs" />
+    <Compile Include="packages\todo\response\rsBSecureTradeCancelled.cs" />
+    <Compile Include="packages\todo\response\rsBSecureTradeInfo.cs" />
+    <Compile Include="packages\todo\response\rsBSendMailResponse.cs" />
+    <Compile Include="packages\todo\response\rsBServerGeneralMessage.cs" />
+    <Compile Include="packages\todo\response\rsBUnitClientStatePacket.cs" />
+    <Compile Include="packages\game\response\rsBGetEmpireResponse.cs" />
+    <Compile Include="packages\todo\unknown\_BAllianceContestDefinitions.cs" />
+    <Compile Include="packages\todo\unknown\_BCurrencyContentInfoUpdate.cs" />
+    <Compile Include="packages\todo\unknown\_BDynamicGameConfigsPacket.cs" />
+    <Compile Include="packages\todo\unknown\_BMarketplaceNotifySale.cs" />
+    <Compile Include="packages\todo\unknown\_BPlayerAllianceData.cs" />
+    <Compile Include="packages\todo\unknown\_BSteamAssetsPurchased.cs" />
+    <Compile Include="packages\todo\unknown\_BTransferNotify.cs" />
+    <Compile Include="players\players.cs" />
+    <Compile Include="player\Player.cs" />
+    <Compile Include="packages\authentication\request\rqBRequestInitialConnection.cs" />
+    <Compile Include="packages\authentication\request\rqBRequestGfWlValid.cs" />
+    <Compile Include="packages\authentication\response\rsBResponseInitialConnection.cs" />
+    <Compile Include="packages\authentication\response\rsBResponseGfWlValid.cs" />
+    <Compile Include="packages\custom\request\rqBRequestSessionHandShake.cs" />
+    <Compile Include="packages\custom\response\rsBResponseSessionHandShake.cs" />
+    <Compile Include="packages\game\request\rqBAssetTransactionGetCurrentCount.cs" />
+    <Compile Include="packages\game\request\rqBBotNetVersionRequestPacket.cs" />
+    <Compile Include="packages\game\request\rqBRequestQueueLocation.cs" />
+    <Compile Include="packages\game\request\rqBRequestSessionTerminatePacket.cs" />
+    <Compile Include="packages\game\request\rqBRequestUserAuthentication.cs" />
+    <Compile Include="packages\game\response\rsBAssetTransactionCurrentCount.cs" />
+    <Compile Include="packages\game\response\rsBBotNetVersionResponsePacket.cs" />
+    <Compile Include="packages\game\response\rsBResponseQueueLocation.cs" />
+    <Compile Include="packages\game\response\rsBResponseUserAuthentication.cs" />
+    <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="utf8stringwriter\Utf8StringWriter.cs" />
+  </ItemGroup>
+  <ItemGroup>
+    <Folder Include="database\models\player\" />
+  </ItemGroup>
+  <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
+</Project>

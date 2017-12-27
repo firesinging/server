@@ -1,0 +1,3448 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<consumables xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xsd="http://www.w3.org/2001/XMLSchema">
+	<consumable name="ConsumableSpy_C">
+		<icon>UserInterface\Icons\Consumable\ConSpy1_ua</icon>
+		<rollovertextid>52902</rollovertextid>
+		<displaynameid>52901</displaynameid>
+		<stackable/>
+		<stacksize>20</stacksize>
+		<offertype>eOfferNone</offertype>
+		<itemlevel>3</itemlevel>
+		<sellable>true</sellable>
+		<tradeable>true</tradeable>
+		<destroyable>true</destroyable>
+		<sellcostoverride>
+			<capitalresource quantity="5">cCapResCoin</capitalresource>
+		</sellcostoverride>
+		<rarity>cRarityCommon</rarity>
+		<power>PowerLOS_C</power>
+		<civmatchingtype>eCivMatchingTypeAny</civmatchingtype>
+	</consumable>
+	<consumable name="ConsumableSpy_U">
+		<icon>UserInterface\Icons\Consumable\ConSpy2_ua</icon>
+		<rollovertextid>52902</rollovertextid>
+		<displaynameid>52901</displaynameid>
+		<stackable/>
+		<stacksize>20</stacksize>
+		<offertype>eOfferNone</offertype>
+		<itemlevel>3</itemlevel>
+		<sellable>true</sellable>
+		<tradeable>true</tradeable>
+		<destroyable>true</destroyable>
+		<sellcostoverride>
+			<capitalresource quantity="10">cCapResCoin</capitalresource>
+		</sellcostoverride>
+		<rarity>cRarityUncommon</rarity>
+		<power>PowerLOS_U</power>
+		<civmatchingtype>eCivMatchingTypeAny</civmatchingtype>
+	</consumable>
+	<consumable name="ConsumableSpy_R">
+		<icon>UserInterface\Icons\Consumable\ConSpy3_ua</icon>
+		<rollovertextid>52902</rollovertextid>
+		<displaynameid>52901</displaynameid>
+		<stackable/>
+		<stacksize>20</stacksize>
+		<offertype>eOfferCivMatching</offertype>
+		<itemlevel>3</itemlevel>
+		<sellable>true</sellable>
+		<tradeable>true</tradeable>
+		<destroyable>true</destroyable>
+		<sellcostoverride>
+			<capitalresource quantity="15">cCapResCoin</capitalresource>
+		</sellcostoverride>
+		<rarity>cRarityRare</rarity>
+		<power>PowerLOS_R</power>
+		<civmatchingtype>eCivMatchingTypeAny</civmatchingtype>
+	</consumable>
+	<consumable name="ConsumableSpy_E">
+		<icon>UserInterface\Icons\Consumable\ConSpy4_ua</icon>
+		<rollovertextid>52902</rollovertextid>
+		<displaynameid>52901</displaynameid>
+		<stackable/>
+		<stacksize>20</stacksize>
+		<offertype>eOfferCivMatching</offertype>
+		<itemlevel>3</itemlevel>
+		<sellable>true</sellable>
+		<tradeable>true</tradeable>
+		<destroyable>true</destroyable>
+		<sellcostoverride>
+			<capitalresource quantity="20">cCapResCoin</capitalresource>
+		</sellcostoverride>
+		<rarity>cRarityEpic</rarity>
+		<power>PowerLOS_E</power>
+		<civmatchingtype>eCivMatchingTypeAny</civmatchingtype>
+	</consumable>
+	<consumable name="ConsumableScout_C">
+		<icon>UserInterface\Icons\Consumable\ConScout1_ua</icon>
+		<rollovertextid>55361</rollovertextid>
+		<displaynameid>55360</displaynameid>
+		<stackable/>
+		<stacksize>20</stacksize>
+		<offertype>eOfferNone</offertype>
+		<itemlevel>3</itemlevel>
+		<sellable>true</sellable>
+		<tradeable>true</tradeable>
+		<destroyable>true</destroyable>
+		<sellcostoverride>
+			<capitalresource quantity="5">cCapResCoin</capitalresource>
+		</sellcostoverride>
+		<rarity>cRarityCommon</rarity>
+		<power>PowerSpawnScout</power>
+		<civmatchingtype>eCivMatchingTypeGreek</civmatchingtype>
+	</consumable>
+	<consumable name="ConsumableScoutEg_C">
+		<icon>UserInterface\Icons\Consumable\ConScout1_ua</icon>
+		<rollovertextid>55361</rollovertextid>
+		<displaynameid>57740</displaynameid>
+		<stackable/>
+		<stacksize>20</stacksize>
+		<offertype>eOfferNone</offertype>
+		<itemlevel>3</itemlevel>
+		<sellable>true</sellable>
+		<tradeable>true</tradeable>
+		<destroyable>true</destroyable>
+		<sellcostoverride>
+			<capitalresource quantity="5">cCapResCoin</capitalresource>
+		</sellcostoverride>
+		<rarity>cRarityCommon</rarity>
+		<power>PowerSpawnScoutEg</power>
+		<civmatchingtype>eCivMatchingTypeEgyptian</civmatchingtype>
+	</consumable>
+	<consumable name="ConsumableHP_C">
+		<icon>UserInterface\Icons\Consumable\ConHPBoost1_ua</icon>
+		<rollovertextid>56705</rollovertextid>
+		<displaynameid>52899</displaynameid>
+		<stackable/>
+		<stacksize>20</stacksize>
+		<offertype>eOfferNone</offertype>
+		<itemlevel>7</itemlevel>
+		<sellable>true</sellable>
+		<tradeable>true</tradeable>
+		<destroyable>true</destroyable>
+		<sellcostoverride>
+			<capitalresource quantity="5">cCapResCoin</capitalresource>
+		</sellcostoverride>
+		<rarity>cRarityCommon</rarity>
+		<power>PowerHP_C</power>
+		<civmatchingtype>eCivMatchingTypeAny</civmatchingtype>
+	</consumable>
+	<consumable name="ConsumableHP_U">
+		<icon>UserInterface\Icons\Consumable\ConHPBoost2_ua</icon>
+		<rollovertextid>56705</rollovertextid>
+		<displaynameid>52899</displaynameid>
+		<stackable/>
+		<stacksize>20</stacksize>
+		<offertype>eOfferNone</offertype>
+		<itemlevel>7</itemlevel>
+		<sellable>true</sellable>
+		<tradeable>true</tradeable>
+		<destroyable>true</destroyable>
+		<sellcostoverride>
+			<capitalresource quantity="10">cCapResCoin</capitalresource>
+		</sellcostoverride>
+		<rarity>cRarityUncommon</rarity>
+		<power>PowerHP_U</power>
+		<civmatchingtype>eCivMatchingTypeAny</civmatchingtype>
+	</consumable>
+	<consumable name="ConsumableHP_R">
+		<icon>UserInterface\Icons\Consumable\ConHPBoost3_ua</icon>
+		<rollovertextid>56706</rollovertextid>
+		<displaynameid>52899</displaynameid>
+		<stackable/>
+		<stacksize>20</stacksize>
+		<offertype>eOfferCivMatching</offertype>
+		<itemlevel>7</itemlevel>
+		<sellable>true</sellable>
+		<tradeable>true</tradeable>
+		<destroyable>true</destroyable>
+		<sellcostoverride>
+			<capitalresource quantity="15">cCapResCoin</capitalresource>
+		</sellcostoverride>
+		<rarity>cRarityRare</rarity>
+		<power>PowerHP_R</power>
+		<civmatchingtype>eCivMatchingTypeAny</civmatchingtype>
+	</consumable>
+	<consumable name="ConsumableHP_E">
+		<icon>UserInterface\Icons\Consumable\ConHPBoost4_ua</icon>
+		<rollovertextid>56707</rollovertextid>
+		<displaynameid>52899</displaynameid>
+		<stackable/>
+		<stacksize>20</stacksize>
+		<offertype>eOfferCivMatching</offertype>
+		<itemlevel>7</itemlevel>
+		<sellable>true</sellable>
+		<tradeable>true</tradeable>
+		<destroyable>true</destroyable>
+		<sellcostoverride>
+			<capitalresource quantity="20">cCapResCoin</capitalresource>
+		</sellcostoverride>
+		<rarity>cRarityEpic</rarity>
+		<power>PowerHP_E</power>
+		<civmatchingtype>eCivMatchingTypeAny</civmatchingtype>
+	</consumable>
+	<consumable name="ConsumableBanditArcher_C">
+		<icon>UserInterface\Icons\Consumable\ConBandArcher1_ua</icon>
+		<rollovertextid>52894</rollovertextid>
+		<displaynameid>52893</displaynameid>
+		<stackable/>
+		<stacksize>20</stacksize>
+		<offertype>eOfferNone</offertype>
+		<itemlevel>3</itemlevel>
+		<sellable>true</sellable>
+		<tradeable>true</tradeable>
+		<destroyable>true</destroyable>
+		<sellcostoverride>
+			<capitalresource quantity="5">cCapResCoin</capitalresource>
+		</sellcostoverride>
+		<rarity>cRarityCommon</rarity>
+		<power>PowerSpawnBanditArcher_C</power>
+		<civmatchingtype>eCivMatchingTypeAny</civmatchingtype>
+	</consumable>
+	<consumable name="ConsumableBanditArcher_U">
+		<icon>UserInterface\Icons\Consumable\ConBandArcher2_ua</icon>
+		<rollovertextid>56673</rollovertextid>
+		<displaynameid>52893</displaynameid>
+		<stackable/>
+		<stacksize>20</stacksize>
+		<offertype>eOfferNone</offertype>
+		<itemlevel>3</itemlevel>
+		<sellable>true</sellable>
+		<tradeable>true</tradeable>
+		<destroyable>true</destroyable>
+		<sellcostoverride>
+			<capitalresource quantity="10">cCapResCoin</capitalresource>
+		</sellcostoverride>
+		<rarity>cRarityUncommon</rarity>
+		<power>PowerSpawnBanditArcher_U</power>
+		<civmatchingtype>eCivMatchingTypeAny</civmatchingtype>
+	</consumable>
+	<consumable name="ConsumableBanditArcher_R">
+		<icon>UserInterface\Icons\Consumable\ConBandArcher3_ua</icon>
+		<rollovertextid>56674</rollovertextid>
+		<displaynameid>52893</displaynameid>
+		<stackable/>
+		<stacksize>20</stacksize>
+		<offertype>eOfferCivMatching</offertype>
+		<itemlevel>3</itemlevel>
+		<sellable>true</sellable>
+		<tradeable>true</tradeable>
+		<destroyable>true</destroyable>
+		<sellcostoverride>
+			<capitalresource quantity="15">cCapResCoin</capitalresource>
+		</sellcostoverride>
+		<rarity>cRarityRare</rarity>
+		<power>PowerSpawnBanditArcher_R</power>
+		<civmatchingtype>eCivMatchingTypeAny</civmatchingtype>
+	</consumable>
+	<consumable name="ConsumableBanditArcher_E">
+		<icon>UserInterface\Icons\Consumable\ConBandArcher4_ua</icon>
+		<rollovertextid>56675</rollovertextid>
+		<displaynameid>52893</displaynameid>
+		<stackable/>
+		<stacksize>20</stacksize>
+		<offertype>eOfferCivMatching</offertype>
+		<itemlevel>3</itemlevel>
+		<sellable>true</sellable>
+		<tradeable>true</tradeable>
+		<destroyable>true</destroyable>
+		<sellcostoverride>
+			<capitalresource quantity="20">cCapResCoin</capitalresource>
+		</sellcostoverride>
+		<rarity>cRarityEpic</rarity>
+		<power>PowerSpawnBanditArcher_E</power>
+		<civmatchingtype>eCivMatchingTypeAny</civmatchingtype>
+	</consumable>
+	<consumable name="ConsumableBanditArcher4th_C">
+		<icon>UserInterface\Icons\Consumable\ConBandArcherElite1_ua</icon>
+		<rollovertextid>56157</rollovertextid>
+		<displaynameid>56156</displaynameid>
+		<stackable/>
+		<stacksize>20</stacksize>
+		<offertype>eOfferNone</offertype>
+		<itemlevel>15</itemlevel>
+		<sellable>true</sellable>
+		<tradeable>true</tradeable>
+		<destroyable>true</destroyable>
+		<sellcostoverride>
+			<capitalresource quantity="10">cCapResCoin</capitalresource>
+		</sellcostoverride>
+		<rarity>cRarityCommon</rarity>
+		<power>PowerSpawnBanditArcher4th_C</power>
+		<civmatchingtype>eCivMatchingTypeAny</civmatchingtype>
+	</consumable>
+	<consumable name="ConsumableBanditArcher4th_U">
+		<icon>UserInterface\Icons\Consumable\ConBandArcherElite2_ua</icon>
+		<rollovertextid>56678</rollovertextid>
+		<displaynameid>56156</displaynameid>
+		<stackable/>
+		<stacksize>20</stacksize>
+		<offertype>eOfferNone</offertype>
+		<itemlevel>15</itemlevel>
+		<sellable>true</sellable>
+		<tradeable>true</tradeable>
+		<destroyable>true</destroyable>
+		<sellcostoverride>
+			<capitalresource quantity="15">cCapResCoin</capitalresource>
+		</sellcostoverride>
+		<rarity>cRarityUncommon</rarity>
+		<power>PowerSpawnBanditArcher4th_U</power>
+		<civmatchingtype>eCivMatchingTypeAny</civmatchingtype>
+	</consumable>
+	<consumable name="ConsumableBanditArcher4th_R">
+		<icon>UserInterface\Icons\Consumable\ConBandArcherElite3_ua</icon>
+		<rollovertextid>56679</rollovertextid>
+		<displaynameid>56156</displaynameid>
+		<stackable/>
+		<stacksize>20</stacksize>
+		<offertype>eOfferCivMatching</offertype>
+		<itemlevel>15</itemlevel>
+		<sellable>true</sellable>
+		<tradeable>true</tradeable>
+		<destroyable>true</destroyable>
+		<sellcostoverride>
+			<capitalresource quantity="20">cCapResCoin</capitalresource>
+		</sellcostoverride>
+		<rarity>cRarityRare</rarity>
+		<power>PowerSpawnBanditArcher4th_R</power>
+		<civmatchingtype>eCivMatchingTypeAny</civmatchingtype>
+	</consumable>
+	<consumable name="ConsumableBanditArcher4th_E">
+		<icon>UserInterface\Icons\Consumable\ConBandArcherElite4_ua</icon>
+		<rollovertextid>56680</rollovertextid>
+		<displaynameid>56156</displaynameid>
+		<stackable/>
+		<stacksize>20</stacksize>
+		<offertype>eOfferCivMatching</offertype>
+		<itemlevel>15</itemlevel>
+		<sellable>true</sellable>
+		<tradeable>true</tradeable>
+		<destroyable>true</destroyable>
+		<sellcostoverride>
+			<capitalresource quantity="25">cCapResCoin</capitalresource>
+		</sellcostoverride>
+		<rarity>cRarityEpic</rarity>
+		<power>PowerSpawnBanditArcher4th_E</power>
+		<civmatchingtype>eCivMatchingTypeAny</civmatchingtype>
+	</consumable>
+	<consumable name="ConsumableBanditHorseHunter_C">
+		<icon>UserInterface\Icons\Consumable\ConBandSpear1_ua</icon>
+		<rollovertextid>55377</rollovertextid>
+		<displaynameid>55376</displaynameid>
+		<stackable/>
+		<stacksize>20</stacksize>
+		<offertype>eOfferNone</offertype>
+		<itemlevel>3</itemlevel>
+		<sellable>true</sellable>
+		<tradeable>true</tradeable>
+		<destroyable>true</destroyable>
+		<sellcostoverride>
+			<capitalresource quantity="5">cCapResCoin</capitalresource>
+		</sellcostoverride>
+		<rarity>cRarityCommon</rarity>
+		<power>PowerSpawnBanditHorseHunter_C</power>
+		<civmatchingtype>eCivMatchingTypeAny</civmatchingtype>
+	</consumable>
+	<consumable name="ConsumableBanditHorseHunter_U">
+		<icon>UserInterface\Icons\Consumable\ConBandSpear2_ua</icon>
+		<rollovertextid>56681</rollovertextid>
+		<displaynameid>55376</displaynameid>
+		<stackable/>
+		<stacksize>20</stacksize>
+		<offertype>eOfferNone</offertype>
+		<itemlevel>3</itemlevel>
+		<sellable>true</sellable>
+		<tradeable>true</tradeable>
+		<destroyable>true</destroyable>
+		<sellcostoverride>
+			<capitalresource quantity="10">cCapResCoin</capitalresource>
+		</sellcostoverride>
+		<rarity>cRarityUncommon</rarity>
+		<power>PowerSpawnBanditHorseHunter_U</power>
+		<civmatchingtype>eCivMatchingTypeAny</civmatchingtype>
+	</consumable>
+	<consumable name="ConsumableBanditHorseHunter_R">
+		<icon>UserInterface\Icons\Consumable\ConBandSpear3_ua</icon>
+		<rollovertextid>56682</rollovertextid>
+		<displaynameid>55376</displaynameid>
+		<stackable/>
+		<stacksize>20</stacksize>
+		<offertype>eOfferCivMatching</offertype>
+		<itemlevel>3</itemlevel>
+		<sellable>true</sellable>
+		<tradeable>true</tradeable>
+		<destroyable>true</destroyable>
+		<sellcostoverride>
+			<capitalresource quantity="15">cCapResCoin</capitalresource>
+		</sellcostoverride>
+		<rarity>cRarityRare</rarity>
+		<power>PowerSpawnBanditHorseHunter_R</power>
+		<civmatchingtype>eCivMatchingTypeAny</civmatchingtype>
+	</consumable>
+	<consumable name="ConsumableBanditHorseHunter_E">
+		<icon>UserInterface\Icons\Consumable\ConBandSpear4_ua</icon>
+		<rollovertextid>56683</rollovertextid>
+		<displaynameid>55376</displaynameid>
+		<stackable/>
+		<stacksize>20</stacksize>
+		<offertype>eOfferCivMatching</offertype>
+		<itemlevel>3</itemlevel>
+		<sellable>true</sellable>
+		<tradeable>true</tradeable>
+		<destroyable>true</destroyable>
+		<sellcostoverride>
+			<capitalresource quantity="20">cCapResCoin</capitalresource>
+		</sellcostoverride>
+		<rarity>cRarityEpic</rarity>
+		<power>PowerSpawnBanditHorseHunter_E</power>
+		<civmatchingtype>eCivMatchingTypeAny</civmatchingtype>
+	</consumable>
+	<consumable name="ConsumableBanditHorseHunter4th_C">
+		<icon>UserInterface\Icons\Consumable\ConBandEliteSpear1_ua</icon>
+		<rollovertextid>56159</rollovertextid>
+		<displaynameid>56158</displaynameid>
+		<stackable/>
+		<stacksize>20</stacksize>
+		<offertype>eOfferNone</offertype>
+		<itemlevel>15</itemlevel>
+		<sellable>true</sellable>
+		<tradeable>true</tradeable>
+		<destroyable>true</destroyable>
+		<sellcostoverride>
+			<capitalresource quantity="10">cCapResCoin</capitalresource>
+		</sellcostoverride>
+		<rarity>cRarityCommon</rarity>
+		<power>PowerSpawnBanditHorseHunter4th_C</power>
+		<civmatchingtype>eCivMatchingTypeAny</civmatchingtype>
+	</consumable>
+	<consumable name="ConsumableBanditHorseHunter4th_U">
+		<icon>UserInterface\Icons\Consumable\ConBandEliteSpear2_ua</icon>
+		<rollovertextid>56159</rollovertextid>
+		<displaynameid>56158</displaynameid>
+		<stackable/>
+		<stacksize>20</stacksize>
+		<offertype>eOfferNone</offertype>
+		<itemlevel>15</itemlevel>
+		<sellable>true</sellable>
+		<tradeable>true</tradeable>
+		<destroyable>true</destroyable>
+		<sellcostoverride>
+			<capitalresource quantity="15">cCapResCoin</capitalresource>
+		</sellcostoverride>
+		<rarity>cRarityUncommon</rarity>
+		<power>PowerSpawnBanditHorseHunter4th_U</power>
+		<civmatchingtype>eCivMatchingTypeAny</civmatchingtype>
+	</consumable>
+	<consumable name="ConsumableBanditHorseHunter4th_R">
+		<icon>UserInterface\Icons\Consumable\ConBandEliteSpear3_ua</icon>
+		<rollovertextid>56684</rollovertextid>
+		<displaynameid>56158</displaynameid>
+		<stackable/>
+		<stacksize>20</stacksize>
+		<offertype>eOfferCivMatching</offertype>
+		<itemlevel>15</itemlevel>
+		<sellable>true</sellable>
+		<tradeable>true</tradeable>
+		<destroyable>true</destroyable>
+		<sellcostoverride>
+			<capitalresource quantity="20">cCapResCoin</capitalresource>
+		</sellcostoverride>
+		<rarity>cRarityRare</rarity>
+		<power>PowerSpawnBanditHorseHunter4th_R</power>
+		<civmatchingtype>eCivMatchingTypeAny</civmatchingtype>
+	</consumable>
+	<consumable name="ConsumableBanditHorseHunter4th_E">
+		<icon>UserInterface\Icons\Consumable\ConBandEliteSpear4_ua</icon>
+		<rollovertextid>56686</rollovertextid>
+		<displaynameid>56158</displaynameid>
+		<stackable/>
+		<stacksize>20</stacksize>
+		<offertype>eOfferCivMatching</offertype>
+		<itemlevel>15</itemlevel>
+		<sellable>true</sellable>
+		<tradeable>true</tradeable>
+		<destroyable>true</destroyable>
+		<sellcostoverride>
+			<capitalresource quantity="25">cCapResCoin</capitalresource>
+		</sellcostoverride>
+		<rarity>cRarityEpic</rarity>
+		<power>PowerSpawnBanditHorseHunter4th_E</power>
+		<civmatchingtype>eCivMatchingTypeAny</civmatchingtype>
+	</consumable>
+	<consumable name="ConsumableMycBowman_C">
+		<icon>UserInterface\Icons\Consumable\ConMycArcher1_ua</icon>
+		<rollovertextid>56687</rollovertextid>
+		<displaynameid>54938</displaynameid>
+		<stackable/>
+		<stacksize>20</stacksize>
+		<offertype>eOfferNone</offertype>
+		<itemlevel>7</itemlevel>
+		<sellable>true</sellable>
+		<tradeable>true</tradeable>
+		<destroyable>true</destroyable>
+		<sellcostoverride>
+			<capitalresource quantity="5">cCapResCoin</capitalresource>
+		</sellcostoverride>
+		<rarity>cRarityCommon</rarity>
+		<power>PowerSpawnMycenaeanBowman_C</power>
+		<civmatchingtype>eCivMatchingTypeAny</civmatchingtype>
+	</consumable>
+	<consumable name="ConsumableMycBowman_U">
+		<icon>UserInterface\Icons\Consumable\ConMycArcher2_ua</icon>
+		<rollovertextid>56687</rollovertextid>
+		<displaynameid>54938</displaynameid>
+		<stackable/>
+		<stacksize>20</stacksize>
+		<offertype>eOfferNone</offertype>
+		<itemlevel>7</itemlevel>
+		<sellable>true</sellable>
+		<tradeable>true</tradeable>
+		<destroyable>true</destroyable>
+		<sellcostoverride>
+			<capitalresource quantity="10">cCapResCoin</capitalresource>
+		</sellcostoverride>
+		<rarity>cRarityUncommon</rarity>
+		<power>PowerSpawnMycenaeanBowman_U</power>
+		<civmatchingtype>eCivMatchingTypeAny</civmatchingtype>
+	</consumable>
+	<consumable name="ConsumableMycBowman_R">
+		<icon>UserInterface\Icons\Consumable\ConMycArcher3_ua</icon>
+		<rollovertextid>56688</rollovertextid>
+		<displaynameid>54938</displaynameid>
+		<stackable/>
+		<stacksize>20</stacksize>
+		<offertype>eOfferCivMatching</offertype>
+		<itemlevel>7</itemlevel>
+		<sellable>true</sellable>
+		<tradeable>true</tradeable>
+		<destroyable>true</destroyable>
+		<sellcostoverride>
+			<capitalresource quantity="15">cCapResCoin</capitalresource>
+		</sellcostoverride>
+		<rarity>cRarityRare</rarity>
+		<power>PowerSpawnMycenaeanBowman_R</power>
+		<civmatchingtype>eCivMatchingTypeAny</civmatchingtype>
+	</consumable>
+	<consumable name="ConsumableMycBowman_E">
+		<icon>UserInterface\Icons\Consumable\ConMycArcher4_ua</icon>
+		<rollovertextid>56689</rollovertextid>
+		<displaynameid>54938</displaynameid>
+		<stackable/>
+		<stacksize>20</stacksize>
+		<offertype>eOfferCivMatching</offertype>
+		<itemlevel>7</itemlevel>
+		<sellable>true</sellable>
+		<tradeable>true</tradeable>
+		<destroyable>true</destroyable>
+		<sellcostoverride>
+			<capitalresource quantity="20">cCapResCoin</capitalresource>
+		</sellcostoverride>
+		<rarity>cRarityEpic</rarity>
+		<power>PowerSpawnMycenaeanBowman_E</power>
+		<civmatchingtype>eCivMatchingTypeAny</civmatchingtype>
+	</consumable>
+	<consumable name="ConsumableMycHoplite_C">
+		<icon>UserInterface\Icons\Consumable\ConMycHoplite1_ua</icon>
+		<rollovertextid>56690</rollovertextid>
+		<displaynameid>52895</displaynameid>
+		<stackable/>
+		<stacksize>20</stacksize>
+		<offertype>eOfferNone</offertype>
+		<itemlevel>7</itemlevel>
+		<sellable>true</sellable>
+		<tradeable>true</tradeable>
+		<destroyable>true</destroyable>
+		<sellcostoverride>
+			<capitalresource quantity="5">cCapResCoin</capitalresource>
+		</sellcostoverride>
+		<rarity>cRarityCommon</rarity>
+		<power>PowerSpawnMycenaeanHoplite_C</power>
+		<civmatchingtype>eCivMatchingTypeAny</civmatchingtype>
+	</consumable>
+	<consumable name="ConsumableMycHoplite_U">
+		<icon>UserInterface\Icons\Consumable\ConMycHoplite2_ua</icon>
+		<rollovertextid>56690</rollovertextid>
+		<displaynameid>52895</displaynameid>
+		<stackable/>
+		<stacksize>20</stacksize>
+		<offertype>eOfferNone</offertype>
+		<itemlevel>7</itemlevel>
+		<sellable>true</sellable>
+		<tradeable>true</tradeable>
+		<destroyable>true</destroyable>
+		<sellcostoverride>
+			<capitalresource quantity="10">cCapResCoin</capitalresource>
+		</sellcostoverride>
+		<rarity>cRarityUncommon</rarity>
+		<power>PowerSpawnMycenaeanHoplite_U</power>
+		<civmatchingtype>eCivMatchingTypeAny</civmatchingtype>
+	</consumable>
+	<consumable name="ConsumableMycHoplite_R">
+		<icon>UserInterface\Icons\Consumable\ConMycHoplite3_ua</icon>
+		<rollovertextid>56691</rollovertextid>
+		<displaynameid>52895</displaynameid>
+		<stackable/>
+		<stacksize>20</stacksize>
+		<offertype>eOfferCivMatching</offertype>
+		<itemlevel>7</itemlevel>
+		<sellable>true</sellable>
+		<tradeable>true</tradeable>
+		<destroyable>true</destroyable>
+		<sellcostoverride>
+			<capitalresource quantity="15">cCapResCoin</capitalresource>
+		</sellcostoverride>
+		<rarity>cRarityRare</rarity>
+		<power>PowerSpawnMycenaeanHoplite_R</power>
+		<civmatchingtype>eCivMatchingTypeAny</civmatchingtype>
+	</consumable>
+	<consumable name="ConsumableMycHoplite_E">
+		<icon>UserInterface\Icons\Consumable\ConMycHoplite4_ua</icon>
+		<rollovertextid>56692</rollovertextid>
+		<displaynameid>52895</displaynameid>
+		<stackable/>
+		<stacksize>20</stacksize>
+		<offertype>eOfferCivMatching</offertype>
+		<itemlevel>7</itemlevel>
+		<sellable>true</sellable>
+		<tradeable>true</tradeable>
+		<destroyable>true</destroyable>
+		<sellcostoverride>
+			<capitalresource quantity="20">cCapResCoin</capitalresource>
+		</sellcostoverride>
+		<rarity>cRarityEpic</rarity>
+		<power>PowerSpawnMycenaeanHoplite_E</power>
+		<civmatchingtype>eCivMatchingTypeAny</civmatchingtype>
+	</consumable>
+	<consumable name="ConsumableNubianArc_C">
+		<icon>UserInterface\Icons\Consumable\ConNubArcher1_ua</icon>
+		<rollovertextid>56802</rollovertextid>
+		<displaynameid>56800</displaynameid>
+		<stackable/>
+		<stacksize>20</stacksize>
+		<offertype>eOfferNone</offertype>
+		<itemlevel>7</itemlevel>
+		<sellable>true</sellable>
+		<tradeable>true</tradeable>
+		<destroyable>true</destroyable>
+		<sellcostoverride>
+			<capitalresource quantity="5">cCapResCoin</capitalresource>
+		</sellcostoverride>
+		<rarity>cRarityCommon</rarity>
+		<power>PowerSpawnNubianArcher_C</power>
+		<civmatchingtype>eCivMatchingTypeAny</civmatchingtype>
+	</consumable>
+	<consumable name="ConsumableNubianArc_U">
+		<icon>UserInterface\Icons\Consumable\ConNubArcher2_ua</icon>
+		<rollovertextid>56802</rollovertextid>
+		<displaynameid>56800</displaynameid>
+		<stackable/>
+		<stacksize>20</stacksize>
+		<offertype>eOfferNone</offertype>
+		<itemlevel>7</itemlevel>
+		<sellable>true</sellable>
+		<tradeable>true</tradeable>
+		<destroyable>true</destroyable>
+		<sellcostoverride>
+			<capitalresource quantity="10">cCapResCoin</capitalresource>
+		</sellcostoverride>
+		<rarity>cRarityUncommon</rarity>
+		<power>PowerSpawnNubianArcher_U</power>
+		<civmatchingtype>eCivMatchingTypeAny</civmatchingtype>
+	</consumable>
+	<consumable name="ConsumableNubianArc_R">
+		<icon>UserInterface\Icons\Consumable\ConNubArcher3_ua</icon>
+		<rollovertextid>56803</rollovertextid>
+		<displaynameid>56800</displaynameid>
+		<stackable/>
+		<stacksize>20</stacksize>
+		<offertype>eOfferCivMatching</offertype>
+		<itemlevel>7</itemlevel>
+		<sellable>true</sellable>
+		<tradeable>true</tradeable>
+		<destroyable>true</destroyable>
+		<sellcostoverride>
+			<capitalresource quantity="15">cCapResCoin</capitalresource>
+		</sellcostoverride>
+		<rarity>cRarityRare</rarity>
+		<power>PowerSpawnNubianArcher_R</power>
+		<civmatchingtype>eCivMatchingTypeAny</civmatchingtype>
+	</consumable>
+	<consumable name="ConsumableNubianArc_E">
+		<icon>UserInterface\Icons\Consumable\ConNubArcher4_ua</icon>
+		<rollovertextid>56804</rollovertextid>
+		<displaynameid>56800</displaynameid>
+		<stackable/>
+		<stacksize>20</stacksize>
+		<offertype>eOfferCivMatching</offertype>
+		<itemlevel>7</itemlevel>
+		<sellable>true</sellable>
+		<tradeable>true</tradeable>
+		<destroyable>true</destroyable>
+		<sellcostoverride>
+			<capitalresource quantity="20">cCapResCoin</capitalresource>
+		</sellcostoverride>
+		<rarity>cRarityEpic</rarity>
+		<power>PowerSpawnNubianArcher_E</power>
+		<civmatchingtype>eCivMatchingTypeAny</civmatchingtype>
+	</consumable>
+	<consumable name="ConsumableNubianEle_C">
+		<icon>UserInterface\Icons\Consumable\ConNubElephant1_ua</icon>
+		<rollovertextid>56807</rollovertextid>
+		<displaynameid>56805</displaynameid>
+		<stackable/>
+		<stacksize>20</stacksize>
+		<offertype>eOfferNone</offertype>
+		<itemlevel>7</itemlevel>
+		<sellable>true</sellable>
+		<tradeable>true</tradeable>
+		<destroyable>true</destroyable>
+		<sellcostoverride>
+			<capitalresource quantity="5">cCapResCoin</capitalresource>
+		</sellcostoverride>
+		<rarity>cRarityCommon</rarity>
+		<power>PowerSpawnNubianWarEle_C</power>
+		<civmatchingtype>eCivMatchingTypeAny</civmatchingtype>
+	</consumable>
+	<consumable name="ConsumableNubianEle_U">
+		<icon>UserInterface\Icons\Consumable\ConNubElephant2_ua</icon>
+		<rollovertextid>56807</rollovertextid>
+		<displaynameid>56805</displaynameid>
+		<stackable/>
+		<stacksize>20</stacksize>
+		<offertype>eOfferNone</offertype>
+		<itemlevel>7</itemlevel>
+		<sellable>true</sellable>
+		<tradeable>true</tradeable>
+		<destroyable>true</destroyable>
+		<sellcostoverride>
+			<capitalresource quantity="10">cCapResCoin</capitalresource>
+		</sellcostoverride>
+		<rarity>cRarityUncommon</rarity>
+		<power>PowerSpawnNubianWarEle_U</power>
+		<civmatchingtype>eCivMatchingTypeAny</civmatchingtype>
+	</consumable>
+	<consumable name="ConsumableNubianEle_R">
+		<icon>UserInterface\Icons\Consumable\ConNubElephant3_ua</icon>
+		<rollovertextid>56808</rollovertextid>
+		<displaynameid>56805</displaynameid>
+		<stackable/>
+		<stacksize>20</stacksize>
+		<offertype>eOfferCivMatching</offertype>
+		<itemlevel>7</itemlevel>
+		<sellable>true</sellable>
+		<tradeable>true</tradeable>
+		<destroyable>true</destroyable>
+		<sellcostoverride>
+			<capitalresource quantity="15">cCapResCoin</capitalresource>
+		</sellcostoverride>
+		<rarity>cRarityRare</rarity>
+		<power>PowerSpawnNubianWarEle_R</power>
+		<civmatchingtype>eCivMatchingTypeAny</civmatchingtype>
+	</consumable>
+	<consumable name="ConsumableNubianEle_E">
+		<icon>UserInterface\Icons\Consumable\ConNubElephant4_ua</icon>
+		<rollovertextid>56809</rollovertextid>
+		<displaynameid>56805</displaynameid>
+		<stackable/>
+		<stacksize>20</stacksize>
+		<offertype>eOfferCivMatching</offertype>
+		<itemlevel>7</itemlevel>
+		<sellable>true</sellable>
+		<tradeable>true</tradeable>
+		<destroyable>true</destroyable>
+		<sellcostoverride>
+			<capitalresource quantity="20">cCapResCoin</capitalresource>
+		</sellcostoverride>
+		<rarity>cRarityEpic</rarity>
+		<power>PowerSpawnNubianWarEle_E</power>
+		<civmatchingtype>eCivMatchingTypeAny</civmatchingtype>
+	</consumable>
+	<consumable name="ConsumableBanditHippikon_C">
+		<icon>UserInterface\Icons\Consumable\ConBandCav1_ua</icon>
+		<rollovertextid>52898</rollovertextid>
+		<displaynameid>52897</displaynameid>
+		<stackable/>
+		<stacksize>20</stacksize>
+		<offertype>eOfferNone</offertype>
+		<itemlevel>3</itemlevel>
+		<sellable>true</sellable>
+		<tradeable>true</tradeable>
+		<destroyable>true</destroyable>
+		<sellcostoverride>
+			<capitalresource quantity="5">cCapResCoin</capitalresource>
+		</sellcostoverride>
+		<rarity>cRarityCommon</rarity>
+		<power>PowerSpawnBanditHippikon_C</power>
+		<civmatchingtype>eCivMatchingTypeAny</civmatchingtype>
+	</consumable>
+	<consumable name="ConsumableBanditHippikon_U">
+		<icon>UserInterface\Icons\Consumable\ConBandCav2_ua</icon>
+		<rollovertextid>56693</rollovertextid>
+		<displaynameid>52897</displaynameid>
+		<stackable/>
+		<stacksize>20</stacksize>
+		<offertype>eOfferNone</offertype>
+		<itemlevel>3</itemlevel>
+		<sellable>true</sellable>
+		<tradeable>true</tradeable>
+		<destroyable>true</destroyable>
+		<sellcostoverride>
+			<capitalresource quantity="10">cCapResCoin</capitalresource>
+		</sellcostoverride>
+		<rarity>cRarityUncommon</rarity>
+		<power>PowerSpawnBanditHippikon_U</power>
+		<civmatchingtype>eCivMatchingTypeAny</civmatchingtype>
+	</consumable>
+	<consumable name="ConsumableBanditHippikon_R">
+		<icon>UserInterface\Icons\Consumable\ConBandCav3_ua</icon>
+		<rollovertextid>56694</rollovertextid>
+		<displaynameid>52897</displaynameid>
+		<stackable/>
+		<stacksize>20</stacksize>
+		<offertype>eOfferCivMatching</offertype>
+		<itemlevel>3</itemlevel>
+		<sellable>true</sellable>
+		<tradeable>true</tradeable>
+		<destroyable>true</destroyable>
+		<sellcostoverride>
+			<capitalresource quantity="15">cCapResCoin</capitalresource>
+		</sellcostoverride>
+		<rarity>cRarityRare</rarity>
+		<power>PowerSpawnBanditHippikon_R</power>
+		<civmatchingtype>eCivMatchingTypeAny</civmatchingtype>
+	</consumable>
+	<consumable name="ConsumableBanditHippikon_E">
+		<icon>UserInterface\Icons\Consumable\ConBandCav4_ua</icon>
+		<rollovertextid>56695</rollovertextid>
+		<displaynameid>52897</displaynameid>
+		<stackable/>
+		<stacksize>20</stacksize>
+		<offertype>eOfferCivMatching</offertype>
+		<itemlevel>3</itemlevel>
+		<sellable>true</sellable>
+		<tradeable>true</tradeable>
+		<destroyable>true</destroyable>
+		<sellcostoverride>
+			<capitalresource quantity="20">cCapResCoin</capitalresource>
+		</sellcostoverride>
+		<rarity>cRarityEpic</rarity>
+		<power>PowerSpawnBanditHippikon_E</power>
+		<civmatchingtype>eCivMatchingTypeAny</civmatchingtype>
+	</consumable>
+	<consumable name="ConsumableBanditHippikon4th_C">
+		<icon>UserInterface\Icons\Consumable\ConBandEliteCav1_ua</icon>
+		<rollovertextid>56161</rollovertextid>
+		<displaynameid>56160</displaynameid>
+		<stackable/>
+		<stacksize>20</stacksize>
+		<offertype>eOfferNone</offertype>
+		<itemlevel>15</itemlevel>
+		<sellable>true</sellable>
+		<tradeable>true</tradeable>
+		<destroyable>true</destroyable>
+		<sellcostoverride>
+			<capitalresource quantity="10">cCapResCoin</capitalresource>
+		</sellcostoverride>
+		<rarity>cRarityCommon</rarity>
+		<power>PowerSpawnBanditHippikon4th_C</power>
+		<civmatchingtype>eCivMatchingTypeAny</civmatchingtype>
+	</consumable>
+	<consumable name="ConsumableBanditHippikon4th_U">
+		<icon>UserInterface\Icons\Consumable\ConBandEliteCav2_ua</icon>
+		<rollovertextid>56696</rollovertextid>
+		<displaynameid>56160</displaynameid>
+		<stackable/>
+		<stacksize>20</stacksize>
+		<offertype>eOfferNone</offertype>
+		<itemlevel>15</itemlevel>
+		<sellable>true</sellable>
+		<tradeable>true</tradeable>
+		<destroyable>true</destroyable>
+		<sellcostoverride>
+			<capitalresource quantity="15">cCapResCoin</capitalresource>
+		</sellcostoverride>
+		<rarity>cRarityUncommon</rarity>
+		<power>PowerSpawnBanditHippikon4th_U</power>
+		<civmatchingtype>eCivMatchingTypeAny</civmatchingtype>
+	</consumable>
+	<consumable name="ConsumableBanditHippikon4th_R">
+		<icon>UserInterface\Icons\Consumable\ConBandEliteCav3_ua</icon>
+		<rollovertextid>56697</rollovertextid>
+		<displaynameid>56160</displaynameid>
+		<stackable/>
+		<stacksize>20</stacksize>
+		<offertype>eOfferCivMatching</offertype>
+		<itemlevel>15</itemlevel>
+		<sellable>true</sellable>
+		<tradeable>true</tradeable>
+		<destroyable>true</destroyable>
+		<sellcostoverride>
+			<capitalresource quantity="20">cCapResCoin</capitalresource>
+		</sellcostoverride>
+		<rarity>cRarityRare</rarity>
+		<power>PowerSpawnBanditHippikon4th_R</power>
+		<civmatchingtype>eCivMatchingTypeAny</civmatchingtype>
+	</consumable>
+	<consumable name="ConsumableBanditHippikon4th_E">
+		<icon>UserInterface\Icons\Consumable\ConBandEliteCav4_ua</icon>
+		<rollovertextid>56698</rollovertextid>
+		<displaynameid>56160</displaynameid>
+		<stackable/>
+		<stacksize>20</stacksize>
+		<offertype>eOfferCivMatching</offertype>
+		<itemlevel>15</itemlevel>
+		<sellable>true</sellable>
+		<tradeable>true</tradeable>
+		<destroyable>true</destroyable>
+		<sellcostoverride>
+			<capitalresource quantity="25">cCapResCoin</capitalresource>
+		</sellcostoverride>
+		<rarity>cRarityEpic</rarity>
+		<power>PowerSpawnBanditHippikon4th_E</power>
+		<civmatchingtype>eCivMatchingTypeAny</civmatchingtype>
+	</consumable>
+	<consumable name="ConsumableSiegeMachines_C">
+		<icon>UserInterface\Icons\Consumable\ConSeigeTower1_ua</icon>
+		<rollovertextid>56254</rollovertextid>
+		<displaynameid>56253</displaynameid>
+		<stackable/>
+		<stacksize>20</stacksize>
+		<offertype>eOfferNone</offertype>
+		<itemlevel>7</itemlevel>
+		<sellable>true</sellable>
+		<tradeable>true</tradeable>
+		<destroyable>true</destroyable>
+		<sellcostoverride>
+			<capitalresource quantity="5">cCapResCoin</capitalresource>
+		</sellcostoverride>
+		<rarity>cRarityCommon</rarity>
+		<power>PowerSpawnSiegeMachines_C</power>
+		<civmatchingtype>eCivMatchingTypeAny</civmatchingtype>
+	</consumable>
+	<consumable name="ConsumableSiegeMachines_U">
+		<icon>UserInterface\Icons\Consumable\ConSeigeTower2_ua</icon>
+		<rollovertextid>56699</rollovertextid>
+		<displaynameid>56253</displaynameid>
+		<stackable/>
+		<stacksize>20</stacksize>
+		<offertype>eOfferNone</offertype>
+		<itemlevel>7</itemlevel>
+		<sellable>true</sellable>
+		<tradeable>true</tradeable>
+		<destroyable>true</destroyable>
+		<sellcostoverride>
+			<capitalresource quantity="10">cCapResCoin</capitalresource>
+		</sellcostoverride>
+		<rarity>cRarityUncommon</rarity>
+		<power>PowerSpawnSiegeMachines_U</power>
+		<civmatchingtype>eCivMatchingTypeAny</civmatchingtype>
+	</consumable>
+	<consumable name="ConsumableSiegeMachines_R">
+		<icon>UserInterface\Icons\Consumable\ConSeigeTower3_ua</icon>
+		<rollovertextid>56700</rollovertextid>
+		<displaynameid>56253</displaynameid>
+		<stackable/>
+		<stacksize>20</stacksize>
+		<offertype>eOfferCivMatching</offertype>
+		<itemlevel>7</itemlevel>
+		<sellable>true</sellable>
+		<tradeable>true</tradeable>
+		<destroyable>true</destroyable>
+		<sellcostoverride>
+			<capitalresource quantity="15">cCapResCoin</capitalresource>
+		</sellcostoverride>
+		<rarity>cRarityRare</rarity>
+		<power>PowerSpawnSiegeMachines_R</power>
+		<civmatchingtype>eCivMatchingTypeAny</civmatchingtype>
+	</consumable>
+	<consumable name="ConsumableSiegeMachines_E">
+		<icon>UserInterface\Icons\Consumable\ConSeigeTower4_ua</icon>
+		<rollovertextid>56701</rollovertextid>
+		<displaynameid>56253</displaynameid>
+		<stackable/>
+		<stacksize>20</stacksize>
+		<offertype>eOfferCivMatching</offertype>
+		<itemlevel>7</itemlevel>
+		<sellable>true</sellable>
+		<tradeable>true</tradeable>
+		<destroyable>true</destroyable>
+		<sellcostoverride>
+			<capitalresource quantity="20">cCapResCoin</capitalresource>
+		</sellcostoverride>
+		<rarity>cRarityEpic</rarity>
+		<power>PowerSpawnSiegeMachines_E</power>
+		<civmatchingtype>eCivMatchingTypeAny</civmatchingtype>
+	</consumable>
+	<consumable name="ConsumableFireShips_C">
+		<icon>UserInterface\Icons\Consumable\ConFireship1_ua</icon>
+		<rollovertextid>57249</rollovertextid>
+		<displaynameid>57248</displaynameid>
+		<stackable/>
+		<stacksize>20</stacksize>
+		<offertype>eOfferNone</offertype>
+		<itemlevel>7</itemlevel>
+		<sellable>true</sellable>
+		<tradeable>true</tradeable>
+		<destroyable>true</destroyable>
+		<sellcostoverride>
+			<capitalresource quantity="5">cCapResCoin</capitalresource>
+		</sellcostoverride>
+		<rarity>cRarityCommon</rarity>
+		<power>PowerSpawnFireShips_C</power>
+		<civmatchingtype>eCivMatchingTypeAny</civmatchingtype>
+	</consumable>
+	<consumable name="ConsumableFireShips_U">
+		<icon>UserInterface\Icons\Consumable\ConFireship2_ua</icon>
+		<rollovertextid>57250</rollovertextid>
+		<displaynameid>57248</displaynameid>
+		<stackable/>
+		<stacksize>20</stacksize>
+		<offertype>eOfferNone</offertype>
+		<itemlevel>7</itemlevel>
+		<sellable>true</sellable>
+		<tradeable>true</tradeable>
+		<destroyable>true</destroyable>
+		<sellcostoverride>
+			<capitalresource quantity="10">cCapResCoin</capitalresource>
+		</sellcostoverride>
+		<rarity>cRarityUncommon</rarity>
+		<power>PowerSpawnFireShips_U</power>
+		<civmatchingtype>eCivMatchingTypeAny</civmatchingtype>
+	</consumable>
+	<consumable name="ConsumableFireShips_R">
+		<icon>UserInterface\Icons\Consumable\ConFireship3_ua</icon>
+		<rollovertextid>57251</rollovertextid>
+		<displaynameid>57248</displaynameid>
+		<stackable/>
+		<stacksize>20</stacksize>
+		<offertype>eOfferCivMatching</offertype>
+		<itemlevel>7</itemlevel>
+		<sellable>true</sellable>
+		<tradeable>true</tradeable>
+		<destroyable>true</destroyable>
+		<sellcostoverride>
+			<capitalresource quantity="15">cCapResCoin</capitalresource>
+		</sellcostoverride>
+		<rarity>cRarityRare</rarity>
+		<power>PowerSpawnFireShips_R</power>
+		<civmatchingtype>eCivMatchingTypeAny</civmatchingtype>
+	</consumable>
+	<consumable name="ConsumableFireShips_E">
+		<icon>UserInterface\Icons\Consumable\ConFireship4_ua</icon>
+		<rollovertextid>57252</rollovertextid>
+		<displaynameid>57248</displaynameid>
+		<stackable/>
+		<stacksize>20</stacksize>
+		<offertype>eOfferCivMatching</offertype>
+		<itemlevel>7</itemlevel>
+		<sellable>true</sellable>
+		<tradeable>true</tradeable>
+		<destroyable>true</destroyable>
+		<sellcostoverride>
+			<capitalresource quantity="20">cCapResCoin</capitalresource>
+		</sellcostoverride>
+		<rarity>cRarityEpic</rarity>
+		<power>PowerSpawnFireShips_E</power>
+		<civmatchingtype>eCivMatchingTypeAny</civmatchingtype>
+	</consumable>
+	<consumable name="ConsumablePriestAmen_C">
+		<icon>UserInterface\Icons\Consumable\ConRoguePriest1_ua</icon>
+		<rollovertextid>56256</rollovertextid>
+		<displaynameid>56255</displaynameid>
+		<stackable/>
+		<stacksize>20</stacksize>
+		<offertype>eOfferNone</offertype>
+		<itemlevel>7</itemlevel>
+		<sellable>true</sellable>
+		<tradeable>true</tradeable>
+		<destroyable>true</destroyable>
+		<sellcostoverride>
+			<capitalresource quantity="5">cCapResCoin</capitalresource>
+		</sellcostoverride>
+		<rarity>cRarityCommon</rarity>
+		<power>PowerSpawnAmenPriests_C</power>
+		<civmatchingtype>eCivMatchingTypeAny</civmatchingtype>
+	</consumable>
+	<consumable name="ConsumablePriestAmen_U">
+		<icon>UserInterface\Icons\Consumable\ConRoguePriest2_ua</icon>
+		<rollovertextid>56702</rollovertextid>
+		<displaynameid>56255</displaynameid>
+		<stackable/>
+		<stacksize>20</stacksize>
+		<offertype>eOfferNone</offertype>
+		<itemlevel>7</itemlevel>
+		<sellable>true</sellable>
+		<tradeable>true</tradeable>
+		<destroyable>true</destroyable>
+		<sellcostoverride>
+			<capitalresource quantity="10">cCapResCoin</capitalresource>
+		</sellcostoverride>
+		<rarity>cRarityUncommon</rarity>
+		<power>PowerSpawnAmenPriests_U</power>
+		<civmatchingtype>eCivMatchingTypeAny</civmatchingtype>
+	</consumable>
+	<consumable name="ConsumablePriestAmen_R">
+		<icon>UserInterface\Icons\Consumable\ConRoguePriest3_ua</icon>
+		<rollovertextid>56703</rollovertextid>
+		<displaynameid>56255</displaynameid>
+		<stackable/>
+		<stacksize>20</stacksize>
+		<offertype>eOfferCivMatching</offertype>
+		<itemlevel>7</itemlevel>
+		<sellable>true</sellable>
+		<tradeable>true</tradeable>
+		<destroyable>true</destroyable>
+		<sellcostoverride>
+			<capitalresource quantity="15">cCapResCoin</capitalresource>
+		</sellcostoverride>
+		<rarity>cRarityRare</rarity>
+		<power>PowerSpawnAmenPriests_R</power>
+		<civmatchingtype>eCivMatchingTypeAny</civmatchingtype>
+	</consumable>
+	<consumable name="ConsumablePriestAmen_E">
+		<icon>UserInterface\Icons\Consumable\ConRoguePriest4_ua</icon>
+		<rollovertextid>56704</rollovertextid>
+		<displaynameid>56255</displaynameid>
+		<stackable/>
+		<stacksize>20</stacksize>
+		<offertype>eOfferCivMatching</offertype>
+		<itemlevel>7</itemlevel>
+		<sellable>true</sellable>
+		<tradeable>true</tradeable>
+		<destroyable>true</destroyable>
+		<sellcostoverride>
+			<capitalresource quantity="20">cCapResCoin</capitalresource>
+		</sellcostoverride>
+		<rarity>cRarityEpic</rarity>
+		<power>PowerSpawnAmenPriests_E</power>
+		<civmatchingtype>eCivMatchingTypeAny</civmatchingtype>
+	</consumable>
+	<consumable name="ConsumableSpeed_C">
+		<icon>UserInterface\Icons\Consumable\ConSpeedBoost1_ua</icon>
+		<rollovertextid>56710</rollovertextid>
+		<displaynameid>52903</displaynameid>
+		<stackable/>
+		<stacksize>20</stacksize>
+		<offertype>eOfferNone</offertype>
+		<itemlevel>3</itemlevel>
+		<sellable>true</sellable>
+		<tradeable>true</tradeable>
+		<destroyable>true</destroyable>
+		<sellcostoverride>
+			<capitalresource quantity="5">cCapResCoin</capitalresource>
+		</sellcostoverride>
+		<rarity>cRarityCommon</rarity>
+		<power>PowerSpeed_C</power>
+		<civmatchingtype>eCivMatchingTypeAny</civmatchingtype>
+	</consumable>
+	<consumable name="ConsumableSpeed_U">
+		<icon>UserInterface\Icons\Consumable\ConSpeedBoost2_ua</icon>
+		<rollovertextid>56708</rollovertextid>
+		<displaynameid>52903</displaynameid>
+		<stackable/>
+		<stacksize>20</stacksize>
+		<offertype>eOfferNone</offertype>
+		<itemlevel>3</itemlevel>
+		<sellable>true</sellable>
+		<tradeable>true</tradeable>
+		<destroyable>true</destroyable>
+		<sellcostoverride>
+			<capitalresource quantity="10">cCapResCoin</capitalresource>
+		</sellcostoverride>
+		<rarity>cRarityUncommon</rarity>
+		<power>PowerSpeed_U</power>
+		<civmatchingtype>eCivMatchingTypeAny</civmatchingtype>
+	</consumable>
+	<consumable name="ConsumableSpeed_R">
+		<icon>UserInterface\Icons\Consumable\ConSpeedBoost3_ua</icon>
+		<rollovertextid>56709</rollovertextid>
+		<displaynameid>52903</displaynameid>
+		<stackable/>
+		<stacksize>20</stacksize>
+		<offertype>eOfferCivMatching</offertype>
+		<itemlevel>3</itemlevel>
+		<sellable>true</sellable>
+		<tradeable>true</tradeable>
+		<destroyable>true</destroyable>
+		<sellcostoverride>
+			<capitalresource quantity="15">cCapResCoin</capitalresource>
+		</sellcostoverride>
+		<rarity>cRarityRare</rarity>
+		<power>PowerSpeed_R</power>
+		<civmatchingtype>eCivMatchingTypeAny</civmatchingtype>
+	</consumable>
+	<consumable name="ConsumableSpeed_E">
+		<icon>UserInterface\Icons\Consumable\ConSpeedBoost4_ua</icon>
+		<rollovertextid>56710</rollovertextid>
+		<displaynameid>52903</displaynameid>
+		<stackable/>
+		<stacksize>20</stacksize>
+		<offertype>eOfferCivMatching</offertype>
+		<itemlevel>3</itemlevel>
+		<sellable>true</sellable>
+		<tradeable>true</tradeable>
+		<destroyable>true</destroyable>
+		<sellcostoverride>
+			<capitalresource quantity="20">cCapResCoin</capitalresource>
+		</sellcostoverride>
+		<rarity>cRarityEpic</rarity>
+		<power>PowerSpeed_E</power>
+		<civmatchingtype>eCivMatchingTypeAny</civmatchingtype>
+	</consumable>
+	<consumable name="ConsumableGrantGold_C">
+		<icon>UserInterface\Icons\Consumable\ConResGold1_ua</icon>
+		<rollovertextid>55375</rollovertextid>
+		<displaynameid>55374</displaynameid>
+		<stackable/>
+		<stacksize>20</stacksize>
+		<offertype>eOfferNone</offertype>
+		<itemlevel>3</itemlevel>
+		<sellable>true</sellable>
+		<tradeable>true</tradeable>
+		<destroyable>true</destroyable>
+		<sellcostoverride>
+			<capitalresource quantity="5">cCapResCoin</capitalresource>
+		</sellcostoverride>
+		<rarity>cRarityCommon</rarity>
+		<power>PowerGrantGold_C</power>
+		<civmatchingtype>eCivMatchingTypeAny</civmatchingtype>
+	</consumable>
+	<consumable name="ConsumableGrantGold_U">
+		<icon>UserInterface\Icons\Consumable\ConResGold2_ua</icon>
+		<rollovertextid>55375</rollovertextid>
+		<displaynameid>55374</displaynameid>
+		<stackable/>
+		<stacksize>20</stacksize>
+		<offertype>eOfferNone</offertype>
+		<itemlevel>3</itemlevel>
+		<sellable>true</sellable>
+		<tradeable>true</tradeable>
+		<destroyable>true</destroyable>
+		<sellcostoverride>
+			<capitalresource quantity="10">cCapResCoin</capitalresource>
+		</sellcostoverride>
+		<rarity>cRarityUncommon</rarity>
+		<power>PowerGrantGold_U</power>
+		<civmatchingtype>eCivMatchingTypeAny</civmatchingtype>
+	</consumable>
+	<consumable name="ConsumableGrantGold_R">
+		<icon>UserInterface\Icons\Consumable\ConResGold3_ua</icon>
+		<rollovertextid>55375</rollovertextid>
+		<displaynameid>55374</displaynameid>
+		<stackable/>
+		<stacksize>20</stacksize>
+		<offertype>eOfferCivMatching</offertype>
+		<itemlevel>3</itemlevel>
+		<sellable>true</sellable>
+		<tradeable>true</tradeable>
+		<destroyable>true</destroyable>
+		<sellcostoverride>
+			<capitalresource quantity="15">cCapResCoin</capitalresource>
+		</sellcostoverride>
+		<rarity>cRarityRare</rarity>
+		<power>PowerGrantGold_R</power>
+		<civmatchingtype>eCivMatchingTypeAny</civmatchingtype>
+	</consumable>
+	<consumable name="ConsumableGrantGold_E">
+		<icon>UserInterface\Icons\Consumable\ConResGold4_ua</icon>
+		<rollovertextid>55375</rollovertextid>
+		<displaynameid>55374</displaynameid>
+		<stackable/>
+		<stacksize>20</stacksize>
+		<offertype>eOfferCivMatching</offertype>
+		<itemlevel>3</itemlevel>
+		<sellable>true</sellable>
+		<tradeable>true</tradeable>
+		<destroyable>true</destroyable>
+		<sellcostoverride>
+			<capitalresource quantity="20">cCapResCoin</capitalresource>
+		</sellcostoverride>
+		<rarity>cRarityEpic</rarity>
+		<power>PowerGrantGold_E</power>
+		<civmatchingtype>eCivMatchingTypeAny</civmatchingtype>
+	</consumable>
+	<consumable name="ConsumableGrantStone_C">
+		<icon>UserInterface\Icons\Consumable\ConResStone1_ua</icon>
+		<rollovertextid>55820</rollovertextid>
+		<displaynameid>55819</displaynameid>
+		<stackable/>
+		<stacksize>20</stacksize>
+		<offertype>eOfferNone</offertype>
+		<itemlevel>3</itemlevel>
+		<sellable>true</sellable>
+		<tradeable>true</tradeable>
+		<destroyable>true</destroyable>
+		<sellcostoverride>
+			<capitalresource quantity="5">cCapResCoin</capitalresource>
+		</sellcostoverride>
+		<rarity>cRarityCommon</rarity>
+		<power>PowerGrantStone_C</power>
+		<civmatchingtype>eCivMatchingTypeAny</civmatchingtype>
+	</consumable>
+	<consumable name="ConsumableGrantStone_U">
+		<icon>UserInterface\Icons\Consumable\ConResStone2_ua</icon>
+		<rollovertextid>55820</rollovertextid>
+		<displaynameid>55819</displaynameid>
+		<stackable/>
+		<stacksize>20</stacksize>
+		<offertype>eOfferNone</offertype>
+		<itemlevel>3</itemlevel>
+		<sellable>true</sellable>
+		<tradeable>true</tradeable>
+		<destroyable>true</destroyable>
+		<sellcostoverride>
+			<capitalresource quantity="10">cCapResCoin</capitalresource>
+		</sellcostoverride>
+		<rarity>cRarityUncommon</rarity>
+		<power>PowerGrantStone_U</power>
+		<civmatchingtype>eCivMatchingTypeAny</civmatchingtype>
+	</consumable>
+	<consumable name="ConsumableGrantStone_R">
+		<icon>UserInterface\Icons\Consumable\ConResStone3_ua</icon>
+		<rollovertextid>55820</rollovertextid>
+		<displaynameid>55819</displaynameid>
+		<stackable/>
+		<stacksize>20</stacksize>
+		<offertype>eOfferCivMatching</offertype>
+		<itemlevel>3</itemlevel>
+		<sellable>true</sellable>
+		<tradeable>true</tradeable>
+		<destroyable>true</destroyable>
+		<sellcostoverride>
+			<capitalresource quantity="15">cCapResCoin</capitalresource>
+		</sellcostoverride>
+		<rarity>cRarityRare</rarity>
+		<power>PowerGrantStone_R</power>
+		<civmatchingtype>eCivMatchingTypeAny</civmatchingtype>
+	</consumable>
+	<consumable name="ConsumableGrantStone_E">
+		<icon>UserInterface\Icons\Consumable\ConResStone4_ua</icon>
+		<rollovertextid>55820</rollovertextid>
+		<displaynameid>55819</displaynameid>
+		<stackable/>
+		<stacksize>20</stacksize>
+		<offertype>eOfferCivMatching</offertype>
+		<itemlevel>3</itemlevel>
+		<sellable>true</sellable>
+		<tradeable>true</tradeable>
+		<destroyable>true</destroyable>
+		<sellcostoverride>
+			<capitalresource quantity="20">cCapResCoin</capitalresource>
+		</sellcostoverride>
+		<rarity>cRarityEpic</rarity>
+		<power>PowerGrantStone_E</power>
+		<civmatchingtype>eCivMatchingTypeAny</civmatchingtype>
+	</consumable>
+	<consumable name="ConsumableGrantFruit_C">
+		<icon>UserInterface\Icons\Consumable\ConResBerry1_ua</icon>
+		<rollovertextid>55822</rollovertextid>
+		<displaynameid>55821</displaynameid>
+		<stackable/>
+		<stacksize>20</stacksize>
+		<offertype>eOfferNone</offertype>
+		<itemlevel>3</itemlevel>
+		<sellable>true</sellable>
+		<tradeable>true</tradeable>
+		<destroyable>true</destroyable>
+		<sellcostoverride>
+			<capitalresource quantity="5">cCapResCoin</capitalresource>
+		</sellcostoverride>
+		<rarity>cRarityCommon</rarity>
+		<power>PowerGrantFruit_C</power>
+		<civmatchingtype>eCivMatchingTypeAny</civmatchingtype>
+	</consumable>
+	<consumable name="ConsumableGrantFruit_U">
+		<icon>UserInterface\Icons\Consumable\ConResBerry2_ua</icon>
+		<rollovertextid>55822</rollovertextid>
+		<displaynameid>55821</displaynameid>
+		<stackable/>
+		<stacksize>20</stacksize>
+		<offertype>eOfferNone</offertype>
+		<itemlevel>3</itemlevel>
+		<sellable>true</sellable>
+		<tradeable>true</tradeable>
+		<destroyable>true</destroyable>
+		<sellcostoverride>
+			<capitalresource quantity="10">cCapResCoin</capitalresource>
+		</sellcostoverride>
+		<rarity>cRarityUncommon</rarity>
+		<power>PowerGrantFruit_U</power>
+		<civmatchingtype>eCivMatchingTypeAny</civmatchingtype>
+	</consumable>
+	<consumable name="ConsumableGrantFruit_R">
+		<icon>UserInterface\Icons\Consumable\ConResBerry3_ua</icon>
+		<rollovertextid>55822</rollovertextid>
+		<displaynameid>55821</displaynameid>
+		<stackable/>
+		<stacksize>20</stacksize>
+		<offertype>eOfferCivMatching</offertype>
+		<itemlevel>3</itemlevel>
+		<sellable>true</sellable>
+		<tradeable>true</tradeable>
+		<destroyable>true</destroyable>
+		<sellcostoverride>
+			<capitalresource quantity="15">cCapResCoin</capitalresource>
+		</sellcostoverride>
+		<rarity>cRarityRare</rarity>
+		<power>PowerGrantFruit_R</power>
+		<civmatchingtype>eCivMatchingTypeAny</civmatchingtype>
+	</consumable>
+	<consumable name="ConsumableGrantFruit_E">
+		<icon>UserInterface\Icons\Consumable\ConResBerry4_ua</icon>
+		<rollovertextid>55822</rollovertextid>
+		<displaynameid>55821</displaynameid>
+		<stackable/>
+		<stacksize>20</stacksize>
+		<offertype>eOfferCivMatching</offertype>
+		<itemlevel>3</itemlevel>
+		<sellable>true</sellable>
+		<tradeable>true</tradeable>
+		<destroyable>true</destroyable>
+		<sellcostoverride>
+			<capitalresource quantity="20">cCapResCoin</capitalresource>
+		</sellcostoverride>
+		<rarity>cRarityEpic</rarity>
+		<power>PowerGrantFruit_E</power>
+		<civmatchingtype>eCivMatchingTypeAny</civmatchingtype>
+	</consumable>
+	<consumable name="ConsumableGrantTower_C">
+		<icon>UserInterface\Icons\Consumable\ConTower1_ua</icon>
+		<rollovertextid>56321</rollovertextid>
+		<displaynameid>56320</displaynameid>
+		<stackable/>
+		<stacksize>20</stacksize>
+		<offertype>eOfferNone</offertype>
+		<itemlevel>3</itemlevel>
+		<sellable>true</sellable>
+		<tradeable>true</tradeable>
+		<destroyable>true</destroyable>
+		<sellcostoverride>
+			<capitalresource quantity="5">cCapResCoin</capitalresource>
+		</sellcostoverride>
+		<rarity>cRarityCommon</rarity>
+		<power>PowerGrantBuilding_C</power>
+		<civmatchingtype>eCivMatchingTypeAny</civmatchingtype>
+	</consumable>
+	<consumable name="ConsumableGrantTower_U">
+		<icon>UserInterface\Icons\Consumable\ConTower2_ua</icon>
+		<rollovertextid>56711</rollovertextid>
+		<displaynameid>56320</displaynameid>
+		<stackable/>
+		<stacksize>20</stacksize>
+		<offertype>eOfferNone</offertype>
+		<itemlevel>3</itemlevel>
+		<sellable>true</sellable>
+		<tradeable>true</tradeable>
+		<destroyable>true</destroyable>
+		<sellcostoverride>
+			<capitalresource quantity="10">cCapResCoin</capitalresource>
+		</sellcostoverride>
+		<rarity>cRarityUncommon</rarity>
+		<power>PowerGrantBuilding_U</power>
+		<civmatchingtype>eCivMatchingTypeAny</civmatchingtype>
+	</consumable>
+	<consumable name="ConsumableGrantTower_R">
+		<icon>UserInterface\Icons\Consumable\ConTower3_ua</icon>
+		<rollovertextid>56712</rollovertextid>
+		<displaynameid>56320</displaynameid>
+		<stackable/>
+		<stacksize>20</stacksize>
+		<offertype>eOfferCivMatching</offertype>
+		<itemlevel>3</itemlevel>
+		<sellable>true</sellable>
+		<tradeable>true</tradeable>
+		<destroyable>true</destroyable>
+		<sellcostoverride>
+			<capitalresource quantity="15">cCapResCoin</capitalresource>
+		</sellcostoverride>
+		<rarity>cRarityRare</rarity>
+		<power>PowerGrantBuilding_R</power>
+		<civmatchingtype>eCivMatchingTypeAny</civmatchingtype>
+	</consumable>
+	<consumable name="ConsumableGrantTower_E">
+		<icon>UserInterface\Icons\Consumable\ConTower4_ua</icon>
+		<rollovertextid>56713</rollovertextid>
+		<displaynameid>56320</displaynameid>
+		<stackable/>
+		<stacksize>20</stacksize>
+		<offertype>eOfferCivMatching</offertype>
+		<itemlevel>3</itemlevel>
+		<sellable>true</sellable>
+		<tradeable>true</tradeable>
+		<destroyable>true</destroyable>
+		<sellcostoverride>
+			<capitalresource quantity="20">cCapResCoin</capitalresource>
+		</sellcostoverride>
+		<rarity>cRarityEpic</rarity>
+		<power>PowerGrantBuilding_E</power>
+		<civmatchingtype>eCivMatchingTypeAny</civmatchingtype>
+	</consumable>
+	<consumable name="ConsumableGrantFort_C">
+		<icon>UserInterface\Icons\Consumable\ConFort1_ua</icon>
+		<rollovertextid>56252</rollovertextid>
+		<displaynameid>56251</displaynameid>
+		<stackable/>
+		<stacksize>20</stacksize>
+		<offertype>eOfferNone</offertype>
+		<itemlevel>7</itemlevel>
+		<sellable>true</sellable>
+		<tradeable>true</tradeable>
+		<destroyable>true</destroyable>
+		<sellcostoverride>
+			<capitalresource quantity="5">cCapResCoin</capitalresource>
+		</sellcostoverride>
+		<rarity>cRarityCommon</rarity>
+		<power>PowerGrantFort_C</power>
+		<civmatchingtype>eCivMatchingTypeAny</civmatchingtype>
+	</consumable>
+	<consumable name="ConsumableGrantFort_U">
+		<icon>UserInterface\Icons\Consumable\ConFort2_ua</icon>
+		<rollovertextid>56714</rollovertextid>
+		<displaynameid>56251</displaynameid>
+		<stackable/>
+		<stacksize>20</stacksize>
+		<offertype>eOfferNone</offertype>
+		<itemlevel>7</itemlevel>
+		<sellable>true</sellable>
+		<tradeable>true</tradeable>
+		<destroyable>true</destroyable>
+		<sellcostoverride>
+			<capitalresource quantity="10">cCapResCoin</capitalresource>
+		</sellcostoverride>
+		<rarity>cRarityUncommon</rarity>
+		<power>PowerGrantFort_U</power>
+		<civmatchingtype>eCivMatchingTypeAny</civmatchingtype>
+	</consumable>
+	<consumable name="ConsumableGrantFort_R">
+		<icon>UserInterface\Icons\Consumable\ConFort3_ua</icon>
+		<rollovertextid>56715</rollovertextid>
+		<displaynameid>56251</displaynameid>
+		<stackable/>
+		<stacksize>20</stacksize>
+		<offertype>eOfferCivMatching</offertype>
+		<itemlevel>7</itemlevel>
+		<sellable>true</sellable>
+		<tradeable>true</tradeable>
+		<destroyable>true</destroyable>
+		<sellcostoverride>
+			<capitalresource quantity="15">cCapResCoin</capitalresource>
+		</sellcostoverride>
+		<rarity>cRarityRare</rarity>
+		<power>PowerGrantFort_R</power>
+		<civmatchingtype>eCivMatchingTypeAny</civmatchingtype>
+	</consumable>
+	<consumable name="ConsumableGrantFort_E">
+		<icon>UserInterface\Icons\Consumable\ConFort4_ua</icon>
+		<rollovertextid>56716</rollovertextid>
+		<displaynameid>56251</displaynameid>
+		<stackable/>
+		<stacksize>20</stacksize>
+		<offertype>eOfferCivMatching</offertype>
+		<itemlevel>7</itemlevel>
+		<sellable>true</sellable>
+		<tradeable>true</tradeable>
+		<destroyable>true</destroyable>
+		<sellcostoverride>
+			<capitalresource quantity="20">cCapResCoin</capitalresource>
+		</sellcostoverride>
+		<rarity>cRarityEpic</rarity>
+		<power>PowerGrantFort_E</power>
+		<civmatchingtype>eCivMatchingTypeAny</civmatchingtype>
+	</consumable>
+	<consumable name="ConsumableGrantDamage_C">
+		<icon>UserInterface\Icons\Consumable\ConDmgBoost1_ua</icon>
+		<rollovertextid>56719</rollovertextid>
+		<displaynameid>56717</displaynameid>
+		<stackable/>
+		<stacksize>20</stacksize>
+		<offertype>eOfferNone</offertype>
+		<itemlevel>7</itemlevel>
+		<sellable>true</sellable>
+		<tradeable>true</tradeable>
+		<destroyable>true</destroyable>
+		<sellcostoverride>
+			<capitalresource quantity="5">cCapResCoin</capitalresource>
+		</sellcostoverride>
+		<rarity>cRarityCommon</rarity>
+		<power>PowerGrantDamage_C</power>
+		<civmatchingtype>eCivMatchingTypeAny</civmatchingtype>
+	</consumable>
+	<consumable name="ConsumableGrantDamage_U">
+		<icon>UserInterface\Icons\Consumable\ConDmgBoost2_ua</icon>
+		<rollovertextid>56719</rollovertextid>
+		<displaynameid>56717</displaynameid>
+		<stackable/>
+		<stacksize>20</stacksize>
+		<offertype>eOfferNone</offertype>
+		<itemlevel>7</itemlevel>
+		<sellable>true</sellable>
+		<tradeable>true</tradeable>
+		<destroyable>true</destroyable>
+		<sellcostoverride>
+			<capitalresource quantity="10">cCapResCoin</capitalresource>
+		</sellcostoverride>
+		<rarity>cRarityUncommon</rarity>
+		<power>PowerGrantDamage_U</power>
+		<civmatchingtype>eCivMatchingTypeAny</civmatchingtype>
+	</consumable>
+	<consumable name="ConsumableGrantDamage_R">
+		<icon>UserInterface\Icons\Consumable\ConDmgBoost3_ua</icon>
+		<rollovertextid>56720</rollovertextid>
+		<displaynameid>56717</displaynameid>
+		<stackable/>
+		<stacksize>20</stacksize>
+		<offertype>eOfferCivMatching</offertype>
+		<itemlevel>7</itemlevel>
+		<sellable>true</sellable>
+		<tradeable>true</tradeable>
+		<destroyable>true</destroyable>
+		<sellcostoverride>
+			<capitalresource quantity="15">cCapResCoin</capitalresource>
+		</sellcostoverride>
+		<rarity>cRarityRare</rarity>
+		<power>PowerGrantDamage_R</power>
+		<civmatchingtype>eCivMatchingTypeAny</civmatchingtype>
+	</consumable>
+	<consumable name="ConsumableGrantDamage_E">
+		<icon>UserInterface\Icons\Consumable\ConDmgBoost4_ua</icon>
+		<rollovertextid>56721</rollovertextid>
+		<displaynameid>56717</displaynameid>
+		<stackable/>
+		<stacksize>20</stacksize>
+		<offertype>eOfferCivMatching</offertype>
+		<itemlevel>7</itemlevel>
+		<sellable>true</sellable>
+		<tradeable>true</tradeable>
+		<destroyable>true</destroyable>
+		<sellcostoverride>
+			<capitalresource quantity="20">cCapResCoin</capitalresource>
+		</sellcostoverride>
+		<rarity>cRarityEpic</rarity>
+		<power>PowerGrantDamage_E</power>
+		<civmatchingtype>eCivMatchingTypeAny</civmatchingtype>
+	</consumable>
+	<consumable name="ConsumableSlow_C">
+		<icon>UserInterface\Icons\Consumable\ConSlowEnemy1_ua</icon>
+		<rollovertextid>56725</rollovertextid>
+		<displaynameid>56722</displaynameid>
+		<stackable/>
+		<stacksize>20</stacksize>
+		<offertype>eOfferNone</offertype>
+		<itemlevel>3</itemlevel>
+		<sellable>true</sellable>
+		<tradeable>true</tradeable>
+		<destroyable>true</destroyable>
+		<sellcostoverride>
+			<capitalresource quantity="5">cCapResCoin</capitalresource>
+		</sellcostoverride>
+		<rarity>cRarityCommon</rarity>
+		<power>PowerSlow_C</power>
+		<civmatchingtype>eCivMatchingTypeAny</civmatchingtype>
+	</consumable>
+	<consumable name="ConsumableSlow_U">
+		<icon>UserInterface\Icons\Consumable\ConSlowEnemy2_ua</icon>
+		<rollovertextid>56725</rollovertextid>
+		<displaynameid>56722</displaynameid>
+		<stackable/>
+		<stacksize>20</stacksize>
+		<offertype>eOfferNone</offertype>
+		<itemlevel>3</itemlevel>
+		<sellable>true</sellable>
+		<tradeable>true</tradeable>
+		<destroyable>true</destroyable>
+		<sellcostoverride>
+			<capitalresource quantity="10">cCapResCoin</capitalresource>
+		</sellcostoverride>
+		<rarity>cRarityUncommon</rarity>
+		<power>PowerSlow_U</power>
+		<civmatchingtype>eCivMatchingTypeAny</civmatchingtype>
+	</consumable>
+	<consumable name="ConsumableSlow_R">
+		<icon>UserInterface\Icons\Consumable\ConSlowEnemy3_ua</icon>
+		<rollovertextid>56725</rollovertextid>
+		<displaynameid>56722</displaynameid>
+		<stackable/>
+		<stacksize>20</stacksize>
+		<offertype>eOfferCivMatching</offertype>
+		<itemlevel>3</itemlevel>
+		<sellable>true</sellable>
+		<tradeable>true</tradeable>
+		<destroyable>true</destroyable>
+		<sellcostoverride>
+			<capitalresource quantity="15">cCapResCoin</capitalresource>
+		</sellcostoverride>
+		<rarity>cRarityRare</rarity>
+		<power>PowerSlow_R</power>
+		<civmatchingtype>eCivMatchingTypeAny</civmatchingtype>
+	</consumable>
+	<consumable name="ConsumableSlow_E">
+		<icon>UserInterface\Icons\Consumable\ConSlowEnemy4_ua</icon>
+		<rollovertextid>56726</rollovertextid>
+		<displaynameid>56722</displaynameid>
+		<stackable/>
+		<stacksize>20</stacksize>
+		<offertype>eOfferCivMatching</offertype>
+		<itemlevel>3</itemlevel>
+		<sellable>true</sellable>
+		<tradeable>true</tradeable>
+		<destroyable>true</destroyable>
+		<sellcostoverride>
+			<capitalresource quantity="20">cCapResCoin</capitalresource>
+		</sellcostoverride>
+		<rarity>cRarityEpic</rarity>
+		<power>PowerSlow_E</power>
+		<civmatchingtype>eCivMatchingTypeAny</civmatchingtype>
+	</consumable>
+	<consumable name="ConsumableGrantCow_C">
+		<icon>UserInterface\Icons\Consumable\ConCow1_ua</icon>
+		<rollovertextid>57312</rollovertextid>
+		<displaynameid>57311</displaynameid>
+		<stackable/>
+		<stacksize>20</stacksize>
+		<offertype>eOfferNone</offertype>
+		<itemlevel>3</itemlevel>
+		<sellable>true</sellable>
+		<tradeable>true</tradeable>
+		<destroyable>true</destroyable>
+		<sellcostoverride>
+			<capitalresource quantity="5">cCapResCoin</capitalresource>
+		</sellcostoverride>
+		<rarity>cRarityCommon</rarity>
+		<power>PowerGrantCow_C</power>
+		<civmatchingtype>eCivMatchingTypeAny</civmatchingtype>
+	</consumable>
+	<consumable name="ConsumableGrantCow_U">
+		<icon>UserInterface\Icons\Consumable\ConCow2_ua</icon>
+		<rollovertextid>57313</rollovertextid>
+		<displaynameid>57311</displaynameid>
+		<stackable/>
+		<stacksize>20</stacksize>
+		<offertype>eOfferNone</offertype>
+		<itemlevel>3</itemlevel>
+		<sellable>true</sellable>
+		<tradeable>true</tradeable>
+		<destroyable>true</destroyable>
+		<sellcostoverride>
+			<capitalresource quantity="10">cCapResCoin</capitalresource>
+		</sellcostoverride>
+		<rarity>cRarityUncommon</rarity>
+		<power>PowerGrantCow_U</power>
+		<civmatchingtype>eCivMatchingTypeAny</civmatchingtype>
+	</consumable>
+	<consumable name="ConsumableGrantCow_R">
+		<icon>UserInterface\Icons\Consumable\ConCow3_ua</icon>
+		<rollovertextid>57314</rollovertextid>
+		<displaynameid>57311</displaynameid>
+		<stackable/>
+		<stacksize>20</stacksize>
+		<offertype>eOfferCivMatching</offertype>
+		<itemlevel>3</itemlevel>
+		<sellable>true</sellable>
+		<tradeable>true</tradeable>
+		<destroyable>true</destroyable>
+		<sellcostoverride>
+			<capitalresource quantity="15">cCapResCoin</capitalresource>
+		</sellcostoverride>
+		<rarity>cRarityRare</rarity>
+		<power>PowerGrantCow_R</power>
+		<civmatchingtype>eCivMatchingTypeAny</civmatchingtype>
+	</consumable>
+	<consumable name="ConsumableGrantCow_E">
+		<icon>UserInterface\Icons\Consumable\ConCow4_ua</icon>
+		<rollovertextid>57315</rollovertextid>
+		<displaynameid>57311</displaynameid>
+		<stackable/>
+		<stacksize>20</stacksize>
+		<offertype>eOfferCivMatching</offertype>
+		<itemlevel>3</itemlevel>
+		<sellable>true</sellable>
+		<tradeable>true</tradeable>
+		<destroyable>true</destroyable>
+		<sellcostoverride>
+			<capitalresource quantity="20">cCapResCoin</capitalresource>
+		</sellcostoverride>
+		<rarity>cRarityEpic</rarity>
+		<power>PowerGrantCow_E</power>
+		<civmatchingtype>eCivMatchingTypeAny</civmatchingtype>
+	</consumable>
+	<consumable name="ConsumableElixirHP_C">
+		<icon>UserInterface\Icons\Consumable\ConElixerHealth1_C_ua</icon>
+		<rollovertextid>59639</rollovertextid>
+		<displaynameid>59638</displaynameid>
+		<stackable/>
+		<stacksize>20</stacksize>
+		<offertype>eOfferNone</offertype>
+		<itemlevel>3</itemlevel>
+		<sellable>true</sellable>
+		<tradeable>true</tradeable>
+		<destroyable>true</destroyable>
+		<sellcostoverride>
+			<capitalresource quantity="5">cCapResCoin</capitalresource>
+		</sellcostoverride>
+		<rarity>cRarityCommon</rarity>
+		<power>PowerElixirHP_C</power>
+		<civmatchingtype>eCivMatchingTypeAny</civmatchingtype>
+	</consumable>
+	<consumable name="ConsumableElixirHP_U">
+		<icon>UserInterface\Icons\Consumable\ConElixerHealth2_C_ua</icon>
+		<rollovertextid>59640</rollovertextid>
+		<displaynameid>59638</displaynameid>
+		<stackable/>
+		<stacksize>20</stacksize>
+		<offertype>eOfferNone</offertype>
+		<itemlevel>3</itemlevel>
+		<sellable>true</sellable>
+		<tradeable>true</tradeable>
+		<destroyable>true</destroyable>
+		<sellcostoverride>
+			<capitalresource quantity="10">cCapResCoin</capitalresource>
+		</sellcostoverride>
+		<rarity>cRarityUncommon</rarity>
+		<power>PowerElixirHP_U</power>
+		<civmatchingtype>eCivMatchingTypeAny</civmatchingtype>
+	</consumable>
+	<consumable name="ConsumableElixirHP_R">
+		<icon>UserInterface\Icons\Consumable\ConElixerHealth3_C_ua</icon>
+		<rollovertextid>59641</rollovertextid>
+		<displaynameid>59638</displaynameid>
+		<stackable/>
+		<stacksize>20</stacksize>
+		<offertype>eOfferCivMatching</offertype>
+		<itemlevel>3</itemlevel>
+		<sellable>true</sellable>
+		<tradeable>true</tradeable>
+		<destroyable>true</destroyable>
+		<sellcostoverride>
+			<capitalresource quantity="15">cCapResCoin</capitalresource>
+		</sellcostoverride>
+		<rarity>cRarityRare</rarity>
+		<power>PowerElixirHP_R</power>
+		<civmatchingtype>eCivMatchingTypeAny</civmatchingtype>
+	</consumable>
+	<consumable name="ConsumableElixirHP_E">
+		<icon>UserInterface\Icons\Consumable\ConElixerHealth4_C_ua</icon>
+		<rollovertextid>59642</rollovertextid>
+		<displaynameid>59638</displaynameid>
+		<stackable/>
+		<stacksize>20</stacksize>
+		<offertype>eOfferCivMatching</offertype>
+		<itemlevel>3</itemlevel>
+		<sellable>true</sellable>
+		<tradeable>true</tradeable>
+		<destroyable>true</destroyable>
+		<sellcostoverride>
+			<capitalresource quantity="20">cCapResCoin</capitalresource>
+		</sellcostoverride>
+		<rarity>cRarityEpic</rarity>
+		<power>PowerElixirHP_E</power>
+		<civmatchingtype>eCivMatchingTypeAny</civmatchingtype>
+	</consumable>
+	<consumable name="ConsumableElixirDamage_C">
+		<icon>UserInterface\Icons\Consumable\ConElixerStrength1_C_ua</icon>
+		<rollovertextid>59644</rollovertextid>
+		<displaynameid>59643</displaynameid>
+		<stackable/>
+		<stacksize>20</stacksize>
+		<offertype>eOfferNone</offertype>
+		<itemlevel>3</itemlevel>
+		<sellable>true</sellable>
+		<tradeable>true</tradeable>
+		<destroyable>true</destroyable>
+		<sellcostoverride>
+			<capitalresource quantity="5">cCapResCoin</capitalresource>
+		</sellcostoverride>
+		<rarity>cRarityCommon</rarity>
+		<power>PowerElixirDamage_C</power>
+		<civmatchingtype>eCivMatchingTypeAny</civmatchingtype>
+	</consumable>
+	<consumable name="ConsumableElixirDamage_U">
+		<icon>UserInterface\Icons\Consumable\ConElixerStrength2_C_ua</icon>
+		<rollovertextid>59645</rollovertextid>
+		<displaynameid>59643</displaynameid>
+		<stackable/>
+		<stacksize>20</stacksize>
+		<offertype>eOfferNone</offertype>
+		<itemlevel>3</itemlevel>
+		<sellable>true</sellable>
+		<tradeable>true</tradeable>
+		<destroyable>true</destroyable>
+		<sellcostoverride>
+			<capitalresource quantity="10">cCapResCoin</capitalresource>
+		</sellcostoverride>
+		<rarity>cRarityUncommon</rarity>
+		<power>PowerElixirDamage_U</power>
+		<civmatchingtype>eCivMatchingTypeAny</civmatchingtype>
+	</consumable>
+	<consumable name="ConsumableElixirDamage_R">
+		<icon>UserInterface\Icons\Consumable\ConElixerStrength3_C_ua</icon>
+		<rollovertextid>59646</rollovertextid>
+		<displaynameid>59643</displaynameid>
+		<stackable/>
+		<stacksize>20</stacksize>
+		<offertype>eOfferCivMatching</offertype>
+		<itemlevel>3</itemlevel>
+		<sellable>true</sellable>
+		<tradeable>true</tradeable>
+		<destroyable>true</destroyable>
+		<sellcostoverride>
+			<capitalresource quantity="15">cCapResCoin</capitalresource>
+		</sellcostoverride>
+		<rarity>cRarityRare</rarity>
+		<power>PowerElixirDamage_R</power>
+		<civmatchingtype>eCivMatchingTypeAny</civmatchingtype>
+	</consumable>
+	<consumable name="ConsumableElixirDamage_E">
+		<icon>UserInterface\Icons\Consumable\ConElixerStrength4_C_ua</icon>
+		<rollovertextid>59647</rollovertextid>
+		<displaynameid>59643</displaynameid>
+		<stackable/>
+		<stacksize>20</stacksize>
+		<offertype>eOfferCivMatching</offertype>
+		<itemlevel>3</itemlevel>
+		<sellable>true</sellable>
+		<tradeable>true</tradeable>
+		<destroyable>true</destroyable>
+		<sellcostoverride>
+			<capitalresource quantity="20">cCapResCoin</capitalresource>
+		</sellcostoverride>
+		<rarity>cRarityEpic</rarity>
+		<power>PowerElixirDamage_E</power>
+		<civmatchingtype>eCivMatchingTypeAny</civmatchingtype>
+	</consumable>
+	<consumable name="ConsumableElixirSpeed_C">
+		<icon>UserInterface\Icons\Consumable\ConElixirVision1_C_ua</icon>
+		<rollovertextid>59649</rollovertextid>
+		<displaynameid>59648</displaynameid>
+		<stackable/>
+		<stacksize>20</stacksize>
+		<offertype>eOfferNone</offertype>
+		<itemlevel>3</itemlevel>
+		<sellable>true</sellable>
+		<tradeable>true</tradeable>
+		<destroyable>true</destroyable>
+		<sellcostoverride>
+			<capitalresource quantity="5">cCapResCoin</capitalresource>
+		</sellcostoverride>
+		<rarity>cRarityCommon</rarity>
+		<power>PowerElixirSpeed_C</power>
+		<civmatchingtype>eCivMatchingTypeAny</civmatchingtype>
+	</consumable>
+	<consumable name="ConsumableElixirSpeed_U">
+		<icon>UserInterface\Icons\Consumable\ConElixirVision2_C_ua</icon>
+		<rollovertextid>59650</rollovertextid>
+		<displaynameid>59648</displaynameid>
+		<stackable/>
+		<stacksize>20</stacksize>
+		<offertype>eOfferNone</offertype>
+		<itemlevel>3</itemlevel>
+		<sellable>true</sellable>
+		<tradeable>true</tradeable>
+		<destroyable>true</destroyable>
+		<sellcostoverride>
+			<capitalresource quantity="10">cCapResCoin</capitalresource>
+		</sellcostoverride>
+		<rarity>cRarityUncommon</rarity>
+		<power>PowerElixirSpeed_U</power>
+		<civmatchingtype>eCivMatchingTypeAny</civmatchingtype>
+	</consumable>
+	<consumable name="ConsumableElixirSpeed_R">
+		<icon>UserInterface\Icons\Consumable\ConElixirVision3_C_ua</icon>
+		<rollovertextid>59651</rollovertextid>
+		<displaynameid>59648</displaynameid>
+		<stackable/>
+		<stacksize>20</stacksize>
+		<offertype>eOfferCivMatching</offertype>
+		<itemlevel>3</itemlevel>
+		<sellable>true</sellable>
+		<tradeable>true</tradeable>
+		<destroyable>true</destroyable>
+		<sellcostoverride>
+			<capitalresource quantity="15">cCapResCoin</capitalresource>
+		</sellcostoverride>
+		<rarity>cRarityRare</rarity>
+		<power>PowerElixirSpeed_R</power>
+		<civmatchingtype>eCivMatchingTypeAny</civmatchingtype>
+	</consumable>
+	<consumable name="ConsumableElixirSpeed_E">
+		<icon>UserInterface\Icons\Consumable\ConElixirVision4_C_ua</icon>
+		<rollovertextid>59652</rollovertextid>
+		<displaynameid>59648</displaynameid>
+		<stackable/>
+		<stacksize>20</stacksize>
+		<offertype>eOfferCivMatching</offertype>
+		<itemlevel>3</itemlevel>
+		<sellable>true</sellable>
+		<tradeable>true</tradeable>
+		<destroyable>true</destroyable>
+		<sellcostoverride>
+			<capitalresource quantity="20">cCapResCoin</capitalresource>
+		</sellcostoverride>
+		<rarity>cRarityEpic</rarity>
+		<power>PowerElixirSpeed_E</power>
+		<civmatchingtype>eCivMatchingTypeAny</civmatchingtype>
+	</consumable>
+	<consumable name="ConsumableElixirHPNegDamage_C">
+		<icon>UserInterface\Icons\Consumable\ConElixerFortitude1_C_ua</icon>
+		<rollovertextid>59654</rollovertextid>
+		<displaynameid>59653</displaynameid>
+		<stackable/>
+		<stacksize>20</stacksize>
+		<offertype>eOfferNone</offertype>
+		<itemlevel>7</itemlevel>
+		<sellable>true</sellable>
+		<tradeable>true</tradeable>
+		<destroyable>true</destroyable>
+		<sellcostoverride>
+			<capitalresource quantity="5">cCapResCoin</capitalresource>
+		</sellcostoverride>
+		<rarity>cRarityCommon</rarity>
+		<power>PowerElixirHPNegDamage_C</power>
+		<civmatchingtype>eCivMatchingTypeAny</civmatchingtype>
+	</consumable>
+	<consumable name="ConsumableElixirHPNegDamage_U">
+		<icon>UserInterface\Icons\Consumable\ConElixerFortitude2_C_ua</icon>
+		<rollovertextid>59655</rollovertextid>
+		<displaynameid>59653</displaynameid>
+		<stackable/>
+		<stacksize>20</stacksize>
+		<offertype>eOfferNone</offertype>
+		<itemlevel>7</itemlevel>
+		<sellable>true</sellable>
+		<tradeable>true</tradeable>
+		<destroyable>true</destroyable>
+		<sellcostoverride>
+			<capitalresource quantity="10">cCapResCoin</capitalresource>
+		</sellcostoverride>
+		<rarity>cRarityUncommon</rarity>
+		<power>PowerElixirHPNegDamage_U</power>
+		<civmatchingtype>eCivMatchingTypeAny</civmatchingtype>
+	</consumable>
+	<consumable name="ConsumableElixirHPNegDamage_R">
+		<icon>UserInterface\Icons\Consumable\ConElixerFortitude3_C_ua</icon>
+		<rollovertextid>59656</rollovertextid>
+		<displaynameid>59653</displaynameid>
+		<stackable/>
+		<stacksize>20</stacksize>
+		<offertype>eOfferCivMatching</offertype>
+		<itemlevel>7</itemlevel>
+		<sellable>true</sellable>
+		<tradeable>true</tradeable>
+		<destroyable>true</destroyable>
+		<sellcostoverride>
+			<capitalresource quantity="15">cCapResCoin</capitalresource>
+		</sellcostoverride>
+		<rarity>cRarityRare</rarity>
+		<power>PowerElixirHPNegDamage_R</power>
+		<civmatchingtype>eCivMatchingTypeAny</civmatchingtype>
+	</consumable>
+	<consumable name="ConsumableElixirHPNegDamage_E">
+		<icon>UserInterface\Icons\Consumable\ConElixerFortitude4_C_ua</icon>
+		<rollovertextid>59657</rollovertextid>
+		<displaynameid>59653</displaynameid>
+		<stackable/>
+		<stacksize>20</stacksize>
+		<offertype>eOfferCivMatching</offertype>
+		<itemlevel>7</itemlevel>
+		<sellable>true</sellable>
+		<tradeable>true</tradeable>
+		<destroyable>true</destroyable>
+		<sellcostoverride>
+			<capitalresource quantity="20">cCapResCoin</capitalresource>
+		</sellcostoverride>
+		<rarity>cRarityEpic</rarity>
+		<power>PowerElixirHPNegDamage_E</power>
+		<civmatchingtype>eCivMatchingTypeAny</civmatchingtype>
+	</consumable>
+	<consumable name="ConsumableElixirDamageSlow_C">
+		<icon>UserInterface\Icons\Consumable\ConElixerPower1_C_ua</icon>
+		<rollovertextid>59659</rollovertextid>
+		<displaynameid>59658</displaynameid>
+		<stackable/>
+		<stacksize>20</stacksize>
+		<offertype>eOfferNone</offertype>
+		<itemlevel>7</itemlevel>
+		<sellable>true</sellable>
+		<tradeable>true</tradeable>
+		<destroyable>true</destroyable>
+		<sellcostoverride>
+			<capitalresource quantity="5">cCapResCoin</capitalresource>
+		</sellcostoverride>
+		<rarity>cRarityCommon</rarity>
+		<power>PowerElixirDamageSlow_C</power>
+		<civmatchingtype>eCivMatchingTypeAny</civmatchingtype>
+	</consumable>
+	<consumable name="ConsumableElixirDamageSlow_U">
+		<icon>UserInterface\Icons\Consumable\ConElixerPower2_C_ua</icon>
+		<rollovertextid>59660</rollovertextid>
+		<displaynameid>59658</displaynameid>
+		<stackable/>
+		<stacksize>20</stacksize>
+		<offertype>eOfferNone</offertype>
+		<itemlevel>7</itemlevel>
+		<sellable>true</sellable>
+		<tradeable>true</tradeable>
+		<destroyable>true</destroyable>
+		<sellcostoverride>
+			<capitalresource quantity="10">cCapResCoin</capitalresource>
+		</sellcostoverride>
+		<rarity>cRarityUncommon</rarity>
+		<power>PowerElixirDamageSlow_U</power>
+		<civmatchingtype>eCivMatchingTypeAny</civmatchingtype>
+	</consumable>
+	<consumable name="ConsumableElixirDamageSlow_R">
+		<icon>UserInterface\Icons\Consumable\ConElixerPower3_C_ua</icon>
+		<rollovertextid>59661</rollovertextid>
+		<displaynameid>59658</displaynameid>
+		<stackable/>
+		<stacksize>20</stacksize>
+		<offertype>eOfferCivMatching</offertype>
+		<itemlevel>7</itemlevel>
+		<sellable>true</sellable>
+		<tradeable>true</tradeable>
+		<destroyable>true</destroyable>
+		<sellcostoverride>
+			<capitalresource quantity="15">cCapResCoin</capitalresource>
+		</sellcostoverride>
+		<rarity>cRarityRare</rarity>
+		<power>PowerElixirDamageSlow_R</power>
+		<civmatchingtype>eCivMatchingTypeAny</civmatchingtype>
+	</consumable>
+	<consumable name="ConsumableElixirDamageSlow_E">
+		<icon>UserInterface\Icons\Consumable\ConElixerPower4_C_ua</icon>
+		<rollovertextid>59662</rollovertextid>
+		<displaynameid>59658</displaynameid>
+		<stackable/>
+		<stacksize>20</stacksize>
+		<offertype>eOfferCivMatching</offertype>
+		<itemlevel>7</itemlevel>
+		<sellable>true</sellable>
+		<tradeable>true</tradeable>
+		<destroyable>true</destroyable>
+		<sellcostoverride>
+			<capitalresource quantity="20">cCapResCoin</capitalresource>
+		</sellcostoverride>
+		<rarity>cRarityEpic</rarity>
+		<power>PowerElixirDamageSlow_E</power>
+		<civmatchingtype>eCivMatchingTypeAny</civmatchingtype>
+	</consumable>
+	<consumable name="ConsumableElixirSpeedNegHP_C">
+		<icon>UserInterface\Icons\Consumable\ConElixerFlight1_C_ua</icon>
+		<rollovertextid>59664</rollovertextid>
+		<displaynameid>59663</displaynameid>
+		<stackable/>
+		<stacksize>20</stacksize>
+		<offertype>eOfferNone</offertype>
+		<itemlevel>7</itemlevel>
+		<sellable>true</sellable>
+		<tradeable>true</tradeable>
+		<destroyable>true</destroyable>
+		<sellcostoverride>
+			<capitalresource quantity="5">cCapResCoin</capitalresource>
+		</sellcostoverride>
+		<rarity>cRarityCommon</rarity>
+		<power>PowerElixirSpeedNegHP_C</power>
+		<civmatchingtype>eCivMatchingTypeAny</civmatchingtype>
+	</consumable>
+	<consumable name="ConsumableElixirSpeedNegHP_U">
+		<icon>UserInterface\Icons\Consumable\ConElixerFlight2_C_ua</icon>
+		<rollovertextid>59665</rollovertextid>
+		<displaynameid>59663</displaynameid>
+		<stackable/>
+		<stacksize>20</stacksize>
+		<offertype>eOfferNone</offertype>
+		<itemlevel>7</itemlevel>
+		<sellable>true</sellable>
+		<tradeable>true</tradeable>
+		<destroyable>true</destroyable>
+		<sellcostoverride>
+			<capitalresource quantity="10">cCapResCoin</capitalresource>
+		</sellcostoverride>
+		<rarity>cRarityUncommon</rarity>
+		<power>PowerElixirSpeedNegHP_U</power>
+		<civmatchingtype>eCivMatchingTypeAny</civmatchingtype>
+	</consumable>
+	<consumable name="ConsumableElixirSpeedNegHP_R">
+		<icon>UserInterface\Icons\Consumable\ConElixerFlight3_C_ua</icon>
+		<rollovertextid>59666</rollovertextid>
+		<displaynameid>59663</displaynameid>
+		<stackable/>
+		<stacksize>20</stacksize>
+		<offertype>eOfferCivMatching</offertype>
+		<itemlevel>7</itemlevel>
+		<sellable>true</sellable>
+		<tradeable>true</tradeable>
+		<destroyable>true</destroyable>
+		<sellcostoverride>
+			<capitalresource quantity="15">cCapResCoin</capitalresource>
+		</sellcostoverride>
+		<rarity>cRarityRare</rarity>
+		<power>PowerElixirSpeedNegHP_R</power>
+		<civmatchingtype>eCivMatchingTypeAny</civmatchingtype>
+	</consumable>
+	<consumable name="ConsumableElixirSpeedNegHP_E">
+		<icon>UserInterface\Icons\Consumable\ConElixerFlight4_C_ua</icon>
+		<rollovertextid>59667</rollovertextid>
+		<displaynameid>59663</displaynameid>
+		<stackable/>
+		<stacksize>20</stacksize>
+		<offertype>eOfferCivMatching</offertype>
+		<itemlevel>7</itemlevel>
+		<sellable>true</sellable>
+		<tradeable>true</tradeable>
+		<destroyable>true</destroyable>
+		<sellcostoverride>
+			<capitalresource quantity="20">cCapResCoin</capitalresource>
+		</sellcostoverride>
+		<rarity>cRarityEpic</rarity>
+		<power>PowerElixirSpeedNegHP_E</power>
+		<civmatchingtype>eCivMatchingTypeAny</civmatchingtype>
+	</consumable>
+	<consumable name="ConsumableElixirHPDamageSpeed_C">
+		<icon>UserInterface\Icons\Consumable\ConElixerOfTheGods1_C_ua</icon>
+		<rollovertextid>59669</rollovertextid>
+		<displaynameid>59668</displaynameid>
+		<stackable/>
+		<stacksize>20</stacksize>
+		<offertype>eOfferNone</offertype>
+		<itemlevel>15</itemlevel>
+		<sellable>true</sellable>
+		<tradeable>true</tradeable>
+		<destroyable>true</destroyable>
+		<sellcostoverride>
+			<capitalresource quantity="10">cCapResCoin</capitalresource>
+		</sellcostoverride>
+		<rarity>cRarityCommon</rarity>
+		<power>PowerElixirHPDamageSpeed_C</power>
+		<civmatchingtype>eCivMatchingTypeAny</civmatchingtype>
+	</consumable>
+	<consumable name="ConsumableElixirHPDamageSpeed_U">
+		<icon>UserInterface\Icons\Consumable\ConElixerOfTheGods2_C_ua</icon>
+		<rollovertextid>59670</rollovertextid>
+		<displaynameid>59668</displaynameid>
+		<stackable/>
+		<stacksize>20</stacksize>
+		<offertype>eOfferNone</offertype>
+		<itemlevel>15</itemlevel>
+		<sellable>true</sellable>
+		<tradeable>true</tradeable>
+		<destroyable>true</destroyable>
+		<sellcostoverride>
+			<capitalresource quantity="15">cCapResCoin</capitalresource>
+		</sellcostoverride>
+		<rarity>cRarityUncommon</rarity>
+		<power>PowerElixirHPDamageSpeed_U</power>
+		<civmatchingtype>eCivMatchingTypeAny</civmatchingtype>
+	</consumable>
+	<consumable name="ConsumableElixirHPDamageSpeed_R">
+		<icon>UserInterface\Icons\Consumable\ConElixerOfTheGods3_C_ua</icon>
+		<rollovertextid>59671</rollovertextid>
+		<displaynameid>59668</displaynameid>
+		<stackable/>
+		<stacksize>20</stacksize>
+		<offertype>eOfferCivMatching</offertype>
+		<itemlevel>15</itemlevel>
+		<sellable>true</sellable>
+		<tradeable>true</tradeable>
+		<destroyable>true</destroyable>
+		<sellcostoverride>
+			<capitalresource quantity="20">cCapResCoin</capitalresource>
+		</sellcostoverride>
+		<rarity>cRarityRare</rarity>
+		<power>PowerElixirHPDamageSpeed_R</power>
+		<civmatchingtype>eCivMatchingTypeAny</civmatchingtype>
+	</consumable>
+	<consumable name="ConsumableElixirHPDamageSpeed_E">
+		<icon>UserInterface\Icons\Consumable\ConElixerOfTheGods4_C_ua</icon>
+		<rollovertextid>59672</rollovertextid>
+		<displaynameid>59668</displaynameid>
+		<stackable/>
+		<stacksize>20</stacksize>
+		<offertype>eOfferCivMatching</offertype>
+		<itemlevel>15</itemlevel>
+		<sellable>true</sellable>
+		<tradeable>true</tradeable>
+		<destroyable>true</destroyable>
+		<sellcostoverride>
+			<capitalresource quantity="25">cCapResCoin</capitalresource>
+		</sellcostoverride>
+		<rarity>cRarityEpic</rarity>
+		<power>PowerElixirHPDamageSpeed_E</power>
+		<civmatchingtype>eCivMatchingTypeAny</civmatchingtype>
+	</consumable>
+	<consumable name="ConsumablePoison_C">
+		<icon>UserInterface\Icons\Consumable\ConEnfeeblingPoison1_C_ua</icon>
+		<rollovertextid>59674</rollovertextid>
+		<displaynameid>59673</displaynameid>
+		<stackable/>
+		<stacksize>20</stacksize>
+		<offertype>eOfferNone</offertype>
+		<itemlevel>7</itemlevel>
+		<sellable>true</sellable>
+		<tradeable>true</tradeable>
+		<destroyable>true</destroyable>
+		<sellcostoverride>
+			<capitalresource quantity="5">cCapResCoin</capitalresource>
+		</sellcostoverride>
+		<rarity>cRarityCommon</rarity>
+		<power>PowerPoison_C</power>
+		<civmatchingtype>eCivMatchingTypeAny</civmatchingtype>
+	</consumable>
+	<consumable name="ConsumablePoison_U">
+		<icon>UserInterface\Icons\Consumable\ConEnfeeblingPoison2_C_ua</icon>
+		<rollovertextid>59675</rollovertextid>
+		<displaynameid>59673</displaynameid>
+		<stackable/>
+		<stacksize>20</stacksize>
+		<offertype>eOfferNone</offertype>
+		<itemlevel>7</itemlevel>
+		<sellable>true</sellable>
+		<tradeable>true</tradeable>
+		<destroyable>true</destroyable>
+		<sellcostoverride>
+			<capitalresource quantity="10">cCapResCoin</capitalresource>
+		</sellcostoverride>
+		<rarity>cRarityUncommon</rarity>
+		<power>PowerPoison_U</power>
+		<civmatchingtype>eCivMatchingTypeAny</civmatchingtype>
+	</consumable>
+	<consumable name="ConsumablePoison_R">
+		<icon>UserInterface\Icons\Consumable\ConEnfeeblingPoison3_C_ua</icon>
+		<rollovertextid>59676</rollovertextid>
+		<displaynameid>59673</displaynameid>
+		<stackable/>
+		<stacksize>20</stacksize>
+		<offertype>eOfferCivMatching</offertype>
+		<itemlevel>7</itemlevel>
+		<sellable>true</sellable>
+		<tradeable>true</tradeable>
+		<destroyable>true</destroyable>
+		<sellcostoverride>
+			<capitalresource quantity="15">cCapResCoin</capitalresource>
+		</sellcostoverride>
+		<rarity>cRarityRare</rarity>
+		<power>PowerPoison_R</power>
+		<civmatchingtype>eCivMatchingTypeAny</civmatchingtype>
+	</consumable>
+	<consumable name="ConsumablePoison_E">
+		<icon>UserInterface\Icons\Consumable\ConEnfeeblingPoison4_C_ua</icon>
+		<rollovertextid>59677</rollovertextid>
+		<displaynameid>59673</displaynameid>
+		<stackable/>
+		<stacksize>20</stacksize>
+		<offertype>eOfferCivMatching</offertype>
+		<itemlevel>7</itemlevel>
+		<sellable>true</sellable>
+		<tradeable>true</tradeable>
+		<destroyable>true</destroyable>
+		<sellcostoverride>
+			<capitalresource quantity="20">cCapResCoin</capitalresource>
+		</sellcostoverride>
+		<rarity>cRarityEpic</rarity>
+		<power>PowerPoison_E</power>
+		<civmatchingtype>eCivMatchingTypeAny</civmatchingtype>
+	</consumable>
+	<consumable name="ConsumableSiegeDamage_C">
+		<icon>UserInterface\Icons\Consumable\ConPillage1_C_ua</icon>
+		<rollovertextid>59679</rollovertextid>
+		<displaynameid>59678</displaynameid>
+		<stackable/>
+		<stacksize>20</stacksize>
+		<offertype>eOfferNone</offertype>
+		<itemlevel>7</itemlevel>
+		<sellable>true</sellable>
+		<tradeable>true</tradeable>
+		<destroyable>true</destroyable>
+		<sellcostoverride>
+			<capitalresource quantity="5">cCapResCoin</capitalresource>
+		</sellcostoverride>
+		<rarity>cRarityCommon</rarity>
+		<power>PowerSiegeDamage_C</power>
+		<civmatchingtype>eCivMatchingTypeAny</civmatchingtype>
+	</consumable>
+	<consumable name="ConsumableSiegeDamage_U">
+		<icon>UserInterface\Icons\Consumable\ConPillage2_C_ua</icon>
+		<rollovertextid>59680</rollovertextid>
+		<displaynameid>59678</displaynameid>
+		<stackable/>
+		<stacksize>20</stacksize>
+		<offertype>eOfferNone</offertype>
+		<itemlevel>7</itemlevel>
+		<sellable>true</sellable>
+		<tradeable>true</tradeable>
+		<destroyable>true</destroyable>
+		<sellcostoverride>
+			<capitalresource quantity="10">cCapResCoin</capitalresource>
+		</sellcostoverride>
+		<rarity>cRarityUncommon</rarity>
+		<power>PowerSiegeDamage_U</power>
+		<civmatchingtype>eCivMatchingTypeAny</civmatchingtype>
+	</consumable>
+	<consumable name="ConsumableSiegeDamage_R">
+		<icon>UserInterface\Icons\Consumable\ConPillage3_C_ua</icon>
+		<rollovertextid>59681</rollovertextid>
+		<displaynameid>59678</displaynameid>
+		<stackable/>
+		<stacksize>20</stacksize>
+		<offertype>eOfferCivMatching</offertype>
+		<itemlevel>7</itemlevel>
+		<sellable>true</sellable>
+		<tradeable>true</tradeable>
+		<destroyable>true</destroyable>
+		<sellcostoverride>
+			<capitalresource quantity="15">cCapResCoin</capitalresource>
+		</sellcostoverride>
+		<rarity>cRarityRare</rarity>
+		<power>PowerSiegeDamage_R</power>
+		<civmatchingtype>eCivMatchingTypeAny</civmatchingtype>
+	</consumable>
+	<consumable name="ConsumableSiegeDamage_E">
+		<icon>UserInterface\Icons\Consumable\ConPillage4_C_ua</icon>
+		<rollovertextid>59682</rollovertextid>
+		<displaynameid>59678</displaynameid>
+		<stackable/>
+		<stacksize>20</stacksize>
+		<offertype>eOfferCivMatching</offertype>
+		<itemlevel>7</itemlevel>
+		<sellable>true</sellable>
+		<tradeable>true</tradeable>
+		<destroyable>true</destroyable>
+		<sellcostoverride>
+			<capitalresource quantity="20">cCapResCoin</capitalresource>
+		</sellcostoverride>
+		<rarity>cRarityEpic</rarity>
+		<power>PowerSiegeDamage_E</power>
+		<civmatchingtype>eCivMatchingTypeAny</civmatchingtype>
+	</consumable>
+	<consumable name="ConsumableHeadHunter_C">
+		<icon>UserInterface\Icons\Consumable\ConHeadhunter1_ua</icon>
+		<rollovertextid>59684</rollovertextid>
+		<displaynameid>59683</displaynameid>
+		<stackable/>
+		<stacksize>20</stacksize>
+		<offertype>eOfferNone</offertype>
+		<itemlevel>3</itemlevel>
+		<sellable>true</sellable>
+		<tradeable>true</tradeable>
+		<destroyable>true</destroyable>
+		<sellcostoverride>
+			<capitalresource quantity="5">cCapResCoin</capitalresource>
+		</sellcostoverride>
+		<rarity>cRarityCommon</rarity>
+		<power>PowerSpawnHeadHunter_C</power>
+		<civmatchingtype>eCivMatchingTypeAny</civmatchingtype>
+	</consumable>
+	<consumable name="ConsumableHeadHunter_U">
+		<icon>UserInterface\Icons\Consumable\ConHeadhunter2_ua</icon>
+		<rollovertextid>59685</rollovertextid>
+		<displaynameid>59683</displaynameid>
+		<stackable/>
+		<stacksize>20</stacksize>
+		<offertype>eOfferNone</offertype>
+		<itemlevel>3</itemlevel>
+		<sellable>true</sellable>
+		<tradeable>true</tradeable>
+		<destroyable>true</destroyable>
+		<sellcostoverride>
+			<capitalresource quantity="10">cCapResCoin</capitalresource>
+		</sellcostoverride>
+		<rarity>cRarityUncommon</rarity>
+		<power>PowerSpawnHeadHunter_U</power>
+		<civmatchingtype>eCivMatchingTypeAny</civmatchingtype>
+	</consumable>
+	<consumable name="ConsumableHeadHunter_R">
+		<icon>UserInterface\Icons\Consumable\ConHeadhunter3_ua</icon>
+		<rollovertextid>59686</rollovertextid>
+		<displaynameid>59683</displaynameid>
+		<stackable/>
+		<stacksize>20</stacksize>
+		<offertype>eOfferCivMatching</offertype>
+		<itemlevel>3</itemlevel>
+		<sellable>true</sellable>
+		<tradeable>true</tradeable>
+		<destroyable>true</destroyable>
+		<sellcostoverride>
+			<capitalresource quantity="15">cCapResCoin</capitalresource>
+		</sellcostoverride>
+		<rarity>cRarityRare</rarity>
+		<power>PowerSpawnHeadHunter_R</power>
+		<civmatchingtype>eCivMatchingTypeAny</civmatchingtype>
+	</consumable>
+	<consumable name="ConsumableHeadHunter_E">
+		<icon>UserInterface\Icons\Consumable\ConHeadhunter4_ua</icon>
+		<rollovertextid>59687</rollovertextid>
+		<displaynameid>59683</displaynameid>
+		<stackable/>
+		<stacksize>20</stacksize>
+		<offertype>eOfferCivMatching</offertype>
+		<itemlevel>3</itemlevel>
+		<sellable>true</sellable>
+		<tradeable>true</tradeable>
+		<destroyable>true</destroyable>
+		<sellcostoverride>
+			<capitalresource quantity="20">cCapResCoin</capitalresource>
+		</sellcostoverride>
+		<rarity>cRarityEpic</rarity>
+		<power>PowerSpawnHeadHunter_E</power>
+		<civmatchingtype>eCivMatchingTypeAny</civmatchingtype>
+	</consumable>
+	<consumable name="ConsumableGaesatae_C">
+		<icon>UserInterface\Icons\Consumable\ConGaestatae1_C_ua</icon>
+		<rollovertextid>59689</rollovertextid>
+		<displaynameid>59688</displaynameid>
+		<stackable/>
+		<stacksize>20</stacksize>
+		<offertype>eOfferNone</offertype>
+		<itemlevel>3</itemlevel>
+		<sellable>true</sellable>
+		<tradeable>true</tradeable>
+		<destroyable>true</destroyable>
+		<sellcostoverride>
+			<capitalresource quantity="5">cCapResCoin</capitalresource>
+		</sellcostoverride>
+		<rarity>cRarityCommon</rarity>
+		<power>PowerSpawnGaesatae_C</power>
+		<civmatchingtype>eCivMatchingTypeAny</civmatchingtype>
+	</consumable>
+	<consumable name="ConsumableGaesatae_U">
+		<icon>UserInterface\Icons\Consumable\ConGaestatae2_C_ua</icon>
+		<rollovertextid>59690</rollovertextid>
+		<displaynameid>59688</displaynameid>
+		<stackable/>
+		<stacksize>20</stacksize>
+		<offertype>eOfferNone</offertype>
+		<itemlevel>3</itemlevel>
+		<sellable>true</sellable>
+		<tradeable>true</tradeable>
+		<destroyable>true</destroyable>
+		<sellcostoverride>
+			<capitalresource quantity="10">cCapResCoin</capitalresource>
+		</sellcostoverride>
+		<rarity>cRarityUncommon</rarity>
+		<power>PowerSpawnGaesatae_U</power>
+		<civmatchingtype>eCivMatchingTypeAny</civmatchingtype>
+	</consumable>
+	<consumable name="ConsumableGaesatae_R">
+		<icon>UserInterface\Icons\Consumable\ConGaestatae3_C_ua</icon>
+		<rollovertextid>59691</rollovertextid>
+		<displaynameid>59688</displaynameid>
+		<stackable/>
+		<stacksize>20</stacksize>
+		<offertype>eOfferCivMatching</offertype>
+		<itemlevel>3</itemlevel>
+		<sellable>true</sellable>
+		<tradeable>true</tradeable>
+		<destroyable>true</destroyable>
+		<sellcostoverride>
+			<capitalresource quantity="15">cCapResCoin</capitalresource>
+		</sellcostoverride>
+		<rarity>cRarityRare</rarity>
+		<power>PowerSpawnGaesatae_R</power>
+		<civmatchingtype>eCivMatchingTypeAny</civmatchingtype>
+	</consumable>
+	<consumable name="ConsumableGaesatae_E">
+		<icon>UserInterface\Icons\Consumable\ConGaestatae4_C_ua</icon>
+		<rollovertextid>59692</rollovertextid>
+		<displaynameid>59688</displaynameid>
+		<stackable/>
+		<stacksize>20</stacksize>
+		<offertype>eOfferCivMatching</offertype>
+		<itemlevel>3</itemlevel>
+		<sellable>true</sellable>
+		<tradeable>true</tradeable>
+		<destroyable>true</destroyable>
+		<sellcostoverride>
+			<capitalresource quantity="20">cCapResCoin</capitalresource>
+		</sellcostoverride>
+		<rarity>cRarityEpic</rarity>
+		<power>PowerSpawnGaesatae_E</power>
+		<civmatchingtype>eCivMatchingTypeAny</civmatchingtype>
+	</consumable>
+	<consumable name="ConsumableWoadRaider_C">
+		<icon>UserInterface\Icons\Consumable\Con_WoadRaider1_ua</icon>
+		<rollovertextid>59694</rollovertextid>
+		<displaynameid>59693</displaynameid>
+		<stackable/>
+		<stacksize>20</stacksize>
+		<offertype>eOfferNone</offertype>
+		<itemlevel>15</itemlevel>
+		<sellable>true</sellable>
+		<tradeable>true</tradeable>
+		<destroyable>true</destroyable>
+		<sellcostoverride>
+			<capitalresource quantity="10">cCapResCoin</capitalresource>
+		</sellcostoverride>
+		<rarity>cRarityCommon</rarity>
+		<power>PowerSpawnWoadRaider_C</power>
+		<civmatchingtype>eCivMatchingTypeAny</civmatchingtype>
+	</consumable>
+	<consumable name="ConsumableWoadRaider_U">
+		<icon>UserInterface\Icons\Consumable\Con_WoadRaider2_ua</icon>
+		<rollovertextid>59695</rollovertextid>
+		<displaynameid>59693</displaynameid>
+		<stackable/>
+		<stacksize>20</stacksize>
+		<offertype>eOfferNone</offertype>
+		<itemlevel>15</itemlevel>
+		<sellable>true</sellable>
+		<tradeable>true</tradeable>
+		<destroyable>true</destroyable>
+		<sellcostoverride>
+			<capitalresource quantity="15">cCapResCoin</capitalresource>
+		</sellcostoverride>
+		<rarity>cRarityUncommon</rarity>
+		<power>PowerSpawnWoadRaider_U</power>
+		<civmatchingtype>eCivMatchingTypeAny</civmatchingtype>
+	</consumable>
+	<consumable name="ConsumableWoadRaider_R">
+		<icon>UserInterface\Icons\Consumable\Con_WoadRaider3_ua</icon>
+		<rollovertextid>59696</rollovertextid>
+		<displaynameid>59693</displaynameid>
+		<stackable/>
+		<stacksize>20</stacksize>
+		<offertype>eOfferCivMatching</offertype>
+		<itemlevel>15</itemlevel>
+		<sellable>true</sellable>
+		<tradeable>true</tradeable>
+		<destroyable>true</destroyable>
+		<sellcostoverride>
+			<capitalresource quantity="20">cCapResCoin</capitalresource>
+		</sellcostoverride>
+		<rarity>cRarityRare</rarity>
+		<power>PowerSpawnWoadRaider_R</power>
+		<civmatchingtype>eCivMatchingTypeAny</civmatchingtype>
+	</consumable>
+	<consumable name="ConsumableWoadRaider_E">
+		<icon>UserInterface\Icons\Consumable\Con_WoadRaider4_ua</icon>
+		<rollovertextid>59697</rollovertextid>
+		<displaynameid>59693</displaynameid>
+		<stackable/>
+		<stacksize>20</stacksize>
+		<offertype>eOfferCivMatching</offertype>
+		<itemlevel>15</itemlevel>
+		<sellable>true</sellable>
+		<tradeable>true</tradeable>
+		<destroyable>true</destroyable>
+		<sellcostoverride>
+			<capitalresource quantity="25">cCapResCoin</capitalresource>
+		</sellcostoverride>
+		<rarity>cRarityEpic</rarity>
+		<power>PowerSpawnWoadRaider_E</power>
+		<civmatchingtype>eCivMatchingTypeAny</civmatchingtype>
+	</consumable>
+	<consumable name="ConsumableCelticMercs_C">
+		<icon>UserInterface\Icons\Consumable\ConCelticMercenaries1_C_ua</icon>
+		<rollovertextid>59699</rollovertextid>
+		<displaynameid>59698</displaynameid>
+		<stackable/>
+		<stacksize>20</stacksize>
+		<offertype>eOfferNone</offertype>
+		<itemlevel>7</itemlevel>
+		<sellable>true</sellable>
+		<tradeable>true</tradeable>
+		<destroyable>true</destroyable>
+		<sellcostoverride>
+			<capitalresource quantity="10">cCapResCoin</capitalresource>
+		</sellcostoverride>
+		<rarity>cRarityCommon</rarity>
+		<power>PowerSpawnCelticMercs_C</power>
+		<civmatchingtype>eCivMatchingTypeAny</civmatchingtype>
+	</consumable>
+	<consumable name="ConsumableCelticMercs_U">
+		<icon>UserInterface\Icons\Consumable\ConCelticMercenaries2_C_ua</icon>
+		<rollovertextid>59700</rollovertextid>
+		<displaynameid>59698</displaynameid>
+		<stackable/>
+		<stacksize>20</stacksize>
+		<offertype>eOfferNone</offertype>
+		<itemlevel>7</itemlevel>
+		<sellable>true</sellable>
+		<tradeable>true</tradeable>
+		<destroyable>true</destroyable>
+		<sellcostoverride>
+			<capitalresource quantity="15">cCapResCoin</capitalresource>
+		</sellcostoverride>
+		<rarity>cRarityUncommon</rarity>
+		<power>PowerSpawnCelticMercs_U</power>
+		<civmatchingtype>eCivMatchingTypeAny</civmatchingtype>
+	</consumable>
+	<consumable name="ConsumableCelticMercs_R">
+		<icon>UserInterface\Icons\Consumable\ConCelticMercenaries3_C_ua</icon>
+		<rollovertextid>59701</rollovertextid>
+		<displaynameid>59698</displaynameid>
+		<stackable/>
+		<stacksize>20</stacksize>
+		<offertype>eOfferCivMatching</offertype>
+		<itemlevel>7</itemlevel>
+		<sellable>true</sellable>
+		<tradeable>true</tradeable>
+		<destroyable>true</destroyable>
+		<sellcostoverride>
+			<capitalresource quantity="20">cCapResCoin</capitalresource>
+		</sellcostoverride>
+		<rarity>cRarityRare</rarity>
+		<power>PowerSpawnCelticMercs_R</power>
+		<civmatchingtype>eCivMatchingTypeAny</civmatchingtype>
+	</consumable>
+	<consumable name="ConsumableCelticMercs_E">
+		<icon>UserInterface\Icons\Consumable\ConCelticMercenaries4_C_ua</icon>
+		<rollovertextid>59702</rollovertextid>
+		<displaynameid>59698</displaynameid>
+		<stackable/>
+		<stacksize>20</stacksize>
+		<offertype>eOfferCivMatching</offertype>
+		<itemlevel>7</itemlevel>
+		<sellable>true</sellable>
+		<tradeable>true</tradeable>
+		<destroyable>true</destroyable>
+		<sellcostoverride>
+			<capitalresource quantity="25">cCapResCoin</capitalresource>
+		</sellcostoverride>
+		<rarity>cRarityEpic</rarity>
+		<power>PowerSpawnCelticMercs_E</power>
+		<civmatchingtype>eCivMatchingTypeAny</civmatchingtype>
+	</consumable>
+	<consumable name="ConsumableGrantStorehouse_C">
+		<icon>UserInterface\Icons\Consumable\ConGrantStorehouse1_C_ua</icon>
+		<rollovertextid>59704</rollovertextid>
+		<displaynameid>59703</displaynameid>
+		<stackable/>
+		<stacksize>20</stacksize>
+		<offertype>eOfferNone</offertype>
+		<itemlevel>3</itemlevel>
+		<sellable>true</sellable>
+		<tradeable>true</tradeable>
+		<destroyable>true</destroyable>
+		<sellcostoverride>
+			<capitalresource quantity="5">cCapResCoin</capitalresource>
+		</sellcostoverride>
+		<rarity>cRarityCommon</rarity>
+		<power>PowerGrantStorehouse_C</power>
+		<civmatchingtype>eCivMatchingTypeAny</civmatchingtype>
+	</consumable>
+	<consumable name="ConsumableGrantStorehouse_U">
+		<icon>UserInterface\Icons\Consumable\ConGrantStorehouse2_C_ua</icon>
+		<rollovertextid>59705</rollovertextid>
+		<displaynameid>59703</displaynameid>
+		<stackable/>
+		<stacksize>20</stacksize>
+		<offertype>eOfferNone</offertype>
+		<itemlevel>3</itemlevel>
+		<sellable>true</sellable>
+		<tradeable>true</tradeable>
+		<destroyable>true</destroyable>
+		<sellcostoverride>
+			<capitalresource quantity="10">cCapResCoin</capitalresource>
+		</sellcostoverride>
+		<rarity>cRarityUncommon</rarity>
+		<power>PowerGrantStorehouse_U</power>
+		<civmatchingtype>eCivMatchingTypeAny</civmatchingtype>
+	</consumable>
+	<consumable name="ConsumableGrantStorehouse_R">
+		<icon>UserInterface\Icons\Consumable\ConGrantStorehouse3_C_ua</icon>
+		<rollovertextid>59706</rollovertextid>
+		<displaynameid>59703</displaynameid>
+		<stackable/>
+		<stacksize>20</stacksize>
+		<offertype>eOfferCivMatching</offertype>
+		<itemlevel>3</itemlevel>
+		<sellable>true</sellable>
+		<tradeable>true</tradeable>
+		<destroyable>true</destroyable>
+		<sellcostoverride>
+			<capitalresource quantity="15">cCapResCoin</capitalresource>
+		</sellcostoverride>
+		<rarity>cRarityRare</rarity>
+		<power>PowerGrantStorehouse_R</power>
+		<civmatchingtype>eCivMatchingTypeAny</civmatchingtype>
+	</consumable>
+	<consumable name="ConsumableGrantStorehouse_E">
+		<icon>UserInterface\Icons\Consumable\ConGrantStorehouse4_C_ua</icon>
+		<rollovertextid>59707</rollovertextid>
+		<displaynameid>59703</displaynameid>
+		<stackable/>
+		<stacksize>20</stacksize>
+		<offertype>eOfferCivMatching</offertype>
+		<itemlevel>3</itemlevel>
+		<sellable>true</sellable>
+		<tradeable>true</tradeable>
+		<destroyable>true</destroyable>
+		<sellcostoverride>
+			<capitalresource quantity="20">cCapResCoin</capitalresource>
+		</sellcostoverride>
+		<rarity>cRarityEpic</rarity>
+		<power>PowerGrantStorehouse_E</power>
+		<civmatchingtype>eCivMatchingTypeAny</civmatchingtype>
+	</consumable>
+	<consumable name="ConsumableGrantTrees_C">
+		<icon>UserInterface\Icons\Consumable\ConGrantTrees1_C_ua</icon>
+		<rollovertextid>59709</rollovertextid>
+		<displaynameid>59708</displaynameid>
+		<stackable/>
+		<stacksize>20</stacksize>
+		<offertype>eOfferNone</offertype>
+		<itemlevel>3</itemlevel>
+		<sellable>true</sellable>
+		<tradeable>true</tradeable>
+		<destroyable>true</destroyable>
+		<sellcostoverride>
+			<capitalresource quantity="5">cCapResCoin</capitalresource>
+		</sellcostoverride>
+		<rarity>cRarityCommon</rarity>
+		<power>PowerGrantTrees_C</power>
+		<civmatchingtype>eCivMatchingTypeAny</civmatchingtype>
+	</consumable>
+	<consumable name="ConsumableGrantTrees_U">
+		<icon>UserInterface\Icons\Consumable\ConGrantTrees2_C_ua</icon>
+		<rollovertextid>59710</rollovertextid>
+		<displaynameid>59708</displaynameid>
+		<stackable/>
+		<stacksize>20</stacksize>
+		<offertype>eOfferNone</offertype>
+		<itemlevel>3</itemlevel>
+		<sellable>true</sellable>
+		<tradeable>true</tradeable>
+		<destroyable>true</destroyable>
+		<sellcostoverride>
+			<capitalresource quantity="10">cCapResCoin</capitalresource>
+		</sellcostoverride>
+		<rarity>cRarityUncommon</rarity>
+		<power>PowerGrantTrees_U</power>
+		<civmatchingtype>eCivMatchingTypeAny</civmatchingtype>
+	</consumable>
+	<consumable name="ConsumableGrantTrees_R">
+		<icon>UserInterface\Icons\Consumable\ConGrantTrees3_C_ua</icon>
+		<rollovertextid>59711</rollovertextid>
+		<displaynameid>59708</displaynameid>
+		<stackable/>
+		<stacksize>20</stacksize>
+		<offertype>eOfferCivMatching</offertype>
+		<itemlevel>3</itemlevel>
+		<sellable>true</sellable>
+		<tradeable>true</tradeable>
+		<destroyable>true</destroyable>
+		<sellcostoverride>
+			<capitalresource quantity="15">cCapResCoin</capitalresource>
+		</sellcostoverride>
+		<rarity>cRarityRare</rarity>
+		<power>PowerGrantTrees_R</power>
+		<civmatchingtype>eCivMatchingTypeAny</civmatchingtype>
+	</consumable>
+	<consumable name="ConsumableGrantTrees_E">
+		<icon>UserInterface\Icons\Consumable\ConGrantTrees4_C_ua</icon>
+		<rollovertextid>59712</rollovertextid>
+		<displaynameid>59708</displaynameid>
+		<stackable/>
+		<stacksize>20</stacksize>
+		<offertype>eOfferCivMatching</offertype>
+		<itemlevel>3</itemlevel>
+		<sellable>true</sellable>
+		<tradeable>true</tradeable>
+		<destroyable>true</destroyable>
+		<sellcostoverride>
+			<capitalresource quantity="20">cCapResCoin</capitalresource>
+		</sellcostoverride>
+		<rarity>cRarityEpic</rarity>
+		<power>PowerGrantTrees_E</power>
+		<civmatchingtype>eCivMatchingTypeAny</civmatchingtype>
+	</consumable>
+	<consumable name="ConsumableReduceDamage_C">
+		<icon>UserInterface\Icons\Consumable\ConWeakenEnemy1_ua</icon>
+		<rollovertextid>60133</rollovertextid>
+		<displaynameid>60132</displaynameid>
+		<stackable/>
+		<stacksize>20</stacksize>
+		<offertype>eOfferNone</offertype>
+		<itemlevel>3</itemlevel>
+		<sellable>true</sellable>
+		<tradeable>true</tradeable>
+		<destroyable>true</destroyable>
+		<sellcostoverride>
+			<capitalresource quantity="5">cCapResCoin</capitalresource>
+		</sellcostoverride>
+		<rarity>cRarityCommon</rarity>
+		<power>PowerReduceDamage_C</power>
+		<civmatchingtype>eCivMatchingTypeAny</civmatchingtype>
+	</consumable>
+	<consumable name="ConsumableReduceDamage_U">
+		<icon>UserInterface\Icons\Consumable\ConWeakenEnemy2_ua</icon>
+		<rollovertextid>60134</rollovertextid>
+		<displaynameid>60132</displaynameid>
+		<stackable/>
+		<stacksize>20</stacksize>
+		<offertype>eOfferNone</offertype>
+		<itemlevel>3</itemlevel>
+		<sellable>true</sellable>
+		<tradeable>true</tradeable>
+		<destroyable>true</destroyable>
+		<sellcostoverride>
+			<capitalresource quantity="10">cCapResCoin</capitalresource>
+		</sellcostoverride>
+		<rarity>cRarityUncommon</rarity>
+		<power>PowerReduceDamage_U</power>
+		<civmatchingtype>eCivMatchingTypeAny</civmatchingtype>
+	</consumable>
+	<consumable name="ConsumableReduceDamage_R">
+		<icon>UserInterface\Icons\Consumable\ConWeakenEnemy3_ua</icon>
+		<rollovertextid>60135</rollovertextid>
+		<displaynameid>60132</displaynameid>
+		<stackable/>
+		<stacksize>20</stacksize>
+		<offertype>eOfferCivMatching</offertype>
+		<itemlevel>3</itemlevel>
+		<sellable>true</sellable>
+		<tradeable>true</tradeable>
+		<destroyable>true</destroyable>
+		<sellcostoverride>
+			<capitalresource quantity="15">cCapResCoin</capitalresource>
+		</sellcostoverride>
+		<rarity>cRarityRare</rarity>
+		<power>PowerReduceDamage_R</power>
+		<civmatchingtype>eCivMatchingTypeAny</civmatchingtype>
+	</consumable>
+	<consumable name="ConsumableReduceDamage_E">
+		<icon>UserInterface\Icons\Consumable\ConWeakenEnemy4_ua</icon>
+		<rollovertextid>60136</rollovertextid>
+		<displaynameid>60132</displaynameid>
+		<stackable/>
+		<stacksize>20</stacksize>
+		<offertype>eOfferCivMatching</offertype>
+		<itemlevel>3</itemlevel>
+		<sellable>true</sellable>
+		<tradeable>true</tradeable>
+		<destroyable>true</destroyable>
+		<sellcostoverride>
+			<capitalresource quantity="20">cCapResCoin</capitalresource>
+		</sellcostoverride>
+		<rarity>cRarityEpic</rarity>
+		<power>PowerReduceDamage_E</power>
+		<civmatchingtype>eCivMatchingTypeAny</civmatchingtype>
+	</consumable>
+	<consumable name="ConsumableHPLong_C">
+		<icon>UserInterface\Icons\Consumable\ConHPExtend1_ua</icon>
+		<rollovertextid>60138</rollovertextid>
+		<displaynameid>60137</displaynameid>
+		<stackable/>
+		<stacksize>20</stacksize>
+		<offertype>eOfferNone</offertype>
+		<itemlevel>7</itemlevel>
+		<sellable>true</sellable>
+		<tradeable>true</tradeable>
+		<destroyable>true</destroyable>
+		<sellcostoverride>
+			<capitalresource quantity="5">cCapResCoin</capitalresource>
+		</sellcostoverride>
+		<rarity>cRarityCommon</rarity>
+		<power>PowerHPLong_C</power>
+		<civmatchingtype>eCivMatchingTypeAny</civmatchingtype>
+	</consumable>
+	<consumable name="ConsumableHPLong_U">
+		<icon>UserInterface\Icons\Consumable\ConHPExtend2_ua</icon>
+		<rollovertextid>60139</rollovertextid>
+		<displaynameid>60137</displaynameid>
+		<stackable/>
+		<stacksize>20</stacksize>
+		<offertype>eOfferNone</offertype>
+		<itemlevel>7</itemlevel>
+		<sellable>true</sellable>
+		<tradeable>true</tradeable>
+		<destroyable>true</destroyable>
+		<sellcostoverride>
+			<capitalresource quantity="10">cCapResCoin</capitalresource>
+		</sellcostoverride>
+		<rarity>cRarityUncommon</rarity>
+		<power>PowerHPLong_U</power>
+		<civmatchingtype>eCivMatchingTypeAny</civmatchingtype>
+	</consumable>
+	<consumable name="ConsumableHPLong_R">
+		<icon>UserInterface\Icons\Consumable\ConHPExtend3_ua</icon>
+		<rollovertextid>60140</rollovertextid>
+		<displaynameid>60137</displaynameid>
+		<stackable/>
+		<stacksize>20</stacksize>
+		<offertype>eOfferCivMatching</offertype>
+		<itemlevel>7</itemlevel>
+		<sellable>true</sellable>
+		<tradeable>true</tradeable>
+		<destroyable>true</destroyable>
+		<sellcostoverride>
+			<capitalresource quantity="15">cCapResCoin</capitalresource>
+		</sellcostoverride>
+		<rarity>cRarityRare</rarity>
+		<power>PowerHPLong_R</power>
+		<civmatchingtype>eCivMatchingTypeAny</civmatchingtype>
+	</consumable>
+	<consumable name="ConsumableHPLong_E">
+		<icon>UserInterface\Icons\Consumable\ConHPExtend4_ua</icon>
+		<rollovertextid>60141</rollovertextid>
+		<displaynameid>60137</displaynameid>
+		<stackable/>
+		<stacksize>20</stacksize>
+		<offertype>eOfferCivMatching</offertype>
+		<itemlevel>7</itemlevel>
+		<sellable>true</sellable>
+		<tradeable>true</tradeable>
+		<destroyable>true</destroyable>
+		<sellcostoverride>
+			<capitalresource quantity="20">cCapResCoin</capitalresource>
+		</sellcostoverride>
+		<rarity>cRarityEpic</rarity>
+		<power>PowerHPLong_E</power>
+		<civmatchingtype>eCivMatchingTypeAny</civmatchingtype>
+	</consumable>
+	<consumable name="ConsumableReduceDamageLong_C">
+		<icon>UserInterface\Icons\Consumable\ConSustainedWeakness1_ua</icon>
+		<rollovertextid>60143</rollovertextid>
+		<displaynameid>60142</displaynameid>
+		<stackable/>
+		<stacksize>20</stacksize>
+		<offertype>eOfferNone</offertype>
+		<itemlevel>3</itemlevel>
+		<sellable>true</sellable>
+		<tradeable>true</tradeable>
+		<destroyable>true</destroyable>
+		<sellcostoverride>
+			<capitalresource quantity="5">cCapResCoin</capitalresource>
+		</sellcostoverride>
+		<rarity>cRarityCommon</rarity>
+		<power>PowerReduceDamageLong_C</power>
+		<civmatchingtype>eCivMatchingTypeAny</civmatchingtype>
+	</consumable>
+	<consumable name="ConsumableReduceDamageLong_U">
+		<icon>UserInterface\Icons\Consumable\ConSustainedWeakness2_ua</icon>
+		<rollovertextid>60144</rollovertextid>
+		<displaynameid>60142</displaynameid>
+		<stackable/>
+		<stacksize>20</stacksize>
+		<offertype>eOfferNone</offertype>
+		<itemlevel>3</itemlevel>
+		<sellable>true</sellable>
+		<tradeable>true</tradeable>
+		<destroyable>true</destroyable>
+		<sellcostoverride>
+			<capitalresource quantity="10">cCapResCoin</capitalresource>
+		</sellcostoverride>
+		<rarity>cRarityUncommon</rarity>
+		<power>PowerReduceDamageLong_U</power>
+		<civmatchingtype>eCivMatchingTypeAny</civmatchingtype>
+	</consumable>
+	<consumable name="ConsumableReduceDamageLong_R">
+		<icon>UserInterface\Icons\Consumable\ConSustainedWeakness3_ua</icon>
+		<rollovertextid>60145</rollovertextid>
+		<displaynameid>60142</displaynameid>
+		<stackable/>
+		<stacksize>20</stacksize>
+		<offertype>eOfferCivMatching</offertype>
+		<itemlevel>3</itemlevel>
+		<sellable>true</sellable>
+		<tradeable>true</tradeable>
+		<destroyable>true</destroyable>
+		<sellcostoverride>
+			<capitalresource quantity="15">cCapResCoin</capitalresource>
+		</sellcostoverride>
+		<rarity>cRarityRare</rarity>
+		<power>PowerReduceDamageLong_R</power>
+		<civmatchingtype>eCivMatchingTypeAny</civmatchingtype>
+	</consumable>
+	<consumable name="ConsumableReduceDamageLong_E">
+		<icon>UserInterface\Icons\Consumable\ConSustainedWeakness4_ua</icon>
+		<rollovertextid>60146</rollovertextid>
+		<displaynameid>60142</displaynameid>
+		<stackable/>
+		<stacksize>20</stacksize>
+		<offertype>eOfferCivMatching</offertype>
+		<itemlevel>3</itemlevel>
+		<sellable>true</sellable>
+		<tradeable>true</tradeable>
+		<destroyable>true</destroyable>
+		<sellcostoverride>
+			<capitalresource quantity="20">cCapResCoin</capitalresource>
+		</sellcostoverride>
+		<rarity>cRarityEpic</rarity>
+		<power>PowerReduceDamageLong_E</power>
+		<civmatchingtype>eCivMatchingTypeAny</civmatchingtype>
+	</consumable>
+	<consumable name="ConsumableCivBuff">
+		<icon>UserInterface\Icons\Consumable\ConSpeedBoost4_ua</icon>
+		<rollovertextid>61959</rollovertextid>
+		<displaynameid>61955</displaynameid>
+		<stackable/>
+		<stacksize>10</stacksize>
+		<offertype>eOfferCivMatching</offertype>
+		<itemlevel>1</itemlevel>
+		<sellable>false</sellable>
+		<tradeable>false</tradeable>
+		<destroyable>true</destroyable>
+		<rarity>cRarityEpic</rarity>
+		<power>PowerCivBuff</power>
+		<civmatchingtype>eCivMatchingTypeAny</civmatchingtype>
+	</consumable>
+	<consumable name="ConsumableCivReinforcements">
+		<icon>UserInterface\Icons\Consumable\ConBandCav4_ua</icon>
+		<rollovertextid>60146</rollovertextid>
+		<displaynameid>61956</displaynameid>
+		<stackable/>
+		<stacksize>10</stacksize>
+		<offertype>eOfferCivMatching</offertype>
+		<itemlevel>1</itemlevel>
+		<sellable>false</sellable>
+		<tradeable>false</tradeable>
+		<destroyable>true</destroyable>
+		<rarity>cRarityEpic</rarity>
+		<power>PowerCivReinforcements</power>
+		<civmatchingtype>eCivMatchingTypeAny</civmatchingtype>
+	</consumable>
+	<consumable name="ConsumableCivDebuff">
+		<icon>UserInterface\Icons\Consumable\ConDmgBoost4_ua</icon>
+		<rollovertextid>61958</rollovertextid>
+		<displaynameid>61957</displaynameid>
+		<stackable/>
+		<stacksize>10</stacksize>
+		<offertype>eOfferCivMatching</offertype>
+		<itemlevel>1</itemlevel>
+		<sellable>false</sellable>
+		<tradeable>false</tradeable>
+		<destroyable>true</destroyable>
+		<rarity>cRarityEpic</rarity>
+		<power>PowerCivDebuff</power>
+		<civmatchingtype>eCivMatchingTypeAny</civmatchingtype>
+	</consumable>
+	<consumable name="PowerNuclearConsumable1">
+		<icon>UserInterface\Icons\Consumable\ConMilitiaoftheEmpire4_ua</icon>
+		<rollovertextid>60146</rollovertextid>
+		<displaynameid>62739</displaynameid>
+		<stackable/>
+		<stacksize>10</stacksize>
+		<offertype>eOfferNone</offertype>
+		<itemlevel>1</itemlevel>
+		<sellable>false</sellable>
+		<tradeable>false</tradeable>
+		<destroyable>true</destroyable>
+		<rarity>cRarityCommon</rarity>
+		<power>PowerNuclearConsumable1</power>
+		<civmatchingtype>eCivMatchingTypeAny</civmatchingtype>
+	</consumable>
+	<consumable name="PowerNuclearConsumable2">
+		<icon>UserInterface\Icons\Consumable\ConFuryOfTheEmpire4_ua</icon>
+		<rollovertextid>61959</rollovertextid>
+		<displaynameid>62740</displaynameid>
+		<stackable/>
+		<stacksize>10</stacksize>
+		<offertype>eOfferNone</offertype>
+		<itemlevel>1</itemlevel>
+		<sellable>false</sellable>
+		<tradeable>false</tradeable>
+		<destroyable>true</destroyable>
+		<rarity>cRarityCommon</rarity>
+		<power>PowerNuclearConsumable2</power>
+		<civmatchingtype>eCivMatchingTypeAny</civmatchingtype>
+	</consumable>
+	<consumable name="PowerNuclearConsumable3">
+		<icon>UserInterface\Icons\Consumable\ConLaboroftheEmpire4_ua</icon>
+		<rollovertextid>63777</rollovertextid>
+		<displaynameid>63772</displaynameid>
+		<stackable/>
+		<stacksize>10</stacksize>
+		<offertype>eOfferNone</offertype>
+		<itemlevel>1</itemlevel>
+		<sellable>false</sellable>
+		<tradeable>false</tradeable>
+		<destroyable>true</destroyable>
+		<rarity>cRarityCommon</rarity>
+		<power>PowerNuclearConsumable3</power>
+		<civmatchingtype>eCivMatchingTypeAny</civmatchingtype>
+	</consumable>
+	<consumable name="PowerNuclearConsumable4">
+		<icon>UserInterface\Icons\Consumable\ConNavyoftheEmpire4_ua</icon>
+		<rollovertextid>63776</rollovertextid>
+		<displaynameid>63771</displaynameid>
+		<stackable/>
+		<stacksize>10</stacksize>
+		<offertype>eOfferNone</offertype>
+		<itemlevel>1</itemlevel>
+		<sellable>false</sellable>
+		<tradeable>false</tradeable>
+		<destroyable>true</destroyable>
+		<rarity>cRarityCommon</rarity>
+		<power>PowerNuclearConsumable4</power>
+		<civmatchingtype>eCivMatchingTypeAny</civmatchingtype>
+	</consumable>
+	<consumable name="PowerNuclearConsumable5">
+		<icon>UserInterface\Icons\Consumable\ConSubdualOfTheEmpire4_ua</icon>
+		<rollovertextid>63778</rollovertextid>
+		<displaynameid>63773</displaynameid>
+		<stackable/>
+		<stacksize>10</stacksize>
+		<offertype>eOfferNone</offertype>
+		<itemlevel>1</itemlevel>
+		<sellable>false</sellable>
+		<tradeable>false</tradeable>
+		<destroyable>true</destroyable>
+		<rarity>cRarityCommon</rarity>
+		<power>PowerNuclearConsumable5</power>
+		<civmatchingtype>eCivMatchingTypeAny</civmatchingtype>
+	</consumable>
+	<consumable name="PowerNuclearConsumable6">
+		<icon>UserInterface\Icons\Consumable\ConBerserkerWolves4_ua</icon>
+		<rollovertextid>63779</rollovertextid>
+		<displaynameid>63774</displaynameid>
+		<stackable/>
+		<stacksize>10</stacksize>
+		<offertype>eOfferNone</offertype>
+		<itemlevel>1</itemlevel>
+		<sellable>false</sellable>
+		<tradeable>false</tradeable>
+		<destroyable>true</destroyable>
+		<rarity>cRarityCommon</rarity>
+		<power>PowerNuclearConsumable6</power>
+		<civmatchingtype>eCivMatchingTypeAny</civmatchingtype>
+	</consumable>
+	<consumable name="PowerNuclearConsumable7">
+		<icon>UserInterface\Icons\Consumable\ConEyeOfTheEmpire4_ua</icon>
+		<rollovertextid>63780</rollovertextid>
+		<displaynameid>63775</displaynameid>
+		<stackable/>
+		<stacksize>10</stacksize>
+		<offertype>eOfferNone</offertype>
+		<itemlevel>1</itemlevel>
+		<sellable>false</sellable>
+		<tradeable>false</tradeable>
+		<destroyable>true</destroyable>
+		<rarity>cRarityCommon</rarity>
+		<power>PowerNuclearConsumable7</power>
+		<civmatchingtype>eCivMatchingTypeAny</civmatchingtype>
+	</consumable>
+	<consumable name="PowerNuclearConsumable8">
+		<icon>UserInterface\Icons\Consumable\ConResourcesOfTheEmpire1_ua</icon>
+		<rollovertextid>66345</rollovertextid>
+		<displaynameid>66344</displaynameid>
+		<stackable/>
+		<stacksize>10</stacksize>
+		<offertype>eOfferNone</offertype>
+		<itemlevel>1</itemlevel>
+		<sellable>false</sellable>
+		<tradeable>false</tradeable>
+		<destroyable>true</destroyable>
+		<rarity>cRarityCommon</rarity>
+		<power>PowerNuclearConsumable8</power>
+		<civmatchingtype>eCivMatchingTypeAny</civmatchingtype>
+	</consumable>
+	<consumable name="PowerNuclearConsumable9">
+		<icon>UserInterface\Icons\Consumable\ConPriestsOfTheEmpire1_ua</icon>
+		<rollovertextid>66351</rollovertextid>
+		<displaynameid>66350</displaynameid>
+		<stackable/>
+		<stacksize>10</stacksize>
+		<offertype>eOfferNone</offertype>
+		<itemlevel>1</itemlevel>
+		<sellable>false</sellable>
+		<tradeable>false</tradeable>
+		<destroyable>true</destroyable>
+		<rarity>cRarityCommon</rarity>
+		<power>PowerNuclearConsumable9</power>
+		<civmatchingtype>eCivMatchingTypeAny</civmatchingtype>
+	</consumable>
+	<consumable name="PowerNuclearConsumable10">
+		<icon>UserInterface\Icons\Consumable\ConCrocodileRampage1_ua</icon>
+		<rollovertextid>66357</rollovertextid>
+		<displaynameid>66356</displaynameid>
+		<stackable/>
+		<stacksize>10</stacksize>
+		<offertype>eOfferNone</offertype>
+		<itemlevel>1</itemlevel>
+		<sellable>false</sellable>
+		<tradeable>false</tradeable>
+		<destroyable>true</destroyable>
+		<rarity>cRarityCommon</rarity>
+		<power>PowerNuclearConsumable10</power>
+		<civmatchingtype>eCivMatchingTypeAny</civmatchingtype>
+	</consumable>
+	<consumable name="PowerNuclearConsumable11">
+		<icon>UserInterface\Icons\Consumable\ConPalintononsOfTheEmpire1_ua</icon>
+		<rollovertextid>66363</rollovertextid>
+		<displaynameid>66362</displaynameid>
+		<stackable/>
+		<stacksize>10</stacksize>
+		<offertype>eOfferNone</offertype>
+		<itemlevel>1</itemlevel>
+		<sellable>false</sellable>
+		<tradeable>false</tradeable>
+		<destroyable>true</destroyable>
+		<rarity>cRarityCommon</rarity>
+		<power>PowerNuclearConsumable11</power>
+		<civmatchingtype>eCivMatchingTypeAny</civmatchingtype>
+	</consumable>
+	<consumable name="PowerNuclearConsumable12">
+		<icon>UserInterface\Icons\Consumable\ConWoodGatheringElephantsOfTheEmpire1_ua</icon>
+		<rollovertextid>66513</rollovertextid>
+		<displaynameid>66512</displaynameid>
+		<stackable/>
+		<stacksize>10</stacksize>
+		<offertype>eOfferNone</offertype>
+		<itemlevel>1</itemlevel>
+		<sellable>false</sellable>
+		<tradeable>false</tradeable>
+		<destroyable>true</destroyable>
+		<rarity>cRarityCommon</rarity>
+		<power>PowerNuclearConsumable12</power>
+		<civmatchingtype>eCivMatchingTypeAny</civmatchingtype>
+	</consumable>
+	<consumable name="PowerNuclearConsumable13">
+		<icon>UserInterface\Icons\Consumable\ConScoutOfTheEmpire1_ua</icon>
+		<rollovertextid>66519</rollovertextid>
+		<displaynameid>66518</displaynameid>
+		<stackable/>
+		<stacksize>10</stacksize>
+		<offertype>eOfferNone</offertype>
+		<itemlevel>1</itemlevel>
+		<sellable>false</sellable>
+		<tradeable>false</tradeable>
+		<destroyable>true</destroyable>
+		<rarity>cRarityCommon</rarity>
+		<power>PowerNuclearConsumable13</power>
+		<civmatchingtype>eCivMatchingTypeAny</civmatchingtype>
+	</consumable>
+	<consumable name="PowerCapitalConsumable1" type="Server">
+		<icon>UserInterface\Icons\Consumable\ConLuckOfTheEmpire_ua</icon>
+		<rollovertextid>67665</rollovertextid>
+		<displaynameid>67664</displaynameid>
+		<stackable/>
+		<stacksize>10</stacksize>
+		<offertype>eOfferNone</offertype>
+		<itemlevel>1</itemlevel>
+		<sellable>false</sellable>
+		<tradeable>false</tradeable>
+		<destroyable>true</destroyable>
+		<rarity>cRarityCommon</rarity>
+		<charactermodifier>CapitalCityConsumable1</charactermodifier>
+		<civmatchingtype>eCivMatchingTypeAny</civmatchingtype>
+		<usable>CapitalCity</usable>
+		<usable>SharedRegions</usable>
+	</consumable>
+	<consumable name="PowerCapitalConsumable2" type="Server">
+		<icon>UserInterface\Icons\Consumable\ConWisdomOfTheEmpire_ua</icon>
+		<rollovertextid>67667</rollovertextid>
+		<displaynameid>67666</displaynameid>
+		<stackable/>
+		<stacksize>10</stacksize>
+		<offertype>eOfferNone</offertype>
+		<itemlevel>1</itemlevel>
+		<sellable>false</sellable>
+		<tradeable>false</tradeable>
+		<destroyable>true</destroyable>
+		<rarity>cRarityCommon</rarity>
+		<charactermodifier>CapitalCityConsumable2</charactermodifier>
+		<civmatchingtype>eCivMatchingTypeAny</civmatchingtype>
+		<usable>CapitalCity</usable>
+		<usable>SharedRegions</usable>
+	</consumable>
+	<consumable name="PowerCapitalConsumable3" type="Server">
+		<icon>UserInterface\Icons\Consumable\ConRichesOfTheEmpire_ua</icon>
+		<rollovertextid>67669</rollovertextid>
+		<displaynameid>67668</displaynameid>
+		<stackable/>
+		<stacksize>10</stacksize>
+		<offertype>eOfferNone</offertype>
+		<itemlevel>1</itemlevel>
+		<sellable>false</sellable>
+		<tradeable>false</tradeable>
+		<destroyable>true</destroyable>
+		<rarity>cRarityCommon</rarity>
+		<charactermodifier>CapitalCityConsumable3</charactermodifier>
+		<civmatchingtype>eCivMatchingTypeAny</civmatchingtype>
+		<usable>CapitalCity</usable>
+		<usable>SharedRegions</usable>
+	</consumable>
+	<consumable name="PowerCapitalConsumable4" type="Server">
+		<icon>UserInterface\Icons\Consumable\ConWisdomOfTheAlliance_ua</icon>
+		<rollovertextid>67671</rollovertextid>
+		<displaynameid>67670</displaynameid>
+		<stackable/>
+		<stacksize>10</stacksize>
+		<offertype>eOfferNone</offertype>
+		<itemlevel>40</itemlevel>
+		<sellable>false</sellable>
+		<tradeable>false</tradeable>
+		<destroyable>true</destroyable>
+		<rarity>cRarityCommon</rarity>
+		<charactermodifier>CapitalCityConsumable4</charactermodifier>
+		<civmatchingtype>eCivMatchingTypeAny</civmatchingtype>
+		<usable>CapitalCity</usable>
+		<usable>SharedRegions</usable>
+		<alliance>eAllianceLegionOfCarthage</alliance>
+		<alliance>eAllianceDelianLeague</alliance>
+		<alliance>eAllianceCouncilOfImhotep</alliance>
+	</consumable>
+	<consumable name="PowerCapitalConsumable5" type="Server">
+		<icon>UserInterface\Icons\Consumable\ConProductionOfTheEmpire_ua</icon>
+		<rollovertextid>67673</rollovertextid>
+		<displaynameid>67672</displaynameid>
+		<stackable/>
+		<stacksize>10</stacksize>
+		<offertype>eOfferNone</offertype>
+		<itemlevel>1</itemlevel>
+		<sellable>false</sellable>
+		<tradeable>false</tradeable>
+		<destroyable>true</destroyable>
+		<rarity>cRarityCommon</rarity>
+		<charactermodifier>CapitalCityConsumable5</charactermodifier>
+		<civmatchingtype>eCivMatchingTypeAny</civmatchingtype>
+		<usable>CapitalCity</usable>
+		<usable>SharedRegions</usable>
+	</consumable>
+	<consumable name="PowerCapitalConsumable6" type="Server">
+		<icon>UserInterface\Icons\Consumable\ConProficiencyOfTheEmpire_ua</icon>
+		<rollovertextid>67675</rollovertextid>
+		<displaynameid>67674</displaynameid>
+		<stackable/>
+		<stacksize>10</stacksize>
+		<offertype>eOfferNone</offertype>
+		<itemlevel>1</itemlevel>
+		<sellable>false</sellable>
+		<tradeable>false</tradeable>
+		<destroyable>true</destroyable>
+		<rarity>cRarityCommon</rarity>
+		<charactermodifier>CapitalCityConsumable6</charactermodifier>
+		<civmatchingtype>eCivMatchingTypeAny</civmatchingtype>
+		<usable>CapitalCity</usable>
+		<usable>SharedRegions</usable>
+	</consumable>
+	<consumable name="PowerCapitalConsumable7" type="Server">
+		<icon>UserInterface\Icons\Consumable\ConWoodGatheringElephantsOfTheEmpire1_ua</icon>
+		<rollovertextid>676767</rollovertextid>
+		<displaynameid>67676</displaynameid>
+		<stackable/>
+		<stacksize>10</stacksize>
+		<offertype>eOfferNone</offertype>
+		<itemlevel>1</itemlevel>
+		<sellable>false</sellable>
+		<tradeable>false</tradeable>
+		<destroyable>true</destroyable>
+		<rarity>cRarityCommon</rarity>
+		<charactermodifier>CapitalCityConsumable7</charactermodifier>
+		<civmatchingtype>eCivMatchingTypeAny</civmatchingtype>
+		<usable>CapitalCity</usable>
+		<usable>SharedRegions</usable>
+	</consumable>
+	<consumable name="TestServerConsumable01" type="Server">
+		<icon>UserInterface\Icons\Consumable\ConScoutOfTheEmpire1_ua</icon>
+		<rollovertextid>55552</rollovertextid>
+		<displaynameid>55552</displaynameid>
+		<stackable/>
+		<stacksize>200</stacksize>
+		<offertype>eOfferNone</offertype>
+		<itemlevel>1</itemlevel>
+		<sellable>false</sellable>
+		<tradeable>false</tradeable>
+		<destroyable>true</destroyable>
+		<rarity>cRarityCommon</rarity>
+		<charactermodifier>ModifierTest</charactermodifier>
+		<civmatchingtype>eCivMatchingTypeAny</civmatchingtype>
+		<usable>CapitalCity</usable>
+		<usable>PVP</usable>
+		<usable>Quest</usable>
+		<usable>SharedRegions</usable>
+		<alliance>eAllianceLegionOfCarthage</alliance>
+		<alliance>eAllianceDelianLeague</alliance>
+		<alliance>eAllianceCouncilOfImhotep</alliance>
+	</consumable>
+</consumables>

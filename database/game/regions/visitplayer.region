@@ -1,0 +1,12 @@
+<?xml version="1.0"?>
+<Region xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xsd="http://www.w3.org/2001/XMLSchema" ID="5" hidden="true">
+  <Name>Visit Player</Name>
+  <MapName/>
+  <MapLocationX>0.5</MapLocationX>
+  <MapLocationY>0.5</MapLocationY>
+  <MapMarker>RegionDefault</MapMarker>
+  <MapPage>AmbassadorMap</MapPage>
+  <LoadScreen />
+  <DescriptionStringID>60884</DescriptionStringID>
+  <DisplayNameStringID>60883</DisplayNameStringID>
+</Region>

@@ -1,0 +1,198 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<quest xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xsd="http://www.w3.org/2001/XMLSchema" uniqueid="13006" version="85">
+	<displayname>$$7206$$</displayname>
+	<level>2</level>
+	<repeatable>false</repeatable>
+	<timer>
+		<events/>
+		<hideonui>false</hideonui>
+	</timer>
+	<canplaycoop>false</canplaycoop>
+	<cooprequired>false</cooprequired>
+	<ranked>false</ranked>
+	<description>$$8036$$</description>
+	<completiontext>$$7221$$</completiontext>
+	<inprogresstext>$$8628$$</inprogresstext>
+	<summarytext>$$9027$$</summarytext>
+	<canabandon>false</canabandon>
+	<hiddenquest>false</hiddenquest>
+	<friendonly>false</friendonly>
+	<suppressnotifications>false</suppressnotifications>
+	<customquest>false</customquest>
+	<questtype>RandomMap</questtype>
+	<questgamemodetype>Normal</questgamemodetype>
+	<prereqs>
+		<values>
+			<civilization>
+				<id>6</id>
+			</civilization>
+			<questcomplete>
+				<id>13005</id>
+			</questcomplete>
+			<questcomplete>
+				<id>13004</id>
+			</questcomplete>
+		</values>
+	</prereqs>
+	<equipmentprereqs/>
+	<targets/>
+	<objectives id="0" mustfailall="false">
+		<values>
+			<or id="1" mustfailall="false">
+				<values>
+					<and id="2" mustfailall="false">
+						<values>
+							<buildunit id="3">
+								<description>$$2461$$</description>
+								<type>Ce_Bldg_Barracks</type>
+								<count>1</count>
+							</buildunit>
+							<buildunit id="4">
+								<description>$$2462$$</description>
+								<type>Ce_Inf_Spearman</type>
+								<count>10</count>
+							</buildunit>
+							<dummy id="5">
+								<description>$$3802$$</description>
+								<objectivename>FirstSkirmishEnemiesKilled</objectivename>
+								<autocomplete>false</autocomplete>
+							</dummy>
+						</values>
+					</and>
+					<reduceunitsto id="6">
+						<type>LogicalTypeNeededForVictory</type>
+						<count>0</count>
+						<includeteam>false</includeteam>
+						<includeunderconstruction>false</includeunderconstruction>
+						<canuncomplete>false</canuncomplete>
+						<causesfailure>true</causesfailure>
+						<playerid>1</playerid>
+					</reduceunitsto>
+					<and id="7" mustfailall="true">
+						<description/>
+						<values>
+							<reduceunitsto id="8">
+								<type>AbstractTownCenter</type>
+								<count>0</count>
+								<includeteam>false</includeteam>
+								<includeunderconstruction>false</includeunderconstruction>
+								<canuncomplete>false</canuncomplete>
+								<causesfailure>true</causesfailure>
+								<playerid>1</playerid>
+							</reduceunitsto>
+							<reduceunitsto id="9">
+								<type>UnitTypeVillager1</type>
+								<count>0</count>
+								<includeteam>false</includeteam>
+								<includeunderconstruction>false</includeunderconstruction>
+								<canuncomplete>false</canuncomplete>
+								<causesfailure>true</causesfailure>
+								<playerid>1</playerid>
+							</reduceunitsto>
+						</values>
+					</and>
+				</values>
+			</or>
+		</values>
+	</objectives>
+	<onaccept/>
+	<rewards visible="true">
+		<xp visible="true">2000</xp>
+		<capitalresource visible="true">
+			<capitalresource>cCapResCoin</capitalresource>
+			<amount>50</amount>
+		</capitalresource>
+		<trait visible="true">
+			Scout1H_U001
+			<traitlevel>6</traitlevel>
+		</trait>
+		<trait visible="true">
+			ArmorLgt_U012
+			<traitlevel>6</traitlevel>
+		</trait>
+		<enableprotip visible="false">TIP_UI_TechTree_FirstAgeUp</enableprotip>
+		<protip visible="false" proto="Ce_Cap_Start_Bldg">TIP_Shared_LevelUpAgeUp</protip>
+	</rewards>
+	<playersettings id="1">
+		<team>1</team>
+		<color>1</color>
+		<tributablebehavior>Default</tributablebehavior>
+		<playertype>Human</playertype>
+		<cooponly>false</cooponly>
+		<startingfood>250</startingfood>
+		<startingwood>300</startingwood>
+		<startinggold>0</startinggold>
+		<startingstone>25</startingstone>
+		<aislidervariables/>
+		<aiflagvariables/>
+	</playersettings>
+	<playersettings id="2">
+		<team>2</team>
+		<color>2</color>
+		<tributablebehavior>Default</tributablebehavior>
+		<playertype>Computer</playertype>
+		<personality>$$2296$$</personality>
+		<script>CORE\Rush_Weak</script>
+		<dataset>C03\C03_Barbarian_T0</dataset>
+		<cooponly>false</cooponly>
+		<startingfood>150</startingfood>
+		<startingwood>150</startingwood>
+		<startinggold>50</startinggold>
+		<startingstone>50</startingstone>
+		<aislidervariables/>
+		<aiflagvariables>
+			<aivariable>
+				<key>NoResign</key>
+				<value>0</value>
+			</aivariable>
+		</aiflagvariables>
+	</playersettings>
+	<playersettings id="3">
+		<team>2</team>
+		<color>2</color>
+		<tributablebehavior>Default</tributablebehavior>
+		<playertype>Computer</playertype>
+		<personality>$$2296$$</personality>
+		<dataset>C03\C03_Barbarian_T0</dataset>
+		<cooponly>false</cooponly>
+		<startingfood>-1</startingfood>
+		<startingwood>-1</startingwood>
+		<startinggold>-1</startinggold>
+		<startingstone>-1</startingstone>
+		<aislidervariables/>
+		<aiflagvariables/>
+	</playersettings>
+	<diplomacysettings/>
+	<randommap>
+		<map>scenarioloader</map>
+		<randommap>true</randommap>
+		<numplayers>3</numplayers>
+		<mapvariables>
+			<variable name="scenarioFile" type="String">C03/C03_M06_FirstCombat</variable>
+			<variable name="region" type="String">Celtic Valley</variable>
+			<variable name="lighting" type="String">Morning</variable>
+			<variable name="mapSize" type="String">Standard</variable>
+		</mapvariables>
+		<nuggetoverrides>
+			<nuggetoverride overrideweight="1000000">Quest_C03_SecondGuardedNugget</nuggetoverride>
+		</nuggetoverrides>
+		<mapregionname>Celtic Valley</mapregionname>
+		<lightsetname>Morning</lightsetname>
+		<mapsizename>Standard</mapsizename>
+	</randommap>
+	<questgivers>
+		<protounit>C03_R1_Leader</protounit>
+	</questgivers>
+	<questreturners>
+		<protounit>C03_R1_Leader</protounit>
+	</questreturners>
+	<customloadscreen>loadscreentips\load_c03_r1m06.xml</customloadscreen>
+	<maplocationx>0.34</maplocationx>
+	<maplocationy>0.51</maplocationy>
+	<mapmarker>QuestDefault</mapmarker>
+	<mappage>C03_Celtica</mappage>
+	<elitespawnchance>0</elitespawnchance>
+	<questbasescale>0</questbasescale>
+	<victoryconditions/>
+</quest>

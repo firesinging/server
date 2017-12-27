@@ -1,0 +1,288 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<quest xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xsd="http://www.w3.org/2001/XMLSchema" uniqueid="103937" version="12">
+	<displayname>$$12869$$</displayname>
+	<level>-1</level>
+	<difficultycoloroverride>2</difficultycoloroverride>
+	<repeatable>true</repeatable>
+	<offertype>eOfferBooster3</offertype>
+	<timer>
+		<time>00:30:00</time>
+		<events/>
+		<hideonui>false</hideonui>
+	</timer>
+	<canplaycoop>true</canplaycoop>
+	<cooprequired>true</cooprequired>
+	<ranked>false</ranked>
+	<alliance>eAllianceNone</alliance>
+	<questtype>RandomMap</questtype>
+	<description>$$11920$$</description>
+	<completiontext>$$11916$$</completiontext>
+	<inprogresstext>$$11917$$</inprogresstext>
+	<summarytext>$$11903$$</summarytext>
+	<repeatableduration>12</repeatableduration>
+	<canabandon>true</canabandon>
+	<hiddenquest>false</hiddenquest>
+	<friendonly>false</friendonly>
+	<suppressnotifications>false</suppressnotifications>
+	<customquest>false</customquest>
+	<questgamemodetype>Normal</questgamemodetype>
+	<prereqs>
+		<values>
+			<questcomplete>
+				<id>103033</id>
+			</questcomplete>
+		</values>
+	</prereqs>
+	<equipmentprereqs/>
+	<targets>
+		<grouping>
+			<cooponly>false</cooponly>
+			<forcetocenter>false</forcetocenter>
+			<name>Player Start</name>
+			<count>1</count>
+			<team>1</team>
+			<area>Player1</area>
+			<groupfilename>shared_player1_age2_barracks</groupfilename>
+			<rottype>Rotate0</rottype>
+			<rotateunitorientations>false</rotateunitorientations>
+		</grouping>
+		<grouping>
+			<cooponly>true</cooponly>
+			<forcetocenter>false</forcetocenter>
+			<name>CoopStart</name>
+			<count>1</count>
+			<team>3</team>
+			<area>Player2</area>
+			<groupfilename>shared_player3_age2_barracks</groupfilename>
+			<rottype>Rotate0</rottype>
+			<rotateunitorientations>false</rotateunitorientations>
+		</grouping>
+	</targets>
+	<objectives id="0" mustfailall="false">
+		<values>
+			<or id="1" mustfailall="false">
+				<values>
+					<timer id="2">
+						<description>$$2471$$</description>
+						<failonexpire>false</failonexpire>
+					</timer>
+					<protectunit id="3">
+						<description>$$11725$$</description>
+						<type>Ba_Bldg_Ziggurat</type>
+						<owningplayerid>6</owningplayerid>
+					</protectunit>
+					<reduceunitsto id="4">
+						<type>LogicalTypeNeededForVictory</type>
+						<count>0</count>
+						<includeteam>true</includeteam>
+						<includeunderconstruction>false</includeunderconstruction>
+						<canuncomplete>false</canuncomplete>
+						<causesfailure>true</causesfailure>
+						<playerid>1</playerid>
+					</reduceunitsto>
+				</values>
+			</or>
+		</values>
+	</objectives>
+	<secondaryobjectives id="5" mustfailall="false" rewardname="OptionalOne">
+		<description>$$9507$$</description>
+		<values>
+			<or id="6" mustfailall="false">
+				<values>
+					<timer id="7">
+						<description/>
+						<failonexpire>true</failonexpire>
+					</timer>
+					<kill id="8">
+						<description>$$12373$$</description>
+						<type>Pe_Civ_UtilityBoat</type>
+						<count>5</count>
+						<includeconversion>true</includeconversion>
+						<onlycountelites>false</onlycountelites>
+					</kill>
+					<dummy id="9">
+						<objectivename>OBJECTIVE_FAIL</objectivename>
+						<autocomplete>false</autocomplete>
+					</dummy>
+				</values>
+			</or>
+		</values>
+	</secondaryobjectives>
+	<secondaryobjectives id="10" mustfailall="false" rewardname="OptionalTwo">
+		<description>$$9508$$</description>
+		<values>
+			<or id="11" mustfailall="false">
+				<values>
+					<timer id="12">
+						<description/>
+						<failonexpire>false</failonexpire>
+					</timer>
+					<dummy id="13">
+						<description>$$11661$$</description>
+						<objectivename>OptionalRestrictGuardTowers</objectivename>
+						<autocomplete>false</autocomplete>
+					</dummy>
+				</values>
+			</or>
+		</values>
+	</secondaryobjectives>
+	<onaccept/>
+	<rewards visible="true">
+		<alliancepoints visible="true">
+			<amount>15</amount>
+		</alliancepoints>
+		<xp visible="true">
+			1
+			<lookuptable>EliteLong</lookuptable>
+		</xp>
+		<capitalresource visible="true">
+			<capitalresource>cCapResCoin</capitalresource>
+			<amount>1</amount>
+			<lookuptable>EliteLong</lookuptable>
+		</capitalresource>
+		<loottable visible="true">general</loottable>
+		<loottable visible="true">general</loottable>
+		<loottable visible="true">general</loottable>
+	</rewards>
+	<secondaryrewards visible="true" name="OptionalOne">
+		<capitalresource visible="true">
+			<capitalresource>cCapResCoin</capitalresource>
+			<amount>1</amount>
+			<lookuptable>EliteOptCoin</lookuptable>
+		</capitalresource>
+		<loottable visible="true">general</loottable>
+		<loottable visible="true">general</loottable>
+	</secondaryrewards>
+	<secondaryrewards visible="true" name="OptionalTwo">
+		<capitalresource visible="true">
+			<capitalresource>cCapResCoin</capitalresource>
+			<amount>1</amount>
+			<lookuptable>EliteOptCoin</lookuptable>
+		</capitalresource>
+		<loottable visible="true">general</loottable>
+		<loottable visible="true">general</loottable>
+	</secondaryrewards>
+	<playersettings id="1">
+		<team>1</team>
+		<color>1</color>
+		<tributablebehavior>Default</tributablebehavior>
+		<playertype>Human</playertype>
+		<cooponly>false</cooponly>
+		<startingfood>1000</startingfood>
+		<startingwood>1000</startingwood>
+		<startinggold>1000</startinggold>
+		<startingstone>1000</startingstone>
+		<aislidervariables/>
+		<aiflagvariables/>
+	</playersettings>
+	<playersettings id="2">
+		<team>2</team>
+		<color>2</color>
+		<tributablebehavior>Default</tributablebehavior>
+		<playertype>Computer</playertype>
+		<personality>$$7398$$</personality>
+		<dataset>c04\c04_corerush_t2</dataset>
+		<cooponly>false</cooponly>
+		<startingfood>-1</startingfood>
+		<startingwood>-1</startingwood>
+		<startinggold>-1</startinggold>
+		<startingstone>-1</startingstone>
+		<aislidervariables/>
+		<aiflagvariables/>
+	</playersettings>
+	<playersettings id="3">
+		<team>1</team>
+		<color>7</color>
+		<tributablebehavior>Default</tributablebehavior>
+		<playertype>Human</playertype>
+		<cooponly>true</cooponly>
+		<startingfood>1000</startingfood>
+		<startingwood>1000</startingwood>
+		<startinggold>1000</startinggold>
+		<startingstone>1000</startingstone>
+		<aislidervariables/>
+		<aiflagvariables/>
+	</playersettings>
+	<playersettings id="4">
+		<team>2</team>
+		<color>2</color>
+		<tributablebehavior>Default</tributablebehavior>
+		<playertype>Computer</playertype>
+		<personality>$$7398$$</personality>
+		<dataset>c04\c04_corerush_t2</dataset>
+		<cooponly>false</cooponly>
+		<startingfood>-1</startingfood>
+		<startingwood>-1</startingwood>
+		<startinggold>-1</startinggold>
+		<startingstone>-1</startingstone>
+		<aislidervariables/>
+		<aiflagvariables/>
+	</playersettings>
+	<playersettings id="5">
+		<team>2</team>
+		<color>2</color>
+		<tributablebehavior>Default</tributablebehavior>
+		<playertype>Computer</playertype>
+		<personality>$$7398$$</personality>
+		<dataset>c04\c04_corerush_t2</dataset>
+		<cooponly>false</cooponly>
+		<startingfood>-1</startingfood>
+		<startingwood>-1</startingwood>
+		<startinggold>-1</startinggold>
+		<startingstone>-1</startingstone>
+		<aislidervariables/>
+		<aiflagvariables/>
+	</playersettings>
+	<playersettings id="6">
+		<team>1</team>
+		<color>3</color>
+		<tributablebehavior>Default</tributablebehavior>
+		<playertype>Computer</playertype>
+		<personality>$$11630$$</personality>
+		<dataset>c04\c04_vanilla_t0</dataset>
+		<cooponly>false</cooponly>
+		<startingfood>-1</startingfood>
+		<startingwood>-1</startingwood>
+		<startinggold>-1</startinggold>
+		<startingstone>-1</startingstone>
+		<aislidervariables/>
+		<aiflagvariables/>
+	</playersettings>
+	<diplomacysettings/>
+	<randommap>
+		<map>Core\Shared_Babylon\Babylon_S33_TEDelta_CoopNaval</map>
+		<randommap>true</randommap>
+		<numplayers>6</numplayers>
+		<mapvariables>
+			<variable name="scenarioFile" type="String">shared_babylon\babylon_s33_tedelta_coopnaval</variable>
+			<variable name="QuestID" type="Int">103937</variable>
+			<variable name="OptionalRestrictGuardTowers" type="Bool">true</variable>
+			<variable name="MainPlayerID" type="Int">1</variable>
+			<variable name="CoopPlayerID" type="Int">3</variable>
+			<variable name="IsRepeat" type="Bool">true</variable>
+			<variable name="bIsELITE" type="Bool">true</variable>
+			<variable name="region" type="String">Meso Valley</variable>
+			<variable name="lighting" type="String">Evening</variable>
+			<variable name="mapSize" type="String">Large</variable>
+		</mapvariables>
+		<nuggetoverrides/>
+		<mapregionname>Meso Valley</mapregionname>
+		<lightsetname>Evening</lightsetname>
+		<mapsizename>Large</mapsizename>
+	</randommap>
+	<questgivers>
+		<protounit>Babylon_PortMaster</protounit>
+	</questgivers>
+	<questreturners>
+		<protounit>Babylon_PortMaster</protounit>
+	</questreturners>
+	<maplocationx>0.4</maplocationx>
+	<maplocationy>0.71</maplocationy>
+	<mapmarker>QuestRepeatable</mapmarker>
+	<mappage>Persia</mappage>
+	<elitespawnchance>1</elitespawnchance>
+	<linkedquestid>0</linkedquestid>
+	<questbasescale>3</questbasescale>
+	<victoryconditions/>
+</quest>

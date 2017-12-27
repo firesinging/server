@@ -1,0 +1,254 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<quest xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xsd="http://www.w3.org/2001/XMLSchema" uniqueid="13033" version="120">
+	<displayname>$$7719$$</displayname>
+	<level>15</level>
+	<repeatable>false</repeatable>
+	<timer>
+		<time/>
+		<events/>
+		<hideonui>false</hideonui>
+	</timer>
+	<canplaycoop>true</canplaycoop>
+	<cooprequired>false</cooprequired>
+	<ranked>false</ranked>
+	<alliance>eAllianceNone</alliance>
+	<questtype>RandomMap</questtype>
+	<description>$$9346$$</description>
+	<completiontext>$$9039$$</completiontext>
+	<inprogresstext>$$9608$$</inprogresstext>
+	<summarytext>$$8903$$</summarytext>
+	<canabandon>true</canabandon>
+	<hiddenquest>false</hiddenquest>
+	<friendonly>false</friendonly>
+	<suppressnotifications>false</suppressnotifications>
+	<customquest>false</customquest>
+	<questgamemodetype>Normal</questgamemodetype>
+	<prereqs>
+		<values>
+			<civilization>
+				<id>6</id>
+			</civilization>
+			<questcomplete>
+				<id>13032</id>
+			</questcomplete>
+		</values>
+	</prereqs>
+	<equipmentprereqs/>
+	<targets>
+		<protounit>
+			<cooponly>true</cooponly>
+			<forcetocenter>false</forcetocenter>
+			<name>CoOpTracker</name>
+			<protoname>AIStart</protoname>
+			<count>1</count>
+			<team>4</team>
+			<area>Player1</area>
+			<usequesttargetindicator>false</usequesttargetindicator>
+		</protounit>
+		<grouping>
+			<cooponly>true</cooponly>
+			<forcetocenter>false</forcetocenter>
+			<name>Player2Start</name>
+			<count>1</count>
+			<team>3</team>
+			<area>Player2</area>
+			<groupfilename>shared_start_transport</groupfilename>
+			<rottype>Rotate0</rottype>
+			<rotateunitorientations>true</rotateunitorientations>
+		</grouping>
+		<protounit>
+			<cooponly>false</cooponly>
+			<forcetocenter>false</forcetocenter>
+			<name>AcicTrireme</name>
+			<protoname>AcicTrireme</protoname>
+			<count>1</count>
+			<team>1</team>
+			<area>Quest_Area_B</area>
+			<overrides parent="Gr_Shp_CatTrireme">
+				<visualscale>1.35</visualscale>
+				<convertresist>100</convertresist>
+				<displaynameid>63604</displaynameid>
+				<initialhitpoints>5000</initialhitpoints>
+				<maxhitpoints>5000</maxhitpoints>
+			</overrides>
+			<usequesttargetindicator>true</usequesttargetindicator>
+		</protounit>
+	</targets>
+	<objectives id="0" mustfailall="false">
+		<values>
+			<or id="1" mustfailall="false">
+				<values>
+					<and id="2" mustfailall="false">
+						<values>
+							<kill id="3">
+								<description>$$4813$$</description>
+								<type>UnitTypeBldgTownCenter</type>
+								<count>1</count>
+								<includeconversion>true</includeconversion>
+								<onlycountelites>false</onlycountelites>
+							</kill>
+							<unitinarea id="4">
+								<description>$$7093$$</description>
+								<area>Quest_Area_A</area>
+								<type>transport</type>
+								<count>5</count>
+								<radius>-1</radius>
+								<aidefend>true</aidefend>
+							</unitinarea>
+						</values>
+					</and>
+					<protectunit id="5">
+						<description>$$8246$$</description>
+						<type>AcicTrireme</type>
+						<owningplayerid>1</owningplayerid>
+					</protectunit>
+					<reduceunitsto id="6">
+						<type>LogicalTypeNeededForVictory</type>
+						<count>0</count>
+						<includeteam>true</includeteam>
+						<includeunderconstruction>false</includeunderconstruction>
+						<canuncomplete>false</canuncomplete>
+						<causesfailure>true</causesfailure>
+						<playerid>1</playerid>
+					</reduceunitsto>
+				</values>
+			</or>
+		</values>
+	</objectives>
+	<onaccept>
+		<questgiver visible="true">
+			<name>C03_R3_Comontorios</name>
+			<status>Unavailable</status>
+		</questgiver>
+	</onaccept>
+	<timereffects event="DropSiege">
+		<spawnunit visible="true">
+			<count>2</count>
+			<placeunittype>Gr_Sie_BatteringRam</placeunittype>
+			<asplayer>2</asplayer>
+			<spawntype>SpawnForAllies</spawntype>
+			<nearunittype>Gr_Bldg_SiegeWorkshop</nearunittype>
+			<preferredoffset>5</preferredoffset>
+			<radius>0</radius>
+			<useboneposition>false</useboneposition>
+			<overrides/>
+		</spawnunit>
+	</timereffects>
+	<rewards visible="true">
+		<gamecurrency visible="true">
+			<gamecurrency>cGameCurEmpirePoints</gamecurrency>
+			<amount>4</amount>
+		</gamecurrency>
+		<xp visible="true">40000</xp>
+		<capitalresource visible="true">
+			<capitalresource>cCapResCoin</capitalresource>
+			<amount>100</amount>
+		</capitalresource>
+		<loottable visible="true">general</loottable>
+		<loottable visible="true">general</loottable>
+		<or visible="true">
+			<trait visible="true">
+				Gear_Boat_R101
+				<traitlevel>19</traitlevel>
+			</trait>
+			<loottable visible="true">general</loottable>
+		</or>
+	</rewards>
+	<playersettings id="1">
+		<team>1</team>
+		<color>1</color>
+		<tributablebehavior>Default</tributablebehavior>
+		<playertype>Human</playertype>
+		<cooponly>false</cooponly>
+		<startingfood>-1</startingfood>
+		<startingwood>-1</startingwood>
+		<startinggold>-1</startinggold>
+		<startingstone>-1</startingstone>
+		<aislidervariables/>
+		<aiflagvariables/>
+	</playersettings>
+	<playersettings id="2">
+		<team>2</team>
+		<color>2</color>
+		<tributablebehavior>Default</tributablebehavior>
+		<playertype>Computer</playertype>
+		<personality>$$2304$$</personality>
+		<script>CORE\Ramp_Heavy</script>
+		<dataset>C01\C01_CoreRamp_T1</dataset>
+		<cooponly>false</cooponly>
+		<startingfood>-1</startingfood>
+		<startingwood>-1</startingwood>
+		<startinggold>-1</startinggold>
+		<startingstone>-1</startingstone>
+		<aislidervariables>
+			<aivariable>
+				<key>SiegeBias</key>
+				<value>0.8</value>
+			</aivariable>
+		</aislidervariables>
+		<aiflagvariables>
+			<aivariable>
+				<key>NoTrainNavy</key>
+				<value>0</value>
+			</aivariable>
+		</aiflagvariables>
+	</playersettings>
+	<playersettings id="3">
+		<team>1</team>
+		<color>7</color>
+		<tributablebehavior>Default</tributablebehavior>
+		<playertype>Human</playertype>
+		<cooponly>true</cooponly>
+		<startingfood>500</startingfood>
+		<startingwood>500</startingwood>
+		<startinggold>500</startinggold>
+		<startingstone>500</startingstone>
+		<aislidervariables/>
+		<aiflagvariables/>
+	</playersettings>
+	<playersettings id="4">
+		<team>2</team>
+		<color>2</color>
+		<tributablebehavior>Default</tributablebehavior>
+		<playertype>Computer</playertype>
+		<personality>$$2304$$</personality>
+		<dataset>C01\C01_CoreRush_T1</dataset>
+		<cooponly>false</cooponly>
+		<startingfood>-1</startingfood>
+		<startingwood>-1</startingwood>
+		<startinggold>-1</startinggold>
+		<startingstone>-1</startingstone>
+		<aislidervariables/>
+		<aiflagvariables/>
+	</playersettings>
+	<diplomacysettings/>
+	<randommap>
+		<map>Core/C03/C03_R3M83_Naval</map>
+		<randommap>true</randommap>
+		<numplayers>4</numplayers>
+		<mapvariables>
+			<variable name="scenarioFile" type="String">C03/C03_R3M83_Naval</variable>
+			<variable name="region" type="String">Greek Inland</variable>
+			<variable name="lighting" type="String">Afternoon</variable>
+		</mapvariables>
+		<nuggetoverrides/>
+		<mapregionname>Greek Inland</mapregionname>
+		<lightsetname>Afternoon</lightsetname>
+		<mapsizename>&lt;Not Specified&gt;</mapsizename>
+	</randommap>
+	<questgivers>
+		<protounit>C03_R3_Acichorios</protounit>
+	</questgivers>
+	<questreturners>
+		<protounit>C03_R3_Acichorios</protounit>
+	</questreturners>
+	<maplocationx>0.49</maplocationx>
+	<maplocationy>0.26</maplocationy>
+	<mapmarker>QuestDefault</mapmarker>
+	<mappage>Thrace</mappage>
+	<elitespawnchance>0.025</elitespawnchance>
+	<linkedquestid>0</linkedquestid>
+	<questbasescale>0</questbasescale>
+	<victoryconditions/>
+</quest>

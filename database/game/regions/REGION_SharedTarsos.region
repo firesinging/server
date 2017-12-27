@@ -1,0 +1,19 @@
+<?xml version="1.0"?>
+<Region xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xsd="http://www.w3.org/2001/XMLSchema" ID="18">
+  <Name>Tarsos</Name>
+  <CivID>8</CivID>
+  <MapName>Regions/REGION_SharedTarsos</MapName>
+  <MapLocationX>0.20</MapLocationX>
+  <MapLocationY>0.37</MapLocationY>
+  <MapMarker>RegionDefault</MapMarker>
+  <MapPage>Persia</MapPage>
+  <LoadScreen>UserInterface\LoadingScreens\ShipPersia_df</LoadScreen>
+  <DescriptionStringID>62173</DescriptionStringID>
+  <DisplayNameStringID>62170</DisplayNameStringID>
+  <AvatarShield>UserInterface\Avatar\RegionShieldC04_2_ua</AvatarShield>
+  <FlagIcon>UserInterface\Icons\Regions\RegionFlagCrete_ua</FlagIcon>
+</Region>
+
+
+
+

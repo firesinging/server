@@ -1,0 +1,214 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<quest xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xsd="http://www.w3.org/2001/XMLSchema" uniqueid="186" version="33">
+	<displayname>$$901$$</displayname>
+	<level>22</level>
+	<repeatable>false</repeatable>
+	<offertype>eOfferNone</offertype>
+	<timer>
+		<events/>
+		<hideonui>false</hideonui>
+	</timer>
+	<canplaycoop>false</canplaycoop>
+	<cooprequired>false</cooprequired>
+	<ranked>false</ranked>
+	<alliance>eAllianceNone</alliance>
+	<questtype>RandomMap</questtype>
+	<description>$$4208$$</description>
+	<completiontext>$$4207$$</completiontext>
+	<inprogresstext>$$4206$$</inprogresstext>
+	<summarytext>$$4205$$</summarytext>
+	<canabandon>true</canabandon>
+	<hiddenquest>false</hiddenquest>
+	<friendonly>false</friendonly>
+	<suppressnotifications>false</suppressnotifications>
+	<customquest>false</customquest>
+	<questgamemodetype>Normal</questgamemodetype>
+	<prereqs>
+		<values>
+			<questcomplete>
+				<id>55</id>
+			</questcomplete>
+		</values>
+	</prereqs>
+	<equipmentprereqs/>
+	<targets>
+		<grouping>
+			<cooponly>false</cooponly>
+			<forcetocenter>false</forcetocenter>
+			<name>Player</name>
+			<count>1</count>
+			<team>1</team>
+			<area>Player1</area>
+			<groupfilename>Shared_Start_Barracks</groupfilename>
+			<rottype>Rotate0</rottype>
+			<rotateunitorientations>false</rotateunitorientations>
+		</grouping>
+		<random placeatleast="1" placenomore="1">
+			<cooponly>false</cooponly>
+			<forcetocenter>false</forcetocenter>
+			<unitprobability/>
+			<targets>
+				<grouping>
+					<cooponly>false</cooponly>
+					<forcetocenter>false</forcetocenter>
+					<name>Enemy_A</name>
+					<count>1</count>
+					<team>2</team>
+					<area>Quest_Area_A</area>
+					<groupfilename>Shared_Start_Barracks</groupfilename>
+					<rottype>RotateRandom</rottype>
+					<rotateunitorientations>false</rotateunitorientations>
+				</grouping>
+				<grouping>
+					<cooponly>false</cooponly>
+					<forcetocenter>false</forcetocenter>
+					<name>Enemy_B</name>
+					<count>1</count>
+					<team>2</team>
+					<area>Quest_Area_B</area>
+					<groupfilename>Shared_Start_Barracks</groupfilename>
+					<rottype>RotateRandom</rottype>
+					<rotateunitorientations>false</rotateunitorientations>
+				</grouping>
+				<grouping>
+					<cooponly>false</cooponly>
+					<forcetocenter>false</forcetocenter>
+					<name>Enemy_C</name>
+					<count>1</count>
+					<team>2</team>
+					<area>Quest_Area_C</area>
+					<groupfilename>Shared_Start_Barracks</groupfilename>
+					<rottype>RotateRandom</rottype>
+					<rotateunitorientations>false</rotateunitorientations>
+				</grouping>
+				<grouping>
+					<cooponly>false</cooponly>
+					<forcetocenter>false</forcetocenter>
+					<name>Enemy_D</name>
+					<count>1</count>
+					<team>2</team>
+					<area>Quest_Area_D</area>
+					<groupfilename>Shared_Start_Barracks</groupfilename>
+					<rottype>RotateRandom</rottype>
+					<rotateunitorientations>false</rotateunitorientations>
+				</grouping>
+			</targets>
+		</random>
+	</targets>
+	<objectives id="0" mustfailall="false">
+		<values>
+			<or id="1" mustfailall="false">
+				<values>
+					<collectresource id="2">
+						<description>$$2597$$</description>
+						<type>Food</type>
+						<amount>5000</amount>
+						<includeexisting>true</includeexisting>
+					</collectresource>
+					<and id="3" mustfailall="true">
+						<values>
+							<reduceunitsto id="4">
+								<type>AbstractTownCenter</type>
+								<count>0</count>
+								<includeteam>true</includeteam>
+								<includeunderconstruction>false</includeunderconstruction>
+								<canuncomplete>false</canuncomplete>
+								<causesfailure>true</causesfailure>
+								<playerid>1</playerid>
+							</reduceunitsto>
+							<reduceunitsto id="5">
+								<type>UnitTypeVillager1</type>
+								<count>0</count>
+								<includeteam>true</includeteam>
+								<includeunderconstruction>false</includeunderconstruction>
+								<canuncomplete>false</canuncomplete>
+								<causesfailure>true</causesfailure>
+								<playerid>1</playerid>
+							</reduceunitsto>
+							<reduceunitsto id="6">
+								<type>UnitTypeBldgDock</type>
+								<count>0</count>
+								<includeteam>true</includeteam>
+								<includeunderconstruction>false</includeunderconstruction>
+								<canuncomplete>false</canuncomplete>
+								<causesfailure>true</causesfailure>
+								<playerid>1</playerid>
+							</reduceunitsto>
+						</values>
+					</and>
+				</values>
+			</or>
+		</values>
+	</objectives>
+	<onaccept/>
+	<rewards visible="true">
+		<xp visible="true">25000</xp>
+		<capitalresource visible="true">
+			<capitalresource>cCapResCoin</capitalresource>
+			<amount>250</amount>
+		</capitalresource>
+		<loottable visible="true">general</loottable>
+	</rewards>
+	<playersettings id="1">
+		<team>1</team>
+		<color>1</color>
+		<tributablebehavior>Default</tributablebehavior>
+		<playertype>Human</playertype>
+		<cooponly>false</cooponly>
+		<startingfood>-1</startingfood>
+		<startingwood>-1</startingwood>
+		<startinggold>-1</startinggold>
+		<startingstone>-1</startingstone>
+		<aislidervariables/>
+		<aiflagvariables/>
+	</playersettings>
+	<playersettings id="2">
+		<team>2</team>
+		<color>2</color>
+		<tributablebehavior>Default</tributablebehavior>
+		<playertype>Computer</playertype>
+		<personality>$$2243$$</personality>
+		<script>CORE\Boom_Weak</script>
+		<dataset>C01\C01_SeaPeople_T2</dataset>
+		<cooponly>false</cooponly>
+		<startingfood>300</startingfood>
+		<startingwood>300</startingwood>
+		<startinggold>300</startinggold>
+		<startingstone>300</startingstone>
+		<aislidervariables>
+			<aivariable>
+				<key>EconomyHandicap</key>
+				<value>0.1</value>
+			</aivariable>
+		</aislidervariables>
+		<aiflagvariables/>
+	</playersettings>
+	<diplomacysettings/>
+	<randommap>
+		<map>set_questland</map>
+		<randommap>true</randommap>
+		<numplayers>2</numplayers>
+		<mapvariables>
+			<variable name="region" type="String">Greek Inland</variable>
+			<variable name="mapSize" type="String">Small</variable>
+		</mapvariables>
+		<nuggetoverrides/>
+		<mapregionname>Greek Inland</mapregionname>
+		<lightsetname>&lt;Not Specified&gt;</lightsetname>
+		<mapsizename>Small</mapsizename>
+	</randommap>
+	<questgivers>
+		<protounit>ArgosDockForeman</protounit>
+	</questgivers>
+	<questreturners>
+		<protounit>ArgosDockForeman</protounit>
+	</questreturners>
+	<maplocationx>0.305</maplocationx>
+	<maplocationy>0.533</maplocationy>
+	<mapmarker>QuestDefault</mapmarker>
+	<mappage>Greece</mappage>
+	<elitespawnchance>0.025</elitespawnchance>
+	<questbasescale>0</questbasescale>
+	<victoryconditions/>
+</quest>

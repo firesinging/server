@@ -1,0 +1,179 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<quest xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xsd="http://www.w3.org/2001/XMLSchema" uniqueid="12001" version="61">
+	<displayname>$$367$$</displayname>
+	<level>1</level>
+	<repeatable>false</repeatable>
+	<timer>
+		<events/>
+		<hideonui>false</hideonui>
+	</timer>
+	<canplaycoop>false</canplaycoop>
+	<cooprequired>false</cooprequired>
+	<ranked>false</ranked>
+	<description>$$5280$$</description>
+	<completiontext>$$4631$$</completiontext>
+	<inprogresstext>$$9155$$</inprogresstext>
+	<summarytext>$$2105$$</summarytext>
+	<canabandon>false</canabandon>
+	<hiddenquest>false</hiddenquest>
+	<friendonly>false</friendonly>
+	<suppressnotifications>false</suppressnotifications>
+	<customquest>false</customquest>
+	<questtype>RandomMap</questtype>
+	<questgamemodetype>Normal</questgamemodetype>
+	<prereqs>
+		<values>
+			<civilization>
+				<id>3</id>
+			</civilization>
+		</values>
+	</prereqs>
+	<equipmentprereqs/>
+	<targets/>
+	<objectives id="0" mustfailall="false">
+		<values>
+			<or id="1" mustfailall="false">
+				<values>
+					<and id="2" mustfailall="false">
+						<values>
+							<kill id="3">
+								<description>$$2366$$</description>
+								<type>NPC_Badari_Axeman</type>
+								<count>8</count>
+								<includeconversion>true</includeconversion>
+								<onlycountelites>false</onlycountelites>
+							</kill>
+							<unitdiscovered id="4">
+								<description>$$3731$$</description>
+								<type>AbstractNugget</type>
+								<count>2</count>
+							</unitdiscovered>
+						</values>
+					</and>
+					<reduceunitsto id="5">
+						<type>LogicalTypeNeededForVictory</type>
+						<count>0</count>
+						<includeteam>false</includeteam>
+						<includeunderconstruction>false</includeunderconstruction>
+						<canuncomplete>false</canuncomplete>
+						<causesfailure>true</causesfailure>
+						<playerid>1</playerid>
+					</reduceunitsto>
+				</values>
+			</or>
+		</values>
+	</objectives>
+	<onaccept/>
+	<rewards visible="true">
+		<xp visible="true">700</xp>
+		<capitalresource visible="true">
+			<capitalresource>cCapResCoin</capitalresource>
+			<amount>15</amount>
+		</capitalresource>
+		<capitaltech visible="true">
+			<captechid>270</captechid>
+		</capitaltech>
+		<capitaltech visible="true">
+			<captechid>269</captechid>
+		</capitaltech>
+		<protip visible="false">TIP_C02_QuestTechUnlock_TC_Villagers</protip>
+		<enableprotip visible="false">TIP_UI_Workshop_FirstUse</enableprotip>
+		<enableprotip visible="false">TIP_UI_QuestMap_FirstUse</enableprotip>
+	</rewards>
+	<playersettings id="1">
+		<team>1</team>
+		<color>1</color>
+		<tributablebehavior>Default</tributablebehavior>
+		<playertype>Human</playertype>
+		<cooponly>false</cooponly>
+		<startingfood>0</startingfood>
+		<startingwood>0</startingwood>
+		<startinggold>0</startinggold>
+		<startingstone>0</startingstone>
+		<aislidervariables/>
+		<aiflagvariables/>
+	</playersettings>
+	<playersettings id="2">
+		<team>2</team>
+		<color>2</color>
+		<tributablebehavior>Default</tributablebehavior>
+		<playertype>Computer</playertype>
+		<personality>$$2253$$</personality>
+		<dataset>C02\C02_Badari_T0</dataset>
+		<cooponly>false</cooponly>
+		<startingfood>-1</startingfood>
+		<startingwood>-1</startingwood>
+		<startinggold>-1</startinggold>
+		<startingstone>-1</startingstone>
+		<aislidervariables/>
+		<aiflagvariables/>
+	</playersettings>
+	<playersettings id="3">
+		<team>3</team>
+		<color>3</color>
+		<tributablebehavior>Default</tributablebehavior>
+		<playertype>Computer</playertype>
+		<personality>$$2254$$</personality>
+		<character/>
+		<dataset>c02\c02_vanilla_t0</dataset>
+		<cooponly>false</cooponly>
+		<startingfood>-1</startingfood>
+		<startingwood>1000</startingwood>
+		<startinggold>1000</startinggold>
+		<startingstone>1000</startingstone>
+		<aislidervariables/>
+		<aiflagvariables/>
+	</playersettings>
+	<playersettings id="4">
+		<team>4</team>
+		<color>3</color>
+		<tributablebehavior>Default</tributablebehavior>
+		<playertype>Computer</playertype>
+		<personality>$$2254$$</personality>
+		<dataset>c02\c02_vanilla_t0</dataset>
+		<cooponly>false</cooponly>
+		<startingfood>-1</startingfood>
+		<startingwood>-1</startingwood>
+		<startinggold>-1</startinggold>
+		<startingstone>-1</startingstone>
+		<aislidervariables/>
+		<aiflagvariables/>
+	</playersettings>
+	<diplomacysettings>
+		<diplomacy relation="Neutral" team1="1" team2="3" sharedlos="false"/>
+		<diplomacy relation="Neutral" team1="3" team2="1" sharedlos="false"/>
+		<diplomacy relation="Neutral" team1="4" team2="2" sharedlos="false"/>
+		<diplomacy relation="Neutral" team1="1" team2="4" sharedlos="false"/>
+		<diplomacy relation="Neutral" team1="4" team2="1" sharedlos="false"/>
+	</diplomacysettings>
+	<randommap>
+		<map>Core\Shared\Shared_FirstQuestLoader</map>
+		<randommap>true</randommap>
+		<numplayers>4</numplayers>
+		<mapvariables>
+			<variable name="scenarioFile" type="String">C02/C02_M01_MoveAttack</variable>
+			<variable name="firstProTip" type="String">TIP_C02_FirstQuest_QG</variable>
+			<variable name="region" type="String">Egyptian Marsh</variable>
+			<variable name="lighting" type="String">Morning</variable>
+		</mapvariables>
+		<nuggetoverrides/>
+		<mapregionname>Egyptian Marsh</mapregionname>
+		<lightsetname>Morning</lightsetname>
+		<mapsizename>&lt;Not Specified&gt;</mapsizename>
+	</randommap>
+	<questgivers>
+		<protounit>C02_R1_KingNarmer</protounit>
+	</questgivers>
+	<questreturners>
+		<protounit>C02_R1_KingNarmer</protounit>
+	</questreturners>
+	<customloadscreen>loadscreentips\load_c02_r1m01.xml</customloadscreen>
+	<maplocationx>0.431</maplocationx>
+	<maplocationy>0.242</maplocationy>
+	<mapmarker>QuestDefault</mapmarker>
+	<mappage>Egypt</mappage>
+	<elitespawnchance>0</elitespawnchance>
+	<questbasescale>0</questbasescale>
+	<victoryconditions/>
+</quest>

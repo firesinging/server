@@ -1,0 +1,71 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<quest xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xsd="http://www.w3.org/2001/XMLSchema" uniqueid="1504" version="43">
+	<displayname>$$11089$$</displayname>
+	<level>0</level>
+	<repeatable>true</repeatable>
+	<timer>
+		<events/>
+		<hideonui>false</hideonui>
+	</timer>
+	<canplaycoop>false</canplaycoop>
+	<cooprequired>false</cooprequired>
+	<ranked>false</ranked>
+	<description>$$11112$$</description>
+	<completiontext>$$11113$$</completiontext>
+	<inprogresstext>$$11102$$</inprogresstext>
+	<summarytext>$$11097$$</summarytext>
+	<canabandon>true</canabandon>
+	<hiddenquest>false</hiddenquest>
+	<friendonly>false</friendonly>
+	<suppressnotifications>false</suppressnotifications>
+	<customquest>false</customquest>
+	<questtype>Global</questtype>
+	<questgamemodetype>Normal</questgamemodetype>
+	<prereqs>
+		<values/>
+	</prereqs>
+	<equipmentprereqs/>
+	<targets/>
+	<objectives id="0" mustfailall="false">
+		<values>
+			<collectmaterial id="1">
+				<description>$$11077$$</description>
+				<type>!VanityTicket</type>
+				<amount>1</amount>
+				<includeexisting>true</includeexisting>
+			</collectmaterial>
+		</values>
+	</objectives>
+	<onaccept/>
+	<rewards visible="true">
+		<loottable visible="true">tables\_coreloot_vanityticket</loottable>
+		<consumematerial visible="true">
+			<materialname>!VanityTicket</materialname>
+			<count>1</count>
+		</consumematerial>
+	</rewards>
+	<diplomacysettings/>
+	<randommap>
+		<randommap>true</randommap>
+		<numplayers>0</numplayers>
+		<mapvariables/>
+		<nuggetoverrides/>
+		<mapregionname>&lt;Not Specified&gt;</mapregionname>
+		<lightsetname>&lt;Not Specified&gt;</lightsetname>
+		<mapsizename>&lt;Not Specified&gt;</mapsizename>
+	</randommap>
+	<questgivers>
+		<protounit>Vanity_PrimaryQG</protounit>
+	</questgivers>
+	<questreturners>
+		<protounit>Vanity_PrimaryQG</protounit>
+	</questreturners>
+	<maplocationx>0.5</maplocationx>
+	<maplocationy>0.5</maplocationy>
+	<mapmarker>Blank</mapmarker>
+	<mappage>Greece</mappage>
+	<elitespawnchance>0</elitespawnchance>
+	<questbasescale>0</questbasescale>
+	<victoryconditions/>
+</quest>

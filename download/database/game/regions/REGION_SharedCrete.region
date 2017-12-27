@@ -1,0 +1,15 @@
+<?xml version="1.0"?>
+<Region xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xsd="http://www.w3.org/2001/XMLSchema" ID="14">
+  <Name>Crete</Name>
+  <CivID>1</CivID>
+  <MapName>Regions/REGION_SharedCrete</MapName>
+  <MapLocationX>0.60</MapLocationX>
+  <MapLocationY>0.45</MapLocationY>
+  <MapMarker>RegionDefault</MapMarker>
+  <MapPage>Crete</MapPage>
+  <LoadScreen>UserInterface\LoadingScreens\ShipCrete</LoadScreen>
+  <DescriptionStringID>61976</DescriptionStringID>
+  <DisplayNameStringID>61577</DisplayNameStringID>
+  <AvatarShield>UserInterface\Avatar\RegionShieldCrete_ua</AvatarShield>
+  <FlagIcon>UserInterface\Icons\Regions\RegionFlagCrete_ua</FlagIcon>
+</Region>

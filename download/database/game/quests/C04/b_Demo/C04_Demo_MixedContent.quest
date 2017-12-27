@@ -1,0 +1,302 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<quest xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xsd="http://www.w3.org/2001/XMLSchema" uniqueid="14701" version="151">
+	<displayname>$$7585$$</displayname>
+	<level>0</level>
+	<repeatable>true</repeatable>
+	<timer>
+		<events/>
+		<hideonui>false</hideonui>
+	</timer>
+	<canplaycoop>false</canplaycoop>
+	<cooprequired>false</cooprequired>
+	<ranked>false</ranked>
+	<alliance>eAllianceNone</alliance>
+	<questtype>RandomMap</questtype>
+	<description>$$8056$$</description>
+	<completiontext>$$7892$$</completiontext>
+	<inprogresstext>$$8016$$</inprogresstext>
+	<summarytext>$$7923$$</summarytext>
+	<repeatableduration>12</repeatableduration>
+	<canabandon>true</canabandon>
+	<hiddenquest>false</hiddenquest>
+	<friendonly>false</friendonly>
+	<suppressnotifications>false</suppressnotifications>
+	<customquest>false</customquest>
+	<questgamemodetype>Normal</questgamemodetype>
+	<prereqs>
+		<values>
+			<or>
+				<values>
+					<civilization>
+						<id>1</id>
+					</civilization>
+					<civilization>
+						<id>3</id>
+					</civilization>
+					<civilization>
+						<id>6</id>
+					</civilization>
+					<civilization>
+						<id>22</id>
+					</civilization>
+					<civilization>
+						<id>24</id>
+					</civilization>
+				</values>
+			</or>
+		</values>
+	</prereqs>
+	<equipmentprereqs/>
+	<targets>
+		<protounit>
+			<cooponly>false</cooponly>
+			<forcetocenter>false</forcetocenter>
+			<name>Gaumata&apos;s Lieutenant</name>
+			<protoname>GaumataLieutenant</protoname>
+			<count>1</count>
+			<team>7</team>
+			<area>Quest_Area_E</area>
+			<overrides parent="Pe_Cav_Cataphract">
+				<visualscale>1.3</visualscale>
+				<initialhitpoints>4000</initialhitpoints>
+				<maxhitpoints>4000</maxhitpoints>
+				<displaynameid>62103</displaynameid>
+				<convertresist>100</convertresist>
+			</overrides>
+			<usequesttargetindicator>true</usequesttargetindicator>
+		</protounit>
+	</targets>
+	<objectives id="0" mustfailall="false">
+		<values>
+			<or id="1" mustfailall="false">
+				<values>
+					<and id="2" mustfailall="false">
+						<values>
+							<kill id="3">
+								<description>$$7461$$</description>
+								<type>Pe_Bldg_WarAcademy</type>
+								<count>3</count>
+								<includeconversion>true</includeconversion>
+								<onlycountelites>false</onlycountelites>
+							</kill>
+							<kill id="4">
+								<description>$$2508$$</description>
+								<type>Pe_Bldg_TownCenter</type>
+								<count>3</count>
+								<includeconversion>true</includeconversion>
+								<onlycountelites>false</onlycountelites>
+							</kill>
+							<kill id="5">
+								<description>$$7598$$</description>
+								<type>GaumataLieutenant</type>
+								<count>1</count>
+								<includeconversion>true</includeconversion>
+								<onlycountelites>false</onlycountelites>
+							</kill>
+						</values>
+					</and>
+					<reduceunitsto id="6">
+						<type>LogicalTypeNeededForVictory</type>
+						<count>0</count>
+						<includeteam>false</includeteam>
+						<includeunderconstruction>false</includeunderconstruction>
+						<canuncomplete>false</canuncomplete>
+						<causesfailure>true</causesfailure>
+						<playerid>1</playerid>
+					</reduceunitsto>
+				</values>
+			</or>
+		</values>
+	</objectives>
+	<onaccept/>
+	<rewards visible="true">
+		<protip visible="false">TIP_C04_DemoTurnIn</protip>
+		<or visible="true">
+			<consumable visible="true">
+				<consumablename>ConsumableBanditArcher_U</consumablename>
+				<count>3</count>
+			</consumable>
+			<consumable visible="true">
+				<consumablename>ConsumableBanditHippikon_U</consumablename>
+				<count>3</count>
+			</consumable>
+			<consumable visible="true">
+				<consumablename>ConsumableBanditHorseHunter_U</consumablename>
+				<count>3</count>
+			</consumable>
+		</or>
+	</rewards>
+	<playersettings id="1">
+		<team>1</team>
+		<color>1</color>
+		<tributablebehavior>Default</tributablebehavior>
+		<playertype>Human</playertype>
+		<cooponly>false</cooponly>
+		<startingfood>3000</startingfood>
+		<startingwood>3000</startingwood>
+		<startinggold>3000</startinggold>
+		<startingstone>3000</startingstone>
+		<aislidervariables/>
+		<aiflagvariables/>
+	</playersettings>
+	<playersettings id="2">
+		<team>2</team>
+		<color>2</color>
+		<tributablebehavior>Default</tributablebehavior>
+		<playertype>Computer</playertype>
+		<personality>$$7521$$</personality>
+		<script>CORE\Rush_Moderate</script>
+		<character/>
+		<dataset>c04\c04_corerush_t2</dataset>
+		<cooponly>false</cooponly>
+		<startingfood>0</startingfood>
+		<startingwood>0</startingwood>
+		<startinggold>0</startinggold>
+		<startingstone>0</startingstone>
+		<aislidervariables>
+			<aivariable>
+				<key>ArcherBias</key>
+				<value>1</value>
+			</aivariable>
+			<aivariable>
+				<key>InfantryBias</key>
+				<value>-1</value>
+			</aivariable>
+			<aivariable>
+				<key>CavalryBias</key>
+				<value>-0.4</value>
+			</aivariable>
+		</aislidervariables>
+		<aiflagvariables/>
+	</playersettings>
+	<playersettings id="3">
+		<team>2</team>
+		<color>2</color>
+		<tributablebehavior>Default</tributablebehavior>
+		<playertype>Computer</playertype>
+		<personality>$$7521$$</personality>
+		<script>CORE\Rush_Moderate</script>
+		<character/>
+		<dataset>c04\c04_corerush_t2</dataset>
+		<cooponly>false</cooponly>
+		<startingfood>0</startingfood>
+		<startingwood>0</startingwood>
+		<startinggold>0</startinggold>
+		<startingstone>0</startingstone>
+		<aislidervariables>
+			<aivariable>
+				<key>InfantryBias</key>
+				<value>1</value>
+			</aivariable>
+		</aislidervariables>
+		<aiflagvariables/>
+	</playersettings>
+	<playersettings id="4">
+		<team>2</team>
+		<color>2</color>
+		<tributablebehavior>Default</tributablebehavior>
+		<playertype>Computer</playertype>
+		<personality>$$7521$$</personality>
+		<script>CORE\Rush_Moderate</script>
+		<character/>
+		<dataset>c04\c04_corerush_t2</dataset>
+		<cooponly>false</cooponly>
+		<startingfood>0</startingfood>
+		<startingwood>0</startingwood>
+		<startinggold>0</startinggold>
+		<startingstone>0</startingstone>
+		<aislidervariables>
+			<aivariable>
+				<key>CavalryBias</key>
+				<value>1</value>
+			</aivariable>
+			<aivariable>
+				<key>InfantryBias</key>
+				<value>-0.4</value>
+			</aivariable>
+		</aislidervariables>
+		<aiflagvariables/>
+	</playersettings>
+	<playersettings id="5">
+		<team>3</team>
+		<color>3</color>
+		<tributablebehavior>Default</tributablebehavior>
+		<playertype>Computer</playertype>
+		<personality>$$7904$$</personality>
+		<character/>
+		<dataset>c04\c04_corerush_t2</dataset>
+		<cooponly>false</cooponly>
+		<startingfood>0</startingfood>
+		<startingwood>0</startingwood>
+		<startinggold>0</startinggold>
+		<startingstone>0</startingstone>
+		<aislidervariables/>
+		<aiflagvariables/>
+	</playersettings>
+	<playersettings id="6">
+		<team>2</team>
+		<color>2</color>
+		<tributablebehavior>Default</tributablebehavior>
+		<playertype>Computer</playertype>
+		<personality>$$7521$$</personality>
+		<character/>
+		<dataset>c04\c04_corerush_t2</dataset>
+		<cooponly>false</cooponly>
+		<startingfood>0</startingfood>
+		<startingwood>0</startingwood>
+		<startinggold>0</startinggold>
+		<startingstone>0</startingstone>
+		<aislidervariables/>
+		<aiflagvariables/>
+	</playersettings>
+	<playersettings id="7">
+		<team>2</team>
+		<color>2</color>
+		<tributablebehavior>Default</tributablebehavior>
+		<playertype>Computer</playertype>
+		<personality>$$7521$$</personality>
+		<character/>
+		<dataset>c04\c04_corerush_t2</dataset>
+		<cooponly>false</cooponly>
+		<startingfood>0</startingfood>
+		<startingwood>0</startingwood>
+		<startinggold>0</startinggold>
+		<startingstone>0</startingstone>
+		<aislidervariables/>
+		<aiflagvariables/>
+	</playersettings>
+	<diplomacysettings>
+		<diplomacy relation="Neutral" team1="1" team2="3" sharedlos="true"/>
+		<diplomacy relation="Neutral" team1="3" team2="1" sharedlos="true"/>
+		<diplomacy relation="Neutral" team1="2" team2="3" sharedlos="false"/>
+		<diplomacy relation="Neutral" team1="3" team2="2" sharedlos="false"/>
+	</diplomacysettings>
+	<randommap>
+		<map>Core\C04\C04_Demo</map>
+		<randommap>true</randommap>
+		<numplayers>7</numplayers>
+		<mapvariables>
+			<variable name="scenarioFile" type="String">C04\C04_Demo</variable>
+			<variable name="region" type="String">Persian Rock</variable>
+		</mapvariables>
+		<nuggetoverrides/>
+		<mapregionname>Persian Rock</mapregionname>
+		<lightsetname>&lt;Not Specified&gt;</lightsetname>
+		<mapsizename>&lt;Not Specified&gt;</mapsizename>
+	</randommap>
+	<questgivers>
+		<protounit>TarsosTrader</protounit>
+	</questgivers>
+	<questreturners>
+		<protounit>TarsosTrader</protounit>
+	</questreturners>
+	<customloadscreen>loadscreentips\load_shared_upsell_c04.xml</customloadscreen>
+	<maplocationx>0.36</maplocationx>
+	<maplocationy>0.31</maplocationy>
+	<mapmarker>QuestRepeatable</mapmarker>
+	<mappage>Persia</mappage>
+	<elitespawnchance>0</elitespawnchance>
+	<questbasescale>0</questbasescale>
+	<victoryconditions/>
+</quest>

@@ -1,0 +1,324 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<quest xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xsd="http://www.w3.org/2001/XMLSchema" uniqueid="339" version="99">
+	<displayname>$$598$$</displayname>
+	<level>14</level>
+	<repeatable>false</repeatable>
+	<timer>
+		<time>00:15:00</time>
+		<events>
+			<timerevent event="ArcherWave">00:00:01</timerevent>
+			<timerevent event="WarriorWave">00:00:01</timerevent>
+			<timerevent event="ArcherWave">00:01:00</timerevent>
+			<timerevent event="WarriorWave">00:02:00</timerevent>
+			<timerevent event="ArcherWave">00:04:00</timerevent>
+			<timerevent event="WarriorWave">00:04:00</timerevent>
+			<timerevent event="CamelWave">00:06:00</timerevent>
+			<timerevent event="CamelWave">00:08:00</timerevent>
+			<timerevent event="ElephantWave">00:10:00</timerevent>
+			<timerevent event="CamelWave">00:11:30</timerevent>
+			<timerevent event="ArcherWave">00:11:30</timerevent>
+			<timerevent event="ArcherWave">00:12:00</timerevent>
+			<timerevent event="ElephantWave">00:13:00</timerevent>
+			<timerevent event="WarriorWave">00:13:00</timerevent>
+			<timerevent event="WarriorWave">00:13:30</timerevent>
+		</events>
+		<hideonui>false</hideonui>
+	</timer>
+	<canplaycoop>false</canplaycoop>
+	<cooprequired>false</cooprequired>
+	<ranked>false</ranked>
+	<alliance>eAllianceNone</alliance>
+	<questtype>RandomMap</questtype>
+	<description>$$599$$</description>
+	<completiontext>$$600$$</completiontext>
+	<inprogresstext>$$1521$$</inprogresstext>
+	<summarytext>$$1522$$</summarytext>
+	<canabandon>true</canabandon>
+	<hiddenquest>false</hiddenquest>
+	<friendonly>false</friendonly>
+	<suppressnotifications>false</suppressnotifications>
+	<customquest>false</customquest>
+	<questgamemodetype>Normal</questgamemodetype>
+	<prereqs>
+		<values>
+			<civilization>
+				<id>3</id>
+			</civilization>
+			<questcomplete>
+				<id>330</id>
+			</questcomplete>
+		</values>
+	</prereqs>
+	<equipmentprereqs/>
+	<targets>
+		<grouping>
+			<cooponly>false</cooponly>
+			<forcetocenter>false</forcetocenter>
+			<name>Player1</name>
+			<count>1</count>
+			<team>1</team>
+			<area>Player1</area>
+			<groupfilename>C02\Custom\C02_Side_NapataConquered</groupfilename>
+			<rottype>Rotate0</rottype>
+			<rotateunitorientations>false</rotateunitorientations>
+		</grouping>
+		<grouping>
+			<cooponly>false</cooponly>
+			<forcetocenter>false</forcetocenter>
+			<name>MakePlayer1Nubian</name>
+			<count>1</count>
+			<team>1</team>
+			<area>Player1</area>
+			<groupfilename>C02\Custom\C02_Side_MakeNubian</groupfilename>
+			<rottype>Rotate0</rottype>
+			<rotateunitorientations>false</rotateunitorientations>
+		</grouping>
+		<grouping>
+			<cooponly>true</cooponly>
+			<forcetocenter>false</forcetocenter>
+			<name>Player2</name>
+			<count>1</count>
+			<team>4</team>
+			<area>Player2</area>
+			<groupfilename>Shared_Start_Small</groupfilename>
+			<rottype>Rotate0</rottype>
+			<rotateunitorientations>false</rotateunitorientations>
+		</grouping>
+		<grouping>
+			<cooponly>false</cooponly>
+			<forcetocenter>false</forcetocenter>
+			<name>Nubian1</name>
+			<count>1</count>
+			<team>2</team>
+			<area>Quest_Area_A</area>
+			<groupfilename>C02\Nubian\C02_Nubian_TowersBase</groupfilename>
+			<rottype>RotateRandom</rottype>
+			<rotateunitorientations>false</rotateunitorientations>
+		</grouping>
+		<grouping>
+			<cooponly>false</cooponly>
+			<forcetocenter>false</forcetocenter>
+			<name>Nubian2</name>
+			<count>1</count>
+			<team>3</team>
+			<area>Quest_Area_B</area>
+			<groupfilename>C02\Nubian\C02_Nubian_TowersBase</groupfilename>
+			<rottype>RotateRandom</rottype>
+			<rotateunitorientations>false</rotateunitorientations>
+		</grouping>
+		<protounit>
+			<cooponly>false</cooponly>
+			<forcetocenter>false</forcetocenter>
+			<name>revealer</name>
+			<protoname>Qst_RevealerHuge</protoname>
+			<count>1</count>
+			<team>2</team>
+			<area>Player1</area>
+			<usequesttargetindicator>false</usequesttargetindicator>
+		</protounit>
+	</targets>
+	<objectives id="0" mustfailall="false">
+		<values>
+			<or id="1" mustfailall="false">
+				<values>
+					<timer id="2">
+						<description>$$2471$$</description>
+						<failonexpire>false</failonexpire>
+					</timer>
+					<protectunit id="3">
+						<description>$$2472$$</description>
+						<type>NPC_Nubian_TownCenter</type>
+						<owningplayerid>1</owningplayerid>
+					</protectunit>
+					<reduceunitsto id="4">
+						<type>LogicalTypeNeededForVictory</type>
+						<count>0</count>
+						<includeteam>true</includeteam>
+						<includeunderconstruction>false</includeunderconstruction>
+						<canuncomplete>false</canuncomplete>
+						<causesfailure>false</causesfailure>
+						<playerid>2</playerid>
+					</reduceunitsto>
+				</values>
+			</or>
+		</values>
+	</objectives>
+	<onaccept/>
+	<timereffects event="ArcherWave">
+		<spawnunit visible="false">
+			<count>4</count>
+			<placeunittype>NPC_Nubian_Archer</placeunittype>
+			<asplayer>2</asplayer>
+			<spawntype>SpawnForPlayer</spawntype>
+			<nearunittype>NPC_Nubian_TownCenter</nearunittype>
+			<radius>10</radius>
+			<useboneposition>false</useboneposition>
+			<overrides/>
+		</spawnunit>
+	</timereffects>
+	<timereffects event="WarriorWave">
+		<spawnunit visible="false">
+			<count>8</count>
+			<placeunittype>NPC_Nubian_Warrior</placeunittype>
+			<asplayer>3</asplayer>
+			<spawntype>SpawnForPlayer</spawntype>
+			<nearunittype>NPC_Nubian_TownCenter</nearunittype>
+			<radius>10</radius>
+			<useboneposition>false</useboneposition>
+			<overrides/>
+		</spawnunit>
+	</timereffects>
+	<timereffects event="CamelWave">
+		<spawnunit visible="false">
+			<count>8</count>
+			<placeunittype>Eg_Cav_CamelRider</placeunittype>
+			<asplayer>2</asplayer>
+			<spawntype>SpawnForAllies</spawntype>
+			<nearunittype>NPC_Nubian_TownCenter</nearunittype>
+			<radius>10</radius>
+			<useboneposition>false</useboneposition>
+			<overrides/>
+		</spawnunit>
+	</timereffects>
+	<timereffects event="ElephantWave">
+		<spawnunit visible="false">
+			<count>3</count>
+			<placeunittype>NPC_Nubian_Elephant</placeunittype>
+			<asplayer>3</asplayer>
+			<spawntype>SpawnForAllies</spawntype>
+			<nearunittype>NPC_Nubian_TownCenter</nearunittype>
+			<radius>10</radius>
+			<useboneposition>false</useboneposition>
+			<overrides/>
+		</spawnunit>
+	</timereffects>
+	<rewards visible="true">
+		<xp visible="true">
+			1
+			<lookuptable>SQMedium</lookuptable>
+		</xp>
+		<capitalresource visible="true">
+			<capitalresource>cCapResCoin</capitalresource>
+			<amount>1</amount>
+			<lookuptable>SQMedium</lookuptable>
+		</capitalresource>
+		<loottable visible="true">general</loottable>
+		<loottable visible="true">general</loottable>
+	</rewards>
+	<playersettings id="1">
+		<team>1</team>
+		<color>1</color>
+		<tributablebehavior>Default</tributablebehavior>
+		<playertype>Human</playertype>
+		<cooponly>false</cooponly>
+		<startingfood>500</startingfood>
+		<startingwood>500</startingwood>
+		<startinggold>500</startinggold>
+		<startingstone>500</startingstone>
+		<aislidervariables/>
+		<aiflagvariables/>
+	</playersettings>
+	<playersettings id="2">
+		<team>2</team>
+		<color>2</color>
+		<tributablebehavior>Default</tributablebehavior>
+		<playertype>Computer</playertype>
+		<personality>$$2261$$</personality>
+		<script>CORE\Rush_Moderate</script>
+		<dataset>C02\C02_Nubian_T2</dataset>
+		<cooponly>false</cooponly>
+		<startingfood>-1</startingfood>
+		<startingwood>-1</startingwood>
+		<startinggold>-1</startinggold>
+		<startingstone>-1</startingstone>
+		<aislidervariables>
+			<aivariable>
+				<key>EconomyHandicap</key>
+				<value>-0.2</value>
+			</aivariable>
+			<aivariable>
+				<key>ArcherBias</key>
+				<value>-1</value>
+			</aivariable>
+		</aislidervariables>
+		<aiflagvariables>
+			<aivariable>
+				<key>UseWaves</key>
+				<value>0</value>
+			</aivariable>
+		</aiflagvariables>
+	</playersettings>
+	<playersettings id="3">
+		<team>2</team>
+		<color>2</color>
+		<tributablebehavior>Default</tributablebehavior>
+		<playertype>Computer</playertype>
+		<personality>$$2261$$</personality>
+		<script>CORE\Rush_Moderate</script>
+		<dataset>C02\C02_Nubian_T2</dataset>
+		<cooponly>false</cooponly>
+		<startingfood>-1</startingfood>
+		<startingwood>-1</startingwood>
+		<startinggold>-1</startinggold>
+		<startingstone>-1</startingstone>
+		<aislidervariables>
+			<aivariable>
+				<key>EconomyHandicap</key>
+				<value>-0.2</value>
+			</aivariable>
+			<aivariable>
+				<key>InfantryBias</key>
+				<value>-1</value>
+			</aivariable>
+		</aislidervariables>
+		<aiflagvariables>
+			<aivariable>
+				<key>UseWaves</key>
+				<value>0</value>
+			</aivariable>
+		</aiflagvariables>
+	</playersettings>
+	<playersettings id="4">
+		<team>1</team>
+		<color>7</color>
+		<tributablebehavior>Default</tributablebehavior>
+		<playertype>Human</playertype>
+		<cooponly>true</cooponly>
+		<startingfood>500</startingfood>
+		<startingwood>500</startingwood>
+		<startinggold>500</startinggold>
+		<startingstone>500</startingstone>
+		<aislidervariables/>
+		<aiflagvariables/>
+	</playersettings>
+	<diplomacysettings/>
+	<randommap>
+		<map>Core\C02\C02_MultiUse_Napata</map>
+		<randommap>true</randommap>
+		<numplayers>4</numplayers>
+		<mapvariables>
+			<variable name="region" type="String">Egyptian Rock</variable>
+			<variable name="lighting" type="String">Afternoon</variable>
+			<variable name="mapSize" type="String">Large</variable>
+		</mapvariables>
+		<nuggetoverrides/>
+		<mapregionname>Egyptian Rock</mapregionname>
+		<lightsetname>Afternoon</lightsetname>
+		<mapsizename>Large</mapsizename>
+	</randommap>
+	<questgivers>
+		<protounit>C02_R2_ChieftainMolmot</protounit>
+	</questgivers>
+	<questreturners>
+		<protounit>C02_R2_ChieftainMolmot</protounit>
+	</questreturners>
+	<maplocationx>0.5</maplocationx>
+	<maplocationy>0.73</maplocationy>
+	<mapmarker>QuestDefault</mapmarker>
+	<mappage>Nubia</mappage>
+	<elitespawnchance>0</elitespawnchance>
+	<linkedquestid>0</linkedquestid>
+	<questbasescale>0</questbasescale>
+	<victoryconditions/>
+</quest>

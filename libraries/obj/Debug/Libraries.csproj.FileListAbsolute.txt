@@ -1,0 +1,16 @@
+D:\Development\server\libraries\bin\Debug\Libraries.dll
+D:\Development\server\libraries\bin\Debug\Libraries.pdb
+D:\Development\server\libraries\bin\Debug\Ionic.Zip.dll
+D:\Development\server\libraries\bin\Debug\SuperSocket.Common.dll
+D:\Development\server\libraries\bin\Debug\SuperSocket.Facility.dll
+D:\Development\server\libraries\bin\Debug\SuperSocket.SocketBase.dll
+D:\Development\server\libraries\bin\Debug\SuperSocket.Common.xml
+D:\Development\server\libraries\bin\Debug\SuperSocket.Facility.xml
+D:\Development\server\libraries\bin\Debug\SuperSocket.SocketBase.xml
+D:\Development\server\libraries\obj\Debug\Libraries.csprojResolveAssemblyReference.cache
+D:\Development\server\libraries\obj\Debug\Libraries.dll
+D:\Development\server\libraries\obj\Debug\Libraries.pdb
+D:\Development\server\libraries\bin\Debug\log4net.dll
+D:\Development\server\libraries\bin\Debug\log4net.xml
+D:\Development\server\libraries\bin\Debug\Newtonsoft.Json.dll
+D:\Development\server\libraries\bin\Debug\Newtonsoft.Json.xml

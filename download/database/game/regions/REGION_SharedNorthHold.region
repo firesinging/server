@@ -1,0 +1,19 @@
+<?xml version="1.0"?>
+<Region xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xsd="http://www.w3.org/2001/XMLSchema" ID="24">
+  <Name>Northern Hold</Name>
+  <CivID>24</CivID>
+  <MapName>Regions/REGION_SharedNorthHold</MapName>
+  <MapLocationX>0.65</MapLocationX>
+  <MapLocationY>0.8</MapLocationY>
+  <MapMarker>RegionDefault</MapMarker>
+  <MapPage>Norse</MapPage>
+  <LoadScreen>UserInterface\LoadingScreens\NorseInvasionLoading_df</LoadScreen>
+  <DescriptionStringID>67966</DescriptionStringID>
+  <DisplayNameStringID>67965</DisplayNameStringID>
+  <AvatarShield>UserInterface\Avatar\RegionShieldNorthHold_ua</AvatarShield>
+  <FlagIcon>UserInterface\Icons\Regions\RegionFlagArgos_ua</FlagIcon>
+</Region>
+
+
+
+

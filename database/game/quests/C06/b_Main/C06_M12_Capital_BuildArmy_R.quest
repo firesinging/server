@@ -1,0 +1,282 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<quest xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xsd="http://www.w3.org/2001/XMLSchema" uniqueid="16601" version="29">
+	<displayname>$$10340$$</displayname>
+	<level>-1</level>
+	<difficultycoloroverride>1</difficultycoloroverride>
+	<repeatable>true</repeatable>
+	<offertype>eOfferNone</offertype>
+	<timer>
+		<time>00:25:00</time>
+		<events/>
+		<hideonui>false</hideonui>
+	</timer>
+	<canplaycoop>false</canplaycoop>
+	<cooprequired>false</cooprequired>
+	<ranked>false</ranked>
+	<alliance>eAllianceNone</alliance>
+	<questtype>RandomMap</questtype>
+	<description>$$10920$$</description>
+	<completiontext>$$10450$$</completiontext>
+	<inprogresstext>$$10913$$</inprogresstext>
+	<summarytext>$$7678$$</summarytext>
+	<repeatableduration>12</repeatableduration>
+	<canabandon>true</canabandon>
+	<hiddenquest>false</hiddenquest>
+	<friendonly>false</friendonly>
+	<suppressnotifications>false</suppressnotifications>
+	<customquest>false</customquest>
+	<questgamemodetype>Normal</questgamemodetype>
+	<prereqs>
+		<values>
+			<civilization>
+				<id>22</id>
+			</civilization>
+			<questcomplete>
+				<id>16610</id>
+			</questcomplete>
+			<level>
+				<min>20</min>
+				<max>99</max>
+			</level>
+		</values>
+	</prereqs>
+	<equipmentprereqs/>
+	<targets>
+		<grouping>
+			<cooponly>false</cooponly>
+			<forcetocenter>false</forcetocenter>
+			<name>Player 1</name>
+			<count>1</count>
+			<team>1</team>
+			<area>Player1</area>
+			<groupfilename>shared_player1_age2_barrackstowers</groupfilename>
+			<rottype>Rotate0</rottype>
+			<rotateunitorientations>true</rotateunitorientations>
+		</grouping>
+	</targets>
+	<objectives id="0" mustfailall="false">
+		<values>
+			<or id="1" mustfailall="false">
+				<values>
+					<timer id="2">
+						<description>$$2471$$</description>
+						<failonexpire>true</failonexpire>
+					</timer>
+					<and id="3" mustfailall="false">
+						<values>
+							<dummy id="4">
+								<objectivename>CompletePrimary</objectivename>
+								<autocomplete>false</autocomplete>
+							</dummy>
+							<population id="5">
+								<description>$$2460$$</description>
+								<currentgoal>200</currentgoal>
+								<capgoal>1</capgoal>
+							</population>
+						</values>
+					</and>
+					<and id="6" mustfailall="true">
+						<values>
+							<reduceunitsto id="7">
+								<type>AbstractTownCenter</type>
+								<count>0</count>
+								<includeteam>false</includeteam>
+								<includeunderconstruction>false</includeunderconstruction>
+								<canuncomplete>false</canuncomplete>
+								<causesfailure>true</causesfailure>
+								<playerid>1</playerid>
+							</reduceunitsto>
+							<reduceunitsto id="8">
+								<type>UnitTypeVillager1</type>
+								<count>0</count>
+								<includeteam>false</includeteam>
+								<includeunderconstruction>false</includeunderconstruction>
+								<canuncomplete>false</canuncomplete>
+								<causesfailure>true</causesfailure>
+								<playerid>1</playerid>
+							</reduceunitsto>
+						</values>
+					</and>
+				</values>
+			</or>
+		</values>
+	</objectives>
+	<secondaryobjectives id="9" mustfailall="false" rewardname="Optional">
+		<description>$$9658$$</description>
+		<values>
+			<or id="10" mustfailall="false">
+				<values>
+					<timer id="11">
+						<description>$$2471$$</description>
+						<failonexpire>true</failonexpire>
+					</timer>
+					<dummy id="12">
+						<objectivename>CompleteSecondary</objectivename>
+						<autocomplete>false</autocomplete>
+					</dummy>
+					<ownsunit id="13">
+						<description>$$2369$$</description>
+						<type>UnitTypeVillager1</type>
+						<count>100</count>
+						<owningplayerid>1</owningplayerid>
+						<causesfailure>false</causesfailure>
+					</ownsunit>
+				</values>
+			</or>
+		</values>
+	</secondaryobjectives>
+	<onaccept/>
+	<rewards visible="true">
+		<xp visible="true">
+			1
+			<lookuptable>SQMedium</lookuptable>
+		</xp>
+		<capitalresource visible="true">
+			<capitalresource>cCapResCoin</capitalresource>
+			<amount>1</amount>
+			<lookuptable>SQMedium</lookuptable>
+		</capitalresource>
+		<loottable visible="true">general</loottable>
+		<or visible="true">
+			<trait visible="true">
+				Spear1H_R003
+				<traitlevel>23</traitlevel>
+			</trait>
+			<trait visible="true">
+				Spear2H_R004
+				<traitlevel>23</traitlevel>
+			</trait>
+			<trait visible="true">
+				Gear_Siege_R003
+				<traitlevel>23</traitlevel>
+			</trait>
+			<trait visible="true">
+				RamHead2H_R003
+				<traitlevel>23</traitlevel>
+			</trait>
+			<trait visible="true">
+				Gear_Prst_R002
+				<traitlevel>23</traitlevel>
+			</trait>
+			<trait visible="true">
+				FishingNet1H_R001
+				<traitlevel>23</traitlevel>
+			</trait>
+			<trait visible="true">
+				Ballista2H_R001
+				<traitlevel>23</traitlevel>
+			</trait>
+			<trait visible="true">
+				ArmorBldg_R003
+				<traitlevel>23</traitlevel>
+			</trait>
+			<trait visible="true">
+				Shield1H_R006
+				<traitlevel>23</traitlevel>
+			</trait>
+			<advisor visible="true">Herakleides_C_II</advisor>
+			<advisor visible="true">Onesiphoros_C_III</advisor>
+			<loottable visible="true">general</loottable>
+		</or>
+	</rewards>
+	<secondaryrewards visible="true" name="Optional">
+		<capitalresource visible="true">
+			<capitalresource>cCapResCoin</capitalresource>
+			<amount>1</amount>
+			<lookuptable>OptCoin</lookuptable>
+		</capitalresource>
+		<loottable visible="true">general</loottable>
+	</secondaryrewards>
+	<playersettings id="1">
+		<team>1</team>
+		<color>1</color>
+		<tributablebehavior>Default</tributablebehavior>
+		<playertype>Human</playertype>
+		<cooponly>false</cooponly>
+		<startingfood>1000</startingfood>
+		<startingwood>1000</startingwood>
+		<startinggold>1000</startinggold>
+		<startingstone>500</startingstone>
+		<aislidervariables/>
+		<aiflagvariables/>
+	</playersettings>
+	<playersettings id="2">
+		<team>2</team>
+		<color>2</color>
+		<tributablebehavior>Default</tributablebehavior>
+		<playertype>Computer</playertype>
+		<personality>$$10338$$</personality>
+		<script/>
+		<dataset>C03\C03_CoreRushAllLevels</dataset>
+		<cooponly>false</cooponly>
+		<startingfood>0</startingfood>
+		<startingwood>0</startingwood>
+		<startinggold>0</startinggold>
+		<startingstone>0</startingstone>
+		<aislidervariables/>
+		<aiflagvariables/>
+	</playersettings>
+	<playersettings id="3">
+		<team>2</team>
+		<color>2</color>
+		<tributablebehavior>Default</tributablebehavior>
+		<playertype>Computer</playertype>
+		<personality>$$10338$$</personality>
+		<script/>
+		<dataset>C02\C02_CoreRushAllLevels</dataset>
+		<cooponly>false</cooponly>
+		<startingfood>0</startingfood>
+		<startingwood>0</startingwood>
+		<startinggold>0</startinggold>
+		<startingstone>0</startingstone>
+		<aislidervariables/>
+		<aiflagvariables/>
+	</playersettings>
+	<playersettings id="4">
+		<team>2</team>
+		<color>2</color>
+		<tributablebehavior>Default</tributablebehavior>
+		<playertype>Computer</playertype>
+		<personality>$$10338$$</personality>
+		<script/>
+		<dataset>C06\C06_CoreRushAllLevels</dataset>
+		<cooponly>false</cooponly>
+		<startingfood>0</startingfood>
+		<startingwood>0</startingwood>
+		<startinggold>0</startinggold>
+		<startingstone>0</startingstone>
+		<aislidervariables/>
+		<aiflagvariables/>
+	</playersettings>
+	<diplomacysettings/>
+	<randommap>
+		<map>Core\Shared\Shared_BuildArmy</map>
+		<randommap>true</randommap>
+		<numplayers>4</numplayers>
+		<mapvariables>
+			<variable name="scenarioFile" type="String">Shared\Shared_BuildArmy</variable>
+			<variable name="QuestID" type="Int">16601</variable>
+			<variable name="region" type="String">Meso Valley</variable>
+			<variable name="lighting" type="String">Morning</variable>
+		</mapvariables>
+		<nuggetoverrides/>
+		<mapregionname>Meso Valley</mapregionname>
+		<lightsetname>Morning</lightsetname>
+		<mapsizename>&lt;Not Specified&gt;</mapsizename>
+	</randommap>
+	<questgivers>
+		<protounit>C06_R1_Leader</protounit>
+	</questgivers>
+	<questreturners>
+		<protounit>C06_R1_Leader</protounit>
+	</questreturners>
+	<maplocationx>0.31</maplocationx>
+	<maplocationy>0.75</maplocationy>
+	<mapmarker>QuestRepeatable</mapmarker>
+	<mappage>Persia</mappage>
+	<elitespawnchance>0</elitespawnchance>
+	<linkedquestid>16801</linkedquestid>
+	<questbasescale>3</questbasescale>
+	<victoryconditions/>
+</quest>

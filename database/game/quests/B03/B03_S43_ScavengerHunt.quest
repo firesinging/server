@@ -1,0 +1,258 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<quest xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xsd="http://www.w3.org/2001/XMLSchema" uniqueid="103043" version="49">
+	<displayname>$$10244$$</displayname>
+	<level>-1</level>
+	<repeatable>false</repeatable>
+	<offertype>eOfferBooster3</offertype>
+	<timer>
+		<time>00:05:00</time>
+		<events/>
+		<hideonui>false</hideonui>
+	</timer>
+	<canplaycoop>false</canplaycoop>
+	<cooprequired>false</cooprequired>
+	<ranked>false</ranked>
+	<alliance>eAllianceNone</alliance>
+	<questtype>RandomMap</questtype>
+	<description>$$11934$$</description>
+	<completiontext>$$11935$$</completiontext>
+	<inprogresstext>$$11933$$</inprogresstext>
+	<summarytext>$$10774$$</summarytext>
+	<repeatableduration>0</repeatableduration>
+	<canabandon>true</canabandon>
+	<hiddenquest>false</hiddenquest>
+	<friendonly>false</friendonly>
+	<suppressnotifications>false</suppressnotifications>
+	<customquest>false</customquest>
+	<questgamemodetype>Normal</questgamemodetype>
+	<prereqs>
+		<values>
+			<or>
+				<values>
+					<queststatus>
+						<id>103040</id>
+						<queststatus>Assigned</queststatus>
+					</queststatus>
+					<questcomplete>
+						<id>103040</id>
+					</questcomplete>
+				</values>
+			</or>
+		</values>
+	</prereqs>
+	<equipmentprereqs/>
+	<targets>
+		<protounit>
+			<cooponly>false</cooponly>
+			<forcetocenter>false</forcetocenter>
+			<name>BabylonS47_TikiEnemy1</name>
+			<protoname>BabylonS47_TikiEnemy1_1</protoname>
+			<count>80</count>
+			<team>2</team>
+			<area>Quest_Area_A</area>
+			<overrides parent="NPC_SH_TikiSpearman">
+				<maxhitpoints>1</maxhitpoints>
+				<initialhitpoints>1</initialhitpoints>
+				<visualscale>0.75</visualscale>
+				<los>15</los>
+			</overrides>
+			<usequesttargetindicator>false</usequesttargetindicator>
+		</protounit>
+		<protounit>
+			<cooponly>false</cooponly>
+			<forcetocenter>false</forcetocenter>
+			<name>BabylonS47_TikiEnemy2</name>
+			<protoname>BabylonS47_TikiEnemy2_1</protoname>
+			<count>80</count>
+			<team>2</team>
+			<area>Quest_Area_B</area>
+			<overrides parent="NPC_SH_TikiSpearman">
+				<maxhitpoints>1</maxhitpoints>
+				<initialhitpoints>1</initialhitpoints>
+				<visualscale>0.75</visualscale>
+				<los>15</los>
+			</overrides>
+			<usequesttargetindicator>false</usequesttargetindicator>
+		</protounit>
+		<protounit>
+			<cooponly>false</cooponly>
+			<forcetocenter>false</forcetocenter>
+			<name>BabylonS47_TikiEnemy3</name>
+			<protoname>BabylonS47_TikiEnemy3_1</protoname>
+			<count>80</count>
+			<team>2</team>
+			<area>Quest_Area_C</area>
+			<overrides parent="NPC_SH_TikiSpearman">
+				<maxhitpoints>1</maxhitpoints>
+				<initialhitpoints>1</initialhitpoints>
+				<visualscale>0.75</visualscale>
+				<los>15</los>
+			</overrides>
+			<usequesttargetindicator>false</usequesttargetindicator>
+		</protounit>
+		<protounit>
+			<cooponly>false</cooponly>
+			<forcetocenter>false</forcetocenter>
+			<name>BabylonS47_TikiEnemy4</name>
+			<protoname>BabylonS47_TikiEnemy4_1</protoname>
+			<count>80</count>
+			<team>2</team>
+			<area>Quest_Area_D</area>
+			<overrides parent="NPC_SH_TikiSpearman">
+				<maxhitpoints>1</maxhitpoints>
+				<initialhitpoints>1</initialhitpoints>
+				<visualscale>0.75</visualscale>
+				<los>15</los>
+			</overrides>
+			<usequesttargetindicator>false</usequesttargetindicator>
+		</protounit>
+		<protounit>
+			<cooponly>false</cooponly>
+			<forcetocenter>false</forcetocenter>
+			<name>BabylonS47_TikiEnemy5</name>
+			<protoname>BabylonS47_TikiEnemy5_1</protoname>
+			<count>80</count>
+			<team>2</team>
+			<area>Quest_Area_E</area>
+			<overrides parent="NPC_SH_TikiSpearman">
+				<maxhitpoints>1</maxhitpoints>
+				<initialhitpoints>1</initialhitpoints>
+				<visualscale>0.75</visualscale>
+				<los>15</los>
+			</overrides>
+			<usequesttargetindicator>false</usequesttargetindicator>
+		</protounit>
+	</targets>
+	<objectives id="0" mustfailall="false">
+		<values>
+			<or id="1" mustfailall="false">
+				<description/>
+				<values>
+					<and id="2" mustfailall="false">
+						<values>
+							<unitdiscovered id="3">
+								<description>$$11936$$</description>
+								<type>NPC_SH_TikiPriestess</type>
+								<count>5</count>
+							</unitdiscovered>
+							<collectmaterial id="4">
+								<description>$$10650$$</description>
+								<type>SH_Umbrella</type>
+								<amount>5</amount>
+								<includeexisting>false</includeexisting>
+							</collectmaterial>
+						</values>
+					</and>
+					<timer id="5">
+						<description>$$2471$$</description>
+						<failonexpire>true</failonexpire>
+					</timer>
+					<reduceunitsto id="6">
+						<type>LogicalTypeNeededForVictory</type>
+						<count>0</count>
+						<includeteam>false</includeteam>
+						<includeunderconstruction>false</includeunderconstruction>
+						<canuncomplete>false</canuncomplete>
+						<causesfailure>true</causesfailure>
+						<playerid>1</playerid>
+					</reduceunitsto>
+				</values>
+			</or>
+		</values>
+	</objectives>
+	<onaccept/>
+	<rewards visible="true">
+		<xp visible="true">
+			1
+			<lookuptable>SQShort</lookuptable>
+		</xp>
+		<capitalresource visible="true">
+			<capitalresource>cCapResCoin</capitalresource>
+			<amount>1</amount>
+			<lookuptable>SQShort</lookuptable>
+		</capitalresource>
+		<loottable visible="true">general</loottable>
+	</rewards>
+	<playersettings id="1">
+		<team>1</team>
+		<color>1</color>
+		<tributablebehavior>Default</tributablebehavior>
+		<playertype>Human</playertype>
+		<cooponly>false</cooponly>
+		<startingfood>0</startingfood>
+		<startingwood>0</startingwood>
+		<startinggold>0</startinggold>
+		<startingstone>0</startingstone>
+		<aislidervariables/>
+		<aiflagvariables/>
+	</playersettings>
+	<playersettings id="2">
+		<team>2</team>
+		<color>2</color>
+		<tributablebehavior>Default</tributablebehavior>
+		<playertype>Computer</playertype>
+		<personality>$$11930$$</personality>
+		<dataset>c02\c02_vanilla_t0</dataset>
+		<cooponly>false</cooponly>
+		<startingfood>0</startingfood>
+		<startingwood>0</startingwood>
+		<startinggold>0</startinggold>
+		<startingstone>0</startingstone>
+		<aislidervariables/>
+		<aiflagvariables/>
+	</playersettings>
+	<playersettings id="3">
+		<team>3</team>
+		<color>2</color>
+		<tributablebehavior>Default</tributablebehavior>
+		<playertype>Computer</playertype>
+		<personality>$$11930$$</personality>
+		<dataset>c02\c02_vanilla_t0</dataset>
+		<cooponly>false</cooponly>
+		<startingfood>0</startingfood>
+		<startingwood>0</startingwood>
+		<startinggold>0</startinggold>
+		<startingstone>0</startingstone>
+		<aislidervariables/>
+		<aiflagvariables/>
+	</playersettings>
+	<diplomacysettings>
+		<diplomacy relation="Neutral" team1="1" team2="3" sharedlos="false"/>
+		<diplomacy relation="Neutral" team1="2" team2="3" sharedlos="false"/>
+		<diplomacy relation="Neutral" team1="3" team2="1" sharedlos="false"/>
+		<diplomacy relation="Neutral" team1="3" team2="2" sharedlos="false"/>
+	</diplomacysettings>
+	<randommap>
+		<map>Core\Shared_Babylon\Babylon_S43_SH_TempleLoom</map>
+		<randommap>true</randommap>
+		<numplayers>3</numplayers>
+		<mapvariables>
+			<variable name="scenarioFile" type="String">Shared_Babylon/Babylon_S43_SH_TempleLoom</variable>
+			<variable name="RestrictNuggetScaling" type="Bool">true</variable>
+			<variable name="region" type="String">Egyptian Marsh</variable>
+			<variable name="lighting" type="String">Morning</variable>
+			<variable name="mapSize" type="String">Standard</variable>
+		</mapvariables>
+		<nuggetoverrides>
+			<nuggetoverride overrideweight="-1">Quest_BabylonSH47_TikiTempleNugget</nuggetoverride>
+		</nuggetoverrides>
+		<mapregionname>Egyptian Marsh</mapregionname>
+		<lightsetname>Morning</lightsetname>
+		<mapsizename>Standard</mapsizename>
+	</randommap>
+	<questgivers>
+		<protounit>Babylon_NewFactionLady</protounit>
+	</questgivers>
+	<questreturners>
+		<protounit>Babylon_NewFactionLady</protounit>
+	</questreturners>
+	<maplocationx>0.485</maplocationx>
+	<maplocationy>0.65</maplocationy>
+	<mapmarker>QuestDefault</mapmarker>
+	<mappage>Egypt</mappage>
+	<elitespawnchance>0</elitespawnchance>
+	<linkedquestid>0</linkedquestid>
+	<questbasescale>0</questbasescale>
+	<victoryconditions/>
+</quest>

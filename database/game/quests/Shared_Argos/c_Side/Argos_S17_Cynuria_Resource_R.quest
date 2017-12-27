@@ -1,0 +1,286 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<quest xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xsd="http://www.w3.org/2001/XMLSchema" uniqueid="192" version="56">
+	<displayname>$$898$$</displayname>
+	<level>-1</level>
+	<repeatable>true</repeatable>
+	<offertype>eOfferNone</offertype>
+	<timer>
+		<time>00:25:00</time>
+		<events/>
+		<hideonui>false</hideonui>
+	</timer>
+	<canplaycoop>false</canplaycoop>
+	<cooprequired>false</cooprequired>
+	<ranked>false</ranked>
+	<alliance>eAllianceNone</alliance>
+	<questtype>RandomMap</questtype>
+	<description>$$899$$</description>
+	<completiontext>$$4199$$</completiontext>
+	<inprogresstext>$$1698$$</inprogresstext>
+	<summarytext>$$4198$$</summarytext>
+	<repeatableduration>12</repeatableduration>
+	<canabandon>true</canabandon>
+	<hiddenquest>false</hiddenquest>
+	<friendonly>false</friendonly>
+	<suppressnotifications>false</suppressnotifications>
+	<customquest>false</customquest>
+	<questgamemodetype>Normal</questgamemodetype>
+	<prereqs>
+		<values>
+			<questcomplete>
+				<id>81</id>
+			</questcomplete>
+			<questcomplete>
+				<id>186</id>
+			</questcomplete>
+			<questcomplete>
+				<id>189</id>
+			</questcomplete>
+			<questcomplete>
+				<id>187</id>
+			</questcomplete>
+			<questcomplete>
+				<id>191</id>
+			</questcomplete>
+			<questcomplete>
+				<id>188</id>
+			</questcomplete>
+			<questcomplete>
+				<id>190</id>
+			</questcomplete>
+		</values>
+	</prereqs>
+	<equipmentprereqs/>
+	<targets>
+		<grouping>
+			<cooponly>false</cooponly>
+			<forcetocenter>false</forcetocenter>
+			<name>Player</name>
+			<count>1</count>
+			<team>1</team>
+			<area>Player1</area>
+			<groupfilename>Shared_Player1_Age2_BarracksTowers</groupfilename>
+			<rottype>Rotate0</rottype>
+			<rotateunitorientations>false</rotateunitorientations>
+		</grouping>
+		<random placeatleast="1" placenomore="1">
+			<cooponly>false</cooponly>
+			<forcetocenter>false</forcetocenter>
+			<unitprobability/>
+			<targets>
+				<grouping>
+					<cooponly>false</cooponly>
+					<forcetocenter>false</forcetocenter>
+					<name>Enemy_A</name>
+					<count>1</count>
+					<team>2</team>
+					<area>Quest_Area_A</area>
+					<groupfilename>Shared_Start_Barracks</groupfilename>
+					<rottype>RotateRandom</rottype>
+					<rotateunitorientations>false</rotateunitorientations>
+				</grouping>
+				<grouping>
+					<cooponly>false</cooponly>
+					<forcetocenter>false</forcetocenter>
+					<name>Enemy_B</name>
+					<count>1</count>
+					<team>2</team>
+					<area>Quest_Area_B</area>
+					<groupfilename>Shared_Start_Barracks</groupfilename>
+					<rottype>RotateRandom</rottype>
+					<rotateunitorientations>false</rotateunitorientations>
+				</grouping>
+				<grouping>
+					<cooponly>false</cooponly>
+					<forcetocenter>false</forcetocenter>
+					<name>Enemy_C</name>
+					<count>1</count>
+					<team>2</team>
+					<area>Quest_Area_C</area>
+					<groupfilename>Shared_Start_Barracks</groupfilename>
+					<rottype>RotateRandom</rottype>
+					<rotateunitorientations>false</rotateunitorientations>
+				</grouping>
+				<grouping>
+					<cooponly>false</cooponly>
+					<forcetocenter>false</forcetocenter>
+					<name>Enemy_D</name>
+					<count>1</count>
+					<team>2</team>
+					<area>Quest_Area_D</area>
+					<groupfilename>Shared_Start_Barracks</groupfilename>
+					<rottype>RotateRandom</rottype>
+					<rotateunitorientations>false</rotateunitorientations>
+				</grouping>
+			</targets>
+		</random>
+	</targets>
+	<objectives id="0" mustfailall="false">
+		<values>
+			<or id="1" mustfailall="false">
+				<values>
+					<timer id="2">
+						<description>$$2471$$</description>
+						<failonexpire>true</failonexpire>
+					</timer>
+					<and id="3" mustfailall="false">
+						<values>
+							<collectresource id="4">
+								<description>$$2597$$</description>
+								<type>Food</type>
+								<amount>3000</amount>
+								<includeexisting>true</includeexisting>
+							</collectresource>
+							<collectresource id="5">
+								<description>$$2695$$</description>
+								<type>Wood</type>
+								<amount>3000</amount>
+								<includeexisting>true</includeexisting>
+							</collectresource>
+							<collectresource id="6">
+								<description>$$2696$$</description>
+								<type>Stone</type>
+								<amount>3000</amount>
+								<includeexisting>true</includeexisting>
+							</collectresource>
+						</values>
+					</and>
+					<and id="7" mustfailall="true">
+						<values>
+							<reduceunitsto id="8">
+								<type>AbstractTownCenter</type>
+								<count>0</count>
+								<includeteam>false</includeteam>
+								<includeunderconstruction>false</includeunderconstruction>
+								<canuncomplete>false</canuncomplete>
+								<causesfailure>true</causesfailure>
+								<playerid>1</playerid>
+							</reduceunitsto>
+							<reduceunitsto id="9">
+								<type>UnitTypeVillager1</type>
+								<count>0</count>
+								<includeteam>false</includeteam>
+								<includeunderconstruction>false</includeunderconstruction>
+								<canuncomplete>false</canuncomplete>
+								<causesfailure>true</causesfailure>
+								<playerid>1</playerid>
+							</reduceunitsto>
+						</values>
+					</and>
+				</values>
+			</or>
+		</values>
+	</objectives>
+	<secondaryobjectives id="10" mustfailall="false" rewardname="Optional">
+		<description>$$9658$$</description>
+		<values>
+			<or id="11" mustfailall="false">
+				<values>
+					<dummy id="12">
+						<description>$$3707$$</description>
+						<objectivename>Optional</objectivename>
+						<autocomplete>false</autocomplete>
+					</dummy>
+					<reduceunitsto id="13">
+						<type>UnitTypeBldgTownCenter</type>
+						<count>0</count>
+						<includeteam>false</includeteam>
+						<includeunderconstruction>false</includeunderconstruction>
+						<canuncomplete>false</canuncomplete>
+						<causesfailure>false</causesfailure>
+						<playerid>2</playerid>
+					</reduceunitsto>
+				</values>
+			</or>
+		</values>
+	</secondaryobjectives>
+	<onaccept/>
+	<rewards visible="true">
+		<alliancepoints visible="true">
+			<amount>10</amount>
+		</alliancepoints>
+		<xp visible="true">
+			1
+			<lookuptable>SQLong</lookuptable>
+		</xp>
+		<capitalresource visible="true">
+			<capitalresource>cCapResCoin</capitalresource>
+			<amount>1</amount>
+			<lookuptable>SQLong</lookuptable>
+		</capitalresource>
+		<loottable visible="true">general</loottable>
+		<loottable visible="true">general</loottable>
+	</rewards>
+	<secondaryrewards visible="true" name="Optional">
+		<capitalresource visible="true">
+			<capitalresource>cCapResCoin</capitalresource>
+			<amount>1</amount>
+			<lookuptable>OptCoin</lookuptable>
+		</capitalresource>
+		<loottable visible="true">general</loottable>
+	</secondaryrewards>
+	<playersettings id="1">
+		<team>1</team>
+		<color>1</color>
+		<tributablebehavior>Default</tributablebehavior>
+		<playertype>Human</playertype>
+		<cooponly>false</cooponly>
+		<startingfood>-1</startingfood>
+		<startingwood>-1</startingwood>
+		<startinggold>-1</startinggold>
+		<startingstone>-1</startingstone>
+		<aislidervariables/>
+		<aiflagvariables/>
+	</playersettings>
+	<playersettings id="2">
+		<team>2</team>
+		<color>2</color>
+		<tributablebehavior>Default</tributablebehavior>
+		<playertype>Computer</playertype>
+		<personality>$$2243$$</personality>
+		<script>CORE\Boom_Weak</script>
+		<dataset>C01\C01_SeaPeople_T3</dataset>
+		<cooponly>false</cooponly>
+		<startingfood>300</startingfood>
+		<startingwood>300</startingwood>
+		<startinggold>300</startinggold>
+		<startingstone>300</startingstone>
+		<aislidervariables>
+			<aivariable>
+				<key>EconomyHandicap</key>
+				<value>0.3</value>
+			</aivariable>
+		</aislidervariables>
+		<aiflagvariables/>
+	</playersettings>
+	<diplomacysettings/>
+	<randommap>
+		<map>set_questland</map>
+		<randommap>true</randommap>
+		<numplayers>2</numplayers>
+		<mapvariables>
+			<variable name="region" type="String">Greek Inland</variable>
+			<variable name="lighting" type="String">Morning</variable>
+			<variable name="mapSize" type="String">Small</variable>
+		</mapvariables>
+		<nuggetoverrides/>
+		<mapregionname>Greek Inland</mapregionname>
+		<lightsetname>Morning</lightsetname>
+		<mapsizename>Small</mapsizename>
+	</randommap>
+	<questgivers>
+		<protounit>ArgosDockForeman</protounit>
+	</questgivers>
+	<questreturners>
+		<protounit>ArgosDockForeman</protounit>
+	</questreturners>
+	<maplocationx>0.434</maplocationx>
+	<maplocationy>0.621</maplocationy>
+	<mapmarker>QuestRepeatable</mapmarker>
+	<mappage>Greece</mappage>
+	<elitespawnchance>0.025</elitespawnchance>
+	<linkedquestid>0</linkedquestid>
+	<questbasescale>0</questbasescale>
+	<victoryconditions/>
+</quest>

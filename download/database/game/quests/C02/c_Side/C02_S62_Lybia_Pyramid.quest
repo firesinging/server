@@ -1,0 +1,234 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<quest xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xsd="http://www.w3.org/2001/XMLSchema" uniqueid="388" version="63">
+	<displayname>$$628$$</displayname>
+	<level>15</level>
+	<repeatable>false</repeatable>
+	<offertype>eOfferNone</offertype>
+	<timer>
+		<events/>
+		<hideonui>false</hideonui>
+	</timer>
+	<canplaycoop>false</canplaycoop>
+	<cooprequired>false</cooprequired>
+	<ranked>false</ranked>
+	<alliance>eAllianceNone</alliance>
+	<questtype>RandomMap</questtype>
+	<description>$$8256$$</description>
+	<completiontext>$$5794$$</completiontext>
+	<inprogresstext>$$5792$$</inprogresstext>
+	<summarytext>$$5791$$</summarytext>
+	<canabandon>true</canabandon>
+	<hiddenquest>false</hiddenquest>
+	<friendonly>false</friendonly>
+	<suppressnotifications>false</suppressnotifications>
+	<customquest>false</customquest>
+	<questgamemodetype>Normal</questgamemodetype>
+	<prereqs>
+		<values>
+			<civilization>
+				<id>3</id>
+			</civilization>
+			<questcomplete>
+				<id>334</id>
+			</questcomplete>
+		</values>
+	</prereqs>
+	<equipmentprereqs/>
+	<targets>
+		<grouping>
+			<cooponly>true</cooponly>
+			<forcetocenter>false</forcetocenter>
+			<name>Player2</name>
+			<count>1</count>
+			<team>4</team>
+			<area>Player2</area>
+			<groupfilename>Shared_Start_Small</groupfilename>
+			<rottype>Rotate0</rottype>
+			<rotateunitorientations>false</rotateunitorientations>
+		</grouping>
+		<protounit>
+			<cooponly>false</cooponly>
+			<forcetocenter>false</forcetocenter>
+			<name>qst_Pyramid</name>
+			<protoname>qst_Pyramid</protoname>
+			<count>1</count>
+			<team>3</team>
+			<area>Quest_Area_E</area>
+			<overrides parent="Qst_Convertable_Bldg">
+				<animfile>CivEgyptian\Buildings\Capital\LargePyramid\LargePyramid.xml</animfile>
+				<displaynameid>56430</displaynameid>
+				<obstructionradiusx>8</obstructionradiusx>
+				<obstructionradiusz>8</obstructionradiusz>
+				<icon>UserInterface\Icons\Vanity\LgStepPyramid_ua</icon>
+				<portraiticon>UserInterface\Icons\Vanity\LgStepPyramid_ua</portraiticon>
+			</overrides>
+			<usequesttargetindicator>true</usequesttargetindicator>
+		</protounit>
+	</targets>
+	<objectives id="0" mustfailall="false">
+		<values>
+			<or id="1" mustfailall="false">
+				<values>
+					<and id="2" mustfailall="false">
+						<values>
+							<ownsunit id="3">
+								<description>$$2570$$</description>
+								<type>qst_Pyramid</type>
+								<count>1</count>
+								<owningplayerid>1</owningplayerid>
+								<causesfailure>false</causesfailure>
+							</ownsunit>
+							<kill id="4">
+								<description>$$2484$$</description>
+								<type>NPC_Badari_Fortress</type>
+								<count>1</count>
+								<includeconversion>true</includeconversion>
+								<onlycountelites>false</onlycountelites>
+							</kill>
+						</values>
+					</and>
+					<and id="5" mustfailall="true">
+						<values>
+							<reduceunitsto id="6">
+								<type>LogicalTypeNeededForVictory</type>
+								<count>0</count>
+								<includeteam>false</includeteam>
+								<includeunderconstruction>false</includeunderconstruction>
+								<canuncomplete>false</canuncomplete>
+								<causesfailure>true</causesfailure>
+								<playerid>1</playerid>
+							</reduceunitsto>
+							<reduceunitsto id="7">
+								<type>LogicalTypeNeededForVictory</type>
+								<count>0</count>
+								<includeteam>false</includeteam>
+								<includeunderconstruction>false</includeunderconstruction>
+								<canuncomplete>false</canuncomplete>
+								<causesfailure>true</causesfailure>
+								<playerid>4</playerid>
+							</reduceunitsto>
+						</values>
+					</and>
+				</values>
+			</or>
+		</values>
+	</objectives>
+	<onaccept/>
+	<rewards visible="true">
+		<xp visible="true">30000</xp>
+		<capitalresource visible="true">
+			<capitalresource>cCapResCoin</capitalresource>
+			<amount>150</amount>
+		</capitalresource>
+		<questgiver visible="false">
+			<name>C02_R3_LostAdmiral</name>
+			<status>Available</status>
+		</questgiver>
+		<loottable visible="true">general</loottable>
+		<loottable visible="true">general</loottable>
+		<or visible="true">
+			<consumable visible="true">
+				<consumablename>ConsumableSiegeDamage_U</consumablename>
+				<count>3</count>
+			</consumable>
+			<consumable visible="true">
+				<consumablename>ConsumableSiegeDamage_R</consumablename>
+				<count>3</count>
+			</consumable>
+		</or>
+	</rewards>
+	<playersettings id="1">
+		<team>1</team>
+		<color>1</color>
+		<tributablebehavior>Default</tributablebehavior>
+		<playertype>Human</playertype>
+		<cooponly>false</cooponly>
+		<startingfood>300</startingfood>
+		<startingwood>300</startingwood>
+		<startinggold>300</startinggold>
+		<startingstone>300</startingstone>
+		<aislidervariables/>
+		<aiflagvariables/>
+	</playersettings>
+	<playersettings id="2">
+		<team>2</team>
+		<color>2</color>
+		<tributablebehavior>Default</tributablebehavior>
+		<playertype>Computer</playertype>
+		<personality>$$2270$$</personality>
+		<script>CORE\Rush_Heavy</script>
+		<dataset>C02\C02_Nomad_T2</dataset>
+		<cooponly>false</cooponly>
+		<startingfood>200</startingfood>
+		<startingwood>200</startingwood>
+		<startinggold>200</startinggold>
+		<startingstone>0</startingstone>
+		<aislidervariables>
+			<aivariable>
+				<key>EconomyHandicap</key>
+				<value>-0.4</value>
+			</aivariable>
+		</aislidervariables>
+		<aiflagvariables/>
+	</playersettings>
+	<playersettings id="3">
+		<team>3</team>
+		<color>3</color>
+		<tributablebehavior>ForceFalse</tributablebehavior>
+		<playertype>Computer</playertype>
+		<personality>$$2271$$</personality>
+		<character/>
+		<dataset>c02\c02_vanilla_t0</dataset>
+		<cooponly>false</cooponly>
+		<startingfood>0</startingfood>
+		<startingwood>0</startingwood>
+		<startinggold>0</startinggold>
+		<startingstone>0</startingstone>
+		<aislidervariables/>
+		<aiflagvariables/>
+	</playersettings>
+	<playersettings id="4">
+		<team>1</team>
+		<color>7</color>
+		<tributablebehavior>Default</tributablebehavior>
+		<playertype>Human</playertype>
+		<cooponly>true</cooponly>
+		<startingfood>300</startingfood>
+		<startingwood>300</startingwood>
+		<startinggold>300</startinggold>
+		<startingstone>300</startingstone>
+		<aislidervariables/>
+		<aiflagvariables/>
+	</playersettings>
+	<diplomacysettings>
+		<diplomacy relation="Ally" team1="1" team2="3" sharedlos="true"/>
+		<diplomacy relation="Ally" team1="2" team2="3" sharedlos="false"/>
+	</diplomacysettings>
+	<randommap>
+		<map>scenarioloader</map>
+		<randommap>true</randommap>
+		<numplayers>4</numplayers>
+		<mapvariables>
+			<variable name="scenarioFile" type="String">C02/C02_R3M81_LibyaFirstMarch</variable>
+			<variable name="region" type="String">Egyptian Sand</variable>
+			<variable name="lighting" type="String"/>
+		</mapvariables>
+		<nuggetoverrides/>
+		<mapregionname>Egyptian Sand</mapregionname>
+		<mapsizename>&lt;Not Specified&gt;</mapsizename>
+	</randommap>
+	<questgivers>
+		<protounit>C02_R3_Sesostris</protounit>
+	</questgivers>
+	<questreturners>
+		<protounit>C02_R3_Sesostris</protounit>
+	</questreturners>
+	<maplocationx>0.533</maplocationx>
+	<maplocationy>0.766</maplocationy>
+	<mapmarker>QuestDefault</mapmarker>
+	<mappage>Libya</mappage>
+	<elitespawnchance>1</elitespawnchance>
+	<questbasescale>0</questbasescale>
+	<victoryconditions/>
+</quest>

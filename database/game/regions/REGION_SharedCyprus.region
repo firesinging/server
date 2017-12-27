@@ -1,0 +1,15 @@
+<?xml version="1.0"?>
+<Region xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xsd="http://www.w3.org/2001/XMLSchema" ID="15">
+  <Name>Cyprus</Name>
+  <CivID>1</CivID>
+  <MapName>Regions/REGION_SharedCyprus</MapName>
+  <MapLocationX>0.83</MapLocationX>
+  <MapLocationY>0.47</MapLocationY>
+  <MapMarker>RegionDefault</MapMarker>
+  <MapPage>Cyprus</MapPage>
+  <LoadScreen>UserInterface\LoadingScreens\ShipCyprus</LoadScreen>
+  <DescriptionStringID>61895</DescriptionStringID>
+  <DisplayNameStringID>61578</DisplayNameStringID>
+  <AvatarShield>UserInterface\Avatar\RegionShieldCyprus_ua</AvatarShield>
+  <FlagIcon>UserInterface\Icons\Regions\RegionFlagCyprus_ua</FlagIcon>
+</Region>

@@ -1,0 +1,176 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<quest xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xsd="http://www.w3.org/2001/XMLSchema" uniqueid="317" version="61">
+	<displayname>$$517$$</displayname>
+	<level>11</level>
+	<repeatable>false</repeatable>
+	<timer>
+		<time/>
+		<events/>
+		<hideonui>false</hideonui>
+	</timer>
+	<canplaycoop>false</canplaycoop>
+	<cooprequired>false</cooprequired>
+	<ranked>false</ranked>
+	<alliance>eAllianceNone</alliance>
+	<questtype>RandomMap</questtype>
+	<description>$$5754$$</description>
+	<completiontext>$$5755$$</completiontext>
+	<inprogresstext>$$5147$$</inprogresstext>
+	<summarytext>$$5753$$</summarytext>
+	<canabandon>true</canabandon>
+	<hiddenquest>false</hiddenquest>
+	<friendonly>false</friendonly>
+	<suppressnotifications>false</suppressnotifications>
+	<customquest>false</customquest>
+	<questgamemodetype>Normal</questgamemodetype>
+	<prereqs>
+		<values>
+			<civilization>
+				<id>3</id>
+			</civilization>
+			<questcomplete>
+				<id>318</id>
+			</questcomplete>
+		</values>
+	</prereqs>
+	<equipmentprereqs/>
+	<targets/>
+	<objectives id="0" mustfailall="false">
+		<values>
+			<or id="1" mustfailall="false">
+				<values>
+					<and id="2" mustfailall="false">
+						<values>
+							<unitinarea id="3">
+								<description>$$2560$$</description>
+								<area>Quest_Area_A</area>
+								<type>Eg_Spc_PriestAmen</type>
+								<count>1</count>
+								<radius>-1</radius>
+								<aidefend>false</aidefend>
+							</unitinarea>
+							<unitinarea id="4">
+								<description>$$2561$$</description>
+								<area>Quest_Area_A</area>
+								<type>Eg_Spc_PriestPtah</type>
+								<count>1</count>
+								<radius>-1</radius>
+								<aidefend>false</aidefend>
+							</unitinarea>
+							<unitinarea id="5">
+								<description>$$2562$$</description>
+								<area>Quest_Area_A</area>
+								<type>Eg_Spc_PriestRa</type>
+								<count>1</count>
+								<radius>-1</radius>
+								<aidefend>false</aidefend>
+							</unitinarea>
+						</values>
+					</and>
+					<reduceunitsto id="6">
+						<type>Eg_Spc_PriestPtah</type>
+						<count>0</count>
+						<includeteam>false</includeteam>
+						<includeunderconstruction>false</includeunderconstruction>
+						<canuncomplete>false</canuncomplete>
+						<causesfailure>true</causesfailure>
+						<playerid>1</playerid>
+					</reduceunitsto>
+				</values>
+			</or>
+		</values>
+	</objectives>
+	<onaccept/>
+	<rewards visible="true">
+		<gamecurrency visible="true">
+			<gamecurrency>cGameCurEmpirePoints</gamecurrency>
+			<amount>3</amount>
+		</gamecurrency>
+		<xp visible="true">20000</xp>
+		<capitalresource visible="true">
+			<capitalresource>cCapResCoin</capitalresource>
+			<amount>120</amount>
+		</capitalresource>
+		<loottable visible="true">general</loottable>
+		<or visible="true">
+			<trait visible="true">
+				Scepter2H_R001
+				<traitlevel>13</traitlevel>
+			</trait>
+			<trait visible="true">
+				Staff2H_R002_VR
+				<traitlevel>13</traitlevel>
+			</trait>
+			<trait visible="true">
+				Gear_Prst_R004
+				<traitlevel>13</traitlevel>
+			</trait>
+		</or>
+		<questgiver visible="false">
+			<name>C02_R2_DesertTrader</name>
+			<status>Available</status>
+		</questgiver>
+	</rewards>
+	<playersettings id="1">
+		<team>1</team>
+		<color>1</color>
+		<tributablebehavior>Default</tributablebehavior>
+		<playertype>Human</playertype>
+		<cooponly>false</cooponly>
+		<startingfood>0</startingfood>
+		<startingwood>0</startingwood>
+		<startinggold>0</startinggold>
+		<startingstone>0</startingstone>
+		<aislidervariables/>
+		<aiflagvariables/>
+	</playersettings>
+	<playersettings id="2">
+		<team>2</team>
+		<color>2</color>
+		<tributablebehavior>Default</tributablebehavior>
+		<playertype>Computer</playertype>
+		<personality>$$2261$$</personality>
+		<script/>
+		<dataset>C02\C02_Vanilla_T0</dataset>
+		<cooponly>false</cooponly>
+		<startingfood>0</startingfood>
+		<startingwood>0</startingwood>
+		<startinggold>0</startinggold>
+		<startingstone>0</startingstone>
+		<aislidervariables/>
+		<aiflagvariables/>
+	</playersettings>
+	<diplomacysettings>
+		<diplomacy relation="Enemy" team1="1" team2="2" sharedlos="true"/>
+		<diplomacy relation="Enemy" team1="2" team2="1" sharedlos="false"/>
+	</diplomacysettings>
+	<randommap>
+		<map>scenarioloader</map>
+		<randommap>true</randommap>
+		<numplayers>2</numplayers>
+		<mapvariables>
+			<variable name="scenarioFile" type="String">C02/C02_R2M62_ThreePriests</variable>
+			<variable name="region" type="String">Egyptian Sand</variable>
+			<variable name="lighting" type="String">Evening</variable>
+		</mapvariables>
+		<nuggetoverrides/>
+		<mapregionname>Egyptian Sand</mapregionname>
+		<lightsetname>Evening</lightsetname>
+		<mapsizename>&lt;Not Specified&gt;</mapsizename>
+	</randommap>
+	<questgivers>
+		<protounit>C02_R2_Sesostris</protounit>
+	</questgivers>
+	<questreturners>
+		<protounit>C02_R2_Sesostris</protounit>
+	</questreturners>
+	<maplocationx>0.22</maplocationx>
+	<maplocationy>0.28</maplocationy>
+	<mapmarker>QuestDefault</mapmarker>
+	<mappage>Nubia</mappage>
+	<elitespawnchance>0</elitespawnchance>
+	<linkedquestid>0</linkedquestid>
+	<questbasescale>0</questbasescale>
+	<victoryconditions/>
+</quest>

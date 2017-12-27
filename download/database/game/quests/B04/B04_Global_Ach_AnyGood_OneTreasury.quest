@@ -1,0 +1,87 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<quest xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xsd="http://www.w3.org/2001/XMLSchema" uniqueid="104121" version="38">
+	<displayname>$$12980$$</displayname>
+	<level>-1</level>
+	<difficultycoloroverride>1</difficultycoloroverride>
+	<repeatable>false</repeatable>
+	<offertype>eOfferBooster4</offertype>
+	<timer>
+		<events/>
+		<hideonui>false</hideonui>
+	</timer>
+	<canplaycoop>false</canplaycoop>
+	<cooprequired>false</cooprequired>
+	<ranked>false</ranked>
+	<alliance>eAllianceNone</alliance>
+	<questtype>Global</questtype>
+	<description>$$13134$$</description>
+	<completiontext>$$13083$$</completiontext>
+	<inprogresstext>$$13084$$</inprogresstext>
+	<summarytext>$$12954$$</summarytext>
+	<canabandon>true</canabandon>
+	<hiddenquest>false</hiddenquest>
+	<friendonly>false</friendonly>
+	<suppressnotifications>false</suppressnotifications>
+	<customquest>false</customquest>
+	<questgamemodetype>Normal</questgamemodetype>
+	<prereqs>
+		<values>
+			<questcomplete>
+				<id>104012</id>
+			</questcomplete>
+		</values>
+	</prereqs>
+	<equipmentprereqs/>
+	<targets/>
+	<objectives id="0" mustfailall="false">
+		<values>
+			<or id="1" mustfailall="false">
+				<values>
+					<dummy id="2">
+						<description>$$12951$$</description>
+						<objectivename>ONE_TREASURY_COMPLETE</objectivename>
+						<autocomplete>false</autocomplete>
+					</dummy>
+					<kill id="3">
+						<type>AILandPoint1</type>
+						<count>1</count>
+						<includeconversion>false</includeconversion>
+						<onlycountelites>false</onlycountelites>
+					</kill>
+				</values>
+			</or>
+		</values>
+	</objectives>
+	<onaccept/>
+	<rewards visible="true">
+		<consumable visible="true">
+			<consumablename>PowerCapitalConsumable3</consumablename>
+			<count>1</count>
+		</consumable>
+	</rewards>
+	<diplomacysettings/>
+	<randommap>
+		<randommap>true</randommap>
+		<numplayers>0</numplayers>
+		<mapvariables/>
+		<nuggetoverrides/>
+		<mapregionname>&lt;Not Specified&gt;</mapregionname>
+		<lightsetname>&lt;Not Specified&gt;</lightsetname>
+		<mapsizename>&lt;Not Specified&gt;</mapsizename>
+	</randommap>
+	<questgivers>
+		<protounit>B04_Bard</protounit>
+	</questgivers>
+	<questreturners>
+		<protounit>B04_Bard</protounit>
+	</questreturners>
+	<maplocationx>0.5</maplocationx>
+	<maplocationy>0.5</maplocationy>
+	<mapmarker>Blank</mapmarker>
+	<mappage>Norse</mappage>
+	<elitespawnchance>0</elitespawnchance>
+	<linkedquestid>0</linkedquestid>
+	<questbasescale>3</questbasescale>
+	<victoryconditions/>
+</quest>

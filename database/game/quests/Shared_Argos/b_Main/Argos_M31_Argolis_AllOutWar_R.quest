@@ -1,0 +1,399 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<quest xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xsd="http://www.w3.org/2001/XMLSchema" uniqueid="325" version="53">
+	<displayname>$$877$$</displayname>
+	<level>-1</level>
+	<difficultycoloroverride>1</difficultycoloroverride>
+	<repeatable>true</repeatable>
+	<timer>
+		<events/>
+		<hideonui>false</hideonui>
+	</timer>
+	<canplaycoop>true</canplaycoop>
+	<cooprequired>false</cooprequired>
+	<ranked>false</ranked>
+	<alliance>eAllianceNone</alliance>
+	<questtype>RandomMap</questtype>
+	<description>$$878$$</description>
+	<completiontext>$$879$$</completiontext>
+	<inprogresstext>$$1686$$</inprogresstext>
+	<summarytext>$$1681$$</summarytext>
+	<repeatableduration>12</repeatableduration>
+	<canabandon>true</canabandon>
+	<hiddenquest>false</hiddenquest>
+	<friendonly>false</friendonly>
+	<suppressnotifications>false</suppressnotifications>
+	<customquest>false</customquest>
+	<questgamemodetype>Normal</questgamemodetype>
+	<prereqs>
+		<values>
+			<questcomplete>
+				<id>81</id>
+			</questcomplete>
+		</values>
+	</prereqs>
+	<equipmentprereqs/>
+	<targets>
+		<grouping>
+			<cooponly>false</cooponly>
+			<forcetocenter>true</forcetocenter>
+			<name>Player1</name>
+			<count>1</count>
+			<team>1</team>
+			<area>Player1</area>
+			<groupfilename>Shared_Player1_Age2_BarracksTowers</groupfilename>
+			<rottype>Rotate0</rottype>
+			<rotateunitorientations>false</rotateunitorientations>
+		</grouping>
+		<grouping>
+			<cooponly>false</cooponly>
+			<forcetocenter>true</forcetocenter>
+			<name>BadGuy</name>
+			<count>1</count>
+			<team>2</team>
+			<area>Quest_Area_A</area>
+			<groupfilename>C01\SeaPeople\C01_SeaPeople_TowerBase_01</groupfilename>
+			<rottype>RotateRandom</rottype>
+			<rotateunitorientations>false</rotateunitorientations>
+		</grouping>
+		<grouping>
+			<cooponly>true</cooponly>
+			<forcetocenter>true</forcetocenter>
+			<name>Player2</name>
+			<count>1</count>
+			<team>3</team>
+			<area>Player2</area>
+			<groupfilename>Shared_Player3_Age2_BarracksTowers</groupfilename>
+			<rottype>Rotate0</rottype>
+			<rotateunitorientations>false</rotateunitorientations>
+		</grouping>
+		<random placeatleast="0" placenomore="1">
+			<cooponly>false</cooponly>
+			<forcetocenter>false</forcetocenter>
+			<unitprobability>
+				<unit name="Luggage1" chance="0.2"/>
+				<unit name="Luggage2" chance="0.2"/>
+			</unitprobability>
+			<targets>
+				<protounit>
+					<cooponly>false</cooponly>
+					<forcetocenter>false</forcetocenter>
+					<name>Luggage1</name>
+					<protoname>PharoahsLuggage</protoname>
+					<count>1</count>
+					<team>2</team>
+					<area>Quest_Area_A</area>
+					<overrides parent="Qst_Convertable">
+						<displaynameid>52637</displaynameid>
+						<animfile>CivEgyptian\Units\Civilian\Caravan\Caravan.xml</animfile>
+						<portraiticon>UserInterface\Icons\Units\AvatarECaravan_ua</portraiticon>
+						<icon>UserInterface\Icons\Units\ECaravan64_ua</icon>
+						<soundfile>Camel</soundfile>
+					</overrides>
+					<usequesttargetindicator>true</usequesttargetindicator>
+				</protounit>
+				<protounit>
+					<cooponly>false</cooponly>
+					<forcetocenter>false</forcetocenter>
+					<name>Luggage2</name>
+					<protoname>PharoahsLuggage</protoname>
+					<count>1</count>
+					<team>2</team>
+					<area>Quest_Area_B</area>
+					<overrides parent="Qst_Convertable">
+						<displaynameid>52637</displaynameid>
+						<animfile>CivEgyptian\Units\Civilian\Caravan\Caravan.xml</animfile>
+						<portraiticon>UserInterface\Icons\Units\AvatarECaravan_ua</portraiticon>
+						<icon>UserInterface\Icons\Units\ECaravan64_ua</icon>
+						<soundfile>Camel</soundfile>
+					</overrides>
+					<usequesttargetindicator>true</usequesttargetindicator>
+				</protounit>
+			</targets>
+		</random>
+		<random placeatleast="0" placenomore="1">
+			<cooponly>false</cooponly>
+			<forcetocenter>false</forcetocenter>
+			<unitprobability>
+				<unit name="Camel1" chance="0.2"/>
+				<unit name="Camel2" chance="0.2"/>
+			</unitprobability>
+			<targets>
+				<protounit>
+					<cooponly>false</cooponly>
+					<forcetocenter>false</forcetocenter>
+					<name>Camel1</name>
+					<protoname>FavoriteCamel</protoname>
+					<count>1</count>
+					<team>2</team>
+					<area>Quest_Area_A</area>
+					<overrides parent="Qst_Convertable">
+						<displaynameid>52641</displaynameid>
+						<animfile>World\Animals\Camel\Camel.xml</animfile>
+						<portraiticon>UserInterface\Icons\Units\Gaia\AvatarWildCamel_ua</portraiticon>
+						<icon>UserInterface\Icons\Units\Gaia\WildCamel64_ua</icon>
+						<soundfile>Camel</soundfile>
+					</overrides>
+					<usequesttargetindicator>true</usequesttargetindicator>
+				</protounit>
+				<protounit>
+					<cooponly>false</cooponly>
+					<forcetocenter>false</forcetocenter>
+					<name>Camel2</name>
+					<protoname>FavoriteCamel</protoname>
+					<count>1</count>
+					<team>2</team>
+					<area>Quest_Area_B</area>
+					<overrides parent="Qst_Convertable">
+						<displaynameid>52641</displaynameid>
+						<animfile>World\Animals\Camel\Camel.xml</animfile>
+						<portraiticon>UserInterface\Icons\Units\Gaia\AvatarWildCamel_ua</portraiticon>
+						<icon>UserInterface\Icons\Units\Gaia\WildCamel64_ua</icon>
+						<soundfile>Camel</soundfile>
+					</overrides>
+					<usequesttargetindicator>true</usequesttargetindicator>
+				</protounit>
+			</targets>
+		</random>
+		<protounit>
+			<cooponly>false</cooponly>
+			<forcetocenter>false</forcetocenter>
+			<name>SecondaryObjective_Catapult</name>
+			<protoname>SecondaryObjective_Catapult</protoname>
+			<count>1</count>
+			<team>4</team>
+			<area>Player3</area>
+			<overrides parent="Npc_SP_Flagship">
+				<visualscale>1.5</visualscale>
+				<footprint>1.5</footprint>
+			</overrides>
+			<usequesttargetindicator>true</usequesttargetindicator>
+		</protounit>
+		<protounit>
+			<cooponly>false</cooponly>
+			<forcetocenter>false</forcetocenter>
+			<name>SecondaryObjective_Trireme</name>
+			<protoname>SecondaryObjective_Trireme</protoname>
+			<count>2</count>
+			<team>4</team>
+			<area>Player3</area>
+			<overrides parent="Gr_Shp_Trireme">
+				<visualscale>1.2</visualscale>
+				<footprint>1.2</footprint>
+			</overrides>
+			<usequesttargetindicator>true</usequesttargetindicator>
+		</protounit>
+		<protounit>
+			<cooponly>false</cooponly>
+			<forcetocenter>false</forcetocenter>
+			<name>SecondaryObjective_Fireship</name>
+			<protoname>SecondaryObjective_Fireship</protoname>
+			<count>2</count>
+			<team>4</team>
+			<area>Player3</area>
+			<overrides parent="Gr_Shp_FireShip"/>
+			<usequesttargetindicator>true</usequesttargetindicator>
+		</protounit>
+	</targets>
+	<objectives id="0" mustfailall="false">
+		<values>
+			<or id="1" mustfailall="false">
+				<values>
+					<dummy id="2">
+						<description>$$3802$$</description>
+						<objectivename>EnemiesDefeated</objectivename>
+						<autocomplete>false</autocomplete>
+					</dummy>
+					<reduceunitsto id="3">
+						<type>LogicalTypeNeededForVictory</type>
+						<count>0</count>
+						<includeteam>true</includeteam>
+						<includeunderconstruction>false</includeunderconstruction>
+						<canuncomplete>false</canuncomplete>
+						<causesfailure>true</causesfailure>
+						<playerid>1</playerid>
+					</reduceunitsto>
+				</values>
+			</or>
+		</values>
+	</objectives>
+	<secondaryobjectives id="4" mustfailall="false" rewardname="Optional">
+		<description>$$9658$$</description>
+		<values>
+			<or id="5" mustfailall="false">
+				<values>
+					<dummy id="6">
+						<description>$$10451$$</description>
+						<objectivename>UNUSED</objectivename>
+						<autocomplete>false</autocomplete>
+					</dummy>
+					<and id="7" mustfailall="false">
+						<values>
+							<reduceunitsto id="8">
+								<type>SecondaryObjective_Catapult</type>
+								<count>0</count>
+								<includeteam>false</includeteam>
+								<includeunderconstruction>false</includeunderconstruction>
+								<canuncomplete>false</canuncomplete>
+								<causesfailure>false</causesfailure>
+								<playerid>4</playerid>
+							</reduceunitsto>
+							<reduceunitsto id="9">
+								<type>SecondaryObjective_Trireme</type>
+								<count>0</count>
+								<includeteam>false</includeteam>
+								<includeunderconstruction>false</includeunderconstruction>
+								<canuncomplete>false</canuncomplete>
+								<causesfailure>false</causesfailure>
+								<playerid>4</playerid>
+							</reduceunitsto>
+							<reduceunitsto id="10">
+								<type>SecondaryObjective_Fireship</type>
+								<count>0</count>
+								<includeteam>false</includeteam>
+								<includeunderconstruction>false</includeunderconstruction>
+								<canuncomplete>false</canuncomplete>
+								<causesfailure>false</causesfailure>
+								<playerid>4</playerid>
+							</reduceunitsto>
+						</values>
+					</and>
+				</values>
+			</or>
+		</values>
+	</secondaryobjectives>
+	<onaccept/>
+	<rewards visible="true">
+		<alliancepoints visible="true">
+			<amount>10</amount>
+		</alliancepoints>
+		<xp visible="true">
+			1
+			<lookuptable>SQLong</lookuptable>
+		</xp>
+		<capitalresource visible="true">
+			<capitalresource>cCapResCoin</capitalresource>
+			<amount>1</amount>
+			<lookuptable>SQLong</lookuptable>
+		</capitalresource>
+		<loottable visible="true">general</loottable>
+		<or visible="true">
+			<trait visible="true">
+				FishingNet1H_R008
+				<traitlevel>33</traitlevel>
+			</trait>
+			<trait visible="true">
+				ArmorPlt_R001
+				<traitlevel>33</traitlevel>
+			</trait>
+			<loottable visible="true">general</loottable>
+		</or>
+	</rewards>
+	<secondaryrewards visible="true" name="Optional">
+		<capitalresource visible="true">
+			<capitalresource>cCapResCoin</capitalresource>
+			<amount>1</amount>
+			<lookuptable>OptCoin</lookuptable>
+		</capitalresource>
+		<loottable visible="true">general</loottable>
+		<loottable visible="true">general</loottable>
+	</secondaryrewards>
+	<playersettings id="1">
+		<team>1</team>
+		<color>1</color>
+		<tributablebehavior>Default</tributablebehavior>
+		<playertype>Human</playertype>
+		<cooponly>false</cooponly>
+		<startingfood>-1</startingfood>
+		<startingwood>-1</startingwood>
+		<startinggold>-1</startinggold>
+		<startingstone>-1</startingstone>
+		<aislidervariables/>
+		<aiflagvariables/>
+	</playersettings>
+	<playersettings id="2">
+		<team>2</team>
+		<color>2</color>
+		<tributablebehavior>Default</tributablebehavior>
+		<playertype>Computer</playertype>
+		<personality>$$2243$$</personality>
+		<script>CORE\Rush_Heavy</script>
+		<dataset>C01\C01_SeaPeople_T3</dataset>
+		<cooponly>false</cooponly>
+		<startingfood>200</startingfood>
+		<startingwood>200</startingwood>
+		<startinggold>200</startinggold>
+		<startingstone>200</startingstone>
+		<aislidervariables>
+			<aivariable>
+				<key>NavyBias</key>
+				<value>0.1</value>
+			</aivariable>
+		</aislidervariables>
+		<aiflagvariables>
+			<aivariable>
+				<value>0</value>
+			</aivariable>
+		</aiflagvariables>
+	</playersettings>
+	<playersettings id="3">
+		<team>1</team>
+		<color>7</color>
+		<tributablebehavior>Default</tributablebehavior>
+		<playertype>Human</playertype>
+		<cooponly>true</cooponly>
+		<startingfood>-1</startingfood>
+		<startingwood>-1</startingwood>
+		<startinggold>-1</startinggold>
+		<startingstone>-1</startingstone>
+		<aislidervariables/>
+		<aiflagvariables/>
+	</playersettings>
+	<playersettings id="4">
+		<team>3</team>
+		<color>4</color>
+		<tributablebehavior>Default</tributablebehavior>
+		<playertype>Computer</playertype>
+		<personality>$$11963$$</personality>
+		<dataset>c02\c02_pirate_t4</dataset>
+		<cooponly>false</cooponly>
+		<startingfood>-1</startingfood>
+		<startingwood>-1</startingwood>
+		<startinggold>-1</startinggold>
+		<startingstone>-1</startingstone>
+		<aislidervariables/>
+		<aiflagvariables/>
+	</playersettings>
+	<diplomacysettings>
+		<diplomacy relation="Neutral" team1="3" team2="2" sharedlos="false"/>
+		<diplomacy relation="Neutral" team1="2" team2="3" sharedlos="false"/>
+	</diplomacysettings>
+	<randommap>
+		<map>core\shared\rm_naval_AllOutWar</map>
+		<randommap>true</randommap>
+		<numplayers>4</numplayers>
+		<mapvariables>
+			<variable name="CustomEnemiesDefeatedQuestID" type="Int">325</variable>
+			<variable name="region" type="String">Greek Isles</variable>
+			<variable name="mapSize" type="String">Large</variable>
+		</mapvariables>
+		<nuggetoverrides/>
+		<mapregionname>Greek Isles</mapregionname>
+		<lightsetname>&lt;Not Specified&gt;</lightsetname>
+		<mapsizename>Large</mapsizename>
+	</randommap>
+	<questgivers>
+		<protounit>ArgosKing</protounit>
+	</questgivers>
+	<questreturners>
+		<protounit>ArgosKing</protounit>
+	</questreturners>
+	<maplocationx>0.78</maplocationx>
+	<maplocationy>0.364</maplocationy>
+	<mapmarker>QuestRepeatable</mapmarker>
+	<mappage>Greece</mappage>
+	<elitespawnchance>0.025</elitespawnchance>
+	<linkedquestid>3181</linkedquestid>
+	<questbasescale>3</questbasescale>
+	<victoryconditions/>
+</quest>

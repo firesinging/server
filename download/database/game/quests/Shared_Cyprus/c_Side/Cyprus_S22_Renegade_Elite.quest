@@ -1,0 +1,477 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<quest xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xsd="http://www.w3.org/2001/XMLSchema" uniqueid="3072" version="7">
+	<displayname>$$12916$$</displayname>
+	<level>-1</level>
+	<difficultycoloroverride>2</difficultycoloroverride>
+	<repeatable>true</repeatable>
+	<offertype>eOfferNone</offertype>
+	<timer>
+		<time/>
+		<events/>
+		<hideonui>false</hideonui>
+	</timer>
+	<canplaycoop>true</canplaycoop>
+	<cooprequired>false</cooprequired>
+	<ranked>false</ranked>
+	<alliance>eAllianceNone</alliance>
+	<questtype>RandomMap</questtype>
+	<description>$$6341$$</description>
+	<completiontext>$$6337$$</completiontext>
+	<inprogresstext>$$6338$$</inprogresstext>
+	<summarytext>$$6340$$</summarytext>
+	<repeatableduration>12</repeatableduration>
+	<canabandon>true</canabandon>
+	<hiddenquest>false</hiddenquest>
+	<friendonly>false</friendonly>
+	<suppressnotifications>false</suppressnotifications>
+	<customquest>false</customquest>
+	<questgamemodetype>Normal</questgamemodetype>
+	<prereqs>
+		<values>
+			<questcomplete>
+				<id>3026</id>
+			</questcomplete>
+		</values>
+	</prereqs>
+	<equipmentprereqs/>
+	<targets>
+		<grouping>
+			<cooponly>false</cooponly>
+			<forcetocenter>false</forcetocenter>
+			<name>Player1</name>
+			<count>1</count>
+			<team>1</team>
+			<area>Player1</area>
+			<groupfilename>Shared_Player1_Age2_BarracksTowers</groupfilename>
+			<rottype>Rotate0</rottype>
+			<rotateunitorientations>true</rotateunitorientations>
+		</grouping>
+		<grouping>
+			<cooponly>false</cooponly>
+			<forcetocenter>true</forcetocenter>
+			<name>Enemy 01</name>
+			<count>1</count>
+			<team>2</team>
+			<area>Quest_Area_A</area>
+			<groupfilename>Shared_Cyprus\Cyprus_Renegade_EnemyStart</groupfilename>
+			<rottype>Rotate0</rottype>
+			<rotateunitorientations>true</rotateunitorientations>
+		</grouping>
+		<protounit>
+			<cooponly>false</cooponly>
+			<forcetocenter>false</forcetocenter>
+			<name>Revealer</name>
+			<protoname>SpyglassRevealer</protoname>
+			<count>1</count>
+			<team>2</team>
+			<area>Player1</area>
+			<usequesttargetindicator>false</usequesttargetindicator>
+		</protounit>
+		<grouping>
+			<cooponly>false</cooponly>
+			<forcetocenter>false</forcetocenter>
+			<name>RoadA</name>
+			<count>1</count>
+			<team>2</team>
+			<area>Quest_Area_B</area>
+			<groupfilename>Shared_Cyprus\Cyprus_Renegade_Road</groupfilename>
+			<rottype>Rotate0</rottype>
+			<rotateunitorientations>true</rotateunitorientations>
+		</grouping>
+		<grouping>
+			<cooponly>false</cooponly>
+			<forcetocenter>false</forcetocenter>
+			<name>RoadB</name>
+			<count>1</count>
+			<team>2</team>
+			<area>Quest_Area_D</area>
+			<groupfilename>Shared_Cyprus\Cyprus_Renegade_Road</groupfilename>
+			<rottype>Rotate180</rottype>
+			<rotateunitorientations>true</rotateunitorientations>
+		</grouping>
+		<protounit>
+			<cooponly>false</cooponly>
+			<forcetocenter>false</forcetocenter>
+			<name>Enemy Leader</name>
+			<protoname>CyprusGeneral</protoname>
+			<count>1</count>
+			<team>4</team>
+			<area>Quest_Area_E</area>
+			<overrides parent="Gr_Cav_Hetairoi_E">
+				<visualscale>1.5</visualscale>
+				<initialhitpoints>3500</initialhitpoints>
+				<maxhitpoints>3500</maxhitpoints>
+				<displaynameid>41974</displaynameid>
+				<convertresist>100</convertresist>
+			</overrides>
+			<usequesttargetindicator>true</usequesttargetindicator>
+		</protounit>
+		<protounit>
+			<cooponly>false</cooponly>
+			<forcetocenter>false</forcetocenter>
+			<name>General Bodyguards</name>
+			<protoname>Npc_BanditLeader_01</protoname>
+			<count>10</count>
+			<team>4</team>
+			<area>Quest_Area_E</area>
+			<usequesttargetindicator>false</usequesttargetindicator>
+		</protounit>
+		<protounit>
+			<cooponly>false</cooponly>
+			<forcetocenter>false</forcetocenter>
+			<name>General Bodyguards 2</name>
+			<protoname>Gr_Arc_Toxotai</protoname>
+			<count>2</count>
+			<team>4</team>
+			<area>Quest_Area_E</area>
+			<usequesttargetindicator>false</usequesttargetindicator>
+		</protounit>
+		<protounit>
+			<cooponly>false</cooponly>
+			<forcetocenter>false</forcetocenter>
+			<name>General Bodyguards 3</name>
+			<protoname>Gr_Cav_Podromos</protoname>
+			<count>2</count>
+			<team>4</team>
+			<area>Quest_Area_E</area>
+			<usequesttargetindicator>false</usequesttargetindicator>
+		</protounit>
+		<protounit>
+			<cooponly>false</cooponly>
+			<forcetocenter>false</forcetocenter>
+			<name>RoadB Archers</name>
+			<protoname>Gr_Arc_Gastrophes</protoname>
+			<count>4</count>
+			<team>4</team>
+			<area>Quest_Area_B</area>
+			<usequesttargetindicator>false</usequesttargetindicator>
+		</protounit>
+		<protounit>
+			<cooponly>false</cooponly>
+			<forcetocenter>false</forcetocenter>
+			<name>RoadC Archers</name>
+			<protoname>Gr_Arc_Gastrophes</protoname>
+			<count>4</count>
+			<team>4</team>
+			<area>Quest_Area_C</area>
+			<usequesttargetindicator>false</usequesttargetindicator>
+		</protounit>
+		<protounit>
+			<cooponly>false</cooponly>
+			<forcetocenter>false</forcetocenter>
+			<name>RoadD Archers</name>
+			<protoname>Gr_Arc_Gastrophes</protoname>
+			<count>4</count>
+			<team>4</team>
+			<area>Quest_Area_D</area>
+			<usequesttargetindicator>false</usequesttargetindicator>
+		</protounit>
+		<protounit>
+			<cooponly>false</cooponly>
+			<forcetocenter>false</forcetocenter>
+			<name>RoadB Cav</name>
+			<protoname>Gr_Cav_Hippikon</protoname>
+			<count>4</count>
+			<team>4</team>
+			<area>Quest_Area_B</area>
+			<usequesttargetindicator>false</usequesttargetindicator>
+		</protounit>
+		<protounit>
+			<cooponly>false</cooponly>
+			<forcetocenter>false</forcetocenter>
+			<name>RoadC Cav</name>
+			<protoname>Gr_Cav_Hippikon</protoname>
+			<count>4</count>
+			<team>4</team>
+			<area>Quest_Area_C</area>
+			<usequesttargetindicator>false</usequesttargetindicator>
+		</protounit>
+		<protounit>
+			<cooponly>false</cooponly>
+			<forcetocenter>false</forcetocenter>
+			<name>RoadD Cav</name>
+			<protoname>Gr_Cav_Hippikon</protoname>
+			<count>4</count>
+			<team>4</team>
+			<area>Quest_Area_D</area>
+			<usequesttargetindicator>false</usequesttargetindicator>
+		</protounit>
+		<protounit>
+			<cooponly>false</cooponly>
+			<forcetocenter>false</forcetocenter>
+			<name>RoadB Siege</name>
+			<protoname>Gr_Sie_Catapult</protoname>
+			<count>1</count>
+			<team>4</team>
+			<area>Quest_Area_B</area>
+			<usequesttargetindicator>false</usequesttargetindicator>
+		</protounit>
+		<protounit>
+			<cooponly>false</cooponly>
+			<forcetocenter>false</forcetocenter>
+			<name>RoadC Siege</name>
+			<protoname>Gr_Sie_Catapult</protoname>
+			<count>1</count>
+			<team>4</team>
+			<area>Quest_Area_C</area>
+			<usequesttargetindicator>false</usequesttargetindicator>
+		</protounit>
+		<protounit>
+			<cooponly>false</cooponly>
+			<forcetocenter>false</forcetocenter>
+			<name>RoadD Siege</name>
+			<protoname>Gr_Sie_Catapult</protoname>
+			<count>1</count>
+			<team>4</team>
+			<area>Quest_Area_B</area>
+			<usequesttargetindicator>false</usequesttargetindicator>
+		</protounit>
+		<grouping>
+			<cooponly>false</cooponly>
+			<forcetocenter>false</forcetocenter>
+			<name>Player 1 Phalanx</name>
+			<count>1</count>
+			<team>1</team>
+			<area>Player1</area>
+			<groupfilename>Shared_Cyprus\Cyprus_Renegade_PlayerPhalanx</groupfilename>
+			<rottype>Rotate0</rottype>
+			<rotateunitorientations>true</rotateunitorientations>
+		</grouping>
+		<grouping>
+			<cooponly>true</cooponly>
+			<forcetocenter>false</forcetocenter>
+			<name>Player CoOp Phalanx</name>
+			<count>1</count>
+			<team>3</team>
+			<area>Player2</area>
+			<groupfilename>Shared_Cyprus\Cyprus_Renegade_PlayerPhalanx</groupfilename>
+			<rottype>Rotate0</rottype>
+			<rotateunitorientations>true</rotateunitorientations>
+		</grouping>
+		<grouping>
+			<cooponly>true</cooponly>
+			<forcetocenter>false</forcetocenter>
+			<name>Player2</name>
+			<count>1</count>
+			<team>3</team>
+			<area>Player2</area>
+			<groupfilename>Shared_Player3_Age2_BarracksTowers</groupfilename>
+			<rottype>Rotate0</rottype>
+			<rotateunitorientations>true</rotateunitorientations>
+		</grouping>
+	</targets>
+	<objectives id="0" mustfailall="false">
+		<values>
+			<or id="1" mustfailall="false">
+				<description/>
+				<values>
+					<and id="2" mustfailall="false">
+						<values>
+							<kill id="3">
+								<description>$$3707$$</description>
+								<type>AbstractTownCenter</type>
+								<count>1</count>
+								<includeconversion>true</includeconversion>
+								<onlycountelites>false</onlycountelites>
+							</kill>
+							<kill id="4">
+								<description>$$5517$$</description>
+								<type>CyprusGeneral</type>
+								<count>1</count>
+								<includeconversion>true</includeconversion>
+								<onlycountelites>false</onlycountelites>
+							</kill>
+						</values>
+					</and>
+					<reduceunitsto id="5">
+						<type>LogicalTypeNeededForVictory</type>
+						<count>0</count>
+						<includeteam>true</includeteam>
+						<includeunderconstruction>false</includeunderconstruction>
+						<canuncomplete>false</canuncomplete>
+						<causesfailure>true</causesfailure>
+						<playerid>1</playerid>
+					</reduceunitsto>
+				</values>
+			</or>
+		</values>
+	</objectives>
+	<secondaryobjectives id="6" mustfailall="false" rewardname="Optional">
+		<description>$$9658$$</description>
+		<values>
+			<or id="7" mustfailall="false">
+				<values>
+					<dummy id="8">
+						<description>$$10441$$</description>
+						<objectivename>OptionalRestrictSpearmen</objectivename>
+						<autocomplete>false</autocomplete>
+					</dummy>
+					<and id="9" mustfailall="false">
+						<values>
+							<kill id="10">
+								<description/>
+								<type>AbstractTownCenter</type>
+								<count>1</count>
+								<includeconversion>true</includeconversion>
+								<onlycountelites>false</onlycountelites>
+							</kill>
+							<kill id="11">
+								<description/>
+								<type>CyprusGeneral</type>
+								<count>1</count>
+								<includeconversion>true</includeconversion>
+								<onlycountelites>false</onlycountelites>
+							</kill>
+						</values>
+					</and>
+				</values>
+			</or>
+		</values>
+	</secondaryobjectives>
+	<onaccept/>
+	<rewards visible="true">
+		<alliancepoints visible="true">
+			<amount>8</amount>
+		</alliancepoints>
+		<xp visible="true">
+			1
+			<lookuptable>EliteShort</lookuptable>
+		</xp>
+		<capitalresource visible="true">
+			<capitalresource>cCapResCoin</capitalresource>
+			<amount>1</amount>
+			<lookuptable>EliteShort</lookuptable>
+		</capitalresource>
+		<loottable visible="true">general</loottable>
+		<loottable visible="true">general</loottable>
+	</rewards>
+	<secondaryrewards visible="true" name="Optional">
+		<capitalresource visible="true">
+			<capitalresource>cCapResCoin</capitalresource>
+			<amount>1</amount>
+			<lookuptable>EliteOptCoin</lookuptable>
+		</capitalresource>
+		<loottable visible="true">general</loottable>
+	</secondaryrewards>
+	<playersettings id="1">
+		<team>1</team>
+		<color>1</color>
+		<tributablebehavior>Default</tributablebehavior>
+		<playertype>Human</playertype>
+		<cooponly>false</cooponly>
+		<startingfood>-1</startingfood>
+		<startingwood>-1</startingwood>
+		<startinggold>-1</startinggold>
+		<startingstone>-1</startingstone>
+		<aislidervariables/>
+		<aiflagvariables/>
+	</playersettings>
+	<playersettings id="2">
+		<team>2</team>
+		<color>2</color>
+		<tributablebehavior>Default</tributablebehavior>
+		<playertype>Computer</playertype>
+		<personality>$$5452$$</personality>
+		<script>CORE\Rush_Moderate</script>
+		<dataset>C01\C01_CyprusRush_T3</dataset>
+		<cooponly>false</cooponly>
+		<startingfood>1000</startingfood>
+		<startingwood>1000</startingwood>
+		<startinggold>1000</startinggold>
+		<startingstone>1000</startingstone>
+		<aislidervariables>
+			<aivariable>
+				<key>NavyBias</key>
+				<value>-1</value>
+			</aivariable>
+			<aivariable>
+				<key>CavalryBias</key>
+				<value>1</value>
+			</aivariable>
+			<aivariable>
+				<key>InfantryBias</key>
+				<value>-0.4</value>
+			</aivariable>
+			<aivariable>
+				<key>EconomyHandicap</key>
+				<value>0.4</value>
+			</aivariable>
+		</aislidervariables>
+		<aiflagvariables>
+			<aivariable>
+				<key>NoTrainNavy</key>
+				<value>0</value>
+			</aivariable>
+			<aivariable>
+				<key>UseWaves</key>
+				<value>0</value>
+			</aivariable>
+		</aiflagvariables>
+	</playersettings>
+	<playersettings id="3">
+		<team>1</team>
+		<color>7</color>
+		<tributablebehavior>Default</tributablebehavior>
+		<playertype>Human</playertype>
+		<cooponly>true</cooponly>
+		<startingfood>-1</startingfood>
+		<startingwood>-1</startingwood>
+		<startinggold>-1</startinggold>
+		<startingstone>-1</startingstone>
+		<aislidervariables/>
+		<aiflagvariables/>
+	</playersettings>
+	<playersettings id="4">
+		<team>2</team>
+		<color>2</color>
+		<tributablebehavior>Default</tributablebehavior>
+		<playertype>Computer</playertype>
+		<personality>$$5452$$</personality>
+		<script>Custom\AIDoNothing</script>
+		<dataset>C01\C01_CyprusRush_T3</dataset>
+		<cooponly>false</cooponly>
+		<startingfood>-1</startingfood>
+		<startingwood>-1</startingwood>
+		<startinggold>-1</startinggold>
+		<startingstone>-1</startingstone>
+		<aislidervariables/>
+		<aiflagvariables/>
+	</playersettings>
+	<diplomacysettings/>
+	<randommap>
+		<map>Core\Shared_Cyprus\Cyprus_Renegade</map>
+		<randommap>true</randommap>
+		<numplayers>4</numplayers>
+		<mapvariables>
+			<variable name="IsREPEAT" type="Bool">true</variable>
+			<variable name="P2AddMarketManager" type="Bool">true</variable>
+			<variable name="P2AllowTCBuilding" type="Bool">false</variable>
+			<variable name="QuestID" type="Int">3072</variable>
+			<variable name="OptionalRestrictSpearmen" type="Bool">true</variable>
+			<variable name="MainPlayerID" type="Int">1</variable>
+			<variable name="CoopPlayerID" type="Int">3</variable>
+			<variable name="bIsELITE" type="Bool">true</variable>
+			<variable name="region" type="String">Greek Inland</variable>
+			<variable name="mapSize" type="String">Standard</variable>
+		</mapvariables>
+		<nuggetoverrides/>
+		<mapregionname>Greek Inland</mapregionname>
+		<lightsetname>&lt;Not Specified&gt;</lightsetname>
+		<mapsizename>Standard</mapsizename>
+	</randommap>
+	<questgivers>
+		<protounit>CyprusTrader</protounit>
+	</questgivers>
+	<questreturners>
+		<protounit>CyprusTrader</protounit>
+	</questreturners>
+	<maplocationx>0.74</maplocationx>
+	<maplocationy>0.3</maplocationy>
+	<mapmarker>QuestRepeatable</mapmarker>
+	<mappage>Cyprus</mappage>
+	<elitespawnchance>1</elitespawnchance>
+	<linkedquestid>0</linkedquestid>
+	<questbasescale>3</questbasescale>
+	<victoryconditions/>
+</quest>

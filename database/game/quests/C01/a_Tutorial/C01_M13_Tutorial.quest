@@ -1,0 +1,265 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<quest xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xsd="http://www.w3.org/2001/XMLSchema" uniqueid="11013" version="106">
+	<displayname>$$1022$$</displayname>
+	<level>5</level>
+	<repeatable>false</repeatable>
+	<timer>
+		<time/>
+		<events/>
+		<hideonui>false</hideonui>
+	</timer>
+	<canplaycoop>false</canplaycoop>
+	<cooprequired>false</cooprequired>
+	<ranked>false</ranked>
+	<alliance>eAllianceNone</alliance>
+	<questtype>RandomMap</questtype>
+	<description>$$6286$$</description>
+	<completiontext>$$2093$$</completiontext>
+	<inprogresstext>$$2094$$</inprogresstext>
+	<summarytext>$$6288$$</summarytext>
+	<canabandon>false</canabandon>
+	<hiddenquest>false</hiddenquest>
+	<friendonly>false</friendonly>
+	<suppressnotifications>false</suppressnotifications>
+	<customquest>false</customquest>
+	<questgamemodetype>Normal</questgamemodetype>
+	<prereqs>
+		<values>
+			<civilization>
+				<id>1</id>
+			</civilization>
+			<questcomplete>
+				<id>11007</id>
+			</questcomplete>
+			<questcomplete>
+				<id>11036</id>
+			</questcomplete>
+		</values>
+	</prereqs>
+	<equipmentprereqs/>
+	<targets>
+		<protounit>
+			<cooponly>false</cooponly>
+			<forcetocenter>false</forcetocenter>
+			<name>C01M13Warleader_A</name>
+			<protoname>C01M13Warleader_01</protoname>
+			<count>1</count>
+			<team>2</team>
+			<area>Quest_Area_A</area>
+			<overrides parent="Npc_BanditLeader_01">
+				<visualscale>1.5</visualscale>
+				<initialhitpoints>2200</initialhitpoints>
+				<maxhitpoints>2200</maxhitpoints>
+				<displaynameid>56011</displaynameid>
+			</overrides>
+			<usequesttargetindicator>true</usequesttargetindicator>
+		</protounit>
+		<protounit>
+			<cooponly>false</cooponly>
+			<forcetocenter>false</forcetocenter>
+			<name>C01M13Warleader_B</name>
+			<protoname>C01M13Warleader_01</protoname>
+			<count>1</count>
+			<team>2</team>
+			<area>Quest_Area_B</area>
+			<overrides parent="Npc_BanditLeader_01">
+				<visualscale>1.5</visualscale>
+				<initialhitpoints>2200</initialhitpoints>
+				<maxhitpoints>2200</maxhitpoints>
+				<displaynameid>56011</displaynameid>
+			</overrides>
+			<usequesttargetindicator>true</usequesttargetindicator>
+		</protounit>
+		<protounit>
+			<cooponly>false</cooponly>
+			<forcetocenter>false</forcetocenter>
+			<name>C01M13Warleader_D</name>
+			<protoname>C01M13Warleader_01</protoname>
+			<count>2</count>
+			<team>2</team>
+			<area>Quest_Area_D</area>
+			<overrides parent="Npc_BanditLeader_01">
+				<visualscale>1.5</visualscale>
+				<initialhitpoints>2200</initialhitpoints>
+				<maxhitpoints>2200</maxhitpoints>
+				<displaynameid>56011</displaynameid>
+			</overrides>
+			<usequesttargetindicator>true</usequesttargetindicator>
+		</protounit>
+	</targets>
+	<objectives id="0" mustfailall="false">
+		<values>
+			<or id="1" mustfailall="false">
+				<values>
+					<and id="2" mustfailall="false">
+						<values>
+							<kill id="3">
+								<description>$$3934$$</description>
+								<type>Gr_Bldg_WarHut</type>
+								<count>5</count>
+								<includeconversion>true</includeconversion>
+								<onlycountelites>false</onlycountelites>
+							</kill>
+							<kill id="4">
+								<description>$$3935$$</description>
+								<type>Gr_Cap_Hut</type>
+								<count>15</count>
+								<includeconversion>true</includeconversion>
+								<onlycountelites>false</onlycountelites>
+							</kill>
+							<kill id="5">
+								<description>$$4344$$</description>
+								<type>C01M13Warleader_01</type>
+								<count>4</count>
+								<includeconversion>true</includeconversion>
+								<onlycountelites>false</onlycountelites>
+							</kill>
+						</values>
+					</and>
+					<reduceunitsto id="6">
+						<type>LogicalTypeNeededForVictory</type>
+						<count>0</count>
+						<includeteam>false</includeteam>
+						<includeunderconstruction>false</includeunderconstruction>
+						<canuncomplete>false</canuncomplete>
+						<causesfailure>true</causesfailure>
+						<playerid>1</playerid>
+					</reduceunitsto>
+				</values>
+			</or>
+		</values>
+	</objectives>
+	<onaccept>
+		<protip visible="false">TIP_Shared_QuestMapAccessCityReminder</protip>
+	</onaccept>
+	<rewards visible="true">
+		<xp visible="true">4000</xp>
+		<capitalresource visible="true">
+			<capitalresource>cCapResCoin</capitalresource>
+			<amount>50</amount>
+		</capitalresource>
+		<or visible="true">
+			<trait visible="true">
+				Sword1H_R016
+				<traitlevel>7</traitlevel>
+			</trait>
+			<trait visible="true">
+				Bow1H_R015
+				<traitlevel>7</traitlevel>
+			</trait>
+			<trait visible="true">
+				Spear2H_R017
+				<traitlevel>7</traitlevel>
+			</trait>
+			<trait visible="true">
+				Shield1H_R016
+				<traitlevel>7</traitlevel>
+			</trait>
+			<trait visible="true">
+				Spear2H_U016
+				<traitlevel>7</traitlevel>
+			</trait>
+			<trait visible="true">
+				Bow1H_U012_VR
+				<traitlevel>7</traitlevel>
+			</trait>
+		</or>
+		<blueprint visible="true">Gn_Cap_GeneralEmpireStore01</blueprint>
+		<protip visible="false" proto="Gr_Cap_Start_Bldg">TIP_C01_TechTreeReminder</protip>
+	</rewards>
+	<playersettings id="1">
+		<team>1</team>
+		<color>1</color>
+		<tributablebehavior>Default</tributablebehavior>
+		<playertype>Human</playertype>
+		<cooponly>false</cooponly>
+		<startingfood>-1</startingfood>
+		<startingwood>-1</startingwood>
+		<startinggold>-1</startinggold>
+		<startingstone>-1</startingstone>
+		<aislidervariables/>
+		<aiflagvariables/>
+	</playersettings>
+	<playersettings id="2">
+		<team>2</team>
+		<color>2</color>
+		<tributablebehavior>Default</tributablebehavior>
+		<playertype>Computer</playertype>
+		<personality>$$2232$$</personality>
+		<script/>
+		<character/>
+		<dataset>c01\c01_bandit_t0</dataset>
+		<cooponly>false</cooponly>
+		<startingfood>0</startingfood>
+		<startingwood>0</startingwood>
+		<startinggold>0</startinggold>
+		<startingstone>0</startingstone>
+		<aislidervariables>
+			<aivariable>
+				<key>EconomyHandicap</key>
+				<value>-0.26000002</value>
+			</aivariable>
+			<aivariable>
+				<key>ArcherBias</key>
+				<value>-1</value>
+			</aivariable>
+		</aislidervariables>
+		<aiflagvariables/>
+	</playersettings>
+	<playersettings id="3">
+		<team>2</team>
+		<color>2</color>
+		<tributablebehavior>Default</tributablebehavior>
+		<playertype>Computer</playertype>
+		<personality>$$2232$$</personality>
+		<script>CORE\Rush_Weak</script>
+		<dataset>C01\C01_Bandit_T0</dataset>
+		<cooponly>false</cooponly>
+		<startingfood>-1</startingfood>
+		<startingwood>-1</startingwood>
+		<startinggold>-1</startinggold>
+		<startingstone>-1</startingstone>
+		<aislidervariables/>
+		<aiflagvariables>
+			<aivariable>
+				<key>NoBuild</key>
+				<value>0</value>
+			</aivariable>
+			<aivariable>
+				<value>0</value>
+			</aivariable>
+		</aiflagvariables>
+	</playersettings>
+	<diplomacysettings/>
+	<randommap>
+		<map>scenarioloader</map>
+		<randommap>true</randommap>
+		<numplayers>3</numplayers>
+		<mapvariables>
+			<variable name="scenarioFile" type="String">C01/C01_M13_Conquer</variable>
+			<variable name="region" type="String">Greek Coast</variable>
+		</mapvariables>
+		<nuggetoverrides>
+			<nuggetoverride overrideweight="100000">Quest_C01_SecondGuardedNugget</nuggetoverride>
+		</nuggetoverrides>
+		<mapregionname>Greek Coast</mapregionname>
+		<lightsetname>&lt;Not Specified&gt;</lightsetname>
+		<mapsizename>&lt;Not Specified&gt;</mapsizename>
+	</randommap>
+	<questgivers>
+		<protounit>C01_R1_VillageElder</protounit>
+	</questgivers>
+	<questreturners>
+		<protounit>C01_R1_VillageElder</protounit>
+	</questreturners>
+	<customloadscreen>loadscreentips\load_c01_specialunit_somatophylaz.xml</customloadscreen>
+	<maplocationx>0.278</maplocationx>
+	<maplocationy>0.2</maplocationy>
+	<mapmarker>QuestDefault</mapmarker>
+	<mappage>Greece</mappage>
+	<elitespawnchance>0</elitespawnchance>
+	<linkedquestid>0</linkedquestid>
+	<questbasescale>0</questbasescale>
+	<victoryconditions/>
+</quest>

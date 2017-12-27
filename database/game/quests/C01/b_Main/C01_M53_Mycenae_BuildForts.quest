@@ -1,0 +1,159 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<quest xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xsd="http://www.w3.org/2001/XMLSchema" uniqueid="62" version="39">
+	<displayname>$$699$$</displayname>
+	<level>11</level>
+	<repeatable>false</repeatable>
+	<timer>
+		<events/>
+		<hideonui>false</hideonui>
+	</timer>
+	<canplaycoop>false</canplaycoop>
+	<cooprequired>false</cooprequired>
+	<ranked>false</ranked>
+	<alliance>eAllianceNone</alliance>
+	<questtype>RandomMap</questtype>
+	<description>$$4056$$</description>
+	<completiontext>$$3377$$</completiontext>
+	<inprogresstext>$$4057$$</inprogresstext>
+	<summarytext>$$3378$$</summarytext>
+	<canabandon>true</canabandon>
+	<hiddenquest>false</hiddenquest>
+	<friendonly>false</friendonly>
+	<suppressnotifications>false</suppressnotifications>
+	<customquest>false</customquest>
+	<questgamemodetype>Normal</questgamemodetype>
+	<prereqs>
+		<values>
+			<civilization>
+				<id>1</id>
+			</civilization>
+			<questcomplete>
+				<id>57</id>
+			</questcomplete>
+		</values>
+	</prereqs>
+	<equipmentprereqs/>
+	<targets/>
+	<objectives id="0" mustfailall="false">
+		<values>
+			<or id="1" mustfailall="false">
+				<values>
+					<and id="2" mustfailall="false">
+						<values>
+							<unitinarea id="3">
+								<description>$$2488$$</description>
+								<area>Quest_Area_B</area>
+								<type>Gr_Bldg_Fortress</type>
+								<count>1</count>
+								<radius>-1</radius>
+								<aidefend>true</aidefend>
+							</unitinarea>
+							<unitinarea id="4">
+								<description>$$2489$$</description>
+								<area>Quest_Area_A</area>
+								<type>Gr_Bldg_Fortress</type>
+								<count>1</count>
+								<radius>-1</radius>
+								<aidefend>true</aidefend>
+							</unitinarea>
+							<unitinarea id="5">
+								<description>$$2490$$</description>
+								<area>Quest_Area_C</area>
+								<type>Gr_Bldg_Fortress</type>
+								<count>1</count>
+								<radius>-1</radius>
+								<aidefend>true</aidefend>
+							</unitinarea>
+						</values>
+					</and>
+					<reduceunitsto id="6">
+						<type>Gr_Civ_Villager</type>
+						<count>0</count>
+						<includeteam>false</includeteam>
+						<includeunderconstruction>false</includeunderconstruction>
+						<canuncomplete>false</canuncomplete>
+						<causesfailure>true</causesfailure>
+						<playerid>1</playerid>
+					</reduceunitsto>
+				</values>
+			</or>
+		</values>
+	</objectives>
+	<onaccept/>
+	<rewards visible="true">
+		<xp visible="true">20000</xp>
+		<capitalresource visible="true">
+			<capitalresource>cCapResCoin</capitalresource>
+			<amount>120</amount>
+		</capitalresource>
+		<loottable visible="true">general</loottable>
+		<loottable visible="true">general</loottable>
+		<or visible="true">
+			<consumable visible="true">
+				<consumablename>ConsumableGrantStone_U</consumablename>
+				<count>3</count>
+			</consumable>
+			<consumable visible="true">
+				<consumablename>ConsumableGrantStone_R</consumablename>
+				<count>3</count>
+			</consumable>
+		</or>
+	</rewards>
+	<playersettings id="1">
+		<team>1</team>
+		<color>1</color>
+		<tributablebehavior>Default</tributablebehavior>
+		<playertype>Human</playertype>
+		<cooponly>false</cooponly>
+		<startingfood>0</startingfood>
+		<startingwood>1800</startingwood>
+		<startinggold>0</startinggold>
+		<startingstone>1500</startingstone>
+		<aislidervariables/>
+		<aiflagvariables/>
+	</playersettings>
+	<playersettings id="2">
+		<team>2</team>
+		<color>2</color>
+		<tributablebehavior>Default</tributablebehavior>
+		<playertype>Computer</playertype>
+		<personality>$$2234$$</personality>
+		<dataset>c01\c01_mycenae_t1</dataset>
+		<cooponly>false</cooponly>
+		<startingfood>-1</startingfood>
+		<startingwood>-1</startingwood>
+		<startinggold>-1</startinggold>
+		<startingstone>-1</startingstone>
+		<aislidervariables/>
+		<aiflagvariables/>
+	</playersettings>
+	<diplomacysettings/>
+	<randommap>
+		<map>scenarioloader</map>
+		<randommap>true</randommap>
+		<numplayers>2</numplayers>
+		<mapvariables>
+			<variable name="scenarioFile" type="String">C01/C01_R2M52_BuildFortresses</variable>
+			<variable name="region" type="String">Greek Inland</variable>
+		</mapvariables>
+		<nuggetoverrides/>
+		<mapregionname>Greek Inland</mapregionname>
+		<lightsetname>&lt;Not Specified&gt;</lightsetname>
+		<mapsizename>&lt;Not Specified&gt;</mapsizename>
+	</randommap>
+	<questgivers>
+		<protounit>C01_R2_KingAgamemnon</protounit>
+	</questgivers>
+	<questreturners>
+		<protounit>C01_R2_KingAgamemnon</protounit>
+	</questreturners>
+	<maplocationx>0.52</maplocationx>
+	<maplocationy>0.48</maplocationy>
+	<mapmarker>QuestDefault</mapmarker>
+	<mappage>Greece</mappage>
+	<elitespawnchance>0</elitespawnchance>
+	<linkedquestid>0</linkedquestid>
+	<questbasescale>0</questbasescale>
+	<victoryconditions/>
+</quest>

@@ -1,0 +1,16 @@
+<?xml version="1.0"?>
+<Region xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xsd="http://www.w3.org/2001/XMLSchema" ID="21">
+    <Name>Farafra Oasis</Name>
+    <PlayList>Farafra</PlayList>
+    <MapName>Regions/REGION_A02_Farafra</MapName>
+    <MapLocationX>0.225</MapLocationX>
+    <MapLocationY>0.5</MapLocationY>
+    <MapMarker>RegionDefault</MapMarker>
+    <MapPage>Egypt</MapPage>
+    <LoadScreen>UserInterface\LoadingScreens\FarafraOasisLoading_df</LoadScreen>
+    <DescriptionStringID>65728</DescriptionStringID>
+    <DisplayNameStringID>65719</DisplayNameStringID>
+    <AvatarShield>UserInterface\Avatar\RegionShield_Alliance_Farafra</AvatarShield>
+    <FlagIcon>UserInterface\Icons\Regions\RegionFlagArgos_ua</FlagIcon>
+    <Alliance>true</Alliance>
+</Region>

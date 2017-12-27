@@ -1,0 +1,14 @@
+<?xml version="1.0"?>
+<Region xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xsd="http://www.w3.org/2001/XMLSchema" ID="25">
+  <Name>REGION_C05R3</Name>
+  <CivID>1</CivID>
+  <MapName>Regions/REGION_C05R3</MapName>
+  <MapLocationX>0.3</MapLocationX>
+  <MapLocationY>0.3</MapLocationY>
+  <MapMarker>RegionDefault</MapMarker>
+  <MapPage>Zone_C05_TEMP</MapPage>
+  <LoadScreen>UserInterface\LoadingScreens\ShipArgos_df</LoadScreen>
+  <AvatarShield>UserInterface\Avatar\RegionShieldArgos_ua</AvatarShield>
+  <DescriptionStringID>25513</DescriptionStringID>
+  <DisplayNameStringID>25513</DisplayNameStringID>
+</Region>

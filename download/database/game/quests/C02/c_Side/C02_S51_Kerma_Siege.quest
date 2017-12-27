@@ -1,0 +1,566 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<quest xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xsd="http://www.w3.org/2001/XMLSchema" uniqueid="314" version="81">
+	<displayname>$$2224$$</displayname>
+	<level>-1</level>
+	<repeatable>false</repeatable>
+	<offertype>eOfferNone</offertype>
+	<timer>
+		<time>00:15:00</time>
+		<events>
+			<timerevent event="EnemyTroops">00:00:01</timerevent>
+			<timerevent event="EnemyTroops">00:01:00</timerevent>
+			<timerevent event="EnemyTroops">00:03:00</timerevent>
+			<timerevent event="Reinforcements2">00:03:28</timerevent>
+			<timerevent event="Reinforcements1">00:04:00</timerevent>
+			<timerevent event="Reinforcements2">00:04:30</timerevent>
+			<timerevent event="Reinforcements3">00:05:00</timerevent>
+			<timerevent event="Reinforcements2">00:05:30</timerevent>
+			<timerevent event="RevealMid">00:06:00</timerevent>
+			<timerevent event="Reinforcements1">00:06:30</timerevent>
+			<timerevent event="Reinforcements2">00:07:00</timerevent>
+			<timerevent event="Reinforcements3">00:07:30</timerevent>
+			<timerevent event="Reinforcements2">00:08:00</timerevent>
+			<timerevent event="Reinforcements3">00:08:30</timerevent>
+			<timerevent event="Reinforcements1">00:09:00</timerevent>
+			<timerevent event="Reinforcements3">00:09:30</timerevent>
+			<timerevent event="Reinforcements2">00:10:00</timerevent>
+			<timerevent event="Reinforcements1">00:10:30</timerevent>
+			<timerevent event="Reinforcements3">00:11:00</timerevent>
+			<timerevent event="Reinforcements1">00:11:30</timerevent>
+			<timerevent event="Reinforcements2">00:12:00</timerevent>
+			<timerevent event="Reinforcements2">00:12:30</timerevent>
+			<timerevent event="Reinforcements3">00:13:00</timerevent>
+			<timerevent event="Reinforcements2">00:13:30</timerevent>
+			<timerevent event="Reinforcements1">00:14:00</timerevent>
+			<timerevent event="RevealPlayer">00:10:00</timerevent>
+		</events>
+		<hideonui>false</hideonui>
+	</timer>
+	<canplaycoop>true</canplaycoop>
+	<cooprequired>false</cooprequired>
+	<ranked>false</ranked>
+	<alliance>eAllianceNone</alliance>
+	<questtype>RandomMap</questtype>
+	<description>$$6119$$</description>
+	<completiontext>$$5740$$</completiontext>
+	<inprogresstext>$$1495$$</inprogresstext>
+	<summarytext>$$5064$$</summarytext>
+	<canabandon>true</canabandon>
+	<hiddenquest>false</hiddenquest>
+	<friendonly>false</friendonly>
+	<suppressnotifications>false</suppressnotifications>
+	<customquest>false</customquest>
+	<questgamemodetype>Normal</questgamemodetype>
+	<prereqs>
+		<values>
+			<civilization>
+				<id>3</id>
+			</civilization>
+			<questcomplete>
+				<id>318</id>
+			</questcomplete>
+		</values>
+	</prereqs>
+	<equipmentprereqs/>
+	<targets>
+		<grouping>
+			<cooponly>false</cooponly>
+			<forcetocenter>false</forcetocenter>
+			<name>Player1</name>
+			<count>1</count>
+			<team>1</team>
+			<area>Player1</area>
+			<groupfilename>C02\C02_P1Base_SiegeStart</groupfilename>
+			<rottype>Rotate0</rottype>
+			<rotateunitorientations>true</rotateunitorientations>
+		</grouping>
+		<grouping>
+			<cooponly>true</cooponly>
+			<forcetocenter>false</forcetocenter>
+			<name>Player2</name>
+			<count>1</count>
+			<team>5</team>
+			<area>Player2</area>
+			<groupfilename>Shared_Start_Small</groupfilename>
+			<rottype>Rotate0</rottype>
+			<rotateunitorientations>false</rotateunitorientations>
+		</grouping>
+		<grouping>
+			<cooponly>false</cooponly>
+			<forcetocenter>false</forcetocenter>
+			<name>Hill Fort</name>
+			<count>1</count>
+			<team>2</team>
+			<area>Quest_Area_D</area>
+			<groupfilename>C02\Nubian\C02_Nubian_GiantFort_01</groupfilename>
+			<rottype>RotateRandom</rottype>
+			<rotateunitorientations>true</rotateunitorientations>
+		</grouping>
+		<grouping>
+			<cooponly>false</cooponly>
+			<forcetocenter>false</forcetocenter>
+			<name>Egypt Fort 1</name>
+			<count>1</count>
+			<team>3</team>
+			<area>Quest_Area_A</area>
+			<groupfilename>C02\C02_AllyHillFort</groupfilename>
+			<rottype>RotateRandom</rottype>
+			<rotateunitorientations>true</rotateunitorientations>
+		</grouping>
+		<grouping>
+			<cooponly>false</cooponly>
+			<forcetocenter>false</forcetocenter>
+			<name>Egypt Fort 2</name>
+			<count>1</count>
+			<team>3</team>
+			<area>Quest_Area_B</area>
+			<groupfilename>C02\C02_AllyHillFort</groupfilename>
+			<rottype>RotateRandom</rottype>
+			<rotateunitorientations>true</rotateunitorientations>
+		</grouping>
+		<grouping>
+			<cooponly>false</cooponly>
+			<forcetocenter>false</forcetocenter>
+			<name>Egypt Fort 3</name>
+			<count>1</count>
+			<team>3</team>
+			<area>Quest_Area_C</area>
+			<groupfilename>C02\C02_AllyHillFort</groupfilename>
+			<rottype>RotateRandom</rottype>
+			<rotateunitorientations>true</rotateunitorientations>
+		</grouping>
+		<protounit>
+			<cooponly>false</cooponly>
+			<forcetocenter>false</forcetocenter>
+			<name>Revealer1</name>
+			<protoname>SpyglassRevealer</protoname>
+			<count>1</count>
+			<team>2</team>
+			<area>Quest_Area_A</area>
+			<usequesttargetindicator>false</usequesttargetindicator>
+		</protounit>
+		<protounit>
+			<cooponly>false</cooponly>
+			<forcetocenter>false</forcetocenter>
+			<name>Revealer2</name>
+			<protoname>AIStart</protoname>
+			<count>1</count>
+			<team>1</team>
+			<area>Quest_Area_B</area>
+			<usequesttargetindicator>false</usequesttargetindicator>
+		</protounit>
+		<protounit>
+			<cooponly>false</cooponly>
+			<forcetocenter>false</forcetocenter>
+			<name>Revealer3</name>
+			<protoname>SpyglassRevealer</protoname>
+			<count>1</count>
+			<team>2</team>
+			<area>Quest_Area_C</area>
+			<usequesttargetindicator>false</usequesttargetindicator>
+		</protounit>
+		<protounit>
+			<cooponly>false</cooponly>
+			<forcetocenter>true</forcetocenter>
+			<name>Revealer4</name>
+			<protoname>SpyglassRevealer</protoname>
+			<count>1</count>
+			<team>1</team>
+			<area>Quest_Area_D</area>
+			<usequesttargetindicator>false</usequesttargetindicator>
+		</protounit>
+		<protounit>
+			<cooponly>false</cooponly>
+			<forcetocenter>false</forcetocenter>
+			<name>Guard1</name>
+			<protoname>Eg_Arc_Slinger</protoname>
+			<count>10</count>
+			<team>3</team>
+			<area>Quest_Area_A</area>
+			<usequesttargetindicator>false</usequesttargetindicator>
+		</protounit>
+		<protounit>
+			<cooponly>false</cooponly>
+			<forcetocenter>false</forcetocenter>
+			<name>Guard2</name>
+			<protoname>Eg_Arc_Slinger</protoname>
+			<count>10</count>
+			<team>3</team>
+			<area>Quest_Area_B</area>
+			<usequesttargetindicator>false</usequesttargetindicator>
+		</protounit>
+		<protounit>
+			<cooponly>false</cooponly>
+			<forcetocenter>false</forcetocenter>
+			<name>Guard3</name>
+			<protoname>Eg_Arc_Slinger</protoname>
+			<count>10</count>
+			<team>3</team>
+			<area>Quest_Area_C</area>
+			<usequesttargetindicator>false</usequesttargetindicator>
+		</protounit>
+		<protounit>
+			<cooponly>false</cooponly>
+			<forcetocenter>false</forcetocenter>
+			<name>FortGuards</name>
+			<protoname>Eg_Inf_Spearman</protoname>
+			<count>20</count>
+			<team>4</team>
+			<area>Quest_Area_D</area>
+			<usequesttargetindicator>false</usequesttargetindicator>
+		</protounit>
+	</targets>
+	<objectives id="0" mustfailall="false">
+		<values>
+			<or id="1" mustfailall="false">
+				<values>
+					<timer id="2">
+						<description>$$2471$$</description>
+						<failonexpire>true</failonexpire>
+					</timer>
+					<kill id="3">
+						<description>$$2484$$</description>
+						<type>Eg_Bldg_Fortress</type>
+						<count>1</count>
+						<includeconversion>true</includeconversion>
+						<onlycountelites>false</onlycountelites>
+					</kill>
+					<and id="4" mustfailall="true">
+						<values>
+							<reduceunitsto id="5">
+								<type>LogicalTypeNeededForVictory</type>
+								<count>0</count>
+								<includeteam>false</includeteam>
+								<includeunderconstruction>false</includeunderconstruction>
+								<canuncomplete>false</canuncomplete>
+								<causesfailure>true</causesfailure>
+								<playerid>1</playerid>
+							</reduceunitsto>
+							<reduceunitsto id="6">
+								<type>UnitTypeBldgArcheryRange</type>
+								<count>0</count>
+								<includeteam>false</includeteam>
+								<includeunderconstruction>false</includeunderconstruction>
+								<canuncomplete>false</canuncomplete>
+								<causesfailure>true</causesfailure>
+								<playerid>1</playerid>
+							</reduceunitsto>
+							<reduceunitsto id="7">
+								<type>UnitTypeBldgBarracks</type>
+								<count>0</count>
+								<includeteam>false</includeteam>
+								<includeunderconstruction>false</includeunderconstruction>
+								<canuncomplete>false</canuncomplete>
+								<causesfailure>true</causesfailure>
+								<playerid>1</playerid>
+							</reduceunitsto>
+							<reduceunitsto id="8">
+								<type>UnitTypeBldgFortress</type>
+								<count>0</count>
+								<includeteam>false</includeteam>
+								<includeunderconstruction>false</includeunderconstruction>
+								<canuncomplete>false</canuncomplete>
+								<causesfailure>true</causesfailure>
+								<playerid>1</playerid>
+							</reduceunitsto>
+							<reduceunitsto id="9">
+								<type>UnitTypeBldgSiegeWorkshop</type>
+								<count>0</count>
+								<includeteam>false</includeteam>
+								<includeunderconstruction>false</includeunderconstruction>
+								<canuncomplete>false</canuncomplete>
+								<causesfailure>true</causesfailure>
+								<playerid>1</playerid>
+							</reduceunitsto>
+							<reduceunitsto id="10">
+								<type>UnitTypeBldgStables</type>
+								<count>0</count>
+								<includeteam>false</includeteam>
+								<includeunderconstruction>false</includeunderconstruction>
+								<canuncomplete>false</canuncomplete>
+								<causesfailure>true</causesfailure>
+								<playerid>1</playerid>
+							</reduceunitsto>
+							<reduceunitsto id="11">
+								<type>LogicalTypeNeededForVictory</type>
+								<count>0</count>
+								<includeteam>false</includeteam>
+								<includeunderconstruction>false</includeunderconstruction>
+								<canuncomplete>false</canuncomplete>
+								<causesfailure>true</causesfailure>
+								<playerid>5</playerid>
+							</reduceunitsto>
+							<reduceunitsto id="12">
+								<type>UnitTypeBldgArcheryRange</type>
+								<count>0</count>
+								<includeteam>false</includeteam>
+								<includeunderconstruction>false</includeunderconstruction>
+								<canuncomplete>false</canuncomplete>
+								<causesfailure>true</causesfailure>
+								<playerid>5</playerid>
+							</reduceunitsto>
+							<reduceunitsto id="13">
+								<type>UnitTypeBldgBarracks</type>
+								<count>0</count>
+								<includeteam>false</includeteam>
+								<includeunderconstruction>false</includeunderconstruction>
+								<canuncomplete>false</canuncomplete>
+								<causesfailure>true</causesfailure>
+								<playerid>5</playerid>
+							</reduceunitsto>
+							<reduceunitsto id="14">
+								<type>UnitTypeBldgFortress</type>
+								<count>0</count>
+								<includeteam>false</includeteam>
+								<includeunderconstruction>false</includeunderconstruction>
+								<canuncomplete>false</canuncomplete>
+								<causesfailure>true</causesfailure>
+								<playerid>5</playerid>
+							</reduceunitsto>
+							<reduceunitsto id="15">
+								<type>UnitTypeBldgSiegeWorkshop</type>
+								<count>0</count>
+								<includeteam>false</includeteam>
+								<includeunderconstruction>false</includeunderconstruction>
+								<canuncomplete>false</canuncomplete>
+								<causesfailure>true</causesfailure>
+								<playerid>5</playerid>
+							</reduceunitsto>
+							<reduceunitsto id="16">
+								<type>UnitTypeBldgStables</type>
+								<count>0</count>
+								<includeteam>false</includeteam>
+								<includeunderconstruction>false</includeunderconstruction>
+								<canuncomplete>false</canuncomplete>
+								<causesfailure>true</causesfailure>
+								<playerid>5</playerid>
+							</reduceunitsto>
+						</values>
+					</and>
+				</values>
+			</or>
+		</values>
+	</objectives>
+	<onaccept/>
+	<timereffects event="EnemyTroops">
+		<spawnunit visible="true">
+			<count>3</count>
+			<placeunittype>NPC_Nubian_Elephant</placeunittype>
+			<asplayer>2</asplayer>
+			<spawntype>SpawnForAllies</spawntype>
+			<nearunittype>Eg_Bldg_Fortress</nearunittype>
+			<radius>10</radius>
+			<useboneposition>false</useboneposition>
+			<overrides/>
+		</spawnunit>
+	</timereffects>
+	<timereffects event="EnemyTroops">
+		<spawnunit visible="true">
+			<count>15</count>
+			<placeunittype>NPC_Nubian_Warrior</placeunittype>
+			<asplayer>2</asplayer>
+			<spawntype>SpawnForAllies</spawntype>
+			<nearunittype>Eg_Bldg_Fortress</nearunittype>
+			<radius>10</radius>
+			<useboneposition>false</useboneposition>
+			<overrides/>
+		</spawnunit>
+	</timereffects>
+	<timereffects event="EnemyTroops">
+		<spawnunit visible="true">
+			<count>1</count>
+			<placeunittype>Eg_Sie_SiegeTower</placeunittype>
+			<asplayer>2</asplayer>
+			<spawntype>SpawnForAllies</spawntype>
+			<nearunittype>Eg_Bldg_Fortress</nearunittype>
+			<radius>10</radius>
+			<useboneposition>false</useboneposition>
+			<overrides/>
+		</spawnunit>
+	</timereffects>
+	<timereffects event="Reinforcements1">
+		<spawnunit visible="true">
+			<count>8</count>
+			<placeunittype>NPC_Nubian_Warrior</placeunittype>
+			<asplayer>2</asplayer>
+			<spawntype>SpawnForAllies</spawntype>
+			<nearunittype>Eg_Bldg_Fortress</nearunittype>
+			<radius>10</radius>
+			<useboneposition>false</useboneposition>
+			<overrides/>
+		</spawnunit>
+	</timereffects>
+	<timereffects event="Reinforcements2">
+		<spawnunit visible="true">
+			<count>8</count>
+			<placeunittype>NPC_Nubian_Archer</placeunittype>
+			<asplayer>2</asplayer>
+			<spawntype>SpawnForAllies</spawntype>
+			<nearunittype>Eg_Bldg_Fortress</nearunittype>
+			<radius>10</radius>
+			<useboneposition>false</useboneposition>
+			<overrides/>
+		</spawnunit>
+	</timereffects>
+	<timereffects event="Reinforcements3">
+		<spawnunit visible="true">
+			<count>4</count>
+			<placeunittype>Eg_Cav_CamelRider</placeunittype>
+			<asplayer>2</asplayer>
+			<spawntype>SpawnForAllies</spawntype>
+			<nearunittype>Eg_Bldg_Fortress</nearunittype>
+			<radius>10</radius>
+			<useboneposition>false</useboneposition>
+			<overrides/>
+		</spawnunit>
+	</timereffects>
+	<timereffects event="RevealMid">
+		<spawnunit visible="true">
+			<count>1</count>
+			<placeunittype>SpyglassRevealer</placeunittype>
+			<asplayer>2</asplayer>
+			<spawntype>SpawnForEnemies</spawntype>
+			<nearunittype>AIStart</nearunittype>
+			<preferredoffset/>
+			<radius>1</radius>
+			<useboneposition>false</useboneposition>
+			<overrides/>
+		</spawnunit>
+	</timereffects>
+	<timereffects event="RevealPlayer">
+		<spawnunit visible="true">
+			<count>1</count>
+			<placeunittype>SpyglassRevealer</placeunittype>
+			<asplayer>2</asplayer>
+			<spawntype>SpawnForEnemies</spawntype>
+			<nearunittype>Eg_Bldg_SiegeWorkshop</nearunittype>
+			<preferredoffset/>
+			<radius>1</radius>
+			<useboneposition>false</useboneposition>
+			<overrides/>
+		</spawnunit>
+	</timereffects>
+	<rewards visible="true">
+		<xp visible="true">15000</xp>
+		<capitalresource visible="true">
+			<capitalresource>cCapResCoin</capitalresource>
+			<amount>150</amount>
+		</capitalresource>
+		<loottable visible="true">general</loottable>
+	</rewards>
+	<playersettings id="1">
+		<team>1</team>
+		<color>1</color>
+		<tributablebehavior>Default</tributablebehavior>
+		<playertype>Human</playertype>
+		<cooponly>false</cooponly>
+		<startingfood>99999</startingfood>
+		<startingwood>99999</startingwood>
+		<startinggold>99999</startinggold>
+		<startingstone>0</startingstone>
+		<aislidervariables/>
+		<aiflagvariables/>
+	</playersettings>
+	<playersettings id="2">
+		<team>2</team>
+		<color>2</color>
+		<tributablebehavior>Default</tributablebehavior>
+		<playertype>Computer</playertype>
+		<personality>$$2283$$</personality>
+		<script>CORE\Rush_Moderate</script>
+		<dataset>C02\C02_Nubian_T2</dataset>
+		<cooponly>false</cooponly>
+		<startingfood>0</startingfood>
+		<startingwood>0</startingwood>
+		<startinggold>0</startinggold>
+		<startingstone>0</startingstone>
+		<aislidervariables/>
+		<aiflagvariables>
+			<aivariable>
+				<key>UseWaves</key>
+				<value>0</value>
+			</aivariable>
+			<aivariable>
+				<key>NoAutoReveal</key>
+				<value>0</value>
+			</aivariable>
+			<aivariable>
+				<key>NoScout</key>
+				<value>0</value>
+			</aivariable>
+		</aiflagvariables>
+	</playersettings>
+	<playersettings id="3">
+		<team>1</team>
+		<color>3</color>
+		<tributablebehavior>Default</tributablebehavior>
+		<playertype>Computer</playertype>
+		<personality>$$2284$$</personality>
+		<dataset>C02\C02_Nubian_T2</dataset>
+		<cooponly>false</cooponly>
+		<startingfood>0</startingfood>
+		<startingwood>0</startingwood>
+		<startinggold>0</startinggold>
+		<startingstone>0</startingstone>
+		<aislidervariables/>
+		<aiflagvariables/>
+	</playersettings>
+	<playersettings id="4">
+		<team>2</team>
+		<color>2</color>
+		<tributablebehavior>Default</tributablebehavior>
+		<playertype>Computer</playertype>
+		<personality>$$2285$$</personality>
+		<dataset>C02\C02_Nubian_T2</dataset>
+		<cooponly>false</cooponly>
+		<startingfood>0</startingfood>
+		<startingwood>0</startingwood>
+		<startinggold>0</startinggold>
+		<startingstone>0</startingstone>
+		<aislidervariables/>
+		<aiflagvariables/>
+	</playersettings>
+	<playersettings id="5">
+		<team>1</team>
+		<color>7</color>
+		<tributablebehavior>Default</tributablebehavior>
+		<playertype>Human</playertype>
+		<cooponly>true</cooponly>
+		<startingfood>99999</startingfood>
+		<startingwood>99999</startingwood>
+		<startinggold>99999</startinggold>
+		<startingstone>0</startingstone>
+		<aislidervariables/>
+		<aiflagvariables/>
+	</playersettings>
+	<diplomacysettings/>
+	<randommap>
+		<map>Core\C02\C02_MultiUse_NileRiver</map>
+		<randommap>true</randommap>
+		<numplayers>5</numplayers>
+		<mapvariables>
+			<variable name="region" type="String">Egyptian Marsh</variable>
+			<variable name="lighting" type="String">Morning</variable>
+			<variable name="mapSize" type="String">Large</variable>
+		</mapvariables>
+		<nuggetoverrides/>
+		<mapregionname>Egyptian Marsh</mapregionname>
+		<lightsetname>Morning</lightsetname>
+		<mapsizename>Large</mapsizename>
+	</randommap>
+	<questgivers>
+		<protounit>C02_R2_Architect</protounit>
+	</questgivers>
+	<questreturners>
+		<protounit>C02_R2_Architect</protounit>
+	</questreturners>
+	<maplocationx>0.48</maplocationx>
+	<maplocationy>0.3</maplocationy>
+	<mapmarker>QuestDefault</mapmarker>
+	<mappage>Nubia</mappage>
+	<elitespawnchance>0</elitespawnchance>
+	<linkedquestid>0</linkedquestid>
+	<questbasescale>0</questbasescale>
+	<victoryconditions/>
+</quest>

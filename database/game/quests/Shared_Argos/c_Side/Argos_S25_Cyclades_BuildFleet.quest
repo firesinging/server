@@ -1,0 +1,355 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<quest xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xsd="http://www.w3.org/2001/XMLSchema" uniqueid="206" version="47">
+	<displayname>$$4097$$</displayname>
+	<level>-1</level>
+	<repeatable>false</repeatable>
+	<offertype>eOfferNone</offertype>
+	<timer>
+		<time>00:07:00</time>
+		<events>
+			<timerevent event="Attack1">00:02:00</timerevent>
+			<timerevent event="Attack1">00:04:00</timerevent>
+			<timerevent event="Attack2">00:04:00</timerevent>
+			<timerevent event="Attack1">00:06:00</timerevent>
+			<timerevent event="Attack2">00:06:00</timerevent>
+			<timerevent event="Attack3">00:06:00</timerevent>
+		</events>
+		<hideonui>false</hideonui>
+	</timer>
+	<canplaycoop>false</canplaycoop>
+	<cooprequired>false</cooprequired>
+	<ranked>false</ranked>
+	<alliance>eAllianceNone</alliance>
+	<questtype>RandomMap</questtype>
+	<description>$$782$$</description>
+	<completiontext>$$783$$</completiontext>
+	<inprogresstext>$$1632$$</inprogresstext>
+	<summarytext>$$8156$$</summarytext>
+	<canabandon>true</canabandon>
+	<hiddenquest>false</hiddenquest>
+	<friendonly>false</friendonly>
+	<suppressnotifications>false</suppressnotifications>
+	<customquest>false</customquest>
+	<questgamemodetype>Normal</questgamemodetype>
+	<prereqs>
+		<values>
+			<questcomplete>
+				<id>205</id>
+			</questcomplete>
+		</values>
+	</prereqs>
+	<equipmentprereqs/>
+	<targets>
+		<grouping>
+			<cooponly>false</cooponly>
+			<forcetocenter>false</forcetocenter>
+			<name>PlayerStart1</name>
+			<count>1</count>
+			<team>1</team>
+			<area>Player1</area>
+			<groupfilename>Shared_Start_Barracks</groupfilename>
+			<rottype>Rotate0</rottype>
+			<rotateunitorientations>false</rotateunitorientations>
+		</grouping>
+		<grouping>
+			<cooponly>false</cooponly>
+			<forcetocenter>false</forcetocenter>
+			<name>SeaPeoples</name>
+			<count>1</count>
+			<team>2</team>
+			<area>Quest_Area_A</area>
+			<groupfilename>Shared_Start_BarracksTowers</groupfilename>
+			<rottype>Rotate0</rottype>
+			<rotateunitorientations>false</rotateunitorientations>
+		</grouping>
+		<protounit>
+			<cooponly>false</cooponly>
+			<forcetocenter>false</forcetocenter>
+			<name>ExtraVills</name>
+			<protoname>Gr_Civ_Villager</protoname>
+			<count>10</count>
+			<team>2</team>
+			<area>Quest_Area_A</area>
+			<usequesttargetindicator>false</usequesttargetindicator>
+		</protounit>
+		<protounit>
+			<cooponly>false</cooponly>
+			<forcetocenter>false</forcetocenter>
+			<name>ExtraSpearmen</name>
+			<protoname>Gr_Inf_Spearman</protoname>
+			<count>10</count>
+			<team>2</team>
+			<area>Quest_Area_A</area>
+			<usequesttargetindicator>false</usequesttargetindicator>
+		</protounit>
+		<grouping>
+			<cooponly>true</cooponly>
+			<forcetocenter>false</forcetocenter>
+			<name>PlayerStart2</name>
+			<count>1</count>
+			<team>4</team>
+			<area>Player2</area>
+			<groupfilename>Shared_Start_Barracks</groupfilename>
+			<rottype>Rotate0</rottype>
+			<rotateunitorientations>false</rotateunitorientations>
+		</grouping>
+		<random placeatleast="0" placenomore="1">
+			<cooponly>false</cooponly>
+			<forcetocenter>false</forcetocenter>
+			<unitprobability>
+				<unit name="Camel1" chance="0.5"/>
+			</unitprobability>
+			<targets>
+				<protounit>
+					<cooponly>false</cooponly>
+					<forcetocenter>false</forcetocenter>
+					<name>Camel1</name>
+					<protoname>FavoriteCamel</protoname>
+					<count>1</count>
+					<team>2</team>
+					<area>Quest_Area_A</area>
+					<overrides parent="Qst_Convertable">
+						<displaynameid>52641</displaynameid>
+						<animfile>World\Animals\Camel\Camel.xml</animfile>
+						<portraiticon>UserInterface\Icons\Units\Gaia\AvatarWildCamel_ua</portraiticon>
+						<icon>UserInterface\Icons\Units\Gaia\WildCamel64_ua</icon>
+						<soundfile>Camel</soundfile>
+					</overrides>
+					<usequesttargetindicator>true</usequesttargetindicator>
+				</protounit>
+			</targets>
+		</random>
+		<protounit>
+			<cooponly>false</cooponly>
+			<forcetocenter>false</forcetocenter>
+			<name>ArmyTarget</name>
+			<protoname>AIStart</protoname>
+			<count>1</count>
+			<team>2</team>
+			<area>Quest_Area_A</area>
+			<usequesttargetindicator>false</usequesttargetindicator>
+		</protounit>
+	</targets>
+	<objectives id="0" mustfailall="false">
+		<values>
+			<or id="1" mustfailall="false">
+				<values>
+					<timer id="2">
+						<description>$$2471$$</description>
+						<failonexpire>true</failonexpire>
+					</timer>
+					<and id="3" mustfailall="false">
+						<values>
+							<ownsunit id="4">
+								<description>$$2673$$</description>
+								<type>UnitTypeShipUtility1</type>
+								<count>1</count>
+								<owningplayerid>1</owningplayerid>
+								<causesfailure>false</causesfailure>
+							</ownsunit>
+							<ownsunit id="5">
+								<description>$$8088$$</description>
+								<type>UnitTypeShipBasic1</type>
+								<count>8</count>
+								<owningplayerid>1</owningplayerid>
+								<causesfailure>false</causesfailure>
+							</ownsunit>
+						</values>
+					</and>
+					<and id="6" mustfailall="true">
+						<values>
+							<reduceunitsto id="7">
+								<type>LogicalTypeNeededForVictory</type>
+								<count>0</count>
+								<includeteam>false</includeteam>
+								<includeunderconstruction>false</includeunderconstruction>
+								<canuncomplete>false</canuncomplete>
+								<causesfailure>true</causesfailure>
+								<playerid>1</playerid>
+							</reduceunitsto>
+							<reduceunitsto id="8">
+								<type>LogicalTypeNeededForVictory</type>
+								<count>0</count>
+								<includeteam>false</includeteam>
+								<includeunderconstruction>false</includeunderconstruction>
+								<canuncomplete>false</canuncomplete>
+								<causesfailure>true</causesfailure>
+								<playerid>4</playerid>
+							</reduceunitsto>
+						</values>
+					</and>
+				</values>
+			</or>
+		</values>
+	</objectives>
+	<onaccept/>
+	<timereffects event="Attack1">
+		<spawnunit visible="false">
+			<count>12</count>
+			<placeunittype>Npc_SP_Swordsman</placeunittype>
+			<asplayer>3</asplayer>
+			<spawntype>SpawnForEnemies</spawntype>
+			<nearunittype>AIStart</nearunittype>
+			<radius>20</radius>
+			<useboneposition>false</useboneposition>
+			<overrides/>
+		</spawnunit>
+	</timereffects>
+	<timereffects event="Attack2">
+		<spawnunit visible="false">
+			<count>6</count>
+			<placeunittype>Npc_SP_Bowman</placeunittype>
+			<asplayer>3</asplayer>
+			<spawntype>SpawnForEnemies</spawntype>
+			<nearunittype>AIStart</nearunittype>
+			<radius>20</radius>
+			<useboneposition>true</useboneposition>
+			<overrides/>
+		</spawnunit>
+	</timereffects>
+	<timereffects event="Attack3">
+		<spawnunit visible="false">
+			<count>3</count>
+			<placeunittype>Npc_SP_Chieftan</placeunittype>
+			<asplayer>3</asplayer>
+			<spawntype>SpawnForEnemies</spawntype>
+			<nearunittype>AIStart</nearunittype>
+			<radius>20</radius>
+			<useboneposition>false</useboneposition>
+			<overrides/>
+		</spawnunit>
+	</timereffects>
+	<rewards visible="true">
+		<xp visible="true">
+			1
+			<lookuptable>SQLong</lookuptable>
+		</xp>
+		<capitalresource visible="true">
+			<capitalresource>cCapResCoin</capitalresource>
+			<amount>1</amount>
+			<lookuptable>SQLong</lookuptable>
+		</capitalresource>
+		<loottable visible="true">general</loottable>
+	</rewards>
+	<playersettings id="1">
+		<team>1</team>
+		<color>1</color>
+		<tributablebehavior>Default</tributablebehavior>
+		<playertype>Human</playertype>
+		<cooponly>false</cooponly>
+		<startingfood>-1</startingfood>
+		<startingwood>-1</startingwood>
+		<startinggold>-1</startinggold>
+		<startingstone>-1</startingstone>
+		<aislidervariables/>
+		<aiflagvariables/>
+	</playersettings>
+	<playersettings id="2">
+		<team>2</team>
+		<color>5</color>
+		<tributablebehavior>Default</tributablebehavior>
+		<playertype>Computer</playertype>
+		<personality>$$2311$$</personality>
+		<script>CORE\Ramp_Weak</script>
+		<dataset>C01\C01_CoreRamp_T2</dataset>
+		<cooponly>false</cooponly>
+		<startingfood>100</startingfood>
+		<startingwood>200</startingwood>
+		<startinggold>100</startinggold>
+		<startingstone>0</startingstone>
+		<aislidervariables>
+			<aivariable>
+				<key>CavalryBias</key>
+				<value>-1</value>
+			</aivariable>
+			<aivariable>
+				<key>SiegeBias</key>
+				<value>-1</value>
+			</aivariable>
+			<aivariable>
+				<key>InfantryBias</key>
+				<value>1</value>
+			</aivariable>
+			<aivariable>
+				<key>ArcherBias</key>
+				<value>-1</value>
+			</aivariable>
+		</aislidervariables>
+		<aiflagvariables>
+			<aivariable>
+				<key>NoTrainNavy</key>
+				<value>0</value>
+			</aivariable>
+			<aivariable>
+				<key>NoFish</key>
+				<value>0</value>
+			</aivariable>
+			<aivariable>
+				<key>NoResign</key>
+				<value>0</value>
+			</aivariable>
+		</aiflagvariables>
+	</playersettings>
+	<playersettings id="3">
+		<team>3</team>
+		<color>2</color>
+		<tributablebehavior>Default</tributablebehavior>
+		<playertype>Computer</playertype>
+		<personality>$$2243$$</personality>
+		<dataset>C01\C01_SeaPeople_T3</dataset>
+		<cooponly>false</cooponly>
+		<startingfood>-1</startingfood>
+		<startingwood>-1</startingwood>
+		<startinggold>-1</startinggold>
+		<startingstone>-1</startingstone>
+		<aislidervariables/>
+		<aiflagvariables/>
+	</playersettings>
+	<playersettings id="4">
+		<team>1</team>
+		<color>7</color>
+		<tributablebehavior>Default</tributablebehavior>
+		<playertype>Human</playertype>
+		<cooponly>true</cooponly>
+		<startingfood>-1</startingfood>
+		<startingwood>-1</startingwood>
+		<startinggold>-1</startinggold>
+		<startingstone>-1</startingstone>
+		<aislidervariables/>
+		<aiflagvariables/>
+	</playersettings>
+	<diplomacysettings>
+		<diplomacy relation="Neutral" team1="1" team2="2" sharedlos="true"/>
+		<diplomacy relation="Neutral" team1="2" team2="1" sharedlos="false"/>
+		<diplomacy relation="Neutral" team1="3" team2="1" sharedlos="false"/>
+	</diplomacysettings>
+	<randommap>
+		<map>Core\Shared_Argos\Argos_RM_RefugeeRiver</map>
+		<randommap>true</randommap>
+		<numplayers>4</numplayers>
+		<mapvariables>
+			<variable name="region" type="String">Greek Rocky</variable>
+			<variable name="lighting" type="String">Evening</variable>
+			<variable name="mapSize" type="String">Small</variable>
+		</mapvariables>
+		<nuggetoverrides/>
+		<mapregionname>Greek Rocky</mapregionname>
+		<lightsetname>Evening</lightsetname>
+		<mapsizename>Small</mapsizename>
+	</randommap>
+	<questgivers>
+		<protounit>ArgosRefugee</protounit>
+	</questgivers>
+	<questreturners>
+		<protounit>ArgosRefugee</protounit>
+	</questreturners>
+	<maplocationx>0.559</maplocationx>
+	<maplocationy>0.603</maplocationy>
+	<mapmarker>QuestDefault</mapmarker>
+	<mappage>Greece</mappage>
+	<elitespawnchance>0.025</elitespawnchance>
+	<linkedquestid>0</linkedquestid>
+	<questbasescale>0</questbasescale>
+	<victoryconditions/>
+</quest>

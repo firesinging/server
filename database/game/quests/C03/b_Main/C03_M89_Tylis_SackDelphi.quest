@@ -1,0 +1,339 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<quest xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xsd="http://www.w3.org/2001/XMLSchema" uniqueid="13038" version="102">
+	<displayname>$$7745$$</displayname>
+	<level>18</level>
+	<repeatable>false</repeatable>
+	<timer>
+		<events/>
+		<hideonui>false</hideonui>
+	</timer>
+	<canplaycoop>false</canplaycoop>
+	<cooprequired>false</cooprequired>
+	<ranked>false</ranked>
+	<alliance>eAllianceNone</alliance>
+	<questtype>RandomMap</questtype>
+	<description>$$9594$$</description>
+	<completiontext>$$7698$$</completiontext>
+	<inprogresstext>$$7697$$</inprogresstext>
+	<summarytext>$$9595$$</summarytext>
+	<canabandon>true</canabandon>
+	<hiddenquest>false</hiddenquest>
+	<friendonly>false</friendonly>
+	<suppressnotifications>false</suppressnotifications>
+	<customquest>false</customquest>
+	<questgamemodetype>Normal</questgamemodetype>
+	<prereqs>
+		<values>
+			<civilization>
+				<id>6</id>
+			</civilization>
+			<questcomplete>
+				<id>13037</id>
+			</questcomplete>
+		</values>
+	</prereqs>
+	<equipmentprereqs/>
+	<targets>
+		<grouping>
+			<cooponly>false</cooponly>
+			<forcetocenter>false</forcetocenter>
+			<name>HumanPlayerStart</name>
+			<count>1</count>
+			<team>1</team>
+			<area>Player1</area>
+			<groupfilename>Shared_Player1_Age2_Barracks</groupfilename>
+			<rottype>Rotate0</rottype>
+			<rotateunitorientations>true</rotateunitorientations>
+		</grouping>
+		<grouping>
+			<cooponly>true</cooponly>
+			<forcetocenter>false</forcetocenter>
+			<name>CoopPlayerStart</name>
+			<count>1</count>
+			<team>3</team>
+			<area>Player2</area>
+			<groupfilename>Shared_Player3_Age2_Barracks</groupfilename>
+			<rottype>Rotate0</rottype>
+			<rotateunitorientations>true</rotateunitorientations>
+		</grouping>
+		<grouping>
+			<cooponly>false</cooponly>
+			<forcetocenter>false</forcetocenter>
+			<name>Ally01PlayerStart</name>
+			<count>1</count>
+			<team>4</team>
+			<area>Player3</area>
+			<groupfilename>Shared_Start_BarracksTowers</groupfilename>
+			<rottype>Rotate0</rottype>
+			<rotateunitorientations>true</rotateunitorientations>
+		</grouping>
+		<grouping>
+			<cooponly>false</cooponly>
+			<forcetocenter>false</forcetocenter>
+			<name>Ally02PlayerStart</name>
+			<count>1</count>
+			<team>5</team>
+			<area>Player4</area>
+			<groupfilename>Shared_Start_BarracksTowers</groupfilename>
+			<rottype>Rotate0</rottype>
+			<rotateunitorientations>true</rotateunitorientations>
+		</grouping>
+		<protounit>
+			<cooponly>false</cooponly>
+			<forcetocenter>false</forcetocenter>
+			<name>Brennos</name>
+			<protoname>Brennos</protoname>
+			<count>1</count>
+			<team>1</team>
+			<area>Quest_Area_B</area>
+			<overrides parent="Ce_QG_Brennos">
+				<initialhitpoints>2200</initialhitpoints>
+				<maxhitpoints>2200</maxhitpoints>
+			</overrides>
+			<usequesttargetindicator>true</usequesttargetindicator>
+		</protounit>
+	</targets>
+	<objectives id="0" mustfailall="false">
+		<values>
+			<or id="1" mustfailall="false">
+				<values>
+					<unitinarea id="2">
+						<description>$$9042$$</description>
+						<area>Quest_Area_E</area>
+						<type>Brennos</type>
+						<count>1</count>
+						<radius>-1</radius>
+						<aidefend>true</aidefend>
+					</unitinarea>
+					<protectunit id="3">
+						<description>$$7535$$</description>
+						<type>Brennos</type>
+						<owningplayerid>1</owningplayerid>
+					</protectunit>
+				</values>
+			</or>
+		</values>
+	</objectives>
+	<onaccept/>
+	<rewards visible="true">
+		<gamecurrency visible="true">
+			<gamecurrency>cGameCurEmpirePoints</gamecurrency>
+			<amount>12</amount>
+		</gamecurrency>
+		<xp visible="true">75000</xp>
+		<capitalresource visible="true">
+			<capitalresource>cCapResCoin</capitalresource>
+			<amount>150</amount>
+		</capitalresource>
+		<loottable visible="true">tables\_coreloot_celthigh_reward</loottable>
+		<loottable visible="true">general</loottable>
+		<loottable visible="true">general</loottable>
+		<blueprint visible="true">CeltDelphiTemple</blueprint>
+		<or visible="true">
+			<trait visible="true">
+				Warpaint_E101
+				<traitlevel>23</traitlevel>
+			</trait>
+			<trait visible="true">
+				Warpaint_E102
+				<traitlevel>23</traitlevel>
+			</trait>
+			<trait visible="true">
+				Warpaint_E103
+				<traitlevel>23</traitlevel>
+			</trait>
+			<loottable visible="true">general</loottable>
+		</or>
+	</rewards>
+	<playersettings id="1">
+		<team>1</team>
+		<color>1</color>
+		<tributablebehavior>Default</tributablebehavior>
+		<playertype>Human</playertype>
+		<cooponly>false</cooponly>
+		<startingfood>1000</startingfood>
+		<startingwood>1000</startingwood>
+		<startinggold>1000</startinggold>
+		<startingstone>1000</startingstone>
+		<aislidervariables/>
+		<aiflagvariables/>
+	</playersettings>
+	<playersettings id="2">
+		<team>2</team>
+		<color>2</color>
+		<tributablebehavior>Default</tributablebehavior>
+		<playertype>Computer</playertype>
+		<personality>$$8969$$</personality>
+		<script>core\turtle_heavy</script>
+		<dataset>C01\C01_Delphi_T2</dataset>
+		<cooponly>false</cooponly>
+		<startingfood>1000</startingfood>
+		<startingwood>1000</startingwood>
+		<startinggold>1000</startinggold>
+		<startingstone>1000</startingstone>
+		<aislidervariables>
+			<aivariable>
+				<key>SiegeBias</key>
+				<value>-0.5</value>
+			</aivariable>
+		</aislidervariables>
+		<aiflagvariables>
+			<aivariable>
+				<key>NoScout</key>
+				<value>0</value>
+			</aivariable>
+			<aivariable>
+				<key>NoResign</key>
+				<value>0</value>
+			</aivariable>
+			<aivariable>
+				<key>NoTrainNavy</key>
+				<value>0</value>
+			</aivariable>
+		</aiflagvariables>
+	</playersettings>
+	<playersettings id="3">
+		<team>1</team>
+		<color>7</color>
+		<tributablebehavior>Default</tributablebehavior>
+		<playertype>Human</playertype>
+		<cooponly>true</cooponly>
+		<startingfood>1000</startingfood>
+		<startingwood>1000</startingwood>
+		<startinggold>1000</startinggold>
+		<startingstone>1000</startingstone>
+		<aislidervariables/>
+		<aiflagvariables/>
+	</playersettings>
+	<playersettings id="4">
+		<team>4</team>
+		<color>3</color>
+		<tributablebehavior>Default</tributablebehavior>
+		<playertype>Computer</playertype>
+		<personality>$$8877$$</personality>
+		<script>core\boom_moderate</script>
+		<dataset>C03\C03_CoreRamp_T2</dataset>
+		<cooponly>false</cooponly>
+		<startingfood>1000</startingfood>
+		<startingwood>1000</startingwood>
+		<startinggold>1000</startinggold>
+		<startingstone>1000</startingstone>
+		<aislidervariables/>
+		<aiflagvariables/>
+	</playersettings>
+	<playersettings id="5">
+		<team>4</team>
+		<color>5</color>
+		<tributablebehavior>Default</tributablebehavior>
+		<playertype>Computer</playertype>
+		<personality>$$8883$$</personality>
+		<script>core\boom_moderate</script>
+		<dataset>C03\C03_CoreRamp_T2</dataset>
+		<cooponly>false</cooponly>
+		<startingfood>1000</startingfood>
+		<startingwood>1000</startingwood>
+		<startinggold>1000</startinggold>
+		<startingstone>1000</startingstone>
+		<aislidervariables/>
+		<aiflagvariables>
+			<aivariable>
+				<key>NoTrainNavy</key>
+				<value>0</value>
+			</aivariable>
+		</aiflagvariables>
+	</playersettings>
+	<playersettings id="6">
+		<team>2</team>
+		<color>2</color>
+		<tributablebehavior>Default</tributablebehavior>
+		<playertype>Computer</playertype>
+		<personality>$$8969$$</personality>
+		<script/>
+		<dataset>C01\C01_Delphi_T2</dataset>
+		<cooponly>false</cooponly>
+		<startingfood>0</startingfood>
+		<startingwood>0</startingwood>
+		<startinggold>0</startinggold>
+		<startingstone>0</startingstone>
+		<aislidervariables/>
+		<aiflagvariables/>
+	</playersettings>
+	<playersettings id="7">
+		<team>3</team>
+		<color>2</color>
+		<tributablebehavior>Default</tributablebehavior>
+		<playertype>Computer</playertype>
+		<personality>$$8969$$</personality>
+		<script/>
+		<dataset>C01\C01_Delphi_T2</dataset>
+		<cooponly>false</cooponly>
+		<startingfood>0</startingfood>
+		<startingwood>0</startingwood>
+		<startinggold>0</startinggold>
+		<startingstone>0</startingstone>
+		<aislidervariables/>
+		<aiflagvariables/>
+	</playersettings>
+	<playersettings id="8">
+		<team>5</team>
+		<color>4</color>
+		<tributablebehavior>Default</tributablebehavior>
+		<playertype>Computer</playertype>
+		<personality>$$8884$$</personality>
+		<script/>
+		<dataset>c01\c01_vanilla_t0</dataset>
+		<cooponly>false</cooponly>
+		<startingfood>0</startingfood>
+		<startingwood>0</startingwood>
+		<startinggold>0</startinggold>
+		<startingstone>0</startingstone>
+		<aislidervariables/>
+		<aiflagvariables/>
+	</playersettings>
+	<diplomacysettings>
+		<diplomacy relation="Ally" team1="1" team2="4" sharedlos="true"/>
+		<diplomacy relation="Ally" team1="4" team2="1" sharedlos="true"/>
+		<diplomacy relation="Ally" team1="2" team2="3" sharedlos="true"/>
+		<diplomacy relation="Ally" team1="3" team2="2" sharedlos="true"/>
+		<diplomacy relation="Neutral" team1="3" team2="4" sharedlos="false"/>
+		<diplomacy relation="Neutral" team1="4" team2="3" sharedlos="false"/>
+		<diplomacy relation="Ally" team1="5" team2="2" sharedlos="true"/>
+		<diplomacy relation="Ally" team1="2" team2="5" sharedlos="true"/>
+		<diplomacy relation="Ally" team1="5" team2="3" sharedlos="true"/>
+		<diplomacy relation="Ally" team1="3" team2="5" sharedlos="true"/>
+		<diplomacy relation="Neutral" team1="5" team2="1" sharedlos="false"/>
+		<diplomacy relation="Neutral" team1="1" team2="5" sharedlos="false"/>
+		<diplomacy relation="Neutral" team1="5" team2="4" sharedlos="false"/>
+		<diplomacy relation="Neutral" team1="4" team2="5" sharedlos="false"/>
+	</diplomacysettings>
+	<randommap>
+		<map>Core/C03/C03_R3M88_SackDelphi</map>
+		<randommap>true</randommap>
+		<numplayers>8</numplayers>
+		<mapvariables>
+			<variable name="scenarioFile" type="String">C03/C03_R3M88_SackDelphi</variable>
+			<variable name="region" type="String">Greek Rocky</variable>
+			<variable name="lighting" type="String">Afternoon</variable>
+			<variable name="mapSize" type="String">Standard</variable>
+		</mapvariables>
+		<nuggetoverrides/>
+		<mapregionname>Greek Rocky</mapregionname>
+		<lightsetname>Afternoon</lightsetname>
+		<mapsizename>Standard</mapsizename>
+	</randommap>
+	<questgivers>
+		<protounit>C03_R3_Brennos</protounit>
+	</questgivers>
+	<questreturners>
+		<protounit>C03_R3_Brennos</protounit>
+	</questreturners>
+	<maplocationx>0.285</maplocationx>
+	<maplocationy>0.81</maplocationy>
+	<mapmarker>QuestDefault</mapmarker>
+	<mappage>Thrace</mappage>
+	<elitespawnchance>0.025</elitespawnchance>
+	<linkedquestid>0</linkedquestid>
+	<questbasescale>0</questbasescale>
+	<victoryconditions/>
+</quest>

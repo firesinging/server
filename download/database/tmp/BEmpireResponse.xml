@@ -1,0 +1,29 @@
+<Empire>
+	<LastLaunched />
+	<Offers>
+	  <OfferType>eOfferCivGreek</OfferType>
+	  <OfferType>eOfferCivEgyptian</OfferType>
+	  <OfferType>eOfferCivNorse</OfferType>
+	  <OfferType>eOfferCivBabylonian</OfferType>
+	  <OfferType>eOfferCivPersian</OfferType>
+	  <OfferType>eOfferCivCeltic</OfferType>
+	  <OfferType>eOfferBooster1</OfferType>
+	  <OfferType>eOfferBooster2</OfferType>
+	  <OfferType>eOfferBooster1</OfferType>
+	  <OfferType>eOfferBooster3</OfferType>
+	  <OfferType>eOfferBooster4</OfferType>
+	  <OfferType>eOfferBooster5</OfferType>
+	  <OfferType>eOfferBooster6</OfferType>
+	  <OfferType>eOfferBooster7</OfferType>
+	  <OfferType>eOfferBooster8</OfferType>
+	  <OfferType>eOfferBooster9</OfferType>
+	</Offers>
+	<CharacterList>
+	  <CharacterData>
+		<characterID>1</characterID>
+		<CivId>1</CivId>
+		<Name>FireSinger</Name>
+		<Level>38</Level>
+	  </CharacterData>
+	</CharacterList>
+</Empire>

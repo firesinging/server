@@ -1,0 +1,131 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<quest xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xsd="http://www.w3.org/2001/XMLSchema" uniqueid="10308" version="57">
+	<displayname>$$5294$$</displayname>
+	<level>-1</level>
+	<repeatable>true</repeatable>
+	<timer>
+		<events/>
+		<hideonui>false</hideonui>
+	</timer>
+	<canplaycoop>false</canplaycoop>
+	<cooprequired>false</cooprequired>
+	<ranked>false</ranked>
+	<alliance>eAllianceNone</alliance>
+	<questtype>PvP</questtype>
+	<description>$$4768$$</description>
+	<completiontext>$$5292$$</completiontext>
+	<inprogresstext>$$1826$$</inprogresstext>
+	<summarytext>$$5295$$</summarytext>
+	<canabandon>true</canabandon>
+	<hiddenquest>true</hiddenquest>
+	<friendonly>false</friendonly>
+	<suppressnotifications>false</suppressnotifications>
+	<customquest>false</customquest>
+	<questgamemodetype>Normal</questgamemodetype>
+	<prereqs>
+		<values>
+			<level>
+				<min>1</min>
+				<max>99</max>
+			</level>
+		</values>
+	</prereqs>
+	<equipmentprereqs/>
+	<targets/>
+	<objectives id="0" mustfailall="false">
+		<values>
+			<completegame id="1">
+				<description>$$9777$$</description>
+				<minimumtime>240000</minimumtime>
+			</completegame>
+		</values>
+	</objectives>
+	<secondaryobjectives id="2" mustfailall="false" rewardname="VictoryReward">
+		<description>$$9776$$</description>
+		<values>
+			<wingame id="3">
+				<description>$$3807$$</description>
+				<suppressfail>false</suppressfail>
+			</wingame>
+		</values>
+	</secondaryobjectives>
+	<onaccept/>
+	<rewards visible="true">
+		<xp visible="true">
+			0
+			<lookuptable>pvpLoserXP</lookuptable>
+		</xp>
+		<alliancepoints visible="true">
+			<amount>4</amount>
+		</alliancepoints>
+	</rewards>
+	<secondaryrewards visible="true" name="VictoryReward">
+		<xp visible="true">
+			0
+			<lookuptable>pvp1v1</lookuptable>
+		</xp>
+		<alliancepoints visible="true">
+			<amount>16</amount>
+		</alliancepoints>
+		<capitalresource visible="true">
+			<capitalresource>cCapResCoin</capitalresource>
+			<amount>1</amount>
+			<lookuptable>pvp1v1</lookuptable>
+		</capitalresource>
+	</secondaryrewards>
+	<playersettings id="1">
+		<team>1</team>
+		<color>1</color>
+		<tributablebehavior>Default</tributablebehavior>
+		<playertype>Human</playertype>
+		<cooponly>false</cooponly>
+		<startingfood>-1</startingfood>
+		<startingwood>-1</startingwood>
+		<startinggold>-1</startinggold>
+		<startingstone>-1</startingstone>
+		<aislidervariables/>
+		<aiflagvariables/>
+	</playersettings>
+	<playersettings id="2">
+		<team>2</team>
+		<color>2</color>
+		<tributablebehavior>Default</tributablebehavior>
+		<playertype>Human</playertype>
+		<cooponly>false</cooponly>
+		<startingfood>-1</startingfood>
+		<startingwood>-1</startingwood>
+		<startinggold>-1</startinggold>
+		<startingstone>-1</startingstone>
+		<aislidervariables/>
+		<aiflagvariables/>
+	</playersettings>
+	<diplomacysettings/>
+	<randommap>
+		<map>set_multiplayer</map>
+		<randommap>true</randommap>
+		<numplayers>2</numplayers>
+		<mapvariables/>
+		<nuggetoverrides/>
+		<mapregionname>&lt;Not Specified&gt;</mapregionname>
+		<lightsetname>&lt;Not Specified&gt;</lightsetname>
+		<mapsizename>&lt;Not Specified&gt;</mapsizename>
+	</randommap>
+	<questgivers>
+		<protounit>SharedPvP_WarCouncil</protounit>
+	</questgivers>
+	<questreturners>
+		<protounit>SharedPvP_WarCommander</protounit>
+	</questreturners>
+	<customloadscreen>loadscreentips\load_shared_upsell_sparta.xml</customloadscreen>
+	<maplocationx>0.5</maplocationx>
+	<maplocationy>0.5</maplocationy>
+	<mapmarker>Blank</mapmarker>
+	<mappage>Greece</mappage>
+	<elitespawnchance>0</elitespawnchance>
+	<questbasescale>0</questbasescale>
+	<victoryconditions>
+		<victorycondition>HWStyleConquest</victorycondition>
+		<victorycondition>WonderVictory</victorycondition>
+	</victoryconditions>
+</quest>

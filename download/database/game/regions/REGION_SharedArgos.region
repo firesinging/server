@@ -1,0 +1,15 @@
+<?xml version="1.0"?>
+<Region xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xsd="http://www.w3.org/2001/XMLSchema" ID="2">
+  <Name>Argos</Name>
+  <CivID>1</CivID>
+  <MapName>Regions/REGION_SharedArgos</MapName>
+  <MapLocationX>0.421</MapLocationX>
+  <MapLocationY>0.545</MapLocationY>
+  <MapMarker>RegionDefault</MapMarker>
+  <MapPage>Greece</MapPage>
+  <LoadScreen>UserInterface\LoadingScreens\ShipArgos_df</LoadScreen>
+  <DescriptionStringID>55410</DescriptionStringID>
+  <DisplayNameStringID>55409</DisplayNameStringID>
+  <AvatarShield>UserInterface\Avatar\RegionShieldArgos_ua</AvatarShield>
+  <FlagIcon>UserInterface\Icons\Regions\RegionFlagArgos_ua</FlagIcon>
+</Region>

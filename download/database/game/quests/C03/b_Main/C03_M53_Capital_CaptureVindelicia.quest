@@ -1,0 +1,325 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<quest xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xsd="http://www.w3.org/2001/XMLSchema" uniqueid="13064" version="118">
+	<displayname>$$7456$$</displayname>
+	<level>10</level>
+	<repeatable>false</repeatable>
+	<timer>
+		<time>99:99:99</time>
+		<events>
+			<timerevent event="Gae_Small">00:06:00</timerevent>
+			<timerevent event="Gae_Small">00:09:00</timerevent>
+			<timerevent event="Gae_Small">00:11:00</timerevent>
+			<timerevent event="Gae_Small">00:13:00</timerevent>
+		</events>
+		<hideonui>true</hideonui>
+	</timer>
+	<canplaycoop>false</canplaycoop>
+	<cooprequired>false</cooprequired>
+	<ranked>false</ranked>
+	<alliance>eAllianceNone</alliance>
+	<questtype>RandomMap</questtype>
+	<description>$$7979$$</description>
+	<completiontext>$$134$$</completiontext>
+	<inprogresstext>$$7469$$</inprogresstext>
+	<summarytext>$$7470$$</summarytext>
+	<canabandon>true</canabandon>
+	<hiddenquest>false</hiddenquest>
+	<friendonly>false</friendonly>
+	<suppressnotifications>false</suppressnotifications>
+	<customquest>false</customquest>
+	<questgamemodetype>Normal</questgamemodetype>
+	<prereqs>
+		<values>
+			<civilization>
+				<id>6</id>
+			</civilization>
+			<questcomplete>
+				<id>13021</id>
+			</questcomplete>
+		</values>
+	</prereqs>
+	<equipmentprereqs/>
+	<targets>
+		<protounit>
+			<cooponly>false</cooponly>
+			<forcetocenter>false</forcetocenter>
+			<name>Objective_Gaesatae</name>
+			<protoname>Objective_Gaesatae</protoname>
+			<count>10</count>
+			<team>5</team>
+			<area>Quest_Area_A</area>
+			<overrides parent="Ce_Arc_Gaesatae_C">
+				<visualscale>1.4</visualscale>
+				<initialhitpoints>400</initialhitpoints>
+				<maxhitpoints>400</maxhitpoints>
+				<convertresist>100</convertresist>
+				<displaynameid>62629</displaynameid>
+			</overrides>
+			<usequesttargetindicator>true</usequesttargetindicator>
+		</protounit>
+		<protounit>
+			<cooponly>false</cooponly>
+			<forcetocenter>false</forcetocenter>
+			<name>QuestBrennos</name>
+			<protoname>Ce_QG_Brennos</protoname>
+			<count>1</count>
+			<team>1</team>
+			<area>Quest_Area_B</area>
+			<usequesttargetindicator>true</usequesttargetindicator>
+		</protounit>
+	</targets>
+	<objectives id="0" mustfailall="false">
+		<values>
+			<or id="1" mustfailall="false">
+				<description>$$2382$$</description>
+				<values>
+					<and id="2" mustfailall="false">
+						<values>
+							<kill id="3">
+								<description>$$8688$$</description>
+								<type>Objective_Gaesatae</type>
+								<count>10</count>
+								<includeconversion>true</includeconversion>
+								<onlycountelites>false</onlycountelites>
+							</kill>
+							<and id="4" mustfailall="false">
+								<description>$$8712$$</description>
+								<values>
+									<reduceunitsto id="5">
+										<type>Ce_Bldg_GuardTower</type>
+										<count>0</count>
+										<includeteam>false</includeteam>
+										<includeunderconstruction>false</includeunderconstruction>
+										<canuncomplete>false</canuncomplete>
+										<causesfailure>false</causesfailure>
+										<playerid>2</playerid>
+									</reduceunitsto>
+									<reduceunitsto id="6">
+										<type>Ce_Bldg_Barracks</type>
+										<count>0</count>
+										<includeteam>false</includeteam>
+										<includeunderconstruction>false</includeunderconstruction>
+										<canuncomplete>false</canuncomplete>
+										<causesfailure>false</causesfailure>
+										<playerid>2</playerid>
+									</reduceunitsto>
+									<reduceunitsto id="7">
+										<type>Ce_Bldg_ArcheryRange</type>
+										<count>0</count>
+										<includeteam>false</includeteam>
+										<includeunderconstruction>false</includeunderconstruction>
+										<canuncomplete>false</canuncomplete>
+										<causesfailure>false</causesfailure>
+										<playerid>2</playerid>
+									</reduceunitsto>
+									<reduceunitsto id="8">
+										<type>Ce_Bldg_Stables</type>
+										<count>0</count>
+										<includeteam>false</includeteam>
+										<includeunderconstruction>false</includeunderconstruction>
+										<canuncomplete>false</canuncomplete>
+										<causesfailure>false</causesfailure>
+										<playerid>2</playerid>
+									</reduceunitsto>
+								</values>
+							</and>
+						</values>
+					</and>
+					<protectunit id="9">
+						<description>$$7535$$</description>
+						<type>Ce_QG_Brennos</type>
+						<owningplayerid>1</owningplayerid>
+					</protectunit>
+					<reduceunitsto id="10">
+						<type>LogicalTypeNeededForVictory</type>
+						<count>0</count>
+						<includeteam>false</includeteam>
+						<includeunderconstruction>false</includeunderconstruction>
+						<canuncomplete>false</canuncomplete>
+						<causesfailure>true</causesfailure>
+						<playerid>1</playerid>
+					</reduceunitsto>
+					<and id="11" mustfailall="false">
+						<values>
+							<dummy id="12">
+								<objectivename>TIMER_EFFECT_BUGFIX</objectivename>
+								<autocomplete>false</autocomplete>
+							</dummy>
+							<timer id="13">
+								<failonexpire>false</failonexpire>
+							</timer>
+						</values>
+					</and>
+				</values>
+			</or>
+		</values>
+	</objectives>
+	<onaccept/>
+	<timereffects event="Gae_Small">
+		<spawnunit visible="true">
+			<count>4</count>
+			<placeunittype>Ce_Arc_Gaesatae_C</placeunittype>
+			<asplayer>2</asplayer>
+			<spawntype>SpawnForPlayer</spawntype>
+			<nearunittype>Ce_Bldg_ArcheryRange</nearunittype>
+			<radius>15</radius>
+			<useboneposition>false</useboneposition>
+			<overrides/>
+		</spawnunit>
+	</timereffects>
+	<rewards visible="true">
+		<gamecurrency visible="true">
+			<gamecurrency>cGameCurEmpirePoints</gamecurrency>
+			<amount>6</amount>
+		</gamecurrency>
+		<xp visible="true">25000</xp>
+		<capitalresource visible="true">
+			<capitalresource>cCapResCoin</capitalresource>
+			<amount>120</amount>
+		</capitalresource>
+		<loottable visible="true">general</loottable>
+		<loottable visible="true">general</loottable>
+		<questgiver visible="false">
+			<name>C03_R1_VindeliciaDrust</name>
+			<status>Unavailable</status>
+		</questgiver>
+		<or visible="true">
+			<trait visible="true">
+				Sword1H_R016_SR
+				<traitlevel>10</traitlevel>
+			</trait>
+			<trait visible="true">
+				Spear2H_R017
+				<traitlevel>10</traitlevel>
+			</trait>
+			<trait visible="true">
+				Sling2H_R006
+				<traitlevel>10</traitlevel>
+			</trait>
+			<trait visible="true">
+				ArrowOH_R016
+				<traitlevel>12</traitlevel>
+			</trait>
+			<loottable visible="true">general</loottable>
+		</or>
+	</rewards>
+	<playersettings id="1">
+		<team>1</team>
+		<color>1</color>
+		<tributablebehavior>Default</tributablebehavior>
+		<playertype>Human</playertype>
+		<cooponly>false</cooponly>
+		<startingfood>2000</startingfood>
+		<startingwood>2000</startingwood>
+		<startinggold>2000</startinggold>
+		<startingstone>2000</startingstone>
+		<aislidervariables/>
+		<aiflagvariables/>
+	</playersettings>
+	<playersettings id="2">
+		<team>2</team>
+		<color>2</color>
+		<tributablebehavior>Default</tributablebehavior>
+		<playertype>Computer</playertype>
+		<personality>$$10273$$</personality>
+		<script>CORE\Rush_Heavy</script>
+		<dataset>C03\C03_CoreRush_T1</dataset>
+		<cooponly>false</cooponly>
+		<startingfood>0</startingfood>
+		<startingwood>0</startingwood>
+		<startinggold>0</startinggold>
+		<startingstone>0</startingstone>
+		<aislidervariables/>
+		<aiflagvariables>
+			<aivariable>
+				<key>NoTrainNavy</key>
+				<value>0</value>
+			</aivariable>
+		</aiflagvariables>
+	</playersettings>
+	<playersettings id="3">
+		<team>4</team>
+		<color>2</color>
+		<tributablebehavior>Default</tributablebehavior>
+		<playertype>Computer</playertype>
+		<personality>$$10273$$</personality>
+		<script>CORE\Rush_Moderate</script>
+		<dataset>C03\C03_CoreRush_T1</dataset>
+		<cooponly>false</cooponly>
+		<startingfood>0</startingfood>
+		<startingwood>0</startingwood>
+		<startinggold>0</startinggold>
+		<startingstone>0</startingstone>
+		<aislidervariables/>
+		<aiflagvariables/>
+	</playersettings>
+	<playersettings id="4">
+		<team>3</team>
+		<color>3</color>
+		<tributablebehavior>Default</tributablebehavior>
+		<playertype>Computer</playertype>
+		<personality>$$2298$$</personality>
+		<script/>
+		<dataset>C03\C03_CoreRush_T1</dataset>
+		<cooponly>false</cooponly>
+		<startingfood>200</startingfood>
+		<startingwood>200</startingwood>
+		<startinggold>200</startinggold>
+		<startingstone>0</startingstone>
+		<aislidervariables/>
+		<aiflagvariables/>
+	</playersettings>
+	<playersettings id="5">
+		<team>2</team>
+		<color>2</color>
+		<tributablebehavior>Default</tributablebehavior>
+		<playertype>Computer</playertype>
+		<personality>$$10273$$</personality>
+		<dataset>C03\C03_CoreRush_T1</dataset>
+		<cooponly>false</cooponly>
+		<startingfood>-1</startingfood>
+		<startingwood>-1</startingwood>
+		<startinggold>-1</startinggold>
+		<startingstone>-1</startingstone>
+		<aislidervariables/>
+		<aiflagvariables/>
+	</playersettings>
+	<diplomacysettings>
+		<diplomacy relation="Neutral" team1="1" team2="3" sharedlos="false"/>
+		<diplomacy relation="Neutral" team1="3" team2="1" sharedlos="false"/>
+		<diplomacy relation="Neutral" team1="2" team2="3" sharedlos="false"/>
+		<diplomacy relation="Neutral" team1="3" team2="2" sharedlos="false"/>
+		<diplomacy relation="Neutral" team1="4" team2="2" sharedlos="true"/>
+		<diplomacy relation="Neutral" team1="2" team2="4" sharedlos="true"/>
+		<diplomacy relation="Neutral" team1="4" team2="3" sharedlos="false"/>
+		<diplomacy relation="Neutral" team1="3" team2="4" sharedlos="false"/>
+	</diplomacysettings>
+	<randommap>
+		<map>Core\C03\C03_R1M53_CaptureVindelicia</map>
+		<randommap>true</randommap>
+		<numplayers>5</numplayers>
+		<mapvariables>
+			<variable name="scenarioFile" type="String">C03/C03_R1M53_CaptureVindelicia</variable>
+			<variable name="region" type="String">Celtic Alps</variable>
+			<variable name="mapSize" type="String">Standard</variable>
+		</mapvariables>
+		<nuggetoverrides/>
+		<mapregionname>Celtic Alps</mapregionname>
+		<lightsetname>&lt;Not Specified&gt;</lightsetname>
+		<mapsizename>Standard</mapsizename>
+	</randommap>
+	<questgivers>
+		<protounit>C03_R1_Leader</protounit>
+	</questgivers>
+	<questreturners>
+		<protounit>C03_R1_Leader</protounit>
+	</questreturners>
+	<maplocationx>0.45</maplocationx>
+	<maplocationy>0.12</maplocationy>
+	<mapmarker>QuestDefault</mapmarker>
+	<mappage>C03_Celtica</mappage>
+	<elitespawnchance>0</elitespawnchance>
+	<questbasescale>0</questbasescale>
+	<victoryconditions/>
+</quest>

@@ -1,0 +1,207 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<quest xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xsd="http://www.w3.org/2001/XMLSchema" uniqueid="13034" version="102">
+	<displayname>$$7767$$</displayname>
+	<level>16</level>
+	<repeatable>false</repeatable>
+	<timer>
+		<events/>
+		<hideonui>false</hideonui>
+	</timer>
+	<canplaycoop>false</canplaycoop>
+	<cooprequired>false</cooprequired>
+	<ranked>false</ranked>
+	<alliance>eAllianceNone</alliance>
+	<questtype>RandomMap</questtype>
+	<description>$$9036$$</description>
+	<completiontext>$$7721$$</completiontext>
+	<inprogresstext>$$7722$$</inprogresstext>
+	<summarytext>$$9035$$</summarytext>
+	<canabandon>true</canabandon>
+	<hiddenquest>false</hiddenquest>
+	<friendonly>false</friendonly>
+	<suppressnotifications>false</suppressnotifications>
+	<customquest>false</customquest>
+	<questgamemodetype>Normal</questgamemodetype>
+	<prereqs>
+		<values>
+			<civilization>
+				<id>6</id>
+			</civilization>
+			<questcomplete>
+				<id>13033</id>
+			</questcomplete>
+		</values>
+	</prereqs>
+	<equipmentprereqs/>
+	<targets/>
+	<objectives id="0" mustfailall="false">
+		<values>
+			<or id="1" mustfailall="false">
+				<values>
+					<and id="2" mustfailall="false">
+						<values>
+							<dummy id="3">
+								<description>$$8869$$</description>
+								<objectivename>ArmyRescued</objectivename>
+								<autocomplete>false</autocomplete>
+							</dummy>
+							<dummy id="4">
+								<description>$$2644$$</description>
+								<objectivename>ArmyDestroyed</objectivename>
+								<autocomplete>false</autocomplete>
+							</dummy>
+						</values>
+					</and>
+					<protectunit id="5">
+						<description>$$8248$$</description>
+						<type>Ce_QG_Comontorios</type>
+						<owningplayerid>1</owningplayerid>
+					</protectunit>
+					<reduceunitsto id="6">
+						<type>unit</type>
+						<count>0</count>
+						<includeteam>false</includeteam>
+						<includeunderconstruction>false</includeunderconstruction>
+						<canuncomplete>false</canuncomplete>
+						<causesfailure>true</causesfailure>
+						<playerid>1</playerid>
+					</reduceunitsto>
+				</values>
+			</or>
+		</values>
+	</objectives>
+	<onaccept/>
+	<rewards visible="true">
+		<xp visible="true">30000</xp>
+		<capitalresource visible="true">
+			<capitalresource>cCapResCoin</capitalresource>
+			<amount>100</amount>
+		</capitalresource>
+		<questgiver visible="true">
+			<name>C03_R3_Comontorios</name>
+			<status>Available</status>
+		</questgiver>
+		<loottable visible="true">general</loottable>
+		<loottable visible="true">general</loottable>
+	</rewards>
+	<playersettings id="1">
+		<team>1</team>
+		<color>1</color>
+		<tributablebehavior>Default</tributablebehavior>
+		<playertype>Human</playertype>
+		<cooponly>false</cooponly>
+		<startingfood>-1</startingfood>
+		<startingwood>-1</startingwood>
+		<startinggold>-1</startinggold>
+		<startingstone>-1</startingstone>
+		<aislidervariables/>
+		<aiflagvariables/>
+	</playersettings>
+	<playersettings id="2">
+		<team>2</team>
+		<color>2</color>
+		<tributablebehavior>Default</tributablebehavior>
+		<playertype>Computer</playertype>
+		<personality>$$8121$$</personality>
+		<dataset>C01\C01_CoreRush_T1</dataset>
+		<cooponly>false</cooponly>
+		<startingfood>0</startingfood>
+		<startingwood>0</startingwood>
+		<startinggold>0</startinggold>
+		<startingstone>0</startingstone>
+		<aislidervariables/>
+		<aiflagvariables/>
+	</playersettings>
+	<playersettings id="3">
+		<team>3</team>
+		<color>2</color>
+		<tributablebehavior>Default</tributablebehavior>
+		<playertype>Computer</playertype>
+		<personality>$$8121$$</personality>
+		<dataset>C01\C01_CoreRush_T1</dataset>
+		<cooponly>false</cooponly>
+		<startingfood>-1</startingfood>
+		<startingwood>-1</startingwood>
+		<startinggold>-1</startinggold>
+		<startingstone>-1</startingstone>
+		<aislidervariables/>
+		<aiflagvariables/>
+	</playersettings>
+	<playersettings id="4">
+		<team>4</team>
+		<color>2</color>
+		<tributablebehavior>Default</tributablebehavior>
+		<playertype>Computer</playertype>
+		<personality>$$8121$$</personality>
+		<dataset>C01\C01_CoreRush_T1</dataset>
+		<cooponly>false</cooponly>
+		<startingfood>-1</startingfood>
+		<startingwood>-1</startingwood>
+		<startinggold>-1</startinggold>
+		<startingstone>-1</startingstone>
+		<aislidervariables/>
+		<aiflagvariables/>
+	</playersettings>
+	<playersettings id="5">
+		<team>5</team>
+		<color>3</color>
+		<tributablebehavior>Default</tributablebehavior>
+		<playertype>Computer</playertype>
+		<personality>$$8122$$</personality>
+		<dataset>c03\c03_vanilla_t0</dataset>
+		<cooponly>false</cooponly>
+		<startingfood>-1</startingfood>
+		<startingwood>-1</startingwood>
+		<startinggold>-1</startinggold>
+		<startingstone>-1</startingstone>
+		<aislidervariables/>
+		<aiflagvariables/>
+	</playersettings>
+	<diplomacysettings>
+		<diplomacy relation="Neutral" team1="3" team2="1" sharedlos="false"/>
+		<diplomacy relation="Neutral" team1="1" team2="3" sharedlos="false"/>
+		<diplomacy relation="Neutral" team1="4" team2="1" sharedlos="false"/>
+		<diplomacy relation="Ally" team1="2" team2="4" sharedlos="false"/>
+		<diplomacy relation="Ally" team1="4" team2="2" sharedlos="false"/>
+		<diplomacy relation="Ally" team1="2" team2="3" sharedlos="false"/>
+		<diplomacy relation="Ally" team1="3" team2="2" sharedlos="false"/>
+		<diplomacy relation="Ally" team1="4" team2="3" sharedlos="false"/>
+		<diplomacy relation="Ally" team1="3" team2="4" sharedlos="false"/>
+		<diplomacy relation="Neutral" team1="2" team2="5" sharedlos="false"/>
+		<diplomacy relation="Neutral" team1="5" team2="2" sharedlos="false"/>
+		<diplomacy relation="Neutral" team1="3" team2="5" sharedlos="false"/>
+		<diplomacy relation="Neutral" team1="5" team2="3" sharedlos="false"/>
+		<diplomacy relation="Neutral" team1="4" team2="5" sharedlos="false"/>
+		<diplomacy relation="Neutral" team1="5" team2="4" sharedlos="false"/>
+		<diplomacy relation="Ally" team1="1" team2="5" sharedlos="true"/>
+		<diplomacy relation="Ally" team1="5" team2="1" sharedlos="true"/>
+	</diplomacysettings>
+	<randommap>
+		<map>Core/C03/C03_R3M84_RiverAmbush</map>
+		<randommap>true</randommap>
+		<numplayers>5</numplayers>
+		<mapvariables>
+			<variable name="scenarioFile" type="String">C03\C03_R3M84_RiverAmbush</variable>
+			<variable name="region" type="String">Greek Inland</variable>
+			<variable name="lighting" type="String">Evening</variable>
+		</mapvariables>
+		<nuggetoverrides/>
+		<mapregionname>Greek Inland</mapregionname>
+		<lightsetname>Evening</lightsetname>
+		<mapsizename>&lt;Not Specified&gt;</mapsizename>
+	</randommap>
+	<questgivers>
+		<protounit>C03_R3_Brennos</protounit>
+	</questgivers>
+	<questreturners>
+		<protounit>C03_R3_Brennos</protounit>
+	</questreturners>
+	<maplocationx>0.257</maplocationx>
+	<maplocationy>0.635</maplocationy>
+	<mapmarker>QuestDefault</mapmarker>
+	<mappage>Thrace</mappage>
+	<elitespawnchance>0</elitespawnchance>
+	<questbasescale>0</questbasescale>
+	<victoryconditions/>
+</quest>

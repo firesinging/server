@@ -1,0 +1,83 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<quest xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xsd="http://www.w3.org/2001/XMLSchema" uniqueid="2203" version="51">
+	<displayname>$$12439$$</displayname>
+	<level>0</level>
+	<repeatable>false</repeatable>
+	<offertype>eOfferBooster3</offertype>
+	<timer>
+		<events/>
+		<hideonui>true</hideonui>
+	</timer>
+	<canplaycoop>false</canplaycoop>
+	<cooprequired>false</cooprequired>
+	<ranked>false</ranked>
+	<alliance>eAllianceNone</alliance>
+	<questtype>CapitolCity</questtype>
+	<description>$$12482$$</description>
+	<completiontext>$$12482$$</completiontext>
+	<inprogresstext>$$12482$$</inprogresstext>
+	<summarytext>$$12484$$</summarytext>
+	<canabandon>false</canabandon>
+	<hiddenquest>true</hiddenquest>
+	<friendonly>false</friendonly>
+	<suppressnotifications>true</suppressnotifications>
+	<customquest>false</customquest>
+	<questgamemodetype>Normal</questgamemodetype>
+	<prereqs>
+		<values/>
+	</prereqs>
+	<equipmentprereqs/>
+	<targets/>
+	<objectives id="0" mustfailall="false">
+		<values>
+			<or id="1" mustfailall="false">
+				<description>$$6315$$</description>
+				<values>
+					<unitdiscovered id="2">
+						<type>GEN_FredTheRedeemer</type>
+						<count>1</count>
+					</unitdiscovered>
+					<ownsunit id="3">
+						<type>GEN_FredTheRedeemer</type>
+						<count>1</count>
+						<owningplayerid>1</owningplayerid>
+						<causesfailure>false</causesfailure>
+					</ownsunit>
+				</values>
+			</or>
+		</values>
+	</objectives>
+	<onaccept/>
+	<rewards visible="true">
+		<capitalresource visible="true">
+			<capitalresource>cCapResCoin</capitalresource>
+			<amount>5</amount>
+		</capitalresource>
+	</rewards>
+	<diplomacysettings/>
+	<randommap>
+		<randommap>true</randommap>
+		<numplayers>0</numplayers>
+		<mapvariables>
+			<variable name="region" type="String"/>
+			<variable name="lighting" type="String"/>
+			<variable name="mapSize" type="String"/>
+		</mapvariables>
+		<nuggetoverrides/>
+	</randommap>
+	<questgivers>
+		<protounit>GEN_PDLCStore</protounit>
+	</questgivers>
+	<questreturners>
+		<protounit>GEN_FredTheRedeemer</protounit>
+	</questreturners>
+	<objectiveimage/>
+	<maplocationx>0.5</maplocationx>
+	<maplocationy>0.5</maplocationy>
+	<mapmarker>Blank</mapmarker>
+	<elitespawnchance>0.025</elitespawnchance>
+	<linkedquestid>0</linkedquestid>
+	<questbasescale>0</questbasescale>
+	<victoryconditions/>
+</quest>

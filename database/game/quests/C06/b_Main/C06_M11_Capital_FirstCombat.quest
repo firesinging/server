@@ -1,0 +1,326 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<quest xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xsd="http://www.w3.org/2001/XMLSchema" uniqueid="16610" version="62">
+	<displayname>$$10369$$</displayname>
+	<level>-1</level>
+	<repeatable>false</repeatable>
+	<offertype>eOfferCivBabylonian</offertype>
+	<timer>
+		<events/>
+		<hideonui>false</hideonui>
+	</timer>
+	<canplaycoop>false</canplaycoop>
+	<cooprequired>false</cooprequired>
+	<ranked>false</ranked>
+	<alliance>eAllianceNone</alliance>
+	<questtype>RandomMap</questtype>
+	<description>$$11707$$</description>
+	<completiontext>$$10448$$</completiontext>
+	<inprogresstext>$$10443$$</inprogresstext>
+	<summarytext>$$11706$$</summarytext>
+	<canabandon>true</canabandon>
+	<hiddenquest>false</hiddenquest>
+	<friendonly>false</friendonly>
+	<suppressnotifications>false</suppressnotifications>
+	<customquest>false</customquest>
+	<questgamemodetype>Normal</questgamemodetype>
+	<prereqs>
+		<values>
+			<civilization>
+				<id>22</id>
+			</civilization>
+			<level>
+				<min>20</min>
+				<max>99</max>
+			</level>
+		</values>
+	</prereqs>
+	<equipmentprereqs/>
+	<targets>
+		<protounit>
+			<cooponly>false</cooponly>
+			<forcetocenter>false</forcetocenter>
+			<name>Merodach</name>
+			<protoname>Merodach</protoname>
+			<count>1</count>
+			<team>2</team>
+			<area>Quest_Area_E</area>
+			<overrides parent="Ba_Inf_ShieldBearer">
+				<visualscale>1.35</visualscale>
+				<initialhitpoints>7500</initialhitpoints>
+				<maxhitpoints>7500</maxhitpoints>
+				<displaynameid>66992</displaynameid>
+				<convertresist>100</convertresist>
+			</overrides>
+			<usequesttargetindicator>true</usequesttargetindicator>
+		</protounit>
+		<protounit>
+			<cooponly>false</cooponly>
+			<forcetocenter>false</forcetocenter>
+			<name>Merodach Lieutenants</name>
+			<protoname>MerodachLieutenant</protoname>
+			<count>8</count>
+			<team>2</team>
+			<area>Quest_Area_D</area>
+			<overrides parent="Ba_Arc_Bowman">
+				<visualscale>1.2</visualscale>
+				<initialhitpoints>1500</initialhitpoints>
+				<maxhitpoints>1500</maxhitpoints>
+				<displaynameid>62105</displaynameid>
+				<convertresist>100</convertresist>
+				<displaynameid>66993</displaynameid>
+			</overrides>
+			<usequesttargetindicator>true</usequesttargetindicator>
+		</protounit>
+	</targets>
+	<objectives id="0" mustfailall="false">
+		<values>
+			<or id="1" mustfailall="false">
+				<description/>
+				<values>
+					<and id="2" mustfailall="false">
+						<values>
+							<ownsunit id="3">
+								<description>$$11692$$</description>
+								<type>Van_Cap_Fountain1</type>
+								<count>1</count>
+								<owningplayerid>1</owningplayerid>
+								<causesfailure>false</causesfailure>
+							</ownsunit>
+							<techstatus id="4">
+								<description>$$2464$$</description>
+								<name>BabylonCapAge2</name>
+								<status>Active</status>
+							</techstatus>
+							<kill id="5">
+								<description>$$10694$$</description>
+								<type>Merodach</type>
+								<count>1</count>
+								<includeconversion>true</includeconversion>
+								<onlycountelites>false</onlycountelites>
+							</kill>
+							<kill id="6">
+								<description>$$10697$$</description>
+								<type>MerodachLieutenant</type>
+								<count>8</count>
+								<includeconversion>true</includeconversion>
+								<onlycountelites>false</onlycountelites>
+							</kill>
+						</values>
+					</and>
+					<reduceunitsto id="7">
+						<type>LogicalTypeNeededForVictory</type>
+						<count>0</count>
+						<includeteam>false</includeteam>
+						<includeunderconstruction>false</includeunderconstruction>
+						<canuncomplete>false</canuncomplete>
+						<causesfailure>true</causesfailure>
+						<playerid>1</playerid>
+					</reduceunitsto>
+				</values>
+			</or>
+		</values>
+	</objectives>
+	<onaccept/>
+	<rewards visible="true">
+		<xp visible="true">
+			1
+			<lookuptable>SQMedium</lookuptable>
+		</xp>
+		<capitalresource visible="true">
+			<capitalresource>cCapResCoin</capitalresource>
+			<amount>1</amount>
+			<lookuptable>SQMedium</lookuptable>
+		</capitalresource>
+		<loottable visible="true">general</loottable>
+		<or visible="true">
+			<trait visible="true">
+				Spear1H_R003
+				<traitlevel>23</traitlevel>
+			</trait>
+			<trait visible="true">
+				Spear2H_R004
+				<traitlevel>23</traitlevel>
+			</trait>
+			<trait visible="true">
+				Gear_Siege_R003
+				<traitlevel>23</traitlevel>
+			</trait>
+			<trait visible="true">
+				RamHead2H_R003
+				<traitlevel>23</traitlevel>
+			</trait>
+			<trait visible="true">
+				Gear_Prst_R002
+				<traitlevel>23</traitlevel>
+			</trait>
+			<trait visible="true">
+				FishingNet1H_R001
+				<traitlevel>23</traitlevel>
+			</trait>
+			<trait visible="true">
+				Ballista2H_R001
+				<traitlevel>23</traitlevel>
+			</trait>
+			<trait visible="true">
+				ArmorBldg_R003
+				<traitlevel>23</traitlevel>
+			</trait>
+			<trait visible="true">
+				Shield1H_R006
+				<traitlevel>23</traitlevel>
+			</trait>
+			<advisor visible="true">Herakleides_C_II</advisor>
+			<advisor visible="true">Onesiphoros_C_III</advisor>
+			<loottable visible="true">general</loottable>
+		</or>
+	</rewards>
+	<playersettings id="1">
+		<team>1</team>
+		<color>1</color>
+		<tributablebehavior>Default</tributablebehavior>
+		<playertype>Human</playertype>
+		<cooponly>false</cooponly>
+		<startingfood>0</startingfood>
+		<startingwood>0</startingwood>
+		<startinggold>0</startinggold>
+		<startingstone>0</startingstone>
+		<aislidervariables/>
+		<aiflagvariables/>
+	</playersettings>
+	<playersettings id="2">
+		<team>2</team>
+		<color>2</color>
+		<tributablebehavior>Default</tributablebehavior>
+		<playertype>Computer</playertype>
+		<personality>$$10387$$</personality>
+		<script/>
+		<character/>
+		<dataset>C06\C06_CoreRushAllLevels</dataset>
+		<cooponly>false</cooponly>
+		<startingfood>-1</startingfood>
+		<startingwood>-1</startingwood>
+		<startinggold>-1</startinggold>
+		<startingstone>-1</startingstone>
+		<aislidervariables/>
+		<aiflagvariables/>
+	</playersettings>
+	<playersettings id="3">
+		<team>3</team>
+		<color>3</color>
+		<tributablebehavior>Default</tributablebehavior>
+		<playertype>Computer</playertype>
+		<personality>$$2233$$</personality>
+		<character/>
+		<dataset>C06\C06_CoreRush_T2</dataset>
+		<cooponly>false</cooponly>
+		<startingfood>0</startingfood>
+		<startingwood>0</startingwood>
+		<startinggold>0</startinggold>
+		<startingstone>0</startingstone>
+		<aislidervariables/>
+		<aiflagvariables/>
+	</playersettings>
+	<playersettings id="4">
+		<team>4</team>
+		<color>3</color>
+		<tributablebehavior>Default</tributablebehavior>
+		<playertype>Computer</playertype>
+		<personality>$$2233$$</personality>
+		<character/>
+		<dataset>C06\C06_CoreRush_T2</dataset>
+		<cooponly>false</cooponly>
+		<startingfood>0</startingfood>
+		<startingwood>0</startingwood>
+		<startinggold>0</startinggold>
+		<startingstone>0</startingstone>
+		<aislidervariables/>
+		<aiflagvariables/>
+	</playersettings>
+	<playersettings id="5">
+		<team>2</team>
+		<color>2</color>
+		<tributablebehavior>Default</tributablebehavior>
+		<playertype>Computer</playertype>
+		<personality>$$10387$$</personality>
+		<script>core\rush_weak</script>
+		<dataset>C06\C06_CoreRushAllLevels</dataset>
+		<cooponly>false</cooponly>
+		<startingfood>-1</startingfood>
+		<startingwood>-1</startingwood>
+		<startinggold>-1</startinggold>
+		<startingstone>-1</startingstone>
+		<aislidervariables>
+			<aivariable>
+				<key>EconomyHandicap</key>
+				<value>-0.2</value>
+			</aivariable>
+		</aislidervariables>
+		<aiflagvariables>
+			<aivariable>
+				<key>NoScout</key>
+				<value>0</value>
+			</aivariable>
+		</aiflagvariables>
+	</playersettings>
+	<playersettings id="6">
+		<team>5</team>
+		<color>2</color>
+		<tributablebehavior>Default</tributablebehavior>
+		<playertype>Computer</playertype>
+		<personality>$$10387$$</personality>
+		<dataset>C06\C06_CoreRushAllLevels</dataset>
+		<cooponly>false</cooponly>
+		<startingfood>-1</startingfood>
+		<startingwood>-1</startingwood>
+		<startinggold>-1</startinggold>
+		<startingstone>-1</startingstone>
+		<aislidervariables/>
+		<aiflagvariables/>
+	</playersettings>
+	<diplomacysettings>
+		<diplomacy relation="Ally" team1="3" team2="1" sharedlos="true"/>
+		<diplomacy relation="Ally" team1="1" team2="3" sharedlos="false"/>
+		<diplomacy relation="Neutral" team1="4" team2="1" sharedlos="false"/>
+		<diplomacy relation="Neutral" team1="1" team2="4" sharedlos="false"/>
+		<diplomacy relation="Neutral" team1="4" team2="3" sharedlos="false"/>
+		<diplomacy relation="Neutral" team1="5" team2="4" sharedlos="false"/>
+		<diplomacy relation="Neutral" team1="4" team2="5" sharedlos="false"/>
+		<diplomacy relation="Ally" team1="5" team2="2" sharedlos="false"/>
+		<diplomacy relation="Ally" team1="2" team2="5" sharedlos="false"/>
+		<diplomacy relation="Neutral" team1="4" team2="2" sharedlos="false"/>
+		<diplomacy relation="Neutral" team1="2" team2="4" sharedlos="false"/>
+		<diplomacy relation="Neutral" team1="3" team2="4" sharedlos="false"/>
+		<diplomacy relation="Neutral" team1="4" team2="3" sharedlos="false"/>
+	</diplomacysettings>
+	<randommap>
+		<map>Core\C06\C06_Capital_FirstCombat</map>
+		<randommap>true</randommap>
+		<numplayers>6</numplayers>
+		<mapvariables>
+			<variable name="scenarioFile" type="String">C06\C06_M11_Capital_FirstCombat</variable>
+			<variable name="P7HatedEnemyOverride" type="Int">1</variable>
+			<variable name="P7LandPatrolCount" type="Int">6</variable>
+			<variable name="P7AddMarketManager" type="Bool">true</variable>
+			<variable name="region" type="String">Meso Valley</variable>
+			<variable name="lighting" type="String">Afternoon</variable>
+		</mapvariables>
+		<nuggetoverrides/>
+		<mapregionname>Meso Valley</mapregionname>
+		<lightsetname>Afternoon</lightsetname>
+		<mapsizename>&lt;Not Specified&gt;</mapsizename>
+	</randommap>
+	<questgivers>
+		<protounit>C06_R1_Leader</protounit>
+	</questgivers>
+	<questreturners>
+		<protounit>C06_R1_Leader</protounit>
+	</questreturners>
+	<maplocationx>0.185</maplocationx>
+	<maplocationy>0.71</maplocationy>
+	<mapmarker>QuestDefault</mapmarker>
+	<mappage>Persia</mappage>
+	<elitespawnchance>0</elitespawnchance>
+	<questbasescale>0</questbasescale>
+	<victoryconditions/>
+</quest>

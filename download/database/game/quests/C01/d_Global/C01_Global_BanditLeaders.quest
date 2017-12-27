@@ -1,0 +1,115 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<quest xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xsd="http://www.w3.org/2001/XMLSchema" uniqueid="11043" version="35">
+	<displayname>$$1037$$</displayname>
+	<level>-1</level>
+	<repeatable>false</repeatable>
+	<timer>
+		<events/>
+		<hideonui>false</hideonui>
+	</timer>
+	<canplaycoop>false</canplaycoop>
+	<cooprequired>false</cooprequired>
+	<ranked>false</ranked>
+	<alliance>eAllianceNone</alliance>
+	<questtype>Global</questtype>
+	<description>$$4080$$</description>
+	<completiontext>$$4081$$</completiontext>
+	<inprogresstext>$$4082$$</inprogresstext>
+	<summarytext>$$4083$$</summarytext>
+	<canabandon>false</canabandon>
+	<hiddenquest>false</hiddenquest>
+	<friendonly>false</friendonly>
+	<suppressnotifications>false</suppressnotifications>
+	<customquest>false</customquest>
+	<questgamemodetype>Normal</questgamemodetype>
+	<prereqs>
+		<values>
+			<civilization>
+				<id>1</id>
+			</civilization>
+			<questcomplete>
+				<id>10</id>
+			</questcomplete>
+		</values>
+	</prereqs>
+	<equipmentprereqs/>
+	<targets/>
+	<objectives id="0" mustfailall="false">
+		<values>
+			<queststatus id="1">
+				<description>$$2346$$</description>
+				<questid>160</questid>
+				<queststatus>Complete</queststatus>
+			</queststatus>
+			<queststatus id="2">
+				<description>$$2347$$</description>
+				<questid>5</questid>
+				<queststatus>Complete</queststatus>
+			</queststatus>
+			<queststatus id="3">
+				<description>$$2348$$</description>
+				<questid>9</questid>
+				<queststatus>Complete</queststatus>
+			</queststatus>
+		</values>
+	</objectives>
+	<onaccept>
+		<questgiver visible="false">
+			<name>C01_R1_VillageScout</name>
+			<status>Unavailable</status>
+		</questgiver>
+		<questgiver visible="false">
+			<name>C01_R1_VillageScout_V2</name>
+			<status>Available</status>
+		</questgiver>
+		<protip visible="false">TIP_Shared_QuestType_Global_01</protip>
+	</onaccept>
+	<rewards visible="true">
+		<capitalresource visible="true">
+			<capitalresource>cCapResCoin</capitalresource>
+			<amount>200</amount>
+		</capitalresource>
+		<loottable visible="true">general</loottable>
+		<or visible="true">
+			<trait visible="true">
+				ArmorLgt_R017
+				<traitlevel>10</traitlevel>
+			</trait>
+			<trait visible="true">
+				Gear_R031
+				<traitlevel>10</traitlevel>
+			</trait>
+			<trait visible="true">
+				ArmorClth_R016
+				<traitlevel>10</traitlevel>
+			</trait>
+			<loottable visible="true">general</loottable>
+		</or>
+	</rewards>
+	<diplomacysettings/>
+	<randommap>
+		<randommap>false</randommap>
+		<numplayers>0</numplayers>
+		<mapvariables/>
+		<nuggetoverrides/>
+		<mapregionname>&lt;Not Specified&gt;</mapregionname>
+		<lightsetname>&lt;Not Specified&gt;</lightsetname>
+		<mapsizename>&lt;Not Specified&gt;</mapsizename>
+	</randommap>
+	<questgivers>
+		<protounit>C01_R1_VillageScout</protounit>
+	</questgivers>
+	<questreturners>
+		<protounit>C01_R1_VillageScout</protounit>
+		<protounit>C01_R1_VillageScout_V2</protounit>
+	</questreturners>
+	<maplocationx>0.5</maplocationx>
+	<maplocationy>0.5</maplocationy>
+	<mapmarker>Blank</mapmarker>
+	<mappage>Greece</mappage>
+	<elitespawnchance>0</elitespawnchance>
+	<linkedquestid>0</linkedquestid>
+	<questbasescale>0</questbasescale>
+	<victoryconditions/>
+</quest>

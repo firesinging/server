@@ -1,0 +1,192 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<craftschools>
+	<school>
+		<tag>Woodscraft</tag>
+		<displayname>55707</displayname>
+		<description>55714</description>
+		<startingblueprint>GeneralHuntingLodge</startingblueprint>
+		<icon>Art\UserInterface\Icons\Crafting\SchoolArchery_ua</icon>
+		<gearicons>
+			<gear stringid="56345">BellyBowSlot_ua</gear>
+			<gear stringid="56344">BowSlot_ua</gear>
+			<gear stringid="56348">ArrowSlot_ua</gear>
+			<gear stringid="56327">SlingsSlot_ua</gear>
+		</gearicons>
+		<items>
+			<consumable>ConsumableBanditArcher_C</consumable>
+			<consumable>ConsumableBanditArcher4th_C</consumable>
+			<advisor>Thutmose_C_I</advisor>
+			<advisor>Timon_U_II</advisor>
+			<advisor>Kosmas_R_III</advisor>
+			<advisor>Seth_E_IV</advisor>
+		</items>
+		<design>CreateWoodscraftConsumable1</design>
+		<craftingsound>UI_Crafthall_Recipe_Archery</craftingsound>
+	</school>
+	<school>
+		<tag>HorseBreeding</tag>
+		<displayname>55708</displayname>
+		<description>55715</description>
+		<startingblueprint>GeneralCavalryHall</startingblueprint>
+		<icon>Art\UserInterface\Icons\Crafting\SchoolCavalry_ua</icon>
+		<gearicons>
+			<gear stringid="56323">2hSpearSlot_ua</gear>
+			<gear stringid="56350">LightArmorSlot_ua</gear>
+			<gear stringid="56328">ShieldSlot_ua</gear>
+			<gear stringid="56332">JavelinSlot_ua</gear>
+		</gearicons>
+		<items>
+			<consumable>ConsumableBanditHippikon_C</consumable>
+			<consumable>ConsumableBanditHippikon4th_C</consumable>
+			<advisor>Aapep_C_I</advisor>
+			<advisor>Hermolaos_U_II</advisor>
+			<advisor>Hathor_R_III</advisor>
+			<advisor>Hatshepsut_E_IV</advisor>
+		</items>
+		<design>CreateHorseBreedingConsumable1</design>
+		<craftingsound>UI_Crafthall_Recipe_Cavalry</craftingsound>
+	</school>
+	<school>
+		<tag>MilitaryCollege</tag>
+		<displayname>55709</displayname>
+		<description>55716</description>
+		<startingblueprint>GreekMilitaryCollege</startingblueprint>
+		<icon>Art\UserInterface\Icons\Crafting\SchoolInfantry_ua</icon>
+		<gearicons>
+			<gear stringid="56322">1hSpearSlot_ua</gear>
+			<gear stringid="56349">MedArmorSlot_ua</gear>
+			<gear stringid="56325">SwordSlot_ua</gear>
+			<gear stringid="56340">GearSlot_ua</gear>
+		</gearicons>
+		<items>
+			<consumable>ConsumableBanditHorseHunter_C</consumable>
+			<consumable>ConsumableBanditHorseHunter4th_C</consumable>
+			<advisor>Agathon_C_I</advisor>
+			<advisor>Herakleides_U_II</advisor>
+			<advisor>Pamphilos_R_III</advisor>
+			<advisor>Lionidas_E_IV</advisor>
+		</items>
+		<design>CreateMilitaryCollegeConsumable1</design>
+		<craftingsound>UI_Crafthall_Recipe_Infantry</craftingsound>
+	</school>
+	<school>
+		<tag>Engineering</tag>
+		<displayname>55710</displayname>
+		<description>55717</description>
+		<startingblueprint>GeneralEngineeringCollege</startingblueprint>
+		<icon>Art\UserInterface\Icons\Crafting\SchoolEngineering_ua</icon>
+		<gearicons>
+			<gear stringid="56347">ArmorPlatingSlot_ua</gear>
+			<gear stringid="56331">RamSlot_ua</gear>
+			<gear stringid="56346">BallistaArmSlot_ua</gear>
+			<gear stringid="56336">SiegeGearSlot_ua</gear>
+		</gearicons>
+		<items>
+			<consumable>ConsumableSiegeMachines_C</consumable>
+			<consumable>ConsumableGrantStone_C</consumable>
+			<advisor>Kleon_C_I</advisor>
+			<advisor>Horus_U_II</advisor>
+			<advisor>Ligeia_R_III</advisor>
+			<advisor>Seleucus_E_IV</advisor>
+		</items>
+		<design>CreateEngineeringConsumable1</design>
+		<craftingsound>UI_Crafthall_Recipe_Siege</craftingsound>
+	</school>
+	<school>
+		<tag>Construction</tag>
+		<displayname>55711</displayname>
+		<description>55718</description>
+		<startingblueprint>GeneralBuildersHall</startingblueprint>
+		<icon>Art\UserInterface\Icons\Crafting\SchoolConstruction_ua</icon>
+		<gearicons>
+			<gear stringid="56352">WallsSlot_ua</gear>
+			<gear stringid="56338">BoatGearSlot_ua</gear>
+			<gear stringid="56342">FireThrowerSlot_ua</gear>
+			<gear stringid="56339">BldgGearSlot_ua</gear>
+		</gearicons>
+		<items>
+			<consumable>ConsumableGrantFort_C</consumable>
+			<consumable>ConsumableGrantTower_C</consumable>
+			<advisor>Erastos_C_I</advisor>
+			<advisor>Bes_U_II</advisor>
+			<advisor>Sappho_R_III</advisor>
+			<advisor>Xanthe_E_IV</advisor>
+		</items>
+		<design>CreateConstructionConsumable1</design>
+		<craftingsound>UI_Crafthall_Recipe_Build</craftingsound>
+	</school>
+	<school>
+		<tag>Craftsmen</tag>
+		<displayname>55712</displayname>
+		<description>55719</description>
+		<startingblueprint>GeneralCraftsmenHall</startingblueprint>
+		<icon>Art\UserInterface\Icons\Crafting\SchoolCraftsmen_ua</icon>
+		<gearicons>
+			<gear stringid="56335">CivGearSlot_ua</gear>
+			<gear stringid="56341">NetSlot_ua</gear>
+			<gear stringid="56326">ToolSlot_ua</gear>
+			<gear stringid="56333">MerchLogSlot_ua</gear>
+		</gearicons>
+		<items>
+			<consumable>ConsumableFireShips_C</consumable>
+			<consumable>ConsumableGrantCow_C</consumable>
+			<advisor>Irene_C_I</advisor>
+			<advisor>Agape_U_II</advisor>
+			<advisor>Stephanos_R_III</advisor>
+			<advisor>Zephyros_E_IV</advisor>
+		</items>
+		<design>CreateCraftsmenConsumable1</design>
+		<craftingsound>UI_Crafthall_Recipe_Civ</craftingsound>
+	</school>
+	<school>
+		<tag>Religion</tag>
+		<displayname>55713</displayname>
+		<description>55720</description>
+		<startingblueprint>EgyptianGrandTemple</startingblueprint>
+		<icon>Art\UserInterface\Icons\Crafting\SchoolReligion_ua</icon>
+		<gearicons>
+			<gear stringid="56324">StaffSlot_ua</gear>
+			<gear stringid="56330">ScepterSlot_ua</gear>
+			<gear stringid="56351">ClothArmorSlot_ua</gear>
+			<gear stringid="56337">PriestGearSlot_ua</gear>
+		</gearicons>
+		<items>
+			<consumable>ConsumablePriestAmen_C</consumable>
+			<consumable>ConsumableGrantGold_C</consumable>
+			<advisor>Philon_C_I</advisor>
+			<advisor>Thoth_U_II</advisor>
+			<advisor>Amunet_R_III</advisor>
+			<advisor>Tycho_E_IV</advisor>
+		</items>
+		<design>CreateReligionConsumable1</design>
+		<craftingsound>UI_Crafthall_Recipe_Mystic</craftingsound>
+	</school>
+	<school>
+		<tag>Metalworking</tag>
+		<displayname>59109</displayname>
+		<description>59110</description>
+		<startingblueprint>GeneralMetalworking</startingblueprint>
+		<icon>Art\UserInterface\Icons\Crafting\SchoolMetalworking_ua</icon>
+		<gearicons>
+			<gear stringid="58937">TorcSlot_ua</gear>
+			<gear stringid="58938">HornSlot_ua</gear>
+			<gear stringid="59129">WarPaintSlot_ua</gear>
+		</gearicons>
+		<items>
+			<consumable>ConsumableElixirDamage_C</consumable>
+			<consumable>ConsumableElixirHP_C</consumable>
+			<consumable>ConsumableElixirSpeed_C</consumable>
+			<consumable>ConsumableElixirHpDamageSpeed_C</consumable>
+			<consumable>ConsumableCelticMercs_C</consumable>
+			<consumable>ConsumableGaesatae_C</consumable>
+			<consumable>ConsumableHeadHunter_C</consumable>
+			<consumable>ConsumableWoadRaider_C</consumable>
+		</items>
+		<allowedcapitals>
+			<capital>Celtic</capital>
+		</allowedcapitals>
+		<design>CreateReligionConsumable1</design>
+		<craftingsound>UI_Crafthall_Recipe_Metalwork</craftingsound>
+	</school>
+</craftschools>

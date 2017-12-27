@@ -1,0 +1,294 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<quest xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xsd="http://www.w3.org/2001/XMLSchema" uniqueid="65" version="51">
+	<displayname>$$892$$</displayname>
+	<level>-1</level>
+	<difficultycoloroverride>1</difficultycoloroverride>
+	<repeatable>true</repeatable>
+	<offertype>eOfferNone</offertype>
+	<timer>
+		<events/>
+		<hideonui>false</hideonui>
+	</timer>
+	<canplaycoop>true</canplaycoop>
+	<cooprequired>false</cooprequired>
+	<ranked>false</ranked>
+	<alliance>eAllianceNone</alliance>
+	<questtype>RandomMap</questtype>
+	<description>$$893$$</description>
+	<completiontext>$$894$$</completiontext>
+	<inprogresstext>$$1695$$</inprogresstext>
+	<summarytext>$$1696$$</summarytext>
+	<repeatableduration>12</repeatableduration>
+	<canabandon>true</canabandon>
+	<hiddenquest>false</hiddenquest>
+	<friendonly>false</friendonly>
+	<suppressnotifications>false</suppressnotifications>
+	<customquest>false</customquest>
+	<questgamemodetype>Normal</questgamemodetype>
+	<prereqs>
+		<values>
+			<questcomplete>
+				<id>81</id>
+			</questcomplete>
+		</values>
+	</prereqs>
+	<equipmentprereqs/>
+	<targets>
+		<grouping>
+			<cooponly>false</cooponly>
+			<forcetocenter>false</forcetocenter>
+			<name>Player1</name>
+			<count>1</count>
+			<team>1</team>
+			<area>Player1</area>
+			<groupfilename>Shared_Start_Small</groupfilename>
+			<rottype>Rotate0</rottype>
+			<rotateunitorientations>false</rotateunitorientations>
+		</grouping>
+		<grouping>
+			<cooponly>false</cooponly>
+			<forcetocenter>false</forcetocenter>
+			<name>Ambush1</name>
+			<count>1</count>
+			<team>2</team>
+			<area>Quest_Area_A</area>
+			<groupfilename>C01\SeaPeople\C01_SeaPeople_Barracks</groupfilename>
+			<rottype>Rotate0</rottype>
+			<rotateunitorientations>true</rotateunitorientations>
+		</grouping>
+		<grouping>
+			<cooponly>false</cooponly>
+			<forcetocenter>false</forcetocenter>
+			<name>Ambush2</name>
+			<count>1</count>
+			<team>2</team>
+			<area>Quest_Area_E</area>
+			<groupfilename>C01\SeaPeople\C01_SeaPeople_Boats_01</groupfilename>
+			<rottype>Rotate0</rottype>
+			<rotateunitorientations>false</rotateunitorientations>
+		</grouping>
+		<random placeatleast="0" placenomore="1">
+			<cooponly>false</cooponly>
+			<forcetocenter>false</forcetocenter>
+			<unitprobability>
+				<unit name="Bismarque1" chance="0.33"/>
+				<unit name="Bismarque2" chance="0.33"/>
+				<unit name="Bismarque3" chance="0.33"/>
+			</unitprobability>
+			<targets>
+				<protounit>
+					<cooponly>false</cooponly>
+					<forcetocenter>false</forcetocenter>
+					<name>Bismarque1</name>
+					<protoname>Npc_SP_Flagship</protoname>
+					<count>1</count>
+					<team>2</team>
+					<area>Quest_Area_C</area>
+					<usequesttargetindicator>true</usequesttargetindicator>
+				</protounit>
+				<protounit>
+					<cooponly>false</cooponly>
+					<forcetocenter>false</forcetocenter>
+					<name>Bismarque2</name>
+					<protoname>Npc_SP_Flagship</protoname>
+					<count>1</count>
+					<team>2</team>
+					<area>Quest_Area_D</area>
+					<usequesttargetindicator>true</usequesttargetindicator>
+				</protounit>
+				<protounit>
+					<cooponly>false</cooponly>
+					<forcetocenter>false</forcetocenter>
+					<name>Bismarque3</name>
+					<protoname>Npc_SP_Flagship</protoname>
+					<count>1</count>
+					<team>2</team>
+					<area>Quest_Area_E</area>
+					<usequesttargetindicator>true</usequesttargetindicator>
+				</protounit>
+			</targets>
+		</random>
+		<grouping>
+			<cooponly>true</cooponly>
+			<forcetocenter>false</forcetocenter>
+			<name>Player2</name>
+			<count>1</count>
+			<team>3</team>
+			<area>Player2</area>
+			<groupfilename>Shared_Start_Small</groupfilename>
+			<rottype>Rotate0</rottype>
+			<rotateunitorientations>false</rotateunitorientations>
+		</grouping>
+		<protounit>
+			<cooponly>false</cooponly>
+			<forcetocenter>false</forcetocenter>
+			<name>Guards</name>
+			<protoname>Npc_SP_Bowman</protoname>
+			<count>3</count>
+			<team>2</team>
+			<area>Quest_Area_A</area>
+			<usequesttargetindicator>false</usequesttargetindicator>
+		</protounit>
+	</targets>
+	<objectives id="0" mustfailall="false">
+		<values>
+			<or id="1" mustfailall="false">
+				<values>
+					<dummy id="2">
+						<description>$$3802$$</description>
+						<objectivename>EnemiesDefeated</objectivename>
+						<autocomplete>false</autocomplete>
+					</dummy>
+					<reduceunitsto id="3">
+						<type>LogicalTypeNeededForVictory</type>
+						<count>0</count>
+						<includeteam>true</includeteam>
+						<includeunderconstruction>false</includeunderconstruction>
+						<canuncomplete>false</canuncomplete>
+						<causesfailure>true</causesfailure>
+						<playerid>1</playerid>
+					</reduceunitsto>
+				</values>
+			</or>
+		</values>
+	</objectives>
+	<secondaryobjectives id="4" mustfailall="false" rewardname="Optional">
+		<description>$$9658$$</description>
+		<values>
+			<or id="5" mustfailall="false">
+				<values>
+					<dummy id="6">
+						<description>$$12216$$</description>
+						<objectivename>OptionalRestrictTraining</objectivename>
+						<autocomplete>false</autocomplete>
+					</dummy>
+					<dummy id="7">
+						<description/>
+						<objectivename>EnemiesDefeated</objectivename>
+						<autocomplete>false</autocomplete>
+					</dummy>
+				</values>
+			</or>
+		</values>
+	</secondaryobjectives>
+	<onaccept/>
+	<rewards visible="true">
+		<alliancepoints visible="true">
+			<amount>10</amount>
+		</alliancepoints>
+		<xp visible="true">
+			1
+			<lookuptable>SQLong</lookuptable>
+		</xp>
+		<capitalresource visible="true">
+			<capitalresource>cCapResCoin</capitalresource>
+			<amount>1</amount>
+			<lookuptable>SQLong</lookuptable>
+		</capitalresource>
+		<loottable visible="true">general</loottable>
+		<loottable visible="true">general</loottable>
+	</rewards>
+	<secondaryrewards visible="true" name="Optional">
+		<capitalresource visible="true">
+			<capitalresource>cCapResCoin</capitalresource>
+			<amount>1</amount>
+			<lookuptable>OptCoin</lookuptable>
+		</capitalresource>
+		<loottable visible="true">general</loottable>
+		<loottable visible="true">general</loottable>
+	</secondaryrewards>
+	<playersettings id="1">
+		<team>1</team>
+		<color>1</color>
+		<tributablebehavior>Default</tributablebehavior>
+		<playertype>Human</playertype>
+		<cooponly>false</cooponly>
+		<startingfood>300</startingfood>
+		<startingwood>300</startingwood>
+		<startinggold>300</startinggold>
+		<startingstone>300</startingstone>
+		<aislidervariables/>
+		<aiflagvariables/>
+	</playersettings>
+	<playersettings id="2">
+		<team>2</team>
+		<color>2</color>
+		<tributablebehavior>Default</tributablebehavior>
+		<playertype>Computer</playertype>
+		<personality>$$2243$$</personality>
+		<script>CORE\Rush_Heavy</script>
+		<dataset>C01\C01_SeaPeople_T3</dataset>
+		<cooponly>false</cooponly>
+		<startingfood>800</startingfood>
+		<startingwood>800</startingwood>
+		<startinggold>800</startinggold>
+		<startingstone>800</startingstone>
+		<aislidervariables>
+			<aivariable>
+				<key>CavalryBias</key>
+				<value>-1</value>
+			</aivariable>
+			<aivariable>
+				<key>SiegeBias</key>
+				<value>-1</value>
+			</aivariable>
+			<aivariable>
+				<key>ArcherBias</key>
+				<value>1</value>
+			</aivariable>
+		</aislidervariables>
+		<aiflagvariables/>
+	</playersettings>
+	<playersettings id="3">
+		<team>1</team>
+		<color>7</color>
+		<tributablebehavior>Default</tributablebehavior>
+		<playertype>Human</playertype>
+		<cooponly>true</cooponly>
+		<startingfood>300</startingfood>
+		<startingwood>300</startingwood>
+		<startinggold>300</startinggold>
+		<startingstone>300</startingstone>
+		<aislidervariables/>
+		<aiflagvariables/>
+	</playersettings>
+	<diplomacysettings/>
+	<randommap>
+		<map>core\shared\rm_naval_harasstheseapeople</map>
+		<randommap>true</randommap>
+		<numplayers>3</numplayers>
+		<mapvariables>
+			<variable name="EnemiesDefeatedQuestID" type="Int">65</variable>
+			<variable name="QuestID" type="Int">65</variable>
+			<variable name="OptionalRestrictTraining" type="Bool">true</variable>
+			<variable name="OptionalRestrictInf" type="Bool">true</variable>
+			<variable name="OptionalRestrictArc" type="Bool">true</variable>
+			<variable name="OptionalRestrictCav" type="Bool">true</variable>
+			<variable name="OptionalRestrictSpc" type="Bool">true</variable>
+			<variable name="OptionalRestrictSie" type="Bool">true</variable>
+			<variable name="OptionalRestrictShp" type="Bool">true</variable>
+			<variable name="MainPlayerID" type="Int">1</variable>
+			<variable name="CoopPlayerID" type="Int">3</variable>
+			<variable name="region" type="String">Greek Isles</variable>
+		</mapvariables>
+		<nuggetoverrides/>
+		<mapregionname>Greek Isles</mapregionname>
+		<lightsetname>&lt;Not Specified&gt;</lightsetname>
+		<mapsizename>&lt;Not Specified&gt;</mapsizename>
+	</randommap>
+	<questgivers>
+		<protounit>ArgosKing</protounit>
+	</questgivers>
+	<questreturners>
+		<protounit>ArgosKing</protounit>
+	</questreturners>
+	<maplocationx>0.638</maplocationx>
+	<maplocationy>0.646</maplocationy>
+	<mapmarker>QuestRepeatable</mapmarker>
+	<mappage>Greece</mappage>
+	<elitespawnchance>0.025</elitespawnchance>
+	<linkedquestid>3182</linkedquestid>
+	<questbasescale>3</questbasescale>
+	<victoryconditions/>
+</quest>

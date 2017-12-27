@@ -1,0 +1,126 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<quest xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xsd="http://www.w3.org/2001/XMLSchema" uniqueid="104000" version="72">
+	<displayname>$$12511$$</displayname>
+	<level>0</level>
+	<repeatable>false</repeatable>
+	<offertype>eOfferNone</offertype>
+	<timer>
+		<events/>
+		<hideonui>false</hideonui>
+	</timer>
+	<canplaycoop>false</canplaycoop>
+	<cooprequired>false</cooprequired>
+	<ranked>false</ranked>
+	<alliance>eAllianceNone</alliance>
+	<questtype>CapitolCity</questtype>
+	<description>$$12516$$</description>
+	<completiontext>$$12504$$</completiontext>
+	<inprogresstext>$$12504$$</inprogresstext>
+	<summarytext>$$12510$$</summarytext>
+	<canabandon>true</canabandon>
+	<hiddenquest>false</hiddenquest>
+	<friendonly>false</friendonly>
+	<suppressnotifications>true</suppressnotifications>
+	<customquest>false</customquest>
+	<questgamemodetype>Normal</questgamemodetype>
+	<prereqs>
+		<values>
+			<and>
+				<values>
+					<or>
+						<values>
+							<questcomplete>
+								<id>2204</id>
+							</questcomplete>
+							<level>
+								<min>20</min>
+								<max>99</max>
+							</level>
+						</values>
+					</or>
+					<queststatus>
+						<id>104001</id>
+						<queststatus>NotAssigned</queststatus>
+					</queststatus>
+					<queststatus>
+						<id>104001</id>
+						<queststatus>NotCompleted</queststatus>
+					</queststatus>
+					<queststatus>
+						<id>104420</id>
+						<queststatus>NotAssigned</queststatus>
+					</queststatus>
+					<queststatus>
+						<id>104420</id>
+						<queststatus>NotCompleted</queststatus>
+					</queststatus>
+				</values>
+			</and>
+		</values>
+	</prereqs>
+	<equipmentprereqs/>
+	<targets/>
+	<objectives id="0" mustfailall="false">
+		<values>
+			<or id="1" mustfailall="false">
+				<description>$$12517$$</description>
+				<values>
+					<unitdiscovered id="2">
+						<type>B04_PrimaryQG</type>
+						<count>1</count>
+					</unitdiscovered>
+					<unitdiscovered id="3">
+						<type>GEN_FredTheRedeemer</type>
+						<count>1</count>
+					</unitdiscovered>
+					<ownsunit id="4">
+						<type>GEN_FredTheRedeemer</type>
+						<count>1</count>
+						<owningplayerid>1</owningplayerid>
+						<causesfailure>false</causesfailure>
+					</ownsunit>
+				</values>
+			</or>
+		</values>
+	</objectives>
+	<onaccept>
+		<unlockregion visible="true">24</unlockregion>
+		<protip visible="false">TIP_B04_Usage</protip>
+	</onaccept>
+	<rewards visible="true">
+		<capitalresource visible="true">
+			<capitalresource>cCapResCoin</capitalresource>
+			<amount>5</amount>
+		</capitalresource>
+	</rewards>
+	<diplomacysettings/>
+	<randommap>
+		<randommap>true</randommap>
+		<numplayers>0</numplayers>
+		<mapvariables/>
+		<nuggetoverrides/>
+		<mapregionname>&lt;Not Specified&gt;</mapregionname>
+		<lightsetname>&lt;Not Specified&gt;</lightsetname>
+		<mapsizename>&lt;Not Specified&gt;</mapsizename>
+	</randommap>
+	<questgivers>
+		<protounit>C01_R1_Ambassador</protounit>
+		<protounit>C02_R1_Ambassador</protounit>
+		<protounit>C03_R1_Ambassador</protounit>
+		<protounit>C04_R1_Ambassador</protounit>
+		<protounit>C06_R1_Ambassador</protounit>
+		<protounit>C07_R1_Ambassador</protounit>
+	</questgivers>
+	<questreturners>
+		<protounit>B04_PrimaryQG</protounit>
+	</questreturners>
+	<maplocationx>0.5</maplocationx>
+	<maplocationy>0.5</maplocationy>
+	<mapmarker>Blank</mapmarker>
+	<mappage>C03_Celtica</mappage>
+	<elitespawnchance>0</elitespawnchance>
+	<linkedquestid>0</linkedquestid>
+	<questbasescale>0</questbasescale>
+	<victoryconditions/>
+</quest>

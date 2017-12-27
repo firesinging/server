@@ -1,0 +1,15 @@
+<?xml version="1.0"?>
+<Region xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xsd="http://www.w3.org/2001/XMLSchema" ID="1">
+  <Name>Troy Beach Camp</Name>
+  <CivID>1</CivID>
+  <MapName>Regions/REGION_C01R3_v1_TroyBeachCamp</MapName>
+  <MapLocationX>0.434</MapLocationX>
+  <MapLocationY>0.538</MapLocationY>
+  <MapMarker>RegionDefault</MapMarker>
+  <MapPage>Troy</MapPage>
+  <LoadScreen>UserInterface\LoadingScreens\ShipTroy_df</LoadScreen>
+  <DescriptionStringID>55405</DescriptionStringID>
+  <DisplayNameStringID>55406</DisplayNameStringID>
+  <AvatarShield>UserInterface\Avatar\RegionShieldTroy_ua</AvatarShield>
+  <FlagIcon>UserInterface\Icons\Regions\RegionFlagTroy_ua</FlagIcon>
+</Region>

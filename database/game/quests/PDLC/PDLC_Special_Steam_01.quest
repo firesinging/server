@@ -1,0 +1,90 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<quest xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xsd="http://www.w3.org/2001/XMLSchema" uniqueid="2402" version="35">
+	<displayname>$$11556$$</displayname>
+	<level>0</level>
+	<repeatable>false</repeatable>
+	<offertype>eOfferSteamSpecial1</offertype>
+	<timer>
+		<events/>
+		<hideonui>true</hideonui>
+	</timer>
+	<canplaycoop>false</canplaycoop>
+	<cooprequired>false</cooprequired>
+	<ranked>false</ranked>
+	<description>$$11559$$</description>
+	<completiontext>$$11559$$</completiontext>
+	<inprogresstext>$$11559$$</inprogresstext>
+	<summarytext>$$11558$$</summarytext>
+	<canabandon>false</canabandon>
+	<hiddenquest>true</hiddenquest>
+	<friendonly>false</friendonly>
+	<suppressnotifications>true</suppressnotifications>
+	<customquest>false</customquest>
+	<questtype>CapitolCity</questtype>
+	<questgamemodetype>Normal</questgamemodetype>
+	<prereqs>
+		<values/>
+	</prereqs>
+	<equipmentprereqs/>
+	<targets/>
+	<objectives id="0" mustfailall="false">
+		<values>
+			<or id="1" mustfailall="false">
+				<description>$$11557$$</description>
+				<values>
+					<unitdiscovered id="2">
+						<type>GEN_FredTheRedeemer</type>
+						<count>1</count>
+					</unitdiscovered>
+					<ownsunit id="3">
+						<type>GEN_FredTheRedeemer</type>
+						<count>1</count>
+						<owningplayerid>1</owningplayerid>
+						<causesfailure>false</causesfailure>
+					</ownsunit>
+				</values>
+			</or>
+		</values>
+	</objectives>
+	<onaccept/>
+	<rewards visible="true">
+		<blueprint visible="true">LootStore07</blueprint>
+		<consumable visible="true">
+			<consumablename>ConsumableCivReinforcements</consumablename>
+			<count>5</count>
+		</consumable>
+		<blueprint visible="true">GeneralWarehouse24Slot</blueprint>
+		<trait visible="true">VanityHelm_008</trait>
+		<trait visible="true">VanityHelm_007</trait>
+		<trait visible="true">VanityHelm_003</trait>
+		<trait visible="true">VanityShield1H_008</trait>
+		<trait visible="true">VanityShield1H_007</trait>
+		<trait visible="true">VanityShield1H_004</trait>
+		<trait visible="true">VanityWeapon1H_008</trait>
+		<trait visible="true">VanityWeapon1H_007</trait>
+		<trait visible="true">VanityWeapon1H_004</trait>
+	</rewards>
+	<diplomacysettings/>
+	<randommap>
+		<randommap>true</randommap>
+		<numplayers>0</numplayers>
+		<mapvariables/>
+		<nuggetoverrides/>
+		<mapregionname>&lt;Not Specified&gt;</mapregionname>
+		<lightsetname>&lt;Not Specified&gt;</lightsetname>
+		<mapsizename>&lt;Not Specified&gt;</mapsizename>
+	</randommap>
+	<questgivers>
+		<protounit>GEN_PDLCStore</protounit>
+	</questgivers>
+	<questreturners>
+		<protounit>GEN_FredTheRedeemer</protounit>
+	</questreturners>
+	<maplocationx>0.5</maplocationx>
+	<maplocationy>0.5</maplocationy>
+	<mapmarker>Blank</mapmarker>
+	<elitespawnchance>0</elitespawnchance>
+	<questbasescale>0</questbasescale>
+	<victoryconditions/>
+</quest>

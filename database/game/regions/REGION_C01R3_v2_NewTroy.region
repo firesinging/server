@@ -1,0 +1,15 @@
+<?xml version="1.0"?>
+<Region xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xsd="http://www.w3.org/2001/XMLSchema" ID="6">
+  <Name>New Troy</Name>
+  <CivID>1</CivID>
+  <MapName>Regions/REGION_C01R3_v2_NewTroy</MapName>
+  <MapLocationX>0.631</MapLocationX>
+  <MapLocationY>0.461</MapLocationY>
+  <MapMarker>RegionDefault</MapMarker>
+  <MapPage>Troy</MapPage>
+  <LoadScreen>UserInterface\LoadingScreens\ShipTroy_df</LoadScreen>
+  <DescriptionStringID>55408</DescriptionStringID>
+  <DisplayNameStringID>55407</DisplayNameStringID>
+  <AvatarShield>UserInterface\Avatar\RegionShieldTroy_ua</AvatarShield>
+  <FlagIcon>UserInterface\Icons\Regions\RegionFlagTroy_ua</FlagIcon>
+</Region>

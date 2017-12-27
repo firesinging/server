@@ -1,0 +1,14 @@
+<?xml version="1.0"?>
+<Region xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xsd="http://www.w3.org/2001/XMLSchema" ID="12">
+  <Name>Vindelicia</Name>
+  <CivID>6</CivID>
+  <MapName>Regions/REGION_C03R1_VillageB</MapName>
+  <MapLocationX>0.45</MapLocationX>
+  <MapLocationY>0.12</MapLocationY>
+  <MapMarker>RegionDefault</MapMarker>
+  <MapPage>C03_Celtica</MapPage>
+  <LoadScreen>UserInterface\LoadingScreens\C03Village02Loading_df</LoadScreen>
+  <AvatarShield>UserInterface\Avatar\RegionShieldVindelicia_ua</AvatarShield>
+  <DescriptionStringID>63607</DescriptionStringID>
+  <DisplayNameStringID>62958</DisplayNameStringID>
+</Region>

@@ -1,0 +1,14 @@
+<?xml version="1.0"?>
+<Region xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xsd="http://www.w3.org/2001/XMLSchema" ID="28">
+  <Name>REGION_SharedB05</Name>
+  <CivID>1</CivID>
+  <MapName>Regions/REGION_SharedB05</MapName>
+  <MapLocationX>0.3</MapLocationX>
+  <MapLocationY>0.3</MapLocationY>
+  <MapMarker>RegionDefault</MapMarker>
+  <MapPage>Egypt</MapPage>
+  <LoadScreen>UserInterface\LoadingScreens\ShipArgos_df</LoadScreen>
+  <AvatarShield>UserInterface\Avatar\RegionShieldArgos_ua</AvatarShield>
+  <DescriptionStringID>25513</DescriptionStringID>
+  <DisplayNameStringID>25513</DisplayNameStringID>
+</Region>

@@ -1,0 +1,115 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<quest xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xsd="http://www.w3.org/2001/XMLSchema" uniqueid="13008" version="79">
+	<displayname>$$7264$$</displayname>
+	<level>0</level>
+	<repeatable>false</repeatable>
+	<timer>
+		<events/>
+		<hideonui>false</hideonui>
+	</timer>
+	<canplaycoop>false</canplaycoop>
+	<cooprequired>false</cooprequired>
+	<ranked>false</ranked>
+	<description>$$8671$$</description>
+	<completiontext>$$8007$$</completiontext>
+	<inprogresstext>$$8672$$</inprogresstext>
+	<summarytext>$$4443$$</summarytext>
+	<canabandon>false</canabandon>
+	<hiddenquest>false</hiddenquest>
+	<friendonly>false</friendonly>
+	<suppressnotifications>false</suppressnotifications>
+	<customquest>false</customquest>
+	<questtype>CapitolCity</questtype>
+	<questgamemodetype>Normal</questgamemodetype>
+	<prereqs>
+		<values>
+			<civilization>
+				<id>6</id>
+			</civilization>
+			<questcomplete>
+				<id>13007</id>
+			</questcomplete>
+		</values>
+	</prereqs>
+	<equipmentprereqs/>
+	<targets/>
+	<objectives id="0" mustfailall="false">
+		<values>
+			<and id="1" mustfailall="false">
+				<values>
+					<or id="2" mustfailall="false">
+						<description>$$7073$$</description>
+						<values>
+							<unitdiscovered id="3">
+								<type>C03_R2_Trader</type>
+								<count>1</count>
+							</unitdiscovered>
+						</values>
+					</or>
+				</values>
+			</and>
+			<and id="4" mustfailall="false">
+				<values>
+					<or id="5" mustfailall="false">
+						<description>$$7129$$</description>
+						<values>
+							<unitdiscovered id="6">
+								<type>C03_R2_Trader_V2</type>
+								<count>1</count>
+							</unitdiscovered>
+						</values>
+					</or>
+				</values>
+			</and>
+		</values>
+	</objectives>
+	<onaccept>
+		<protip visible="false">TIP_Shared_FirstRegionTravel</protip>
+		<unlockregion visible="true">9</unlockregion>
+	</onaccept>
+	<rewards visible="true">
+		<capitalresource visible="true">
+			<capitalresource>cCapResCoin</capitalresource>
+			<amount>50</amount>
+		</capitalresource>
+		<capitaltech visible="true">
+			<captechid>344</captechid>
+		</capitaltech>
+		<capitaltech visible="true">
+			<captechid>338</captechid>
+		</capitaltech>
+		<questgiver visible="true">
+			<name>C03_R1_PortMaster</name>
+			<status>Available</status>
+		</questgiver>
+		<questgiver visible="true">
+			<name>C03_R1_Explorer</name>
+			<status>Available</status>
+		</questgiver>
+		<protip visible="false" proto="">TIP_C03_NewQuests_FirstNewQuestGivers</protip>
+		<protip visible="false">TIP_C03_QuestTechUnlock_Dock</protip>
+	</rewards>
+	<diplomacysettings/>
+	<randommap>
+		<randommap>true</randommap>
+		<numplayers>0</numplayers>
+		<mapvariables/>
+		<nuggetoverrides/>
+		<mapregionname>&lt;Not Specified&gt;</mapregionname>
+		<lightsetname>&lt;Not Specified&gt;</lightsetname>
+		<mapsizename>&lt;Not Specified&gt;</mapsizename>
+	</randommap>
+	<questgivers>
+		<protounit>C03_R1_Leader</protounit>
+	</questgivers>
+	<questreturners>
+		<protounit>C03_R1_Leader</protounit>
+	</questreturners>
+	<maplocationx>0.5</maplocationx>
+	<maplocationy>0.5</maplocationy>
+	<mapmarker>Blank</mapmarker>
+	<mappage>C03_Celtica</mappage>
+	<elitespawnchance>0</elitespawnchance>
+	<victoryconditions/>
+</quest>

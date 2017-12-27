@@ -1,0 +1,253 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<quest xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xsd="http://www.w3.org/2001/XMLSchema" uniqueid="73" version="62">
+	<displayname>$$853$$</displayname>
+	<level>23</level>
+	<repeatable>false</repeatable>
+	<offertype>eOfferNone</offertype>
+	<timer>
+		<events/>
+		<hideonui>false</hideonui>
+	</timer>
+	<canplaycoop>true</canplaycoop>
+	<cooprequired>false</cooprequired>
+	<ranked>false</ranked>
+	<alliance>eAllianceNone</alliance>
+	<questtype>RandomMap</questtype>
+	<description>$$4152$$</description>
+	<completiontext>$$4153$$</completiontext>
+	<inprogresstext>$$4154$$</inprogresstext>
+	<summarytext>$$4155$$</summarytext>
+	<canabandon>true</canabandon>
+	<hiddenquest>false</hiddenquest>
+	<friendonly>false</friendonly>
+	<suppressnotifications>false</suppressnotifications>
+	<customquest>false</customquest>
+	<questgamemodetype>Normal</questgamemodetype>
+	<prereqs>
+		<values>
+			<questcomplete>
+				<id>211</id>
+			</questcomplete>
+		</values>
+	</prereqs>
+	<equipmentprereqs/>
+	<targets>
+		<grouping>
+			<cooponly>false</cooponly>
+			<forcetocenter>false</forcetocenter>
+			<name>Player1</name>
+			<count>1</count>
+			<team>1</team>
+			<area>Player1</area>
+			<groupfilename>Shared_Start_Small_WithArrow</groupfilename>
+			<rottype>Rotate0</rottype>
+			<rotateunitorientations>false</rotateunitorientations>
+		</grouping>
+		<grouping>
+			<cooponly>false</cooponly>
+			<forcetocenter>false</forcetocenter>
+			<name>EnemyBoats1</name>
+			<count>1</count>
+			<team>2</team>
+			<area>Quest_Area_B</area>
+			<groupfilename>C01\SeaPeople\C01_SeaPeople_Boats_01</groupfilename>
+			<rottype>Rotate0</rottype>
+			<rotateunitorientations>true</rotateunitorientations>
+		</grouping>
+		<protounit>
+			<cooponly>false</cooponly>
+			<forcetocenter>false</forcetocenter>
+			<name>EgyptianAdmiral</name>
+			<protoname>CapturedAdmiral</protoname>
+			<count>1</count>
+			<team>2</team>
+			<area>Quest_Area_A</area>
+			<overrides parent="Qst_Convertable">
+				<animfile>NPC\CivEgyptian\Units\QuestGivers\AdmiralQG\AdmiralQG.xml</animfile>
+				<displaynameid>52650</displaynameid>
+				<portraiticon>UserInterface\Icons\Units\AvatarEGeneral_ua</portraiticon>
+				<icon>UserInterface\Icons\Units\EGeneral64_ua</icon>
+				<soundfile>Eg_Inf_Spearman</soundfile>
+			</overrides>
+			<usequesttargetindicator>true</usequesttargetindicator>
+		</protounit>
+		<grouping>
+			<cooponly>false</cooponly>
+			<forcetocenter>false</forcetocenter>
+			<name>EnemyBoats2</name>
+			<count>1</count>
+			<team>2</team>
+			<area>Quest_Area_D</area>
+			<groupfilename>C01\SeaPeople\C01_SeaPeople_Boats_01</groupfilename>
+			<rottype>Rotate0</rottype>
+			<rotateunitorientations>true</rotateunitorientations>
+		</grouping>
+		<random placeatleast="1" placenomore="2">
+			<cooponly>false</cooponly>
+			<forcetocenter>false</forcetocenter>
+			<unitprobability>
+				<unit name="Cow1" chance="0.5"/>
+				<unit name="Cow2" chance="0.5"/>
+			</unitprobability>
+			<targets>
+				<protounit>
+					<cooponly>false</cooponly>
+					<forcetocenter>false</forcetocenter>
+					<name>Cow1</name>
+					<protoname>ArgosCow</protoname>
+					<count>1</count>
+					<team>2</team>
+					<area>Quest_Area_A</area>
+					<overrides parent="Qst_Convertable">
+						<displaynameid>57565</displaynameid>
+						<animfile>World\Resources\Cow\Cow.xml</animfile>
+						<portraiticon>UserInterface\Icons\Units\Gaia\AvatarCow_ua</portraiticon>
+						<icon>UserInterface\Icons\Units\Gaia\Cow64_ua</icon>
+						<soundfile>Cow</soundfile>
+					</overrides>
+					<usequesttargetindicator>true</usequesttargetindicator>
+				</protounit>
+				<protounit>
+					<cooponly>false</cooponly>
+					<forcetocenter>true</forcetocenter>
+					<name>Cow2</name>
+					<protoname>ArgosCow</protoname>
+					<count>1</count>
+					<team>2</team>
+					<area>Quest_Area_A</area>
+					<overrides parent="Qst_Convertable">
+						<displaynameid>57565</displaynameid>
+						<animfile>World\Resources\Cow\Cow.xml</animfile>
+						<portraiticon>UserInterface\Icons\Units\Gaia\AvatarCow_ua</portraiticon>
+						<icon>UserInterface\Icons\Units\Gaia\Cow64_ua</icon>
+						<soundfile>Cow</soundfile>
+					</overrides>
+					<usequesttargetindicator>true</usequesttargetindicator>
+				</protounit>
+			</targets>
+		</random>
+		<grouping>
+			<cooponly>true</cooponly>
+			<forcetocenter>false</forcetocenter>
+			<name>Player2</name>
+			<count>1</count>
+			<team>3</team>
+			<area>Player2</area>
+			<groupfilename>Shared_Start_Small</groupfilename>
+			<rottype>Rotate0</rottype>
+			<rotateunitorientations>false</rotateunitorientations>
+		</grouping>
+	</targets>
+	<objectives id="0" mustfailall="false">
+		<values>
+			<or id="1" mustfailall="false">
+				<values>
+					<unitinarea id="2">
+						<description>$$4156$$</description>
+						<area>Player1</area>
+						<type>CapturedAdmiral</type>
+						<count>1</count>
+						<radius>30</radius>
+						<aidefend>false</aidefend>
+					</unitinarea>
+					<reduceunitsto id="3">
+						<type>LogicalTypeNeededForVictory</type>
+						<count>0</count>
+						<includeteam>true</includeteam>
+						<includeunderconstruction>false</includeunderconstruction>
+						<canuncomplete>false</canuncomplete>
+						<causesfailure>true</causesfailure>
+						<playerid>1</playerid>
+					</reduceunitsto>
+				</values>
+			</or>
+		</values>
+	</objectives>
+	<onaccept/>
+	<rewards visible="true">
+		<xp visible="true">80000</xp>
+		<capitalresource visible="true">
+			<capitalresource>cCapResCoin</capitalresource>
+			<amount>250</amount>
+		</capitalresource>
+		<loottable visible="true">general</loottable>
+		<or visible="true">
+			<blueprint visible="true">EgyptWarehouse16Slot</blueprint>
+			<blueprint visible="true">GreekWarehouse16Slot</blueprint>
+			<blueprint visible="true">CeltWarehouse16Slot</blueprint>
+			<blueprint visible="true">PersianWarehouse16Slot</blueprint>
+			<blueprint visible="true">BabylonianWarehouse16Slot</blueprint>
+			<blueprint visible="true">NorseWarehouse16Slot</blueprint>
+		</or>
+	</rewards>
+	<playersettings id="1">
+		<team>1</team>
+		<color>1</color>
+		<tributablebehavior>Default</tributablebehavior>
+		<playertype>Human</playertype>
+		<cooponly>false</cooponly>
+		<startingfood>-1</startingfood>
+		<startingwood>-1</startingwood>
+		<startinggold>-1</startinggold>
+		<startingstone>-1</startingstone>
+		<aislidervariables/>
+		<aiflagvariables/>
+	</playersettings>
+	<playersettings id="2">
+		<team>2</team>
+		<color>2</color>
+		<tributablebehavior>Default</tributablebehavior>
+		<playertype>Computer</playertype>
+		<personality>$$2243$$</personality>
+		<script>CORE\Rush_Heavy</script>
+		<dataset>C01\C01_SeaPeople_T3</dataset>
+		<cooponly>false</cooponly>
+		<startingfood>100</startingfood>
+		<startingwood>600</startingwood>
+		<startinggold>100</startinggold>
+		<startingstone>100</startingstone>
+		<aislidervariables/>
+		<aiflagvariables/>
+	</playersettings>
+	<playersettings id="3">
+		<team>1</team>
+		<color>7</color>
+		<tributablebehavior>Default</tributablebehavior>
+		<playertype>Human</playertype>
+		<cooponly>true</cooponly>
+		<startingfood>-1</startingfood>
+		<startingwood>-1</startingwood>
+		<startinggold>-1</startinggold>
+		<startingstone>-1</startingstone>
+		<aislidervariables/>
+		<aiflagvariables/>
+	</playersettings>
+	<diplomacysettings/>
+	<randommap>
+		<map>scenarioloader</map>
+		<randommap>true</randommap>
+		<numplayers>3</numplayers>
+		<mapvariables>
+			<variable name="scenarioFile" type="String">Shared_Argos/Argos_M13_AdmiralRescue</variable>
+			<variable name="region" type="String">Greek Coast</variable>
+		</mapvariables>
+		<nuggetoverrides/>
+		<mapregionname>Greek Coast</mapregionname>
+		<lightsetname>&lt;Not Specified&gt;</lightsetname>
+		<mapsizename>&lt;Not Specified&gt;</mapsizename>
+	</randommap>
+	<questgivers>
+		<protounit>ArgosRefugee</protounit>
+	</questgivers>
+	<questreturners>
+		<protounit>ArgosRefugee</protounit>
+	</questreturners>
+	<maplocationx>0.573</maplocationx>
+	<maplocationy>0.732</maplocationy>
+	<mapmarker>QuestDefault</mapmarker>
+	<mappage>Greece</mappage>
+	<elitespawnchance>0.025</elitespawnchance>
+	<questbasescale>0</questbasescale>
+	<victoryconditions/>
+</quest>

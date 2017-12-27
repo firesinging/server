@@ -1,0 +1,456 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<quest xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xsd="http://www.w3.org/2001/XMLSchema" uniqueid="11833" version="15">
+	<displayname>$$12874$$</displayname>
+	<level>-1</level>
+	<difficultycoloroverride>2</difficultycoloroverride>
+	<repeatable>true</repeatable>
+	<timer>
+		<time>00:10:00</time>
+		<events>
+			<timerevent event="Clubman02WatchPost">00:01:00</timerevent>
+			<timerevent event="Clubman02House">00:01:00</timerevent>
+			<timerevent event="Clubman02WatchPost">00:01:30</timerevent>
+			<timerevent event="Clubman02House">00:01:30</timerevent>
+			<timerevent event="Clubman04WatchPost">00:02:00</timerevent>
+			<timerevent event="Clubman02House">00:02:00</timerevent>
+			<timerevent event="Clubman04House">00:02:30</timerevent>
+			<timerevent event="Bandits02GuardTower">00:02:30</timerevent>
+			<timerevent event="Clubman04WatchPost">00:03:00</timerevent>
+			<timerevent event="Bandits02Wall">00:03:00</timerevent>
+			<timerevent event="Chief1GuardTower">00:03:00</timerevent>
+			<timerevent event="Chief1House">00:03:30</timerevent>
+			<timerevent event="Bandits04GuardTower">00:03:30</timerevent>
+			<timerevent event="Bandits02Wall">00:03:30</timerevent>
+			<timerevent event="Bandits04Wall">00:04:00</timerevent>
+			<timerevent event="Bandits04GuardTower">00:04:00</timerevent>
+			<timerevent event="Chief1House">00:04:00</timerevent>
+			<timerevent event="Clubman04WatchPost">00:04:30</timerevent>
+			<timerevent event="Bandits04Wall">00:04:30</timerevent>
+			<timerevent event="Bandits04GuardTower">00:04:30</timerevent>
+			<timerevent event="Chief3House">00:05:00</timerevent>
+			<timerevent event="Bandits02GuardTower">00:05:00</timerevent>
+			<timerevent event="Bandits02Wall">00:05:00</timerevent>
+			<timerevent event="Chief3GuardTower">00:05:30</timerevent>
+			<timerevent event="Clubman04WatchPost">00:05:30</timerevent>
+			<timerevent event="Bandits04GuardTower">00:05:30</timerevent>
+			<timerevent event="Chief3House">00:06:00</timerevent>
+			<timerevent event="Chief1House">00:06:00</timerevent>
+			<timerevent event="Chief1GuardTower">00:06:00</timerevent>
+			<timerevent event="Clubman04WatchPost">00:06:30</timerevent>
+			<timerevent event="Chief1House">00:06:30</timerevent>
+			<timerevent event="Chief1GuardTower">00:06:30</timerevent>
+			<timerevent event="Bandits04GuardTower">00:07:00</timerevent>
+			<timerevent event="Bandits02Wall">00:07:00</timerevent>
+			<timerevent event="Bandits04Wall">00:07:00</timerevent>
+			<timerevent event="Chief1GuardTower">00:07:00</timerevent>
+			<timerevent event="Bandits02GuardTower">00:07:30</timerevent>
+			<timerevent event="Bandits04Wall">00:07:30</timerevent>
+			<timerevent event="Clubman04WatchPost">00:07:30</timerevent>
+			<timerevent event="Clubman04House">00:07:30</timerevent>
+			<timerevent event="Chief3GuardTower">00:08:00</timerevent>
+			<timerevent event="Bandits04GuardTower">00:08:00</timerevent>
+			<timerevent event="Chief3House">00:08:00</timerevent>
+			<timerevent event="Clubman04WatchPost">00:08:00</timerevent>
+			<timerevent event="Chief1House">00:08:30</timerevent>
+			<timerevent event="Bandits04GuardTower">00:08:30</timerevent>
+			<timerevent event="Clubman04WatchPost">00:08:30</timerevent>
+			<timerevent event="Chief3GuardTower">00:08:30</timerevent>
+			<timerevent event="Clubman04WatchPost">00:09:00</timerevent>
+			<timerevent event="Bandits04Wall">00:09:00</timerevent>
+			<timerevent event="Bandits04GuardTower">00:09:00</timerevent>
+			<timerevent event="Chief3GuardTower">00:09:00</timerevent>
+			<timerevent event="Chief3House">00:09:00</timerevent>
+			<timerevent event="1Clubman">00:03:15</timerevent>
+			<timerevent event="1Bandit">00:03:15</timerevent>
+			<timerevent event="1Clubman">00:04:15</timerevent>
+			<timerevent event="1Bandit">00:04:15</timerevent>
+			<timerevent event="1Bandit">00:05:15</timerevent>
+			<timerevent event="1Bandit">00:05:15</timerevent>
+			<timerevent event="1Chief">00:05:15</timerevent>
+			<timerevent event="1Chief">00:06:15</timerevent>
+			<timerevent event="1Chief">00:06:15</timerevent>
+			<timerevent event="1Clubman">00:06:15</timerevent>
+			<timerevent event="1Chief">00:07:15</timerevent>
+			<timerevent event="1Chief">00:07:15</timerevent>
+			<timerevent event="1Bandit">00:07:15</timerevent>
+			<timerevent event="1Chief">00:08:15</timerevent>
+			<timerevent event="1Chief">00:08:15</timerevent>
+			<timerevent event="ClubmanTon">00:08:15</timerevent>
+			<timerevent event="ClubmanTon">00:09:15</timerevent>
+			<timerevent event="BanditTon">00:09:15</timerevent>
+			<timerevent event="Chief3House">00:09:15</timerevent>
+		</events>
+		<hideonui>false</hideonui>
+	</timer>
+	<canplaycoop>false</canplaycoop>
+	<cooprequired>false</cooprequired>
+	<ranked>false</ranked>
+	<alliance>eAllianceNone</alliance>
+	<questtype>RandomMap</questtype>
+	<description>$$3363$$</description>
+	<completiontext>$$1054$$</completiontext>
+	<inprogresstext>$$3362$$</inprogresstext>
+	<summarytext>$$3360$$</summarytext>
+	<repeatableduration>12</repeatableduration>
+	<canabandon>true</canabandon>
+	<hiddenquest>false</hiddenquest>
+	<friendonly>false</friendonly>
+	<suppressnotifications>false</suppressnotifications>
+	<customquest>false</customquest>
+	<questgamemodetype>Normal</questgamemodetype>
+	<prereqs>
+		<values>
+			<civilization>
+				<id>1</id>
+			</civilization>
+			<questcomplete>
+				<id>164</id>
+			</questcomplete>
+		</values>
+	</prereqs>
+	<equipmentprereqs/>
+	<targets/>
+	<objectives id="0" mustfailall="false">
+		<values>
+			<or id="1" mustfailall="false">
+				<values>
+					<timer id="2">
+						<description>$$2471$$</description>
+						<failonexpire>false</failonexpire>
+					</timer>
+					<protectunit id="3">
+						<description>$$2477$$</description>
+						<type>Gr_Cap_AdvisorHall</type>
+						<owningplayerid>1</owningplayerid>
+					</protectunit>
+				</values>
+			</or>
+		</values>
+	</objectives>
+	<onaccept/>
+	<timereffects event="Clubman02WatchPost">
+		<spawnunit visible="false">
+			<count>2</count>
+			<placeunittype>Gr_Inf_Clubman</placeunittype>
+			<asplayer>2</asplayer>
+			<spawntype>SpawnForAllies</spawntype>
+			<nearunittype>Gr_Bldg_LookoutTower</nearunittype>
+			<radius>3</radius>
+			<useboneposition>false</useboneposition>
+			<overrides/>
+		</spawnunit>
+	</timereffects>
+	<timereffects event="Clubman02House">
+		<spawnunit visible="false">
+			<count>2</count>
+			<placeunittype>Gr_Inf_Clubman</placeunittype>
+			<asplayer>2</asplayer>
+			<spawntype>SpawnForAllies</spawntype>
+			<nearunittype>Gr_Bldg_House</nearunittype>
+			<radius>3</radius>
+			<useboneposition>false</useboneposition>
+			<overrides/>
+		</spawnunit>
+	</timereffects>
+	<timereffects event="Clubman04WatchPost">
+		<spawnunit visible="false">
+			<count>4</count>
+			<placeunittype>Gr_Inf_Clubman</placeunittype>
+			<asplayer>2</asplayer>
+			<spawntype>SpawnForAllies</spawntype>
+			<nearunittype>Gr_Bldg_LookoutTower</nearunittype>
+			<radius>5</radius>
+			<useboneposition>false</useboneposition>
+			<overrides/>
+		</spawnunit>
+	</timereffects>
+	<timereffects event="Clubman04House">
+		<spawnunit visible="false">
+			<count>4</count>
+			<placeunittype>Gr_Inf_Clubman</placeunittype>
+			<asplayer>2</asplayer>
+			<spawntype>SpawnForAllies</spawntype>
+			<nearunittype>Gr_Bldg_House</nearunittype>
+			<radius>5</radius>
+			<useboneposition>false</useboneposition>
+			<overrides/>
+		</spawnunit>
+	</timereffects>
+	<timereffects event="Bandits02GuardTower">
+		<spawnunit visible="false">
+			<count>2</count>
+			<placeunittype>Npc_Inf_Bandit</placeunittype>
+			<asplayer>2</asplayer>
+			<spawntype>SpawnForAllies</spawntype>
+			<nearunittype>Gr_Bldg_GuardTower</nearunittype>
+			<radius>3</radius>
+			<useboneposition>false</useboneposition>
+			<overrides/>
+		</spawnunit>
+	</timereffects>
+	<timereffects event="Bandits02Wall">
+		<spawnunit visible="false">
+			<count>2</count>
+			<placeunittype>Npc_Inf_Bandit</placeunittype>
+			<asplayer>2</asplayer>
+			<spawntype>SpawnForAllies</spawntype>
+			<nearunittype>WallConnector</nearunittype>
+			<radius>3</radius>
+			<useboneposition>false</useboneposition>
+			<overrides/>
+		</spawnunit>
+	</timereffects>
+	<timereffects event="Bandits04GuardTower">
+		<spawnunit visible="false">
+			<count>4</count>
+			<placeunittype>Npc_Inf_Bandit</placeunittype>
+			<asplayer>2</asplayer>
+			<spawntype>SpawnForAllies</spawntype>
+			<nearunittype>Gr_Bldg_GuardTower</nearunittype>
+			<radius>5</radius>
+			<useboneposition>false</useboneposition>
+			<overrides/>
+		</spawnunit>
+	</timereffects>
+	<timereffects event="Bandits04Wall">
+		<spawnunit visible="false">
+			<count>4</count>
+			<placeunittype>Npc_Inf_Bandit</placeunittype>
+			<asplayer>2</asplayer>
+			<spawntype>SpawnForAllies</spawntype>
+			<nearunittype>WallConnector</nearunittype>
+			<radius>5</radius>
+			<useboneposition>false</useboneposition>
+			<overrides/>
+		</spawnunit>
+	</timereffects>
+	<timereffects event="Chief1GuardTower">
+		<spawnunit visible="false">
+			<count>1</count>
+			<placeunittype>Npc_BanditLeader_01</placeunittype>
+			<asplayer>2</asplayer>
+			<spawntype>SpawnForAllies</spawntype>
+			<nearunittype>Gr_Bldg_GuardTower</nearunittype>
+			<radius>8</radius>
+			<useboneposition>false</useboneposition>
+			<overrides/>
+		</spawnunit>
+	</timereffects>
+	<timereffects event="Chief1House">
+		<spawnunit visible="false">
+			<count>1</count>
+			<placeunittype>Npc_BanditLeader_01</placeunittype>
+			<asplayer>2</asplayer>
+			<spawntype>SpawnForAllies</spawntype>
+			<nearunittype>Gr_Bldg_House</nearunittype>
+			<radius>8</radius>
+			<useboneposition>false</useboneposition>
+			<overrides/>
+		</spawnunit>
+	</timereffects>
+	<timereffects event="Chief3GuardTower">
+		<spawnunit visible="false">
+			<count>3</count>
+			<placeunittype>Npc_BanditLeader_01</placeunittype>
+			<asplayer>2</asplayer>
+			<spawntype>SpawnForAllies</spawntype>
+			<nearunittype>Gr_Bldg_GuardTower</nearunittype>
+			<radius>8</radius>
+			<useboneposition>false</useboneposition>
+			<overrides/>
+		</spawnunit>
+	</timereffects>
+	<timereffects event="Chief3House">
+		<spawnunit visible="false">
+			<count>4</count>
+			<placeunittype>Npc_BanditLeader_01</placeunittype>
+			<asplayer>2</asplayer>
+			<spawntype>SpawnForAllies</spawntype>
+			<nearunittype>Gr_Bldg_House</nearunittype>
+			<radius>8</radius>
+			<useboneposition>false</useboneposition>
+			<overrides/>
+		</spawnunit>
+	</timereffects>
+	<timereffects event="1Chief">
+		<spawnunit visible="false">
+			<count>1</count>
+			<placeunittype>Npc_BanditLeader_01</placeunittype>
+			<asplayer>2</asplayer>
+			<spawntype>SpawnForAllies</spawntype>
+			<nearunittype>WallConnector</nearunittype>
+			<radius>5</radius>
+			<useboneposition>false</useboneposition>
+			<overrides/>
+		</spawnunit>
+	</timereffects>
+	<timereffects event="1Bandit">
+		<spawnunit visible="false">
+			<count>1</count>
+			<placeunittype>Npc_Inf_Bandit</placeunittype>
+			<asplayer>2</asplayer>
+			<spawntype>SpawnForAllies</spawntype>
+			<nearunittype>Gr_Bldg_GuardTower</nearunittype>
+			<radius>5</radius>
+			<useboneposition>false</useboneposition>
+			<overrides/>
+		</spawnunit>
+	</timereffects>
+	<timereffects event="1Clubman">
+		<spawnunit visible="false">
+			<count>1</count>
+			<placeunittype>Gr_Inf_Clubman</placeunittype>
+			<asplayer>2</asplayer>
+			<spawntype>SpawnForAllies</spawntype>
+			<nearunittype>Gr_Bldg_LookoutTower</nearunittype>
+			<radius>5</radius>
+			<useboneposition>false</useboneposition>
+			<overrides/>
+		</spawnunit>
+	</timereffects>
+	<timereffects event="ClubmanTon">
+		<spawnunit visible="false">
+			<count>6</count>
+			<placeunittype>Gr_Inf_Clubman</placeunittype>
+			<asplayer>2</asplayer>
+			<spawntype>SpawnForAllies</spawntype>
+			<nearunittype>WallConnector</nearunittype>
+			<radius>6</radius>
+			<useboneposition>false</useboneposition>
+			<overrides/>
+		</spawnunit>
+	</timereffects>
+	<timereffects event="BanditTon">
+		<spawnunit visible="false">
+			<count>6</count>
+			<placeunittype>Npc_Inf_Bandit</placeunittype>
+			<asplayer>2</asplayer>
+			<spawntype>SpawnForAllies</spawntype>
+			<nearunittype>Gr_Bldg_GuardTower</nearunittype>
+			<radius>6</radius>
+			<useboneposition>false</useboneposition>
+			<overrides/>
+		</spawnunit>
+	</timereffects>
+	<rewards visible="true">
+		<xp visible="true">
+			1
+			<lookuptable>EliteVShort</lookuptable>
+		</xp>
+		<capitalresource visible="true">
+			<capitalresource>cCapResCoin</capitalresource>
+			<amount>1</amount>
+			<lookuptable>EliteVShort</lookuptable>
+		</capitalresource>
+		<loottable visible="true">general</loottable>
+		<loottable visible="true">general</loottable>
+		<loottable visible="true">general</loottable>
+	</rewards>
+	<playersettings id="1">
+		<team>1</team>
+		<color>1</color>
+		<tributablebehavior>Default</tributablebehavior>
+		<playertype>Human</playertype>
+		<cooponly>false</cooponly>
+		<startingfood>0</startingfood>
+		<startingwood>800</startingwood>
+		<startinggold>0</startinggold>
+		<startingstone>1200</startingstone>
+		<aislidervariables/>
+		<aiflagvariables/>
+	</playersettings>
+	<playersettings id="2">
+		<team>2</team>
+		<color>2</color>
+		<tributablebehavior>Default</tributablebehavior>
+		<playertype>Computer</playertype>
+		<personality>$$2232$$</personality>
+		<script>Custom\AIRushRushRush</script>
+		<character/>
+		<dataset>c01\C01_BanditAllLevels</dataset>
+		<cooponly>false</cooponly>
+		<startingfood>0</startingfood>
+		<startingwood>0</startingwood>
+		<startinggold>0</startinggold>
+		<startingstone>0</startingstone>
+		<aislidervariables>
+			<aivariable>
+				<key>CavalryBias</key>
+				<value>-1</value>
+			</aivariable>
+			<aivariable>
+				<key>SiegeBias</key>
+				<value>-1</value>
+			</aivariable>
+			<aivariable>
+				<key>InfantryBias</key>
+				<value>1</value>
+			</aivariable>
+			<aivariable>
+				<key>ArcherBias</key>
+				<value>-1</value>
+			</aivariable>
+		</aislidervariables>
+		<aiflagvariables>
+			<aivariable>
+				<key>NoTrainArmy</key>
+				<value>0</value>
+			</aivariable>
+			<aivariable>
+				<key>NoBuild</key>
+				<value>0</value>
+			</aivariable>
+			<aivariable>
+				<key>NoScout</key>
+				<value>0</value>
+			</aivariable>
+			<aivariable>
+				<key>NoResearchEcon</key>
+				<value>0</value>
+			</aivariable>
+			<aivariable>
+				<key>NoResearchMilitary</key>
+				<value>0</value>
+			</aivariable>
+			<aivariable>
+				<key>UseWaves</key>
+				<value>0</value>
+			</aivariable>
+		</aiflagvariables>
+	</playersettings>
+	<diplomacysettings/>
+	<randommap>
+		<map>scenarioloader</map>
+		<randommap>true</randommap>
+		<numplayers>2</numplayers>
+		<mapvariables>
+			<variable name="scenarioFile" type="String">C01/C01_R1M33_AdvisorProtection</variable>
+			<variable name="bIsELITE" type="Bool">true</variable>
+			<variable name="QuestID" type="Int">11833</variable>
+			<variable name="region" type="String">Greek Inland</variable>
+		</mapvariables>
+		<nuggetoverrides/>
+		<mapregionname>Greek Inland</mapregionname>
+		<lightsetname>&lt;Not Specified&gt;</lightsetname>
+		<mapsizename>&lt;Not Specified&gt;</mapsizename>
+	</randommap>
+	<questgivers>
+		<protounit>C01_R1_VillageScout</protounit>
+		<protounit>C01_R1_VillageScout_V2</protounit>
+		<protounit>C01_R1_VillageScout_V3</protounit>
+	</questgivers>
+	<questreturners>
+		<protounit>C01_R1_VillageScout</protounit>
+		<protounit>C01_R1_VillageScout_V2</protounit>
+		<protounit>C01_R1_VillageScout_V3</protounit>
+	</questreturners>
+	<maplocationx>0.43</maplocationx>
+	<maplocationy>0.3</maplocationy>
+	<mapmarker>QuestRepeatable</mapmarker>
+	<mappage>Greece</mappage>
+	<elitespawnchance>1</elitespawnchance>
+	<linkedquestid>0</linkedquestid>
+	<questbasescale>3</questbasescale>
+	<victoryconditions/>
+</quest>

@@ -1,0 +1,236 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<quest xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xsd="http://www.w3.org/2001/XMLSchema" uniqueid="321" version="50">
+	<displayname>$$565$$</displayname>
+	<level>13</level>
+	<repeatable>false</repeatable>
+	<offertype>eOfferNone</offertype>
+	<timer>
+		<time>00:05:00</time>
+		<events>
+			<timerevent event="WaveWarrior">00:04:59</timerevent>
+			<timerevent event="WaveArcher">00:04:59</timerevent>
+			<timerevent event="WaveElephant">00:04:59</timerevent>
+			<timerevent event="WaveArcher">00:04:59</timerevent>
+			<timerevent event="WaveWarrior">00:04:59</timerevent>
+			<timerevent event="WaveElephant">00:04:59</timerevent>
+			<timerevent event="WaveWarrior">00:04:59</timerevent>
+			<timerevent event="WaveArcher">00:04:59</timerevent>
+		</events>
+		<hideonui>false</hideonui>
+	</timer>
+	<canplaycoop>false</canplaycoop>
+	<cooprequired>false</cooprequired>
+	<ranked>false</ranked>
+	<alliance>eAllianceNone</alliance>
+	<questtype>RandomMap</questtype>
+	<description>$$4988$$</description>
+	<completiontext>$$6644$$</completiontext>
+	<inprogresstext>$$4986$$</inprogresstext>
+	<summarytext>$$1500$$</summarytext>
+	<canabandon>true</canabandon>
+	<hiddenquest>false</hiddenquest>
+	<friendonly>false</friendonly>
+	<suppressnotifications>false</suppressnotifications>
+	<customquest>false</customquest>
+	<questgamemodetype>Normal</questgamemodetype>
+	<prereqs>
+		<values>
+			<civilization>
+				<id>3</id>
+			</civilization>
+			<questcomplete>
+				<id>324</id>
+			</questcomplete>
+		</values>
+	</prereqs>
+	<equipmentprereqs/>
+	<targets>
+		<protounit>
+			<cooponly>false</cooponly>
+			<forcetocenter>false</forcetocenter>
+			<name>revealer</name>
+			<protoname>Qst_RevealerLarge</protoname>
+			<count>1</count>
+			<team>2</team>
+			<area>Player1</area>
+			<usequesttargetindicator>false</usequesttargetindicator>
+		</protounit>
+	</targets>
+	<objectives id="0" mustfailall="false">
+		<values>
+			<or id="1" mustfailall="false">
+				<values>
+					<and id="2" mustfailall="false">
+						<values>
+							<timer id="3">
+								<description>$$3593$$</description>
+								<failonexpire>false</failonexpire>
+							</timer>
+							<kill id="4">
+								<description>$$2601$$</description>
+								<type>NPC_Nubian_Warrior</type>
+								<count>60</count>
+								<includeconversion>true</includeconversion>
+								<onlycountelites>false</onlycountelites>
+							</kill>
+							<kill id="5">
+								<description>$$2602$$</description>
+								<type>NPC_Nubian_Archer</type>
+								<count>60</count>
+								<includeconversion>true</includeconversion>
+								<onlycountelites>false</onlycountelites>
+							</kill>
+							<kill id="6">
+								<description>$$2603$$</description>
+								<type>NPC_Nubian_Elephant</type>
+								<count>8</count>
+								<includeconversion>true</includeconversion>
+								<onlycountelites>false</onlycountelites>
+							</kill>
+						</values>
+					</and>
+					<reduceunitsto id="7">
+						<type>LogicalTypeNeededForVictory</type>
+						<count>0</count>
+						<includeteam>false</includeteam>
+						<includeunderconstruction>false</includeunderconstruction>
+						<canuncomplete>false</canuncomplete>
+						<causesfailure>true</causesfailure>
+						<playerid>1</playerid>
+					</reduceunitsto>
+				</values>
+			</or>
+		</values>
+	</objectives>
+	<onaccept/>
+	<timereffects event="WaveWarrior">
+		<spawnunit visible="true">
+			<count>20</count>
+			<placeunittype>NPC_Nubian_Warrior</placeunittype>
+			<asplayer>2</asplayer>
+			<spawntype>SpawnForPlayer</spawntype>
+			<nearunittype>Qst_SpawnPoint1</nearunittype>
+			<radius>10</radius>
+			<useboneposition>false</useboneposition>
+			<overrides/>
+		</spawnunit>
+	</timereffects>
+	<timereffects event="WaveArcher">
+		<spawnunit visible="true">
+			<count>20</count>
+			<placeunittype>NPC_Nubian_Archer</placeunittype>
+			<asplayer>2</asplayer>
+			<spawntype>SpawnForAllies</spawntype>
+			<nearunittype>Qst_SpawnPoint1</nearunittype>
+			<radius>10</radius>
+			<useboneposition>false</useboneposition>
+			<overrides/>
+		</spawnunit>
+	</timereffects>
+	<timereffects event="WaveElephant">
+		<spawnunit visible="true">
+			<count>4</count>
+			<placeunittype>NPC_Nubian_Elephant</placeunittype>
+			<asplayer>2</asplayer>
+			<spawntype>SpawnForAllies</spawntype>
+			<nearunittype>Qst_SpawnPoint1</nearunittype>
+			<radius>10</radius>
+			<useboneposition>false</useboneposition>
+			<overrides/>
+		</spawnunit>
+	</timereffects>
+	<timereffects event="WaveChief">
+		<spawnunit visible="true">
+			<count>1</count>
+			<placeunittype>NPC_Nubian_Chief</placeunittype>
+			<asplayer>2</asplayer>
+			<spawntype>SpawnForAllies</spawntype>
+			<nearunittype>Qst_SpawnPoint1</nearunittype>
+			<radius>5</radius>
+			<useboneposition>false</useboneposition>
+			<overrides/>
+		</spawnunit>
+	</timereffects>
+	<rewards visible="true">
+		<xp visible="true">20000</xp>
+		<capitalresource visible="true">
+			<capitalresource>cCapResCoin</capitalresource>
+			<amount>120</amount>
+		</capitalresource>
+		<loottable visible="true">general</loottable>
+		<loottable visible="true">general</loottable>
+	</rewards>
+	<playersettings id="1">
+		<team>1</team>
+		<color>1</color>
+		<tributablebehavior>Default</tributablebehavior>
+		<playertype>Human</playertype>
+		<cooponly>false</cooponly>
+		<startingfood>0</startingfood>
+		<startingwood>4000</startingwood>
+		<startinggold>0</startinggold>
+		<startingstone>2000</startingstone>
+		<aislidervariables/>
+		<aiflagvariables/>
+	</playersettings>
+	<playersettings id="2">
+		<team>2</team>
+		<color>2</color>
+		<tributablebehavior>Default</tributablebehavior>
+		<playertype>Computer</playertype>
+		<personality>$$2261$$</personality>
+		<script>custom\airushrushrush</script>
+		<dataset>C02\C02_CoreRamp_T1</dataset>
+		<cooponly>false</cooponly>
+		<startingfood>-1</startingfood>
+		<startingwood>-1</startingwood>
+		<startinggold>-1</startinggold>
+		<startingstone>-1</startingstone>
+		<aislidervariables/>
+		<aiflagvariables>
+			<aivariable>
+				<key>UseWaves</key>
+				<value>0</value>
+			</aivariable>
+			<aivariable>
+				<key>NoScout</key>
+				<value>0</value>
+			</aivariable>
+			<aivariable>
+				<key>NoResign</key>
+				<value>0</value>
+			</aivariable>
+		</aiflagvariables>
+	</playersettings>
+	<diplomacysettings>
+		<diplomacy relation="Enemy" team1="2" team2="1" sharedlos="true"/>
+	</diplomacysettings>
+	<randommap>
+		<map>scenarioloader</map>
+		<randommap>true</randommap>
+		<numplayers>2</numplayers>
+		<mapvariables>
+			<variable name="scenarioFile" type="String">C02/C02_Side_Architect_WallOff</variable>
+			<variable name="region" type="String">Egyptian Rock</variable>
+			<variable name="lighting" type="String"/>
+			<variable name="mapSize" type="String"/>
+		</mapvariables>
+		<nuggetoverrides/>
+		<mapregionname>Egyptian Rock</mapregionname>
+	</randommap>
+	<questgivers>
+		<protounit>C02_R2_Architect</protounit>
+	</questgivers>
+	<questreturners>
+		<protounit>C02_R2_Architect</protounit>
+	</questreturners>
+	<maplocationx>0.71</maplocationx>
+	<maplocationy>0.36</maplocationy>
+	<mapmarker>QuestDefault</mapmarker>
+	<mappage>Nubia</mappage>
+	<elitespawnchance>0</elitespawnchance>
+	<linkedquestid>0</linkedquestid>
+	<questbasescale>0</questbasescale>
+	<victoryconditions/>
+</quest>

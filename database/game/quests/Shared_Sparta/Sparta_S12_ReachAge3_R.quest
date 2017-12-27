@@ -1,0 +1,195 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<quest xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xsd="http://www.w3.org/2001/XMLSchema" uniqueid="10412" version="78">
+	<displayname>$$12132$$</displayname>
+	<level>-1</level>
+	<repeatable>true</repeatable>
+	<timer>
+		<time>00:06:00</time>
+		<events/>
+		<hideonui>false</hideonui>
+	</timer>
+	<canplaycoop>false</canplaycoop>
+	<cooprequired>false</cooprequired>
+	<ranked>false</ranked>
+	<alliance>eAllianceNone</alliance>
+	<questtype>RandomMap</questtype>
+	<description>$$12610$$</description>
+	<completiontext>$$12611$$</completiontext>
+	<inprogresstext>$$12612$$</inprogresstext>
+	<summarytext>$$12555$$</summarytext>
+	<repeatableduration>12</repeatableduration>
+	<canabandon>true</canabandon>
+	<hiddenquest>false</hiddenquest>
+	<friendonly>false</friendonly>
+	<suppressnotifications>false</suppressnotifications>
+	<customquest>false</customquest>
+	<questgamemodetype>Normal</questgamemodetype>
+	<prereqs>
+		<values>
+			<questcomplete>
+				<id>10400</id>
+			</questcomplete>
+			<level>
+				<min>7</min>
+				<max>99</max>
+			</level>
+		</values>
+	</prereqs>
+	<equipmentprereqs/>
+	<targets/>
+	<objectives id="0" mustfailall="false">
+		<values>
+			<or id="1" mustfailall="false">
+				<values>
+					<dummy id="2">
+						<description>$$3730$$</description>
+						<objectivename>AgeUp</objectivename>
+						<autocomplete>false</autocomplete>
+					</dummy>
+					<reduceunitsto id="3">
+						<type>LogicalTypeNeededForVictory</type>
+						<count>0</count>
+						<includeteam>false</includeteam>
+						<includeunderconstruction>false</includeunderconstruction>
+						<canuncomplete>false</canuncomplete>
+						<causesfailure>true</causesfailure>
+						<playerid>1</playerid>
+					</reduceunitsto>
+					<timer id="4">
+						<description>$$2471$$</description>
+						<failonexpire>true</failonexpire>
+					</timer>
+				</values>
+			</or>
+		</values>
+	</objectives>
+	<secondaryobjectives id="5" mustfailall="false" rewardname="OptionalOne">
+		<description>$$9507$$</description>
+		<values>
+			<or id="6" mustfailall="false">
+				<values>
+					<dummy id="7">
+						<description>$$9765$$</description>
+						<objectivename>AgeUpEarlier</objectivename>
+						<autocomplete>false</autocomplete>
+					</dummy>
+					<reduceunitsto id="8">
+						<type>LogicalTypeNeededForVictory</type>
+						<count>0</count>
+						<includeteam>false</includeteam>
+						<includeunderconstruction>false</includeunderconstruction>
+						<canuncomplete>false</canuncomplete>
+						<causesfailure>false</causesfailure>
+						<playerid>1</playerid>
+					</reduceunitsto>
+					<timer id="9">
+						<description>$$2471$$</description>
+						<failonexpire>true</failonexpire>
+					</timer>
+				</values>
+			</or>
+		</values>
+	</secondaryobjectives>
+	<secondaryobjectives id="10" mustfailall="false" rewardname="OptionalTwo">
+		<description>$$9508$$</description>
+		<values>
+			<or id="11" mustfailall="false">
+				<values>
+					<dummy id="12">
+						<description>$$9766$$</description>
+						<objectivename>AgeUpEarliest</objectivename>
+						<autocomplete>false</autocomplete>
+					</dummy>
+					<reduceunitsto id="13">
+						<type>LogicalTypeNeededForVictory</type>
+						<count>0</count>
+						<includeteam>false</includeteam>
+						<includeunderconstruction>false</includeunderconstruction>
+						<canuncomplete>false</canuncomplete>
+						<causesfailure>false</causesfailure>
+						<playerid>1</playerid>
+					</reduceunitsto>
+					<timer id="14">
+						<description>$$2471$$</description>
+						<failonexpire>true</failonexpire>
+					</timer>
+				</values>
+			</or>
+		</values>
+	</secondaryobjectives>
+	<onaccept/>
+	<rewards visible="true">
+		<xp visible="true">
+			1
+			<lookuptable>SQShort</lookuptable>
+		</xp>
+		<capitalresource visible="true">
+			<capitalresource>cCapResCoin</capitalresource>
+			<amount>1</amount>
+			<lookuptable>SQShort</lookuptable>
+		</capitalresource>
+		<loottable visible="true">general</loottable>
+	</rewards>
+	<secondaryrewards visible="true" name="OptionalOne">
+		<capitalresource visible="true">
+			<capitalresource>cCapResCoin</capitalresource>
+			<amount>1</amount>
+			<lookuptable>OptCoin</lookuptable>
+		</capitalresource>
+		<loottable visible="true">general</loottable>
+	</secondaryrewards>
+	<secondaryrewards visible="true" name="OptionalTwo">
+		<capitalresource visible="true">
+			<capitalresource>cCapResCoin</capitalresource>
+			<amount>1</amount>
+			<lookuptable>OptCoin</lookuptable>
+		</capitalresource>
+		<loottable visible="true">general</loottable>
+	</secondaryrewards>
+	<playersettings id="1">
+		<team>1</team>
+		<color>1</color>
+		<tributablebehavior>Default</tributablebehavior>
+		<playertype>Human</playertype>
+		<cooponly>false</cooponly>
+		<startingfood>-1</startingfood>
+		<startingwood>-1</startingwood>
+		<startinggold>-1</startinggold>
+		<startingstone>-1</startingstone>
+		<aislidervariables/>
+		<aiflagvariables/>
+	</playersettings>
+	<diplomacysettings/>
+	<randommap>
+		<map>Core\Shared_Sparta\Sparta_AgeUpChallenge</map>
+		<randommap>true</randommap>
+		<numplayers>1</numplayers>
+		<mapvariables>
+			<variable name="QuestID" type="Int">10412</variable>
+			<variable name="targetAge" type="Int">3</variable>
+			<variable name="secondaryTimer" type="Int">300</variable>
+			<variable name="tertiaryTimer" type="Int">240</variable>
+			<variable name="region" type="String">Greek Coast</variable>
+			<variable name="mapSize" type="String">Standard</variable>
+		</mapvariables>
+		<nuggetoverrides/>
+		<mapregionname>Greek Coast</mapregionname>
+		<lightsetname>&lt;Not Specified&gt;</lightsetname>
+		<mapsizename>Standard</mapsizename>
+	</randommap>
+	<questgivers>
+		<protounit>SharedPvP_Captain</protounit>
+	</questgivers>
+	<questreturners>
+		<protounit>SharedPvP_Captain</protounit>
+	</questreturners>
+	<maplocationx>0.24</maplocationx>
+	<maplocationy>0.63</maplocationy>
+	<mapmarker>QuestRepeatable</mapmarker>
+	<mappage>Greece</mappage>
+	<elitespawnchance>0</elitespawnchance>
+	<linkedquestid>0</linkedquestid>
+	<questbasescale>0</questbasescale>
+	<victoryconditions/>
+</quest>

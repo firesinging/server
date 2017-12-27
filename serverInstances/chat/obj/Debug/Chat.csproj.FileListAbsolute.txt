@@ -1,0 +1,14 @@
+D:\Development\server\serverInstances\chat\bin\Debug\Chat.dll
+D:\Development\server\serverInstances\chat\bin\Debug\Chat.pdb
+D:\Development\server\serverInstances\chat\bin\Debug\Libraries.dll
+D:\Development\server\serverInstances\chat\bin\Debug\SuperSocket.Facility.dll
+D:\Development\server\serverInstances\chat\bin\Debug\SuperSocket.SocketBase.dll
+D:\Development\server\serverInstances\chat\bin\Debug\SuperSocket.Common.dll
+D:\Development\server\serverInstances\chat\bin\Debug\Libraries.pdb
+D:\Development\server\serverInstances\chat\bin\Debug\SuperSocket.Facility.xml
+D:\Development\server\serverInstances\chat\bin\Debug\SuperSocket.SocketBase.xml
+D:\Development\server\serverInstances\chat\bin\Debug\SuperSocket.Common.xml
+D:\Development\server\serverInstances\chat\obj\Debug\Chat.csprojResolveAssemblyReference.cache
+D:\Development\server\serverInstances\chat\obj\Debug\Chat.dll
+D:\Development\server\serverInstances\chat\obj\Debug\Chat.pdb
+D:\Development\server\serverInstances\chat\bin\Debug\Ionic.Zip.dll

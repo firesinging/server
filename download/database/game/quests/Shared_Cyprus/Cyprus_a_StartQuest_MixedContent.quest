@@ -1,0 +1,542 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<quest xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xsd="http://www.w3.org/2001/XMLSchema" uniqueid="3000" version="182">
+	<displayname>$$6445$$</displayname>
+	<level>30</level>
+	<repeatable>false</repeatable>
+	<offertype>eOfferNone</offertype>
+	<timer>
+		<time/>
+		<events/>
+		<hideonui>false</hideonui>
+	</timer>
+	<canplaycoop>true</canplaycoop>
+	<cooprequired>false</cooprequired>
+	<ranked>false</ranked>
+	<alliance>eAllianceNone</alliance>
+	<questtype>RandomMap</questtype>
+	<description>$$6569$$</description>
+	<completiontext>$$6480$$</completiontext>
+	<inprogresstext>$$6451$$</inprogresstext>
+	<summarytext>$$6571$$</summarytext>
+	<canabandon>true</canabandon>
+	<hiddenquest>false</hiddenquest>
+	<friendonly>false</friendonly>
+	<suppressnotifications>false</suppressnotifications>
+	<customquest>false</customquest>
+	<questgamemodetype>Normal</questgamemodetype>
+	<prereqs>
+		<values>
+			<level>
+				<min>29</min>
+				<max>99</max>
+			</level>
+		</values>
+	</prereqs>
+	<equipmentprereqs/>
+	<targets>
+		<grouping>
+			<cooponly>false</cooponly>
+			<forcetocenter>false</forcetocenter>
+			<name>Player1_Military1</name>
+			<count>1</count>
+			<team>1</team>
+			<area>Quest_Area_A</area>
+			<groupfilename>shared_start_transport_military</groupfilename>
+			<rottype>Rotate0</rottype>
+			<rotateunitorientations>false</rotateunitorientations>
+		</grouping>
+		<grouping>
+			<cooponly>false</cooponly>
+			<forcetocenter>false</forcetocenter>
+			<name>Player1_Villager</name>
+			<count>1</count>
+			<team>1</team>
+			<area>Quest_Area_B</area>
+			<groupfilename>shared_start_transport</groupfilename>
+			<rottype>Rotate0</rottype>
+			<rotateunitorientations>false</rotateunitorientations>
+		</grouping>
+		<grouping>
+			<cooponly>false</cooponly>
+			<forcetocenter>false</forcetocenter>
+			<name>Player1_Military2</name>
+			<count>1</count>
+			<team>1</team>
+			<area>Quest_Area_C</area>
+			<groupfilename>shared_start_transport_military</groupfilename>
+			<rottype>Rotate0</rottype>
+			<rotateunitorientations>false</rotateunitorientations>
+		</grouping>
+		<grouping>
+			<cooponly>true</cooponly>
+			<forcetocenter>false</forcetocenter>
+			<name>Player2_Military1</name>
+			<count>1</count>
+			<team>3</team>
+			<area>Player1</area>
+			<groupfilename>shared_start_transport_military</groupfilename>
+			<rottype>Rotate0</rottype>
+			<rotateunitorientations>false</rotateunitorientations>
+		</grouping>
+		<grouping>
+			<cooponly>true</cooponly>
+			<forcetocenter>false</forcetocenter>
+			<name>Player2_Villager</name>
+			<count>1</count>
+			<team>3</team>
+			<area>Player2</area>
+			<groupfilename>shared_start_transport</groupfilename>
+			<rottype>Rotate0</rottype>
+			<rotateunitorientations>false</rotateunitorientations>
+		</grouping>
+		<grouping>
+			<cooponly>true</cooponly>
+			<forcetocenter>false</forcetocenter>
+			<name>Player2_Military2</name>
+			<count>1</count>
+			<team>3</team>
+			<area>Player3</area>
+			<groupfilename>shared_start_transport_military</groupfilename>
+			<rottype>Rotate0</rottype>
+			<rotateunitorientations>false</rotateunitorientations>
+		</grouping>
+	</targets>
+	<objectives id="0" mustfailall="false">
+		<values>
+			<buildunit id="1">
+				<description>$$2565$$</description>
+				<type>AbstractTownCenter</type>
+				<count>1</count>
+			</buildunit>
+			<or id="2" mustfailall="false">
+				<values>
+					<kill id="3">
+						<description>$$2508$$</description>
+						<type>Gr_Bldg_TownCenter</type>
+						<count>3</count>
+						<includeconversion>true</includeconversion>
+						<onlycountelites>false</onlycountelites>
+					</kill>
+					<and id="4" mustfailall="true">
+						<values>
+							<reduceunitsto id="5">
+								<type>LogicalTypeNeededForVictory</type>
+								<count>0</count>
+								<includeteam>false</includeteam>
+								<includeunderconstruction>false</includeunderconstruction>
+								<canuncomplete>false</canuncomplete>
+								<causesfailure>true</causesfailure>
+								<playerid>1</playerid>
+							</reduceunitsto>
+							<reduceunitsto id="6">
+								<type>LogicalTypeNeededForVictory</type>
+								<count>0</count>
+								<includeteam>false</includeteam>
+								<includeunderconstruction>false</includeunderconstruction>
+								<canuncomplete>false</canuncomplete>
+								<causesfailure>true</causesfailure>
+								<playerid>3</playerid>
+							</reduceunitsto>
+						</values>
+					</and>
+					<and id="7" mustfailall="true">
+						<values>
+							<reduceunitsto id="8">
+								<type>AbstractTownCenter</type>
+								<count>0</count>
+								<includeteam>true</includeteam>
+								<includeunderconstruction>false</includeunderconstruction>
+								<canuncomplete>false</canuncomplete>
+								<causesfailure>true</causesfailure>
+								<playerid>1</playerid>
+							</reduceunitsto>
+							<reduceunitsto id="9">
+								<type>UnitTypeVillager1</type>
+								<count>0</count>
+								<includeteam>true</includeteam>
+								<includeunderconstruction>false</includeunderconstruction>
+								<canuncomplete>false</canuncomplete>
+								<causesfailure>true</causesfailure>
+								<playerid>1</playerid>
+							</reduceunitsto>
+						</values>
+					</and>
+				</values>
+			</or>
+		</values>
+	</objectives>
+	<onaccept/>
+	<timereffects event="P2_Podoros_1">
+		<spawnunit visible="false">
+			<count>7</count>
+			<placeunittype>Gr_Cav_Podromos</placeunittype>
+			<asplayer>2</asplayer>
+			<spawntype>SpawnForPlayer</spawntype>
+			<nearunittype>Gr_Bldg_Stables</nearunittype>
+			<radius>14</radius>
+			<useboneposition>false</useboneposition>
+			<overrides/>
+		</spawnunit>
+	</timereffects>
+	<timereffects event="P2_Hippiko_1">
+		<spawnunit visible="false">
+			<count>5</count>
+			<placeunittype>Gr_Cav_Hippikon</placeunittype>
+			<asplayer>2</asplayer>
+			<spawntype>SpawnForPlayer</spawntype>
+			<nearunittype>Gr_Bldg_Stables</nearunittype>
+			<radius>14</radius>
+			<useboneposition>false</useboneposition>
+			<overrides/>
+		</spawnunit>
+	</timereffects>
+	<timereffects event="P2_Sarisso_1">
+		<spawnunit visible="false">
+			<count>6</count>
+			<placeunittype>Gr_Cav_Sarissophoroi</placeunittype>
+			<asplayer>2</asplayer>
+			<spawntype>SpawnForPlayer</spawntype>
+			<nearunittype>Gr_Bldg_Stables</nearunittype>
+			<radius>14</radius>
+			<useboneposition>false</useboneposition>
+			<overrides/>
+		</spawnunit>
+	</timereffects>
+	<timereffects event="P6_Podoros_1">
+		<spawnunit visible="false">
+			<count>7</count>
+			<placeunittype>Gr_Cav_Podromos</placeunittype>
+			<asplayer>6</asplayer>
+			<spawntype>SpawnForAllies</spawntype>
+			<nearunittype>Gr_Bldg_Stables</nearunittype>
+			<radius>12</radius>
+			<useboneposition>false</useboneposition>
+			<overrides/>
+		</spawnunit>
+	</timereffects>
+	<timereffects event="P6_Sarisso_1">
+		<spawnunit visible="false">
+			<count>8</count>
+			<placeunittype>Gr_Cav_Sarissophoroi</placeunittype>
+			<asplayer>6</asplayer>
+			<spawntype>SpawnForPlayer</spawntype>
+			<nearunittype>Gr_Bldg_Stables</nearunittype>
+			<radius>12</radius>
+			<useboneposition>false</useboneposition>
+			<overrides/>
+		</spawnunit>
+	</timereffects>
+	<timereffects event="P6_Hippiko_1">
+		<spawnunit visible="false">
+			<count>6</count>
+			<placeunittype>Gr_Cav_Hippikon</placeunittype>
+			<asplayer>6</asplayer>
+			<spawntype>SpawnForPlayer</spawntype>
+			<nearunittype>Gr_Bldg_Stables</nearunittype>
+			<radius>12</radius>
+			<useboneposition>false</useboneposition>
+			<overrides/>
+		</spawnunit>
+	</timereffects>
+	<timereffects event="P2_Podoros_2">
+		<spawnunit visible="false">
+			<count>5</count>
+			<placeunittype>Gr_Cav_Podromos</placeunittype>
+			<asplayer>2</asplayer>
+			<spawntype>SpawnForPlayer</spawntype>
+			<nearunittype>Gr_Bldg_Stables</nearunittype>
+			<radius>12</radius>
+			<useboneposition>false</useboneposition>
+			<overrides/>
+		</spawnunit>
+	</timereffects>
+	<rewards visible="true">
+		<gamecurrency visible="true">
+			<gamecurrency>cGameCurEmpirePoints</gamecurrency>
+			<amount>4</amount>
+		</gamecurrency>
+		<xp visible="true">90000</xp>
+		<capitalresource visible="true">
+			<capitalresource>cCapResCoin</capitalresource>
+			<amount>200</amount>
+		</capitalresource>
+		<loottable visible="true">general</loottable>
+		<loottable visible="true">general</loottable>
+	</rewards>
+	<playersettings id="1">
+		<team>1</team>
+		<color>1</color>
+		<tributablebehavior>Default</tributablebehavior>
+		<playertype>Human</playertype>
+		<cooponly>false</cooponly>
+		<startingfood>600</startingfood>
+		<startingwood>600</startingwood>
+		<startinggold>600</startinggold>
+		<startingstone>600</startingstone>
+		<aislidervariables/>
+		<aiflagvariables/>
+	</playersettings>
+	<playersettings id="2">
+		<team>2</team>
+		<color>2</color>
+		<tributablebehavior>Default</tributablebehavior>
+		<playertype>Computer</playertype>
+		<personality>$$6608$$</personality>
+		<script>CORE\Rush_Moderate</script>
+		<dataset>C01\C01_CyprusRush_T3</dataset>
+		<cooponly>false</cooponly>
+		<startingfood>100</startingfood>
+		<startingwood>150</startingwood>
+		<startinggold>100</startinggold>
+		<startingstone>0</startingstone>
+		<aislidervariables>
+			<aivariable>
+				<key>CavalryBias</key>
+				<value>1</value>
+			</aivariable>
+			<aivariable>
+				<key>InfantryBias</key>
+				<value>-1</value>
+			</aivariable>
+			<aivariable>
+				<key>ArcherBias</key>
+				<value>-1</value>
+			</aivariable>
+			<aivariable>
+				<key>SiegeBias</key>
+				<value>-1</value>
+			</aivariable>
+			<aivariable>
+				<key>NavyBias</key>
+				<value>-1</value>
+			</aivariable>
+		</aislidervariables>
+		<aiflagvariables>
+			<aivariable>
+				<key>NoResign</key>
+				<value>0</value>
+			</aivariable>
+			<aivariable>
+				<key>UseWaves</key>
+				<value>0</value>
+			</aivariable>
+			<aivariable>
+				<key>NoTrainNavy</key>
+				<value>0</value>
+			</aivariable>
+		</aiflagvariables>
+	</playersettings>
+	<playersettings id="3">
+		<team>1</team>
+		<color>7</color>
+		<tributablebehavior>Default</tributablebehavior>
+		<playertype>Human</playertype>
+		<cooponly>true</cooponly>
+		<startingfood>600</startingfood>
+		<startingwood>600</startingwood>
+		<startinggold>600</startinggold>
+		<startingstone>600</startingstone>
+		<aislidervariables/>
+		<aiflagvariables/>
+	</playersettings>
+	<playersettings id="4">
+		<team>3</team>
+		<color>3</color>
+		<tributablebehavior>Default</tributablebehavior>
+		<playertype>Computer</playertype>
+		<personality>$$2233$$</personality>
+		<script/>
+		<character/>
+		<dataset>C01\C01_CyprusRush_T3</dataset>
+		<cooponly>false</cooponly>
+		<startingfood>0</startingfood>
+		<startingwood>0</startingwood>
+		<startinggold>0</startinggold>
+		<startingstone>0</startingstone>
+		<aislidervariables/>
+		<aiflagvariables/>
+	</playersettings>
+	<playersettings id="5">
+		<team>2</team>
+		<color>2</color>
+		<tributablebehavior>Default</tributablebehavior>
+		<playertype>Computer</playertype>
+		<personality>$$6608$$</personality>
+		<script>CORE\Rush_Heavy</script>
+		<dataset>C01\C01_CyprusRush_T3</dataset>
+		<cooponly>false</cooponly>
+		<startingfood>200</startingfood>
+		<startingwood>350</startingwood>
+		<startinggold>100</startinggold>
+		<startingstone>-1</startingstone>
+		<aislidervariables>
+			<aivariable>
+				<key>InfantryBias</key>
+				<value>-1</value>
+			</aivariable>
+			<aivariable>
+				<key>CavalryBias</key>
+				<value>1</value>
+			</aivariable>
+			<aivariable>
+				<key>ArcherBias</key>
+				<value>-1</value>
+			</aivariable>
+			<aivariable>
+				<key>SiegeBias</key>
+				<value>-1</value>
+			</aivariable>
+			<aivariable>
+				<key>NavyBias</key>
+				<value>-1</value>
+			</aivariable>
+			<aivariable>
+				<key>EconomyHandicap</key>
+				<value>-0.2</value>
+			</aivariable>
+		</aislidervariables>
+		<aiflagvariables>
+			<aivariable>
+				<key>NoResign</key>
+				<value>0</value>
+			</aivariable>
+			<aivariable>
+				<key>UseWaves</key>
+				<value>0</value>
+			</aivariable>
+			<aivariable>
+				<key>NoTrainNavy</key>
+				<value>0</value>
+			</aivariable>
+		</aiflagvariables>
+	</playersettings>
+	<playersettings id="6">
+		<team>2</team>
+		<color>2</color>
+		<tributablebehavior>Default</tributablebehavior>
+		<playertype>Computer</playertype>
+		<personality>$$6608$$</personality>
+		<script>CORE\Rush_Heavy</script>
+		<dataset>C01\C01_CyprusRush_T3</dataset>
+		<cooponly>false</cooponly>
+		<startingfood>100</startingfood>
+		<startingwood>100</startingwood>
+		<startinggold>50</startinggold>
+		<startingstone>-1</startingstone>
+		<aislidervariables>
+			<aivariable>
+				<key>InfantryBias</key>
+				<value>-1</value>
+			</aivariable>
+			<aivariable>
+				<key>CavalryBias</key>
+				<value>1</value>
+			</aivariable>
+			<aivariable>
+				<key>ArcherBias</key>
+				<value>-1</value>
+			</aivariable>
+			<aivariable>
+				<key>SiegeBias</key>
+				<value>-1</value>
+			</aivariable>
+			<aivariable>
+				<key>NavyBias</key>
+				<value>-1</value>
+			</aivariable>
+			<aivariable>
+				<key>EconomyHandicap</key>
+				<value>-0.2</value>
+			</aivariable>
+		</aislidervariables>
+		<aiflagvariables>
+			<aivariable>
+				<key>NoResign</key>
+				<value>0</value>
+			</aivariable>
+			<aivariable>
+				<key>UseWaves</key>
+				<value>0</value>
+			</aivariable>
+			<aivariable>
+				<key>NoTrainNavy</key>
+				<value>0</value>
+			</aivariable>
+		</aiflagvariables>
+	</playersettings>
+	<playersettings id="7">
+		<team>4</team>
+		<color>2</color>
+		<tributablebehavior>Default</tributablebehavior>
+		<playertype>Computer</playertype>
+		<personality>$$6608$$</personality>
+		<script/>
+		<dataset>C01\C01_CyprusRush_T3</dataset>
+		<cooponly>false</cooponly>
+		<startingfood>0</startingfood>
+		<startingwood>0</startingwood>
+		<startinggold>0</startinggold>
+		<startingstone>0</startingstone>
+		<aislidervariables/>
+		<aiflagvariables>
+			<aivariable>
+				<key>NoResign</key>
+				<value>0</value>
+			</aivariable>
+		</aiflagvariables>
+	</playersettings>
+	<diplomacysettings>
+		<diplomacy relation="Neutral" team1="1" team2="3" sharedlos="true"/>
+		<diplomacy relation="Neutral" team1="3" team2="1" sharedlos="true"/>
+		<diplomacy relation="Ally" team1="2" team2="3" sharedlos="false"/>
+		<diplomacy relation="Neutral" team1="3" team2="2" sharedlos="false"/>
+		<diplomacy relation="Ally" team1="2" team2="4" sharedlos="true"/>
+		<diplomacy relation="Ally" team1="4" team2="2" sharedlos="true"/>
+		<diplomacy relation="Neutral" team1="3" team2="4" sharedlos="false"/>
+		<diplomacy relation="Ally" team1="4" team2="3" sharedlos="false"/>
+	</diplomacysettings>
+	<randommap>
+		<map>Core\Shared_Cyprus\Cyprus_a_Loader</map>
+		<randommap>true</randommap>
+		<numplayers>7</numplayers>
+		<mapvariables>
+			<variable name="scenarioFile" type="String">Shared_Cyprus/Cyprus_M11_Arsinoe_Defense</variable>
+			<variable name="P2AddMarketManager" type="Bool">true</variable>
+			<variable name="P5AddMarketManager" type="Bool">true</variable>
+			<variable name="P6AddMarketManager" type="Bool">true</variable>
+			<variable name="region" type="String">Minoan Crete</variable>
+		</mapvariables>
+		<nuggetoverrides/>
+		<mapregionname>Minoan Crete</mapregionname>
+		<lightsetname>&lt;Not Specified&gt;</lightsetname>
+		<mapsizename>&lt;Not Specified&gt;</mapsizename>
+	</randommap>
+	<questgivers>
+		<protounit>C01_R1_VillageElder</protounit>
+		<protounit>C02_R1_KingNarmer</protounit>
+		<protounit>C02_R1_PharoahSesostris</protounit>
+		<protounit>C02_R1_CitySesostris_V2</protounit>
+		<protounit>C03_R1_Leader</protounit>
+		<protounit>C04_R1_Leader</protounit>
+		<protounit>C06_R1_Leader</protounit>
+		<protounit>C07_R1_Leader</protounit>
+	</questgivers>
+	<questreturners>
+		<protounit>C01_R1_VillageElder</protounit>
+		<protounit>C02_R1_KingNarmer</protounit>
+		<protounit>C02_R1_PharoahSesostris</protounit>
+		<protounit>C02_R1_CitySesostris_V2</protounit>
+		<protounit>C03_R1_Leader</protounit>
+		<protounit>C04_R1_Leader</protounit>
+		<protounit>C06_R1_Leader</protounit>
+		<protounit>C07_R1_Leader</protounit>
+	</questreturners>
+	<maplocationx>0.83</maplocationx>
+	<maplocationy>0.47</maplocationy>
+	<mapmarker>QuestDefault</mapmarker>
+	<mappage>Cyprus</mappage>
+	<elitespawnchance>0.025</elitespawnchance>
+	<questbasescale>0</questbasescale>
+	<victoryconditions/>
+</quest>

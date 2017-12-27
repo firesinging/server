@@ -1,0 +1,75 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<quest xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xsd="http://www.w3.org/2001/XMLSchema" uniqueid="2401" version="31">
+	<displayname>$$6164$$</displayname>
+	<level>0</level>
+	<repeatable>false</repeatable>
+	<offertype>eOfferCivMoreThan1</offertype>
+	<timer>
+		<events/>
+		<hideonui>true</hideonui>
+	</timer>
+	<canplaycoop>false</canplaycoop>
+	<cooprequired>false</cooprequired>
+	<ranked>false</ranked>
+	<description>$$6168$$</description>
+	<completiontext>$$6168$$</completiontext>
+	<inprogresstext>$$6168$$</inprogresstext>
+	<summarytext>$$6163$$</summarytext>
+	<canabandon>false</canabandon>
+	<hiddenquest>true</hiddenquest>
+	<friendonly>false</friendonly>
+	<suppressnotifications>true</suppressnotifications>
+	<customquest>false</customquest>
+	<questtype>CapitolCity</questtype>
+	<questgamemodetype>Normal</questgamemodetype>
+	<prereqs>
+		<values/>
+	</prereqs>
+	<equipmentprereqs/>
+	<targets/>
+	<objectives id="0" mustfailall="false">
+		<values>
+			<or id="1" mustfailall="false">
+				<description>$$6169$$</description>
+				<values>
+					<unitdiscovered id="2">
+						<type>GEN_FredTheRedeemer</type>
+						<count>1</count>
+					</unitdiscovered>
+					<ownsunit id="3">
+						<type>GEN_FredTheRedeemer</type>
+						<count>1</count>
+					</ownsunit>
+				</values>
+			</or>
+		</values>
+	</objectives>
+	<onaccept/>
+	<rewards visible="true">
+		<advisor visible="true">GoldenHippikon_C_IV</advisor>
+	</rewards>
+	<diplomacysettings/>
+	<randommap>
+		<randommap>true</randommap>
+		<numplayers>0</numplayers>
+		<mapvariables>
+			<variable name="region" type="String"/>
+			<variable name="lighting" type="String"/>
+			<variable name="mapSize" type="String"/>
+		</mapvariables>
+		<nuggetoverrides/>
+	</randommap>
+	<questgivers>
+		<protounit>GEN_PDLCStore</protounit>
+	</questgivers>
+	<questreturners>
+		<protounit>GEN_FredTheRedeemer</protounit>
+	</questreturners>
+	<objectiveimage/>
+	<maplocationx>0.5</maplocationx>
+	<maplocationy>0.5</maplocationy>
+	<mapmarker>Blank</mapmarker>
+	<elitespawnchance>0.025</elitespawnchance>
+	<victoryconditions/>
+</quest>

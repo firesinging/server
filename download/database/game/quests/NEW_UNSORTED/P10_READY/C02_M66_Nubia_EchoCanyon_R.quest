@@ -1,0 +1,440 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<quest xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xsd="http://www.w3.org/2001/XMLSchema" uniqueid="12166" version="67">
+	<displayname>$$12333$$</displayname>
+	<level>-1</level>
+	<repeatable>true</repeatable>
+	<offertype>eOfferNone</offertype>
+	<timer>
+		<time>00:20:00</time>
+		<events>
+			<timerevent event="Wave1SpearmenTower">00:00:10</timerevent>
+			<timerevent event="Wave1SpearmenWall">00:00:20</timerevent>
+			<timerevent event="Wave1SpearmenTower">00:01:00</timerevent>
+			<timerevent event="Wave1SpearmenWall">00:01:20</timerevent>
+			<timerevent event="Wave1SpearmenTower">00:02:00</timerevent>
+			<timerevent event="Wave1SpearmenWall">00:02:05</timerevent>
+			<timerevent event="Wave1SpearmenTower">00:02:10</timerevent>
+			<timerevent event="Wave1SpearmenWall">00:02:15</timerevent>
+			<timerevent event="Wave1SpearmenWall">00:03:00</timerevent>
+			<timerevent event="Wave2SpearmenTower">00:03:05</timerevent>
+			<timerevent event="Wave1SpearmenWall">00:03:10</timerevent>
+			<timerevent event="Wave2CamelRiderTower">00:04:00</timerevent>
+			<timerevent event="Wave2SpearmenTower">00:05:00</timerevent>
+			<timerevent event="Wave2SpearmenWall">00:05:10</timerevent>
+			<timerevent event="Wave2SpearmenTower">00:05:20</timerevent>
+			<timerevent event="Wave2CamelRiderTower">00:06:00</timerevent>
+			<timerevent event="Wave2CamelRiderWall">00:06:05</timerevent>
+			<timerevent event="Wave2CamelRiderTower">00:06:10</timerevent>
+			<timerevent event="Wave2CamelRiderWall">00:06:15</timerevent>
+			<timerevent event="Wave2SpearmenTower">00:07:00</timerevent>
+			<timerevent event="Wave2ElephantTower">00:07:10</timerevent>
+			<timerevent event="Wave2SpearmenTower">00:07:20</timerevent>
+			<timerevent event="Wave2CamelRiderTower">00:08:00</timerevent>
+			<timerevent event="Wave2ElephantWall">00:08:10</timerevent>
+			<timerevent event="Wave2CamelRiderTower">00:08:20</timerevent>
+			<timerevent event="Wave2SpearmenWall">00:08:30</timerevent>
+			<timerevent event="Wave2SpearmenTower">00:08:40</timerevent>
+			<timerevent event="Wave2ElephantWall">00:08:50</timerevent>
+			<timerevent event="Wave2SpearmenTower">00:09:00</timerevent>
+			<timerevent event="Wave2ElephantWall">00:09:10</timerevent>
+			<timerevent event="Wave2CamelRiderTower">00:09:20</timerevent>
+			<timerevent event="Wave2SpearmenWall">00:09:30</timerevent>
+			<timerevent event="Wave2CamelRiderTower">00:09:30</timerevent>
+			<timerevent event="Wave1SpearmenTower">00:09:40</timerevent>
+			<timerevent event="Wave1SpearmenWall">00:09:40</timerevent>
+			<timerevent event="Wave2SpearmenWall">00:09:45</timerevent>
+			<timerevent event="Wave2ElephantWall">00:09:50</timerevent>
+			<timerevent event="Wave2CamelRiderTower">00:10:00</timerevent>
+			<timerevent event="Wave2SpearmenTower">00:10:20</timerevent>
+			<timerevent event="Wave1SpearmenWall">00:05:40</timerevent>
+			<timerevent event="Wave1SpearmenTower">00:06:45</timerevent>
+			<timerevent event="Wave2SpearmenWall">00:07:40</timerevent>
+			<timerevent event="Wave2CamelRiderWall">00:07:50</timerevent>
+			<timerevent event="Wave2ElephantTower">00:10:30</timerevent>
+			<timerevent event="Wave2ElephantWall">00:16:35</timerevent>
+			<timerevent event="Wave3AxemenWall">00:10:40</timerevent>
+			<timerevent event="Wave2SpearmenTower">00:10:45</timerevent>
+			<timerevent event="Wave2CamelRiderWall">00:11:00</timerevent>
+			<timerevent event="Wave2ElephantTower">00:11:10</timerevent>
+			<timerevent event="Wave2ElephantWall">00:11:40</timerevent>
+			<timerevent event="Wave2ElephantTower">00:18:00</timerevent>
+			<timerevent event="Wave2ElephantTower">00:12:10</timerevent>
+			<timerevent event="Wave2ElephantWall">00:12:50</timerevent>
+			<timerevent event="Wave2ElephantTower">00:13:30</timerevent>
+			<timerevent event="Wave2ElephantWall">00:14:20</timerevent>
+			<timerevent event="Wave2ElephantTower">00:15:00</timerevent>
+			<timerevent event="Wave2ElephantWall">00:15:15</timerevent>
+			<timerevent event="Wave2ElephantTower">00:16:00</timerevent>
+			<timerevent event="Wave2ElephantTower">00:16:55</timerevent>
+			<timerevent event="Wave2ElephantWall">00:17:25</timerevent>
+			<timerevent event="Wave3AxemenTower">00:12:30</timerevent>
+			<timerevent event="Wave3AxemenTower">00:14:50</timerevent>
+			<timerevent event="Wave3AxemenTower">00:16:40</timerevent>
+			<timerevent event="Wave3AxemenWall">00:17:15</timerevent>
+			<timerevent event="Wave3AxemenTower">00:17:45</timerevent>
+			<timerevent event="Wave2SpearmenWall">00:12:40</timerevent>
+			<timerevent event="Wave2SpearmenTower">00:13:00</timerevent>
+			<timerevent event="Wave2CamelRiderWall">00:13:50</timerevent>
+			<timerevent event="Wave3AxemenWall">00:14:05</timerevent>
+			<timerevent event="Wave1SpearmenWall">00:13:15</timerevent>
+			<timerevent event="Wave2SpearmenTower">00:14:30</timerevent>
+			<timerevent event="Wave3AxemenTower">00:15:25</timerevent>
+			<timerevent event="Wave3AxemenWall">00:14:40</timerevent>
+			<timerevent event="Wave2SpearmenWall">00:15:35</timerevent>
+			<timerevent event="Wave2CamelRidersWall">00:15:50</timerevent>
+			<timerevent event="Wave3AxemenTower">00:16:10</timerevent>
+			<timerevent event="Wave2Spearmen">00:16:20</timerevent>
+			<timerevent event="Wave2SpearmenWall">00:17:00</timerevent>
+			<timerevent event="Wave2SpearmenTower">00:17:10</timerevent>
+			<timerevent event="Wave2CamelRiderTower">00:17:20</timerevent>
+			<timerevent event="Wave2SpearmenTower">00:17:30</timerevent>
+			<timerevent event="Wave2SpearmenWall">00:17:55</timerevent>
+			<timerevent event="Wave2SpearmenTower">00:13:40</timerevent>
+			<timerevent event="Wave2SpearmenTower">00:14:15</timerevent>
+			<timerevent event="Wave2SpearmenWall">00:15:05</timerevent>
+			<timerevent event="Wave2SpearmenWall">00:17:35</timerevent>
+			<timerevent event="Wave2CamelRiderTower">00:17:40</timerevent>
+			<timerevent event="Wave2SpearmenTower">00:17:50</timerevent>
+			<timerevent event="Wave2SpearmenTower">00:15:40</timerevent>
+			<timerevent event="Wave2SpearmenWall">00:13:25</timerevent>
+			<timerevent event="Wave2SpearmenWall">00:18:00</timerevent>
+			<timerevent event="Wave3AxemenTower">00:14:00</timerevent>
+			<timerevent event="Wave2ElephantTower">00:16:00</timerevent>
+			<timerevent event="Wave2ElephantWall">00:16:00</timerevent>
+			<timerevent event="Wave2ElephantTower">00:15:15</timerevent>
+			<timerevent event="Wave2ElephantTower">00:16:55</timerevent>
+			<timerevent event="Wave2ElephantWall">00:16:55</timerevent>
+			<timerevent event="Wave2ElephantWall">00:16:55</timerevent>
+			<timerevent event="Wave2ElephantWall">00:16:55</timerevent>
+			<timerevent event="Wave2ElephantWall">00:17:25</timerevent>
+			<timerevent event="Wave2ElephantWall">00:17:25</timerevent>
+			<timerevent event="Wave2ElephantTower">00:17:25</timerevent>
+			<timerevent event="Wave2ElephantTower">00:17:25</timerevent>
+			<timerevent event="Wave2ElephantTower">00:18:00</timerevent>
+			<timerevent event="Wave2ElephantTower">00:18:00</timerevent>
+			<timerevent event="Wave2ElephantWall">00:18:00</timerevent>
+			<timerevent event="Wave2ElephantWall">00:18:00</timerevent>
+		</events>
+		<hideonui>false</hideonui>
+	</timer>
+	<canplaycoop>false</canplaycoop>
+	<cooprequired>false</cooprequired>
+	<ranked>false</ranked>
+	<alliance>eAllianceNone</alliance>
+	<questtype>RandomMap</questtype>
+	<description>$$5764$$</description>
+	<completiontext>$$528$$</completiontext>
+	<inprogresstext>$$5157$$</inprogresstext>
+	<summarytext>$$5158$$</summarytext>
+	<repeatableduration>12</repeatableduration>
+	<canabandon>true</canabandon>
+	<hiddenquest>false</hiddenquest>
+	<friendonly>false</friendonly>
+	<suppressnotifications>false</suppressnotifications>
+	<customquest>false</customquest>
+	<questgamemodetype>Normal</questgamemodetype>
+	<prereqs>
+		<values>
+			<civilization>
+				<id>3</id>
+			</civilization>
+			<questcomplete>
+				<id>323</id>
+			</questcomplete>
+			<or>
+				<values>
+					<questcomplete>
+						<id>324</id>
+					</questcomplete>
+					<queststatus>
+						<id>324</id>
+						<queststatus>Assigned</queststatus>
+					</queststatus>
+				</values>
+			</or>
+		</values>
+	</prereqs>
+	<equipmentprereqs/>
+	<targets/>
+	<objectives id="0" mustfailall="false">
+		<values>
+			<or id="1" mustfailall="false">
+				<values>
+					<timer id="2">
+						<description>$$2471$$</description>
+						<failonexpire>true</failonexpire>
+					</timer>
+					<kill id="3">
+						<description>$$2564$$</description>
+						<type>AbstractTransportable</type>
+						<count>500</count>
+						<includeconversion>true</includeconversion>
+						<onlycountelites>false</onlycountelites>
+					</kill>
+					<reduceunitsto id="4">
+						<type>LogicalTypeNeededForVictory</type>
+						<count>0</count>
+						<includeteam>false</includeteam>
+						<includeunderconstruction>false</includeunderconstruction>
+						<canuncomplete>false</canuncomplete>
+						<causesfailure>true</causesfailure>
+						<playerid>1</playerid>
+					</reduceunitsto>
+				</values>
+			</or>
+		</values>
+	</objectives>
+	<secondaryobjectives id="5" mustfailall="false" rewardname="OptionalOne">
+		<description>$$9658$$</description>
+		<values>
+			<or id="6" mustfailall="false">
+				<values>
+					<kill id="7">
+						<description/>
+						<type>AbstractTransportable</type>
+						<count>500</count>
+						<includeconversion>true</includeconversion>
+						<onlycountelites>false</onlycountelites>
+					</kill>
+					<dummy id="8">
+						<description>$$12201$$</description>
+						<objectivename>OptionalRestrictDefensiveStructures</objectivename>
+						<autocomplete>false</autocomplete>
+					</dummy>
+				</values>
+			</or>
+		</values>
+	</secondaryobjectives>
+	<onaccept/>
+	<timereffects event="Wave1SpearmenTower">
+		<spawnunit visible="true">
+			<count>4</count>
+			<placeunittype>NPC_Nubian_Warrior</placeunittype>
+			<asplayer>2</asplayer>
+			<spawntype>SpawnForAllies</spawntype>
+			<nearunittype>Qst_SpawnPoint1</nearunittype>
+			<radius>4</radius>
+			<useboneposition>false</useboneposition>
+			<overrides/>
+		</spawnunit>
+	</timereffects>
+	<timereffects event="Wave1SpearmenWall">
+		<spawnunit visible="true">
+			<count>4</count>
+			<placeunittype>NPC_Nubian_Warrior</placeunittype>
+			<asplayer>2</asplayer>
+			<spawntype>SpawnForAllies</spawntype>
+			<nearunittype>Qst_SpawnPoint2</nearunittype>
+			<radius>4</radius>
+			<useboneposition>false</useboneposition>
+			<overrides/>
+		</spawnunit>
+	</timereffects>
+	<timereffects event="Wave2SpearmenTower">
+		<spawnunit visible="true">
+			<count>10</count>
+			<placeunittype>NPC_Nubian_Warrior</placeunittype>
+			<asplayer>2</asplayer>
+			<spawntype>SpawnForAllies</spawntype>
+			<nearunittype>Qst_SpawnPoint1</nearunittype>
+			<radius>4</radius>
+			<useboneposition>false</useboneposition>
+			<overrides/>
+		</spawnunit>
+	</timereffects>
+	<timereffects event="Wave2SpearmenWall">
+		<spawnunit visible="true">
+			<count>10</count>
+			<placeunittype>NPC_Nubian_Warrior</placeunittype>
+			<asplayer>2</asplayer>
+			<spawntype>SpawnForAllies</spawntype>
+			<nearunittype>Qst_SpawnPoint2</nearunittype>
+			<radius>4</radius>
+			<useboneposition>false</useboneposition>
+			<overrides/>
+		</spawnunit>
+	</timereffects>
+	<timereffects event="Wave2CamelRiderTower">
+		<spawnunit visible="true">
+			<count>4</count>
+			<placeunittype>Eg_Cav_CamelRider</placeunittype>
+			<asplayer>2</asplayer>
+			<spawntype>SpawnForAllies</spawntype>
+			<nearunittype>Qst_SpawnPoint1</nearunittype>
+			<radius>4</radius>
+			<useboneposition>false</useboneposition>
+			<overrides/>
+		</spawnunit>
+	</timereffects>
+	<timereffects event="Wave2CamelRiderWall">
+		<spawnunit visible="true">
+			<count>4</count>
+			<placeunittype>Eg_Cav_CamelRider</placeunittype>
+			<asplayer>2</asplayer>
+			<spawntype>SpawnForAllies</spawntype>
+			<nearunittype>Qst_SpawnPoint2</nearunittype>
+			<radius>4</radius>
+			<useboneposition>false</useboneposition>
+			<overrides/>
+		</spawnunit>
+	</timereffects>
+	<timereffects event="Wave2ElephantTower">
+		<spawnunit visible="true">
+			<count>1</count>
+			<placeunittype>NPC_Nubian_Elephant</placeunittype>
+			<asplayer>2</asplayer>
+			<spawntype>SpawnForAllies</spawntype>
+			<nearunittype>Qst_SpawnPoint1</nearunittype>
+			<radius>4</radius>
+			<useboneposition>false</useboneposition>
+			<overrides/>
+		</spawnunit>
+	</timereffects>
+	<timereffects event="Wave2ElephantWall">
+		<spawnunit visible="true">
+			<count>1</count>
+			<placeunittype>NPC_Nubian_Elephant</placeunittype>
+			<asplayer>2</asplayer>
+			<spawntype>SpawnForAllies</spawntype>
+			<nearunittype>Qst_SpawnPoint2</nearunittype>
+			<radius>4</radius>
+			<useboneposition>false</useboneposition>
+			<overrides/>
+		</spawnunit>
+	</timereffects>
+	<timereffects event="Wave3AxemenTower">
+		<spawnunit visible="true">
+			<count>7</count>
+			<placeunittype>Eg_Inf_Axeman</placeunittype>
+			<asplayer>2</asplayer>
+			<spawntype>SpawnForAllies</spawntype>
+			<nearunittype>Qst_SpawnPoint1</nearunittype>
+			<radius>4</radius>
+			<useboneposition>false</useboneposition>
+			<overrides/>
+		</spawnunit>
+	</timereffects>
+	<timereffects event="Wave3AxemenWall">
+		<spawnunit visible="true">
+			<count>7</count>
+			<placeunittype>Eg_Inf_Axeman</placeunittype>
+			<asplayer>2</asplayer>
+			<spawntype>SpawnForAllies</spawntype>
+			<nearunittype>Qst_SpawnPoint2</nearunittype>
+			<radius>4</radius>
+			<useboneposition>false</useboneposition>
+			<overrides/>
+		</spawnunit>
+	</timereffects>
+	<rewards visible="true">
+		<xp visible="true">15000</xp>
+		<capitalresource visible="true">
+			<capitalresource>cCapResCoin</capitalresource>
+			<amount>120</amount>
+		</capitalresource>
+		<loottable visible="true">general</loottable>
+		<loottable visible="true">general</loottable>
+	</rewards>
+	<secondaryrewards visible="true" name="OptionalOne">
+		<xp visible="true">1</xp>
+		<capitalresource visible="true">
+			<capitalresource>cCapResCoin</capitalresource>
+			<amount>1</amount>
+		</capitalresource>
+	</secondaryrewards>
+	<playersettings id="1">
+		<team>1</team>
+		<color>1</color>
+		<tributablebehavior>Default</tributablebehavior>
+		<playertype>Human</playertype>
+		<cooponly>false</cooponly>
+		<startingfood>100</startingfood>
+		<startingwood>900</startingwood>
+		<startinggold>0</startinggold>
+		<startingstone>1350</startingstone>
+		<aislidervariables/>
+		<aiflagvariables/>
+	</playersettings>
+	<playersettings id="2">
+		<team>2</team>
+		<color>2</color>
+		<tributablebehavior>Default</tributablebehavior>
+		<playertype>Computer</playertype>
+		<personality>$$2264$$</personality>
+		<script>CORE\Rush_Heavy</script>
+		<dataset>C02\C02_Vanilla_T0</dataset>
+		<cooponly>false</cooponly>
+		<startingfood>-1</startingfood>
+		<startingwood>-1</startingwood>
+		<startinggold>-1</startinggold>
+		<startingstone>-1</startingstone>
+		<aislidervariables/>
+		<aiflagvariables>
+			<aivariable>
+				<key>UseWaves</key>
+				<value>0</value>
+			</aivariable>
+			<aivariable>
+				<key>NoResign</key>
+				<value>0</value>
+			</aivariable>
+			<aivariable>
+				<key>NoBuild</key>
+				<value>0</value>
+			</aivariable>
+			<aivariable>
+				<key>NoFish</key>
+				<value>0</value>
+			</aivariable>
+			<aivariable>
+				<key>NoResearchEcon</key>
+				<value>0</value>
+			</aivariable>
+			<aivariable>
+				<key>NoResearchMilitary</key>
+				<value>0</value>
+			</aivariable>
+			<aivariable>
+				<key>NoTrainArmy</key>
+				<value>0</value>
+			</aivariable>
+			<aivariable>
+				<key>NoTrainNavy</key>
+				<value>0</value>
+			</aivariable>
+			<aivariable>
+				<key>NoScout</key>
+				<value>0</value>
+			</aivariable>
+		</aiflagvariables>
+	</playersettings>
+	<diplomacysettings>
+		<diplomacy relation="Enemy" team1="2" team2="1" sharedlos="true"/>
+	</diplomacysettings>
+	<randommap>
+		<map>Core\C02\C02_R2M35_EchoCanyonEcho_R</map>
+		<randommap>true</randommap>
+		<numplayers>2</numplayers>
+		<mapvariables>
+			<variable name="scenarioFile" type="String">C02/C02_R2M65_EchoCanyon</variable>
+			<variable name="QuestID" type="Int">12166</variable>
+			<variable name="region" type="String">Egyptian Sand</variable>
+			<variable name="lighting" type="String">Afternoon</variable>
+		</mapvariables>
+		<nuggetoverrides/>
+		<mapregionname>Egyptian Sand</mapregionname>
+		<lightsetname>Afternoon</lightsetname>
+		<mapsizename>&lt;Not Specified&gt;</mapsizename>
+	</randommap>
+	<questgivers/>
+	<questreturners/>
+	<maplocationx>0.43</maplocationx>
+	<maplocationy>0.144</maplocationy>
+	<mapmarker>QuestRepeatable</mapmarker>
+	<mappage>Nubia</mappage>
+	<elitespawnchance>0</elitespawnchance>
+	<linkedquestid>0</linkedquestid>
+	<questbasescale>0</questbasescale>
+	<victoryconditions/>
+</quest>

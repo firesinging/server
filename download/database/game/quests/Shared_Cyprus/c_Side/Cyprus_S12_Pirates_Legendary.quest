@@ -1,0 +1,450 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<quest xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xsd="http://www.w3.org/2001/XMLSchema" uniqueid="3032" version="138">
+	<displayname>$$9129$$</displayname>
+	<level>43</level>
+	<difficultycoloroverride>2</difficultycoloroverride>
+	<repeatable>true</repeatable>
+	<offertype>eOfferNone</offertype>
+	<timer>
+		<time>99:99:99</time>
+		<events/>
+		<hideonui>true</hideonui>
+	</timer>
+	<canplaycoop>true</canplaycoop>
+	<cooprequired>false</cooprequired>
+	<ranked>false</ranked>
+	<alliance>eAllianceNone</alliance>
+	<questtype>RandomMap</questtype>
+	<description>$$6679$$</description>
+	<completiontext>$$6658$$</completiontext>
+	<inprogresstext>$$6660$$</inprogresstext>
+	<summarytext>$$6358$$</summarytext>
+	<repeatableduration>12</repeatableduration>
+	<canabandon>true</canabandon>
+	<hiddenquest>false</hiddenquest>
+	<friendonly>false</friendonly>
+	<suppressnotifications>false</suppressnotifications>
+	<customquest>false</customquest>
+	<questgamemodetype>Normal</questgamemodetype>
+	<prereqs>
+		<values>
+			<questcomplete>
+				<id>3030</id>
+			</questcomplete>
+			<level>
+				<min>40</min>
+				<max>99</max>
+			</level>
+		</values>
+	</prereqs>
+	<equipmentprereqs/>
+	<targets>
+		<grouping>
+			<cooponly>false</cooponly>
+			<forcetocenter>false</forcetocenter>
+			<name>PlayerIsland</name>
+			<count>1</count>
+			<team>1</team>
+			<area>Player1</area>
+			<groupfilename>Shared_Player1_Age2_barrackstowers</groupfilename>
+			<rottype>Rotate0</rottype>
+			<rotateunitorientations>true</rotateunitorientations>
+		</grouping>
+		<grouping>
+			<cooponly>false</cooponly>
+			<forcetocenter>true</forcetocenter>
+			<name>Enemy1</name>
+			<count>1</count>
+			<team>4</team>
+			<area>Quest_Area_B</area>
+			<groupfilename>shared_start_fortress</groupfilename>
+			<rottype>Rotate0</rottype>
+			<rotateunitorientations>false</rotateunitorientations>
+		</grouping>
+		<grouping>
+			<cooponly>true</cooponly>
+			<forcetocenter>false</forcetocenter>
+			<name>Player2Island</name>
+			<count>1</count>
+			<team>3</team>
+			<area>Player2</area>
+			<groupfilename>Shared_Player3_Age2_BarracksTowers</groupfilename>
+			<rottype>Rotate0</rottype>
+			<rotateunitorientations>true</rotateunitorientations>
+		</grouping>
+		<grouping>
+			<cooponly>false</cooponly>
+			<forcetocenter>true</forcetocenter>
+			<name>Enemy2</name>
+			<count>1</count>
+			<team>2</team>
+			<area>Quest_Area_A</area>
+			<groupfilename>shared_start_fortress</groupfilename>
+			<rottype>Rotate0</rottype>
+			<rotateunitorientations>true</rotateunitorientations>
+		</grouping>
+		<protounit>
+			<cooponly>true</cooponly>
+			<forcetocenter>false</forcetocenter>
+			<name>Enemy2COOP</name>
+			<protoname>Eg_Sie_Catapult</protoname>
+			<count>5</count>
+			<team>5</team>
+			<area>Quest_Area_B</area>
+			<usequesttargetindicator>false</usequesttargetindicator>
+		</protounit>
+		<protounit>
+			<cooponly>true</cooponly>
+			<forcetocenter>false</forcetocenter>
+			<name>EnemyCOOP</name>
+			<protoname>Eg_Sie_Catapult</protoname>
+			<count>5</count>
+			<team>5</team>
+			<area>Quest_Area_A</area>
+			<usequesttargetindicator>false</usequesttargetindicator>
+		</protounit>
+	</targets>
+	<objectives id="0" mustfailall="false">
+		<values>
+			<or id="1" mustfailall="false">
+				<values>
+					<kill id="2">
+						<description>$$2508$$</description>
+						<type>Eg_Bldg_TownCenter</type>
+						<count>2</count>
+						<includeconversion>true</includeconversion>
+						<onlycountelites>false</onlycountelites>
+					</kill>
+					<and id="3" mustfailall="true">
+						<values>
+							<reduceunitsto id="4">
+								<type>LogicalTypeNeededForVictory</type>
+								<count>0</count>
+								<includeteam>false</includeteam>
+								<includeunderconstruction>false</includeunderconstruction>
+								<canuncomplete>false</canuncomplete>
+								<causesfailure>true</causesfailure>
+								<playerid>1</playerid>
+							</reduceunitsto>
+							<reduceunitsto id="5">
+								<type>LogicalTypeNeededForVictory</type>
+								<count>0</count>
+								<includeteam>false</includeteam>
+								<includeunderconstruction>false</includeunderconstruction>
+								<canuncomplete>false</canuncomplete>
+								<causesfailure>true</causesfailure>
+								<playerid>3</playerid>
+							</reduceunitsto>
+						</values>
+					</and>
+				</values>
+			</or>
+		</values>
+	</objectives>
+	<secondaryobjectives id="6" mustfailall="false" rewardname="Optional">
+		<description>$$9658$$</description>
+		<values>
+			<or id="7" mustfailall="false">
+				<values>
+					<kill id="8">
+						<description>$$10440$$</description>
+						<type>Eg_Shp_CatTrireme</type>
+						<count>18</count>
+						<includeconversion>true</includeconversion>
+						<onlycountelites>false</onlycountelites>
+					</kill>
+				</values>
+			</or>
+		</values>
+	</secondaryobjectives>
+	<onaccept/>
+	<timereffects event="P2AttackBoats">
+		<spawnunit visible="true">
+			<count>1</count>
+			<placeunittype>Eg_Shp_Trireme</placeunittype>
+			<asplayer>2</asplayer>
+			<spawntype>SpawnForAllies</spawntype>
+			<nearunittype>Eg_Bldg_Dock</nearunittype>
+			<radius>5</radius>
+			<useboneposition>false</useboneposition>
+			<overrides/>
+		</spawnunit>
+	</timereffects>
+	<timereffects event="P4AttackBoats">
+		<spawnunit visible="true">
+			<count>1</count>
+			<placeunittype>Eg_Shp_Trireme</placeunittype>
+			<asplayer>4</asplayer>
+			<spawntype>SpawnForAllies</spawntype>
+			<nearunittype>Eg_Bldg_Dock</nearunittype>
+			<radius>5</radius>
+			<useboneposition>false</useboneposition>
+			<overrides/>
+		</spawnunit>
+	</timereffects>
+	<timereffects event="P2DefendBoats">
+		<spawnunit visible="true">
+			<count>1</count>
+			<placeunittype>Eg_Shp_FireShip</placeunittype>
+			<asplayer>2</asplayer>
+			<spawntype>SpawnForAllies</spawntype>
+			<nearunittype>Eg_Bldg_Dock</nearunittype>
+			<radius>5</radius>
+			<useboneposition>false</useboneposition>
+			<overrides/>
+		</spawnunit>
+	</timereffects>
+	<timereffects event="P4DefendBoats">
+		<spawnunit visible="true">
+			<count>1</count>
+			<placeunittype>Eg_Shp_FireShip</placeunittype>
+			<asplayer>4</asplayer>
+			<spawntype>SpawnForAllies</spawntype>
+			<nearunittype>Eg_Bldg_Dock</nearunittype>
+			<radius>5</radius>
+			<useboneposition>false</useboneposition>
+			<overrides/>
+		</spawnunit>
+	</timereffects>
+	<timereffects event="P2FishBoats">
+		<spawnunit visible="true">
+			<count>4</count>
+			<placeunittype>Eg_Civ_FishingBoat</placeunittype>
+			<asplayer>2</asplayer>
+			<spawntype>SpawnForAllies</spawntype>
+			<nearunittype>Eg_Bldg_Dock</nearunittype>
+			<radius>5</radius>
+			<useboneposition>false</useboneposition>
+			<overrides/>
+		</spawnunit>
+	</timereffects>
+	<timereffects event="P4FishBoats">
+		<spawnunit visible="true">
+			<count>4</count>
+			<placeunittype>Eg_Civ_FishingBoat</placeunittype>
+			<asplayer>4</asplayer>
+			<spawntype>SpawnForAllies</spawntype>
+			<nearunittype>Eg_Bldg_Dock</nearunittype>
+			<radius>5</radius>
+			<useboneposition>false</useboneposition>
+			<overrides/>
+		</spawnunit>
+	</timereffects>
+	<timereffects event="P2Market">
+		<spawnunit visible="true">
+			<count>1</count>
+			<placeunittype>Eg_Bldg_Market</placeunittype>
+			<asplayer>2</asplayer>
+			<spawntype>SpawnForAllies</spawntype>
+			<nearunittype>Eg_Bldg_TownCenter</nearunittype>
+			<radius>100</radius>
+			<useboneposition>false</useboneposition>
+			<overrides/>
+		</spawnunit>
+	</timereffects>
+	<timereffects event="P4Market">
+		<spawnunit visible="true">
+			<count>1</count>
+			<placeunittype>Eg_Bldg_Market</placeunittype>
+			<asplayer>4</asplayer>
+			<spawntype>SpawnForAllies</spawntype>
+			<nearunittype>Eg_Bldg_TownCenter</nearunittype>
+			<radius>100</radius>
+			<useboneposition>false</useboneposition>
+			<overrides/>
+		</spawnunit>
+	</timereffects>
+	<rewards visible="true">
+		<alliancepoints visible="true">
+			<amount>13</amount>
+		</alliancepoints>
+		<capitalresource visible="true">
+			<capitalresource>cCapResCoin</capitalresource>
+			<amount>500</amount>
+		</capitalresource>
+		<loottable visible="true">general_legendary</loottable>
+		<loottable visible="true">general_legendary</loottable>
+	</rewards>
+	<secondaryrewards visible="true" name="Optional">
+		<capitalresource visible="true">
+			<capitalresource>cCapResCoin</capitalresource>
+			<amount>250</amount>
+		</capitalresource>
+		<loottable visible="true">general_legendary</loottable>
+	</secondaryrewards>
+	<playersettings id="1">
+		<team>1</team>
+		<color>1</color>
+		<tributablebehavior>Default</tributablebehavior>
+		<playertype>Human</playertype>
+		<cooponly>false</cooponly>
+		<startingfood>1000</startingfood>
+		<startingwood>1000</startingwood>
+		<startinggold>1000</startinggold>
+		<startingstone>1000</startingstone>
+		<aislidervariables/>
+		<aiflagvariables/>
+	</playersettings>
+	<playersettings id="2">
+		<team>2</team>
+		<color>2</color>
+		<tributablebehavior>Default</tributablebehavior>
+		<playertype>Computer</playertype>
+		<personality>$$6676$$</personality>
+		<script>CORE\Rush_Hardcore</script>
+		<dataset>C02\C02_Pirate_T4</dataset>
+		<cooponly>false</cooponly>
+		<startingfood>-1</startingfood>
+		<startingwood>-1</startingwood>
+		<startinggold>-1</startinggold>
+		<startingstone>-1</startingstone>
+		<aislidervariables>
+			<aivariable>
+				<key>InfantryBias</key>
+				<value>-0.8</value>
+			</aivariable>
+			<aivariable>
+				<key>NavyBias</key>
+				<value>1</value>
+			</aivariable>
+			<aivariable>
+				<key>EconomyHandicap</key>
+				<value>0.4</value>
+			</aivariable>
+			<aivariable>
+				<key>CavalryBias</key>
+				<value>-1</value>
+			</aivariable>
+			<aivariable>
+				<key>ArcherBias</key>
+				<value>-1</value>
+			</aivariable>
+			<aivariable>
+				<key>SiegeBias</key>
+				<value>-1</value>
+			</aivariable>
+		</aislidervariables>
+		<aiflagvariables>
+			<aivariable>
+				<key>NoResign</key>
+				<value>0</value>
+			</aivariable>
+		</aiflagvariables>
+	</playersettings>
+	<playersettings id="3">
+		<team>1</team>
+		<color>7</color>
+		<tributablebehavior>Default</tributablebehavior>
+		<playertype>Human</playertype>
+		<cooponly>true</cooponly>
+		<startingfood>1000</startingfood>
+		<startingwood>1000</startingwood>
+		<startinggold>1000</startinggold>
+		<startingstone>1000</startingstone>
+		<aislidervariables/>
+		<aiflagvariables/>
+	</playersettings>
+	<playersettings id="4">
+		<team>2</team>
+		<color>2</color>
+		<tributablebehavior>Default</tributablebehavior>
+		<playertype>Computer</playertype>
+		<personality>$$6676$$</personality>
+		<script>CORE\Rush_Weak</script>
+		<dataset>C02\C02_Pirate_T4</dataset>
+		<cooponly>false</cooponly>
+		<startingfood>5000</startingfood>
+		<startingwood>5000</startingwood>
+		<startinggold>5000</startinggold>
+		<startingstone>5000</startingstone>
+		<aislidervariables>
+			<aivariable>
+				<key>InfantryBias</key>
+				<value>-0.1</value>
+			</aivariable>
+			<aivariable>
+				<key>NavyBias</key>
+				<value>1</value>
+			</aivariable>
+			<aivariable>
+				<key>EconomyHandicap</key>
+				<value>0.4</value>
+			</aivariable>
+			<aivariable>
+				<key>CavalryBias</key>
+				<value>-1</value>
+			</aivariable>
+			<aivariable>
+				<key>ArcherBias</key>
+				<value>-1</value>
+			</aivariable>
+			<aivariable>
+				<key>SiegeBias</key>
+				<value>-1</value>
+			</aivariable>
+		</aislidervariables>
+		<aiflagvariables>
+			<aivariable>
+				<key>UseWaves</key>
+				<value>0</value>
+			</aivariable>
+			<aivariable>
+				<key>NoResign</key>
+				<value>0</value>
+			</aivariable>
+		</aiflagvariables>
+	</playersettings>
+	<playersettings id="5">
+		<team>2</team>
+		<color>2</color>
+		<tributablebehavior>Default</tributablebehavior>
+		<playertype>Computer</playertype>
+		<personality>$$6676$$</personality>
+		<script>Custom\AIDoNothing</script>
+		<dataset>C02\C02_Pirate_T4</dataset>
+		<cooponly>false</cooponly>
+		<startingfood>0</startingfood>
+		<startingwood>0</startingwood>
+		<startinggold>0</startinggold>
+		<startingstone>0</startingstone>
+		<aislidervariables/>
+		<aiflagvariables>
+			<aivariable>
+				<value>0</value>
+			</aivariable>
+		</aiflagvariables>
+	</playersettings>
+	<diplomacysettings/>
+	<randommap>
+		<map>core\shared_cyprus\cyprus_pirates</map>
+		<randommap>true</randommap>
+		<numplayers>5</numplayers>
+		<mapvariables>
+			<variable name="IsREPEAT" type="Bool">true</variable>
+			<variable name="IsLEGENDARY" type="Bool">true</variable>
+			<variable name="region" type="String">Egyptian Marsh</variable>
+			<variable name="mapSize" type="String">Large</variable>
+		</mapvariables>
+		<nuggetoverrides>
+			<nuggetoverride overrideweight="10000000">Legendary_40-50_01</nuggetoverride>
+		</nuggetoverrides>
+		<mapregionname>Egyptian Marsh</mapregionname>
+		<lightsetname>&lt;Not Specified&gt;</lightsetname>
+		<mapsizename>Large</mapsizename>
+	</randommap>
+	<questgivers>
+		<protounit>CyprusPortMaster</protounit>
+	</questgivers>
+	<questreturners>
+		<protounit>CyprusPortMaster</protounit>
+	</questreturners>
+	<maplocationx>0.87</maplocationx>
+	<maplocationy>0.4</maplocationy>
+	<mapmarker>QuestRepeatable</mapmarker>
+	<mappage>Cyprus</mappage>
+	<elitespawnchance>1</elitespawnchance>
+	<linkedquestid>0</linkedquestid>
+	<questbasescale>0</questbasescale>
+	<victoryconditions/>
+</quest>

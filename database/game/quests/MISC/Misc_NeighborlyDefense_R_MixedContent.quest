@@ -1,0 +1,195 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<quest xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xsd="http://www.w3.org/2001/XMLSchema" uniqueid="10102" version="111">
+	<displayname>$$5338$$</displayname>
+	<level>-1</level>
+	<repeatable>true</repeatable>
+	<timer>
+		<time>00:03:00</time>
+		<events/>
+		<hideonui>false</hideonui>
+	</timer>
+	<canplaycoop>false</canplaycoop>
+	<cooprequired>false</cooprequired>
+	<ranked>false</ranked>
+	<alliance>eAllianceNone</alliance>
+	<questtype>RandomMap</questtype>
+	<description>$$12146$$</description>
+	<completiontext>$$5913$$</completiontext>
+	<inprogresstext>$$5414$$</inprogresstext>
+	<summarytext>$$5912$$</summarytext>
+	<repeatableduration>12</repeatableduration>
+	<canabandon>true</canabandon>
+	<hiddenquest>false</hiddenquest>
+	<friendonly>true</friendonly>
+	<suppressnotifications>false</suppressnotifications>
+	<customquest>false</customquest>
+	<questgamemodetype>Normal</questgamemodetype>
+	<prereqs>
+		<values>
+			<questcomplete>
+				<id>10100</id>
+			</questcomplete>
+		</values>
+	</prereqs>
+	<equipmentprereqs/>
+	<targets/>
+	<objectives id="0" mustfailall="false">
+		<values>
+			<or id="1" mustfailall="false">
+				<values>
+					<protectunit id="2">
+						<description>$$5260$$</description>
+						<type>AbstractPalace</type>
+						<owningplayerid>3</owningplayerid>
+					</protectunit>
+					<reduceunitsto id="3">
+						<type>AbstractPalace</type>
+						<count>0</count>
+						<includeteam>false</includeteam>
+						<includeunderconstruction>false</includeunderconstruction>
+						<canuncomplete>false</canuncomplete>
+						<causesfailure>true</causesfailure>
+						<playerid>3</playerid>
+					</reduceunitsto>
+					<reduceunitsto id="4">
+						<type>LogicalTypeNeededForVictory</type>
+						<count>0</count>
+						<includeteam>false</includeteam>
+						<includeunderconstruction>false</includeunderconstruction>
+						<canuncomplete>false</canuncomplete>
+						<causesfailure>true</causesfailure>
+						<playerid>1</playerid>
+					</reduceunitsto>
+					<and id="5" mustfailall="true">
+						<values>
+							<and id="6" mustfailall="false">
+								<description>$$5940$$</description>
+								<values>
+									<dummy id="7">
+										<description/>
+										<objectivename>ClearedEnemies01</objectivename>
+										<autocomplete>false</autocomplete>
+									</dummy>
+								</values>
+							</and>
+							<and id="8" mustfailall="false">
+								<description>$$5941$$</description>
+								<values>
+									<dummy id="9">
+										<description/>
+										<objectivename>ClearedEnemies02</objectivename>
+										<autocomplete>false</autocomplete>
+									</dummy>
+								</values>
+							</and>
+							<timer id="10">
+								<description>$$5918$$</description>
+								<failonexpire>false</failonexpire>
+							</timer>
+						</values>
+					</and>
+				</values>
+			</or>
+		</values>
+	</objectives>
+	<onaccept/>
+	<rewards visible="true">
+		<xp visible="true">
+			1
+			<lookuptable>socialQuests</lookuptable>
+		</xp>
+		<capitalresource visible="true">
+			<capitalresource>cCapResCoin</capitalresource>
+			<amount>1</amount>
+			<lookuptable>socialQuests</lookuptable>
+		</capitalresource>
+		<mailreward visible="true" subject="$$5424$$" message="$$5419$$" gold="100" sendtovisittarget="true">sets\coregame\general\generalsetallmaterials</mailreward>
+	</rewards>
+	<playersettings id="1">
+		<team>1</team>
+		<color>1</color>
+		<tributablebehavior>Default</tributablebehavior>
+		<playertype>Human</playertype>
+		<cooponly>false</cooponly>
+		<startingfood>0</startingfood>
+		<startingwood>0</startingwood>
+		<startinggold>0</startinggold>
+		<startingstone>0</startingstone>
+		<aislidervariables/>
+		<aiflagvariables/>
+	</playersettings>
+	<playersettings id="2">
+		<team>2</team>
+		<color>2</color>
+		<tributablebehavior>Default</tributablebehavior>
+		<playertype>Computer</playertype>
+		<personality>$$24$$</personality>
+		<script/>
+		<dataset>C02\C02_Vanilla_T0</dataset>
+		<cooponly>false</cooponly>
+		<startingfood>0</startingfood>
+		<startingwood>0</startingwood>
+		<startinggold>0</startinggold>
+		<startingstone>0</startingstone>
+		<aislidervariables/>
+		<aiflagvariables>
+			<aivariable>
+				<key>NoResign</key>
+				<value>0</value>
+			</aivariable>
+		</aiflagvariables>
+	</playersettings>
+	<playersettings id="3">
+		<team>1</team>
+		<color>3</color>
+		<tributablebehavior>Default</tributablebehavior>
+		<playertype>Computer</playertype>
+		<personality>$$2233$$</personality>
+		<dataset>c01\c01_vanilla_t0</dataset>
+		<cooponly>false</cooponly>
+		<startingfood>0</startingfood>
+		<startingwood>0</startingwood>
+		<startinggold>0</startinggold>
+		<startingstone>0</startingstone>
+		<aislidervariables/>
+		<aiflagvariables/>
+	</playersettings>
+	<diplomacysettings/>
+	<randommap>
+		<map>Core\MISC\Misc_NeighborlyDefense</map>
+		<randommap>true</randommap>
+		<numplayers>3</numplayers>
+		<mapvariables>
+			<variable name="scenarioFile" type="String">MISC/Misc_NeighborlyDefense</variable>
+			<variable name="QuestID" type="Int">10102</variable>
+		</mapvariables>
+		<nuggetoverrides/>
+		<mapregionname>&lt;Not Specified&gt;</mapregionname>
+		<lightsetname>&lt;Not Specified&gt;</lightsetname>
+		<mapsizename>&lt;Not Specified&gt;</mapsizename>
+	</randommap>
+	<questgivers>
+		<protounit>C01_R1_Ambassador_VISITPLAYER</protounit>
+		<protounit>C02_R1_Ambassador_VISITPLAYER</protounit>
+		<protounit>C03_R1_Ambassador_VISITPLAYER</protounit>
+		<protounit>C04_R1_Ambassador_VISITPLAYER</protounit>
+		<protounit>C06_R1_Ambassador_VISITPLAYER</protounit>
+		<protounit>C07_R1_Ambassador_VISITPLAYER</protounit>
+	</questgivers>
+	<questreturners>
+		<protounit>C01_R1_Ambassador_VISITPLAYER</protounit>
+		<protounit>C02_R1_Ambassador_VISITPLAYER</protounit>
+		<protounit>C03_R1_Ambassador_VISITPLAYER</protounit>
+		<protounit>C04_R1_Ambassador_VISITPLAYER</protounit>
+		<protounit>C06_R1_Ambassador_VISITPLAYER</protounit>
+		<protounit>C07_R1_Ambassador_VISITPLAYER</protounit>
+	</questreturners>
+	<maplocationx>0.5</maplocationx>
+	<maplocationy>0.5</maplocationy>
+	<mapmarker>QuestRepeatable</mapmarker>
+	<mappage>AmbassadorMap</mappage>
+	<elitespawnchance>0</elitespawnchance>
+	<questbasescale>0</questbasescale>
+	<victoryconditions/>
+</quest>

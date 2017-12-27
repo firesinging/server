@@ -1,0 +1,167 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="15.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <Import Project="$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props" Condition="Exists('$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props')" />
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProjectGuid>{C96B910C-B588-4E2A-BC58-DA6B482FBC16}</ProjectGuid>
+    <OutputType>Library</OutputType>
+    <AppDesignerFolder>Properties</AppDesignerFolder>
+    <RootNamespace>Game</RootNamespace>
+    <AssemblyName>Game</AssemblyName>
+    <TargetFrameworkVersion>v4.5</TargetFrameworkVersion>
+    <FileAlignment>512</FileAlignment>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>bin\Debug\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\Release\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="SuperSocket.Common">
+      <HintPath>$(SolutionDir)packages\SuperSocket.1.6.6.1\lib\net45\SuperSocket.Common.dll</HintPath>
+    </Reference>
+    <Reference Include="SuperSocket.Facility">
+      <HintPath>$(SolutionDir)packages\SuperSocket.1.6.6.1\lib\net45\SuperSocket.Facility.dll</HintPath>
+    </Reference>
+    <Reference Include="SuperSocket.SocketBase">
+      <HintPath>$(SolutionDir)packages\SuperSocket.1.6.6.1\lib\net45\SuperSocket.SocketBase.dll</HintPath>
+    </Reference>
+    <Reference Include="System" />
+    <Reference Include="System.Core" />
+    <Reference Include="Microsoft.CSharp" />
+    <Reference Include="System.Data" />
+    <Reference Include="System.Xml" />
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="command\cBAssetTransactionGetCurrentCount.cs" />
+    <Compile Include="command\cBBotNetVersionRequestPacket.cs" />
+    <Compile Include="command\cBRequestQueueLocation.cs" />
+    <Compile Include="command\cBRequestSessionHandShake.cs" />
+    <Compile Include="command\cBRequestSessionTerminatePacket.cs" />
+    <Compile Include="command\cBRequestUserAuthentication.cs" />
+    <Compile Include="command\todo\cBAssetTransactionStoreAssets.cs" />
+    <Compile Include="command\todo\cBBotNetRequestPing.cs" />
+    <Compile Include="command\todo\cBBotNetUnregisterSessionIdRequest.cs" />
+    <Compile Include="command\todo\cBDeleteMailRequest.cs" />
+    <Compile Include="command\todo\cBDesignProductionComplete.cs" />
+    <Compile Include="command\cBGetEmpireRequest.cs" />
+    <Compile Include="command\todo\cBGetMailCoinRequest.cs" />
+    <Compile Include="command\todo\cBGetMailItemRequest.cs" />
+    <Compile Include="command\cBGetMailMessagesRequest.cs" />
+    <Compile Include="command\todo\cBKickbackInformationRequest.cs" />
+    <Compile Include="command\todo\cBMarkMailReadRequest.cs" />
+    <Compile Include="command\todo\cBReportPvPGameComplete.cs" />
+    <Compile Include="command\todo\cBRequestAddUnitToRemoveListPacket.cs" />
+    <Compile Include="command\todo\cBRequestAdjustSkillPoints.cs" />
+    <Compile Include="command\cBRequestAllianceContestsStatus.cs" />
+    <Compile Include="command\cBRequestAndIncrementScenarioIdPacket.cs" />
+    <Compile Include="command\todo\cBRequestAssignAdvisorPacket.cs" />
+    <Compile Include="command\todo\cBRequestAttachStoredVanityItem.cs" />
+    <Compile Include="command\todo\cBRequestAttachTraitPacket.cs" />
+    <Compile Include="command\todo\cBRequestBuyBackItem.cs" />
+    <Compile Include="command\todo\cBRequestBuyItem.cs" />
+    <Compile Include="command\todo\cBRequestChangeAllianceContestContribution.cs" />
+    <Compile Include="command\cBRequestCharacterConfigUpdate.cs" />
+    <Compile Include="command\todo\cBRequestChooseCraftSchool.cs" />
+    <Compile Include="command\cBRequestCityDataPacket.cs" />
+    <Compile Include="command\todo\cBRequestCityInfoPacket.cs" />
+    <Compile Include="command\todo\cBRequestConsoleCommand.cs" />
+    <Compile Include="command\todo\cBRequestContentLicenseFile.cs" />
+    <Compile Include="command\todo\cBRequestConvertBuildingToBlueprint.cs" />
+    <Compile Include="command\cBRequestCreateNewCharacter.cs" />
+    <Compile Include="command\todo\cBRequestCreatePreloadedCharacter.cs" />
+    <Compile Include="command\todo\cBRequestCurrentBonuses.cs" />
+    <Compile Include="command\todo\cBRequestDeleteCharacter.cs" />
+    <Compile Include="command\todo\cBRequestDesignProduction.cs" />
+    <Compile Include="command\todo\cBRequestDesignProductionCancel.cs" />
+    <Compile Include="command\todo\cBRequestDestroyInventoryItem.cs" />
+    <Compile Include="command\todo\cBRequestDetachStoredVanityItem.cs" />
+    <Compile Include="command\todo\cBRequestEconDataPacket.cs" />
+    <Compile Include="command\todo\cBRequestEmpireInventoryAddItem.cs" />
+    <Compile Include="command\todo\cBRequestEmpireInventoryRemoveItem.cs" />
+    <Compile Include="command\todo\cBRequestEnterRespecMode.cs" />
+    <Compile Include="command\todo\cBRequestGetContainerNumSlots.cs" />
+    <Compile Include="command\todo\cBRequestInstanceEnumeration.cs" />
+    <Compile Include="command\todo\cBRequestInventoryDataPacket.cs" />
+    <Compile Include="command\todo\cBRequestJoinAlliance.cs" />
+    <Compile Include="command\todo\cBRequestLeaveAlliance.cs" />
+    <Compile Include="command\todo\cBRequestMarketplaceAddItem.cs" />
+    <Compile Include="command\todo\cBRequestMarketplaceBuyItem.cs" />
+    <Compile Include="command\todo\cBRequestMarketplaceClaimCoin.cs" />
+    <Compile Include="command\cBRequestMarketplaceItemsForCharacterId.cs" />
+    <Compile Include="command\todo\cBRequestMarketplaceSearch.cs" />
+    <Compile Include="command\todo\cBRequestMoveInventory.cs" />
+    <Compile Include="command\todo\cBRequestNewActiveTechPacket.cs" />
+    <Compile Include="command\todo\cBRequestNewTransfer.cs" />
+    <Compile Include="command\todo\cBRequestNuggetCompletePacket.cs" />
+    <Compile Include="command\todo\cBRequestOpenChest.cs" />
+    <Compile Include="command\todo\cBRequestPlaceBlueprintPacket.cs" />
+    <Compile Include="command\cBRequestPopulateVendor.cs" />
+    <Compile Include="command\todo\cBRequestPurchaseCurrencyContent.cs" />
+    <Compile Include="command\todo\cBRequestPurchaseEmpireInventorySlots.cs" />
+    <Compile Include="command\todo\cBRequestPvPGameStart.cs" />
+    <Compile Include="command\todo\cBRequestQuestOperation.cs" />
+    <Compile Include="command\todo\cBRequestQuestSaveObjectives.cs" />
+    <Compile Include="command\todo\cBRequestRefreshOfferStateData.cs" />
+    <Compile Include="command\todo\cBRequestRefreshQuestGiverSpawns.cs" />
+    <Compile Include="command\cBRequestRegionMap.cs" />
+    <Compile Include="command\todo\cBRequestReloadPdlc.cs" />
+    <Compile Include="command\todo\cBRequestRemoveTraitPacket.cs" />
+    <Compile Include="command\todo\cBRequestRenameCharacter.cs" />
+    <Compile Include="command\todo\cBRequestResetSkillPoints.cs" />
+    <Compile Include="command\cBRequestRetrieveOptions.cs" />
+    <Compile Include="command\cBRequestRetrievePersistentData.cs" />
+    <Compile Include="command\todo\cBRequestRetrieveScenarioDelta.cs" />
+    <Compile Include="command\cBRequestSavedUnitsToServerFirstTime.cs" />
+    <Compile Include="command\todo\cBRequestSelectMilestoneReward.cs" />
+    <Compile Include="command\todo\cBRequestSellItem.cs" />
+    <Compile Include="command\cBRequestSetCharacterFlags.cs" />
+    <Compile Include="command\todo\cBRequestSteamCheckForOutofGamePurchase.cs" />
+    <Compile Include="command\todo\cBRequestSteamEnumerateAssets.cs" />
+    <Compile Include="command\todo\cBRequestSteamFinalize.cs" />
+    <Compile Include="command\todo\cBRequestSteamSmokeTest.cs" />
+    <Compile Include="command\todo\cBRequestSteamTransaction.cs" />
+    <Compile Include="command\todo\cBRequestStoreOptions.cs" />
+    <Compile Include="command\todo\cBRequestStorePersistentData.cs" />
+    <Compile Include="command\todo\cBRequestStoreScenarioDelta.cs" />
+    <Compile Include="command\todo\cBRequestUnitKillXp.cs" />
+    <Compile Include="command\todo\cBRequestUpdateCharacterGearScore.cs" />
+    <Compile Include="command\todo\cBRequestUseConsumable.cs" />
+    <Compile Include="command\todo\cBRequestUseInventoryPacket.cs" />
+    <Compile Include="command\todo\cBRequestValidateContentList.cs" />
+    <Compile Include="command\todo\cBRequestVisitCityPacket.cs" />
+    <Compile Include="command\todo\cBSecureTradeAcceptRequest.cs" />
+    <Compile Include="command\todo\cBSecureTradeRequestCancel.cs" />
+    <Compile Include="command\todo\cBSecureTradeRequestTrade.cs" />
+    <Compile Include="command\todo\cBSecureTradeSetAcceptance.cs" />
+    <Compile Include="command\todo\cBSecureTradeSetItems.cs" />
+    <Compile Include="command\todo\cBSendBugReport.cs" />
+    <Compile Include="command\todo\cBSendMailRequest.cs" />
+    <Compile Include="command\todo\cBUnitStatePacket.cs" />
+    <Compile Include="command\todo\cBUpdateResourcesPacket.cs" />
+    <Compile Include="Server.cs" />
+    <Compile Include="Session.cs" />
+    <Compile Include="Properties\AssemblyInfo.cs" />
+  </ItemGroup>
+  <ItemGroup>
+    <ProjectReference Include="$(SolutionDir)libraries\Libraries.csproj">
+      <Project>{7df68b8c-5a53-4fad-b00d-7ae9dfc041c9}</Project>
+      <Name>Libraries</Name>
+    </ProjectReference>
+  </ItemGroup>
+  <ItemGroup />
+  <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
+</Project>

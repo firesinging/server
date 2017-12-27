@@ -1,0 +1,15 @@
+<?xml version="1.0"?>
+<Region xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xsd="http://www.w3.org/2001/XMLSchema" ID="7">
+  <Name>Nubia</Name>
+  <CivID>3</CivID>
+  <MapName>Regions/REGION_C02R2_Nubia</MapName>
+  <MapLocationX>0.67</MapLocationX>
+  <MapLocationY>0.07</MapLocationY>
+  <MapMarker>RegionDefault</MapMarker>
+  <MapPage>Nubia</MapPage>
+  <LoadScreen>UserInterface\LoadingScreens\ShipNubia_df</LoadScreen>
+  <DescriptionStringID>55625</DescriptionStringID>
+  <DisplayNameStringID>55624</DisplayNameStringID>
+  <AvatarShield>UserInterface\Avatar\RegionShieldNubia_ua</AvatarShield>
+  <FlagIcon>UserInterface\Icons\Regions\RegionFlagNubia_ua</FlagIcon>
+</Region>

@@ -1,0 +1,12 @@
+D:\Development\server\libraries\bin\Release\Libraries.dll
+D:\Development\server\libraries\bin\Release\Libraries.pdb
+D:\Development\server\libraries\obj\Release\Libraries.csprojResolveAssemblyReference.cache
+D:\Development\server\libraries\obj\Release\Libraries.dll
+D:\Development\server\libraries\obj\Release\Libraries.pdb
+D:\Development\server\libraries\bin\Release\Ionic.Zip.dll
+D:\Development\server\libraries\bin\Release\SuperSocket.Common.dll
+D:\Development\server\libraries\bin\Release\SuperSocket.Facility.dll
+D:\Development\server\libraries\bin\Release\SuperSocket.SocketBase.dll
+D:\Development\server\libraries\bin\Release\SuperSocket.Common.xml
+D:\Development\server\libraries\bin\Release\SuperSocket.Facility.xml
+D:\Development\server\libraries\bin\Release\SuperSocket.SocketBase.xml

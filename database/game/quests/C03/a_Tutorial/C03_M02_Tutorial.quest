@@ -1,0 +1,164 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<quest xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xsd="http://www.w3.org/2001/XMLSchema" uniqueid="13002" version="106">
+	<displayname>$$7162$$</displayname>
+	<level>1</level>
+	<repeatable>false</repeatable>
+	<timer>
+		<events/>
+		<hideonui>false</hideonui>
+	</timer>
+	<canplaycoop>false</canplaycoop>
+	<cooprequired>false</cooprequired>
+	<ranked>false</ranked>
+	<description>$$8031$$</description>
+	<completiontext>$$7116$$</completiontext>
+	<inprogresstext>$$8032$$</inprogresstext>
+	<summarytext>$$3529$$</summarytext>
+	<canabandon>false</canabandon>
+	<hiddenquest>false</hiddenquest>
+	<friendonly>false</friendonly>
+	<suppressnotifications>false</suppressnotifications>
+	<customquest>false</customquest>
+	<questtype>RandomMap</questtype>
+	<questgamemodetype>Normal</questgamemodetype>
+	<prereqs>
+		<values>
+			<civilization>
+				<id>6</id>
+			</civilization>
+			<questcomplete>
+				<id>13001</id>
+			</questcomplete>
+		</values>
+	</prereqs>
+	<equipmentprereqs/>
+	<targets/>
+	<objectives id="0" mustfailall="false">
+		<values>
+			<or id="1" mustfailall="false">
+				<values>
+					<and id="2" mustfailall="false">
+						<values>
+							<collectresource id="3">
+								<description>$$2368$$</description>
+								<type>Food</type>
+								<amount>250</amount>
+								<includeexisting>false</includeexisting>
+							</collectresource>
+							<buildunit id="4">
+								<description>$$2369$$</description>
+								<type>Ce_Civ_Villager</type>
+								<count>5</count>
+							</buildunit>
+							<unitdiscovered id="5">
+								<description>$$2543$$</description>
+								<type>AIStart</type>
+								<count>2</count>
+							</unitdiscovered>
+							<unitdiscovered id="6">
+								<description>$$2433$$</description>
+								<type>Resource_Fish</type>
+								<count>2</count>
+							</unitdiscovered>
+							<unitdiscovered id="7">
+								<description>$$2457$$</description>
+								<type>Qst_SpawnPoint1</type>
+								<count>2</count>
+							</unitdiscovered>
+						</values>
+					</and>
+					<reduceunitsto id="8">
+						<type>LogicalTypeNeededForVictory</type>
+						<count>0</count>
+						<includeteam>false</includeteam>
+						<includeunderconstruction>false</includeunderconstruction>
+						<canuncomplete>false</canuncomplete>
+						<causesfailure>true</causesfailure>
+						<playerid>1</playerid>
+					</reduceunitsto>
+					<reduceunitsto id="9">
+						<type>UnitTypeVillager1</type>
+						<count>0</count>
+						<includeteam>false</includeteam>
+						<includeunderconstruction>false</includeunderconstruction>
+						<canuncomplete>false</canuncomplete>
+						<causesfailure>true</causesfailure>
+						<playerid>1</playerid>
+					</reduceunitsto>
+					<reduceunitsto id="10">
+						<type>AbstractTownCenter</type>
+						<count>0</count>
+						<includeteam>false</includeteam>
+						<includeunderconstruction>false</includeunderconstruction>
+						<canuncomplete>false</canuncomplete>
+						<causesfailure>true</causesfailure>
+						<playerid>1</playerid>
+					</reduceunitsto>
+				</values>
+			</or>
+		</values>
+	</objectives>
+	<onaccept>
+		<protip visible="false">TIP_Shared_QuestMapAccessCity</protip>
+		<unlockequipment visible="false"/>
+	</onaccept>
+	<rewards visible="true">
+		<xp visible="true">800</xp>
+		<capitalresource visible="true">
+			<capitalresource>cCapResCoin</capitalresource>
+			<amount>20</amount>
+		</capitalresource>
+		<capitaltech visible="true">
+			<captechid>354</captechid>
+		</capitaltech>
+		<capitaltech visible="true">
+			<captechid>346</captechid>
+		</capitaltech>
+		<protip visible="false">TIP_C03_QuestTechUnlock_House</protip>
+		<protip visible="false">TIP_C03_QuestTechUnlock_Scout</protip>
+	</rewards>
+	<playersettings id="1">
+		<team>1</team>
+		<color>1</color>
+		<playertype>Human</playertype>
+		<cooponly>false</cooponly>
+		<startingfood>0</startingfood>
+		<startingwood>0</startingwood>
+		<startinggold>0</startinggold>
+		<startingstone>0</startingstone>
+		<aislidervariables/>
+		<aiflagvariables/>
+	</playersettings>
+	<diplomacysettings/>
+	<randommap>
+		<map>scenarioloader</map>
+		<randommap>true</randommap>
+		<numplayers>1</numplayers>
+		<mapvariables>
+			<variable name="scenarioFile" type="String">C03/C03_M02_Food</variable>
+			<variable name="region" type="String">Celtic Valley</variable>
+			<variable name="lighting" type="String">Afternoon</variable>
+			<variable name="mapSize" type="String">Standard</variable>
+		</mapvariables>
+		<nuggetoverrides>
+			<nuggetoverride overrideweight="1000000">Quest_C03_FirstGuardedNugget</nuggetoverride>
+		</nuggetoverrides>
+		<mapregionname>Celtic Valley</mapregionname>
+		<lightsetname>Afternoon</lightsetname>
+		<mapsizename>Standard</mapsizename>
+	</randommap>
+	<questgivers>
+		<protounit>C03_R1_Leader</protounit>
+	</questgivers>
+	<questreturners>
+		<protounit>C03_R1_Leader</protounit>
+	</questreturners>
+	<customloadscreen>loadscreentips\load_c03_r1m02.xml</customloadscreen>
+	<maplocationx>0.345</maplocationx>
+	<maplocationy>0.425</maplocationy>
+	<mapmarker>QuestDefault</mapmarker>
+	<mappage>C03_Celtica</mappage>
+	<elitespawnchance>0</elitespawnchance>
+	<victoryconditions/>
+</quest>

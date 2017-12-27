@@ -1,0 +1,82 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<quest xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xsd="http://www.w3.org/2001/XMLSchema" uniqueid="1385" version="33">
+	<displayname>$$9916$$</displayname>
+	<level>0</level>
+	<repeatable>true</repeatable>
+	<timer>
+		<events/>
+		<hideonui>false</hideonui>
+	</timer>
+	<canplaycoop>false</canplaycoop>
+	<cooprequired>false</cooprequired>
+	<ranked>false</ranked>
+	<alliance>eAllianceLegionOfCarthage</alliance>
+	<questtype>Global</questtype>
+	<description>$$9917$$</description>
+	<completiontext>$$9884$$</completiontext>
+	<inprogresstext>$$9883$$</inprogresstext>
+	<summarytext>$$9882$$</summarytext>
+	<canabandon>true</canabandon>
+	<hiddenquest>false</hiddenquest>
+	<friendonly>false</friendonly>
+	<suppressnotifications>false</suppressnotifications>
+	<customquest>false</customquest>
+	<questgamemodetype>Normal</questgamemodetype>
+	<prereqs>
+		<values>
+			<level>
+				<min>40</min>
+				<max>99</max>
+			</level>
+			<questcomplete>
+				<id>1300</id>
+			</questcomplete>
+		</values>
+	</prereqs>
+	<equipmentprereqs/>
+	<targets/>
+	<objectives id="0" mustfailall="false">
+		<values>
+			<collectmaterial id="1">
+				<description>$$9926$$</description>
+				<type>2BronzeIngot</type>
+				<amount>300</amount>
+				<includeexisting>true</includeexisting>
+			</collectmaterial>
+		</values>
+	</objectives>
+	<onaccept/>
+	<rewards visible="true">
+		<alliancepoints visible="true">
+			<amount>4</amount>
+		</alliancepoints>
+		<consumematerial visible="true">
+			<materialname>2BronzeIngot</materialname>
+			<count>300</count>
+		</consumematerial>
+	</rewards>
+	<diplomacysettings/>
+	<randommap>
+		<randommap>true</randommap>
+		<numplayers>0</numplayers>
+		<mapvariables/>
+		<nuggetoverrides/>
+		<mapregionname>&lt;Not Specified&gt;</mapregionname>
+		<lightsetname>&lt;Not Specified&gt;</lightsetname>
+		<mapsizename>&lt;Not Specified&gt;</mapsizename>
+	</randommap>
+	<questgivers>
+		<protounit>A03_AllianceCollector</protounit>
+	</questgivers>
+	<questreturners>
+		<protounit>A03_AllianceCollector</protounit>
+	</questreturners>
+	<maplocationx>0.5</maplocationx>
+	<maplocationy>0.5</maplocationy>
+	<mapmarker>Blank</mapmarker>
+	<mappage>Egypt</mappage>
+	<elitespawnchance>0</elitespawnchance>
+	<questbasescale>0</questbasescale>
+	<victoryconditions/>
+</quest>

@@ -1,0 +1,476 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<quest xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xsd="http://www.w3.org/2001/XMLSchema" uniqueid="337" version="67">
+	<displayname>$$580$$</displayname>
+	<level>16</level>
+	<repeatable>false</repeatable>
+	<offertype>eOfferNone</offertype>
+	<timer>
+		<time>00:12:00</time>
+		<events>
+			<timerevent event="P2PatrolPoint1">00:01:00</timerevent>
+			<timerevent event="P2PatrolPoint2">00:01:00</timerevent>
+			<timerevent event="P2PatrolPoint3">00:01:00</timerevent>
+			<timerevent event="P2PatrolPoint4">00:01:00</timerevent>
+			<timerevent event="P3PatrolPoint1">00:01:00</timerevent>
+			<timerevent event="P3PatrolPoint2">00:01:00</timerevent>
+			<timerevent event="P3PatrolPoint3">00:01:00</timerevent>
+			<timerevent event="P3PatrolPoint4">00:01:00</timerevent>
+		</events>
+		<hideonui>false</hideonui>
+	</timer>
+	<canplaycoop>true</canplaycoop>
+	<cooprequired>false</cooprequired>
+	<ranked>false</ranked>
+	<alliance>eAllianceNone</alliance>
+	<questtype>RandomMap</questtype>
+	<description>$$5773$$</description>
+	<completiontext>$$582$$</completiontext>
+	<inprogresstext>$$8270$$</inprogresstext>
+	<summarytext>$$6647$$</summarytext>
+	<canabandon>true</canabandon>
+	<hiddenquest>false</hiddenquest>
+	<friendonly>false</friendonly>
+	<suppressnotifications>false</suppressnotifications>
+	<customquest>false</customquest>
+	<questgamemodetype>Normal</questgamemodetype>
+	<prereqs>
+		<values>
+			<civilization>
+				<id>3</id>
+			</civilization>
+			<questcomplete>
+				<id>330</id>
+			</questcomplete>
+		</values>
+	</prereqs>
+	<equipmentprereqs/>
+	<targets>
+		<grouping>
+			<cooponly>false</cooponly>
+			<forcetocenter>false</forcetocenter>
+			<name>Player1</name>
+			<count>1</count>
+			<team>1</team>
+			<area>Player1</area>
+			<groupfilename>Shared_Start_Barracks</groupfilename>
+			<rottype>Rotate0</rottype>
+			<rotateunitorientations>false</rotateunitorientations>
+		</grouping>
+		<grouping>
+			<cooponly>true</cooponly>
+			<forcetocenter>false</forcetocenter>
+			<name>Player2</name>
+			<count>1</count>
+			<team>5</team>
+			<area>Player2</area>
+			<groupfilename>Shared_Start_Barracks</groupfilename>
+			<rottype>Rotate0</rottype>
+			<rotateunitorientations>false</rotateunitorientations>
+		</grouping>
+		<grouping>
+			<cooponly>false</cooponly>
+			<forcetocenter>false</forcetocenter>
+			<name>Nubian1</name>
+			<count>1</count>
+			<team>2</team>
+			<area>Quest_Area_C</area>
+			<groupfilename>C02\Nubian\C02_Nubian_LargeStart_02</groupfilename>
+			<rottype>Rotate0</rottype>
+			<rotateunitorientations>false</rotateunitorientations>
+		</grouping>
+		<grouping>
+			<cooponly>false</cooponly>
+			<forcetocenter>false</forcetocenter>
+			<name>Nubian2</name>
+			<count>1</count>
+			<team>3</team>
+			<area>Quest_Area_B</area>
+			<groupfilename>C02\Nubian\C02_Nubian_LargeStart_01</groupfilename>
+			<rottype>Rotate0</rottype>
+			<rotateunitorientations>false</rotateunitorientations>
+		</grouping>
+		<protounit>
+			<cooponly>false</cooponly>
+			<forcetocenter>false</forcetocenter>
+			<name>Extra_Villagers_P2</name>
+			<protoname>Eg_Civ_Villager</protoname>
+			<count>15</count>
+			<team>2</team>
+			<area>Quest_Area_C</area>
+			<usequesttargetindicator>false</usequesttargetindicator>
+		</protounit>
+		<protounit>
+			<cooponly>false</cooponly>
+			<forcetocenter>false</forcetocenter>
+			<name>Extra_Villagers_P3</name>
+			<protoname>Eg_Civ_Villager</protoname>
+			<count>15</count>
+			<team>3</team>
+			<area>Quest_Area_B</area>
+			<usequesttargetindicator>false</usequesttargetindicator>
+		</protounit>
+		<protounit>
+			<cooponly>false</cooponly>
+			<forcetocenter>false</forcetocenter>
+			<name>Extra_Spearmen_P2</name>
+			<protoname>Eg_Inf_Spearman</protoname>
+			<count>12</count>
+			<team>2</team>
+			<area>Quest_Area_C</area>
+			<usequesttargetindicator>false</usequesttargetindicator>
+		</protounit>
+		<protounit>
+			<cooponly>false</cooponly>
+			<forcetocenter>false</forcetocenter>
+			<name>Extra_Spearmen_P3</name>
+			<protoname>Eg_Inf_Spearman</protoname>
+			<count>12</count>
+			<team>3</team>
+			<area>Quest_Area_B</area>
+			<usequesttargetindicator>false</usequesttargetindicator>
+		</protounit>
+	</targets>
+	<objectives id="0" mustfailall="false">
+		<values>
+			<or id="1" mustfailall="false">
+				<values>
+					<timer id="2">
+						<description>$$2471$$</description>
+						<failonexpire>true</failonexpire>
+					</timer>
+					<kill id="3">
+						<description>$$2567$$</description>
+						<type>Eg_Civ_Villager</type>
+						<count>30</count>
+						<includeconversion>true</includeconversion>
+						<onlycountelites>false</onlycountelites>
+					</kill>
+					<reduceunitsto id="4">
+						<type>LogicalTypeNeededForVictory</type>
+						<count>0</count>
+						<includeteam>true</includeteam>
+						<includeunderconstruction>false</includeunderconstruction>
+						<canuncomplete>false</canuncomplete>
+						<causesfailure>true</causesfailure>
+						<playerid>1</playerid>
+					</reduceunitsto>
+				</values>
+			</or>
+		</values>
+	</objectives>
+	<onaccept/>
+	<timereffects event="P2PatrolPoint1">
+		<spawnunit visible="true">
+			<count>1</count>
+			<placeunittype>AILandPoint1</placeunittype>
+			<asplayer>2</asplayer>
+			<spawntype>SpawnForAllies</spawntype>
+			<nearunittype>Eg_Bldg_StoreHouse</nearunittype>
+			<radius>20</radius>
+			<useboneposition>false</useboneposition>
+			<overrides/>
+		</spawnunit>
+	</timereffects>
+	<timereffects event="P2PatrolPoint2">
+		<spawnunit visible="true">
+			<count>1</count>
+			<placeunittype>AILandPoint2</placeunittype>
+			<asplayer>2</asplayer>
+			<spawntype>SpawnForAllies</spawntype>
+			<nearunittype>Eg_Bldg_StoreHouse</nearunittype>
+			<radius>20</radius>
+			<useboneposition>false</useboneposition>
+			<overrides/>
+		</spawnunit>
+	</timereffects>
+	<timereffects event="P2PatrolPoint3">
+		<spawnunit visible="true">
+			<count>1</count>
+			<placeunittype>AILandPoint3</placeunittype>
+			<asplayer>2</asplayer>
+			<spawntype>SpawnForAllies</spawntype>
+			<nearunittype>Eg_Bldg_StoreHouse</nearunittype>
+			<radius>20</radius>
+			<useboneposition>false</useboneposition>
+			<overrides/>
+		</spawnunit>
+	</timereffects>
+	<timereffects event="P2PatrolPoint4">
+		<spawnunit visible="true">
+			<count>1</count>
+			<placeunittype>AILandPoint4</placeunittype>
+			<asplayer>2</asplayer>
+			<spawntype>SpawnForAllies</spawntype>
+			<nearunittype>Eg_Bldg_StoreHouse</nearunittype>
+			<radius>20</radius>
+			<useboneposition>false</useboneposition>
+			<overrides/>
+		</spawnunit>
+	</timereffects>
+	<timereffects event="P3PatrolPoint1">
+		<spawnunit visible="true">
+			<count>1</count>
+			<placeunittype>AILandPoint1</placeunittype>
+			<asplayer>3</asplayer>
+			<spawntype>SpawnForAllies</spawntype>
+			<nearunittype>Eg_Bldg_StoreHouse</nearunittype>
+			<radius>20</radius>
+			<useboneposition>false</useboneposition>
+			<overrides/>
+		</spawnunit>
+	</timereffects>
+	<timereffects event="P3PatrolPoint2">
+		<spawnunit visible="true">
+			<count>1</count>
+			<placeunittype>AILandPoint2</placeunittype>
+			<asplayer>3</asplayer>
+			<spawntype>SpawnForAllies</spawntype>
+			<nearunittype>Eg_Bldg_StoreHouse</nearunittype>
+			<radius>20</radius>
+			<useboneposition>false</useboneposition>
+			<overrides/>
+		</spawnunit>
+	</timereffects>
+	<timereffects event="P3PatrolPoint3">
+		<spawnunit visible="true">
+			<count>1</count>
+			<placeunittype>AILandPoint3</placeunittype>
+			<asplayer>3</asplayer>
+			<spawntype>SpawnForAllies</spawntype>
+			<nearunittype>Eg_Bldg_StoreHouse</nearunittype>
+			<radius>20</radius>
+			<useboneposition>false</useboneposition>
+			<overrides/>
+		</spawnunit>
+	</timereffects>
+	<timereffects event="P3PatrolPoint4">
+		<spawnunit visible="true">
+			<count>1</count>
+			<placeunittype>AILandPoint4</placeunittype>
+			<asplayer>3</asplayer>
+			<spawntype>SpawnForAllies</spawntype>
+			<nearunittype>Eg_Bldg_StoreHouse</nearunittype>
+			<radius>20</radius>
+			<useboneposition>false</useboneposition>
+			<overrides/>
+		</spawnunit>
+	</timereffects>
+	<rewards visible="true">
+		<xp visible="true">30000</xp>
+		<capitalresource visible="true">
+			<capitalresource>cCapResCoin</capitalresource>
+			<amount>150</amount>
+		</capitalresource>
+		<loottable visible="true">general</loottable>
+		<loottable visible="true">general</loottable>
+		<or visible="true">
+			<material visible="true">
+				<materialname>2Leather</materialname>
+				<count>100</count>
+			</material>
+			<material visible="true">
+				<materialname>2OliveOil</materialname>
+				<count>100</count>
+			</material>
+			<material visible="true">
+				<materialname>2BronzeIngot</materialname>
+				<count>100</count>
+			</material>
+			<material visible="true">
+				<materialname>2GraniteBlock</materialname>
+				<count>100</count>
+			</material>
+			<material visible="true">
+				<materialname>2OakPlank</materialname>
+				<count>100</count>
+			</material>
+		</or>
+	</rewards>
+	<playersettings id="1">
+		<team>1</team>
+		<color>1</color>
+		<tributablebehavior>Default</tributablebehavior>
+		<playertype>Human</playertype>
+		<cooponly>false</cooponly>
+		<startingfood>-1</startingfood>
+		<startingwood>-1</startingwood>
+		<startinggold>-1</startinggold>
+		<startingstone>-1</startingstone>
+		<aislidervariables/>
+		<aiflagvariables/>
+	</playersettings>
+	<playersettings id="2">
+		<team>2</team>
+		<color>2</color>
+		<tributablebehavior>Default</tributablebehavior>
+		<playertype>Computer</playertype>
+		<personality>$$2261$$</personality>
+		<script>CORE\Boom_Weak</script>
+		<dataset>C02\C02_Vanilla_T0</dataset>
+		<cooponly>false</cooponly>
+		<startingfood>500</startingfood>
+		<startingwood>-1</startingwood>
+		<startinggold>-1</startinggold>
+		<startingstone>-1</startingstone>
+		<aislidervariables>
+			<aivariable>
+				<key>EconomyHandicap</key>
+				<value>0.5</value>
+			</aivariable>
+			<aivariable>
+				<key>InfantryBias</key>
+				<value>0.4</value>
+			</aivariable>
+			<aivariable>
+				<key>ArcherBias</key>
+				<value>-1</value>
+			</aivariable>
+			<aivariable>
+				<key>CavalryBias</key>
+				<value>-1</value>
+			</aivariable>
+			<aivariable>
+				<key>NavyBias</key>
+				<value>-1</value>
+			</aivariable>
+			<aivariable>
+				<key>SiegeBias</key>
+				<value>-1</value>
+			</aivariable>
+		</aislidervariables>
+		<aiflagvariables>
+			<aivariable>
+				<key>NoTrainArmy</key>
+				<value>0</value>
+			</aivariable>
+		</aiflagvariables>
+	</playersettings>
+	<playersettings id="3">
+		<team>2</team>
+		<color>2</color>
+		<tributablebehavior>Default</tributablebehavior>
+		<playertype>Computer</playertype>
+		<personality>$$2261$$</personality>
+		<script>CORE\Boom_Weak</script>
+		<dataset>C02\C02_Vanilla_T0</dataset>
+		<cooponly>false</cooponly>
+		<startingfood>10000</startingfood>
+		<startingwood>10000</startingwood>
+		<startinggold>10000</startinggold>
+		<startingstone>10000</startingstone>
+		<aislidervariables>
+			<aivariable>
+				<key>EconomyHandicap</key>
+				<value>0.5</value>
+			</aivariable>
+			<aivariable>
+				<key>InfantryBias</key>
+				<value>0.4</value>
+			</aivariable>
+			<aivariable>
+				<key>ArcherBias</key>
+				<value>-1</value>
+			</aivariable>
+			<aivariable>
+				<key>CavalryBias</key>
+				<value>-1</value>
+			</aivariable>
+			<aivariable>
+				<key>NavyBias</key>
+				<value>-1</value>
+			</aivariable>
+			<aivariable>
+				<key>SiegeBias</key>
+				<value>-1</value>
+			</aivariable>
+		</aislidervariables>
+		<aiflagvariables>
+			<aivariable>
+				<key>NoScout</key>
+				<value>0</value>
+			</aivariable>
+			<aivariable>
+				<key>NoResign</key>
+				<value>0</value>
+			</aivariable>
+			<aivariable>
+				<key>NoTrainArmy</key>
+				<value>0</value>
+			</aivariable>
+			<aivariable>
+				<key>NoAttack</key>
+				<value>0</value>
+			</aivariable>
+		</aiflagvariables>
+	</playersettings>
+	<playersettings id="4">
+		<team>2</team>
+		<color>2</color>
+		<tributablebehavior>Default</tributablebehavior>
+		<playertype>Computer</playertype>
+		<personality>$$2266$$</personality>
+		<script/>
+		<dataset>C02\C02_Vanilla_T0</dataset>
+		<cooponly>false</cooponly>
+		<startingfood>0</startingfood>
+		<startingwood>0</startingwood>
+		<startinggold>0</startinggold>
+		<startingstone>0</startingstone>
+		<aislidervariables/>
+		<aiflagvariables>
+			<aivariable>
+				<key>NoScout</key>
+				<value>0</value>
+			</aivariable>
+			<aivariable>
+				<key>NoResign</key>
+				<value>0</value>
+			</aivariable>
+		</aiflagvariables>
+	</playersettings>
+	<playersettings id="5">
+		<team>1</team>
+		<color>7</color>
+		<tributablebehavior>Default</tributablebehavior>
+		<playertype>Human</playertype>
+		<cooponly>true</cooponly>
+		<startingfood>-1</startingfood>
+		<startingwood>-1</startingwood>
+		<startinggold>-1</startinggold>
+		<startingstone>-1</startingstone>
+		<aislidervariables/>
+		<aiflagvariables/>
+	</playersettings>
+	<diplomacysettings/>
+	<randommap>
+		<map>Core\Shared\Shared_RM_Land_FairFight</map>
+		<randommap>true</randommap>
+		<numplayers>5</numplayers>
+		<mapvariables>
+			<variable name="P2LandPatrolCount" type="Int">12</variable>
+			<variable name="P3LandPatrolCount" type="Int">12</variable>
+			<variable name="region" type="String">Egyptian Sand</variable>
+			<variable name="lighting" type="String">Evening</variable>
+			<variable name="mapSize" type="String">Large</variable>
+		</mapvariables>
+		<nuggetoverrides/>
+		<mapregionname>Egyptian Sand</mapregionname>
+		<lightsetname>Evening</lightsetname>
+		<mapsizename>Large</mapsizename>
+	</randommap>
+	<questgivers>
+		<protounit>C02_R2_GeneralChafre</protounit>
+	</questgivers>
+	<questreturners>
+		<protounit>C02_R2_GeneralChafre</protounit>
+	</questreturners>
+	<maplocationx>0.575</maplocationx>
+	<maplocationy>0.8</maplocationy>
+	<mapmarker>QuestDefault</mapmarker>
+	<mappage>Nubia</mappage>
+	<elitespawnchance>0</elitespawnchance>
+	<linkedquestid>0</linkedquestid>
+	<questbasescale>0</questbasescale>
+	<victoryconditions/>
+</quest>

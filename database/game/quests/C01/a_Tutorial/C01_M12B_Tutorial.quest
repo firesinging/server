@@ -1,0 +1,245 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<quest xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xsd="http://www.w3.org/2001/XMLSchema" uniqueid="11036" version="140">
+	<displayname>$$3765$$</displayname>
+	<level>3</level>
+	<repeatable>false</repeatable>
+	<timer>
+		<time/>
+		<events/>
+		<hideonui>false</hideonui>
+	</timer>
+	<canplaycoop>false</canplaycoop>
+	<cooprequired>false</cooprequired>
+	<ranked>false</ranked>
+	<description>$$3780$$</description>
+	<completiontext>$$3779$$</completiontext>
+	<inprogresstext>$$3758$$</inprogresstext>
+	<summarytext>$$3817$$</summarytext>
+	<canabandon>false</canabandon>
+	<hiddenquest>false</hiddenquest>
+	<friendonly>false</friendonly>
+	<suppressnotifications>false</suppressnotifications>
+	<customquest>false</customquest>
+	<questtype>RandomMap</questtype>
+	<questgamemodetype>Normal</questgamemodetype>
+	<prereqs>
+		<values>
+			<civilization>
+				<id>1</id>
+			</civilization>
+			<questcomplete>
+				<id>11011</id>
+			</questcomplete>
+		</values>
+	</prereqs>
+	<equipmentprereqs/>
+	<targets>
+		<protounit>
+			<cooponly>false</cooponly>
+			<forcetocenter>false</forcetocenter>
+			<name>StrandedVillager1</name>
+			<protoname>ConvertVillager01</protoname>
+			<count>10</count>
+			<team>2</team>
+			<area>Quest_Area_A</area>
+			<overrides parent="Qst_Convertable">
+				<displaynameid>60367</displaynameid>
+				<animfile>CivGreek\Units\Civilian\Villager\Villager.xml</animfile>
+				<portraiticon>UserInterface\Icons\Units\AvatarVillagers_ua</portraiticon>
+				<soundfile>Gr_Civ_Villager</soundfile>
+				<icon>UserInterface\Icons\Units\Villager64_ua</icon>
+			</overrides>
+			<usequesttargetindicator>true</usequesttargetindicator>
+		</protounit>
+	</targets>
+	<objectives id="0" mustfailall="false">
+		<values>
+			<or id="1" mustfailall="false">
+				<values>
+					<and id="2" mustfailall="false">
+						<values>
+							<repairunit id="3">
+								<description>$$3814$$</description>
+								<type>Gr_Bldg_TownCenter</type>
+								<count>1</count>
+								<playerid>1</playerid>
+							</repairunit>
+							<techstatus id="4">
+								<description>$$2464$$</description>
+								<name>GreekCapAge2</name>
+								<status>Active</status>
+							</techstatus>
+							<collectresource id="5">
+								<description>$$2373$$</description>
+								<type>Wood</type>
+								<amount>400</amount>
+								<includeexisting>false</includeexisting>
+							</collectresource>
+							<buildunit id="6">
+								<description>$$2467$$</description>
+								<type>Gr_Bldg_Farm</type>
+								<count>4</count>
+							</buildunit>
+							<unitinarea id="7">
+								<description>$$3813$$</description>
+								<area>Player1</area>
+								<type>ConvertVillager01</type>
+								<count>10</count>
+								<radius>15</radius>
+								<aidefend>true</aidefend>
+							</unitinarea>
+						</values>
+					</and>
+					<reduceunitsto id="8">
+						<type>LogicalTypeNeededForVictory</type>
+						<count>0</count>
+						<includeteam>false</includeteam>
+						<includeunderconstruction>false</includeunderconstruction>
+						<canuncomplete>false</canuncomplete>
+						<causesfailure>true</causesfailure>
+						<playerid>1</playerid>
+					</reduceunitsto>
+					<reduceunitsto id="9">
+						<type>Gr_Civ_UtilityBoat</type>
+						<count>0</count>
+						<includeteam>false</includeteam>
+						<includeunderconstruction>false</includeunderconstruction>
+						<canuncomplete>false</canuncomplete>
+						<causesfailure>true</causesfailure>
+						<playerid>1</playerid>
+					</reduceunitsto>
+					<and id="10" mustfailall="true">
+						<values>
+							<reduceunitsto id="11">
+								<type>AbstractTownCenter</type>
+								<count>0</count>
+								<includeteam>false</includeteam>
+								<includeunderconstruction>false</includeunderconstruction>
+								<canuncomplete>false</canuncomplete>
+								<causesfailure>true</causesfailure>
+								<playerid>1</playerid>
+							</reduceunitsto>
+							<reduceunitsto id="12">
+								<type>UnitTypeVillager1</type>
+								<count>0</count>
+								<includeteam>false</includeteam>
+								<includeunderconstruction>false</includeunderconstruction>
+								<canuncomplete>false</canuncomplete>
+								<causesfailure>true</causesfailure>
+								<playerid>1</playerid>
+							</reduceunitsto>
+						</values>
+					</and>
+				</values>
+			</or>
+		</values>
+	</objectives>
+	<onaccept/>
+	<rewards visible="true">
+		<xp visible="true">1000</xp>
+		<capitalresource visible="true">
+			<capitalresource>cCapResCoin</capitalresource>
+			<amount>40</amount>
+		</capitalresource>
+		<material visible="true">
+			<materialname>StoneBlock</materialname>
+			<count>100</count>
+		</material>
+		<material visible="true">
+			<materialname>PinePlank</materialname>
+			<count>100</count>
+		</material>
+		<questgiver visible="true">
+			<name>C01_R2_Trader</name>
+			<status>Unavailable</status>
+		</questgiver>
+		<questgiver visible="true">
+			<name>C01_R2_Trader_V2</name>
+			<status>Available</status>
+		</questgiver>
+		<or visible="true">
+			<blueprint visible="true">VanityGarden01</blueprint>
+			<blueprint visible="true">VanityGarden02</blueprint>
+		</or>
+	</rewards>
+	<playersettings id="1">
+		<team>1</team>
+		<color>1</color>
+		<tributablebehavior>Default</tributablebehavior>
+		<playertype>Human</playertype>
+		<cooponly>false</cooponly>
+		<startingfood>300</startingfood>
+		<startingwood>300</startingwood>
+		<startinggold>300</startinggold>
+		<startingstone>300</startingstone>
+		<aislidervariables/>
+		<aiflagvariables/>
+	</playersettings>
+	<playersettings id="2">
+		<team>2</team>
+		<color>3</color>
+		<tributablebehavior>Default</tributablebehavior>
+		<playertype>Computer</playertype>
+		<personality>$$3818$$</personality>
+		<dataset>c01\c01_vanilla_t0</dataset>
+		<cooponly>false</cooponly>
+		<startingfood>-1</startingfood>
+		<startingwood>-1</startingwood>
+		<startinggold>-1</startinggold>
+		<startingstone>-1</startingstone>
+		<aislidervariables/>
+		<aiflagvariables/>
+	</playersettings>
+	<playersettings id="3">
+		<team>3</team>
+		<color>2</color>
+		<tributablebehavior>Default</tributablebehavior>
+		<playertype>Computer</playertype>
+		<personality>$$2232$$</personality>
+		<dataset>C01\C01_Bandit_T0</dataset>
+		<cooponly>false</cooponly>
+		<startingfood>-1</startingfood>
+		<startingwood>-1</startingwood>
+		<startinggold>-1</startinggold>
+		<startingstone>-1</startingstone>
+		<aislidervariables/>
+		<aiflagvariables/>
+	</playersettings>
+	<diplomacysettings>
+		<diplomacy relation="Neutral" team1="1" team2="2" sharedlos="true"/>
+		<diplomacy relation="Neutral" team1="2" team2="1" sharedlos="true"/>
+		<diplomacy relation="Neutral" team1="3" team2="2" sharedlos="false"/>
+	</diplomacysettings>
+	<randommap>
+		<map>scenarioloader</map>
+		<randommap>true</randommap>
+		<numplayers>3</numplayers>
+		<mapvariables>
+			<variable name="scenarioFile" type="String">C01/C01_M12_Rescue</variable>
+			<variable name="region" type="String">Greek Inland</variable>
+			<variable name="lighting" type="String">Evening</variable>
+			<variable name="mapSize" type="String">Standard</variable>
+		</mapvariables>
+		<nuggetoverrides>
+			<nuggetoverride overrideweight="100000">Quest_C01_SecondGuardedNugget</nuggetoverride>
+		</nuggetoverrides>
+		<mapregionname>Greek Inland</mapregionname>
+		<lightsetname>Evening</lightsetname>
+		<mapsizename>Standard</mapsizename>
+	</randommap>
+	<questgivers>
+		<protounit>C01_R2_Trader</protounit>
+	</questgivers>
+	<questreturners>
+		<protounit>C01_R2_Trader</protounit>
+	</questreturners>
+	<customloadscreen>loadscreentips\load_c01_r1m12.xml</customloadscreen>
+	<maplocationx>0.29</maplocationx>
+	<maplocationy>0.33</maplocationy>
+	<mapmarker>QuestDefault</mapmarker>
+	<mappage>Greece</mappage>
+	<elitespawnchance>0</elitespawnchance>
+	<questbasescale>0</questbasescale>
+	<victoryconditions/>
+</quest>

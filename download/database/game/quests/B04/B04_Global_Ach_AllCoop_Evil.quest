@@ -1,0 +1,115 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<quest xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xsd="http://www.w3.org/2001/XMLSchema" uniqueid="104102" version="41">
+	<displayname>$$13058$$</displayname>
+	<level>-1</level>
+	<difficultycoloroverride>1</difficultycoloroverride>
+	<repeatable>false</repeatable>
+	<offertype>eOfferBooster4</offertype>
+	<timer>
+		<events/>
+		<hideonui>false</hideonui>
+	</timer>
+	<canplaycoop>false</canplaycoop>
+	<cooprequired>false</cooprequired>
+	<ranked>false</ranked>
+	<alliance>eAllianceNone</alliance>
+	<questtype>Global</questtype>
+	<description>$$13059$$</description>
+	<completiontext>$$13060$$</completiontext>
+	<inprogresstext>$$13123$$</inprogresstext>
+	<summarytext>$$12971$$</summarytext>
+	<canabandon>true</canabandon>
+	<hiddenquest>false</hiddenquest>
+	<friendonly>false</friendonly>
+	<suppressnotifications>false</suppressnotifications>
+	<customquest>false</customquest>
+	<questgamemodetype>Normal</questgamemodetype>
+	<prereqs>
+		<values>
+			<questcomplete>
+				<id>104051</id>
+			</questcomplete>
+		</values>
+	</prereqs>
+	<equipmentprereqs/>
+	<targets/>
+	<objectives id="0" mustfailall="false">
+		<values>
+			<or id="1" mustfailall="false">
+				<values>
+					<dummy id="2">
+						<description>$$13174$$</description>
+						<objectivename>UNUSED_DISPLAY_ONLY</objectivename>
+						<autocomplete>false</autocomplete>
+					</dummy>
+					<and id="3" mustfailall="false">
+						<values>
+							<dummy id="4">
+								<description>$$13146$$</description>
+								<objectivename>SENS_EVIL_COOP</objectivename>
+								<autocomplete>false</autocomplete>
+							</dummy>
+							<dummy id="5">
+								<description>$$12706$$</description>
+								<objectivename>CRETE_EVIL_COOP</objectivename>
+								<autocomplete>false</autocomplete>
+							</dummy>
+							<dummy id="6">
+								<description>$$2319$$</description>
+								<objectivename>ARGOS_EVIL_COOP</objectivename>
+								<autocomplete>false</autocomplete>
+							</dummy>
+							<dummy id="7">
+								<description>$$12704$$</description>
+								<objectivename>SPARTA_EVIL_COOP</objectivename>
+								<autocomplete>false</autocomplete>
+							</dummy>
+						</values>
+					</and>
+					<kill id="8">
+						<type>AILandPoint2</type>
+						<count>1</count>
+						<includeconversion>false</includeconversion>
+						<onlycountelites>false</onlycountelites>
+					</kill>
+				</values>
+			</or>
+		</values>
+	</objectives>
+	<onaccept/>
+	<rewards visible="true">
+		<capitalresource visible="true">
+			<capitalresource>cCapResCoin</capitalresource>
+			<amount>1</amount>
+			<lookuptable>B04Global</lookuptable>
+		</capitalresource>
+		<blueprint visible="true">Van_Cap_Nh_AlliedAssault</blueprint>
+		<loottable visible="true">general</loottable>
+		<loottable visible="true">general</loottable>
+	</rewards>
+	<diplomacysettings/>
+	<randommap>
+		<randommap>true</randommap>
+		<numplayers>0</numplayers>
+		<mapvariables/>
+		<nuggetoverrides/>
+		<mapregionname>&lt;Not Specified&gt;</mapregionname>
+		<lightsetname>&lt;Not Specified&gt;</lightsetname>
+		<mapsizename>&lt;Not Specified&gt;</mapsizename>
+	</randommap>
+	<questgivers>
+		<protounit>B04_Bard</protounit>
+	</questgivers>
+	<questreturners>
+		<protounit>B04_Bard</protounit>
+	</questreturners>
+	<maplocationx>0.5</maplocationx>
+	<maplocationy>0.5</maplocationy>
+	<mapmarker>Blank</mapmarker>
+	<mappage>Norse</mappage>
+	<elitespawnchance>0</elitespawnchance>
+	<linkedquestid>0</linkedquestid>
+	<questbasescale>3</questbasescale>
+	<victoryconditions/>
+</quest>

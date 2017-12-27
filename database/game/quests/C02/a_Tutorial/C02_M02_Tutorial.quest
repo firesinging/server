@@ -1,0 +1,163 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<quest xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xsd="http://www.w3.org/2001/XMLSchema" uniqueid="12002" version="56">
+	<displayname>$$370$$</displayname>
+	<level>1</level>
+	<repeatable>false</repeatable>
+	<timer>
+		<events/>
+		<hideonui>false</hideonui>
+	</timer>
+	<canplaycoop>false</canplaycoop>
+	<cooprequired>false</cooprequired>
+	<ranked>false</ranked>
+	<description>$$6274$$</description>
+	<completiontext>$$4635$$</completiontext>
+	<inprogresstext>$$4636$$</inprogresstext>
+	<summarytext>$$3529$$</summarytext>
+	<canabandon>false</canabandon>
+	<hiddenquest>false</hiddenquest>
+	<friendonly>false</friendonly>
+	<suppressnotifications>false</suppressnotifications>
+	<customquest>false</customquest>
+	<questtype>RandomMap</questtype>
+	<questgamemodetype>Normal</questgamemodetype>
+	<prereqs>
+		<values>
+			<civilization>
+				<id>3</id>
+			</civilization>
+			<questcomplete>
+				<id>12001</id>
+			</questcomplete>
+		</values>
+	</prereqs>
+	<equipmentprereqs/>
+	<targets/>
+	<objectives id="0" mustfailall="false">
+		<values>
+			<or id="1" mustfailall="false">
+				<values>
+					<and id="2" mustfailall="false">
+						<values>
+							<unitdiscovered id="3">
+								<description>$$2543$$</description>
+								<type>AIStart</type>
+								<count>2</count>
+							</unitdiscovered>
+							<unitdiscovered id="4">
+								<description>$$2433$$</description>
+								<type>Resource_Fish</type>
+								<count>2</count>
+							</unitdiscovered>
+							<unitdiscovered id="5">
+								<description>$$2544$$</description>
+								<type>Qst_SpawnPoint1</type>
+								<count>2</count>
+							</unitdiscovered>
+							<collectresource id="6">
+								<description>$$2368$$</description>
+								<type>Food</type>
+								<amount>250</amount>
+								<includeexisting>false</includeexisting>
+							</collectresource>
+							<buildunit id="7">
+								<description>$$2369$$</description>
+								<type>Eg_Civ_Villager</type>
+								<count>5</count>
+							</buildunit>
+						</values>
+					</and>
+					<reduceunitsto id="8">
+						<type>LogicalTypeNeededForVictory</type>
+						<count>0</count>
+						<includeteam>false</includeteam>
+						<includeunderconstruction>false</includeunderconstruction>
+						<canuncomplete>false</canuncomplete>
+						<causesfailure>true</causesfailure>
+						<playerid>1</playerid>
+					</reduceunitsto>
+					<reduceunitsto id="9">
+						<type>UnitTypeVillager1</type>
+						<count>0</count>
+						<includeteam>false</includeteam>
+						<includeunderconstruction>false</includeunderconstruction>
+						<canuncomplete>false</canuncomplete>
+						<causesfailure>true</causesfailure>
+						<playerid>1</playerid>
+					</reduceunitsto>
+					<reduceunitsto id="10">
+						<type>AbstractTownCenter</type>
+						<count>0</count>
+						<includeteam>false</includeteam>
+						<includeunderconstruction>false</includeunderconstruction>
+						<canuncomplete>false</canuncomplete>
+						<causesfailure>true</causesfailure>
+						<playerid>1</playerid>
+					</reduceunitsto>
+				</values>
+			</or>
+		</values>
+	</objectives>
+	<onaccept>
+		<protip visible="false">TIP_Shared_QuestMapAccessCity</protip>
+		<unlockequipment visible="false"/>
+	</onaccept>
+	<rewards visible="true">
+		<xp visible="true">800</xp>
+		<capitalresource visible="true">
+			<capitalresource>cCapResCoin</capitalresource>
+			<amount>20</amount>
+		</capitalresource>
+		<capitaltech visible="true">
+			<captechid>314</captechid>
+		</capitaltech>
+		<capitaltech visible="true">
+			<captechid>318</captechid>
+		</capitaltech>
+		<protip visible="false">TIP_C02_QuestTechUnlock_House</protip>
+		<protip visible="false">TIP_C02_QuestTechUnlock_Scout</protip>
+	</rewards>
+	<playersettings id="1">
+		<team>1</team>
+		<color>1</color>
+		<playertype>Human</playertype>
+		<cooponly>false</cooponly>
+		<startingfood>0</startingfood>
+		<startingwood>0</startingwood>
+		<startinggold>0</startinggold>
+		<startingstone>0</startingstone>
+		<aislidervariables/>
+		<aiflagvariables/>
+	</playersettings>
+	<diplomacysettings/>
+	<randommap>
+		<map>scenarioloader</map>
+		<randommap>true</randommap>
+		<numplayers>1</numplayers>
+		<mapvariables>
+			<variable name="scenarioFile" type="String">C02/C02_M02_Food</variable>
+			<variable name="region" type="String">Egyptian Sand</variable>
+			<variable name="lighting" type="String">Noon</variable>
+		</mapvariables>
+		<nuggetoverrides>
+			<nuggetoverride overrideweight="100000">Quest_C02_FirstGuardedNugget</nuggetoverride>
+		</nuggetoverrides>
+		<mapregionname>Egyptian Sand</mapregionname>
+		<lightsetname>Noon</lightsetname>
+		<mapsizename>&lt;Not Specified&gt;</mapsizename>
+	</randommap>
+	<questgivers>
+		<protounit>C02_R1_KingNarmer</protounit>
+	</questgivers>
+	<questreturners>
+		<protounit>C02_R1_KingNarmer</protounit>
+	</questreturners>
+	<customloadscreen>loadscreentips\load_c02_r1m02.xml</customloadscreen>
+	<maplocationx>0.431</maplocationx>
+	<maplocationy>0.242</maplocationy>
+	<mapmarker>QuestDefault</mapmarker>
+	<mappage>Egypt</mappage>
+	<elitespawnchance>0</elitespawnchance>
+	<victoryconditions/>
+</quest>

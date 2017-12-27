@@ -1,0 +1,147 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<quest xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xsd="http://www.w3.org/2001/XMLSchema" uniqueid="103040" version="30">
+	<displayname>$$11770$$</displayname>
+	<level>-1</level>
+	<difficultycoloroverride>1</difficultycoloroverride>
+	<repeatable>false</repeatable>
+	<offertype>eOfferBooster3</offertype>
+	<timer>
+		<events/>
+		<hideonui>false</hideonui>
+	</timer>
+	<canplaycoop>false</canplaycoop>
+	<cooprequired>false</cooprequired>
+	<ranked>false</ranked>
+	<alliance>eAllianceNone</alliance>
+	<questtype>Global</questtype>
+	<description>$$11921$$</description>
+	<completiontext>$$12129$$</completiontext>
+	<inprogresstext>$$11923$$</inprogresstext>
+	<summarytext>$$10693$$</summarytext>
+	<canabandon>true</canabandon>
+	<hiddenquest>false</hiddenquest>
+	<friendonly>false</friendonly>
+	<suppressnotifications>false</suppressnotifications>
+	<customquest>false</customquest>
+	<questgamemodetype>Normal</questgamemodetype>
+	<prereqs>
+		<values>
+			<questcomplete>
+				<id>103023</id>
+			</questcomplete>
+		</values>
+	</prereqs>
+	<equipmentprereqs/>
+	<targets/>
+	<objectives id="0" mustfailall="false">
+		<values>
+			<and id="1" mustfailall="false">
+				<values>
+					<collectmaterial id="2">
+						<description>$$10654$$</description>
+						<type>SH_Fungus</type>
+						<amount>1</amount>
+						<includeexisting>true</includeexisting>
+					</collectmaterial>
+					<collectmaterial id="3">
+						<description>$$10660$$</description>
+						<type>SH_Seed</type>
+						<amount>1</amount>
+						<includeexisting>true</includeexisting>
+					</collectmaterial>
+					<collectmaterial id="4">
+						<description>$$10656$$</description>
+						<type>SH_Spice</type>
+						<amount>1</amount>
+						<includeexisting>true</includeexisting>
+					</collectmaterial>
+					<collectmaterial id="5">
+						<description>$$10658$$</description>
+						<type>SH_Honey</type>
+						<amount>5</amount>
+						<includeexisting>true</includeexisting>
+					</collectmaterial>
+					<collectmaterial id="6">
+						<description>$$10659$$</description>
+						<type>SH_Tears</type>
+						<amount>1</amount>
+						<includeexisting>true</includeexisting>
+					</collectmaterial>
+					<collectmaterial id="7">
+						<description>$$10650$$</description>
+						<type>SH_Umbrella</type>
+						<amount>5</amount>
+						<includeexisting>true</includeexisting>
+					</collectmaterial>
+				</values>
+			</and>
+		</values>
+	</objectives>
+	<onaccept/>
+	<rewards visible="true">
+		<xp visible="true">
+			1
+			<lookuptable>SQLong</lookuptable>
+		</xp>
+		<capitalresource visible="true">
+			<capitalresource>cCapResCoin</capitalresource>
+			<amount>5000</amount>
+			<lookuptable/>
+		</capitalresource>
+		<consumematerial visible="true">
+			<materialname>SH_Fungus</materialname>
+			<count>1</count>
+		</consumematerial>
+		<consumematerial visible="true">
+			<materialname>SH_Seed</materialname>
+			<count>1</count>
+		</consumematerial>
+		<consumematerial visible="true">
+			<materialname>SH_Spice</materialname>
+			<count>1</count>
+		</consumematerial>
+		<consumematerial visible="true">
+			<materialname>SH_Honey</materialname>
+			<count>5</count>
+		</consumematerial>
+		<consumematerial visible="true">
+			<materialname>SH_Tears</materialname>
+			<count>1</count>
+		</consumematerial>
+		<consumematerial visible="true">
+			<materialname>SH_Umbrella</materialname>
+			<count>5</count>
+		</consumematerial>
+		<loottable visible="true">general</loottable>
+		<loottable visible="true">general</loottable>
+		<material visible="true">
+			<materialname>!VanityTicket</materialname>
+			<count>3</count>
+		</material>
+	</rewards>
+	<diplomacysettings/>
+	<randommap>
+		<randommap>true</randommap>
+		<numplayers>0</numplayers>
+		<mapvariables/>
+		<nuggetoverrides/>
+		<mapregionname>&lt;Not Specified&gt;</mapregionname>
+		<lightsetname>&lt;Not Specified&gt;</lightsetname>
+		<mapsizename>&lt;Not Specified&gt;</mapsizename>
+	</randommap>
+	<questgivers>
+		<protounit>Babylon_NewFactionLady</protounit>
+	</questgivers>
+	<questreturners>
+		<protounit>Babylon_NewFactionLady</protounit>
+	</questreturners>
+	<maplocationx>0.5</maplocationx>
+	<maplocationy>0.5</maplocationy>
+	<mapmarker>Blank</mapmarker>
+	<mappage>Persia</mappage>
+	<elitespawnchance>0</elitespawnchance>
+	<linkedquestid>0</linkedquestid>
+	<questbasescale>3</questbasescale>
+	<victoryconditions/>
+</quest>

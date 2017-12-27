@@ -1,0 +1,11 @@
+D:\Development\server\download\log4net.config
+D:\Development\server\download\app.config
+D:\Development\server\download\packages.config
+D:\Development\server\download\supersocket.cmd
+D:\Development\server\download\supersocket.sh
+D:\Development\server\download\Server.exe.config
+D:\Development\server\download\Server.exe
+D:\Development\server\download\Server.pdb
+D:\Development\server\Server\obj\Release\Server.csprojResolveAssemblyReference.cache
+D:\Development\server\Server\obj\Release\Server.exe
+D:\Development\server\Server\obj\Release\Server.pdb

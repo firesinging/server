@@ -1,0 +1,199 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<quest xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xsd="http://www.w3.org/2001/XMLSchema" uniqueid="267" version="53">
+	<displayname>$$2223$$</displayname>
+	<level>-1</level>
+	<repeatable>false</repeatable>
+	<offertype>eOfferNone</offertype>
+	<timer>
+		<time>00:02:00</time>
+		<events/>
+		<hideonui>false</hideonui>
+	</timer>
+	<canplaycoop>false</canplaycoop>
+	<cooprequired>false</cooprequired>
+	<ranked>false</ranked>
+	<alliance>eAllianceNone</alliance>
+	<questtype>RandomMap</questtype>
+	<description>$$5830$$</description>
+	<completiontext>$$555$$</completiontext>
+	<inprogresstext>$$1494$$</inprogresstext>
+	<summarytext>$$5065$$</summarytext>
+	<canabandon>true</canabandon>
+	<hiddenquest>false</hiddenquest>
+	<friendonly>false</friendonly>
+	<suppressnotifications>false</suppressnotifications>
+	<customquest>false</customquest>
+	<questgamemodetype>Normal</questgamemodetype>
+	<prereqs>
+		<values>
+			<civilization>
+				<id>3</id>
+			</civilization>
+			<questcomplete>
+				<id>266</id>
+			</questcomplete>
+		</values>
+	</prereqs>
+	<equipmentprereqs/>
+	<targets>
+		<protounit>
+			<cooponly>false</cooponly>
+			<forcetocenter>false</forcetocenter>
+			<name>PlayerCamels</name>
+			<protoname>Qst_CamelRider</protoname>
+			<count>5</count>
+			<team>1</team>
+			<area>Player1</area>
+			<usequesttargetindicator>false</usequesttargetindicator>
+		</protounit>
+	</targets>
+	<objectives id="0" mustfailall="false">
+		<values>
+			<or id="1" mustfailall="false">
+				<values>
+					<timer id="2">
+						<description>$$2471$$</description>
+						<failonexpire>true</failonexpire>
+					</timer>
+					<and id="3" mustfailall="false">
+						<values>
+							<unitinarea id="4">
+								<description>$$2587$$</description>
+								<area>Quest_Area_A</area>
+								<type>Qst_CamelRider</type>
+								<count>5</count>
+								<radius>-1</radius>
+								<aidefend>false</aidefend>
+							</unitinarea>
+							<unitinarea id="5">
+								<description>$$2588$$</description>
+								<area>Quest_Area_B</area>
+								<type>Qst_CamelRider</type>
+								<count>5</count>
+								<radius>-1</radius>
+								<aidefend>false</aidefend>
+							</unitinarea>
+							<unitinarea id="6">
+								<description>$$2589$$</description>
+								<area>Quest_Area_C</area>
+								<type>Qst_CamelRider</type>
+								<count>5</count>
+								<radius>-1</radius>
+								<aidefend>false</aidefend>
+							</unitinarea>
+							<unitinarea id="7">
+								<description>$$2590$$</description>
+								<area>Quest_Area_D</area>
+								<type>Qst_CamelRider</type>
+								<count>5</count>
+								<radius>-1</radius>
+								<aidefend>false</aidefend>
+							</unitinarea>
+							<unitinarea id="8">
+								<description>$$2591$$</description>
+								<area>Quest_Area_E</area>
+								<type>Qst_CamelRider</type>
+								<count>5</count>
+								<radius>-1</radius>
+								<aidefend>false</aidefend>
+							</unitinarea>
+							<unitinarea id="9">
+								<description>$$2592$$</description>
+								<area>Player2</area>
+								<type>Qst_CamelRider</type>
+								<count>5</count>
+								<radius>-1</radius>
+								<aidefend>false</aidefend>
+							</unitinarea>
+						</values>
+					</and>
+					<reduceunitsto id="10">
+						<type>Qst_CamelRider</type>
+						<count>4</count>
+						<includeteam>false</includeteam>
+						<includeunderconstruction>false</includeunderconstruction>
+						<canuncomplete>false</canuncomplete>
+						<causesfailure>true</causesfailure>
+						<playerid>1</playerid>
+					</reduceunitsto>
+				</values>
+			</or>
+		</values>
+	</objectives>
+	<onaccept/>
+	<rewards visible="true">
+		<xp visible="true">10000</xp>
+		<capitalresource visible="true">
+			<capitalresource>cCapResCoin</capitalresource>
+			<amount>100</amount>
+		</capitalresource>
+		<loottable visible="true">general</loottable>
+		<loottable visible="true">general</loottable>
+		<or visible="true">
+			<advisor visible="true">Hathor_U_III</advisor>
+			<advisor visible="true">Djer_U_III</advisor>
+		</or>
+	</rewards>
+	<playersettings id="1">
+		<team>1</team>
+		<color>1</color>
+		<tributablebehavior>Default</tributablebehavior>
+		<playertype>Human</playertype>
+		<cooponly>false</cooponly>
+		<startingfood>0</startingfood>
+		<startingwood>0</startingwood>
+		<startinggold>0</startinggold>
+		<startingstone>0</startingstone>
+		<aislidervariables/>
+		<aiflagvariables/>
+	</playersettings>
+	<playersettings id="2">
+		<team>2</team>
+		<color>2</color>
+		<tributablebehavior>Default</tributablebehavior>
+		<playertype>Computer</playertype>
+		<personality>$$2282$$</personality>
+		<script/>
+		<character>c02\c02_customcamelrace</character>
+		<cooponly>false</cooponly>
+		<startingfood>0</startingfood>
+		<startingwood>0</startingwood>
+		<startinggold>0</startinggold>
+		<startingstone>0</startingstone>
+		<aislidervariables/>
+		<aiflagvariables/>
+	</playersettings>
+	<diplomacysettings>
+		<diplomacy relation="Enemy" team1="1" team2="2" sharedlos="true"/>
+		<diplomacy relation="Enemy" team1="2" team2="1" sharedlos="false"/>
+	</diplomacysettings>
+	<randommap>
+		<map>scenarioloader</map>
+		<randommap>true</randommap>
+		<numplayers>2</numplayers>
+		<mapvariables>
+			<variable name="scenarioFile" type="String">C02/C02_Side_CamelRace</variable>
+			<variable name="region" type="String">Egyptian Rock</variable>
+			<variable name="lighting" type="String">Morning</variable>
+		</mapvariables>
+		<nuggetoverrides/>
+		<mapregionname>Egyptian Rock</mapregionname>
+		<lightsetname>Morning</lightsetname>
+		<mapsizename>&lt;Not Specified&gt;</mapsizename>
+	</randommap>
+	<questgivers>
+		<protounit>C02_R2_DesertTrader</protounit>
+	</questgivers>
+	<questreturners>
+		<protounit>C02_R2_DesertTrader</protounit>
+	</questreturners>
+	<maplocationx>0.62</maplocationx>
+	<maplocationy>0.23</maplocationy>
+	<mapmarker>QuestDefault</mapmarker>
+	<mappage>Nubia</mappage>
+	<elitespawnchance>0</elitespawnchance>
+	<linkedquestid>0</linkedquestid>
+	<questbasescale>0</questbasescale>
+	<victoryconditions/>
+</quest>

@@ -1,0 +1,117 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<quest xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xsd="http://www.w3.org/2001/XMLSchema" uniqueid="10101" version="65">
+	<displayname>$$5304$$</displayname>
+	<level>0</level>
+	<repeatable>false</repeatable>
+	<timer>
+		<events/>
+		<hideonui>false</hideonui>
+	</timer>
+	<canplaycoop>false</canplaycoop>
+	<cooprequired>false</cooprequired>
+	<ranked>false</ranked>
+	<alliance>eAllianceNone</alliance>
+	<questtype>CapitolCity</questtype>
+	<description>$$5942$$</description>
+	<completiontext>$$5937$$</completiontext>
+	<inprogresstext>$$5432$$</inprogresstext>
+	<summarytext>$$5938$$</summarytext>
+	<canabandon>true</canabandon>
+	<hiddenquest>false</hiddenquest>
+	<friendonly>true</friendonly>
+	<suppressnotifications>false</suppressnotifications>
+	<customquest>false</customquest>
+	<questgamemodetype>Normal</questgamemodetype>
+	<prereqs>
+		<values>
+			<level>
+				<min>5</min>
+				<max>99</max>
+			</level>
+		</values>
+	</prereqs>
+	<equipmentprereqs/>
+	<targets/>
+	<objectives id="0" mustfailall="false">
+		<values>
+			<or id="1" mustfailall="false">
+				<description>$$5425$$</description>
+				<values>
+					<unitdiscovered id="2">
+						<type>C01_R1_Ambassador_VISITPLAYER</type>
+						<count>1</count>
+					</unitdiscovered>
+					<unitdiscovered id="3">
+						<type>C02_R1_Ambassador_VISITPLAYER</type>
+						<count>1</count>
+					</unitdiscovered>
+					<unitdiscovered id="4">
+						<type>C03_R1_Ambassador_VISITPLAYER</type>
+						<count>1</count>
+					</unitdiscovered>
+					<unitdiscovered id="5">
+						<type>C04_R1_Ambassador_VISITPLAYER</type>
+						<count>1</count>
+					</unitdiscovered>
+					<unitdiscovered id="6">
+						<type>C06_R1_Ambassador_VISITPLAYER</type>
+						<count>1</count>
+					</unitdiscovered>
+					<unitdiscovered id="7">
+						<type>C07_R1_Ambassador_VISITPLAYER</type>
+						<count>1</count>
+					</unitdiscovered>
+				</values>
+			</or>
+			<queststatus id="8">
+				<description>$$13121$$</description>
+				<questid>10100</questid>
+				<queststatus>Complete</queststatus>
+			</queststatus>
+		</values>
+	</objectives>
+	<onaccept>
+		<protip visible="false">TIP_Shared_VisitingOtherPlayers</protip>
+	</onaccept>
+	<rewards visible="true">
+		<capitalresource visible="true">
+			<capitalresource>cCapResCoin</capitalresource>
+			<amount>5</amount>
+		</capitalresource>
+	</rewards>
+	<diplomacysettings/>
+	<randommap>
+		<randommap>true</randommap>
+		<numplayers>0</numplayers>
+		<mapvariables/>
+		<nuggetoverrides/>
+		<mapregionname>&lt;Not Specified&gt;</mapregionname>
+		<lightsetname>&lt;Not Specified&gt;</lightsetname>
+		<mapsizename>&lt;Not Specified&gt;</mapsizename>
+	</randommap>
+	<questgivers>
+		<protounit>C01_R1_Ambassador</protounit>
+		<protounit>C02_R1_Ambassador</protounit>
+		<protounit>C03_R1_Ambassador</protounit>
+		<protounit>C04_R1_Ambassador</protounit>
+		<protounit>C06_R1_Ambassador</protounit>
+		<protounit>C07_R1_Ambassador</protounit>
+	</questgivers>
+	<questreturners>
+		<protounit>C01_R1_Ambassador</protounit>
+		<protounit>C02_R1_Ambassador</protounit>
+		<protounit>C03_R1_Ambassador</protounit>
+		<protounit>C04_R1_Ambassador</protounit>
+		<protounit>C06_R1_Ambassador</protounit>
+		<protounit>C07_R1_Ambassador</protounit>
+	</questreturners>
+	<maplocationx>0.5</maplocationx>
+	<maplocationy>0.5</maplocationy>
+	<mapmarker>Blank</mapmarker>
+	<mappage>AmbassadorMap</mappage>
+	<elitespawnchance>0</elitespawnchance>
+	<linkedquestid>0</linkedquestid>
+	<questbasescale>0</questbasescale>
+	<victoryconditions/>
+</quest>

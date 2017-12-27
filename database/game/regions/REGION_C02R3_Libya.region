@@ -1,0 +1,15 @@
+<?xml version="1.0"?>
+<Region xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xsd="http://www.w3.org/2001/XMLSchema" ID="8">
+  <Name>Libya</Name>
+  <CivID>3</CivID>
+  <MapName>Regions/REGION_C02R3_Libya</MapName>
+  <MapLocationX>0.577</MapLocationX>
+  <MapLocationY>0.666</MapLocationY>
+  <MapMarker>RegionDefault</MapMarker>
+  <MapPage>Libya</MapPage>
+  <LoadScreen>UserInterface\LoadingScreens\ShipLibya_df</LoadScreen>
+  <DescriptionStringID>56799</DescriptionStringID>
+  <DisplayNameStringID>55825</DisplayNameStringID>
+  <AvatarShield>UserInterface\Avatar\RegionShieldLibya_ua</AvatarShield>
+  <FlagIcon>UserInterface\Icons\Regions\RegionFlagLibya_ua</FlagIcon>
+</Region>

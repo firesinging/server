@@ -1,0 +1,395 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<quest xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xsd="http://www.w3.org/2001/XMLSchema" uniqueid="251" version="94">
+	<displayname>$$400$$</displayname>
+	<level>10</level>
+	<repeatable>false</repeatable>
+	<timer>
+		<time>99:99:99</time>
+		<events>
+			<timerevent event="SiegeTower">00:03:00</timerevent>
+			<timerevent event="SiegeTower">00:06:00</timerevent>
+			<timerevent event="SiegeTower">00:09:00</timerevent>
+			<timerevent event="SiegeTower">00:12:00</timerevent>
+			<timerevent event="SiegeTower">00:15:00</timerevent>
+			<timerevent event="SiegeTower">00:18:00</timerevent>
+			<timerevent event="SiegeTower">00:21:00</timerevent>
+			<timerevent event="SiegeTower">00:24:00</timerevent>
+			<timerevent event="Siege1">00:25:00</timerevent>
+			<timerevent event="SiegeTower">00:26:00</timerevent>
+			<timerevent event="Siege1">00:28:00</timerevent>
+			<timerevent event="SiegeTower">00:30:00</timerevent>
+			<timerevent event="Siege1">00:31:00</timerevent>
+			<timerevent event="SiegeTower">00:32:00</timerevent>
+			<timerevent event="Siege1">00:34:00</timerevent>
+			<timerevent event="SiegeTower">00:36:00</timerevent>
+			<timerevent event="Siege1">00:37:00</timerevent>
+			<timerevent event="SiegeTower">00:38:00</timerevent>
+			<timerevent event="Siege1">00:40:00</timerevent>
+			<timerevent event="SiegeTower">00:42:00</timerevent>
+			<timerevent event="Siege1">00:43:00</timerevent>
+			<timerevent event="SiegeTower">00:44:00</timerevent>
+			<timerevent event="Siege1">00:46:00</timerevent>
+			<timerevent event="SiegeTower">00:48:00</timerevent>
+			<timerevent event="Siege1">00:49:00</timerevent>
+			<timerevent event="SiegeTower">00:50:00</timerevent>
+			<timerevent event="Siege1">00:51:00</timerevent>
+			<timerevent event="SiegeTower">00:52:00</timerevent>
+			<timerevent event="Siege1">00:53:00</timerevent>
+			<timerevent event="SiegeTower">00:54:00</timerevent>
+			<timerevent event="Siege1">00:55:00</timerevent>
+			<timerevent event="SiegeTower">00:56:00</timerevent>
+			<timerevent event="Siege1">00:57:00</timerevent>
+			<timerevent event="SiegeTower">00:58:00</timerevent>
+			<timerevent event="Siege1">00:59:00</timerevent>
+			<timerevent event="SiegeTower">00:60:00</timerevent>
+			<timerevent event="Siege1">00:61:00</timerevent>
+			<timerevent event="SiegeTower">00:62:00</timerevent>
+			<timerevent event="Siege1">00:63:00</timerevent>
+			<timerevent event="SiegeTower">00:64:00</timerevent>
+			<timerevent event="Siege1">00:65:00</timerevent>
+			<timerevent event="SiegeTower">00:66:00</timerevent>
+			<timerevent event="Siege1">00:67:00</timerevent>
+			<timerevent event="SiegeTower">00:68:00</timerevent>
+		</events>
+		<hideonui>true</hideonui>
+	</timer>
+	<canplaycoop>true</canplaycoop>
+	<cooprequired>false</cooprequired>
+	<ranked>false</ranked>
+	<alliance>eAllianceNone</alliance>
+	<questtype>RandomMap</questtype>
+	<description>$$6275$$</description>
+	<completiontext>$$5127$$</completiontext>
+	<inprogresstext>$$5128$$</inprogresstext>
+	<summarytext>$$4503$$</summarytext>
+	<canabandon>true</canabandon>
+	<hiddenquest>false</hiddenquest>
+	<friendonly>false</friendonly>
+	<suppressnotifications>false</suppressnotifications>
+	<customquest>false</customquest>
+	<questgamemodetype>Normal</questgamemodetype>
+	<prereqs>
+		<values>
+			<civilization>
+				<id>3</id>
+			</civilization>
+			<questcomplete>
+				<id>255</id>
+			</questcomplete>
+		</values>
+	</prereqs>
+	<equipmentprereqs/>
+	<targets>
+		<grouping>
+			<cooponly>true</cooponly>
+			<forcetocenter>false</forcetocenter>
+			<name>COOP</name>
+			<count>1</count>
+			<team>7</team>
+			<area>Player2</area>
+			<groupfilename>Shared_Start_Small</groupfilename>
+			<rottype>Rotate0</rottype>
+			<rotateunitorientations>false</rotateunitorientations>
+		</grouping>
+	</targets>
+	<objectives id="0" mustfailall="false">
+		<values>
+			<or id="1" mustfailall="false">
+				<values>
+					<dummy id="2">
+						<description>$$2557$$</description>
+						<objectivename>UNUSED</objectivename>
+						<autocomplete>false</autocomplete>
+					</dummy>
+					<and id="3" mustfailall="false">
+						<description/>
+						<values>
+							<reduceunitsto id="4">
+								<type>Eg_Bldg_TownCenter</type>
+								<count>0</count>
+								<includeteam>false</includeteam>
+								<includeunderconstruction>false</includeunderconstruction>
+								<canuncomplete>false</canuncomplete>
+								<causesfailure>false</causesfailure>
+								<playerid>2</playerid>
+							</reduceunitsto>
+							<reduceunitsto id="5">
+								<type>NPC_Badari_Fortress</type>
+								<count>0</count>
+								<includeteam>false</includeteam>
+								<includeunderconstruction>false</includeunderconstruction>
+								<canuncomplete>false</canuncomplete>
+								<causesfailure>false</causesfailure>
+								<playerid>2</playerid>
+							</reduceunitsto>
+						</values>
+					</and>
+					<and id="6" mustfailall="true">
+						<values>
+							<reduceunitsto id="7">
+								<type>LogicalTypeNeededForVictory</type>
+								<count>0</count>
+								<includeteam>false</includeteam>
+								<includeunderconstruction>false</includeunderconstruction>
+								<canuncomplete>false</canuncomplete>
+								<causesfailure>true</causesfailure>
+								<playerid>1</playerid>
+							</reduceunitsto>
+							<reduceunitsto id="8">
+								<type>LogicalTypeNeededForVictory</type>
+								<count>0</count>
+								<includeteam>false</includeteam>
+								<includeunderconstruction>false</includeunderconstruction>
+								<canuncomplete>false</canuncomplete>
+								<causesfailure>true</causesfailure>
+								<playerid>7</playerid>
+							</reduceunitsto>
+						</values>
+					</and>
+					<and id="9" mustfailall="false">
+						<values>
+							<dummy id="10">
+								<objectivename>TIMER_EFFECT_BUGFIX</objectivename>
+								<autocomplete>false</autocomplete>
+							</dummy>
+							<timer id="11">
+								<failonexpire>false</failonexpire>
+							</timer>
+						</values>
+					</and>
+				</values>
+			</or>
+		</values>
+	</objectives>
+	<onaccept/>
+	<timereffects event="Siege1">
+		<spawnunit visible="true">
+			<count>3</count>
+			<placeunittype>Eg_Cav_WarElephant</placeunittype>
+			<asplayer>3</asplayer>
+			<spawntype>SpawnForAllies</spawntype>
+			<nearunittype>Eg_Bldg_Stables</nearunittype>
+			<radius>20</radius>
+			<useboneposition>false</useboneposition>
+			<overrides/>
+		</spawnunit>
+	</timereffects>
+	<timereffects event="SiegeTower">
+		<spawnunit visible="true">
+			<count>3</count>
+			<placeunittype>Eg_Sie_SiegeTower</placeunittype>
+			<asplayer>3</asplayer>
+			<spawntype>SpawnForAllies</spawntype>
+			<nearunittype>Eg_Bldg_SiegeWorkshop</nearunittype>
+			<radius>20</radius>
+			<useboneposition>false</useboneposition>
+			<overrides/>
+		</spawnunit>
+	</timereffects>
+	<rewards visible="true">
+		<gamecurrency visible="true">
+			<gamecurrency>cGameCurEmpirePoints</gamecurrency>
+			<amount>6</amount>
+		</gamecurrency>
+		<xp visible="true">25000</xp>
+		<capitalresource visible="true">
+			<capitalresource>cCapResCoin</capitalresource>
+			<amount>100</amount>
+		</capitalresource>
+		<or visible="true">
+			<trait visible="true">
+				Spear1H_R001
+				<traitlevel>12</traitlevel>
+			</trait>
+			<trait visible="true">
+				Shield1H_R001
+				<traitlevel>12</traitlevel>
+			</trait>
+			<trait visible="true">
+				Bow1H_R001_VR
+				<traitlevel>12</traitlevel>
+			</trait>
+		</or>
+		<consumable visible="true">
+			<consumablename>ConsumableHP_C</consumablename>
+			<count>3</count>
+		</consumable>
+	</rewards>
+	<playersettings id="1">
+		<team>1</team>
+		<color>1</color>
+		<tributablebehavior>Default</tributablebehavior>
+		<playertype>Human</playertype>
+		<cooponly>false</cooponly>
+		<startingfood>700</startingfood>
+		<startingwood>600</startingwood>
+		<startinggold>500</startinggold>
+		<startingstone>0</startingstone>
+		<aislidervariables/>
+		<aiflagvariables/>
+	</playersettings>
+	<playersettings id="2">
+		<team>2</team>
+		<color>2</color>
+		<tributablebehavior>Default</tributablebehavior>
+		<playertype>Computer</playertype>
+		<personality>$$2255$$</personality>
+		<script>core\rush_heavy</script>
+		<dataset>c02\c02_badari_t2</dataset>
+		<cooponly>false</cooponly>
+		<startingfood>1000</startingfood>
+		<startingwood>1000</startingwood>
+		<startinggold>1000</startinggold>
+		<startingstone>1000</startingstone>
+		<aislidervariables>
+			<aivariable>
+				<key>EconomyHandicap</key>
+				<value>0.2</value>
+			</aivariable>
+			<aivariable>
+				<key>CavalryBias</key>
+				<value>0.2</value>
+			</aivariable>
+		</aislidervariables>
+		<aiflagvariables/>
+	</playersettings>
+	<playersettings id="3">
+		<team>1</team>
+		<color>3</color>
+		<tributablebehavior>Default</tributablebehavior>
+		<playertype>Computer</playertype>
+		<personality>$$2258$$</personality>
+		<script>CORE\Rush_Weak</script>
+		<dataset>C02\C02_CoreRush_T1</dataset>
+		<cooponly>false</cooponly>
+		<startingfood>0</startingfood>
+		<startingwood>0</startingwood>
+		<startinggold>0</startinggold>
+		<startingstone>0</startingstone>
+		<aislidervariables/>
+		<aiflagvariables>
+			<aivariable>
+				<key>UseWaves</key>
+				<value>0</value>
+			</aivariable>
+			<aivariable>
+				<key>NoResign</key>
+				<value>0</value>
+			</aivariable>
+			<aivariable>
+				<key>NoScout</key>
+				<value>0</value>
+			</aivariable>
+		</aiflagvariables>
+	</playersettings>
+	<playersettings id="4">
+		<team>2</team>
+		<color>2</color>
+		<tributablebehavior>Default</tributablebehavior>
+		<playertype>Computer</playertype>
+		<personality>$$2255$$</personality>
+		<script>custom\aidonothing</script>
+		<dataset>C02\C02_Badari_T2</dataset>
+		<cooponly>false</cooponly>
+		<startingfood>-1</startingfood>
+		<startingwood>-1</startingwood>
+		<startinggold>-1</startinggold>
+		<startingstone>-1</startingstone>
+		<aislidervariables/>
+		<aiflagvariables>
+			<aivariable>
+				<key>NoScout</key>
+				<value>0</value>
+			</aivariable>
+		</aiflagvariables>
+	</playersettings>
+	<playersettings id="5">
+		<team>3</team>
+		<color>3</color>
+		<tributablebehavior>Default</tributablebehavior>
+		<playertype>Computer</playertype>
+		<personality>$$2258$$</personality>
+		<script>custom\aidonothing</script>
+		<dataset>C02\C02_CoreRush_T1</dataset>
+		<cooponly>false</cooponly>
+		<startingfood>0</startingfood>
+		<startingwood>0</startingwood>
+		<startinggold>0</startinggold>
+		<startingstone>0</startingstone>
+		<aislidervariables/>
+		<aiflagvariables>
+			<aivariable>
+				<key>NoScout</key>
+				<value>0</value>
+			</aivariable>
+		</aiflagvariables>
+	</playersettings>
+	<playersettings id="6">
+		<team>3</team>
+		<color>3</color>
+		<tributablebehavior>Default</tributablebehavior>
+		<playertype>Computer</playertype>
+		<personality>$$2259$$</personality>
+		<script>custom\aidonothing</script>
+		<dataset>C02\C02_CoreRush_T2</dataset>
+		<cooponly>false</cooponly>
+		<startingfood>0</startingfood>
+		<startingwood>0</startingwood>
+		<startinggold>0</startinggold>
+		<startingstone>0</startingstone>
+		<aislidervariables/>
+		<aiflagvariables>
+			<aivariable>
+				<key>NoScout</key>
+				<value>0</value>
+			</aivariable>
+		</aiflagvariables>
+	</playersettings>
+	<playersettings id="7">
+		<team>1</team>
+		<color>7</color>
+		<tributablebehavior>Default</tributablebehavior>
+		<playertype>Human</playertype>
+		<cooponly>true</cooponly>
+		<startingfood>500</startingfood>
+		<startingwood>100</startingwood>
+		<startinggold>100</startinggold>
+		<startingstone>0</startingstone>
+		<aislidervariables/>
+		<aiflagvariables/>
+	</playersettings>
+	<diplomacysettings>
+		<diplomacy relation="Neutral" team1="1" team2="3" sharedlos="true"/>
+		<diplomacy relation="Neutral" team1="3" team2="1" sharedlos="false"/>
+	</diplomacysettings>
+	<randommap>
+		<map>scenarioloader</map>
+		<randommap>true</randommap>
+		<numplayers>7</numplayers>
+		<mapvariables>
+			<variable name="scenarioFile" type="String">C02/C02_R1M55_BadariFinalFight</variable>
+			<variable name="P2HateThreshold" type="Int">200</variable>
+			<variable name="region" type="String">Egyptian Marsh</variable>
+			<variable name="lighting" type="String">Afternoon</variable>
+			<variable name="mapSize" type="String"/>
+		</mapvariables>
+		<nuggetoverrides/>
+		<mapregionname>Egyptian Marsh</mapregionname>
+		<lightsetname>Afternoon</lightsetname>
+	</randommap>
+	<questgivers>
+		<protounit>C02_R1_CitySesostris</protounit>
+	</questgivers>
+	<questreturners>
+		<protounit>C02_R1_CitySesostris</protounit>
+	</questreturners>
+	<maplocationx>0.477</maplocationx>
+	<maplocationy>0.8</maplocationy>
+	<mapmarker>QuestDefault</mapmarker>
+	<mappage>Egypt</mappage>
+	<elitespawnchance>0</elitespawnchance>
+	<linkedquestid>0</linkedquestid>
+	<questbasescale>0</questbasescale>
+	<victoryconditions/>
+</quest>

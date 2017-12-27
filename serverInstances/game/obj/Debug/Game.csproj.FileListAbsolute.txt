@@ -1,0 +1,14 @@
+D:\Development\server\serverInstances\game\bin\Debug\Game.dll
+D:\Development\server\serverInstances\game\bin\Debug\Game.pdb
+D:\Development\server\serverInstances\game\bin\Debug\Libraries.dll
+D:\Development\server\serverInstances\game\bin\Debug\SuperSocket.Common.dll
+D:\Development\server\serverInstances\game\bin\Debug\SuperSocket.Facility.dll
+D:\Development\server\serverInstances\game\bin\Debug\SuperSocket.SocketBase.dll
+D:\Development\server\serverInstances\game\bin\Debug\Libraries.pdb
+D:\Development\server\serverInstances\game\bin\Debug\SuperSocket.Common.xml
+D:\Development\server\serverInstances\game\bin\Debug\SuperSocket.Facility.xml
+D:\Development\server\serverInstances\game\bin\Debug\SuperSocket.SocketBase.xml
+D:\Development\server\serverInstances\game\obj\Debug\Game.csprojResolveAssemblyReference.cache
+D:\Development\server\serverInstances\game\obj\Debug\Game.dll
+D:\Development\server\serverInstances\game\obj\Debug\Game.pdb
+D:\Development\server\serverInstances\game\bin\Debug\Ionic.Zip.dll
