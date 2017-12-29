@@ -1,0 +1,22 @@
+﻿<trait name="Gear_L001">
+	<dbid>1874</dbid>
+	<traittype>Gear</traittype>
+	<rarity>legendary</rarity>
+	<icon>UserInterface\Icons\Equipment\Generic\Gear\Inf\Greaves_L90_ua</icon>
+	<rollovertextid>60856</rollovertextid>
+	<displaynameid>60857</displaynameid>
+	<offertype>eOfferCivMatching</offertype>
+	<visualfactor type="Helmet" factor="90.0000" />
+	<sellable>1</sellable>
+	<tradeable>1</tradeable>
+	<destroyable>1</destroyable>
+	<canbestoredingearhall>0</canbestoredingearhall>
+	<effects>
+		<effect type="Data" bonus="false" amount="0.9758" scaling="-0.0073" subtype="MaximumVelocity" visible="true" relativity="Percent">
+			<target type="Player" />
+		</effect>
+		<effect type="Data" bonus="true" amount="1.0186" scaling="0.0065" subtype="Hitpoints" visible="true" relativity="Percent">
+			<target type="Player" />
+		</effect>
+	</effects>
+</trait>

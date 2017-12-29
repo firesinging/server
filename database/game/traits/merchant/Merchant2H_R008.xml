@@ -1,0 +1,33 @@
+﻿<trait name="Merchant2H_R008">
+	<dbid>857</dbid>
+	<traittype>Merchant</traittype>
+	<rarity>rare</rarity>
+	<icon>UserInterface\Icons\Equipment\Generic\Merchant\Log_R32_ua</icon>
+	<rollovertextid>54226</rollovertextid>
+	<displaynameid>54227</displaynameid>
+	<offertype>eOfferCivMatching</offertype>
+	<visualfactor type="Weapon" factor="32.0000" />
+	<sellable>1</sellable>
+	<tradeable>1</tradeable>
+	<destroyable>1</destroyable>
+	<canbestoredingearhall>0</canbestoredingearhall>
+	<effects>
+		<effect type="Data" bonus="true" amount="1.0112" scaling="0.0031" subtype="WorkRate" visible="true" relativity="Percent" action="Trade" unittype="AbstractTownCenter">
+			<target type="Player" />
+		</effect>
+		<effect type="Data" bonus="true" amount="1.0122" scaling="0.0029" subtype="Armor" visible="true" damagetype="Ranged" relativity="Percent">
+			<target type="Player" />
+		</effect>
+		<effect type="Data" bonus="true" amount="1.0112" scaling="0.0031" subtype="WorkRate" visible="false" relativity="Percent" action="Trade" unittype="AbstractDock">
+			<target type="Player" />
+		</effect>
+	</effects>
+	<levels>
+		<level>26</level>
+		<level>27</level>
+		<level>28</level>
+		<level>29</level>
+		<level>30</level>
+	</levels>
+	<craftlevels />
+</trait>

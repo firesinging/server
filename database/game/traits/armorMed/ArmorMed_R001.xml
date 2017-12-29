@@ -1,0 +1,30 @@
+﻿<trait name="ArmorMed_R001">
+	<dbid>515</dbid>
+	<traittype>ArmorMed</traittype>
+	<rarity>rare</rarity>
+	<icon>UserInterface\Icons\Equipment\Generic\Armor\Inf\Inf_R30_ua</icon>
+	<rollovertextid>53383</rollovertextid>
+	<displaynameid>53384</displaynameid>
+	<offertype>eOfferCivMatching</offertype>
+	<visualfactor type="Body" factor="30.0000" />
+	<sellable>1</sellable>
+	<tradeable>1</tradeable>
+	<destroyable>1</destroyable>
+	<canbestoredingearhall>0</canbestoredingearhall>
+	<effects>
+		<effect type="Data" bonus="true" amount="1.0449" scaling="0.0124" subtype="Hitpoints" visible="true" relativity="Percent">
+			<target type="Player" />
+		</effect>
+		<effect type="Data" bonus="true" amount="1.0122" scaling="0.0031" subtype="Armor" visible="true" damagetype="Cavalry" relativity="Percent">
+			<target type="Player" />
+		</effect>
+	</effects>
+	<levels>
+		<level>10</level>
+		<level>11</level>
+		<level>12</level>
+		<level>13</level>
+		<level>14</level>
+	</levels>
+	<craftlevels />
+</trait>

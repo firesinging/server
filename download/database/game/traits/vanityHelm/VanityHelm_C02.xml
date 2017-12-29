@@ -1,0 +1,16 @@
+﻿<trait name="VanityHelm_C02">
+	<dbid>2094</dbid>
+	<traittype>VanityHelm</traittype>
+	<rarity>common</rarity>
+	<icon>/UserInterface/Icons/Equipment/Vanity/115_AllianceImhotep_Gear_ua</icon>
+	<rollovertextid>65281</rollovertextid>
+	<displaynameid>65282</displaynameid>
+	<alliance>eAllianceCouncilOfImhotep</alliance>
+	<offertype>eOfferNone</offertype>
+	<equipsoundset>UI_Cons_Spc_Heroic</equipsoundset>
+	<visualfactor type="VanityHelmet" factor="115.0000" />
+	<sellable>1</sellable>
+	<tradeable>0</tradeable>
+	<destroyable>1</destroyable>
+	<canbestoredingearhall>1</canbestoredingearhall>
+</trait>

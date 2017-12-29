@@ -1,0 +1,27 @@
+﻿<trait name="ArmorLgt_U102">
+	<dbid>1530</dbid>
+	<traittype>ArmorLgt</traittype>
+	<rarity>uncommon</rarity>
+	<icon>UserInterface\Icons\Equipment\Generic\Armor\Cav\Cav_U10_ua</icon>
+	<rollovertextid>59260</rollovertextid>
+	<displaynameid>59261</displaynameid>
+	<offertype>eOfferNone</offertype>
+	<visualfactor type="Body" factor="10.0000" />
+	<sellable>1</sellable>
+	<tradeable>1</tradeable>
+	<destroyable>1</destroyable>
+	<canbestoredingearhall>0</canbestoredingearhall>
+	<effects>
+		<effect type="Data" bonus="true" amount="1.0449" scaling="0.0080" subtype="Hitpoints" visible="true" relativity="Percent">
+			<target type="Player" />
+		</effect>
+	</effects>
+	<levels>
+		<level>12</level>
+		<level>13</level>
+		<level>14</level>
+		<level>15</level>
+		<level>16</level>
+	</levels>
+	<craftlevels />
+</trait>

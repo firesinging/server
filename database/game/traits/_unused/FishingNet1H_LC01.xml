@@ -1,0 +1,26 @@
+﻿<trait name="FishingNet1H_LC01">
+	<dbid>2082</dbid>
+	<traittype>FishingNet</traittype>
+	<rarity>legendary</rarity>
+	<icon>UserInterface\Icons\Equipment\Generic\Fishnets\Net_L90_ua</icon>
+	<rollovertextid>65257</rollovertextid>
+	<displaynameid>65258</displaynameid>
+	<alliance>eAllianceCouncilOfImhotep</alliance>
+	<offertype>eOfferCivMatching</offertype>
+	<visualfactor type="Weapon" factor="0.0000" />
+	<sellable>1</sellable>
+	<tradeable>1</tradeable>
+	<destroyable>1</destroyable>
+	<canbestoredingearhall>0</canbestoredingearhall>
+	<effects>
+		<effect type="Data" bonus="true" amount="1.0093" scaling="0.0033" subtype="WorkRate" visible="true" relativity="Percent" action="Gather" unittype="AbstractFish">
+			<target type="Player" />
+		</effect>
+		<effect type="Data" bonus="true" amount="1.0112" scaling="0.0041" subtype="CarryCapacity" visible="false" relativity="Percent" resource="Food">
+			<target type="Player" />
+		</effect>
+		<effect type="Data" bonus="true" amount="1.0031" scaling="0.0009" subtype="MaximumVelocity" visible="true" relativity="Percent">
+			<target type="Player" />
+		</effect>
+	</effects>
+</trait>

@@ -1,0 +1,33 @@
+﻿<trait name="ArmorClth_E005">
+	<dbid>482</dbid>
+	<traittype>ArmorCloth</traittype>
+	<rarity>epic</rarity>
+	<icon>UserInterface\Icons\Equipment\Generic\Armor\Clth\Clth_E60_ua</icon>
+	<rollovertextid>53317</rollovertextid>
+	<displaynameid>53318</displaynameid>
+	<offertype>eOfferCivMatching</offertype>
+	<visualfactor type="Body" factor="60.0000" />
+	<sellable>1</sellable>
+	<tradeable>1</tradeable>
+	<destroyable>1</destroyable>
+	<canbestoredingearhall>0</canbestoredingearhall>
+	<effects>
+		<effect type="Data" bonus="true" amount="1.0398" scaling="0.0136" subtype="Hitpoints" visible="true" relativity="Percent">
+			<target type="Player" />
+		</effect>
+		<effect type="Data" bonus="true" amount="0.9985" scaling="-0.0004" subtype="CostAll" visible="true" relativity="Percent">
+			<target type="Player" />
+		</effect>
+		<effect type="Data" bonus="true" amount="1.0098" scaling="0.0027" subtype="Armor" visible="true" damagetype="Ranged" relativity="Percent">
+			<target type="Player" />
+		</effect>
+	</effects>
+	<levels>
+		<level>32</level>
+		<level>33</level>
+		<level>34</level>
+		<level>35</level>
+		<level>36</level>
+	</levels>
+	<craftlevels />
+</trait>

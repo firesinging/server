@@ -29,7 +29,7 @@ namespace Libraries.database.models
         public string Repeatable { get; set; }
 
         [XmlElement(ElementName = "offertype")]
-        public Offers Offertype { get; set; }
+        public OfferTypes Offertype { get; set; }
 
         [XmlElement(ElementName = "timer")]
         public ModelQuestTimer Timer { get; set; }

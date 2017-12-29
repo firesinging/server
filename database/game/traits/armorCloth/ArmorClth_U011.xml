@@ -1,0 +1,26 @@
+﻿<trait name="ArmorClth_U011">
+	<dbid>1159</dbid>
+	<traittype>ArmorCloth</traittype>
+	<rarity>uncommon</rarity>
+	<icon>UserInterface\Icons\Equipment\Generic\Armor\Clth\Clth_U10v2_ua</icon>
+	<rollovertextid>55144</rollovertextid>
+	<displaynameid>55145</displaynameid>
+	<offertype>eOfferNone</offertype>
+	<visualfactor type="Body" factor="10.0000" />
+	<sellable>1</sellable>
+	<tradeable>1</tradeable>
+	<destroyable>1</destroyable>
+	<canbestoredingearhall>0</canbestoredingearhall>
+	<effects>
+		<effect type="Data" bonus="true" amount="1.0449" scaling="0.0097" subtype="Hitpoints" visible="true" relativity="Percent">
+			<target type="Player" />
+		</effect>
+		<effect type="Data" bonus="true" amount="1.0098" scaling="0.0018" subtype="DamageBonusReduction" visible="true" relativity="Percent">
+			<target type="Player" />
+		</effect>
+	</effects>
+	<levels />
+	<craftlevels>
+		<level>38</level>
+	</craftlevels>
+</trait>

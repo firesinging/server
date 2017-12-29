@@ -1,0 +1,32 @@
+﻿<trait name="Gear_Prst_R006">
+	<dbid>793</dbid>
+	<traittype>GearPriest</traittype>
+	<rarity>rare</rarity>
+	<icon>UserInterface\Icons\Equipment\Generic\Gear\Prst\Idol_R30_ua</icon>
+	<rollovertextid>54082</rollovertextid>
+	<displaynameid>54083</displaynameid>
+	<offertype>eOfferCivMatching</offertype>
+	<visualfactor type="Helmet" factor="30.0000" />
+	<sellable>1</sellable>
+	<tradeable>1</tradeable>
+	<destroyable>1</destroyable>
+	<canbestoredingearhall>0</canbestoredingearhall>
+	<effects>
+		<effect type="Data" bonus="true" amount="0.9901" scaling="-0.0025" subtype="TrainPoints" visible="true" relativity="Percent">
+			<target type="Player" />
+		</effect>
+	</effects>
+	<levels>
+		<level>34</level>
+		<level>35</level>
+		<level>36</level>
+		<level>37</level>
+		<level>38</level>
+		<level>39</level>
+		<level>40</level>
+		<level>41</level>
+		<level>42</level>
+		<level>43</level>
+	</levels>
+	<craftlevels />
+</trait>

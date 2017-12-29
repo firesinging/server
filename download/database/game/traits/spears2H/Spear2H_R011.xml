@@ -1,0 +1,30 @@
+﻿<trait name="Spear2H_R011">
+	<dbid>925</dbid>
+	<traittype>Spears2H</traittype>
+	<rarity>rare</rarity>
+	<icon>UserInterface\Icons\Equipment\Generic\Spears2H\Spear2H_R32_ua</icon>
+	<rollovertextid>54362</rollovertextid>
+	<displaynameid>54363</displaynameid>
+	<offertype>eOfferCivMatching</offertype>
+	<visualfactor type="Weapon" factor="32.0000" />
+	<sellable>1</sellable>
+	<tradeable>1</tradeable>
+	<destroyable>1</destroyable>
+	<canbestoredingearhall>0</canbestoredingearhall>
+	<effects>
+		<effect type="Data" bonus="true" amount="0.9889" scaling="-0.0027" subtype="CostAll" visible="true" relativity="Percent">
+			<target type="Player" />
+		</effect>
+		<effect type="Data" bonus="true" amount="1.0049" scaling="0.0011" subtype="HitPercent" visible="true" relativity="Percent" action="MeleeAttack">
+			<target type="Player" />
+		</effect>
+	</effects>
+	<levels>
+		<level>32</level>
+		<level>33</level>
+		<level>34</level>
+		<level>35</level>
+		<level>36</level>
+	</levels>
+	<craftlevels />
+</trait>

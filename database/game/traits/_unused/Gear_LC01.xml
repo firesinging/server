@@ -1,0 +1,20 @@
+﻿<trait name="Gear_LC01">
+	<dbid>2084</dbid>
+	<traittype>Gear</traittype>
+	<rarity>legendary</rarity>
+	<icon>UserInterface\Icons\Equipment\Generic\Gear\Inf\Greaves_L90_ua</icon>
+	<rollovertextid>65261</rollovertextid>
+	<displaynameid>65262</displaynameid>
+	<alliance>eAllianceLegionOfCarthage</alliance>
+	<offertype>eOfferCivMatching</offertype>
+	<visualfactor type="Helmet" factor="90.0000" />
+	<sellable>1</sellable>
+	<tradeable>1</tradeable>
+	<destroyable>1</destroyable>
+	<canbestoredingearhall>0</canbestoredingearhall>
+	<effects>
+		<effect type="Data" bonus="true" amount="1.0123" scaling="0.0040" subtype="Hitpoints" visible="true" relativity="Percent">
+			<target type="Player" />
+		</effect>
+	</effects>
+</trait>

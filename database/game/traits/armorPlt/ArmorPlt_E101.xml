@@ -1,0 +1,30 @@
+﻿<trait name="ArmorPlt_E101">
+	<dbid>1576</dbid>
+	<traittype>ArmorPlt</traittype>
+	<rarity>epic</rarity>
+	<icon>UserInterface\Icons\Equipment\Generic\Armor\Plt\Plt_E60_ua</icon>
+	<rollovertextid>59352</rollovertextid>
+	<displaynameid>59353</displaynameid>
+	<offertype>eOfferCivMatching</offertype>
+	<visualfactor type="Body" factor="60.0000" />
+	<sellable>1</sellable>
+	<tradeable>1</tradeable>
+	<destroyable>1</destroyable>
+	<canbestoredingearhall>0</canbestoredingearhall>
+	<effects>
+		<effect type="Data" bonus="true" amount="1.0373" scaling="0.0125" subtype="Hitpoints" visible="true" relativity="Percent">
+			<target type="Player" />
+		</effect>
+		<effect type="Data" bonus="true" amount="1.0307" scaling="0.0090" subtype="Armor" visible="true" damagetype="Siege" relativity="Percent">
+			<target type="Player" />
+		</effect>
+	</effects>
+	<levels>
+		<level>32</level>
+		<level>33</level>
+		<level>34</level>
+		<level>35</level>
+		<level>36</level>
+	</levels>
+	<craftlevels />
+</trait>

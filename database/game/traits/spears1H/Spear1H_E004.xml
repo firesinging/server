@@ -1,0 +1,33 @@
+﻿<trait name="Spear1H_E004">
+	<dbid>907</dbid>
+	<traittype>Spears1H</traittype>
+	<rarity>epic</rarity>
+	<icon>UserInterface\Icons\Equipment\Generic\Spears1H\Spear1H_E60_ua</icon>
+	<rollovertextid>54326</rollovertextid>
+	<displaynameid>54327</displaynameid>
+	<offertype>eOfferCivMatching</offertype>
+	<visualfactor type="Weapon" factor="60.0000" />
+	<sellable>1</sellable>
+	<tradeable>1</tradeable>
+	<destroyable>1</destroyable>
+	<canbestoredingearhall>0</canbestoredingearhall>
+	<effects>
+		<effect type="Data" bonus="true" amount="1.0055" scaling="0.0017" subtype="MaximumVelocity" visible="true" relativity="Percent">
+			<target type="Player" />
+		</effect>
+		<effect type="Data" bonus="true" amount="1.0073" scaling="0.0021" subtype="HitPercent" visible="true" relativity="Percent" action="MeleeAttack">
+			<target type="Player" />
+		</effect>
+		<effect type="Data" bonus="true" amount="1.0220" scaling="0.0063" subtype="DamageBonus" visible="true" relativity="Percent" allactions="1" unittype="AbstractCavalry">
+			<target type="Player" />
+		</effect>
+	</effects>
+	<levels>
+		<level>32</level>
+		<level>33</level>
+		<level>34</level>
+		<level>35</level>
+		<level>36</level>
+	</levels>
+	<craftlevels />
+</trait>

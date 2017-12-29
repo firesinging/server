@@ -1,0 +1,27 @@
+﻿<trait name="Gear_Vill_R102">
+	<dbid>1792</dbid>
+	<traittype>GearVill</traittype>
+	<rarity>rare</rarity>
+	<icon>UserInterface\Icons\Equipment\Generic\Gear\Vill\Hat_R31_ua</icon>
+	<rollovertextid>60245</rollovertextid>
+	<displaynameid>60246</displaynameid>
+	<offertype>eOfferCivMatching</offertype>
+	<visualfactor type="Helmet" factor="31.0000" />
+	<sellable>1</sellable>
+	<tradeable>1</tradeable>
+	<destroyable>1</destroyable>
+	<canbestoredingearhall>0</canbestoredingearhall>
+	<effects>
+		<effect type="Data" bonus="true" amount="0.9938" scaling="-0.0016" subtype="TrainPoints" visible="true" relativity="Percent">
+			<target type="Player" />
+		</effect>
+	</effects>
+	<levels>
+		<level>17</level>
+		<level>18</level>
+		<level>19</level>
+		<level>20</level>
+		<level>21</level>
+	</levels>
+	<craftlevels />
+</trait>

@@ -1,0 +1,15 @@
+﻿<trait name="VanityShield1H_020">
+	<dbid>2147</dbid>
+	<traittype>VanityShield</traittype>
+	<rarity>common</rarity>
+	<icon>/UserInterface/Icons/Equipment/Vanity/120_UltimateBabylon_Shield_ua</icon>
+	<rollovertextid>67571</rollovertextid>
+	<displaynameid>67572</displaynameid>
+	<offertype>eOfferNone</offertype>
+	<equipsoundset>UI_Cons_Spc_Construction</equipsoundset>
+	<visualfactor type="VanityShield" factor="120.0000" />
+	<sellable>1</sellable>
+	<tradeable>0</tradeable>
+	<destroyable>1</destroyable>
+	<canbestoredingearhall>1</canbestoredingearhall>
+</trait>

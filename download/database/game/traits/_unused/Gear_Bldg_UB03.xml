@@ -1,0 +1,19 @@
+﻿<trait name="Gear_Bldg_UB03">
+	<dbid>1917</dbid>
+	<traittype>GearBldg</traittype>
+	<rarity>uncommon</rarity>
+	<icon>UserInterface\Icons\Equipment\Generic\Gear\Bldg\Manual_U11_ua</icon>
+	<rollovertextid>62413</rollovertextid>
+	<displaynameid>62414</displaynameid>
+	<offertype>eOfferNone</offertype>
+	<visualfactor type="Helmet" factor="11.0000" />
+	<sellable>1</sellable>
+	<tradeable>1</tradeable>
+	<destroyable>1</destroyable>
+	<canbestoredingearhall>0</canbestoredingearhall>
+	<effects>
+		<effect type="Data" bonus="true" amount="1.0062" scaling="0.0010" subtype="BuildingWorkRate" visible="true" relativity="Percent">
+			<target type="Player" />
+		</effect>
+	</effects>
+</trait>

@@ -1,0 +1,29 @@
+﻿<trait name="Gear_Prst_E003">
+	<dbid>798</dbid>
+	<traittype>GearPriest</traittype>
+	<rarity>epic</rarity>
+	<icon>UserInterface\Icons\Equipment\Generic\Gear\Prst\Beads_E60_ua</icon>
+	<rollovertextid>54092</rollovertextid>
+	<displaynameid>54093</displaynameid>
+	<offertype>eOfferCivMatching</offertype>
+	<visualfactor type="Helmet" factor="60.0000" />
+	<sellable>1</sellable>
+	<tradeable>1</tradeable>
+	<destroyable>1</destroyable>
+	<canbestoredingearhall>0</canbestoredingearhall>
+	<effects>
+		<effect type="Data" bonus="true" amount="0.9877" scaling="-0.0038" subtype="CostAll" visible="true" relativity="Percent">
+			<target type="Player" />
+		</effect>
+		<effect type="Data" bonus="false" amount="1.0289" scaling="0.0091" subtype="TrainPoints" visible="true" relativity="Percent">
+			<target type="Player" />
+		</effect>
+	</effects>
+	<levels>
+		<level>40</level>
+		<level>41</level>
+		<level>42</level>
+		<level>43</level>
+	</levels>
+	<craftlevels />
+</trait>

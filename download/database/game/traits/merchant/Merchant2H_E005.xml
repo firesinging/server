@@ -1,0 +1,36 @@
+﻿<trait name="Merchant2H_E005">
+	<dbid>867</dbid>
+	<traittype>Merchant</traittype>
+	<rarity>epic</rarity>
+	<icon>UserInterface\Icons\Equipment\Generic\Merchant\Log_E62_ua</icon>
+	<rollovertextid>54246</rollovertextid>
+	<displaynameid>54247</displaynameid>
+	<offertype>eOfferCivMatching</offertype>
+	<visualfactor type="Weapon" factor="62.0000" />
+	<sellable>1</sellable>
+	<tradeable>1</tradeable>
+	<destroyable>1</destroyable>
+	<canbestoredingearhall>0</canbestoredingearhall>
+	<effects>
+		<effect type="Data" bonus="true" amount="1.0100" scaling="0.0034" subtype="WorkRate" visible="true" relativity="Percent" action="Trade" unittype="AbstractTownCenter">
+			<target type="Player" />
+		</effect>
+		<effect type="Data" bonus="true" amount="1.0015" scaling="0.0004" subtype="MaximumVelocity" visible="true" relativity="Percent">
+			<target type="Player" />
+		</effect>
+		<effect type="Data" bonus="true" amount="1.0098" scaling="0.0027" subtype="Armor" visible="true" damagetype="Ranged" relativity="Percent">
+			<target type="Player" />
+		</effect>
+		<effect type="Data" bonus="true" amount="1.0100" scaling="0.0034" subtype="WorkRate" visible="false" relativity="Percent" action="Trade" unittype="AbstractDock">
+			<target type="Player" />
+		</effect>
+	</effects>
+	<levels>
+		<level>35</level>
+		<level>36</level>
+		<level>37</level>
+		<level>38</level>
+		<level>39</level>
+	</levels>
+	<craftlevels />
+</trait>

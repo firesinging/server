@@ -1,0 +1,29 @@
+﻿<trait name="Sling2H_E009">
+	<dbid>1441</dbid>
+	<traittype>Sling</traittype>
+	<rarity>epic</rarity>
+	<icon>UserInterface\Icons\Equipment\Generic\Slings\Sling_E61_ua</icon>
+	<rollovertextid>58126</rollovertextid>
+	<displaynameid>58127</displaynameid>
+	<offertype>eOfferCivMatching</offertype>
+	<visualfactor type="Weapon" factor="61.0000" />
+	<sellable>1</sellable>
+	<tradeable>1</tradeable>
+	<destroyable>1</destroyable>
+	<canbestoredingearhall>0</canbestoredingearhall>
+	<effects>
+		<effect type="Data" bonus="true" amount="1.0449" scaling="0.0157" subtype="Damage" visible="true" relativity="Percent" allactions="1">
+			<target type="Player" />
+		</effect>
+		<effect type="Data" bonus="true" amount="1.0147" scaling="0.0041" subtype="DamageBonus" visible="true" relativity="Percent" allactions="1" unittype="Building">
+			<target type="Player" />
+		</effect>
+	</effects>
+	<levels>
+		<level>40</level>
+		<level>41</level>
+		<level>42</level>
+		<level>43</level>
+	</levels>
+	<craftlevels />
+</trait>

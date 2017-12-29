@@ -1,0 +1,22 @@
+﻿<trait name="Staff2H_U201">
+	<dbid>1955</dbid>
+	<traittype>Staffs2H</traittype>
+	<rarity>uncommon</rarity>
+	<icon>UserInterface\Icons\Equipment\Generic\Staves\Staff_U12_ua</icon>
+	<rollovertextid>62498</rollovertextid>
+	<displaynameid>62499</displaynameid>
+	<offertype>eOfferNone</offertype>
+	<visualfactor type="Weapon" factor="12.0000" />
+	<sellable>0</sellable>
+	<tradeable>0</tradeable>
+	<destroyable>1</destroyable>
+	<canbestoredingearhall>0</canbestoredingearhall>
+	<effects>
+		<effect type="Data" bonus="true" amount="0.9632" scaling="-0.0061" subtype="WorkRate" visible="true" relativity="Percent" action="Convert" unittype="ConvertableCavalry">
+			<target type="Player" />
+		</effect>
+		<effect type="Data" bonus="true" amount="1.0373" scaling="0.0065" subtype="Damage" visible="true" relativity="Percent" allactions="1">
+			<target type="Player" />
+		</effect>
+	</effects>
+</trait>

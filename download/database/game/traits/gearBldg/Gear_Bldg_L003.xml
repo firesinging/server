@@ -1,0 +1,23 @@
+﻿<trait name="Gear_Bldg_L003">
+	<dbid>1843</dbid>
+	<traittype>GearBldg</traittype>
+	<rarity>legendary</rarity>
+	<icon>UserInterface\Icons\Equipment\Generic\Gear\Bldg\Lookout_L90_ua</icon>
+	<rollovertextid>60791</rollovertextid>
+	<displaynameid>60792</displaynameid>
+	<offertype>eOfferCivMatching</offertype>
+	<visualfactor type="Helmet" factor="90.0000" />
+	<sellable>1</sellable>
+	<tradeable>1</tradeable>
+	<destroyable>1</destroyable>
+	<canbestoredingearhall>0</canbestoredingearhall>
+	<effects>
+		<effect type="Data" bonus="true" amount="1.0309" scaling="0.0099" subtype="LOS" visible="true" relativity="Percent">
+			<target type="Player" />
+		</effect>
+	</effects>
+	<levels>
+		<level>43</level>
+	</levels>
+	<craftlevels />
+</trait>

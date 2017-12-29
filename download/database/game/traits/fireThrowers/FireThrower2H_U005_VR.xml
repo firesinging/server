@@ -1,0 +1,26 @@
+﻿<trait name="FireThrower2H_U005_VR">
+	<dbid>2214</dbid>
+	<traittype>FireThrowers</traittype>
+	<rarity>uncommon</rarity>
+	<icon>UserInterface\Icons\Equipment\Generic\Firepots\Pot_U10v2_ua</icon>
+	<rollovertextid>68057</rollovertextid>
+	<displaynameid>68058</displaynameid>
+	<offertype>eOfferNone</offertype>
+	<visualfactor type="Weapon" factor="10.0000" />
+	<sellable>1</sellable>
+	<tradeable>1</tradeable>
+	<destroyable>1</destroyable>
+	<canbestoredingearhall>0</canbestoredingearhall>
+	<effects>
+		<effect type="Data" bonus="true" amount="1.0449" scaling="0.0098" subtype="Damage" visible="true" relativity="Percent" allactions="1">
+			<target type="Player" />
+		</effect>
+		<effect type="Data" bonus="true" amount="1.0098" scaling="0.0020" subtype="MaximumRange" visible="true" relativity="Percent" action="RangedAttack">
+			<target type="Player" />
+		</effect>
+	</effects>
+	<levels />
+	<craftlevels>
+		<level>14</level>
+	</craftlevels>
+</trait>

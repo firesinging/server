@@ -1,0 +1,26 @@
+﻿<trait name="Shield1H_U008">
+	<dbid>1232</dbid>
+	<traittype>Shields</traittype>
+	<rarity>uncommon</rarity>
+	<icon>UserInterface\Icons\Equipment\Generic\Shields\Shield_U15_ua</icon>
+	<rollovertextid>55290</rollovertextid>
+	<displaynameid>55291</displaynameid>
+	<offertype>eOfferNone</offertype>
+	<visualfactor type="Shield" factor="15.0000" />
+	<sellable>1</sellable>
+	<tradeable>1</tradeable>
+	<destroyable>1</destroyable>
+	<canbestoredingearhall>0</canbestoredingearhall>
+	<effects>
+		<effect type="Data" bonus="true" amount="1.0086" scaling="0.0016" subtype="Hitpoints" visible="true" relativity="Percent">
+			<target type="Player" />
+		</effect>
+		<effect type="Data" bonus="true" amount="1.0092" scaling="0.0017" subtype="Armor" visible="true" damagetype="Hand" relativity="Percent">
+			<target type="Player" />
+		</effect>
+	</effects>
+	<levels />
+	<craftlevels>
+		<level>42</level>
+	</craftlevels>
+</trait>

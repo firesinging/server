@@ -1,0 +1,26 @@
+﻿<trait name="Javalin2H_U009">
+	<dbid>1423</dbid>
+	<traittype>Javalins</traittype>
+	<rarity>uncommon</rarity>
+	<icon>UserInterface\Icons\Equipment\Generic\Javelins\Javelin_U13_ua</icon>
+	<rollovertextid>57655</rollovertextid>
+	<displaynameid>57656</displaynameid>
+	<offertype>eOfferNone</offertype>
+	<visualfactor type="Weapon" factor="13.0000" />
+	<sellable>1</sellable>
+	<tradeable>1</tradeable>
+	<destroyable>1</destroyable>
+	<canbestoredingearhall>0</canbestoredingearhall>
+	<effects>
+		<effect type="Data" bonus="true" amount="1.0316" scaling="0.0066" subtype="Damage" visible="true" relativity="Percent" allactions="1">
+			<target type="Player" />
+		</effect>
+		<effect type="Data" bonus="true" amount="1.0055" scaling="0.0011" subtype="Hitpoints" visible="true" relativity="Percent">
+			<target type="Player" />
+		</effect>
+	</effects>
+	<levels />
+	<craftlevels>
+		<level>23</level>
+	</craftlevels>
+</trait>

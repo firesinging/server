@@ -1,0 +1,26 @@
+﻿<trait name="Spear2H_U101">
+	<dbid>1510</dbid>
+	<traittype>Spears2H</traittype>
+	<rarity>uncommon</rarity>
+	<icon>UserInterface\Icons\Equipment\Generic\Spears2H\Spear2H_U11_ua</icon>
+	<rollovertextid>59220</rollovertextid>
+	<displaynameid>59221</displaynameid>
+	<offertype>eOfferNone</offertype>
+	<visualfactor type="Weapon" factor="11.0000" />
+	<sellable>1</sellable>
+	<tradeable>1</tradeable>
+	<destroyable>1</destroyable>
+	<canbestoredingearhall>0</canbestoredingearhall>
+	<effects>
+		<effect type="Data" bonus="true" amount="1.0388" scaling="0.0069" subtype="Damage" visible="true" relativity="Percent" allactions="1">
+			<target type="Player" />
+		</effect>
+		<effect type="Data" bonus="true" amount="1.0108" scaling="0.0019" subtype="HitPercent" visible="true" relativity="Percent" action="MeleeAttack">
+			<target type="Player" />
+		</effect>
+	</effects>
+	<levels>
+		<level>13</level>
+	</levels>
+	<craftlevels />
+</trait>

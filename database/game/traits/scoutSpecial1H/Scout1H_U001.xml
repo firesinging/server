@@ -1,0 +1,23 @@
+﻿<trait name="Scout1H_U001">
+	<dbid>1563</dbid>
+	<traittype>ScoutSpecial1H</traittype>
+	<rarity>uncommon</rarity>
+	<icon>UserInterface\Icons\Equipment\Generic\Gear\Scout\Helm_U10_ua</icon>
+	<rollovertextid>59326</rollovertextid>
+	<displaynameid>59327</displaynameid>
+	<offertype>eOfferNone</offertype>
+	<visualfactor type="Helmet" factor="10.0000" />
+	<sellable>1</sellable>
+	<tradeable>0</tradeable>
+	<destroyable>1</destroyable>
+	<canbestoredingearhall>0</canbestoredingearhall>
+	<effects>
+		<effect type="Data" bonus="true" amount="1.0310" scaling="0.0055" subtype="Hitpoints" visible="true" relativity="Percent">
+			<target type="Player" />
+		</effect>
+	</effects>
+	<levels>
+		<level>6</level>
+	</levels>
+	<craftlevels />
+</trait>

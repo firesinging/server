@@ -1,0 +1,34 @@
+﻿<trait name="FishingNet1H_R001">
+	<dbid>690</dbid>
+	<traittype>FishingNet</traittype>
+	<rarity>rare</rarity>
+	<icon>UserInterface\Icons\Equipment\Generic\Fishnets\Net_R30_ua</icon>
+	<rollovertextid>53754</rollovertextid>
+	<displaynameid>53755</displaynameid>
+	<offertype>eOfferCivMatching</offertype>
+	<visualfactor type="Weapon" factor="0.0000" />
+	<sellable>1</sellable>
+	<tradeable>1</tradeable>
+	<destroyable>1</destroyable>
+	<canbestoredingearhall>0</canbestoredingearhall>
+	<effects>
+		<effect type="Data" bonus="true" amount="1.0112" scaling="0.0031" subtype="WorkRate" visible="true" relativity="Percent" action="Gather" unittype="AbstractFish">
+			<target type="Player" />
+		</effect>
+		<effect type="Data" bonus="true" amount="1.0112" scaling="0.0031" subtype="CarryCapacity" visible="false" relativity="Percent" resource="Food">
+			<target type="Player" />
+		</effect>
+		<effect type="Data" bonus="true" amount="1.0098" scaling="0.0025" subtype="MaximumRange" visible="true" relativity="Percent" action="RangedAttack">
+			<target type="Player" />
+		</effect>
+	</effects>
+	<levels>
+		<level>11</level>
+		<level>12</level>
+		<level>13</level>
+		<level>14</level>
+		<level>15</level>
+		<level>23</level>
+	</levels>
+	<craftlevels />
+</trait>

@@ -1,0 +1,25 @@
+﻿<trait name="Shield1H_L001">
+	<dbid>1866</dbid>
+	<traittype>Shields</traittype>
+	<rarity>legendary</rarity>
+	<icon>UserInterface\Icons\Equipment\Generic\Shields\Shield_L90_ua</icon>
+	<rollovertextid>60840</rollovertextid>
+	<displaynameid>60841</displaynameid>
+	<offertype>eOfferCivMatching</offertype>
+	<visualfactor type="Shield" factor="90.0000" />
+	<sellable>1</sellable>
+	<tradeable>1</tradeable>
+	<destroyable>1</destroyable>
+	<canbestoredingearhall>0</canbestoredingearhall>
+	<effects>
+		<effect type="Data" bonus="true" amount="1.0061" scaling="0.0017" subtype="Hitpoints" visible="true" relativity="Percent">
+			<target type="Player" />
+		</effect>
+		<effect type="Data" bonus="true" amount="1.0107" scaling="0.0030" subtype="Armor" visible="true" damagetype="Cavalry" relativity="Percent">
+			<target type="Player" />
+		</effect>
+		<effect type="Data" bonus="true" amount="1.0165" scaling="0.0046" subtype="TargetSpeedBoostResist" visible="true" relativity="Percent">
+			<target type="Player" />
+		</effect>
+	</effects>
+</trait>

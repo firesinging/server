@@ -1,0 +1,33 @@
+﻿<trait name="Gear_Boat_R012">
+	<dbid>765</dbid>
+	<traittype>GearBoat</traittype>
+	<rarity>rare</rarity>
+	<icon>UserInterface\Icons\Equipment\Generic\Gear\Boat\THull_R32_ua</icon>
+	<rollovertextid>53966</rollovertextid>
+	<displaynameid>53967</displaynameid>
+	<offertype>eOfferCivMatching</offertype>
+	<visualfactor type="Helmet" factor="32.0000" />
+	<sellable>1</sellable>
+	<tradeable>1</tradeable>
+	<destroyable>1</destroyable>
+	<canbestoredingearhall>0</canbestoredingearhall>
+	<effects>
+		<effect type="Data" bonus="true" amount="0.9877" scaling="-0.0031" subtype="CostAll" visible="true" relativity="Percent">
+			<target type="Player" />
+		</effect>
+		<effect type="Data" bonus="false" amount="0.9903" scaling="-0.0023" subtype="Damage" visible="true" relativity="Percent" allactions="1">
+			<target type="Player" />
+		</effect>
+		<effect type="Data" bonus="false" amount="0.9903" scaling="-0.0023" subtype="Hitpoints" visible="true" relativity="Percent">
+			<target type="Player" />
+		</effect>
+	</effects>
+	<levels>
+		<level>34</level>
+		<level>35</level>
+		<level>36</level>
+		<level>37</level>
+		<level>38</level>
+	</levels>
+	<craftlevels />
+</trait>

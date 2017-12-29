@@ -1,0 +1,29 @@
+﻿<trait name="Staff2H_R103">
+	<dbid>1557</dbid>
+	<traittype>Staffs2H</traittype>
+	<rarity>rare</rarity>
+	<icon>UserInterface\Icons\Equipment\Generic\Staves\Staff_R36_ua</icon>
+	<rollovertextid>59314</rollovertextid>
+	<displaynameid>59315</displaynameid>
+	<offertype>eOfferCivMatching</offertype>
+	<visualfactor type="Weapon" factor="36.0000" />
+	<sellable>1</sellable>
+	<tradeable>1</tradeable>
+	<destroyable>1</destroyable>
+	<canbestoredingearhall>0</canbestoredingearhall>
+	<effects>
+		<effect type="Data" bonus="true" amount="1.0383" scaling="0.0102" subtype="Damage" visible="true" relativity="Percent" allactions="1">
+			<target type="Player" />
+		</effect>
+		<effect type="Data" bonus="true" amount="0.9809" scaling="-0.0044" subtype="WorkRate" visible="true" relativity="Percent" action="Convert" unittype="ConvertableSiege">
+			<target type="Player" />
+		</effect>
+		<effect type="Data" bonus="true" amount="1.0049" scaling="0.0011" subtype="Hitpoints" visible="true" relativity="Percent">
+			<target type="Player" />
+		</effect>
+	</effects>
+	<levels />
+	<craftlevels>
+		<level>35</level>
+	</craftlevels>
+</trait>

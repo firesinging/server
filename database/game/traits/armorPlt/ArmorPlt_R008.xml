@@ -1,0 +1,30 @@
+﻿<trait name="ArmorPlt_R008">
+	<dbid>546</dbid>
+	<traittype>ArmorPlt</traittype>
+	<rarity>rare</rarity>
+	<icon>UserInterface\Icons\Equipment\Generic\Armor\Plt\Plt_R30_ua</icon>
+	<rollovertextid>53445</rollovertextid>
+	<displaynameid>53446</displaynameid>
+	<offertype>eOfferCivMatching</offertype>
+	<visualfactor type="Body" factor="30.0000" />
+	<sellable>1</sellable>
+	<tradeable>1</tradeable>
+	<destroyable>1</destroyable>
+	<canbestoredingearhall>0</canbestoredingearhall>
+	<effects>
+		<effect type="Data" bonus="true" amount="1.0449" scaling="0.0123" subtype="Hitpoints" visible="true" relativity="Percent">
+			<target type="Player" />
+		</effect>
+		<effect type="Data" bonus="true" amount="1.0098" scaling="0.0023" subtype="DamageBonusReduction" visible="true" relativity="Percent">
+			<target type="Player" />
+		</effect>
+	</effects>
+	<levels>
+		<level>26</level>
+		<level>27</level>
+		<level>28</level>
+		<level>29</level>
+		<level>30</level>
+	</levels>
+	<craftlevels />
+</trait>

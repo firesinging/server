@@ -1,0 +1,25 @@
+﻿<trait name="Merchant2H_U201">
+	<dbid>1948</dbid>
+	<traittype>Merchant</traittype>
+	<rarity>uncommon</rarity>
+	<icon>UserInterface\Icons\Equipment\Generic\Merchant\Log_U11_ua</icon>
+	<rollovertextid>62484</rollovertextid>
+	<displaynameid>62485</displaynameid>
+	<offertype>eOfferNone</offertype>
+	<visualfactor type="Weapon" factor="11.0000" />
+	<sellable>0</sellable>
+	<tradeable>0</tradeable>
+	<destroyable>1</destroyable>
+	<canbestoredingearhall>0</canbestoredingearhall>
+	<effects>
+		<effect type="Data" bonus="true" amount="1.0112" scaling="0.0020" subtype="WorkRate" visible="true" relativity="Percent" action="Trade" unittype="AbstractTownCenter">
+			<target type="Player" />
+		</effect>
+		<effect type="Data" bonus="true" amount="1.0012" scaling="0.0002" subtype="MaximumVelocity" visible="true" relativity="Percent">
+			<target type="Player" />
+		</effect>
+		<effect type="Data" bonus="true" amount="1.0112" scaling="0.0020" subtype="WorkRate" visible="false" relativity="Percent" action="Trade" unittype="AbstractDock">
+			<target type="Player" />
+		</effect>
+	</effects>
+</trait>

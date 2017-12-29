@@ -1,0 +1,15 @@
+﻿<trait name="VanityShield1H_001">
+	<dbid>1968</dbid>
+	<traittype>VanityShield</traittype>
+	<rarity>common</rarity>
+	<icon>\UserInterface\Icons\Equipment\Vanity\102_ElGourdo_Shield_ua</icon>
+	<rollovertextid>64099</rollovertextid>
+	<displaynameid>64100</displaynameid>
+	<offertype>eOfferNone</offertype>
+	<equipsoundset>UI_Cons_Spc_GourdMan</equipsoundset>
+	<visualfactor type="VanityShield" factor="102.0000" />
+	<sellable>1</sellable>
+	<tradeable>0</tradeable>
+	<destroyable>1</destroyable>
+	<canbestoredingearhall>1</canbestoredingearhall>
+</trait>

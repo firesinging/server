@@ -1,0 +1,27 @@
+﻿<trait name="Axe2H_R016">
+	<dbid>1793</dbid>
+	<traittype>GreatAxe</traittype>
+	<rarity>rare</rarity>
+	<icon>UserInterface\Icons\Equipment\Generic\Axes\Axe_R31_ua</icon>
+	<rollovertextid>60247</rollovertextid>
+	<displaynameid>60248</displaynameid>
+	<offertype>eOfferCivMatching</offertype>
+	<visualfactor type="Weapon" factor="31.0000" />
+	<sellable>1</sellable>
+	<tradeable>1</tradeable>
+	<destroyable>1</destroyable>
+	<canbestoredingearhall>0</canbestoredingearhall>
+	<effects>
+		<effect type="Data" bonus="true" amount="1.0388" scaling="0.0106" subtype="Damage" visible="true" relativity="Percent" allactions="1">
+			<target type="Player" />
+		</effect>
+		<effect type="Data" bonus="true" amount="0.9353" scaling="-0.0169" subtype="TargetSpeedBoost" visible="true" relativity="Percent" action="MeleeAttack">
+			<target type="Player" />
+		</effect>
+	</effects>
+	<levels>
+		<level>11</level>
+		<level>21</level>
+	</levels>
+	<craftlevels />
+</trait>

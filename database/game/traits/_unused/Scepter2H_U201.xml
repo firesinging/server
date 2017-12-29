@@ -1,0 +1,22 @@
+﻿<trait name="Scepter2H_U201">
+	<dbid>1950</dbid>
+	<traittype>Scepter</traittype>
+	<rarity>uncommon</rarity>
+	<icon>UserInterface\Icons\Equipment\Generic\Scepters\Scepter_U10_ua</icon>
+	<rollovertextid>62488</rollovertextid>
+	<displaynameid>62489</displaynameid>
+	<offertype>eOfferNone</offertype>
+	<visualfactor type="Weapon" factor="10.0000" />
+	<sellable>0</sellable>
+	<tradeable>0</tradeable>
+	<destroyable>1</destroyable>
+	<canbestoredingearhall>0</canbestoredingearhall>
+	<effects>
+		<effect type="Data" bonus="true" amount="1.0038" scaling="0.0007" subtype="WorkRate" visible="true" relativity="Percent" action="Empower" unittype="Dropsite">
+			<target type="Player" />
+		</effect>
+		<effect type="Data" bonus="true" amount="1.0037" scaling="0.0006" subtype="MaximumVelocity" visible="true" relativity="Percent">
+			<target type="Player" />
+		</effect>
+	</effects>
+</trait>

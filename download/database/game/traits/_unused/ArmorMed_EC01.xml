@@ -1,0 +1,26 @@
+﻿<trait name="ArmorMed_EC01">
+	<dbid>2046</dbid>
+	<traittype>ArmorMed</traittype>
+	<rarity>epic</rarity>
+	<icon>UserInterface\Icons\Equipment\Generic\Armor\Inf\Inf_E60_ua</icon>
+	<rollovertextid>65185</rollovertextid>
+	<displaynameid>65186</displaynameid>
+	<alliance>eAllianceLegionOfCarthage</alliance>
+	<offertype>eOfferCivMatching</offertype>
+	<visualfactor type="Body" factor="60.0000" />
+	<sellable>1</sellable>
+	<tradeable>1</tradeable>
+	<destroyable>1</destroyable>
+	<canbestoredingearhall>0</canbestoredingearhall>
+	<effects>
+		<effect type="Data" bonus="true" amount="1.0398" scaling="0.0134" subtype="Hitpoints" visible="true" relativity="Percent">
+			<target type="Player" />
+		</effect>
+		<effect type="Data" bonus="true" amount="1.0117" scaling="0.0032" subtype="DamageBonusReduction" visible="true" relativity="Percent">
+			<target type="Player" />
+		</effect>
+		<effect type="Data" bonus="true" amount="1.0352" scaling="0.0095" subtype="TargetSpeedBoostResist" visible="true" relativity="Percent">
+			<target type="Player" />
+		</effect>
+	</effects>
+</trait>

@@ -1,0 +1,23 @@
+﻿<trait name="Gear_Bldg_UA01">
+	<dbid>1730</dbid>
+	<traittype>GearBldg</traittype>
+	<rarity>uncommon</rarity>
+	<icon>UserInterface\Icons\Equipment\Generic\Gear\Bldg\WJoint_U11_ua</icon>
+	<rollovertextid>59996</rollovertextid>
+	<displaynameid>59997</displaynameid>
+	<offertype>eOfferNone</offertype>
+	<visualfactor type="Helmet" factor="11.0000" />
+	<sellable>1</sellable>
+	<tradeable>1</tradeable>
+	<destroyable>1</destroyable>
+	<canbestoredingearhall>0</canbestoredingearhall>
+	<effects>
+		<effect type="Data" bonus="true" amount="0.9877" scaling="-0.0022" subtype="CostAll" visible="true" relativity="Percent">
+			<target type="Player" />
+		</effect>
+	</effects>
+	<levels />
+	<craftlevels>
+		<level>9</level>
+	</craftlevels>
+</trait>

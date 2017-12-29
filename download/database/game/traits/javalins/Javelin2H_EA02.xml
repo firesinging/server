@@ -1,0 +1,29 @@
+﻿<trait name="Javelin2H_EA02">
+	<dbid>1785</dbid>
+	<traittype>Javalins</traittype>
+	<rarity>epic</rarity>
+	<icon>UserInterface\Icons\Equipment\Generic\Javelins\Javelin_E60_ua</icon>
+	<rollovertextid>60223</rollovertextid>
+	<displaynameid>60224</displaynameid>
+	<offertype>eOfferCivMatching</offertype>
+	<visualfactor type="Weapon" factor="60.0000" />
+	<sellable>1</sellable>
+	<tradeable>1</tradeable>
+	<destroyable>1</destroyable>
+	<canbestoredingearhall>0</canbestoredingearhall>
+	<effects>
+		<effect type="Data" bonus="true" amount="1.0110" scaling="0.0030" subtype="DamageBonus" visible="true" relativity="Percent" allactions="1" unittype="AbstractInfantry">
+			<target type="Player" />
+		</effect>
+		<effect type="Data" bonus="true" amount="1.0147" scaling="0.0046" subtype="MaximumRange" visible="true" relativity="Percent" action="RangedAttack">
+			<target type="Player" />
+		</effect>
+		<effect type="Data" bonus="true" amount="1.0110" scaling="0.0030" subtype="DamageBonus" visible="true" relativity="Percent" allactions="1" unittype="AbstractArcher">
+			<target type="Player" />
+		</effect>
+	</effects>
+	<levels>
+		<level>43</level>
+	</levels>
+	<craftlevels />
+</trait>

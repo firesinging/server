@@ -1,0 +1,27 @@
+﻿<trait name="ArmorMed_U101">
+	<dbid>1515</dbid>
+	<traittype>ArmorMed</traittype>
+	<rarity>uncommon</rarity>
+	<icon>UserInterface\Icons\Equipment\Generic\Armor\Inf\Inf_U10_ua</icon>
+	<rollovertextid>59230</rollovertextid>
+	<displaynameid>59231</displaynameid>
+	<offertype>eOfferNone</offertype>
+	<visualfactor type="Body" factor="10.0000" />
+	<sellable>1</sellable>
+	<tradeable>1</tradeable>
+	<destroyable>1</destroyable>
+	<canbestoredingearhall>0</canbestoredingearhall>
+	<effects>
+		<effect type="Data" bonus="true" amount="1.0500" scaling="0.0090" subtype="Hitpoints" visible="true" relativity="Percent">
+			<target type="Player" />
+		</effect>
+	</effects>
+	<levels>
+		<level>12</level>
+		<level>13</level>
+		<level>14</level>
+		<level>15</level>
+		<level>16</level>
+	</levels>
+	<craftlevels />
+</trait>

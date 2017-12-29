@@ -1,0 +1,25 @@
+﻿<trait name="FishingNet1H_U201">
+	<dbid>1941</dbid>
+	<traittype>FishingNet</traittype>
+	<rarity>uncommon</rarity>
+	<icon>UserInterface\Icons\Equipment\Generic\Fishnets\Net_U10_ua</icon>
+	<rollovertextid>62470</rollovertextid>
+	<displaynameid>62471</displaynameid>
+	<offertype>eOfferNone</offertype>
+	<visualfactor type="Weapon" factor="0.0000" />
+	<sellable>0</sellable>
+	<tradeable>0</tradeable>
+	<destroyable>1</destroyable>
+	<canbestoredingearhall>0</canbestoredingearhall>
+	<effects>
+		<effect type="Data" bonus="true" amount="1.0112" scaling="0.0020" subtype="WorkRate" visible="true" relativity="Percent" action="Gather" unittype="AbstractFish">
+			<target type="Player" />
+		</effect>
+		<effect type="Data" bonus="true" amount="1.0112" scaling="0.0020" subtype="CarryCapacity" visible="false" relativity="Percent" resource="Food">
+			<target type="Player" />
+		</effect>
+		<effect type="Data" bonus="true" amount="1.0012" scaling="0.0002" subtype="MaximumVelocity" visible="true" relativity="Percent">
+			<target type="Player" />
+		</effect>
+	</effects>
+</trait>

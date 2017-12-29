@@ -1,0 +1,30 @@
+﻿<trait name="Gear_R020">
+	<dbid>728</dbid>
+	<traittype>Gear</traittype>
+	<rarity>rare</rarity>
+	<icon>UserInterface\Icons\Equipment\Generic\Gear\Inf\Greaves_R30_ua</icon>
+	<rollovertextid>53844</rollovertextid>
+	<displaynameid>53845</displaynameid>
+	<offertype>eOfferCivMatching</offertype>
+	<visualfactor type="Helmet" factor="30.0000" />
+	<sellable>1</sellable>
+	<tradeable>1</tradeable>
+	<destroyable>1</destroyable>
+	<canbestoredingearhall>0</canbestoredingearhall>
+	<effects>
+		<effect type="Data" bonus="false" amount="0.9758" scaling="-0.0059" subtype="MaximumVelocity" visible="true" relativity="Percent">
+			<target type="Player" />
+		</effect>
+		<effect type="Data" bonus="true" amount="1.0186" scaling="0.0050" subtype="Hitpoints" visible="true" relativity="Percent">
+			<target type="Player" />
+		</effect>
+	</effects>
+	<levels>
+		<level>28</level>
+		<level>29</level>
+		<level>30</level>
+		<level>31</level>
+		<level>32</level>
+	</levels>
+	<craftlevels />
+</trait>

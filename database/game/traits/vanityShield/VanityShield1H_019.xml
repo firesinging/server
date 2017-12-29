@@ -1,0 +1,15 @@
+﻿<trait name="VanityShield1H_019">
+	<dbid>2117</dbid>
+	<traittype>VanityShield</traittype>
+	<rarity>common</rarity>
+	<icon>/UserInterface/Icons/Equipment/Vanity/119_Wizard_Shield_ua</icon>
+	<rollovertextid>66538</rollovertextid>
+	<displaynameid>66539</displaynameid>
+	<offertype>eOfferNone</offertype>
+	<equipsoundset>UI_Cons_Spc_Wizard</equipsoundset>
+	<visualfactor type="VanityShield" factor="119.0000" />
+	<sellable>1</sellable>
+	<tradeable>0</tradeable>
+	<destroyable>1</destroyable>
+	<canbestoredingearhall>1</canbestoredingearhall>
+</trait>

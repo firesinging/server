@@ -1,0 +1,33 @@
+﻿<trait name="Torc_E105">
+	<dbid>1632</dbid>
+	<traittype>Torc</traittype>
+	<rarity>epic</rarity>
+	<icon>UserInterface\Icons\Equipment\Celt\Torc\Torc_E60_ua</icon>
+	<rollovertextid>59464</rollovertextid>
+	<displaynameid>59465</displaynameid>
+	<offertype>eOfferCivMatching</offertype>
+	<visualfactor type="Body" factor="60.0000" />
+	<sellable>1</sellable>
+	<tradeable>1</tradeable>
+	<destroyable>1</destroyable>
+	<canbestoredingearhall>0</canbestoredingearhall>
+	<effects>
+		<effect type="Data" bonus="true" amount="1.0373" scaling="0.0125" subtype="Hitpoints" visible="true" relativity="Percent">
+			<target type="Player" />
+		</effect>
+		<effect type="Data" bonus="true" amount="1.0073" scaling="0.0021" subtype="HitPercent" visible="true" relativity="Percent" action="RangedAttack">
+			<target type="Player" />
+		</effect>
+		<effect type="Data" bonus="true" amount="1.0012" scaling="0.0003" subtype="MaximumVelocity" visible="true" relativity="Percent">
+			<target type="Player" />
+		</effect>
+	</effects>
+	<levels>
+		<level>34</level>
+		<level>35</level>
+		<level>36</level>
+		<level>37</level>
+		<level>38</level>
+	</levels>
+	<craftlevels />
+</trait>

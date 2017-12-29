@@ -1,0 +1,56 @@
+﻿<trait name="Tool1H_LC01">
+	<dbid>2086</dbid>
+	<traittype>Tools</traittype>
+	<rarity>legendary</rarity>
+	<icon>UserInterface\Icons\Equipment\Generic\Tools\Tool_L90_ua</icon>
+	<rollovertextid>65265</rollovertextid>
+	<displaynameid>65266</displaynameid>
+	<alliance>eAllianceDelianLeague</alliance>
+	<offertype>eOfferCivMatching</offertype>
+	<visualfactor type="Weapon" factor="0.0000" />
+	<sellable>1</sellable>
+	<tradeable>1</tradeable>
+	<destroyable>1</destroyable>
+	<canbestoredingearhall>0</canbestoredingearhall>
+	<effects>
+		<effect type="Data" bonus="true" amount="1.0087" scaling="0.0030" subtype="CarryCapacity" visible="false" relativity="Percent" seedoffset="1" resource="Food">
+			<target type="Player" />
+		</effect>
+		<effect type="Data" bonus="true" amount="1.0087" scaling="0.0030" subtype="CarryCapacity" visible="false" relativity="Percent" seedoffset="1" resource="Stone">
+			<target type="Player" />
+		</effect>
+		<effect type="Data" bonus="true" amount="1.0087" scaling="0.0030" subtype="CarryCapacity" visible="false" relativity="Percent" seedoffset="1" resource="Wood">
+			<target type="Player" />
+		</effect>
+		<effect type="Data" bonus="true" amount="1.0087" scaling="0.0030" subtype="CarryCapacity" visible="false" relativity="Percent" seedoffset="1" resource="Gold">
+			<target type="Player" />
+		</effect>
+		<effect type="Data" bonus="true" amount="1.0112" scaling="0.0041" subtype="WorkRate" visible="true" relativity="Percent" seedoffset="1" action="Gather" unittype="AbstractFarm">
+			<target type="Player" />
+		</effect>
+		<effect type="Data" bonus="true" amount="1.0112" scaling="0.0041" subtype="WorkRate" visible="true" relativity="Percent" seedoffset="1" action="Gather" unittype="Huntable">
+			<target type="Player" />
+		</effect>
+		<effect type="Data" bonus="true" amount="1.0112" scaling="0.0041" subtype="WorkRate" visible="true" relativity="Percent" seedoffset="1" action="Gather" unittype="Tree">
+			<target type="Player" />
+		</effect>
+		<effect type="Data" bonus="true" amount="1.0112" scaling="0.0041" subtype="WorkRate" visible="true" relativity="Percent" seedoffset="1" action="Gather" unittype="Gold">
+			<target type="Player" />
+		</effect>
+		<effect type="Data" bonus="true" amount="1.0112" scaling="0.0041" subtype="WorkRate" visible="true" relativity="Percent" seedoffset="1" action="Gather" unittype="AbstractFruit">
+			<target type="Player" />
+		</effect>
+		<effect type="Data" bonus="true" amount="1.0112" scaling="0.0041" subtype="WorkRate" visible="true" relativity="Percent" seedoffset="1" action="FishGather" unittype="AbstractFish">
+			<target type="Player" />
+		</effect>
+		<effect type="Data" bonus="true" amount="1.0112" scaling="0.0041" subtype="WorkRate" visible="true" relativity="Percent" seedoffset="1" action="Gather" unittype="Herdable">
+			<target type="Player" />
+		</effect>
+		<effect type="Data" bonus="true" amount="1.0112" scaling="0.0041" subtype="WorkRate" visible="true" relativity="Percent" seedoffset="1" action="Gather" unittype="Stone">
+			<target type="Player" />
+		</effect>
+		<effect type="Data" bonus="true" amount="1.0147" scaling="0.0042" subtype="WorkRate" visible="true" relativity="Percent" seedoffset="2" action="Build" unittype="Building">
+			<target type="Player" />
+		</effect>
+	</effects>
+</trait>

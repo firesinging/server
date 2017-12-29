@@ -1,0 +1,29 @@
+﻿<trait name="Spear2H_E007_SR">
+	<dbid>2019</dbid>
+	<traittype>Spears2H</traittype>
+	<rarity>epic</rarity>
+	<icon>UserInterface\Icons\Equipment\Generic\Spears2H\Spear2H_E64_ua</icon>
+	<rollovertextid>64956</rollovertextid>
+	<displaynameid>64957</displaynameid>
+	<offertype>eOfferCivMatching</offertype>
+	<visualfactor type="Weapon" factor="64.0000" />
+	<sellable>1</sellable>
+	<tradeable>1</tradeable>
+	<destroyable>1</destroyable>
+	<canbestoredingearhall>0</canbestoredingearhall>
+	<effects>
+		<effect type="Data" bonus="true" amount="1.0398" scaling="0.0134" subtype="Damage" visible="true" relativity="Percent" allactions="1">
+			<target type="Player" />
+		</effect>
+		<effect type="Data" bonus="true" amount="1.0132" scaling="0.0036" subtype="DamageBonus" visible="true" relativity="Percent" allactions="1" unittype="AbstractCavalry">
+			<target type="Player" />
+		</effect>
+		<effect type="Data" bonus="true" amount="1.0067" scaling="0.0018" subtype="LOS" visible="true" relativity="Percent">
+			<target type="Player" />
+		</effect>
+	</effects>
+	<levels />
+	<craftlevels>
+		<level>43</level>
+	</craftlevels>
+</trait>

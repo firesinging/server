@@ -1,0 +1,15 @@
+﻿<trait name="VanityShield1H_004">
+	<dbid>1971</dbid>
+	<traittype>VanityShield</traittype>
+	<rarity>common</rarity>
+	<icon>\UserInterface\Icons\Equipment\Vanity\100_AnimalLover_Shield_ua</icon>
+	<rollovertextid>64108</rollovertextid>
+	<displaynameid>64109</displaynameid>
+	<offertype>eOfferNone</offertype>
+	<equipsoundset>UI_Cons_Spc_AnimalLover</equipsoundset>
+	<visualfactor type="VanityShield" factor="100.0000" />
+	<sellable>1</sellable>
+	<tradeable>0</tradeable>
+	<destroyable>1</destroyable>
+	<canbestoredingearhall>1</canbestoredingearhall>
+</trait>

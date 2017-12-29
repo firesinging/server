@@ -1,0 +1,15 @@
+﻿<trait name="VanityHelm_018">
+	<dbid>2111</dbid>
+	<traittype>VanityHelm</traittype>
+	<rarity>common</rarity>
+	<icon>/UserInterface/Icons/Equipment/Vanity/118_Pirate_Equipment</icon>
+	<rollovertextid>66528</rollovertextid>
+	<displaynameid>66529</displaynameid>
+	<offertype>eOfferNone</offertype>
+	<equipsoundset>UI_Cons_Spc_Pirate</equipsoundset>
+	<visualfactor type="VanityHelmet" factor="118.0000" />
+	<sellable>1</sellable>
+	<tradeable>0</tradeable>
+	<destroyable>1</destroyable>
+	<canbestoredingearhall>1</canbestoredingearhall>
+</trait>

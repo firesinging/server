@@ -1,0 +1,36 @@
+﻿<trait name="BellyBow1H_E001">
+	<dbid>619</dbid>
+	<traittype>BellyBows</traittype>
+	<rarity>epic</rarity>
+	<icon>UserInterface\Icons\Equipment\Generic\BellyBow\Bow_E60_ua</icon>
+	<rollovertextid>53596</rollovertextid>
+	<displaynameid>53597</displaynameid>
+	<offertype>eOfferCivMatching</offertype>
+	<visualfactor type="Weapon" factor="60.0000" />
+	<sellable>1</sellable>
+	<tradeable>1</tradeable>
+	<destroyable>1</destroyable>
+	<canbestoredingearhall>0</canbestoredingearhall>
+	<effects>
+		<effect type="Data" bonus="true" amount="1.0320" scaling="0.0107" subtype="Damage" visible="true" relativity="Percent" allactions="1">
+			<target type="Player" />
+		</effect>
+		<effect type="Data" bonus="true" amount="1.0022" scaling="0.0006" subtype="HitPercent" visible="true" relativity="Percent" action="RangedAttack">
+			<target type="Player" />
+		</effect>
+		<effect type="Data" bonus="true" amount="1.0059" scaling="0.0018" subtype="LOS" visible="true" relativity="Percent">
+			<target type="Player" />
+		</effect>
+		<effect type="Data" bonus="true" amount="1.0059" scaling="0.0017" subtype="MaximumRange" visible="true" relativity="Percent" action="RangedAttack">
+			<target type="Player" />
+		</effect>
+	</effects>
+	<levels>
+		<level>22</level>
+		<level>23</level>
+		<level>24</level>
+		<level>25</level>
+		<level>26</level>
+	</levels>
+	<craftlevels />
+</trait>

@@ -1,0 +1,19 @@
+﻿<trait name="Gear_Prst_RB01">
+	<dbid>1919</dbid>
+	<traittype>GearPriest</traittype>
+	<rarity>rare</rarity>
+	<icon>UserInterface\Icons\Equipment\Generic\Gear\Prst\Sandals_R30_ua</icon>
+	<rollovertextid>62417</rollovertextid>
+	<displaynameid>62418</displaynameid>
+	<offertype>eOfferCivMatching</offertype>
+	<visualfactor type="Helmet" factor="30.0000" />
+	<sellable>1</sellable>
+	<tradeable>1</tradeable>
+	<destroyable>1</destroyable>
+	<canbestoredingearhall>0</canbestoredingearhall>
+	<effects>
+		<effect type="Data" bonus="true" amount="1.0062" scaling="0.0015" subtype="MaximumVelocity" visible="true" relativity="Percent">
+			<target type="Player" />
+		</effect>
+	</effects>
+</trait>

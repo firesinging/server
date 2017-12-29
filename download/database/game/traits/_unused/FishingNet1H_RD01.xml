@@ -1,0 +1,25 @@
+﻿<trait name="FishingNet1H_RD01">
+	<dbid>2159</dbid>
+	<traittype>FishingNet</traittype>
+	<rarity>rare</rarity>
+	<icon>UserInterface\Icons\Equipment\Generic\Fishnets\Net_R31_ua</icon>
+	<rollovertextid>67890</rollovertextid>
+	<displaynameid>67891</displaynameid>
+	<offertype>eOfferCivMatching</offertype>
+	<visualfactor type="Weapon" factor="0.0000" />
+	<sellable>1</sellable>
+	<tradeable>0</tradeable>
+	<destroyable>1</destroyable>
+	<canbestoredingearhall>0</canbestoredingearhall>
+	<effects>
+		<effect type="Data" bonus="true" amount="1.0049" scaling="0.0012" subtype="WorkRate" visible="true" relativity="Percent" action="Gather" unittype="AbstractFish">
+			<target type="Player" />
+		</effect>
+		<effect type="Data" bonus="true" amount="1.0055" scaling="0.0014" subtype="CarryCapacity" visible="false" relativity="Percent" resource="Food">
+			<target type="Player" />
+		</effect>
+		<effect type="Data" bonus="true" amount="1.0074" scaling="0.0019" subtype="MaximumVelocity" visible="true" relativity="Percent">
+			<target type="Player" />
+		</effect>
+	</effects>
+</trait>

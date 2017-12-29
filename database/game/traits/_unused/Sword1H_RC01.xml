@@ -1,0 +1,20 @@
+﻿<trait name="Sword1H_RC01">
+	<dbid>2073</dbid>
+	<traittype>Swords1H</traittype>
+	<rarity>rare</rarity>
+	<icon>UserInterface\Icons\Equipment\Generic\Swords\Sword_R34_ua</icon>
+	<rollovertextid>65239</rollovertextid>
+	<displaynameid>65240</displaynameid>
+	<alliance>eAllianceDelianLeague</alliance>
+	<offertype>eOfferCivMatching</offertype>
+	<visualfactor type="Weapon" factor="34.0000" />
+	<sellable>1</sellable>
+	<tradeable>1</tradeable>
+	<destroyable>1</destroyable>
+	<canbestoredingearhall>0</canbestoredingearhall>
+	<effects>
+		<effect type="Data" bonus="true" amount="1.0373" scaling="0.0098" subtype="Damage" visible="true" relativity="Percent" allactions="1">
+			<target type="Player" />
+		</effect>
+	</effects>
+</trait>

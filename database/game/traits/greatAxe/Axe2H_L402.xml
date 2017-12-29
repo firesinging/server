@@ -1,0 +1,26 @@
+﻿<trait name="Axe2H_L402">
+	<dbid>2145</dbid>
+	<traittype>GreatAxe</traittype>
+	<rarity>legendary</rarity>
+	<icon>UserInterface/Icons/Equipment/Generic/Axes/Axe_L91_ua</icon>
+	<rollovertextid>66725</rollovertextid>
+	<displaynameid>66726</displaynameid>
+	<offertype>eOfferCivMatching</offertype>
+	<visualfactor type="Weapon" factor="91.0000" />
+	<sellable>1</sellable>
+	<tradeable>1</tradeable>
+	<destroyable>1</destroyable>
+	<canbestoredingearhall>0</canbestoredingearhall>
+	<effects>
+		<effect type="Data" bonus="true" amount="1.0449" scaling="0.0165" subtype="Damage" visible="true" relativity="Percent" allactions="1">
+			<target type="Player" />
+		</effect>
+		<effect type="Data" bonus="true" amount="1.0049" scaling="0.0014" subtype="HitPercent" visible="true" relativity="Percent" action="MeleeAttack">
+			<target type="Player" />
+		</effect>
+	</effects>
+	<levels>
+		<level>43</level>
+	</levels>
+	<craftlevels />
+</trait>

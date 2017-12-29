@@ -1,0 +1,35 @@
+﻿<trait name="Shield1H_E008">
+	<dbid>985</dbid>
+	<traittype>Shields</traittype>
+	<rarity>epic</rarity>
+	<icon>UserInterface\Icons\Equipment\Generic\Shields\Shield_E62_ua</icon>
+	<rollovertextid>54492</rollovertextid>
+	<displaynameid>54493</displaynameid>
+	<offertype>eOfferCivMatching</offertype>
+	<visualfactor type="Shield" factor="62.0000" />
+	<sellable>1</sellable>
+	<tradeable>1</tradeable>
+	<destroyable>1</destroyable>
+	<canbestoredingearhall>0</canbestoredingearhall>
+	<effects>
+		<effect type="Data" bonus="true" amount="1.0049" scaling="0.0013" subtype="Hitpoints" visible="true" relativity="Percent">
+			<target type="Player" />
+		</effect>
+		<effect type="Data" bonus="true" amount="1.0055" scaling="0.0015" subtype="Damage" visible="true" relativity="Percent" allactions="1">
+			<target type="Player" />
+		</effect>
+		<effect type="Data" bonus="true" amount="1.0018" scaling="0.0005" subtype="HitPercent" visible="true" relativity="Percent" action="MeleeAttack">
+			<target type="Player" />
+		</effect>
+		<effect type="Data" bonus="true" amount="1.0018" scaling="0.0005" subtype="HitPercent" visible="false" relativity="Percent" action="RangedAttack">
+			<target type="Player" />
+		</effect>
+	</effects>
+	<levels>
+		<level>40</level>
+		<level>41</level>
+		<level>42</level>
+		<level>43</level>
+	</levels>
+	<craftlevels />
+</trait>

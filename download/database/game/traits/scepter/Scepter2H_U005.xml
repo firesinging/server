@@ -1,0 +1,26 @@
+﻿<trait name="Scepter2H_U005">
+	<dbid>1369</dbid>
+	<traittype>Scepter</traittype>
+	<rarity>uncommon</rarity>
+	<icon>UserInterface\Icons\Equipment\Generic\Scepters\Scepter_U11_ua</icon>
+	<rollovertextid>55677</rollovertextid>
+	<displaynameid>55678</displaynameid>
+	<offertype>eOfferNone</offertype>
+	<visualfactor type="Weapon" factor="11.0000" />
+	<sellable>1</sellable>
+	<tradeable>1</tradeable>
+	<destroyable>1</destroyable>
+	<canbestoredingearhall>0</canbestoredingearhall>
+	<effects>
+		<effect type="Data" bonus="true" amount="1.0049" scaling="0.0011" subtype="WorkRate" visible="true" relativity="Percent" action="Empower" unittype="Dropsite">
+			<target type="Player" />
+		</effect>
+		<effect type="Data" bonus="true" amount="1.0049" scaling="0.0010" subtype="WorkRate" visible="true" relativity="Percent" action="Empower" unittype="ActionBuild">
+			<target type="Player" />
+		</effect>
+	</effects>
+	<levels />
+	<craftlevels>
+		<level>13</level>
+	</craftlevels>
+</trait>

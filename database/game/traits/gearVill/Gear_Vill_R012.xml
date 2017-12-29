@@ -1,0 +1,27 @@
+﻿<trait name="Gear_Vill_R012">
+	<dbid>785</dbid>
+	<traittype>GearVill</traittype>
+	<rarity>rare</rarity>
+	<icon>UserInterface\Icons\Equipment\Generic\Gear\Vill\Food_R31_ua</icon>
+	<rollovertextid>54054</rollovertextid>
+	<displaynameid>54055</displaynameid>
+	<offertype>eOfferCivMatching</offertype>
+	<visualfactor type="Helmet" factor="31.0000" />
+	<sellable>1</sellable>
+	<tradeable>1</tradeable>
+	<destroyable>1</destroyable>
+	<canbestoredingearhall>0</canbestoredingearhall>
+	<effects>
+		<effect type="Data" bonus="true" amount="0.9939" scaling="-0.0014" subtype="CostAll" visible="true" relativity="Percent">
+			<target type="Player" />
+		</effect>
+	</effects>
+	<levels>
+		<level>33</level>
+		<level>34</level>
+		<level>35</level>
+		<level>36</level>
+		<level>37</level>
+	</levels>
+	<craftlevels />
+</trait>

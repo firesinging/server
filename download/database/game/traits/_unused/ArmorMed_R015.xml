@@ -1,0 +1,22 @@
+﻿<trait name="ArmorMed_R015">
+	<dbid>1387</dbid>
+	<traittype>ArmorMed</traittype>
+	<rarity>rare</rarity>
+	<icon>UserInterface\Icons\Equipment\Generic\Armor\Inf\Inf_R30v2_ua</icon>
+	<rollovertextid>55872</rollovertextid>
+	<displaynameid>55873</displaynameid>
+	<offertype>eOfferCivMatching</offertype>
+	<visualfactor type="Body" factor="30.0000" />
+	<sellable>1</sellable>
+	<tradeable>0</tradeable>
+	<destroyable>1</destroyable>
+	<canbestoredingearhall>0</canbestoredingearhall>
+	<effects>
+		<effect type="Data" bonus="true" amount="1.0347" scaling="0.0093" subtype="Hitpoints" visible="true" relativity="Percent">
+			<target type="Player" />
+		</effect>
+		<effect type="Data" bonus="true" amount="1.0184" scaling="0.0047" subtype="LOS" visible="true" relativity="Percent">
+			<target type="Player" />
+		</effect>
+	</effects>
+</trait>

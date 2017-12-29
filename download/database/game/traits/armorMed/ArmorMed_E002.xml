@@ -1,0 +1,33 @@
+﻿<trait name="ArmorMed_E002">
+	<dbid>529</dbid>
+	<traittype>ArmorMed</traittype>
+	<rarity>epic</rarity>
+	<icon>UserInterface\Icons\Equipment\Generic\Armor\Inf\Inf_E60_ua</icon>
+	<rollovertextid>53411</rollovertextid>
+	<displaynameid>53412</displaynameid>
+	<offertype>eOfferCivMatching</offertype>
+	<visualfactor type="Body" factor="60.0000" />
+	<sellable>1</sellable>
+	<tradeable>1</tradeable>
+	<destroyable>1</destroyable>
+	<canbestoredingearhall>0</canbestoredingearhall>
+	<effects>
+		<effect type="Data" bonus="true" amount="1.0398" scaling="0.0137" subtype="Hitpoints" visible="true" relativity="Percent">
+			<target type="Player" />
+		</effect>
+		<effect type="Data" bonus="true" amount="1.0059" scaling="0.0018" subtype="Damage" visible="true" relativity="Percent" allactions="1">
+			<target type="Player" />
+		</effect>
+		<effect type="Data" bonus="true" amount="1.0352" scaling="0.0105" subtype="TargetSpeedBoostResist" visible="true" relativity="Percent">
+			<target type="Player" />
+		</effect>
+	</effects>
+	<levels>
+		<level>22</level>
+		<level>23</level>
+		<level>24</level>
+		<level>25</level>
+		<level>26</level>
+	</levels>
+	<craftlevels />
+</trait>

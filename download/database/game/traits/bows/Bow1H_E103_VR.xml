@@ -1,0 +1,26 @@
+﻿<trait name="Bow1H_E103_VR">
+	<dbid>2234</dbid>
+	<traittype>Bows</traittype>
+	<rarity>epic</rarity>
+	<icon>UserInterface\Icons\Equipment\Generic\Bows\Bow_E61_ua</icon>
+	<rollovertextid>68097</rollovertextid>
+	<displaynameid>68098</displaynameid>
+	<offertype>eOfferCivMatching</offertype>
+	<visualfactor type="Weapon" factor="61.0000" />
+	<sellable>1</sellable>
+	<tradeable>1</tradeable>
+	<destroyable>1</destroyable>
+	<canbestoredingearhall>0</canbestoredingearhall>
+	<effects>
+		<effect type="Data" bonus="true" amount="1.0278" scaling="0.0088" subtype="Damage" visible="true" relativity="Percent" allactions="1">
+			<target type="Player" />
+		</effect>
+		<effect type="Data" bonus="true" amount="1.0184" scaling="0.0052" subtype="MaximumRange" visible="true" relativity="Percent" action="RangedAttack">
+			<target type="Player" />
+		</effect>
+	</effects>
+	<levels />
+	<craftlevels>
+		<level>38</level>
+	</craftlevels>
+</trait>

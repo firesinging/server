@@ -1,0 +1,22 @@
+﻿<trait name="Shield1H_U201">
+	<dbid>1898</dbid>
+	<traittype>Shields</traittype>
+	<rarity>uncommon</rarity>
+	<icon>UserInterface\Icons\Equipment\Generic\Shields\Shield_U13_ua</icon>
+	<rollovertextid>62017</rollovertextid>
+	<displaynameid>62018</displaynameid>
+	<offertype>eOfferNone</offertype>
+	<visualfactor type="Shield" factor="13.0000" />
+	<sellable>0</sellable>
+	<tradeable>0</tradeable>
+	<destroyable>1</destroyable>
+	<canbestoredingearhall>0</canbestoredingearhall>
+	<effects>
+		<effect type="Data" bonus="true" amount="1.0061" scaling="0.0010" subtype="Hitpoints" visible="true" relativity="Percent">
+			<target type="Player" />
+		</effect>
+		<effect type="Data" bonus="true" amount="1.0153" scaling="0.0025" subtype="Armor" visible="true" damagetype="Hand" relativity="Percent">
+			<target type="Player" />
+		</effect>
+	</effects>
+</trait>

@@ -1,0 +1,26 @@
+﻿<trait name="ArmorBldg_U013">
+	<dbid>1490</dbid>
+	<traittype>ArmorBuilding</traittype>
+	<rarity>uncommon</rarity>
+	<icon>UserInterface\Icons\Equipment\Generic\Armor\Bldg\Bldg_U10_ua</icon>
+	<rollovertextid>59180</rollovertextid>
+	<displaynameid>59181</displaynameid>
+	<offertype>eOfferNone</offertype>
+	<visualfactor type="Body" factor="10.0000" />
+	<sellable>1</sellable>
+	<tradeable>0</tradeable>
+	<destroyable>1</destroyable>
+	<canbestoredingearhall>0</canbestoredingearhall>
+	<effects>
+		<effect type="Data" bonus="true" amount="0.9814" scaling="-0.0033" subtype="CostAll" visible="true" relativity="Percent">
+			<target type="Player" />
+		</effect>
+		<effect type="Data" bonus="true" amount="1.0245" scaling="0.0043" subtype="DamageBonusReduction" visible="true" relativity="Percent">
+			<target type="Player" />
+		</effect>
+	</effects>
+	<levels>
+		<level>5</level>
+	</levels>
+	<craftlevels />
+</trait>

@@ -1,0 +1,22 @@
+﻿<trait name="Spear1H_R101">
+	<dbid>1537</dbid>
+	<traittype>Spears1H</traittype>
+	<rarity>rare</rarity>
+	<icon>UserInterface\Icons\Equipment\Generic\Spears1H\Spear1H_R33_ua</icon>
+	<rollovertextid>59274</rollovertextid>
+	<displaynameid>59275</displaynameid>
+	<offertype>eOfferCivMatching</offertype>
+	<visualfactor type="Weapon" factor="33.0000" />
+	<sellable>1</sellable>
+	<tradeable>1</tradeable>
+	<destroyable>1</destroyable>
+	<canbestoredingearhall>0</canbestoredingearhall>
+	<effects>
+		<effect type="Data" bonus="true" amount="1.0286" scaling="0.0074" subtype="Damage" visible="true" relativity="Percent" allactions="1">
+			<target type="Player" />
+		</effect>
+		<effect type="Data" bonus="true" amount="0.9493" scaling="-0.0122" subtype="TargetSpeedBoost" visible="true" relativity="Percent" action="MeleeAttack">
+			<target type="Player" />
+		</effect>
+	</effects>
+</trait>

@@ -1,0 +1,33 @@
+﻿<trait name="ArrowOH_R004">
+	<dbid>566</dbid>
+	<traittype>Arrows</traittype>
+	<rarity>rare</rarity>
+	<icon>UserInterface\Icons\Equipment\Generic\Arrows\Arrow_R30_ua</icon>
+	<rollovertextid>53489</rollovertextid>
+	<displaynameid>53490</displaynameid>
+	<offertype>eOfferCivMatching</offertype>
+	<visualfactor type="Shield" factor="30.0000" />
+	<sellable>1</sellable>
+	<tradeable>1</tradeable>
+	<destroyable>1</destroyable>
+	<canbestoredingearhall>0</canbestoredingearhall>
+	<effects>
+		<effect type="Data" bonus="true" amount="1.0073" scaling="0.0018" subtype="Damage" visible="true" relativity="Percent" allactions="1">
+			<target type="Player" />
+		</effect>
+		<effect type="Data" bonus="true" amount="1.0024" scaling="0.0006" subtype="Hitpoints" visible="true" relativity="Percent">
+			<target type="Player" />
+		</effect>
+		<effect type="Data" bonus="true" amount="1.0024" scaling="0.0006" subtype="HitPercent" visible="true" relativity="Percent" action="RangedAttack">
+			<target type="Player" />
+		</effect>
+	</effects>
+	<levels>
+		<level>14</level>
+		<level>15</level>
+		<level>16</level>
+		<level>17</level>
+		<level>18</level>
+	</levels>
+	<craftlevels />
+</trait>

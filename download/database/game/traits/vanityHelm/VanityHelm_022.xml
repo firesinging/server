@@ -1,0 +1,15 @@
+﻿<trait name="VanityHelm_022">
+	<dbid>2153</dbid>
+	<traittype>VanityHelm</traittype>
+	<rarity>common</rarity>
+	<icon>\UserInterface\Icons\Equipment\Vanity\121_UltimateNorse_Gear_ua</icon>
+	<rollovertextid>67745</rollovertextid>
+	<displaynameid>67746</displaynameid>
+	<offertype>eOfferNone</offertype>
+	<equipsoundset>UI_Cons_Spc_Wizard</equipsoundset>
+	<visualfactor type="VanityHelmet" factor="122.0000" />
+	<sellable>1</sellable>
+	<tradeable>0</tradeable>
+	<destroyable>1</destroyable>
+	<canbestoredingearhall>1</canbestoredingearhall>
+</trait>

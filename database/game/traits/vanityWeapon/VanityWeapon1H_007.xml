@@ -1,0 +1,15 @@
+﻿<trait name="VanityWeapon1H_007">
+	<dbid>1983</dbid>
+	<traittype>VanityWeapon</traittype>
+	<rarity>common</rarity>
+	<icon>\UserInterface\Icons\Equipment\Vanity\107_Tiki_Weapon_ua</icon>
+	<rollovertextid>64132</rollovertextid>
+	<displaynameid>64133</displaynameid>
+	<offertype>eOfferNone</offertype>
+	<equipsoundset>UI_Cons_Spc_Tiki</equipsoundset>
+	<visualfactor type="VanityWeapon" factor="107.0000" />
+	<sellable>1</sellable>
+	<tradeable>0</tradeable>
+	<destroyable>1</destroyable>
+	<canbestoredingearhall>1</canbestoredingearhall>
+</trait>

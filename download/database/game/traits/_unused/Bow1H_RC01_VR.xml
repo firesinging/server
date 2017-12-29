@@ -1,0 +1,23 @@
+﻿<trait name="Bow1H_RC01_VR">
+	<dbid>2245</dbid>
+	<traittype>Bows</traittype>
+	<rarity>rare</rarity>
+	<icon>UserInterface\Icons\Equipment\Generic\Bows\Bow_R32_ua</icon>
+	<rollovertextid>68119</rollovertextid>
+	<displaynameid>68120</displaynameid>
+	<alliance>eAllianceDelianLeague</alliance>
+	<offertype>eOfferCivMatching</offertype>
+	<visualfactor type="Weapon" factor="32.0000" />
+	<sellable>1</sellable>
+	<tradeable>1</tradeable>
+	<destroyable>1</destroyable>
+	<canbestoredingearhall>0</canbestoredingearhall>
+	<effects>
+		<effect type="Data" bonus="true" amount="1.0259" scaling="0.0064" subtype="Damage" visible="true" relativity="Percent" allactions="1">
+			<target type="Player" />
+		</effect>
+		<effect type="Data" bonus="true" amount="1.0221" scaling="0.0050" subtype="MaximumRange" visible="true" relativity="Percent" action="RangedAttack">
+			<target type="Player" />
+		</effect>
+	</effects>
+</trait>

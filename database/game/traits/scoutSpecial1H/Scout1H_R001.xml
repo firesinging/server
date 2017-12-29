@@ -1,0 +1,23 @@
+﻿<trait name="Scout1H_R001">
+	<dbid>1151</dbid>
+	<traittype>ScoutSpecial1H</traittype>
+	<rarity>rare</rarity>
+	<icon>UserInterface\Icons\Equipment\Generic\Gear\Scout\Tower_R30_ua</icon>
+	<rollovertextid>55095</rollovertextid>
+	<displaynameid>55096</displaynameid>
+	<offertype>eOfferCivMatching</offertype>
+	<visualfactor type="Helmet" factor="30.0000" />
+	<sellable>1</sellable>
+	<tradeable>1</tradeable>
+	<destroyable>1</destroyable>
+	<canbestoredingearhall>0</canbestoredingearhall>
+	<effects>
+		<effect type="Data" bonus="true" amount="1.2470" scaling="0.0662" subtype="WorkRate" visible="true" relativity="Percent" action="Build" unittype="UnitTypeBldgWatchPost">
+			<target type="Player" />
+		</effect>
+	</effects>
+	<levels>
+		<level>13</level>
+	</levels>
+	<craftlevels />
+</trait>

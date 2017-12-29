@@ -1,0 +1,30 @@
+﻿<trait name="Sword1H_R002">
+	<dbid>990</dbid>
+	<traittype>Swords1H</traittype>
+	<rarity>rare</rarity>
+	<icon>UserInterface\Icons\Equipment\Generic\Swords\Sword_R32_ua</icon>
+	<rollovertextid>54502</rollovertextid>
+	<displaynameid>54503</displaynameid>
+	<offertype>eOfferCivMatching</offertype>
+	<visualfactor type="Weapon" factor="32.0000" />
+	<sellable>1</sellable>
+	<tradeable>1</tradeable>
+	<destroyable>1</destroyable>
+	<canbestoredingearhall>0</canbestoredingearhall>
+	<effects>
+		<effect type="Data" bonus="true" amount="1.0335" scaling="0.0091" subtype="Hitpoints" visible="true" relativity="Percent">
+			<target type="Player" />
+		</effect>
+		<effect type="Data" bonus="true" amount="1.0092" scaling="0.0023" subtype="Armor" visible="true" damagetype="Hand" relativity="Percent">
+			<target type="Player" />
+		</effect>
+	</effects>
+	<levels>
+		<level>10</level>
+		<level>11</level>
+		<level>12</level>
+		<level>13</level>
+		<level>14</level>
+	</levels>
+	<craftlevels />
+</trait>

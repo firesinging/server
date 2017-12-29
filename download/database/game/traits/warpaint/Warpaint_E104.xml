@@ -1,0 +1,32 @@
+﻿<trait name="Warpaint_E104">
+	<dbid>1671</dbid>
+	<traittype>Warpaint</traittype>
+	<rarity>epic</rarity>
+	<icon>UserInterface\Icons\Equipment\Celt\Warpaint\WarPaint_E60_ua</icon>
+	<rollovertextid>59542</rollovertextid>
+	<displaynameid>59543</displaynameid>
+	<offertype>eOfferCivMatching</offertype>
+	<visualfactor type="Body" factor="60.0000" />
+	<sellable>1</sellable>
+	<tradeable>1</tradeable>
+	<destroyable>1</destroyable>
+	<canbestoredingearhall>0</canbestoredingearhall>
+	<effects>
+		<effect type="Data" bonus="true" amount="1.0092" scaling="0.0028" subtype="Damage" visible="true" relativity="Percent" allactions="1">
+			<target type="Player" />
+		</effect>
+		<effect type="Data" bonus="true" amount="1.0038" scaling="0.0012" subtype="LOS" visible="true" relativity="Percent">
+			<target type="Player" />
+		</effect>
+	</effects>
+	<levels>
+		<level>17</level>
+		<level>18</level>
+		<level>19</level>
+		<level>20</level>
+		<level>21</level>
+		<level>22</level>
+		<level>23</level>
+	</levels>
+	<craftlevels />
+</trait>

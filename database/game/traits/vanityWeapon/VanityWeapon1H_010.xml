@@ -1,0 +1,15 @@
+﻿<trait name="VanityWeapon1H_010">
+	<dbid>2100</dbid>
+	<traittype>VanityWeapon</traittype>
+	<rarity>common</rarity>
+	<icon>\UserInterface\Icons\Equipment\Vanity\110_UltimateGreece_Weapon_ua</icon>
+	<rollovertextid>65308</rollovertextid>
+	<displaynameid>65309</displaynameid>
+	<offertype>eOfferNone</offertype>
+	<equipsoundset>UI_Cons_Spc_Heroic</equipsoundset>
+	<visualfactor type="VanityWeapon" factor="110.0000" />
+	<sellable>1</sellable>
+	<tradeable>0</tradeable>
+	<destroyable>1</destroyable>
+	<canbestoredingearhall>1</canbestoredingearhall>
+</trait>

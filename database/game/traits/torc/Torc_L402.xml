@@ -1,0 +1,26 @@
+﻿<trait name="Torc_L402">
+	<dbid>2142</dbid>
+	<traittype>Torc</traittype>
+	<rarity>legendary</rarity>
+	<icon>UserInterface/Icons/Equipment/Celt/Torc/Torc_L91_ua</icon>
+	<rollovertextid>66719</rollovertextid>
+	<displaynameid>66720</displaynameid>
+	<offertype>eOfferCivMatching</offertype>
+	<visualfactor type="Body" factor="91.0000" />
+	<sellable>1</sellable>
+	<tradeable>1</tradeable>
+	<destroyable>1</destroyable>
+	<canbestoredingearhall>0</canbestoredingearhall>
+	<effects>
+		<effect type="Data" bonus="true" amount="1.0018" scaling="0.0005" subtype="MaximumVelocity" visible="true" relativity="Percent">
+			<target type="Player" />
+		</effect>
+		<effect type="Data" bonus="true" amount="1.0423" scaling="0.0153" subtype="Hitpoints" visible="true" relativity="Percent">
+			<target type="Player" />
+		</effect>
+	</effects>
+	<levels>
+		<level>43</level>
+	</levels>
+	<craftlevels />
+</trait>

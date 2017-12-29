@@ -1,0 +1,26 @@
+﻿<trait name="RamHead2H_U006">
+	<dbid>1107</dbid>
+	<traittype>RamHeads</traittype>
+	<rarity>uncommon</rarity>
+	<icon>UserInterface\Icons\Equipment\Generic\Ramheads\Ram_U12_ua</icon>
+	<rollovertextid>54996</rollovertextid>
+	<displaynameid>54997</displaynameid>
+	<offertype>eOfferNone</offertype>
+	<visualfactor type="Weapon" factor="12.0000" />
+	<sellable>1</sellable>
+	<tradeable>1</tradeable>
+	<destroyable>1</destroyable>
+	<canbestoredingearhall>0</canbestoredingearhall>
+	<effects>
+		<effect type="Data" bonus="true" amount="0.9889" scaling="-0.0023" subtype="CostAll" visible="true" relativity="Percent">
+			<target type="Player" />
+		</effect>
+		<effect type="Data" bonus="true" amount="1.0147" scaling="0.0029" subtype="DamageBonus" visible="true" relativity="Percent" allactions="1" unittype="Building">
+			<target type="Player" />
+		</effect>
+	</effects>
+	<levels />
+	<craftlevels>
+		<level>21</level>
+	</craftlevels>
+</trait>

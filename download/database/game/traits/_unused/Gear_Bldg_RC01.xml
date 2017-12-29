@@ -1,0 +1,20 @@
+﻿<trait name="Gear_Bldg_RC01">
+	<dbid>2054</dbid>
+	<traittype>GearBldg</traittype>
+	<rarity>rare</rarity>
+	<icon>UserInterface\Icons\Equipment\Generic\Gear\Bldg\Lookout_R30_ua</icon>
+	<rollovertextid>65201</rollovertextid>
+	<displaynameid>65202</displaynameid>
+	<alliance>eAllianceLegionOfCarthage</alliance>
+	<offertype>eOfferCivMatching</offertype>
+	<visualfactor type="Helmet" factor="30.0000" />
+	<sellable>1</sellable>
+	<tradeable>1</tradeable>
+	<destroyable>1</destroyable>
+	<canbestoredingearhall>0</canbestoredingearhall>
+	<effects>
+		<effect type="Data" bonus="true" amount="1.0309" scaling="0.0076" subtype="LOS" visible="true" relativity="Percent">
+			<target type="Player" />
+		</effect>
+	</effects>
+</trait>

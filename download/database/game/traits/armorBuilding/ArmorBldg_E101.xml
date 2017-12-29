@@ -1,0 +1,26 @@
+﻿<trait name="ArmorBldg_E101">
+	<dbid>1493</dbid>
+	<traittype>ArmorBuilding</traittype>
+	<rarity>epic</rarity>
+	<icon>UserInterface\Icons\Equipment\Generic\Armor\Bldg\Bldg_E60_ua</icon>
+	<rollovertextid>59186</rollovertextid>
+	<displaynameid>59187</displaynameid>
+	<offertype>eOfferCivMatching</offertype>
+	<visualfactor type="Body" factor="60.0000" />
+	<sellable>1</sellable>
+	<tradeable>1</tradeable>
+	<destroyable>1</destroyable>
+	<canbestoredingearhall>0</canbestoredingearhall>
+	<effects>
+		<effect type="Data" bonus="true" amount="1.0932" scaling="0.0311" subtype="Armor" visible="true" damagetype="Siege" relativity="Percent">
+			<target type="Player" />
+		</effect>
+		<effect type="Data" bonus="true" amount="1.0307" scaling="0.0088" subtype="Armor" visible="true" damagetype="Ranged" relativity="Percent">
+			<target type="Player" />
+		</effect>
+	</effects>
+	<levels />
+	<craftlevels>
+		<level>40</level>
+	</craftlevels>
+</trait>

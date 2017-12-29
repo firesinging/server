@@ -1,0 +1,15 @@
+﻿<trait name="VanityHelm_005">
+	<dbid>1990</dbid>
+	<traittype>VanityHelm</traittype>
+	<rarity>common</rarity>
+	<icon>\UserInterface\Icons\Equipment\Vanity\106_TigerHunter_Gear_ua</icon>
+	<rollovertextid>64146</rollovertextid>
+	<displaynameid>64147</displaynameid>
+	<offertype>eOfferNone</offertype>
+	<equipsoundset>UI_Cons_Spc_Tiger</equipsoundset>
+	<visualfactor type="VanityHelmet" factor="106.0000" />
+	<sellable>1</sellable>
+	<tradeable>0</tradeable>
+	<destroyable>1</destroyable>
+	<canbestoredingearhall>1</canbestoredingearhall>
+</trait>

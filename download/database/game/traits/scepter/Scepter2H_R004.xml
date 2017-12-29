@@ -1,0 +1,30 @@
+﻿<trait name="Scepter2H_R004">
+	<dbid>1348</dbid>
+	<traittype>Scepter</traittype>
+	<rarity>rare</rarity>
+	<icon>UserInterface\Icons\Equipment\Generic\Scepters\Scepter_R30_ua</icon>
+	<rollovertextid>55635</rollovertextid>
+	<displaynameid>55636</displaynameid>
+	<offertype>eOfferCivMatching</offertype>
+	<visualfactor type="Weapon" factor="30.0000" />
+	<sellable>1</sellable>
+	<tradeable>1</tradeable>
+	<destroyable>1</destroyable>
+	<canbestoredingearhall>0</canbestoredingearhall>
+	<effects>
+		<effect type="Data" bonus="true" amount="1.0049" scaling="0.0014" subtype="WorkRate" visible="true" relativity="Percent" action="Empower" unittype="Dropsite">
+			<target type="Player" />
+		</effect>
+		<effect type="Data" bonus="true" amount="1.0049" scaling="0.0012" subtype="WorkRate" visible="true" relativity="Percent" action="Empower" unittype="ActionTrain">
+			<target type="Player" />
+		</effect>
+	</effects>
+	<levels>
+		<level>17</level>
+		<level>18</level>
+		<level>19</level>
+		<level>20</level>
+		<level>21</level>
+	</levels>
+	<craftlevels />
+</trait>

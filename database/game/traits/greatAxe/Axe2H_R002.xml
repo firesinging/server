@@ -1,0 +1,27 @@
+﻿<trait name="Axe2H_R002">
+	<dbid>1265</dbid>
+	<traittype>GreatAxe</traittype>
+	<rarity>rare</rarity>
+	<icon>UserInterface\Icons\Equipment\Generic\Axes\Axe_R32_ua</icon>
+	<rollovertextid>55435</rollovertextid>
+	<displaynameid>55436</displaynameid>
+	<offertype>eOfferCivMatching</offertype>
+	<visualfactor type="Weapon" factor="32.0000" />
+	<sellable>1</sellable>
+	<tradeable>1</tradeable>
+	<destroyable>1</destroyable>
+	<canbestoredingearhall>0</canbestoredingearhall>
+	<effects>
+		<effect type="Data" bonus="true" amount="1.0500" scaling="0.0140" subtype="Damage" visible="true" relativity="Percent" allactions="1">
+			<target type="Player" />
+		</effect>
+	</effects>
+	<levels>
+		<level>14</level>
+		<level>15</level>
+		<level>16</level>
+		<level>17</level>
+		<level>18</level>
+	</levels>
+	<craftlevels />
+</trait>

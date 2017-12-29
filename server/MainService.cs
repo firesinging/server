@@ -70,7 +70,7 @@ namespace Server
 
             this.components = (IContainer)new Container();
 
-            this.ServiceName = ConfigurationManager.AppSettings["ServiceName"];
+            this.ServiceName = "FireSinging";
 
         }
 

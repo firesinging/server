@@ -1,0 +1,31 @@
+﻿<trait name="ArmorBldg_U102">
+	<dbid>1491</dbid>
+	<traittype>ArmorBuilding</traittype>
+	<rarity>uncommon</rarity>
+	<icon>UserInterface\Icons\Equipment\Generic\Armor\Bldg\Bldg_U10v2_ua</icon>
+	<rollovertextid>59182</rollovertextid>
+	<displaynameid>59183</displaynameid>
+	<offertype>eOfferNone</offertype>
+	<visualfactor type="Body" factor="10.0000" />
+	<sellable>1</sellable>
+	<tradeable>1</tradeable>
+	<destroyable>1</destroyable>
+	<canbestoredingearhall>0</canbestoredingearhall>
+	<effects>
+		<effect type="Data" bonus="true" amount="1.0061" scaling="0.0010" subtype="Armor" visible="true" damagetype="Hand" relativity="Percent">
+			<target type="Player" />
+		</effect>
+		<effect type="Data" bonus="true" amount="1.0449" scaling="0.0080" subtype="Hitpoints" visible="true" relativity="Percent">
+			<target type="Player" />
+		</effect>
+	</effects>
+	<levels>
+		<level>31</level>
+		<level>32</level>
+		<level>33</level>
+		<level>34</level>
+		<level>35</level>
+		<level>36</level>
+	</levels>
+	<craftlevels />
+</trait>

@@ -1,0 +1,26 @@
+﻿<trait name="WarHorn_L401">
+	<dbid>2143</dbid>
+	<traittype>War Horn</traittype>
+	<rarity>legendary</rarity>
+	<icon>UserInterface/Icons/Equipment/Celt/WarHorn/Horn_L90_ua</icon>
+	<rollovertextid>66721</rollovertextid>
+	<displaynameid>66722</displaynameid>
+	<offertype>eOfferCivMatching</offertype>
+	<visualfactor type="Body" factor="90.0000" />
+	<sellable>1</sellable>
+	<tradeable>1</tradeable>
+	<destroyable>1</destroyable>
+	<canbestoredingearhall>0</canbestoredingearhall>
+	<effects>
+		<effect type="Data" bonus="true" amount="1.0185" scaling="0.0057" subtype="Damage" visible="true" relativity="Percent" allactions="1">
+			<target type="Player" />
+		</effect>
+		<effect type="Data" bonus="true" amount="1.0184" scaling="0.0052" subtype="DamageBonus" visible="true" relativity="Percent" allactions="1" unittype="AbstractInfantry">
+			<target type="Player" />
+		</effect>
+	</effects>
+	<levels>
+		<level>43</level>
+	</levels>
+	<craftlevels />
+</trait>

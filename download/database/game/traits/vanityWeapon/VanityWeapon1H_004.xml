@@ -1,0 +1,15 @@
+﻿<trait name="VanityWeapon1H_004">
+	<dbid>1980</dbid>
+	<traittype>VanityWeapon</traittype>
+	<rarity>common</rarity>
+	<icon>\UserInterface\Icons\Equipment\Vanity\100_AnimalLover_Weapon_ua</icon>
+	<rollovertextid>64126</rollovertextid>
+	<displaynameid>64127</displaynameid>
+	<offertype>eOfferNone</offertype>
+	<equipsoundset>UI_Cons_Spc_AnimalLover</equipsoundset>
+	<visualfactor type="VanityWeapon" factor="100.0000" />
+	<sellable>1</sellable>
+	<tradeable>0</tradeable>
+	<destroyable>1</destroyable>
+	<canbestoredingearhall>1</canbestoredingearhall>
+</trait>

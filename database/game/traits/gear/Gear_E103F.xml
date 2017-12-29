@@ -1,0 +1,23 @@
+﻿<trait name="Gear_E103F">
+	<dbid>2108</dbid>
+	<traittype>Gear</traittype>
+	<rarity>epic</rarity>
+	<icon>UserInterface\Icons\Equipment\Generic\Gear\Inf\Gloves_E60_ua</icon>
+	<rollovertextid>66306</rollovertextid>
+	<displaynameid>66307</displaynameid>
+	<offertype>eOfferCivMatching</offertype>
+	<visualfactor type="Helmet" factor="60.0000" />
+	<sellable>1</sellable>
+	<tradeable>1</tradeable>
+	<destroyable>1</destroyable>
+	<canbestoredingearhall>0</canbestoredingearhall>
+	<effects>
+		<effect type="Data" bonus="true" amount="0.9939" scaling="-0.0017" subtype="CostAll" visible="true" relativity="Percent">
+			<target type="Player" />
+		</effect>
+	</effects>
+	<levels />
+	<craftlevels>
+		<level>43</level>
+	</craftlevels>
+</trait>

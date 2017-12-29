@@ -1,0 +1,26 @@
+﻿<trait name="Javalin2H_R001">
+	<dbid>826</dbid>
+	<traittype>Javalins</traittype>
+	<rarity>rare</rarity>
+	<icon>UserInterface\Icons\Equipment\Generic\Javelins\Javelin_R31_ua</icon>
+	<rollovertextid>54164</rollovertextid>
+	<displaynameid>54165</displaynameid>
+	<offertype>eOfferCivMatching</offertype>
+	<visualfactor type="Weapon" factor="31.0000" />
+	<sellable>1</sellable>
+	<tradeable>1</tradeable>
+	<destroyable>1</destroyable>
+	<canbestoredingearhall>0</canbestoredingearhall>
+	<effects>
+		<effect type="Data" bonus="true" amount="1.0373" scaling="0.0102" subtype="Damage" visible="true" relativity="Percent" allactions="1">
+			<target type="Player" />
+		</effect>
+	</effects>
+	<levels>
+		<level>10</level>
+		<level>11</level>
+		<level>12</level>
+		<level>13</level>
+	</levels>
+	<craftlevels />
+</trait>

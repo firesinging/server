@@ -1,0 +1,31 @@
+﻿<trait name="ArmorClth_R003">
+	<dbid>467</dbid>
+	<traittype>ArmorCloth</traittype>
+	<rarity>rare</rarity>
+	<icon>UserInterface\Icons\Equipment\Generic\Armor\Clth\Clth_R30_ua</icon>
+	<rollovertextid>53287</rollovertextid>
+	<displaynameid>53288</displaynameid>
+	<offertype>eOfferCivMatching</offertype>
+	<visualfactor type="Body" factor="30.0000" />
+	<sellable>1</sellable>
+	<tradeable>1</tradeable>
+	<destroyable>1</destroyable>
+	<canbestoredingearhall>0</canbestoredingearhall>
+	<effects>
+		<effect type="Data" bonus="true" amount="1.0347" scaling="0.0093" subtype="Hitpoints" visible="true" relativity="Percent">
+			<target type="Player" />
+		</effect>
+		<effect type="Data" bonus="true" amount="1.0295" scaling="0.0075" subtype="DamageBonusReduction" visible="true" relativity="Percent">
+			<target type="Player" />
+		</effect>
+	</effects>
+	<levels>
+		<level>5</level>
+		<level>15</level>
+		<level>16</level>
+		<level>17</level>
+		<level>18</level>
+		<level>19</level>
+	</levels>
+	<craftlevels />
+</trait>

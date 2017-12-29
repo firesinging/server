@@ -1,0 +1,26 @@
+﻿<trait name="Merchant2H_RC01">
+	<dbid>2066</dbid>
+	<traittype>Merchant</traittype>
+	<rarity>rare</rarity>
+	<icon>UserInterface\Icons\Equipment\Generic\Merchant\Log_R30_ua</icon>
+	<rollovertextid>65225</rollovertextid>
+	<displaynameid>65226</displaynameid>
+	<alliance>eAllianceDelianLeague</alliance>
+	<offertype>eOfferCivMatching</offertype>
+	<visualfactor type="Weapon" factor="30.0000" />
+	<sellable>1</sellable>
+	<tradeable>1</tradeable>
+	<destroyable>1</destroyable>
+	<canbestoredingearhall>0</canbestoredingearhall>
+	<effects>
+		<effect type="Data" bonus="true" amount="1.0112" scaling="0.0031" subtype="WorkRate" visible="true" relativity="Percent" action="Trade" unittype="AbstractTownCenter">
+			<target type="Player" />
+		</effect>
+		<effect type="Data" bonus="true" amount="1.0012" scaling="0.0003" subtype="MaximumVelocity" visible="true" relativity="Percent">
+			<target type="Player" />
+		</effect>
+		<effect type="Data" bonus="true" amount="1.0112" scaling="0.0031" subtype="WorkRate" visible="false" relativity="Percent" action="Trade" unittype="AbstractDock">
+			<target type="Player" />
+		</effect>
+	</effects>
+</trait>

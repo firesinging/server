@@ -1,0 +1,23 @@
+﻿<trait name="ArmorPlt_U007">
+	<dbid>1082</dbid>
+	<traittype>ArmorPlt</traittype>
+	<rarity>uncommon</rarity>
+	<icon>UserInterface\Icons\Equipment\Generic\Armor\Plt\Plt_U10v2_ua</icon>
+	<rollovertextid>54946</rollovertextid>
+	<displaynameid>54947</displaynameid>
+	<offertype>eOfferNone</offertype>
+	<visualfactor type="Body" factor="10.0000" />
+	<sellable>1</sellable>
+	<tradeable>1</tradeable>
+	<destroyable>1</destroyable>
+	<canbestoredingearhall>0</canbestoredingearhall>
+	<effects>
+		<effect type="Data" bonus="true" amount="1.0500" scaling="0.0110" subtype="Hitpoints" visible="true" relativity="Percent">
+			<target type="Player" />
+		</effect>
+	</effects>
+	<levels />
+	<craftlevels>
+		<level>21</level>
+	</craftlevels>
+</trait>

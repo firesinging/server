@@ -1,0 +1,15 @@
+﻿<trait name="VanityHelm_011">
+	<dbid>2105</dbid>
+	<traittype>VanityHelm</traittype>
+	<rarity>common</rarity>
+	<icon>\UserInterface\Icons\Equipment\Vanity\109_UltimateEgypt_Gear_ua</icon>
+	<rollovertextid>65318</rollovertextid>
+	<displaynameid>65319</displaynameid>
+	<offertype>eOfferNone</offertype>
+	<equipsoundset>UI_Cons_Spc_Heroic</equipsoundset>
+	<visualfactor type="VanityHelmet" factor="109.0000" />
+	<sellable>1</sellable>
+	<tradeable>0</tradeable>
+	<destroyable>1</destroyable>
+	<canbestoredingearhall>1</canbestoredingearhall>
+</trait>

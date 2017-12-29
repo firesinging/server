@@ -1,11 +1,15 @@
-﻿using System.IO;
+﻿using System;
+using System.IO;
+using System.Linq;
+using System.Collections.Generic;
+using System.Configuration;
 
 using Libraries.enums;
 
 using Libraries.helpers.pathing;
-using Libraries.database.models;
+using Libraries.helpers.database;
 using Libraries.helpers.xml;
-
+using Libraries.database.models;
 
 
 namespace Libraries.database
@@ -30,13 +34,25 @@ namespace Libraries.database
         public static readonly SerDictionaryMaterials<string, ModelMaterial> Materials = new SerDictionaryMaterials<string, ModelMaterial>();
         public static readonly SerDictionaryVendors<string, ModelVendor> Vendors = new SerDictionaryVendors<string, ModelVendor>();
         public static readonly SerDictionaryQuestgivers<string, ModelQuestgiver> Questgivers = new SerDictionaryQuestgivers<string, ModelQuestgiver>();
-        public static readonly SerDictionaryLootRolls<string, ModelLootRoll> LootRolls = new SerDictionaryLootRolls<string, ModelLootRoll>();        
-
+        public static readonly SerDictionaryLootRolls<string, ModelLootRoll> LootRolls = new SerDictionaryLootRolls<string, ModelLootRoll>();
+        public static readonly SerDictionaryTraits<string, ModelTrait> Traits = new SerDictionaryTraits<string, ModelTrait>();
+        
         static Database()
         {
 
             if (!Instance)
             {
+
+                List<string> ExcludedTraitDirectories = new List<string>();
+
+                ExcludedTraitDirectories.Add("_unused");
+
+                if (Convert.ToInt32(ConfigurationManager.AppSettings["UseLosGear"]) != 1)
+                {
+
+                    ExcludedTraitDirectories.Add("_los");
+
+                }                
 
                 ModelCharacterLevels InstanceCharacterLevels = new ModelCharacterLevels().DeserializeFromFile($"{PathingHelper.gamedatabaseDir}CharacterLevels.xml");
 
@@ -81,17 +97,6 @@ namespace Libraries.database
                 ModelEquipments InstanceEquipments = new ModelEquipments().DeserializeFromFile($"{PathingHelper.gamedatabaseDir}equipment.xml");
 
                 Equipments = InstanceEquipments.Dictionary;
-                
-                foreach (string RegionFile in Directory.GetFiles($"{PathingHelper.gamedatabaseDir}regions", "*.region", SearchOption.TopDirectoryOnly))
-                {
-
-                    ModelRegion Region = new ModelRegion().DeserializeFromFile(RegionFile);
-
-                    Region.Source = RegionFile;
-
-                    Regions.Add(Region.Id, Region);
-
-                }
 
                 foreach (string CivilizationFile in Directory.GetFiles($"{PathingHelper.gamedatabaseDir}civilizations", "*.xml", SearchOption.TopDirectoryOnly))
                 {
@@ -104,15 +109,26 @@ namespace Libraries.database
 
                 }
 
-                foreach (string QuestFile in Directory.GetFiles($"{PathingHelper.gamedatabaseDir}quests", "*.quest", SearchOption.AllDirectories))
+                foreach (string TraitFile in Directory.GetFiles($"{PathingHelper.gamedatabaseDir}traits", "*.xml", SearchOption.AllDirectories).Where(f => !DatabaseHelper.IsExcluded(ExcludedTraitDirectories, f)))
                 {
 
-                    ModelQuest Quest = new ModelQuest().DeserializeFromFile(QuestFile);
+                    ModelTrait Trait = new ModelTrait().DeserializeFromFile(TraitFile);
 
-                    Quest.Source = QuestFile;
+                    Trait.Source = TraitFile;
 
-                    Quests.Add(Quest.UniqueId, Quest);
+                    Traits.Add(Trait.Name, Trait);
                     
+                }
+
+                foreach (string RegionFile in Directory.GetFiles($"{PathingHelper.gamedatabaseDir}regions", "*.region", SearchOption.TopDirectoryOnly))
+                {
+
+                    ModelRegion Region = new ModelRegion().DeserializeFromFile(RegionFile);
+
+                    Region.Source = RegionFile;
+
+                    Regions.Add(Region.Id, Region);
+
                 }
 
                 Instance = true;

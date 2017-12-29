@@ -28,7 +28,7 @@ namespace Server
             this.serviceInstaller = new ServiceInstaller();
             this.processInstaller.Account = ServiceAccount.LocalSystem;
             this.serviceInstaller.StartType = ServiceStartMode.Automatic;
-            this.serviceInstaller.ServiceName = ConfigurationManager.AppSettings["ServiceName"];
+            this.serviceInstaller.ServiceName = "FireSinging";
 
             string str1 = ConfigurationManager.AppSettings["ServiceDescription"];
 

@@ -1,0 +1,30 @@
+﻿<trait name="FireThrower2H_R002">
+	<dbid>674</dbid>
+	<traittype>FireThrowers</traittype>
+	<rarity>rare</rarity>
+	<icon>UserInterface\Icons\Equipment\Generic\Firepots\Pot_R30v2_ua</icon>
+	<rollovertextid>53707</rollovertextid>
+	<displaynameid>53708</displaynameid>
+	<offertype>eOfferCivMatching</offertype>
+	<visualfactor type="Body" factor="1.0000" />
+	<sellable>1</sellable>
+	<tradeable>1</tradeable>
+	<destroyable>1</destroyable>
+	<canbestoredingearhall>0</canbestoredingearhall>
+	<effects>
+		<effect type="Data" bonus="true" amount="1.0449" scaling="0.0124" subtype="Damage" visible="true" relativity="Percent" allactions="1">
+			<target type="Player" />
+		</effect>
+		<effect type="Data" bonus="true" amount="1.0147" scaling="0.0036" subtype="DamageBonus" visible="true" relativity="Percent" allactions="1" unittype="Building">
+			<target type="Player" />
+		</effect>
+	</effects>
+	<levels>
+		<level>15</level>
+		<level>16</level>
+		<level>17</level>
+		<level>18</level>
+		<level>19</level>
+	</levels>
+	<craftlevels />
+</trait>

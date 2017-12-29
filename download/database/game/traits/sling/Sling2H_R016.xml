@@ -1,0 +1,26 @@
+﻿<trait name="Sling2H_R016">
+	<dbid>1798</dbid>
+	<traittype>Sling</traittype>
+	<rarity>rare</rarity>
+	<icon>UserInterface\Icons\Equipment\Generic\Slings\Sling_R31_ua</icon>
+	<rollovertextid>60257</rollovertextid>
+	<displaynameid>60258</displaynameid>
+	<offertype>eOfferCivMatching</offertype>
+	<visualfactor type="Weapon" factor="31.0000" />
+	<sellable>1</sellable>
+	<tradeable>1</tradeable>
+	<destroyable>1</destroyable>
+	<canbestoredingearhall>0</canbestoredingearhall>
+	<effects>
+		<effect type="Data" bonus="true" amount="1.0388" scaling="0.0106" subtype="Damage" visible="true" relativity="Percent" allactions="1">
+			<target type="Player" />
+		</effect>
+		<effect type="Data" bonus="true" amount="1.0108" scaling="0.0028" subtype="HitPercent" visible="true" relativity="Percent" action="RangedAttack">
+			<target type="Player" />
+		</effect>
+	</effects>
+	<levels>
+		<level>11</level>
+	</levels>
+	<craftlevels />
+</trait>

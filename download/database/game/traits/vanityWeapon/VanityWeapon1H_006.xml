@@ -1,0 +1,15 @@
+﻿<trait name="VanityWeapon1H_006">
+	<dbid>1982</dbid>
+	<traittype>VanityWeapon</traittype>
+	<rarity>common</rarity>
+	<icon>\UserInterface\Icons\Equipment\Vanity\108_WonderWarrior_Weapon_ua</icon>
+	<rollovertextid>64130</rollovertextid>
+	<displaynameid>64131</displaynameid>
+	<offertype>eOfferNone</offertype>
+	<equipsoundset>UI_Cons_Spc_RainbowMagic</equipsoundset>
+	<visualfactor type="VanityWeapon" factor="108.0000" />
+	<sellable>1</sellable>
+	<tradeable>0</tradeable>
+	<destroyable>1</destroyable>
+	<canbestoredingearhall>1</canbestoredingearhall>
+</trait>

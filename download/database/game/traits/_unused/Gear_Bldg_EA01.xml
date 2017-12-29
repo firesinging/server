@@ -1,0 +1,19 @@
+﻿<trait name="Gear_Bldg_EA01">
+	<dbid>1737</dbid>
+	<traittype>GearBldg</traittype>
+	<rarity>epic</rarity>
+	<icon>UserInterface\Icons\Equipment\Generic\Gear\Bldg\BluePrint_E60_ua</icon>
+	<rollovertextid>60010</rollovertextid>
+	<displaynameid>60011</displaynameid>
+	<offertype>eOfferCivMatching</offertype>
+	<visualfactor type="Helmet" factor="60.0000" />
+	<sellable>1</sellable>
+	<tradeable>1</tradeable>
+	<destroyable>1</destroyable>
+	<canbestoredingearhall>0</canbestoredingearhall>
+	<effects>
+		<effect type="Data" bonus="true" amount="0.9901" scaling="-0.0031" subtype="BuildPoints" visible="true" relativity="Percent">
+			<target type="Player" />
+		</effect>
+	</effects>
+</trait>

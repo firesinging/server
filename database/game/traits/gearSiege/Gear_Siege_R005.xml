@@ -1,0 +1,27 @@
+﻿<trait name="Gear_Siege_R005">
+	<dbid>808</dbid>
+	<traittype>GearSiege</traittype>
+	<rarity>rare</rarity>
+	<icon>UserInterface\Icons\Equipment\Generic\Gear\Siege\Axle_R32_ua</icon>
+	<rollovertextid>54112</rollovertextid>
+	<displaynameid>54113</displaynameid>
+	<offertype>eOfferCivMatching</offertype>
+	<visualfactor type="Helmet" factor="32.0000" />
+	<sellable>1</sellable>
+	<tradeable>1</tradeable>
+	<destroyable>1</destroyable>
+	<canbestoredingearhall>0</canbestoredingearhall>
+	<effects>
+		<effect type="Data" bonus="true" amount="0.9901" scaling="-0.0025" subtype="TrainPoints" visible="true" relativity="Percent">
+			<target type="Player" />
+		</effect>
+	</effects>
+	<levels>
+		<level>27</level>
+		<level>28</level>
+		<level>29</level>
+		<level>30</level>
+		<level>31</level>
+	</levels>
+	<craftlevels />
+</trait>

@@ -1,0 +1,15 @@
+﻿<trait name="VanityWeapon1H_002">
+	<dbid>1978</dbid>
+	<traittype>VanityWeapon</traittype>
+	<rarity>common</rarity>
+	<icon>\UserInterface\Icons\Equipment\Vanity\103_Fletcher_Weapon_ua</icon>
+	<rollovertextid>64122</rollovertextid>
+	<displaynameid>64123</displaynameid>
+	<offertype>eOfferNone</offertype>
+	<equipsoundset>UI_Cons_Spc_ComedyArrow</equipsoundset>
+	<visualfactor type="VanityWeapon" factor="103.0000" />
+	<sellable>1</sellable>
+	<tradeable>0</tradeable>
+	<destroyable>1</destroyable>
+	<canbestoredingearhall>1</canbestoredingearhall>
+</trait>

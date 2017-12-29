@@ -1,0 +1,25 @@
+﻿<trait name="Ballista2H_E005">
+	<dbid>602</dbid>
+	<traittype>BallistaArms</traittype>
+	<rarity>epic</rarity>
+	<icon>UserInterface\Icons\Equipment\Generic\Ballista\Ballista_E60_ua</icon>
+	<rollovertextid>53562</rollovertextid>
+	<displaynameid>53563</displaynameid>
+	<offertype>eOfferCivMatching</offertype>
+	<visualfactor type="Weapon" factor="60.0000" />
+	<sellable>1</sellable>
+	<tradeable>0</tradeable>
+	<destroyable>1</destroyable>
+	<canbestoredingearhall>0</canbestoredingearhall>
+	<effects>
+		<effect type="Data" bonus="true" amount="1.0241" scaling="0.0074" subtype="Damage" visible="true" relativity="Percent" allactions="1">
+			<target type="Player" />
+		</effect>
+		<effect type="Data" bonus="true" amount="1.0220" scaling="0.0061" subtype="DamageBonus" visible="true" relativity="Percent" allactions="1" unittype="Building">
+			<target type="Player" />
+		</effect>
+		<effect type="Data" bonus="true" amount="1.0055" scaling="0.0015" subtype="HitPercent" visible="true" relativity="Percent" action="RangedAttack">
+			<target type="Player" />
+		</effect>
+	</effects>
+</trait>

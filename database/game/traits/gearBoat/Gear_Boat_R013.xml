@@ -1,0 +1,33 @@
+﻿<trait name="Gear_Boat_R013">
+	<dbid>767</dbid>
+	<traittype>GearBoat</traittype>
+	<rarity>rare</rarity>
+	<icon>UserInterface\Icons\Equipment\Generic\Gear\Boat\RHull_R30_ua</icon>
+	<rollovertextid>53970</rollovertextid>
+	<displaynameid>53971</displaynameid>
+	<offertype>eOfferCivMatching</offertype>
+	<visualfactor type="Helmet" factor="30.0000" />
+	<sellable>1</sellable>
+	<tradeable>1</tradeable>
+	<destroyable>1</destroyable>
+	<canbestoredingearhall>0</canbestoredingearhall>
+	<effects>
+		<effect type="Data" bonus="false" amount="1.0148" scaling="0.0038" subtype="CostAll" visible="true" relativity="Percent">
+			<target type="Player" />
+		</effect>
+		<effect type="Data" bonus="true" amount="1.0123" scaling="0.0030" subtype="Damage" visible="true" relativity="Percent" allactions="1">
+			<target type="Player" />
+		</effect>
+		<effect type="Data" bonus="true" amount="1.0123" scaling="0.0030" subtype="Hitpoints" visible="true" relativity="Percent">
+			<target type="Player" />
+		</effect>
+	</effects>
+	<levels>
+		<level>24</level>
+		<level>25</level>
+		<level>26</level>
+		<level>27</level>
+		<level>28</level>
+	</levels>
+	<craftlevels />
+</trait>

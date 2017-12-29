@@ -1,0 +1,30 @@
+﻿<trait name="ArmorMed_U012">
+	<dbid>1959</dbid>
+	<traittype>ArmorMed</traittype>
+	<rarity>uncommon</rarity>
+	<icon>UserInterface\Icons\Equipment\Generic\Armor\Inf\Inf_U10v2_ua</icon>
+	<rollovertextid>62981</rollovertextid>
+	<displaynameid>62982</displaynameid>
+	<offertype>eOfferNone</offertype>
+	<visualfactor type="Body" factor="10.0000" />
+	<sellable>1</sellable>
+	<tradeable>0</tradeable>
+	<destroyable>1</destroyable>
+	<canbestoredingearhall>0</canbestoredingearhall>
+	<effects>
+		<effect type="Data" bonus="true" amount="1.0449" scaling="0.0080" subtype="Hitpoints" visible="true" relativity="Percent">
+			<target type="Player" />
+		</effect>
+		<effect type="Data" bonus="true" amount="1.0122" scaling="0.0021" subtype="Armor" visible="true" damagetype="Cavalry" relativity="Percent">
+			<target type="Player" />
+		</effect>
+	</effects>
+	<levels>
+		<level>6</level>
+		<level>7</level>
+		<level>8</level>
+		<level>9</level>
+		<level>10</level>
+	</levels>
+	<craftlevels />
+</trait>

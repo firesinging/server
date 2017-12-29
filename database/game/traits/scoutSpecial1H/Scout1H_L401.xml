@@ -1,0 +1,23 @@
+﻿<trait name="Scout1H_L401">
+	<dbid>2133</dbid>
+	<traittype>ScoutSpecial1H</traittype>
+	<rarity>legendary</rarity>
+	<icon>UserInterface/Icons/Equipment/Generic/Gear/Scout/Helm_L90_ua</icon>
+	<rollovertextid>66701</rollovertextid>
+	<displaynameid>66702</displaynameid>
+	<offertype>eOfferCivMatching</offertype>
+	<visualfactor type="Helmet" factor="90.0000" />
+	<sellable>1</sellable>
+	<tradeable>1</tradeable>
+	<destroyable>1</destroyable>
+	<canbestoredingearhall>0</canbestoredingearhall>
+	<effects>
+		<effect type="Data" bonus="true" amount="1.0310" scaling="0.0104" subtype="Hitpoints" visible="true" relativity="Percent">
+			<target type="Player" />
+		</effect>
+	</effects>
+	<levels>
+		<level>43</level>
+	</levels>
+	<craftlevels />
+</trait>

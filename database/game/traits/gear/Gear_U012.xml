@@ -1,0 +1,23 @@
+﻿<trait name="Gear_U012">
+	<dbid>1200</dbid>
+	<traittype>Gear</traittype>
+	<rarity>uncommon</rarity>
+	<icon>UserInterface\Icons\Equipment\Generic\Gear\Inf\Practice_U10_ua</icon>
+	<rollovertextid>55226</rollovertextid>
+	<displaynameid>55227</displaynameid>
+	<offertype>eOfferNone</offertype>
+	<visualfactor type="Helmet" factor="10.0000" />
+	<sellable>1</sellable>
+	<tradeable>1</tradeable>
+	<destroyable>1</destroyable>
+	<canbestoredingearhall>0</canbestoredingearhall>
+	<effects>
+		<effect type="Data" bonus="true" amount="0.9901" scaling="-0.0020" subtype="TrainPoints" visible="true" relativity="Percent">
+			<target type="Player" />
+		</effect>
+	</effects>
+	<levels />
+	<craftlevels>
+		<level>37</level>
+	</craftlevels>
+</trait>

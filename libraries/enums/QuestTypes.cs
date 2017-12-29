@@ -3,6 +3,7 @@
 
 namespace Libraries.enums
 {
+
     public enum QuestTypes
     {
 

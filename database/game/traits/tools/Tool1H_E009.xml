@@ -1,0 +1,59 @@
+﻿<trait name="Tool1H_E009">
+	<dbid>1046</dbid>
+	<traittype>Tools</traittype>
+	<rarity>epic</rarity>
+	<icon>UserInterface\Icons\Equipment\Generic\Tools\Tool_E61_ua</icon>
+	<rollovertextid>54614</rollovertextid>
+	<displaynameid>54615</displaynameid>
+	<offertype>eOfferCivMatching</offertype>
+	<visualfactor type="Weapon" factor="0.0000" />
+	<sellable>1</sellable>
+	<tradeable>1</tradeable>
+	<destroyable>1</destroyable>
+	<canbestoredingearhall>0</canbestoredingearhall>
+	<effects>
+		<effect type="Data" bonus="true" amount="1.0081" scaling="0.0026" subtype="CarryCapacity" visible="false" relativity="Percent" seedoffset="1" resource="Food">
+			<target type="Player" />
+		</effect>
+		<effect type="Data" bonus="true" amount="1.0081" scaling="0.0026" subtype="CarryCapacity" visible="false" relativity="Percent" seedoffset="1" resource="Stone">
+			<target type="Player" />
+		</effect>
+		<effect type="Data" bonus="true" amount="1.0081" scaling="0.0026" subtype="CarryCapacity" visible="false" relativity="Percent" seedoffset="1" resource="Wood">
+			<target type="Player" />
+		</effect>
+		<effect type="Data" bonus="true" amount="1.0081" scaling="0.0026" subtype="CarryCapacity" visible="false" relativity="Percent" seedoffset="1" resource="Gold">
+			<target type="Player" />
+		</effect>
+		<effect type="Data" bonus="true" amount="1.0068" scaling="0.0021" subtype="WorkRate" visible="true" relativity="Percent" seedoffset="1" action="Gather" unittype="AbstractFarm">
+			<target type="Player" />
+		</effect>
+		<effect type="Data" bonus="true" amount="1.0068" scaling="0.0021" subtype="WorkRate" visible="true" relativity="Percent" seedoffset="1" action="Gather" unittype="Huntable">
+			<target type="Player" />
+		</effect>
+		<effect type="Data" bonus="true" amount="1.0068" scaling="0.0021" subtype="WorkRate" visible="true" relativity="Percent" seedoffset="1" action="Gather" unittype="Tree">
+			<target type="Player" />
+		</effect>
+		<effect type="Data" bonus="true" amount="1.0068" scaling="0.0021" subtype="WorkRate" visible="true" relativity="Percent" seedoffset="1" action="Gather" unittype="Gold">
+			<target type="Player" />
+		</effect>
+		<effect type="Data" bonus="true" amount="1.0068" scaling="0.0021" subtype="WorkRate" visible="true" relativity="Percent" seedoffset="1" action="Gather" unittype="AbstractFruit">
+			<target type="Player" />
+		</effect>
+		<effect type="Data" bonus="true" amount="1.0068" scaling="0.0021" subtype="WorkRate" visible="true" relativity="Percent" seedoffset="1" action="FishGather" unittype="AbstractFish">
+			<target type="Player" />
+		</effect>
+		<effect type="Data" bonus="true" amount="1.0068" scaling="0.0021" subtype="WorkRate" visible="true" relativity="Percent" seedoffset="1" action="Gather" unittype="Herdable">
+			<target type="Player" />
+		</effect>
+		<effect type="Data" bonus="true" amount="1.0222" scaling="0.0067" subtype="Damage" visible="true" relativity="Percent" allactions="1" seedoffset="2">
+			<target type="Player" />
+		</effect>
+		<effect type="Data" bonus="true" amount="1.0068" scaling="0.0021" subtype="WorkRate" visible="true" relativity="Percent" seedoffset="1" action="Gather" unittype="Stone">
+			<target type="Player" />
+		</effect>
+	</effects>
+	<levels />
+	<craftlevels>
+		<level>43</level>
+	</craftlevels>
+</trait>

@@ -1,0 +1,19 @@
+﻿<trait name="Gear_UB01">
+	<dbid>1914</dbid>
+	<traittype>Gear</traittype>
+	<rarity>uncommon</rarity>
+	<icon>UserInterface\Icons\Equipment\Generic\Gear\Inf\Helm_U11_ua</icon>
+	<rollovertextid>62407</rollovertextid>
+	<displaynameid>62408</displaynameid>
+	<offertype>eOfferNone</offertype>
+	<visualfactor type="Helmet" factor="11.0000" />
+	<sellable>1</sellable>
+	<tradeable>1</tradeable>
+	<destroyable>1</destroyable>
+	<canbestoredingearhall>0</canbestoredingearhall>
+	<effects>
+		<effect type="Data" bonus="true" amount="1.0309" scaling="0.0051" subtype="LOS" visible="true" relativity="Percent">
+			<target type="Player" />
+		</effect>
+	</effects>
+</trait>

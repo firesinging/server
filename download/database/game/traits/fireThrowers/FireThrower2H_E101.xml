@@ -1,0 +1,26 @@
+﻿<trait name="FireThrower2H_E101">
+	<dbid>1506</dbid>
+	<traittype>FireThrowers</traittype>
+	<rarity>epic</rarity>
+	<icon>UserInterface\Icons\Equipment\Generic\Firepots\Pot_E60_ua</icon>
+	<rollovertextid>59212</rollovertextid>
+	<displaynameid>59213</displaynameid>
+	<offertype>eOfferCivMatching</offertype>
+	<visualfactor type="Body" factor="1.0000" />
+	<sellable>1</sellable>
+	<tradeable>1</tradeable>
+	<destroyable>1</destroyable>
+	<canbestoredingearhall>0</canbestoredingearhall>
+	<effects>
+		<effect type="Data" bonus="true" amount="1.0197" scaling="0.0059" subtype="HitPercent" visible="true" relativity="Percent" action="RangedAttack">
+			<target type="Player" />
+		</effect>
+		<effect type="Data" bonus="true" amount="1.0245" scaling="0.0071" subtype="MaximumRange" visible="true" relativity="Percent" action="RangedAttack">
+			<target type="Player" />
+		</effect>
+	</effects>
+	<levels />
+	<craftlevels>
+		<level>40</level>
+	</craftlevels>
+</trait>

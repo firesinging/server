@@ -1,0 +1,37 @@
+﻿<trait name="FishingNet1H_U002">
+	<dbid>688</dbid>
+	<traittype>FishingNet</traittype>
+	<rarity>uncommon</rarity>
+	<icon>UserInterface\Icons\Equipment\Generic\Fishnets\Net_U11_ua</icon>
+	<rollovertextid>53750</rollovertextid>
+	<displaynameid>53751</displaynameid>
+	<offertype>eOfferNone</offertype>
+	<visualfactor type="Weapon" factor="0.0000" />
+	<sellable>1</sellable>
+	<tradeable>1</tradeable>
+	<destroyable>1</destroyable>
+	<canbestoredingearhall>0</canbestoredingearhall>
+	<effects>
+		<effect type="Data" bonus="true" amount="0.9750" scaling="-0.0045" subtype="CostAll" visible="true" relativity="Percent">
+			<target type="Player" />
+		</effect>
+	</effects>
+	<levels>
+		<level>20</level>
+		<level>21</level>
+		<level>22</level>
+		<level>23</level>
+		<level>24</level>
+		<level>25</level>
+		<level>26</level>
+		<level>27</level>
+		<level>28</level>
+		<level>29</level>
+		<level>30</level>
+		<level>31</level>
+		<level>32</level>
+		<level>33</level>
+		<level>34</level>
+	</levels>
+	<craftlevels />
+</trait>

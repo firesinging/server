@@ -1,0 +1,16 @@
+﻿<trait name="VanityShield1H_021">
+	<dbid>2151</dbid>
+	<traittype>VanityShield</traittype>
+	<rarity>common</rarity>
+	<icon>\UserInterface\Icons\Equipment\Vanity\122_Halloween_Shield_ua</icon>
+	<rollovertextid>67740</rollovertextid>
+	<displaynameid>67741</displaynameid>
+	<offertype>eOfferNone</offertype>
+	<equipsoundset>UI_Cons_Spc_Wizard</equipsoundset>
+	<visualfactor type="VanityShield" factor="121.0000" />
+	<sellable>1</sellable>
+	<tradeable>0</tradeable>
+	<destroyable>1</destroyable>
+	<canbestoredingearhall>1</canbestoredingearhall>
+	<event>Halloween</event>
+</trait>

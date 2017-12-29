@@ -1,0 +1,23 @@
+﻿<trait name="Gear_Boat_E101">
+	<dbid>1484</dbid>
+	<traittype>GearBoat</traittype>
+	<rarity>epic</rarity>
+	<icon>UserInterface\Icons\Equipment\Generic\Gear\Boat\RHull_E60_ua</icon>
+	<rollovertextid>59168</rollovertextid>
+	<displaynameid>59169</displaynameid>
+	<offertype>eOfferCivMatching</offertype>
+	<visualfactor type="Helmet" factor="60.0000" />
+	<sellable>1</sellable>
+	<tradeable>1</tradeable>
+	<destroyable>1</destroyable>
+	<canbestoredingearhall>0</canbestoredingearhall>
+	<effects>
+		<effect type="Data" bonus="true" amount="1.0247" scaling="0.0076" subtype="Hitpoints" visible="true" relativity="Percent">
+			<target type="Player" />
+		</effect>
+	</effects>
+	<levels />
+	<craftlevels>
+		<level>40</level>
+	</craftlevels>
+</trait>

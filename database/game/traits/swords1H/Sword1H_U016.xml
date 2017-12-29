@@ -1,0 +1,26 @@
+﻿<trait name="Sword1H_U016">
+	<dbid>1964</dbid>
+	<traittype>Swords1H</traittype>
+	<rarity>uncommon</rarity>
+	<icon>UserInterface\Icons\Equipment\Generic\Swords\Sword_U11_ua</icon>
+	<rollovertextid>62991</rollovertextid>
+	<displaynameid>62992</displaynameid>
+	<offertype>eOfferNone</offertype>
+	<visualfactor type="Weapon" factor="11.0000" />
+	<sellable>1</sellable>
+	<tradeable>0</tradeable>
+	<destroyable>1</destroyable>
+	<canbestoredingearhall>0</canbestoredingearhall>
+	<effects>
+		<effect type="Data" bonus="true" amount="1.0346" scaling="0.0061" subtype="Damage" visible="true" relativity="Percent" allactions="1">
+			<target type="Player" />
+		</effect>
+		<effect type="Data" bonus="true" amount="1.0026" scaling="0.0004" subtype="HitPercent" visible="true" relativity="Percent" action="MeleeAttack">
+			<target type="Player" />
+		</effect>
+	</effects>
+	<levels>
+		<level>9</level>
+	</levels>
+	<craftlevels />
+</trait>

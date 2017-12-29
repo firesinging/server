@@ -1,0 +1,23 @@
+﻿<trait name="Gear_Prst_U008">
+	<dbid>1329</dbid>
+	<traittype>GearPriest</traittype>
+	<rarity>uncommon</rarity>
+	<icon>UserInterface\Icons\Equipment\Generic\Gear\Prst\Talisman_U11_uA</icon>
+	<rollovertextid>55586</rollovertextid>
+	<displaynameid>55587</displaynameid>
+	<offertype>eOfferNone</offertype>
+	<visualfactor type="Helmet" factor="11.0000" />
+	<sellable>1</sellable>
+	<tradeable>1</tradeable>
+	<destroyable>1</destroyable>
+	<canbestoredingearhall>0</canbestoredingearhall>
+	<effects>
+		<effect type="Data" bonus="true" amount="1.1235" scaling="0.0244" subtype="ConvertResist" visible="true" relativity="Percent">
+			<target type="Player" />
+		</effect>
+	</effects>
+	<levels />
+	<craftlevels>
+		<level>42</level>
+	</craftlevels>
+</trait>

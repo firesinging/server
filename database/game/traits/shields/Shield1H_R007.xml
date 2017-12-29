@@ -1,0 +1,30 @@
+﻿<trait name="Shield1H_R007">
+	<dbid>971</dbid>
+	<traittype>Shields</traittype>
+	<rarity>rare</rarity>
+	<icon>UserInterface\Icons\Equipment\Generic\Shields\Shield_R38_ua</icon>
+	<rollovertextid>54464</rollovertextid>
+	<displaynameid>54465</displaynameid>
+	<offertype>eOfferCivMatching</offertype>
+	<visualfactor type="Shield" factor="38.0000" />
+	<sellable>1</sellable>
+	<tradeable>1</tradeable>
+	<destroyable>1</destroyable>
+	<canbestoredingearhall>0</canbestoredingearhall>
+	<effects>
+		<effect type="Data" bonus="true" amount="1.0073" scaling="0.0018" subtype="Hitpoints" visible="true" relativity="Percent">
+			<target type="Player" />
+		</effect>
+		<effect type="Data" bonus="true" amount="1.0122" scaling="0.0029" subtype="Armor" visible="true" damagetype="Ranged" relativity="Percent">
+			<target type="Player" />
+		</effect>
+	</effects>
+	<levels>
+		<level>23</level>
+		<level>24</level>
+		<level>25</level>
+		<level>26</level>
+		<level>27</level>
+	</levels>
+	<craftlevels />
+</trait>

@@ -1,0 +1,30 @@
+﻿<trait name="WarHorn_E101">
+	<dbid>1705</dbid>
+	<traittype>War Horn</traittype>
+	<rarity>epic</rarity>
+	<icon>UserInterface\Icons\Equipment\Celt\WarHorn\Horn_E61_ua</icon>
+	<rollovertextid>59610</rollovertextid>
+	<displaynameid>59611</displaynameid>
+	<offertype>eOfferCivMatching</offertype>
+	<visualfactor type="Body" factor="61.0000" />
+	<sellable>1</sellable>
+	<tradeable>1</tradeable>
+	<destroyable>1</destroyable>
+	<canbestoredingearhall>0</canbestoredingearhall>
+	<effects>
+		<effect type="Data" bonus="true" amount="1.0247" scaling="0.0080" subtype="HitPercent" visible="true" relativity="Percent" action="MeleeAttack">
+			<target type="Player" />
+		</effect>
+		<effect type="Data" bonus="true" amount="1.0247" scaling="0.0080" subtype="HitPercent" visible="false" relativity="Percent" action="RangedAttack">
+			<target type="Player" />
+		</effect>
+	</effects>
+	<levels>
+		<level>21</level>
+		<level>22</level>
+		<level>23</level>
+		<level>24</level>
+		<level>25</level>
+	</levels>
+	<craftlevels />
+</trait>

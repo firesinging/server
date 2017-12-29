@@ -1,0 +1,34 @@
+﻿<trait name="ArmorBldg_R003">
+	<dbid>452</dbid>
+	<traittype>ArmorBuilding</traittype>
+	<rarity>rare</rarity>
+	<icon>UserInterface\Icons\Equipment\Generic\Armor\Bldg\Bldg_R30_ua</icon>
+	<rollovertextid>53257</rollovertextid>
+	<displaynameid>53258</displaynameid>
+	<offertype>eOfferCivMatching</offertype>
+	<visualfactor type="Body" factor="30.0000" />
+	<sellable>1</sellable>
+	<tradeable>1</tradeable>
+	<destroyable>1</destroyable>
+	<canbestoredingearhall>0</canbestoredingearhall>
+	<effects>
+		<effect type="Data" bonus="true" amount="1.0098" scaling="0.0024" subtype="DamageBonusReduction" visible="true" relativity="Percent">
+			<target type="Player" />
+		</effect>
+		<effect type="Data" bonus="true" amount="1.0398" scaling="0.0108" subtype="Hitpoints" visible="true" relativity="Percent">
+			<target type="Player" />
+		</effect>
+		<effect type="Data" bonus="true" amount="0.9988" scaling="-0.0003" subtype="CostAll" visible="true" relativity="Percent">
+			<target type="Player" />
+		</effect>
+	</effects>
+	<levels>
+		<level>18</level>
+		<level>19</level>
+		<level>20</level>
+		<level>21</level>
+		<level>22</level>
+		<level>23</level>
+	</levels>
+	<craftlevels />
+</trait>

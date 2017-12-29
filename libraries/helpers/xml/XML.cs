@@ -40,6 +40,7 @@ namespace Libraries.helpers.xml
                 
                 Settings.Encoding = Encoding.UTF8;
                 Settings.Indent = true;
+                Settings.IndentChars = ("\t");
                 Settings.OmitXmlDeclaration = true;
                 Settings.NewLineHandling = NewLineHandling.None;
 

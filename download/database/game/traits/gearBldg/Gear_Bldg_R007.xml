@@ -1,0 +1,27 @@
+﻿<trait name="Gear_Bldg_R007">
+	<dbid>743</dbid>
+	<traittype>GearBldg</traittype>
+	<rarity>rare</rarity>
+	<icon>UserInterface\Icons\Equipment\Generic\Gear\Bldg\BluePrint_R31_ua</icon>
+	<rollovertextid>53906</rollovertextid>
+	<displaynameid>53907</displaynameid>
+	<offertype>eOfferCivMatching</offertype>
+	<visualfactor type="Helmet" factor="31.0000" />
+	<sellable>1</sellable>
+	<tradeable>1</tradeable>
+	<destroyable>1</destroyable>
+	<canbestoredingearhall>0</canbestoredingearhall>
+	<effects>
+		<effect type="Data" bonus="true" amount="0.9901" scaling="-0.0025" subtype="BuildPoints" visible="true" relativity="Percent">
+			<target type="Player" />
+		</effect>
+	</effects>
+	<levels>
+		<level>24</level>
+		<level>25</level>
+		<level>26</level>
+		<level>27</level>
+		<level>28</level>
+	</levels>
+	<craftlevels />
+</trait>

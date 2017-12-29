@@ -1,0 +1,20 @@
+﻿<trait name="ArrowOH_LC01">
+	<dbid>2081</dbid>
+	<traittype>Arrows</traittype>
+	<rarity>legendary</rarity>
+	<icon>UserInterface\Icons\Equipment\Generic\Arrows\Arrow_L90_ua</icon>
+	<rollovertextid>65255</rollovertextid>
+	<displaynameid>65256</displaynameid>
+	<alliance>eAllianceLegionOfCarthage</alliance>
+	<offertype>eOfferCivMatching</offertype>
+	<visualfactor type="Shield" factor="90.0000" />
+	<sellable>1</sellable>
+	<tradeable>1</tradeable>
+	<destroyable>1</destroyable>
+	<canbestoredingearhall>0</canbestoredingearhall>
+	<effects>
+		<effect type="Data" bonus="true" amount="1.0123" scaling="0.0036" subtype="Damage" visible="true" relativity="Percent" allactions="1">
+			<target type="Player" />
+		</effect>
+	</effects>
+</trait>

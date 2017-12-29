@@ -5,3 +5,23 @@ Raadpleeg de inhoud van het logboekbestand voor de voortgang van de assembly D:\
 Het bestand bevindt zich op D:\Development\server\download\debug\Server.InstallLog.
 
 Het verwijderen van de installatie is voltooid.
+
+
+Het verwijderen van de installatie begint.
+Raadpleeg de inhoud van het logboekbestand voor de voortgang van de assembly D:\Development\server\download\debug\Server.exe.
+Het bestand bevindt zich op D:\Development\server\download\debug\Server.InstallLog.
+
+Het verwijderen van de installatie is voltooid.
+
+
+Het verwijderen van de installatie begint.
+Raadpleeg de inhoud van het logboekbestand voor de voortgang van de assembly D:\Development\server\download\debug\Server.exe.
+Het bestand bevindt zich op D:\Development\server\download\debug\Server.InstallLog.
+Er is een uitzondering opgetreden tijdens het verwijderen van de installatie van het installatieprogramma System.Configuration.Install.AssemblyInstaller.
+System.InvalidOperationException: Kan geen exemplaar maken van het installatieprogrammatype Server.SocketServiceInstaller.
+De binnenste uitzondering System.Reflection.TargetInvocationException is opgetreden met het volgende foutbericht: Het doel van een aanroep heeft een uitzondering veroorzaakt..
+De binnenste uitzondering System.Configuration.ConfigurationErrorsException is opgetreden met het volgende foutbericht: Kan het configuratiesysteem niet initialiseren.
+De binnenste uitzondering System.Configuration.ConfigurationErrorsException is opgetreden met het volgende foutbericht: Er is slechts één <configSections>-element per configuratiebestand toegestaan. Als dit element aanwezig is, moet dit het eerste onderliggende item van het hoofdelement <configuration> zijn. (D:\Development\server\download\debug\Server.exe.Config line 6).
+Er is een uitzondering opgetreden tijdens het verwijderen van de installatie. De uitzondering wordt genegeerd en het verwijderen van de installatie wordt voortgezet. Het is echter mogelijk dat de toepassing niet volledig is verwijderd nadat het verwijderen van de installatie is voltooid.
+
+Het verwijderen van de installatie is voltooid.

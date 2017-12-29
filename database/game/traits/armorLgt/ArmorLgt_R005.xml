@@ -1,0 +1,30 @@
+﻿<trait name="ArmorLgt_R005">
+	<dbid>494</dbid>
+	<traittype>ArmorLgt</traittype>
+	<rarity>rare</rarity>
+	<icon>UserInterface\Icons\Equipment\Generic\Armor\Cav\Cav_R30_ua</icon>
+	<rollovertextid>53341</rollovertextid>
+	<displaynameid>53342</displaynameid>
+	<offertype>eOfferCivMatching</offertype>
+	<visualfactor type="Body" factor="30.0000" />
+	<sellable>1</sellable>
+	<tradeable>1</tradeable>
+	<destroyable>1</destroyable>
+	<canbestoredingearhall>0</canbestoredingearhall>
+	<effects>
+		<effect type="Data" bonus="true" amount="1.0449" scaling="0.0124" subtype="Hitpoints" visible="true" relativity="Percent">
+			<target type="Player" />
+		</effect>
+		<effect type="Data" bonus="true" amount="1.0049" scaling="0.0012" subtype="Damage" visible="true" relativity="Percent" allactions="1">
+			<target type="Player" />
+		</effect>
+	</effects>
+	<levels>
+		<level>18</level>
+		<level>19</level>
+		<level>20</level>
+		<level>21</level>
+		<level>22</level>
+	</levels>
+	<craftlevels />
+</trait>

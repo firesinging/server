@@ -1,0 +1,26 @@
+﻿<trait name="Warpaint_R115">
+	<dbid>1684</dbid>
+	<traittype>Warpaint</traittype>
+	<rarity>rare</rarity>
+	<icon>UserInterface\Icons\Equipment\Celt\Warpaint\WarPaint_R31_ua</icon>
+	<rollovertextid>59568</rollovertextid>
+	<displaynameid>59569</displaynameid>
+	<offertype>eOfferCivMatching</offertype>
+	<visualfactor type="Body" factor="31.0000" />
+	<sellable>1</sellable>
+	<tradeable>1</tradeable>
+	<destroyable>1</destroyable>
+	<canbestoredingearhall>0</canbestoredingearhall>
+	<effects>
+		<effect type="Data" bonus="true" amount="1.0094" scaling="0.0022" subtype="Damage" visible="true" relativity="Percent" allactions="1">
+			<target type="Player" />
+		</effect>
+		<effect type="Data" bonus="true" amount="1.0140" scaling="0.0032" subtype="ConvertResist" visible="true" relativity="Percent">
+			<target type="Player" />
+		</effect>
+	</effects>
+	<levels />
+	<craftlevels>
+		<level>35</level>
+	</craftlevels>
+</trait>

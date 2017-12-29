@@ -1,0 +1,27 @@
+﻿<trait name="Warpaint_U103">
+	<dbid>1650</dbid>
+	<traittype>Warpaint</traittype>
+	<rarity>uncommon</rarity>
+	<icon>UserInterface\Icons\Equipment\Celt\Warpaint\WarPaint_U12_ua</icon>
+	<rollovertextid>59500</rollovertextid>
+	<displaynameid>59501</displaynameid>
+	<offertype>eOfferNone</offertype>
+	<visualfactor type="Body" factor="12.0000" />
+	<sellable>1</sellable>
+	<tradeable>1</tradeable>
+	<destroyable>1</destroyable>
+	<canbestoredingearhall>0</canbestoredingearhall>
+	<effects>
+		<effect type="Data" bonus="true" amount="1.0123" scaling="0.0021" subtype="Damage" visible="true" relativity="Percent" allactions="1">
+			<target type="Player" />
+		</effect>
+	</effects>
+	<levels>
+		<level>13</level>
+		<level>14</level>
+		<level>15</level>
+		<level>16</level>
+		<level>17</level>
+	</levels>
+	<craftlevels />
+</trait>

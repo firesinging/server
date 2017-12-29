@@ -1,0 +1,33 @@
+﻿<trait name="Axe2H_E005">
+	<dbid>1281</dbid>
+	<traittype>GreatAxe</traittype>
+	<rarity>epic</rarity>
+	<icon>UserInterface\Icons\Equipment\Generic\Axes\Axe_E60_ua</icon>
+	<rollovertextid>55467</rollovertextid>
+	<displaynameid>55468</displaynameid>
+	<offertype>eOfferCivMatching</offertype>
+	<visualfactor type="Weapon" factor="60.0000" />
+	<sellable>1</sellable>
+	<tradeable>1</tradeable>
+	<destroyable>1</destroyable>
+	<canbestoredingearhall>0</canbestoredingearhall>
+	<effects>
+		<effect type="Data" bonus="true" amount="1.0272" scaling="0.0086" subtype="HitPercent" visible="true" relativity="Percent" action="MeleeAttack">
+			<target type="Player" />
+		</effect>
+		<effect type="Data" bonus="true" amount="1.0147" scaling="0.0041" subtype="Armor" visible="true" damagetype="Hand" relativity="Percent">
+			<target type="Player" />
+		</effect>
+		<effect type="Data" bonus="true" amount="0.9765" scaling="-0.0065" subtype="TargetSpeedBoost" visible="true" relativity="Percent" action="MeleeAttack">
+			<target type="Player" />
+		</effect>
+	</effects>
+	<levels>
+		<level>36</level>
+		<level>37</level>
+		<level>38</level>
+		<level>39</level>
+		<level>40</level>
+	</levels>
+	<craftlevels />
+</trait>

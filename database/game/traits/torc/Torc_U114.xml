@@ -1,0 +1,26 @@
+﻿<trait name="Torc_U114">
+	<dbid>1637</dbid>
+	<traittype>Torc</traittype>
+	<rarity>uncommon</rarity>
+	<icon>UserInterface\Icons\Equipment\Celt\Torc\Torc_U11_ua</icon>
+	<rollovertextid>59474</rollovertextid>
+	<displaynameid>59475</displaynameid>
+	<offertype>eOfferNone</offertype>
+	<visualfactor type="Body" factor="11.0000" />
+	<sellable>1</sellable>
+	<tradeable>1</tradeable>
+	<destroyable>1</destroyable>
+	<canbestoredingearhall>0</canbestoredingearhall>
+	<effects>
+		<effect type="Data" bonus="true" amount="1.0018" scaling="0.0003" subtype="MaximumVelocity" visible="true" relativity="Percent">
+			<target type="Player" />
+		</effect>
+		<effect type="Data" bonus="true" amount="1.0423" scaling="0.0075" subtype="Hitpoints" visible="true" relativity="Percent">
+			<target type="Player" />
+		</effect>
+	</effects>
+	<levels />
+	<craftlevels>
+		<level>14</level>
+	</craftlevels>
+</trait>

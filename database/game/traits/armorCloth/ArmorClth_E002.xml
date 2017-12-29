@@ -1,0 +1,48 @@
+﻿<trait name="ArmorClth_E002">
+	<dbid>479</dbid>
+	<traittype>ArmorCloth</traittype>
+	<rarity>epic</rarity>
+	<icon>UserInterface\Icons\Equipment\Generic\Armor\Clth\Clth_E60_ua</icon>
+	<rollovertextid>53311</rollovertextid>
+	<displaynameid>53312</displaynameid>
+	<offertype>eOfferCivMatching</offertype>
+	<visualfactor type="Body" factor="60.0000" />
+	<sellable>1</sellable>
+	<tradeable>1</tradeable>
+	<destroyable>1</destroyable>
+	<canbestoredingearhall>0</canbestoredingearhall>
+	<effects>
+		<effect type="Data" bonus="true" amount="1.0398" scaling="0.0137" subtype="Hitpoints" visible="true" relativity="Percent" seedoffset="1">
+			<target type="Player" />
+		</effect>
+		<effect type="Data" bonus="true" amount="1.0078" scaling="0.0023" subtype="DamageBonusReduction" visible="true" relativity="Percent" seedoffset="2">
+			<target type="Player" />
+		</effect>
+		<effect type="Data" bonus="true" amount="1.0059" scaling="0.0018" subtype="CarryCapacity" visible="false" relativity="Percent" seedoffset="3" resource="Food">
+			<target type="Player" />
+		</effect>
+		<effect type="Data" bonus="true" amount="1.0059" scaling="0.0018" subtype="WorkRate" visible="true" relativity="Percent" seedoffset="3" action="Gather" unittype="AbstractFruit">
+			<target type="Player" />
+		</effect>
+		<effect type="Data" bonus="true" amount="1.0059" scaling="0.0018" subtype="WorkRate" visible="true" relativity="Percent" seedoffset="3" action="Gather" unittype="Herdable">
+			<target type="Player" />
+		</effect>
+		<effect type="Data" bonus="true" amount="1.0059" scaling="0.0018" subtype="WorkRate" visible="true" relativity="Percent" seedoffset="3" action="Gather" unittype="Huntable">
+			<target type="Player" />
+		</effect>
+		<effect type="Data" bonus="true" amount="1.0059" scaling="0.0018" subtype="WorkRate" visible="true" relativity="Percent" seedoffset="3" action="Gather" unittype="AbstractFish">
+			<target type="Player" />
+		</effect>
+		<effect type="Data" bonus="true" amount="1.0059" scaling="0.0018" subtype="WorkRate" visible="true" relativity="Percent" seedoffset="3" action="Gather" unittype="AbstractFarm">
+			<target type="Player" />
+		</effect>
+	</effects>
+	<levels>
+		<level>22</level>
+		<level>23</level>
+		<level>24</level>
+		<level>25</level>
+		<level>26</level>
+	</levels>
+	<craftlevels />
+</trait>

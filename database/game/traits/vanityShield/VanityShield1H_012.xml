@@ -1,0 +1,15 @@
+﻿<trait name="VanityShield1H_012">
+	<dbid>2098</dbid>
+	<traittype>VanityShield</traittype>
+	<rarity>common</rarity>
+	<icon>\UserInterface\Icons\Equipment\Vanity\111_UltimateCelt_Shield_ua</icon>
+	<rollovertextid>65304</rollovertextid>
+	<displaynameid>65305</displaynameid>
+	<offertype>eOfferNone</offertype>
+	<equipsoundset>UI_Cons_Spc_Heroic</equipsoundset>
+	<visualfactor type="VanityShield" factor="111.0000" />
+	<sellable>1</sellable>
+	<tradeable>0</tradeable>
+	<destroyable>1</destroyable>
+	<canbestoredingearhall>1</canbestoredingearhall>
+</trait>

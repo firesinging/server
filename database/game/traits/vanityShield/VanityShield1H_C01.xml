@@ -1,0 +1,16 @@
+﻿<trait name="VanityShield1H_C01">
+	<dbid>2087</dbid>
+	<traittype>VanityShield</traittype>
+	<rarity>common</rarity>
+	<icon>/UserInterface/Icons/Equipment/Vanity/114_AllianceDelian_Shield_ua</icon>
+	<rollovertextid>65267</rollovertextid>
+	<displaynameid>65268</displaynameid>
+	<alliance>eAllianceDelianLeague</alliance>
+	<offertype>eOfferNone</offertype>
+	<equipsoundset>UI_Cons_Spc_Heroic</equipsoundset>
+	<visualfactor type="VanityShield" factor="114.0000" />
+	<sellable>1</sellable>
+	<tradeable>0</tradeable>
+	<destroyable>1</destroyable>
+	<canbestoredingearhall>1</canbestoredingearhall>
+</trait>

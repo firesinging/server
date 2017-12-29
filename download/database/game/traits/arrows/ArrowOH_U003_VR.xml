@@ -1,0 +1,34 @@
+﻿<trait name="ArrowOH_U003_VR">
+	<dbid>2181</dbid>
+	<traittype>Arrows</traittype>
+	<rarity>uncommon</rarity>
+	<icon>UserInterface\Icons\Equipment\Generic\Arrows\Arrow_U10_ua</icon>
+	<rollovertextid>67991</rollovertextid>
+	<displaynameid>67992</displaynameid>
+	<offertype>eOfferNone</offertype>
+	<visualfactor type="Shield" factor="10.0000" />
+	<sellable>1</sellable>
+	<tradeable>1</tradeable>
+	<destroyable>1</destroyable>
+	<canbestoredingearhall>0</canbestoredingearhall>
+	<effects>
+		<effect type="Data" bonus="true" amount="1.0098" scaling="0.0015" subtype="Damage" visible="true" relativity="Percent" allactions="1">
+			<target type="Player" />
+		</effect>
+		<effect type="Data" bonus="true" amount="1.0049" scaling="0.0007" subtype="MaximumRange" visible="true" relativity="Percent" action="RangedAttack">
+			<target type="Player" />
+		</effect>
+	</effects>
+	<levels>
+		<level>35</level>
+		<level>36</level>
+		<level>37</level>
+		<level>38</level>
+		<level>39</level>
+		<level>40</level>
+		<level>41</level>
+		<level>42</level>
+		<level>43</level>
+	</levels>
+	<craftlevels />
+</trait>

@@ -1,0 +1,27 @@
+﻿<trait name="BellyBow1H_R007">
+	<dbid>614</dbid>
+	<traittype>BellyBows</traittype>
+	<rarity>rare</rarity>
+	<icon>UserInterface\Icons\Equipment\Generic\BellyBow\Bow_R30_ua</icon>
+	<rollovertextid>53586</rollovertextid>
+	<displaynameid>53587</displaynameid>
+	<offertype>eOfferCivMatching</offertype>
+	<visualfactor type="Weapon" factor="30.0000" />
+	<sellable>1</sellable>
+	<tradeable>1</tradeable>
+	<destroyable>1</destroyable>
+	<canbestoredingearhall>0</canbestoredingearhall>
+	<effects>
+		<effect type="Data" bonus="true" amount="1.0203" scaling="0.0050" subtype="Hitpoints" visible="true" relativity="Percent">
+			<target type="Player" />
+		</effect>
+	</effects>
+	<levels>
+		<level>30</level>
+		<level>31</level>
+		<level>32</level>
+		<level>33</level>
+		<level>34</level>
+	</levels>
+	<craftlevels />
+</trait>

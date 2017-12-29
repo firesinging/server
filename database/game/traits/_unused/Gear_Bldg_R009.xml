@@ -1,0 +1,19 @@
+﻿<trait name="Gear_Bldg_R009">
+	<dbid>745</dbid>
+	<traittype>GearBldg</traittype>
+	<rarity>rare</rarity>
+	<icon>UserInterface\Icons\Equipment\Generic\Gear\Bldg\BluePrint_R30_ua</icon>
+	<rollovertextid>53910</rollovertextid>
+	<displaynameid>53911</displaynameid>
+	<offertype>eOfferCivMatching</offertype>
+	<visualfactor type="Helmet" factor="30.0000" />
+	<sellable>1</sellable>
+	<tradeable>1</tradeable>
+	<destroyable>1</destroyable>
+	<canbestoredingearhall>0</canbestoredingearhall>
+	<effects>
+		<effect type="Data" bonus="true" amount="0.9901" scaling="-0.0025" subtype="BuildPoints" visible="true" relativity="Percent">
+			<target type="Player" />
+		</effect>
+	</effects>
+</trait>

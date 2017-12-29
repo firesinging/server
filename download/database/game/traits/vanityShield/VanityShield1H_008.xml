@@ -1,0 +1,15 @@
+﻿<trait name="VanityShield1H_008">
+	<dbid>1975</dbid>
+	<traittype>VanityShield</traittype>
+	<rarity>common</rarity>
+	<icon>\UserInterface\Icons\Equipment\Vanity\104_Prehistoric_Shield_ua</icon>
+	<rollovertextid>64116</rollovertextid>
+	<displaynameid>64117</displaynameid>
+	<offertype>eOfferNone</offertype>
+	<equipsoundset>UI_Cons_Spc_Prehistoric</equipsoundset>
+	<visualfactor type="VanityShield" factor="104.0000" />
+	<sellable>1</sellable>
+	<tradeable>0</tradeable>
+	<destroyable>1</destroyable>
+	<canbestoredingearhall>1</canbestoredingearhall>
+</trait>

@@ -1,0 +1,26 @@
+﻿<trait name="Spear2H_R006">
+	<dbid>920</dbid>
+	<traittype>Spears2H</traittype>
+	<rarity>rare</rarity>
+	<icon>UserInterface\Icons\Equipment\Generic\Spears2H\Spear2H_R32_ua</icon>
+	<rollovertextid>54352</rollovertextid>
+	<displaynameid>54353</displaynameid>
+	<offertype>eOfferCivMatching</offertype>
+	<visualfactor type="Weapon" factor="32.0000" />
+	<sellable>1</sellable>
+	<tradeable>1</tradeable>
+	<destroyable>1</destroyable>
+	<canbestoredingearhall>0</canbestoredingearhall>
+	<effects>
+		<effect type="Data" bonus="true" amount="1.0449" scaling="0.0124" subtype="Damage" visible="true" relativity="Percent" allactions="1">
+			<target type="Player" />
+		</effect>
+		<effect type="Data" bonus="true" amount="1.0147" scaling="0.0035" subtype="DamageBonus" visible="true" relativity="Percent" allactions="1" unittype="AbstractCavalry">
+			<target type="Player" />
+		</effect>
+	</effects>
+	<levels />
+	<craftlevels>
+		<level>25</level>
+	</craftlevels>
+</trait>

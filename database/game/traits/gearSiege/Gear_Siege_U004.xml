@@ -1,0 +1,23 @@
+﻿<trait name="Gear_Siege_U004">
+	<dbid>1212</dbid>
+	<traittype>GearSiege</traittype>
+	<rarity>uncommon</rarity>
+	<icon>UserInterface\Icons\Equipment\Generic\Gear\Siege\Axle_U11_ua</icon>
+	<rollovertextid>55250</rollovertextid>
+	<displaynameid>55251</displaynameid>
+	<offertype>eOfferNone</offertype>
+	<visualfactor type="Helmet" factor="11.0000" />
+	<sellable>1</sellable>
+	<tradeable>1</tradeable>
+	<destroyable>1</destroyable>
+	<canbestoredingearhall>0</canbestoredingearhall>
+	<effects>
+		<effect type="Data" bonus="true" amount="0.9901" scaling="-0.0020" subtype="TrainPoints" visible="true" relativity="Percent">
+			<target type="Player" />
+		</effect>
+	</effects>
+	<levels />
+	<craftlevels>
+		<level>38</level>
+	</craftlevels>
+</trait>

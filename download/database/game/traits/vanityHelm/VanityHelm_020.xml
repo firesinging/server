@@ -1,0 +1,15 @@
+﻿<trait name="VanityHelm_020">
+	<dbid>2148</dbid>
+	<traittype>VanityHelm</traittype>
+	<rarity>common</rarity>
+	<icon>/UserInterface/Icons/Equipment/Vanity/120_UltimateBabylon_Gear_ua</icon>
+	<rollovertextid>67573</rollovertextid>
+	<displaynameid>67574</displaynameid>
+	<offertype>eOfferNone</offertype>
+	<equipsoundset>UI_Cons_Spc_Construction</equipsoundset>
+	<visualfactor type="VanityHelmet" factor="120.0000" />
+	<sellable>1</sellable>
+	<tradeable>0</tradeable>
+	<destroyable>1</destroyable>
+	<canbestoredingearhall>1</canbestoredingearhall>
+</trait>

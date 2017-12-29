@@ -1,0 +1,23 @@
+﻿<trait name="Gear_Boat_U002">
+	<dbid>1070</dbid>
+	<traittype>GearBoat</traittype>
+	<rarity>uncommon</rarity>
+	<icon>UserInterface\Icons\Equipment\Generic\Gear\Boat\Oar_U11_ua</icon>
+	<rollovertextid>54916</rollovertextid>
+	<displaynameid>54917</displaynameid>
+	<offertype>eOfferNone</offertype>
+	<visualfactor type="Helmet" factor="11.0000" />
+	<sellable>1</sellable>
+	<tradeable>1</tradeable>
+	<destroyable>1</destroyable>
+	<canbestoredingearhall>0</canbestoredingearhall>
+	<effects>
+		<effect type="Data" bonus="true" amount="1.0062" scaling="0.0013" subtype="MaximumVelocity" visible="true" relativity="Percent">
+			<target type="Player" />
+		</effect>
+	</effects>
+	<levels />
+	<craftlevels>
+		<level>22</level>
+	</craftlevels>
+</trait>

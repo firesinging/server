@@ -1,0 +1,45 @@
+﻿<trait name="ArmorClth_R008">
+	<dbid>472</dbid>
+	<traittype>ArmorCloth</traittype>
+	<rarity>rare</rarity>
+	<icon>UserInterface\Icons\Equipment\Generic\Armor\Clth\Clth_R30_ua</icon>
+	<rollovertextid>53297</rollovertextid>
+	<displaynameid>53298</displaynameid>
+	<offertype>eOfferCivMatching</offertype>
+	<visualfactor type="Body" factor="30.0000" />
+	<sellable>1</sellable>
+	<tradeable>1</tradeable>
+	<destroyable>1</destroyable>
+	<canbestoredingearhall>0</canbestoredingearhall>
+	<effects>
+		<effect type="Data" bonus="true" amount="1.0398" scaling="0.0107" subtype="Hitpoints" visible="true" relativity="Percent" seedoffset="1">
+			<target type="Player" />
+		</effect>
+		<effect type="Data" bonus="true" amount="1.0098" scaling="0.0023" subtype="CarryCapacity" visible="false" relativity="Percent" seedoffset="2" resource="Food">
+			<target type="Player" />
+		</effect>
+		<effect type="Data" bonus="true" amount="1.0098" scaling="0.0023" subtype="WorkRate" visible="true" relativity="Percent" seedoffset="2" action="Gather" unittype="Herdable">
+			<target type="Player" />
+		</effect>
+		<effect type="Data" bonus="true" amount="1.0098" scaling="0.0023" subtype="WorkRate" visible="true" relativity="Percent" seedoffset="2" action="Gather" unittype="Huntable">
+			<target type="Player" />
+		</effect>
+		<effect type="Data" bonus="true" amount="1.0098" scaling="0.0023" subtype="WorkRate" visible="true" relativity="Percent" seedoffset="2" action="Gather" unittype="AbstractFruit">
+			<target type="Player" />
+		</effect>
+		<effect type="Data" bonus="true" amount="1.0098" scaling="0.0023" subtype="WorkRate" visible="true" relativity="Percent" seedoffset="2" action="Gather" unittype="AbstractFarm">
+			<target type="Player" />
+		</effect>
+		<effect type="Data" bonus="true" amount="1.0098" scaling="0.0023" subtype="WorkRate" visible="true" relativity="Percent" seedoffset="2" action="Gather" unittype="AbstractFish">
+			<target type="Player" />
+		</effect>
+	</effects>
+	<levels>
+		<level>27</level>
+		<level>28</level>
+		<level>29</level>
+		<level>30</level>
+		<level>31</level>
+	</levels>
+	<craftlevels />
+</trait>

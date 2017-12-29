@@ -1,0 +1,26 @@
+﻿<trait name="Bow1H_U005">
+	<dbid>1131</dbid>
+	<traittype>Bows</traittype>
+	<rarity>uncommon</rarity>
+	<icon>UserInterface\Icons\Equipment\Generic\Bows\Bow_U11_ua</icon>
+	<rollovertextid>55051</rollovertextid>
+	<displaynameid>55052</displaynameid>
+	<offertype>eOfferNone</offertype>
+	<visualfactor type="Weapon" factor="11.0000" />
+	<sellable>1</sellable>
+	<tradeable>1</tradeable>
+	<destroyable>1</destroyable>
+	<canbestoredingearhall>0</canbestoredingearhall>
+	<effects>
+		<effect type="Data" bonus="true" amount="1.0346" scaling="0.0074" subtype="Damage" visible="true" relativity="Percent" allactions="1">
+			<target type="Player" />
+		</effect>
+		<effect type="Data" bonus="true" amount="1.0026" scaling="0.0005" subtype="HitPercent" visible="true" relativity="Percent" action="RangedAttack">
+			<target type="Player" />
+		</effect>
+	</effects>
+	<levels />
+	<craftlevels>
+		<level>11</level>
+	</craftlevels>
+</trait>

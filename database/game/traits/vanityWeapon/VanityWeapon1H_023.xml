@@ -1,0 +1,16 @@
+﻿<trait name="VanityWeapon1H_023">
+	<dbid>2255</dbid>
+	<traittype>VanityWeapon</traittype>
+	<rarity>common</rarity>
+	<icon>\UserInterface\Icons\Equipment\Vanity\123_IronAndIce_Spear_ua</icon>
+	<rollovertextid>68546</rollovertextid>
+	<displaynameid>68547</displaynameid>
+	<offertype>eOfferNone</offertype>
+	<equipsoundset>UI_Cons_Spc_Wizard</equipsoundset>
+	<visualfactor type="VanityWeapon" factor="123.0000" />
+	<sellable>1</sellable>
+	<tradeable>0</tradeable>
+	<destroyable>1</destroyable>
+	<canbestoredingearhall>1</canbestoredingearhall>
+	<event>Winter</event>
+</trait>

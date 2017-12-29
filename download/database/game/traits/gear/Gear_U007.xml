@@ -1,0 +1,23 @@
+﻿<trait name="Gear_U007">
+	<dbid>1136</dbid>
+	<traittype>Gear</traittype>
+	<rarity>uncommon</rarity>
+	<icon>UserInterface\Icons\Equipment\Generic\Gear\Inf\Helm_U11_ua</icon>
+	<rollovertextid>55063</rollovertextid>
+	<displaynameid>55064</displaynameid>
+	<offertype>eOfferNone</offertype>
+	<visualfactor type="Helmet" factor="11.0000" />
+	<sellable>1</sellable>
+	<tradeable>1</tradeable>
+	<destroyable>1</destroyable>
+	<canbestoredingearhall>0</canbestoredingearhall>
+	<effects>
+		<effect type="Data" bonus="true" amount="1.0309" scaling="0.0066" subtype="LOS" visible="true" relativity="Percent">
+			<target type="Player" />
+		</effect>
+	</effects>
+	<levels />
+	<craftlevels>
+		<level>7</level>
+	</craftlevels>
+</trait>

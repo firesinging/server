@@ -1,0 +1,15 @@
+﻿<trait name="VanityHelm_003">
+	<dbid>1988</dbid>
+	<traittype>VanityHelm</traittype>
+	<rarity>common</rarity>
+	<icon>\UserInterface\Icons\Equipment\Vanity\105_Samurai_Helmet_ua</icon>
+	<rollovertextid>64142</rollovertextid>
+	<displaynameid>64143</displaynameid>
+	<offertype>eOfferNone</offertype>
+	<equipsoundset>UI_Cons_Spc_Samurai</equipsoundset>
+	<visualfactor type="VanityHelmet" factor="105.0000" />
+	<sellable>1</sellable>
+	<tradeable>0</tradeable>
+	<destroyable>1</destroyable>
+	<canbestoredingearhall>1</canbestoredingearhall>
+</trait>

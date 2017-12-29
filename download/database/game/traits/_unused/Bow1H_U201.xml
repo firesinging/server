@@ -1,0 +1,19 @@
+﻿<trait name="Bow1H_U201">
+	<dbid>1896</dbid>
+	<traittype>Bows</traittype>
+	<rarity>uncommon</rarity>
+	<icon>UserInterface\Icons\Equipment\Generic\Bows\Bow_U11_ua</icon>
+	<rollovertextid>62013</rollovertextid>
+	<displaynameid>62014</displaynameid>
+	<offertype>eOfferNone</offertype>
+	<visualfactor type="Weapon" factor="11.0000" />
+	<sellable>0</sellable>
+	<tradeable>0</tradeable>
+	<destroyable>1</destroyable>
+	<canbestoredingearhall>0</canbestoredingearhall>
+	<effects>
+		<effect type="Data" bonus="true" amount="1.0373" scaling="0.0065" subtype="Damage" visible="true" relativity="Percent" allactions="1">
+			<target type="Player" />
+		</effect>
+	</effects>
+</trait>

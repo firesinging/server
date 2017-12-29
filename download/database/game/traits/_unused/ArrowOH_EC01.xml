@@ -1,0 +1,26 @@
+﻿<trait name="ArrowOH_EC01">
+	<dbid>2049</dbid>
+	<traittype>Arrows</traittype>
+	<rarity>epic</rarity>
+	<icon>UserInterface\Icons\Equipment\Generic\Arrows\Arrow_E60_ua</icon>
+	<rollovertextid>65191</rollovertextid>
+	<displaynameid>65192</displaynameid>
+	<alliance>eAllianceDelianLeague</alliance>
+	<offertype>eOfferCivMatching</offertype>
+	<visualfactor type="Shield" factor="60.0000" />
+	<sellable>1</sellable>
+	<tradeable>1</tradeable>
+	<destroyable>1</destroyable>
+	<canbestoredingearhall>0</canbestoredingearhall>
+	<effects>
+		<effect type="Data" bonus="true" amount="1.0061" scaling="0.0017" subtype="Damage" visible="true" relativity="Percent" allactions="1">
+			<target type="Player" />
+		</effect>
+		<effect type="Data" bonus="true" amount="1.0086" scaling="0.0026" subtype="LOS" visible="true" relativity="Percent">
+			<target type="Player" />
+		</effect>
+		<effect type="Data" bonus="true" amount="1.0122" scaling="0.0033" subtype="MaximumRange" visible="true" relativity="Percent" action="RangedAttack">
+			<target type="Player" />
+		</effect>
+	</effects>
+</trait>

@@ -1,0 +1,22 @@
+﻿<trait name="Bow1H_R003">
+	<dbid>649</dbid>
+	<traittype>Bows</traittype>
+	<rarity>rare</rarity>
+	<icon>UserInterface\Icons\Equipment\Generic\Bows\Bow_R30_ua</icon>
+	<rollovertextid>53656</rollovertextid>
+	<displaynameid>53657</displaynameid>
+	<offertype>eOfferCivMatching</offertype>
+	<visualfactor type="Weapon" factor="30.0000" />
+	<sellable>1</sellable>
+	<tradeable>0</tradeable>
+	<destroyable>1</destroyable>
+	<canbestoredingearhall>0</canbestoredingearhall>
+	<effects>
+		<effect type="Data" bonus="true" amount="1.0346" scaling="0.0093" subtype="Damage" visible="true" relativity="Percent" allactions="1">
+			<target type="Player" />
+		</effect>
+		<effect type="Data" bonus="true" amount="1.0077" scaling="0.0019" subtype="DamageBonus" visible="true" relativity="Percent" allactions="1" unittype="AbstractInfantry">
+			<target type="Player" />
+		</effect>
+	</effects>
+</trait>

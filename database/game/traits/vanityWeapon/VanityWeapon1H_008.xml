@@ -1,0 +1,15 @@
+﻿<trait name="VanityWeapon1H_008">
+	<dbid>1984</dbid>
+	<traittype>VanityWeapon</traittype>
+	<rarity>common</rarity>
+	<icon>\UserInterface\Icons\Equipment\Vanity\104_Prehistoric_Weapon_ua</icon>
+	<rollovertextid>64134</rollovertextid>
+	<displaynameid>64135</displaynameid>
+	<offertype>eOfferNone</offertype>
+	<equipsoundset>UI_Cons_Spc_Prehistoric</equipsoundset>
+	<visualfactor type="VanityWeapon" factor="104.0000" />
+	<sellable>1</sellable>
+	<tradeable>0</tradeable>
+	<destroyable>1</destroyable>
+	<canbestoredingearhall>1</canbestoredingearhall>
+</trait>

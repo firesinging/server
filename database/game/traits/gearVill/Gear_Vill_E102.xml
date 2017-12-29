@@ -1,0 +1,23 @@
+﻿<trait name="Gear_Vill_E102">
+	<dbid>1528</dbid>
+	<traittype>GearVill</traittype>
+	<rarity>epic</rarity>
+	<icon>UserInterface\Icons\Equipment\Generic\Gear\Vill\Food_E60_ua</icon>
+	<rollovertextid>59256</rollovertextid>
+	<displaynameid>59257</displaynameid>
+	<offertype>eOfferCivMatching</offertype>
+	<visualfactor type="Helmet" factor="60.0000" />
+	<sellable>1</sellable>
+	<tradeable>1</tradeable>
+	<destroyable>1</destroyable>
+	<canbestoredingearhall>0</canbestoredingearhall>
+	<effects>
+		<effect type="Data" bonus="true" amount="0.9938" scaling="-0.0019" subtype="TrainPoints" visible="true" relativity="Percent">
+			<target type="Player" />
+		</effect>
+	</effects>
+	<levels />
+	<craftlevels>
+		<level>40</level>
+	</craftlevels>
+</trait>

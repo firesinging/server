@@ -1,0 +1,15 @@
+﻿<trait name="VanityWeapon1H_013">
+	<dbid>2103</dbid>
+	<traittype>VanityWeapon</traittype>
+	<rarity>common</rarity>
+	<icon>\UserInterface\Icons\Equipment\Vanity\112_UltimatePersia_Weapon_ua</icon>
+	<rollovertextid>65314</rollovertextid>
+	<displaynameid>65315</displaynameid>
+	<offertype>eOfferNone</offertype>
+	<equipsoundset>UI_Cons_Spc_Heroic</equipsoundset>
+	<visualfactor type="VanityWeapon" factor="112.0000" />
+	<sellable>1</sellable>
+	<tradeable>0</tradeable>
+	<destroyable>1</destroyable>
+	<canbestoredingearhall>1</canbestoredingearhall>
+</trait>

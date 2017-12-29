@@ -1,0 +1,26 @@
+﻿<trait name="BellyBow1H_E101">
+	<dbid>1480</dbid>
+	<traittype>BellyBows</traittype>
+	<rarity>epic</rarity>
+	<icon>UserInterface\Icons\Equipment\Generic\BellyBow\Bow_E60_ua</icon>
+	<rollovertextid>59160</rollovertextid>
+	<displaynameid>59161</displaynameid>
+	<offertype>eOfferCivMatching</offertype>
+	<visualfactor type="Weapon" factor="60.0000" />
+	<sellable>1</sellable>
+	<tradeable>1</tradeable>
+	<destroyable>1</destroyable>
+	<canbestoredingearhall>0</canbestoredingearhall>
+	<effects>
+		<effect type="Data" bonus="true" amount="1.0278" scaling="0.0088" subtype="Damage" visible="true" relativity="Percent" allactions="1">
+			<target type="Player" />
+		</effect>
+		<effect type="Data" bonus="true" amount="1.0092" scaling="0.0026" subtype="Hitpoints" visible="true" relativity="Percent">
+			<target type="Player" />
+		</effect>
+	</effects>
+	<levels />
+	<craftlevels>
+		<level>41</level>
+	</craftlevels>
+</trait>

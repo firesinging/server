@@ -1,0 +1,23 @@
+﻿<trait name="WarHorn_U109">
+	<dbid>1712</dbid>
+	<traittype>War Horn</traittype>
+	<rarity>uncommon</rarity>
+	<icon>UserInterface\Icons\Equipment\Celt\WarHorn\Horn_U10_ua</icon>
+	<rollovertextid>59624</rollovertextid>
+	<displaynameid>59625</displaynameid>
+	<offertype>eOfferNone</offertype>
+	<visualfactor type="Body" factor="10.0000" />
+	<sellable>1</sellable>
+	<tradeable>1</tradeable>
+	<destroyable>1</destroyable>
+	<canbestoredingearhall>0</canbestoredingearhall>
+	<effects>
+		<effect type="Data" bonus="true" amount="1.0247" scaling="0.0042" subtype="Damage" visible="true" relativity="Percent" allactions="1">
+			<target type="Player" />
+		</effect>
+	</effects>
+	<levels />
+	<craftlevels>
+		<level>24</level>
+	</craftlevels>
+</trait>

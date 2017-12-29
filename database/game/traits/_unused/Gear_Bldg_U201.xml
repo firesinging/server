@@ -1,0 +1,19 @@
+﻿<trait name="Gear_Bldg_U201">
+	<dbid>1942</dbid>
+	<traittype>GearBldg</traittype>
+	<rarity>uncommon</rarity>
+	<icon>UserInterface\Icons\Equipment\Generic\Gear\Bldg\BluePrint_U11_ua</icon>
+	<rollovertextid>62472</rollovertextid>
+	<displaynameid>62473</displaynameid>
+	<offertype>eOfferNone</offertype>
+	<visualfactor type="Helmet" factor="11.0000" />
+	<sellable>0</sellable>
+	<tradeable>0</tradeable>
+	<destroyable>1</destroyable>
+	<canbestoredingearhall>0</canbestoredingearhall>
+	<effects>
+		<effect type="Data" bonus="true" amount="1.0062" scaling="0.0011" subtype="BuildingWorkRate" visible="true" relativity="Percent">
+			<target type="Player" />
+		</effect>
+	</effects>
+</trait>
