@@ -1,11 +1,12 @@
-﻿using System.Xml.Serialization;
+﻿using System.ComponentModel;
+using System.Xml.Serialization;
 
 
-namespace Libraries.database.models
+namespace Libraries.database.models.civilization
 {
 
     /// <summary>
-    /// Character type  model
+    /// Civilization character type  model
     /// </summary>
     /// <seealso cref="http://xmltocsharp.azurewebsites.net/"/>
 
@@ -14,9 +15,11 @@ namespace Libraries.database.models
     {
 
         [XmlElement(ElementName = "type")]
+        [DefaultValue(null)]
         public string Type { get; set; }
 
         [XmlElement(ElementName = "file")]
+        [DefaultValue(null)]
         public string File { get; set; }
 
     }

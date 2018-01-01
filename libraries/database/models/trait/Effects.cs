@@ -1,10 +1,8 @@
 ﻿using System.Xml.Serialization;
 using System.Collections.Generic;
 
-using Libraries.database.models.traits;
 
-
-namespace Libraries.database.models
+namespace Libraries.database.models.traits
 {
 
     /// <summary>

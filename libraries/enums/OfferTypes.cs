@@ -7,16 +7,50 @@ namespace Libraries.enums
     {
 
         [XmlEnum("eOfferNone")] eOfferNone = 0,
+
+        // Greek civ
         [XmlEnum("eOfferCivGreek")] eOfferCivGreek = 1,
+
+        // Egyptian civ
         [XmlEnum("eOfferCivEgyptian")] eOfferCivEgyptian = 2,
+
+        // Norse civ
+        [XmlEnum("eOfferCivNorse")] eOfferCivNorse = 7,
+
+        // Babylonian civ
+        [XmlEnum("eOfferCivBabylonian")] eOfferCivBabylonian = 6,
+
+        // Roman civ
+        [XmlEnum("eOfferCivRoman")] eOfferCivRoman = 5,
+
+        // Persian civ
+        [XmlEnum("eOfferCivPersian")] eOfferCivPersian = 4,
+
+        // Celtic civ
+        [XmlEnum("eOfferCivCeltic")] eOfferCivCeltic = 3,
+
+        // Empire Vault
+        [XmlEnum("eOfferEmpireInventory")] eOfferEmpireInventory = 39,
+
+        // Northern Quest Booster
+        [XmlEnum("eOfferBooster4")] eOfferBooster4 = 13,
+
+        // Babylon Quest Booster
+        [XmlEnum("eOfferBooster3")] eOfferBooster3 = 12,
+
+        //  Skirmish
+        [XmlEnum("eOfferBooster2")] eOfferBooster2 = 11,
+
+        // Defense of Crete
+        [XmlEnum("eOfferBooster1")] eOfferBooster1 = 10,
+
         [XmlEnum("eOfferEnd")] eOfferEnd = 46,
         [XmlEnum("eOfferSteamSpecial6")] eOfferSteamSpecial6 = 45,
         [XmlEnum("eOfferSteamSpecial5")] eOfferSteamSpecial5 = 44,
         [XmlEnum("eOfferSteamSpecial4")] eOfferSteamSpecial4 = 43,
         [XmlEnum("eOfferSteamSpecial3")] eOfferSteamSpecial3 = 42,
         [XmlEnum("eOfferSteamSpecial2")] eOfferSteamSpecial2 = 41,
-        [XmlEnum("eOfferSteamSpecial1")] eOfferSteamSpecial1 = 40,
-        [XmlEnum("eOfferEmpireInventory")] eOfferEmpireInventory = 39,
+        [XmlEnum("eOfferSteamSpecial1")] eOfferSteamSpecial1 = 40,        
         [XmlEnum("eOfferBundle6")] eOfferBundle6 = 38,
         [XmlEnum("eOfferBundle5")] eOfferBundle5 = 37,
         [XmlEnum("eOfferBundle4")] eOfferBundle4 = 36,
@@ -42,17 +76,8 @@ namespace Libraries.enums
         [XmlEnum("eOfferBooster7")] eOfferBooster7 = 16,
         [XmlEnum("eOfferBooster6")] eOfferBooster6 = 15,
         [XmlEnum("eOfferBooster5")] eOfferBooster5 = 14,
-        [XmlEnum("eOfferBooster4")] eOfferBooster4 = 13,
-        [XmlEnum("eOfferBooster3")] eOfferBooster3 = 12,
-        [XmlEnum("eOfferBooster2")] eOfferBooster2 = 11,
-        [XmlEnum("eOfferBooster1")] eOfferBooster1 = 10,
         [XmlEnum("eOfferCivMoreThan1")] eOfferCivMoreThan1 = 9,
-        [XmlEnum("eOfferCivMatching")] eOfferCivMatching = 8,
-        [XmlEnum("eOfferCivNorse")] eOfferCivNorse = 7,
-        [XmlEnum("eOfferCivBabylonian")] eOfferCivBabylonian = 6,
-        [XmlEnum("eOfferCivRoman")] eOfferCivRoman = 5,
-        [XmlEnum("eOfferCivPersian")] eOfferCivPersian = 4,
-        [XmlEnum("eOfferCivCeltic")] eOfferCivCeltic = 3
+        [XmlEnum("eOfferCivMatching")] eOfferCivMatching = 8,        
 
     }
 

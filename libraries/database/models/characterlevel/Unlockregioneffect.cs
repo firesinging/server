@@ -1,11 +1,11 @@
 ﻿using System.Xml.Serialization;
 
 
-namespace Libraries.database.models
+namespace Libraries.database.models.characterlevel
 {
 
     /// <summary>
-    /// Unlockregioneffect model
+    /// Character level unlockregioneffect model
     /// </summary>
     /// <seealso cref="http://xmltocsharp.azurewebsites.net/"/>
 
@@ -14,7 +14,7 @@ namespace Libraries.database.models
     {
 
         [XmlElement(ElementName = "id")]
-        public string Id { get; set; }
+        public int Id { get; set; }
 
     }
 

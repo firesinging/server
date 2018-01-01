@@ -1,11 +1,12 @@
-﻿using System.Xml.Serialization;
+﻿using System.ComponentModel;
+using System.Xml.Serialization;
 
 
-namespace Libraries.database.models
+namespace Libraries.database.models.civilization
 {
 
     /// <summary>
-    /// Homecity loadscreens model
+    /// Civilization homecity loadscreens model
     /// </summary>
     /// <seealso cref="http://xmltocsharp.azurewebsites.net/"/>
 
@@ -14,6 +15,7 @@ namespace Libraries.database.models
     {
 
         [XmlElement(ElementName = "loadscreen")]
+        [DefaultValue(null)]
         public string Loadscreen { get; set; }
 
     }

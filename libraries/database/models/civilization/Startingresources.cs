@@ -1,11 +1,11 @@
 ﻿using System.Xml.Serialization;
 
 
-namespace Libraries.database.models
+namespace Libraries.database.models.civilization
 {
 
     /// <summary>
-    /// Starting resources model
+    /// Civilization starting resources model
     /// </summary>
     /// <seealso cref="http://xmltocsharp.azurewebsites.net/"/>
 

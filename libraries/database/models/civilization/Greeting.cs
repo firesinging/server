@@ -1,11 +1,11 @@
 ﻿using System.Xml.Serialization;
 
 
-namespace Libraries.database.models
+namespace Libraries.database.models.civilization
 {
 
     /// <summary>
-    /// Greeting model
+    /// Civilization greeting model
     /// </summary>
     /// <seealso cref="http://xmltocsharp.azurewebsites.net/"/>
 

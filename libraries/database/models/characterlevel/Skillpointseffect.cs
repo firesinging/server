@@ -1,11 +1,11 @@
 ﻿using System.Xml.Serialization;
 
 
-namespace Libraries.database.models
+namespace Libraries.database.models.characterlevel
 {
 
     /// <summary>
-    /// Skillpointseffect model
+    /// Character level skillpointseffect model
     /// </summary>
     /// <seealso cref="http://xmltocsharp.azurewebsites.net/"/>
 
@@ -14,7 +14,7 @@ namespace Libraries.database.models
     {
 
         [XmlElement(ElementName = "skillpoints")]
-        public string Skillpoints { get; set; }
+        public int Skillpoints { get; set; }
 
     }
 

@@ -47,7 +47,7 @@ namespace Libraries.database.models
                 foreach (ModelQuest Item in value)
                 {
 
-                    Dictionary.Add(Item.UniqueId, Item);
+                    Dictionary.Add(Item.Id, Item);
 
                 }
 

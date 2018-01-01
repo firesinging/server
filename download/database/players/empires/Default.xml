@@ -1,0 +1,15 @@
+<Empire id="0">
+	<Offers>
+		<OfferType>eOfferNone</OfferType>
+		<OfferType>eOfferCivGreek</OfferType>
+		<OfferType>eOfferCivEgyptian</OfferType>
+		<OfferType>eOfferCivCeltic</OfferType>
+		<OfferType>eOfferCivBabylonian</OfferType>
+		<OfferType>eOfferCivPersian</OfferType>
+		<OfferType>eOfferCivNorse</OfferType>      
+	</Offers>
+	<CharacterList />
+</Empire>
+<GameCurrencys />
+<Settings />
+<MailMessages totalmail="0" />

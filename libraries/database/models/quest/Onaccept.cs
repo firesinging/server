@@ -1,10 +1,10 @@
 ﻿using System.Xml.Serialization;
 using System.Collections.Generic;
 
-using Libraries.database.models.onaccept;
+using Libraries.database.models.quest.onaccept;
 
 
-namespace Libraries.database.models
+namespace Libraries.database.models.quest
 {
 
     /// <summary>

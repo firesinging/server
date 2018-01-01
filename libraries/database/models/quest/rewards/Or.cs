@@ -2,7 +2,7 @@
 using System.Collections.Generic;
 
 
-namespace Libraries.database.models.rewards
+namespace Libraries.database.models.quest.rewards
 {
 
     /// <summary>

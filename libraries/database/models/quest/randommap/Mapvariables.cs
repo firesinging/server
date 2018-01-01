@@ -2,7 +2,7 @@
 using System.Collections.Generic;
 
 
-namespace Libraries.database.models.randommap
+namespace Libraries.database.models.quest.randommap
 {
 
     /// <summary>

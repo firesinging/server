@@ -12,7 +12,7 @@ namespace Libraries.enums
         [XmlEnum("uncommon")] Uncommon = 2,
         [XmlEnum("rare")] Rare = 3,
         [XmlEnum("epic")] Epic = 4,
-        [XmlEnum("legendary")] Legendary = 5
+        [XmlEnum("legendary")] Legendary = 5,
 
     }
 

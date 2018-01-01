@@ -1,5 +1,7 @@
 ﻿using System.Xml.Serialization;
 
+using Libraries.database.models.vendor;
+
 
 namespace Libraries.database.models
 {

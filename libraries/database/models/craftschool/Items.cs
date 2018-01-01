@@ -2,11 +2,11 @@
 using System.Collections.Generic;
 
 
-namespace Libraries.database.models
+namespace Libraries.database.models.craftschool
 {
 
     /// <summary>
-    /// Items model
+    /// Craftschool items model
     /// </summary>
     /// <seealso cref="http://xmltocsharp.azurewebsites.net/"/>
 

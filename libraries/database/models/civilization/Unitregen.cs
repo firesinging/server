@@ -1,11 +1,11 @@
 ﻿using System.Xml.Serialization;
 
 
-namespace Libraries.database.models
+namespace Libraries.database.models.civilization
 {
 
     /// <summary>
-    /// Unitregen model
+    /// Civilization unitregen model
     /// </summary>
     /// <seealso cref="http://xmltocsharp.azurewebsites.net/"/>
 

@@ -1,7 +1,7 @@
 ﻿using System.Xml.Serialization;
 
 
-namespace Libraries.database.models.rewards
+namespace Libraries.database.models.quest.rewards
 {
 
     /// <summary>

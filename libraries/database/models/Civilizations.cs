@@ -27,13 +27,6 @@ namespace Libraries.database.models
 
         }
 
-        public bool Test()
-        {
-
-            return true;
-
-        }
-
         [XmlIgnore]
         public SerDictionaryCivilizations<Civilizations, ModelCivilization> Dictionary { get; private set; }
 

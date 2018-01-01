@@ -1,4 +1,8 @@
-﻿using System.Xml.Serialization;
+﻿using System.ComponentModel;
+using System.Xml.Serialization;
+
+using Libraries.enums;
+using Libraries.database.models.advisor;
 
 
 namespace Libraries.database.models
@@ -12,49 +16,72 @@ namespace Libraries.database.models
     [XmlRoot(ElementName = "advisor")]
     public class ModelAdvisor
     {   
-
+        
         [XmlElement(ElementName = "age")]
-        public string Age { get; set; }
+        public int Age { get; set; }
 
         [XmlElement(ElementName = "rarity")]
-        public string Rarity { get; set; }
+        public RarityTypes Rarity { get; set; }
 
         [XmlElement(ElementName = "icon")]
+        [DefaultValue(null)]
         public string Icon { get; set; }
-
+        
         [XmlElement(ElementName = "icontexturecoords")]
+        [DefaultValue(null)]
         public string Icontexturecoords { get; set; }
-
+        
         [XmlElement(ElementName = "rollovertextid")]
+        [DefaultValue(null)]
         public string Rollovertextid { get; set; }
-
+        
         [XmlElement(ElementName = "displaynameid")]
-        public string Displaynameid { get; set; }
+        public int Displaynameid { get; set; }
 
         [XmlElement(ElementName = "displaydescriptionid")]
-        public string Displaydescriptionid { get; set; }
-
+        public int Displaydescriptionid { get; set; }
+        
         [XmlElement(ElementName = "sellcostoverride")]
         public ModelGenericSellcostoverride Sellcostoverride { get; set; }
 
         [XmlElement(ElementName = "minlevel")]
-        public string Minlevel { get; set; }
+        public int Minlevel { get; set; }
 
         [XmlElement(ElementName = "itemlevel")]
-        public string Itemlevel { get; set; }
+        public int Itemlevel { get; set; }
 
         [XmlElement(ElementName = "offertype")]
-        public string Offertype { get; set; }
+        public OfferTypes Offertype { get; set; }
 
         [XmlElement(ElementName = "techs")]
         public ModelAdvisorTechs Techs { get; set; }
-
+        
         [XmlAttribute(AttributeName = "name")]
         public string Name { get; set; }
-
+        
         [XmlAttribute(AttributeName = "groupid")]
-        public string Groupid { get; set; }
-       
+        public int Groupid { get; set; }
+        
+        [XmlElement(ElementName = "sellable")]
+        public string Sellable { get; set; }
+
+        [XmlElement(ElementName = "tradeable")]
+        public string Tradeable { get; set; }
+
+        [XmlElement(ElementName = "destroyable")]
+        public string Destroyable { get; set; }
+
+        [XmlElement(ElementName = "specialborder")]
+        [DefaultValue(null)]
+        public string Specialborder { get; set; }
+
+        [XmlElement(ElementName = "shortdescriptionid")]
+        public int Shortdescriptionid { get; set; }
+
+        [XmlElement(ElementName = "civilization")]
+        [DefaultValue(null)]
+        public string Civilization { get; set; }
+        
     }
 
 }

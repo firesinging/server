@@ -1,11 +1,11 @@
 ﻿using System.Xml.Serialization;
 
 
-namespace Libraries.database.models
+namespace Libraries.database.models.characterlevel
 {
 
     /// <summary>
-    /// Gamecurrencyeffect model
+    /// Character level gamecurrencyeffect model
     /// </summary>
     /// <seealso cref="http://xmltocsharp.azurewebsites.net/"/>
 
@@ -14,7 +14,7 @@ namespace Libraries.database.models
     {
 
         [XmlElement(ElementName = "empirepoints")]
-        public string Empirepoints { get; set; }
+        public int Empirepoints { get; set; }
 
     }
 

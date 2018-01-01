@@ -1,9 +1,9 @@
 ﻿using System.Xml.Serialization;
 
-using Libraries.database.models.playersettings;
+using Libraries.database.models.quest.playersettings;
 
 
-namespace Libraries.database.models
+namespace Libraries.database.models.quest
 {
 
     /// <summary>

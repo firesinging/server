@@ -1,9 +1,9 @@
 ﻿using System.Xml.Serialization;
 
-using Libraries.database.models.timereffects;
+using Libraries.database.models.quest.timereffects;
 
 
-namespace Libraries.database.models
+namespace Libraries.database.models.quest
 {
 
     /// <summary>

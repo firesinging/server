@@ -1,7 +1,7 @@
 ﻿using System.Xml.Serialization;
 
 
-namespace Libraries.database.models.randommap
+namespace Libraries.database.models.quest.randommap
 {
 
     /// <summary>

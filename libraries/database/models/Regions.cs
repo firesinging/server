@@ -25,13 +25,6 @@ namespace Libraries.database.models
 
         }
 
-        public bool Test()
-        {
-
-            return true;
-
-        }
-
         [XmlIgnore]
         public SerDictionaryRegions<int, ModelRegion> Dictionary { get; private set; }
 

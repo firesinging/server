@@ -2,11 +2,11 @@
 using System.Collections.Generic;
 
 
-namespace Libraries.database.models
+namespace Libraries.database.models.equipment
 {
 
     /// <summary>
-    /// Ranks model
+    /// Equipment ranks model
     /// </summary>
     /// <seealso cref="http://xmltocsharp.azurewebsites.net/"/>
 

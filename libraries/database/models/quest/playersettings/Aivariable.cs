@@ -1,7 +1,7 @@
 ﻿using System.Xml.Serialization;
 
 
-namespace Libraries.database.models.playersettings
+namespace Libraries.database.models.quest.playersettings
 {
 
     /// <summary>

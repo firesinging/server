@@ -1,7 +1,7 @@
 ﻿using System.Xml.Serialization;
 
 
-namespace Libraries.database.models.prereqs
+namespace Libraries.database.models.quest.prereqs
 {
 
     /// <summary>

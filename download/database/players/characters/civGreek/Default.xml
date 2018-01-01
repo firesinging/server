@@ -1,0 +1,37 @@
+<character id="0" version="1">
+	<CivId>1</CivId>
+	<flag>1</flag>
+	<level>1</level>
+	<skillresetpoints>3</skillresetpoints>
+	<currentage>1</currentage>	
+	<questinstances />
+	<capitaltechs>
+		<item id="305">1</item>
+		<item id="41">1</item>
+		<item id="60">1</item>
+		<item id="56">1</item>
+	</capitaltechs>
+	<activetechs>
+		<activetech status="Active" persistentcitystatus="Active" >GreekCapStartCiv</activetech>
+		<activetech status="Active" persistentcitystatus="Active" >GrE_GreekBldgStorehouse1</activetech>
+		<activetech status="Active" persistentcitystatus="Active" >GrE_GreekBldgWatchTower1</activetech>
+		<activetech status="Active" persistentcitystatus="Active" >GrE_GreekBldgWall1</activetech>
+	</activetechs>
+	<resources>
+		<resource resourcetype="Stone" quantity="0" />
+		<resource resourcetype="Gold" quantity="0" />
+		<resource resourcetype="Wood" quantity="0" />
+		<resource resourcetype="Food" quantity="0" />
+		<resource resourcetype="SkillPoints" quantity="1" />
+		<resource resourcetype="XP" quantity="0" />
+		<resource resourcetype="Ships" quantity="0" />
+	</resources>
+	<capitalresources>		
+		<capitalresource quantity="0" resourcetype="cCapResCoin" />
+		<capitalresource quantity="0" resourcetype="cCapResWorkers" />
+		<capitalresource quantity="0" resourcetype="cCapResFactionPoints1" />
+		<capitalresource quantity="0" resourcetype="cCapResFactionPoints2" />
+		<capitalresource quantity="0" resourcetype="cCapResFactionPoints3" />
+	</capitalresources>
+	<unlockedregions>0</unlockedregions>	
+</character>

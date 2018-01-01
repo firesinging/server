@@ -1,7 +1,7 @@
 ﻿using System.Xml.Serialization;
 
 
-namespace Libraries.database.models.objectives
+namespace Libraries.database.models.quest.objectives
 {
 
     /// <summary>

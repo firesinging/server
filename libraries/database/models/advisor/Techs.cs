@@ -1,11 +1,12 @@
-﻿using System.Xml.Serialization;
+﻿using System.ComponentModel;
+using System.Xml.Serialization;
 
 
-namespace Libraries.database.models
+namespace Libraries.database.models.advisor
 {
 
     /// <summary>
-    /// Techs model
+    /// Adivsor tech model
     /// </summary>
     /// <seealso cref="http://xmltocsharp.azurewebsites.net/"/>
 
@@ -14,6 +15,7 @@ namespace Libraries.database.models
     {
 
         [XmlElement(ElementName = "tech")]
+        [DefaultValue(null)]
         public string Tech { get; set; }
 
     }

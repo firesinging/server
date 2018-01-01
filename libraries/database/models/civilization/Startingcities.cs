@@ -2,11 +2,11 @@
 using System.Collections.Generic;
 
 
-namespace Libraries.database.models
+namespace Libraries.database.models.civilization
 {
 
     /// <summary>
-    /// Starting cities model
+    /// Civilization starting cities model
     /// </summary>
     /// <seealso cref="http://xmltocsharp.azurewebsites.net/"/>
 

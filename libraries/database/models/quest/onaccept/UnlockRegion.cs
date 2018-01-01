@@ -1,7 +1,7 @@
 ﻿using System.Xml.Serialization;
 
 
-namespace Libraries.database.models.onaccept
+namespace Libraries.database.models.quest.onaccept
 {
 
     /// <summary>

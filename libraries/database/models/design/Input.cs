@@ -2,11 +2,11 @@
 using System.Collections.Generic;
 
 
-namespace Libraries.database.models
+namespace Libraries.database.models.design
 {
 
     /// <summary>
-    /// Input model
+    /// Design input model
     /// </summary>
     /// <seealso cref="http://xmltocsharp.azurewebsites.net/"/>
 

@@ -1,12 +1,13 @@
-﻿using System.Xml.Serialization;
+﻿using System.ComponentModel;
+using System.Xml.Serialization;
 using System.Collections.Generic;
 
 
-namespace Libraries.database.models
+namespace Libraries.database.models.civilization
 {
 
     /// <summary>
-    /// Wall model
+    /// Civilization wall model
     /// </summary>
     /// <seealso cref="http://xmltocsharp.azurewebsites.net/"/>
 
@@ -15,6 +16,7 @@ namespace Libraries.database.models
     {
 
         [XmlElement(ElementName = "baseunit")]
+        [DefaultValue(null)]
         public List<string> Baseunit { get; set; }
 
     }

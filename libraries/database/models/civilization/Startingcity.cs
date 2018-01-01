@@ -1,11 +1,12 @@
-﻿using System.Xml.Serialization;
+﻿using System.ComponentModel;
+using System.Xml.Serialization;
 
 
-namespace Libraries.database.models
+namespace Libraries.database.models.civilization
 {
 
     /// <summary>
-    /// Starting city model
+    /// Civilization starting city model
     /// </summary>
     /// <seealso cref="http://xmltocsharp.azurewebsites.net/"/>
 
@@ -14,6 +15,7 @@ namespace Libraries.database.models
     {
 
         [XmlElement(ElementName = "cityname")]
+        [DefaultValue(null)]
         public string Cityname { get; set; }
 
         [XmlElement(ElementName = "scenariobaseunits")]

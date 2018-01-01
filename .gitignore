@@ -1,5 +1,36 @@
-download/debug/
+# User-specific files
 *.suo
+*.user
+*.sln.docstates
+
+# Build results
+
+[Dd]ebug/
+[Rr]elease/
+x64/
+build/
+[Bb]in/
+[Oo]bj/
+
+
+# Visual Studio temp something
+.vs/
+
+# VS 2015+
+*.vc.vc.opendb
+*.vc.db
+
+# Rider
+.idea/
+
+# Output folder used by Webpack or other FE stuff
+**/node_modules/*
+**/wwwroot/*
+
+# SpecFlow specific
+*.feature.cs
+*.feature.xlsx.*
+*.Specs_*.html
 
 # OS generated files #
 ######################
@@ -10,3 +41,18 @@ download/debug/
 .Trashes
 ehthumbs.db
 Thumbs.db
+
+
+#####
+# End of core ignore list, below put you custom 'per project' settings (patterns or path)
+#####
+
+
+
+#####
+# Custom ignore Server
+#####
+
+download/debug/
+
+

@@ -1,11 +1,11 @@
 ﻿using System.Xml.Serialization;
 
 
-namespace Libraries.database.models
+namespace Libraries.database.models.characterlevel
 {
 
     /// <summary>
-    /// Ageupeffect model
+    /// Character level ageupeffect model
     /// </summary>
     /// <seealso cref="http://xmltocsharp.azurewebsites.net/"/>
 
@@ -14,7 +14,7 @@ namespace Libraries.database.models
     {
 
         [XmlElement(ElementName = "enableage")]
-        public string Enableage { get; set; }
+        public int Enableage { get; set; }
 
     }
 

@@ -3,7 +3,7 @@
 using Libraries.enums;
 
 
-namespace Libraries.database.models.prereqs
+namespace Libraries.database.models.quest.prereqs
 {
 
     /// <summary>

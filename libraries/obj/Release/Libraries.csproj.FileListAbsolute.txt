@@ -10,3 +10,7 @@ D:\Development\server\libraries\bin\Release\SuperSocket.SocketBase.dll
 D:\Development\server\libraries\bin\Release\SuperSocket.Common.xml
 D:\Development\server\libraries\bin\Release\SuperSocket.Facility.xml
 D:\Development\server\libraries\bin\Release\SuperSocket.SocketBase.xml
+D:\Development\server\libraries\bin\Release\log4net.dll
+D:\Development\server\libraries\bin\Release\Newtonsoft.Json.dll
+D:\Development\server\libraries\bin\Release\log4net.xml
+D:\Development\server\libraries\bin\Release\Newtonsoft.Json.xml

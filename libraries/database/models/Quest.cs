@@ -2,6 +2,7 @@
 using System.Collections.Generic;
 
 using Libraries.enums;
+using Libraries.database.models.quest;
 
 
 namespace Libraries.database.models
@@ -155,7 +156,7 @@ namespace Libraries.database.models
         public string Victoryconditions { get; set; }
         
         [XmlAttribute(AttributeName = "uniqueid")]
-        public int UniqueId { get; set; }
+        public int Id { get; set; }
 
         [XmlAttribute(AttributeName = "version")]
         public int Version { get; set; }

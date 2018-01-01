@@ -4927,7 +4927,7 @@
 	</advisor>
 	<advisor name="Hatshepsut_R_IV" groupid="66">
 		<age>3</age>
-		<rarity>Rare</rarity>
+		<rarity>rare</rarity>
 		<icon>UserInterface\Icons\Advisors\AdvisorHatshepsut3_db</icon>
 		<icontexturecoords>0 0 1 1.0</icontexturecoords>
 		<rollovertextid/>

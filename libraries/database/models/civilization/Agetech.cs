@@ -1,11 +1,12 @@
-﻿using System.Xml.Serialization;
+﻿using System.ComponentModel;
+using System.Xml.Serialization;
 
 
-namespace Libraries.database.models
+namespace Libraries.database.models.civilization
 {
 
     /// <summary>
-    /// Age tech model
+    /// Civilization age tech model
     /// </summary>
     /// <seealso cref="http://xmltocsharp.azurewebsites.net/"/>
 
@@ -14,13 +15,15 @@ namespace Libraries.database.models
     {
 
         [XmlElement(ElementName = "age")]
+        [DefaultValue(null)]
         public string Age { get; set; }
 
         [XmlElement(ElementName = "tech")]
+        [DefaultValue(null)]
         public string Tech { get; set; }
 
         [XmlElement(ElementName = "tierequipmentid")]
-        public string Tierequipmentid { get; set; }
+        public int Tierequipmentid { get; set; }
 
     }
 

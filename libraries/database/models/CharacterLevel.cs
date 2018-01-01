@@ -1,6 +1,8 @@
 ﻿using System.Xml.Serialization;
 using System.Collections.Generic;
 
+using Libraries.database.models.characterlevel;
+
 
 namespace Libraries.database.models
 {
@@ -17,7 +19,7 @@ namespace Libraries.database.models
         public int Level { get; set; }
 
         [XmlElement(ElementName = "xp")]
-        public string Xp { get; set; }
+        public int Xp { get; set; }
 
         [XmlElement(ElementName = "gamecurrencyeffect")]
         public ModelCharacterlevelGamecurrencyeffect Gamecurrencyeffect { get; set; }

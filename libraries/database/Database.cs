@@ -131,6 +131,17 @@ namespace Libraries.database
 
                 }
 
+                foreach (string QuestFile in Directory.GetFiles($"{PathingHelper.gamedatabaseDir}quests", "*.quest", SearchOption.AllDirectories))
+                {
+
+                    ModelQuest Quest = new ModelQuest().DeserializeFromFile(QuestFile);
+
+                    Quest.Source = QuestFile;
+
+                    Quests.Add(Quest.Id, Quest);
+
+                }
+
                 Instance = true;
 
             }            

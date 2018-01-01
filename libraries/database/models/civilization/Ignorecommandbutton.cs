@@ -1,11 +1,12 @@
-﻿using System.Xml.Serialization;
+﻿using System.ComponentModel;
+using System.Xml.Serialization;
 
 
-namespace Libraries.database.models
+namespace Libraries.database.models.civilization
 {
 
     /// <summary>
-    /// Ignore commandbutton model
+    /// Civilization ignore commandbutton model
     /// </summary>
     /// <seealso cref="http://xmltocsharp.azurewebsites.net/"/>
 
@@ -14,13 +15,14 @@ namespace Libraries.database.models
     {
 
         [XmlAttribute(AttributeName = "protoname")]
+        [DefaultValue(null)]
         public string Protoname { get; set; }
 
         [XmlAttribute(AttributeName = "row")]
-        public string Row { get; set; }
+        public int Row { get; set; }
 
         [XmlAttribute(AttributeName = "column")]
-        public string Column { get; set; }
+        public int Column { get; set; }
 
     }
 

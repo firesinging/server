@@ -30,7 +30,7 @@ namespace Game.Command
 
             }
 
-            string RegionFile = Database.Regions[Request.RegionId].MapName;      
+            string RegionFile = Database.Regions[Request.RegionId].Mapname;      
 
             PacketBResponseRequestRegionMap ResponseContent = new PacketBResponseRequestRegionMap(1, RegionFile);
 

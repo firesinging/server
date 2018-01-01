@@ -48,6 +48,9 @@ namespace Libraries.database.models
 
         }
 
+        [XmlElement(ElementName = "Role")]
+        public int Role { get; set; }
+
     }
 
 }

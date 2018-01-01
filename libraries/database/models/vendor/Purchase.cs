@@ -1,8 +1,7 @@
 ﻿using System.Xml.Serialization;
-using System.Collections.Generic;
 
 
-namespace Libraries.database.models
+namespace Libraries.database.models.vendor
 {
 
     /// <summary>

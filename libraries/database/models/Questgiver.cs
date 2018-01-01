@@ -1,5 +1,7 @@
 ﻿using System.Xml.Serialization;
 
+using Libraries.database.models.questgiver;
+
 
 namespace Libraries.database.models
 {

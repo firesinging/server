@@ -1,9 +1,9 @@
 ﻿using System.Xml.Serialization;
 
-using Libraries.database.models.objectives;
+using Libraries.database.models.quest.objectives;
 
 
-namespace Libraries.database.models
+namespace Libraries.database.models.quest
 {
 
     /// <summary>

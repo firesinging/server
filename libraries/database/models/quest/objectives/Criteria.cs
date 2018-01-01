@@ -2,7 +2,7 @@
 using System.Collections.Generic;
 
 
-namespace Libraries.database.models.objectives
+namespace Libraries.database.models.quest.objectives
 {
 
     /// <summary>

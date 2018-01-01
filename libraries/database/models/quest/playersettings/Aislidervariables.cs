@@ -3,7 +3,7 @@
 using System.Collections.Generic;
 
 
-namespace Libraries.database.models.playersettings
+namespace Libraries.database.models.quest.playersettings
 {
 
     /// <summary>
