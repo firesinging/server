@@ -1,4 +1,4 @@
-<Empire id="0">
+<Empire Id="0" Version="1">
 	<Offers>
 		<OfferType>eOfferNone</OfferType>
 		<OfferType>eOfferCivGreek</OfferType>
@@ -10,6 +10,3 @@
 	</Offers>
 	<CharacterList />
 </Empire>
-<GameCurrencys />
-<Settings />
-<MailMessages totalmail="0" />
