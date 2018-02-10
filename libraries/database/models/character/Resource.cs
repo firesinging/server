@@ -17,7 +17,7 @@ namespace Libraries.database.models.character
         public string Resourcetype { get; set; }
 
         [XmlAttribute(AttributeName = "quantity")]
-        public string Quantity { get; set; }
+        public int Quantity { get; set; }
 
     }
 

@@ -1,4 +1,5 @@
-﻿using System.Xml.Serialization;
+﻿using System.ComponentModel;
+using System.Xml.Serialization;
 
 
 namespace Libraries.database.models.character
@@ -14,9 +15,11 @@ namespace Libraries.database.models.character
     {
 
         [XmlElement(ElementName = "radius")]
+        [DefaultValue(null)]
         public string Radius { get; set; }
 
         [XmlElement(ElementName = "centerpoint")]
+        [DefaultValue(null)]
         public string Centerpoint { get; set; }
 
     }

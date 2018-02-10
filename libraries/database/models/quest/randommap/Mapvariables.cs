@@ -1,5 +1,6 @@
 ﻿using System.Xml.Serialization;
 using System.Collections.Generic;
+using System.ComponentModel;
 
 
 namespace Libraries.database.models.quest.randommap
@@ -14,8 +15,16 @@ namespace Libraries.database.models.quest.randommap
     public class ModelQuestRandommapMapvariables
     {
 
+        public ModelQuestRandommapMapvariables()
+        {
+
+            Items = new List<ModelQuestRandommapMapvariable>();
+
+        }
+
         [XmlElement(ElementName = "variable")]
-        public List<ModelQuestRandommapMapvariable> Variable { get; set; }
+        [DefaultValue(null)]
+        public List<ModelQuestRandommapMapvariable> Items { get; set; }
 
     }
 

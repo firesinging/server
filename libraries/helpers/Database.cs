@@ -2,6 +2,9 @@
 using System.Linq;
 using System.Collections.Generic;
 
+using Libraries.helpers.xml;
+using Libraries.helpers.pathing;
+
 
 namespace Libraries.helpers.database
 {
@@ -19,6 +22,20 @@ namespace Libraries.helpers.database
         {
 
             return exludedDirList.Any(d => Path.GetFileName(Path.GetDirectoryName(filename)).Equals(d));
+
+        }
+
+        /// <summary>
+        /// Deserialize game files from database 
+        /// </summary>
+        /// <param name="filename">The filename</param>
+        /// <returns></returns>
+        public static T Deserialize<T>(string fileName) where T : new()
+        {
+
+            T Instance = new T().DeserializeFromFile($"{PathingHelper.gamedatabaseDir}{fileName}");
+
+            return (T)Instance;
 
         }
 

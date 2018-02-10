@@ -1,5 +1,6 @@
 ﻿using System.Xml.Serialization;
 using System.Collections.Generic;
+using System.ComponentModel;
 
 
 namespace Libraries.database.models.vendor
@@ -14,8 +15,16 @@ namespace Libraries.database.models.vendor
     public class ModelVendorItems
     {
 
+        public ModelVendorItems()
+        {
+
+            Items = new List<ModelVendorItem>();
+
+        }
+
         [XmlElement(ElementName = "item")]
-        public List<ModelVendorItem> Item { get; set; }
+        [DefaultValue(null)]
+        public List<ModelVendorItem> Items { get; set; }
 
     }
 

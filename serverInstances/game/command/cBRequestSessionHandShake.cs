@@ -1,8 +1,12 @@
 ﻿using SuperSocket.SocketBase.Command;
 
+using Libraries.enums;
+using Libraries.player;
+using Libraries.database;
+using Libraries.logger;
+
 using Libraries.helpers.package;
 using Libraries.packages.custom;
-using Libraries.enums;
 
 
 namespace Game.Command
@@ -21,20 +25,25 @@ namespace Game.Command
 
             PacketBRequestSessionHandShake Request = new PacketBRequestSessionHandShake(p.Content);
 
-            if (s.Logger.IsDebugEnabled)
+            Logger.Debug(p.Key + "::ExecuteCommand - Execute command: " + Request);
+
+            if (!s.IsAuthenticated)
             {
 
-                s.Logger.Debug($"Execute command: {Request}");
+                Player Player = Database.Players.Get(Request.PlayerName, Request.Password);
+
+                if (Player != null)
+                {
+
+                    s.SetPlayer(Player);
+
+                }
 
             }
 
-            //@TODO validate player
-            // Also duplicate on authentication instance
-
             PacketBResponseSessionHandShake ResponseContent = new PacketBResponseSessionHandShake(1);
 
-            if (s.Logger.IsDebugEnabled)
-                s.Logger.Debug($"Command response: {ResponseContent}");
+            Logger.Debug(p.Key + "::ExecuteCommand - Execute command: " + ResponseContent);
 
             byte[] Response = ResponseContent.ToByteArray();
 

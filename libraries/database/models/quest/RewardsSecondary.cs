@@ -1,5 +1,6 @@
 ﻿using System.Xml.Serialization;
 using System.Collections.Generic;
+using System.ComponentModel;
 
 using Libraries.database.models.quest.rewards;
 
@@ -16,10 +17,18 @@ namespace Libraries.database.models.quest
     public class ModelQuestSecondaryrewards
     {
 
+        public ModelQuestSecondaryrewards()
+        {
+
+            Loottable = new List<ModelQuestRewardsLoottable>();
+
+        }
+
         [XmlElement(ElementName = "capitalresource")]
         public ModelQuestRewardsCapitalresource Capitalresource { get; set; }
 
         [XmlElement(ElementName = "loottable")]
+        [DefaultValue(null)]
         public List<ModelQuestRewardsLoottable> Loottable { get; set; }
 
         [XmlAttribute(AttributeName = "visible")]

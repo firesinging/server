@@ -1,7 +1,10 @@
 ﻿using SuperSocket.SocketBase.Command;
 
-using Libraries.helpers.package;
 using Libraries.packages.game;
+using Libraries.player;
+using Libraries.logger;
+
+using Libraries.helpers.package;
 
 
 namespace Game.Command
@@ -20,14 +23,11 @@ namespace Game.Command
 
             PacketBRequestCharacterConfigUpdate Request = new PacketBRequestCharacterConfigUpdate(p.Content);
 
-            if (s.Logger.IsDebugEnabled)
-            {
+            Logger.Debug(p.Key + "::ExecuteCommand - Execute command: " + Request);
 
-                s.Logger.Debug($"Execute command: {Request}");
+            Player Player = s.GetPlayer();
 
-            }
-
-            //@TODO - Set for character
+            Player.Empire.CurrentCharacter.Configs.Set(Request.Config , Request.Value);
 
         }
 

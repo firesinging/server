@@ -1,5 +1,6 @@
 ﻿using System.Xml.Serialization;
 using System.Collections.Generic;
+using System.ComponentModel;
 
 
 namespace Libraries.database.models.character
@@ -11,18 +12,19 @@ namespace Libraries.database.models.character
     /// <seealso cref="http://xmltocsharp.azurewebsites.net/"/>
 
     [XmlRoot(ElementName = "learneddesigns")]
-    public class ModelCharacterLearneddesigns
+    public class ModelCharacterLearneddesigns : ModelBase
     {
 
         public ModelCharacterLearneddesigns()
         {
 
-            Learneddesign = new List<string>();
+            Items = new List<string>();
 
         }
 
         [XmlElement(ElementName = "learneddesign")]
-        public List<string> Learneddesign { get; set; }
+        [DefaultValue(null)]
+        public List<string> Items { get; set; }
 
     }
 

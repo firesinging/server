@@ -1,5 +1,6 @@
 ﻿using System.Xml.Serialization;
 using System.Collections.Generic;
+using System.ComponentModel;
 
 
 namespace Libraries.database.models.quest
@@ -14,8 +15,16 @@ namespace Libraries.database.models.quest
     public class ModelQuestQuestgivers
     {
 
+        public ModelQuestQuestgivers()
+        {
+
+            Items = new List<string>();
+
+        }
+
         [XmlElement(ElementName = "protounit")]
-        public List<string> Protounit { get; set; }
+        [DefaultValue(null)]
+        public List<string> Items { get; set; }
 
     }
 

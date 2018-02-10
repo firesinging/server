@@ -1,4 +1,5 @@
-﻿using System.Xml.Serialization;
+﻿using System.ComponentModel;
+using System.Xml.Serialization;
 
 
 namespace Libraries.database.models.character
@@ -14,6 +15,7 @@ namespace Libraries.database.models.character
     {
 
         [XmlAttribute(AttributeName = "used")]
+        [DefaultValue(null)]
         public string Used { get; set; }
 
         [XmlAttribute(AttributeName = "level")]
@@ -23,9 +25,11 @@ namespace Libraries.database.models.character
         public int Seed { get; set; }
 
         [XmlAttribute(AttributeName = "protounit")]
+        [DefaultValue(null)]
         public string Protounit { get; set; }
 
         [XmlAttribute(AttributeName = "serializationData")]
+        [DefaultValue(null)]
         public string SerializationData { get; set; }
 
         [XmlText]

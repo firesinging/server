@@ -12,8 +12,19 @@ namespace Libraries.database.models
         /// <summary>
         /// Base model
         /// </summary>
-        
 
+        [XmlIgnore]
+        public string ToXml
+        {
+
+            get
+            {
+
+                return XMLHelper.SerializeObjectToXml(this);
+
+            }
+
+        }
 
     }
 

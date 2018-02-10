@@ -1,4 +1,5 @@
-﻿using System.Xml.Serialization;
+﻿using System.ComponentModel;
+using System.Xml.Serialization;
 
 
 namespace Libraries.database.models.character
@@ -14,15 +15,19 @@ namespace Libraries.database.models.character
     {
 
         [XmlElement(ElementName = "Age1")]
+        [DefaultValue(null)]
         public string Age1 { get; set; }
 
         [XmlElement(ElementName = "Age2")]
+        [DefaultValue(null)]
         public string Age2 { get; set; }
 
         [XmlElement(ElementName = "Age3")]
+        [DefaultValue(null)]
         public string Age3 { get; set; }
 
         [XmlElement(ElementName = "Age4")]
+        [DefaultValue(null)]
         public string Age4 { get; set; }
 
     }

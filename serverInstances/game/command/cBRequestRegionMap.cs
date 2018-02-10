@@ -1,10 +1,12 @@
 ﻿using SuperSocket.SocketBase.Command;
 
 using Libraries.database;
-
-using Libraries.helpers.package;
 using Libraries.packages.game;
 using Libraries.enums;
+using Libraries.player;
+using Libraries.logger;
+
+using Libraries.helpers.package;
 
 
 namespace Game.Command
@@ -23,24 +25,18 @@ namespace Game.Command
 
             PacketBRequestRegionMap Request = new PacketBRequestRegionMap(p.Content);
 
-            if (s.Logger.IsDebugEnabled)
-            {
+            Logger.Debug(p.Key + "::ExecuteCommand - Execute command: " + Request);
 
-                s.Logger.Debug($"Execute command: {Request}");
+            Player Player = s.GetPlayer();
 
-            }
+            Player.Empire.CurrentCharacter.Currentregion = Request.RegionId;
 
-            string RegionFile = Database.Regions[Request.RegionId].Mapname;      
+            Player.Save();
 
-            PacketBResponseRequestRegionMap ResponseContent = new PacketBResponseRequestRegionMap(1, RegionFile);
+            PacketBResponseRequestRegionMap ResponseContent = new PacketBResponseRequestRegionMap(1, Database.Regions[Request.RegionId].Mapname);
 
-            if (s.Logger.IsDebugEnabled)
-            {
+            Logger.Debug(p.Key + "::ExecuteCommand - Execute command: " + ResponseContent);
 
-                s.Logger.Debug($"Command response: {ResponseContent}");
-
-            }
-                
             byte[] Response = ResponseContent.ToByteArray();
 
             Package Package = new Package(p.HeaderXuid, p.HeaderField20, p.HeaderServiceId, p.HeaderField22, PacketTypes.BResponseRequestRegionMap, p.HeaderRequestId, Response);

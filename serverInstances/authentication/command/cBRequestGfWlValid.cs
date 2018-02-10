@@ -3,6 +3,7 @@
 using Libraries.helpers.package;
 using Libraries.packages.authentication;
 using Libraries.enums;
+using Libraries.logger;
 
 
 namespace Authentication.command
@@ -21,17 +22,11 @@ namespace Authentication.command
 
             PacketBRequestGfWlValid Request = new PacketBRequestGfWlValid(p.Content);
 
-            if (s.Logger.IsDebugEnabled)
-            {
-
-                s.Logger.Debug($"Execute command: {Request}");
-
-            }                
+            Logger.Debug(p.Key + "::ExecuteCommand - Execute command: " + Request);
 
             PacketBResponseGfWlValid ResponseContent = new PacketBResponseGfWlValid(1);
 
-            if (s.Logger.IsDebugEnabled)
-                s.Logger.Debug($"Command response: {ResponseContent}");
+            Logger.Debug(p.Key + "::ExecuteCommand - Execute command: " + ResponseContent);
 
             byte[] Response = ResponseContent.ToByteArray();
 

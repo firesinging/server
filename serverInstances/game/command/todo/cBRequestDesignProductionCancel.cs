@@ -3,6 +3,7 @@
 using Libraries.helpers.package;
 using Libraries.packages.game;
 using Libraries.enums;
+using Libraries.logger;
 
 
 namespace Game.Command
@@ -21,12 +22,7 @@ namespace Game.Command
 
             var Request = new Libraries.packages.todo.PacketBRequestDesignProductionCancel(p.Content);
 
-            if (s.Logger.IsDebugEnabled)
-            {
-
-                s.Logger.Debug($"Execute command: {Request}");
-
-            }
+            Logger.DebugFormat("BRequestDesignProductionCancel::ExecuteCommand - Execute command: {0}", Request);
 
 
 

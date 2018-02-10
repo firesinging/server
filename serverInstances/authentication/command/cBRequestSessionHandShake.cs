@@ -1,8 +1,13 @@
 ﻿using SuperSocket.SocketBase.Command;
 
-using Libraries.helpers.package;
-using Libraries.packages.custom;
 using Libraries.enums;
+using Libraries.player;
+using Libraries.database;
+using Libraries.packages.custom;
+using Libraries.logger;
+
+using Libraries.helpers.package;
+using Libraries.helpers.player;
 
 
 namespace Authentication.Command
@@ -13,6 +18,7 @@ namespace Authentication.Command
 
         /// <summary>
         /// Executes the command and sends response.
+        /// Creates player if not exists
         /// </summary>
         /// <param name="s">The session.</param>
         /// <param name="i">The package info.</param>
@@ -21,20 +27,44 @@ namespace Authentication.Command
 
             PacketBRequestSessionHandShake Request = new PacketBRequestSessionHandShake(p.Content);
 
-            if (s.Logger.IsDebugEnabled)
+            Logger.Debug(p.Key + "::ExecuteCommand - Execute command: " + Request);
+
+            if (!s.IsAuthenticated)
             {
 
-                s.Logger.Debug($"Execute command: {Request}");
+                if (!PlayerHelper.PlayerNameExists(Request.PlayerName))
+                {
+                        
+                    if ((PlayerHelper.IsValidPlayerName(Request.PlayerName)) && (PlayerHelper.IsValidPasswordLength(Request.Password)))
+                    {
 
-            }
+                        Logger.Info(p.Key + "::ExecuteCommand - Create new player " + Request.PlayerName + " from IP " + s.RemoteEndPoint.Address.ToString());
 
-            //@TODO validate player
-            // Also duplicate on game instance
+                        Player New = new Player();
+
+                        New.Name = Request.PlayerName;
+                        New.Password = PlayerHelper.CreateHash(Request.Password);
+
+                        New.Save(false, false, true);
+
+                    }                           
+
+                }
+                    
+                Player Player = Database.Players.Get(Request.PlayerName, Request.Password);
+
+                if (Player != null)
+                {
+
+                    s.SetPlayer(Player);
+
+                }
+
+            } 
 
             PacketBResponseSessionHandShake ResponseContent = new PacketBResponseSessionHandShake(1);
 
-            if (s.Logger.IsDebugEnabled)
-                s.Logger.Debug($"Command response: {ResponseContent}");
+            Logger.Debug(p.Key + "::ExecuteCommand - Execute command: " + ResponseContent);
 
             byte[] Response = ResponseContent.ToByteArray();
 

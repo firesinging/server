@@ -13,6 +13,14 @@ namespace Libraries.database.models.character
     public class ModelCharacterInventorycontainer
     {
 
+        public ModelCharacterInventorycontainer()
+        {
+
+            Info = new ModelCharacterInventorycontainerInfo();
+            Inventory = new ModelCharacterInventorycontainerInventory();
+
+        }
+
         [XmlElement(ElementName = "info")]
         public ModelCharacterInventorycontainerInfo Info { get; set; }
 

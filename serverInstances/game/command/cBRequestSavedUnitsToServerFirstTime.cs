@@ -1,8 +1,11 @@
 ﻿using SuperSocket.SocketBase.Command;
 
-using Libraries.helpers.package;
 using Libraries.packages.game;
 using Libraries.enums;
+using Libraries.player;
+using Libraries.logger;
+
+using Libraries.helpers.package;
 
 
 namespace Game.Command
@@ -21,17 +24,15 @@ namespace Game.Command
 
             PacketBRequestSavedUnitsToServerFirstTime Request = new PacketBRequestSavedUnitsToServerFirstTime(p.Content);
 
-            if (s.Logger.IsDebugEnabled)
-            {
+            Logger.Debug(p.Key + "::ExecuteCommand - Execute command: " + Request);
 
-                s.Logger.Debug($"Execute command: {Request}");
+            Player Player = s.GetPlayer();
 
-            }
+            Player.Empire.CurrentCharacter.Flag = Player.Empire.CurrentCharacter.Flag | 0x10;
 
-            PacketBCharacterFlagsChanged ResponseContent = new PacketBCharacterFlagsChanged(s.CharacterId, s.CharacterFlags);
+            PacketBCharacterFlagsChanged ResponseContent = new PacketBCharacterFlagsChanged(Player.Empire.CurrentCharacter.Id, Player.Empire.CurrentCharacter.Flag);
 
-            if (s.Logger.IsDebugEnabled)
-                s.Logger.Debug($"Command response: {ResponseContent}");
+            Logger.Debug(p.Key + "::ExecuteCommand - Execute command: " + ResponseContent);
 
             byte[] Response = ResponseContent.ToByteArray();
 

@@ -1,4 +1,5 @@
-﻿using System.Xml.Serialization;
+﻿using System.ComponentModel;
+using System.Xml.Serialization;
 
 using Libraries.database.models.craftschool;
 
@@ -18,15 +19,17 @@ namespace Libraries.database.models
         public string Tag { get; set; }
 
         [XmlElement(ElementName = "displayname")]
-        public string Displayname { get; set; }
+        public int Displayname { get; set; }
 
         [XmlElement(ElementName = "description")]
-        public string Description { get; set; }
+        public int Description { get; set; }
 
         [XmlElement(ElementName = "startingblueprint")]
+        [DefaultValue(null)]
         public string Startingblueprint { get; set; }
 
         [XmlElement(ElementName = "icon")]
+        [DefaultValue(null)]
         public string Icon { get; set; }
 
         [XmlElement(ElementName = "gearicons")]
@@ -36,9 +39,11 @@ namespace Libraries.database.models
         public ModelCraftschoolItems Items { get; set; }
 
         [XmlElement(ElementName = "design")]
+        [DefaultValue(null)]
         public string Design { get; set; }
 
         [XmlElement(ElementName = "craftingsound")]
+        [DefaultValue(null)]
         public string Craftingsound { get; set; }
 
         [XmlElement(ElementName = "allowedcapitals")]

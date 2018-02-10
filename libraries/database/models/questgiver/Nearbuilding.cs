@@ -1,4 +1,5 @@
-﻿using System.Xml.Serialization;
+﻿using System.ComponentModel;
+using System.Xml.Serialization;
 
 
 namespace Libraries.database.models.questgiver
@@ -14,13 +15,14 @@ namespace Libraries.database.models.questgiver
     {
 
         [XmlElement(ElementName = "nearunittype")]
+        [DefaultValue(null)]
         public string Nearunittype { get; set; }
 
         [XmlElement(ElementName = "preferredoffset")]
         public string Preferredoffset { get; set; }
 
         [XmlElement(ElementName = "radius")]
-        public string Radius { get; set; }
+        public int Radius { get; set; }
 
         [XmlElement(ElementName = "useboneposition")]
         public string Useboneposition { get; set; }

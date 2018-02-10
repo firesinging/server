@@ -1,11 +1,11 @@
-﻿using System.IO;
+﻿using SuperSocket.SocketBase.Command;
 
-using SuperSocket.SocketBase.Command;
+using Libraries.packages.game;
+using Libraries.enums;
+using Libraries.player;
+using Libraries.logger;
 
 using Libraries.helpers.package;
-using Libraries.packages.game;
-using Libraries.helpers.pathing;
-using Libraries.enums;
 
 
 namespace Game.Command
@@ -24,23 +24,13 @@ namespace Game.Command
 
             PacketBGetMailMessagesRequest Request = new PacketBGetMailMessagesRequest(p.Content);
 
-            if (s.Logger.IsDebugEnabled)
-            {
+            Logger.Mail(p.Key + "::ExecuteCommand - Execute command: " + Request);
 
-                s.Logger.Debug($"Execute command: {Request}");
+            Player Player = s.GetPlayer();
 
-            }
+            PacketBGetMailMessagesResponse ResponseContent = new PacketBGetMailMessagesResponse(Player.Mailmessages.ToXml);
 
-            string Content = File.ReadAllText($"{PathingHelper.tmpDir}BGetMailMessagesResponse.xml");
-
-            PacketBGetMailMessagesResponse ResponseContent = new PacketBGetMailMessagesResponse(Content);
-
-            if (s.Logger.IsDebugEnabled)
-            {
-
-                s.Logger.Debug($"Command response: {ResponseContent}");
-
-            }                
+            Logger.Mail(p.Key + "::ExecuteCommand - Execute command: " + ResponseContent);
 
             byte[] Response = ResponseContent.ToByteArray();
 

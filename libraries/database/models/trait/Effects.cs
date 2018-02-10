@@ -1,5 +1,6 @@
 ﻿using System.Xml.Serialization;
 using System.Collections.Generic;
+using System.ComponentModel;
 
 
 namespace Libraries.database.models.traits
@@ -14,8 +15,16 @@ namespace Libraries.database.models.traits
     public class ModelTraitEffects
     {
 
+        public ModelTraitEffects()
+        {
+
+            Items = new List<ModelTraitEffect>();
+
+        }
+
         [XmlElement(ElementName = "effect")]
-        public List<ModelTraitEffect> Effect { get; set; }
+        [DefaultValue(null)]
+        public List<ModelTraitEffect> Items { get; set; }
 
     }
 

@@ -47,10 +47,9 @@ namespace Libraries.packages.game
             return string.Format(
                 "PacketBRequestRetrievePersistentData\r\n",
                 "Xuid = 0x{0:X}\r\n" +
-                "PlayerId = {1}\r\n" +
-                "CharacterName = {2}\r\n" +
-                "CharacterId = {3}\r\n" +
-                "CharacterFlag = 0x{4:X}",
+                "CharacterName = {1}\r\n" +
+                "CharacterId = {2}\r\n" +
+                "CharacterFlag = 0x{3:X}",
                 Xuid,
                 0,
                 CharacterName,

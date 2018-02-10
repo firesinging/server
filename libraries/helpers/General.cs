@@ -44,6 +44,9 @@ namespace Libraries.helpers.general
 
         }
 
+        /// <summary>
+        /// Check if console color can be set 
+        /// </summary>
         public static void CheckCanSetConsoleColor()
         {
 
@@ -65,6 +68,9 @@ namespace Libraries.helpers.general
 
         }
 
+        /// <summary>
+        /// Set console color 
+        /// </summary>
         public static void SetConsoleColor(ConsoleColor color)
         {
 

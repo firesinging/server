@@ -3,6 +3,7 @@ using SuperSocket.SocketBase.Command;
 
 using Libraries.helpers.package;
 using Libraries.packages.chat;
+using Libraries.logger;
 
 
 namespace Chat.command
@@ -21,13 +22,7 @@ namespace Chat.command
 
             PacketBBotNetBasePacketCustomRequestLeaveServer Request = new PacketBBotNetBasePacketCustomRequestLeaveServer(p.Content);
 
-            //@TODO - Create custom chat level to spam only when requested
-            if (s.Logger.IsDebugEnabled)
-            {
-
-                s.Logger.Debug($"Execute command: {Request}");
-
-            }
+            Logger.Chat(p.Key + "::ExecuteCommand - Execute command: " + Request);
 
             s.Close(CloseReason.ClientClosing);
 

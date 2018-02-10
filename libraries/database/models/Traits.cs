@@ -1,6 +1,5 @@
-﻿using System.Xml.Serialization;
-
-using Libraries.helpers.xml;
+﻿using System.Collections.Generic;
+using System.Xml.Serialization;
 
 
 namespace Libraries.database.models
@@ -21,7 +20,7 @@ namespace Libraries.database.models
         public ModelTraits()
         {
 
-            Dictionary = new SerDictionaryTraits<string, ModelTrait>();
+            Items = new Dictionary<string, ModelTrait>();
 
         }
 
@@ -29,7 +28,7 @@ namespace Libraries.database.models
         public string Version { get; set; }
 
         [XmlIgnore]
-        public SerDictionaryTraits<string, ModelTrait> Dictionary { get; private set; }
+        public Dictionary<string, ModelTrait> Items { get; private set; }
 
         [XmlElement(ElementName = "trait")]
         public ModelTrait[] ModelTrait
@@ -45,12 +44,12 @@ namespace Libraries.database.models
             set
             {
 
-                Dictionary = new SerDictionaryTraits<string, ModelTrait>();
+                Items = new Dictionary<string, ModelTrait>();
 
                 foreach (ModelTrait Item in value)
                 {
-                    
-                    Dictionary.Add(Item.Name, Item);
+
+                    Items.Add(Item.Name, Item);
 
                 }
 

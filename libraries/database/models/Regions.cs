@@ -21,12 +21,12 @@ namespace Libraries.database.models
         public ModelRegions()
         {
 
-            Dictionary = new SerDictionaryRegions<int, ModelRegion>();
+            Items = new SerDictionaryRegions<int, ModelRegion>();
 
         }
 
         [XmlIgnore]
-        public SerDictionaryRegions<int, ModelRegion> Dictionary { get; private set; }
+        public SerDictionaryRegions<int, ModelRegion> Items { get; private set; }
 
         [XmlElement(ElementName = "Region")]
         public ModelRegion[] ModelRegion
@@ -42,7 +42,7 @@ namespace Libraries.database.models
             set
             {
 
-                Dictionary = new SerDictionaryRegions<int, ModelRegion>();
+                Items = new SerDictionaryRegions<int, ModelRegion>();
 
                 if (value != null)
                 {
@@ -50,7 +50,7 @@ namespace Libraries.database.models
                     foreach (var Item in value)
                     {
 
-                        Dictionary.Add(Item.Id, Item);
+                        Items.Add(Item.Id, Item);
 
                     }
 

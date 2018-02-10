@@ -1,6 +1,5 @@
-﻿using System.Xml.Serialization;
-
-using Libraries.helpers.xml;
+﻿using System.Collections.Generic;
+using System.Xml.Serialization;
 
 
 namespace Libraries.database.models
@@ -21,12 +20,12 @@ namespace Libraries.database.models
         public ModelDesigns()
         {
 
-            Dictionary = new SerDictionaryDesigns<string, ModelDesign>();
+            Items = new Dictionary<string, ModelDesign>();
 
         }
 
         [XmlIgnore]
-        public SerDictionaryDesigns<string, ModelDesign> Dictionary { get; private set; }
+        public Dictionary<string, ModelDesign> Items { get; private set; }
 
         [XmlElement(ElementName = "econdesign")]
         public ModelDesign[] ModelDesign
@@ -42,7 +41,7 @@ namespace Libraries.database.models
             set
             {
 
-                Dictionary = new SerDictionaryDesigns<string, ModelDesign>();
+                Items = new Dictionary<string, ModelDesign>();
 
                 if (value != null)
                 {
@@ -50,7 +49,7 @@ namespace Libraries.database.models
                     foreach (var Item in value)
                     {
 
-                        Dictionary.Add(Item.Name, Item);
+                        Items.Add(Item.Name, Item);
 
                     }
 

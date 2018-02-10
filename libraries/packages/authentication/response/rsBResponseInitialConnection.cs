@@ -1,6 +1,8 @@
 ﻿using System.IO;
 using System.Text;
 
+using Libraries.enums;
+
 
 namespace Libraries.packages.authentication
 {
@@ -8,7 +10,7 @@ namespace Libraries.packages.authentication
     public class PacketBResponseInitialConnection
     {
 
-        public int Response { get; }
+        public ConnectionResponseTypes Response { get; }
 
         public long Xuid { get; }
         public long Unk0 { get; }
@@ -31,7 +33,7 @@ namespace Libraries.packages.authentication
         /// <param name="Port">Response port.</param>
         /// <param name="Unk3">Unknown.</param>
         /// <param name="Unk4">Unknown.</param>
-        public PacketBResponseInitialConnection(long xuid, long unk0, int response, string unk1, string unk2, short port, string unk3, string unk4)
+        public PacketBResponseInitialConnection(long xuid, long unk0, ConnectionResponseTypes response, string unk1, string unk2, short port, string unk3, string unk4)
         {
 
             Xuid = xuid;

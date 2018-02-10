@@ -1,4 +1,5 @@
-﻿using System.Xml.Serialization;
+﻿using System.ComponentModel;
+using System.Xml.Serialization;
 
 
 namespace Libraries.database.models
@@ -14,12 +15,13 @@ namespace Libraries.database.models
     {
 
         [XmlAttribute(AttributeName = "quantity")]
-        public string Quantity { get; set; }
+        public int Quantity { get; set; }
 
         [XmlAttribute(AttributeName = "level")]
-        public string Level { get; set; }
+        public int Level { get; set; }
 
         [XmlText]
+        [DefaultValue(null)]
         public string Text { get; set; }
 
     }

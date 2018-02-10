@@ -23,6 +23,7 @@ namespace Libraries.packages.game
                 {
 
                     int AdvisorLength = Reader.ReadInt32();
+
                     Advisor = Encoding.Unicode.GetString(Reader.ReadBytes(AdvisorLength));
 
                 }

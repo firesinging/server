@@ -15,9 +15,16 @@ namespace Libraries.database.models.civilization
     public class ModelCivilizationScenariobaseunits
     {
 
+        public ModelCivilizationScenariobaseunits()
+        {
+
+            Items = new List<string>();
+
+        }
+
         [XmlElement(ElementName = "baseunit")]
         [DefaultValue(null)]
-        public List<string> Baseunit { get; set; }
+        public List<string> Items { get; set; }
 
     }
 

@@ -74,7 +74,7 @@ namespace Libraries.packages.game
             return string.Format(
                 "PacketBGetEmpireResponse\r\n" +
                 "Xuid = 0x{0:X}\r\n" +
-                "PlayerEmpire = {1}\r\n",
+                "Empire = {1}\r\n",
                 Xuid,
                 PlayerEmpire
             );

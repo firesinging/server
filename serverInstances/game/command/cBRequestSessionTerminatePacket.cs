@@ -1,6 +1,9 @@
 ﻿using SuperSocket.SocketBase;
 using SuperSocket.SocketBase.Command;
 
+using Libraries.logger;
+using Libraries.player;
+
 using Libraries.helpers.package;
 using Libraries.packages.game;
 
@@ -21,15 +24,11 @@ namespace Game.Command
 
             PacketBRequestSessionTerminatePacket Request = new PacketBRequestSessionTerminatePacket(p.Content);
 
-            if (s.Logger.IsDebugEnabled)
-            {
+            Logger.Debug(p.Key + "::ExecuteCommand - Execute command: " + Request);
 
-                s.Logger.Debug($"Execute command: {Request}");
+            Player Player = s.GetPlayer();
 
-            }
-
-            // @TODO
-            //s.Player.Logout();
+            Player.Logout();
 
             s.Close(CloseReason.ClientClosing);
 

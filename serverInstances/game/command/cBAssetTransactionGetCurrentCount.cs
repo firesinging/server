@@ -1,8 +1,10 @@
 ﻿using SuperSocket.SocketBase.Command;
 
-using Libraries.helpers.package;
 using Libraries.packages.game;
 using Libraries.enums;
+using Libraries.logger;
+
+using Libraries.helpers.package;
 
 
 namespace Game.Command
@@ -21,17 +23,11 @@ namespace Game.Command
 
             PacketBAssetTransactionGetCurrentCount Request = new PacketBAssetTransactionGetCurrentCount(p.Content);
 
-            if (s.Logger.IsDebugEnabled)
-            {
-
-                s.Logger.Debug($"Execute command: {Request}");
-
-            }
+            Logger.Debug(p.Key + "::ExecuteCommand - Execute command: " + Request);
 
             PacketBAssetTransactionCurrentCount ResponseContent = new PacketBAssetTransactionCurrentCount(0);
 
-            if (s.Logger.IsDebugEnabled)
-                s.Logger.Debug($"Command response: {ResponseContent}");
+            Logger.Debug(p.Key + "::ExecuteCommand - Execute command: " + ResponseContent);
 
             byte[] Response = ResponseContent.ToByteArray();
 
@@ -39,7 +35,7 @@ namespace Game.Command
 
             byte[] ToSend = Package.ToByteArray();
 
-            s.Send(ToSend, 0, ToSend.Length);
+            s.Send(ToSend, 0, ToSend.Length);            
 
         }
 

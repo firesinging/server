@@ -55,7 +55,7 @@ namespace Libraries.packages.game
 
             return string.Format(
                 "PacketBAssetTransactionCurrentCount\r\n" +
-                "CurrentCount = {0}\r\n",
+                "Currentcount = {0}\r\n",
                 CurrentCount
             );
 

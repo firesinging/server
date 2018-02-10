@@ -1,4 +1,5 @@
-﻿using System.Xml.Serialization;
+﻿using System.ComponentModel;
+using System.Xml.Serialization;
 
 using Libraries.database.models.vendor;
 
@@ -15,6 +16,7 @@ namespace Libraries.database.models
     {
 
         [XmlElement(ElementName = "protounit")]
+        [DefaultValue(null)]
         public string Protounit { get; set; }
 
         [XmlElement(ElementName = "itemsets")]

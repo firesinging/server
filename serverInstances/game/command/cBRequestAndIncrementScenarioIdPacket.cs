@@ -1,8 +1,11 @@
 ﻿using SuperSocket.SocketBase.Command;
 
-using Libraries.helpers.package;
 using Libraries.packages.game;
 using Libraries.enums;
+using Libraries.player;
+using Libraries.logger;
+
+using Libraries.helpers.package;
 
 
 namespace Game.Command
@@ -19,19 +22,19 @@ namespace Game.Command
         public override void ExecuteCommand(Session s, Package p)
         {
 
-            var Request = new PacketBRequestAndIncrementScenarioIdPacket(p.Content);
+            PacketBRequestAndIncrementScenarioIdPacket Request = new PacketBRequestAndIncrementScenarioIdPacket(p.Content);
 
-            if (s.Logger.IsDebugEnabled)
-            {
+            Logger.Debug(p.Key + "::ExecuteCommand - Execute command: " + Request);
 
-                s.Logger.Debug($"Execute command: {Request}");
+            Player Player = s.GetPlayer();
 
-            }
+            int Scenarioid = Player.Empire.CurrentCharacter.Nextscenarioid + Request.Increment;
 
-            PacketBResponseScenarioIdPacket ResponseContent = new PacketBResponseScenarioIdPacket(s.scenarioID);
+            Player.Empire.CurrentCharacter.Nextscenarioid = Scenarioid;
 
-            if (s.Logger.IsDebugEnabled)
-                s.Logger.Debug($"Command response: {ResponseContent}");
+            PacketBResponseScenarioIdPacket ResponseContent = new PacketBResponseScenarioIdPacket(Scenarioid);
+
+            Logger.Debug(p.Key + "::ExecuteCommand - Execute command: " + ResponseContent);
 
             byte[] Response = ResponseContent.ToByteArray();
 

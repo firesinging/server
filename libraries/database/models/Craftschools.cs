@@ -1,6 +1,5 @@
-﻿using System.Xml.Serialization;
-
-using Libraries.helpers.xml;
+﻿using System.Collections.Generic;
+using System.Xml.Serialization;
 
 
 namespace Libraries.database.models
@@ -21,12 +20,12 @@ namespace Libraries.database.models
         public ModelCraftschools()
         {
 
-            Dictionary = new SerDictionaryCraftschools<string, ModelCraftschool>();
+            Items = new Dictionary<string, ModelCraftschool>();
 
         }
 
         [XmlIgnore]
-        public SerDictionaryCraftschools<string, ModelCraftschool> Dictionary { get; private set; }
+        public Dictionary<string, ModelCraftschool> Items { get; private set; }
 
         [XmlElement(ElementName = "school")]
         public ModelCraftschool[] ModelCraftschool
@@ -42,7 +41,7 @@ namespace Libraries.database.models
             set
             {
 
-                Dictionary = new SerDictionaryCraftschools<string, ModelCraftschool>();
+                Items = new Dictionary<string, ModelCraftschool>();
 
                 if (value != null)
                 {
@@ -50,7 +49,7 @@ namespace Libraries.database.models
                     foreach (var Item in value)
                     {
 
-                        Dictionary.Add(Item.Tag, Item);
+                        Items.Add(Item.Tag, Item);
 
                     }
 

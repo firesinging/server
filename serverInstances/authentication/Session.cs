@@ -1,5 +1,7 @@
-﻿using System;
-using SuperSocket.SocketBase;
+﻿using SuperSocket.SocketBase;
+
+using Libraries.player;
+using Libraries.database;
 
 using Libraries.helpers.package;
 
@@ -10,9 +12,65 @@ namespace Authentication
     public class Session : AppSession<Session, Package>
     {
 
-        public string PlayerName { get; internal set; }
-        public string Password { get; internal set; }
+        private Player _Player;
 
+        /// <summary>
+        /// Check if the player is authenticated.
+        /// </summary>
+        /// <returns>True if the player is authenticated.</returns>
+        public bool IsAuthenticated
+        {
+
+            get
+            {
+
+                return _Player != null;
+
+            }
+
+        }
+
+        /// <summary>
+        /// Get player based on Id.
+        /// </summary>
+        /// <param name="id">The player Id.</param>
+        /// <returns>The player object.</returns>
+        public Player GetPlayer(long id = 0)
+        {
+
+            Player Instance = _Player;
+
+            if((id == 0) && (Instance == null))
+            {
+
+                return null;
+
+            }
+
+            if((id != 0) && (id != Instance.Id))
+            {
+
+                Instance = Database.Players.Get(id);
+
+            }
+
+            return Instance;
+
+        }
+
+        /// <summary>
+        /// Add the player to the session.
+        /// </summary>
+        /// <param name="player">The player object.</param>
+        internal void SetPlayer(Player player)
+        {
+
+            Logger.InfoFormat("Authentication::SetPlayer - Set session player {0}", player.Name);
+
+            _Player = player;
+            _Player.SessionAuthentication = SessionID;
+
+        }
 
         /// <summary>
         /// Called when [session started].
@@ -20,7 +78,7 @@ namespace Authentication
         protected override void OnSessionStarted()
         {
 
-            Console.WriteLine("{0}: Session created {1} from {2}", AppServer.Name, SessionID, RemoteEndPoint.Address.ToString());
+            Logger.InfoFormat("Authentication::OnSessionStarted - Session created with Id {0} from IP {1}", SessionID, RemoteEndPoint.Address.ToString());
 
         }
 
@@ -31,26 +89,28 @@ namespace Authentication
         protected override void OnSessionClosed(CloseReason reason)
         {
 
-            if (Logger.IsInfoEnabled)
-                Logger.Info($"Authentication::OnSessionClosed - Session closed. Reason: ({reason})");
+            Logger.InfoFormat("Authentication::OnSessionClosed - Session closed. Reason: {0}", reason);
+
+            if (_Player != null)
+            {
+
+                _Player.SessionAuthentication = null;
+                _Player.Save();                
+
+            }                
 
         }
 
         /// <summary>
         /// Handle Unknown request
         /// </summary>
-        /// <param name="content"></param>
+        /// <param name="content">The package content.</param>
         protected override void HandleUnknownRequest(Package content)
         {
 
-            if (Logger.IsDebugEnabled)
-                Logger.Debug($"Authentication::HandleUnknownRequest - Unknown package. Content: {content}");
+            Logger.DebugFormat("Authentication::HandleUnknownRequest - Unknown package. Content: {0}", content);
 
         }
-
-        
-               
-
 
     }
 

@@ -1,5 +1,8 @@
-﻿using System.Xml.Serialization;
+﻿using System.ComponentModel;
+using System.Xml.Serialization;
 using System.Collections.Generic;
+
+using Libraries.enums;
 
 
 namespace Libraries.database.models
@@ -13,26 +16,35 @@ namespace Libraries.database.models
     public class ModelConsumable
     {
 
+        public ModelConsumable()
+        {
+
+            Usable = new List<string>();
+            Alliance = new List<string>();
+
+        }
+
         [XmlElement(ElementName = "icon")]
+        [DefaultValue(null)]
         public string Icon { get; set; }
 
         [XmlElement(ElementName = "rollovertextid")]
-        public string Rollovertextid { get; set; }
+        public int Rollovertextid { get; set; }
 
         [XmlElement(ElementName = "displaynameid")]
-        public string Displaynameid { get; set; }
+        public int Displaynameid { get; set; }
 
         [XmlElement(ElementName = "stackable")]
         public string Stackable { get; set; }
 
         [XmlElement(ElementName = "stacksize")]
-        public string Stacksize { get; set; }
+        public int Stacksize { get; set; }
 
         [XmlElement(ElementName = "offertype")]
-        public string Offertype { get; set; }
+        public OfferTypes Offertype { get; set; }
 
         [XmlElement(ElementName = "itemlevel")]
-        public string Itemlevel { get; set; }
+        public int Itemlevel { get; set; }
 
         [XmlElement(ElementName = "sellable")]
         public string Sellable { get; set; }
@@ -47,27 +59,32 @@ namespace Libraries.database.models
         public ModelGenericSellcostoverride Sellcostoverride { get; set; }
 
         [XmlElement(ElementName = "rarity")]
-        public string Rarity { get; set; }
+        public RarityTypesPrefix Rarity { get; set; }
 
         [XmlElement(ElementName = "power")]
+        [DefaultValue(null)]
         public string Power { get; set; }
 
         [XmlElement(ElementName = "civmatchingtype")]
-        public string Civmatchingtype { get; set; }
+        public CivilizationsPrefix Civmatchingtype { get; set; }
 
         [XmlAttribute(AttributeName = "name")]
         public string Name { get; set; }
 
         [XmlElement(ElementName = "charactermodifier")]
+        [DefaultValue(null)]
         public string Charactermodifier { get; set; }
 
         [XmlElement(ElementName = "usable")]
+        [DefaultValue(null)]
         public List<string> Usable { get; set; }
 
         [XmlAttribute(AttributeName = "type")]
+        [DefaultValue(null)]
         public string Type { get; set; }
 
         [XmlElement(ElementName = "alliance")]
+        [DefaultValue(null)]
         public List<string> Alliance { get; set; }
 
     }

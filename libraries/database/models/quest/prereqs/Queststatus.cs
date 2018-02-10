@@ -1,4 +1,5 @@
-﻿using System.Xml.Serialization;
+﻿using System.ComponentModel;
+using System.Xml.Serialization;
 
 
 namespace Libraries.database.models.quest.prereqs
@@ -17,6 +18,7 @@ namespace Libraries.database.models.quest.prereqs
         public int Id { get; set; }
 
         [XmlElement(ElementName = "queststatus")]
+        [DefaultValue(null)]
         public string Queststatus { get; set; }
 
     }

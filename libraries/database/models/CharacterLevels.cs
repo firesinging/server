@@ -1,6 +1,5 @@
-﻿using System.Xml.Serialization;
-
-using Libraries.helpers.xml;
+﻿using System.Collections.Generic;
+using System.Xml.Serialization;
 
 
 namespace Libraries.database.models
@@ -21,12 +20,12 @@ namespace Libraries.database.models
         public ModelCharacterLevels()
         {
 
-            Dictionary = new SerDictionaryCharacterLevels<int, ModelCharacterLevel>();
+            Items = new Dictionary<int, ModelCharacterLevel>();
 
         }
 
         [XmlIgnore]
-        public SerDictionaryCharacterLevels<int, ModelCharacterLevel> Dictionary { get; private set; }
+        public Dictionary<int, ModelCharacterLevel> Items { get; private set; }
 
         [XmlElement(ElementName = "maxlevel")]
         public int MaxLevel { get; set; }
@@ -45,7 +44,7 @@ namespace Libraries.database.models
             set
             {
 
-                Dictionary = new SerDictionaryCharacterLevels<int, ModelCharacterLevel>();
+                Items = new Dictionary<int, ModelCharacterLevel>();
 
                 if (value != null)
                 {
@@ -57,7 +56,7 @@ namespace Libraries.database.models
 
                         Level++;
 
-                        Dictionary.Add(Level, Item);
+                        Items.Add(Level, Item);
 
                     }
 

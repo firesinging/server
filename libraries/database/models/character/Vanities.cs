@@ -1,5 +1,6 @@
 ﻿using System.Xml.Serialization;
 using System.Collections.Generic;
+using System.ComponentModel;
 
 
 namespace Libraries.database.models.character
@@ -11,11 +12,19 @@ namespace Libraries.database.models.character
     /// <seealso cref="http://xmltocsharp.azurewebsites.net/"/>
 
     [XmlRoot(ElementName = "vanitys")]
-    public class ModelCharacterVanities
+    public class ModelCharacterVanities : ModelBase
     {
 
+        public ModelCharacterVanities()
+        {
+
+            Items = new List<ModelCharacterVanity>();
+
+        }
+
         [XmlElement(ElementName = "vanity")]
-        public List<ModelCharacterVanity> Vanity { get; set; }
+        [DefaultValue(null)]
+        public List<ModelCharacterVanity> Items { get; set; }
 
     }
 

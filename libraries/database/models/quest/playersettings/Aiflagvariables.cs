@@ -1,5 +1,5 @@
 ﻿using System.Xml.Serialization;
-
+using System.ComponentModel;
 using System.Collections.Generic;
 
 
@@ -15,8 +15,16 @@ namespace Libraries.database.models.quest.playersettings
     public class ModelQuestPlayersettingsAiflagvariables
     {
 
+        public ModelQuestPlayersettingsAiflagvariables()
+        {
+
+            Items = new List<ModelQuestPlayersettingsAivariable>();
+
+        }
+
         [XmlElement(ElementName = "aivariable")]
-        public List<ModelQuestPlayersettingsAivariable> Aivariable { get; set; }
+        [DefaultValue(null)]
+        public List<ModelQuestPlayersettingsAivariable> Items { get; set; }
 
     }
 

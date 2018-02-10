@@ -5,6 +5,9 @@ using System.Collections.Generic;
 using System.Configuration;
 
 using Libraries.enums;
+using Libraries.player;
+using Libraries.empire;
+using Libraries.character;
 
 using Libraries.helpers.pathing;
 using Libraries.helpers.database;
@@ -20,83 +23,46 @@ namespace Libraries.database
 
         public static readonly bool Instance = false;
 
-        public static readonly SerDictionaryCharacterLevels<int, ModelCharacterLevel> CharacterLevels = new SerDictionaryCharacterLevels<int, ModelCharacterLevel>();
-        public static readonly SerDictionaryRegions<int, ModelRegion> Regions = new SerDictionaryRegions<int, ModelRegion>();
-        public static readonly SerDictionaryCivilizations<Civilizations, ModelCivilization> Civilizations = new SerDictionaryCivilizations<Civilizations, ModelCivilization>();
-        public static readonly SerDictionaryEquipments<int, ModelEquipment> Equipments = new SerDictionaryEquipments<int, ModelEquipment>();
-        public static readonly SerDictionaryQuests<int, ModelQuest> Quests = new SerDictionaryQuests<int, ModelQuest>();
+        public static readonly Dictionary<int, ModelCharacterLevel> CharacterLevels = new Dictionary<int, ModelCharacterLevel>();        
+        public static readonly Dictionary<int, ModelEquipment> Equipments = new Dictionary<int, ModelEquipment>();
+        public static readonly Dictionary<int, ModelQuest> Quests = new Dictionary<int, ModelQuest>();
 
-        public static readonly SerDictionaryAdvisors<string, ModelAdvisor> Advisors = new SerDictionaryAdvisors<string, ModelAdvisor>();
-        public static readonly SerDictionaryBlueprints<string, ModelBlueprint> Blueprints = new SerDictionaryBlueprints<string, ModelBlueprint>();
-        public static readonly SerDictionaryConsumables<string, ModelConsumable> Consumables = new SerDictionaryConsumables<string, ModelConsumable>();
-        public static readonly SerDictionaryDesigns<string, ModelDesign> Designs = new SerDictionaryDesigns<string, ModelDesign>();        
-        public static readonly SerDictionaryCraftschools<string, ModelCraftschool> Craftschools = new SerDictionaryCraftschools<string, ModelCraftschool>();
-        public static readonly SerDictionaryMaterials<string, ModelMaterial> Materials = new SerDictionaryMaterials<string, ModelMaterial>();
-        public static readonly SerDictionaryVendors<string, ModelVendor> Vendors = new SerDictionaryVendors<string, ModelVendor>();
-        public static readonly SerDictionaryQuestgivers<string, ModelQuestgiver> Questgivers = new SerDictionaryQuestgivers<string, ModelQuestgiver>();
-        public static readonly SerDictionaryLootRolls<string, ModelLootRoll> LootRolls = new SerDictionaryLootRolls<string, ModelLootRoll>();
-        public static readonly SerDictionaryTraits<string, ModelTrait> Traits = new SerDictionaryTraits<string, ModelTrait>();
-        
+        public static readonly Dictionary<string, ModelAdvisor> Advisors = new Dictionary<string, ModelAdvisor>();
+        public static readonly Dictionary<string, ModelBlueprint> Blueprints = new Dictionary<string, ModelBlueprint>();
+        public static readonly Dictionary<string, ModelConsumable> Consumables = new Dictionary<string, ModelConsumable>();
+        public static readonly Dictionary<string, ModelDesign> Designs = new Dictionary<string, ModelDesign>();        
+        public static readonly Dictionary<string, ModelCraftschool> Craftschools = new Dictionary<string, ModelCraftschool>();
+        public static readonly Dictionary<string, ModelMaterial> Materials = new Dictionary<string, ModelMaterial>();
+        public static readonly Dictionary<string, ModelVendor> Vendors = new Dictionary<string, ModelVendor>();
+        public static readonly Dictionary<string, ModelQuestgiver> Questgivers = new Dictionary<string, ModelQuestgiver>();
+        public static readonly Dictionary<string, ModelLootRoll> LootRolls = new Dictionary<string, ModelLootRoll>();
+        public static readonly Dictionary<string, ModelTrait> Traits = new Dictionary<string, ModelTrait>();
+
+        public static readonly Dictionary<Civilizations, ModelCivilization> Civilizations = new Dictionary<Civilizations, ModelCivilization>();
+
+        public static readonly SerDictionaryRegions<int, ModelRegion> Regions = new SerDictionaryRegions<int, ModelRegion>();
+
+        public static Players Players = new Players();
+        public static Empires Empires = new Empires();
+        public static Characters Characters = new Characters();
+
         static Database()
         {
 
             if (!Instance)
-            {
+            {                             
 
-                List<string> ExcludedTraitDirectories = new List<string>();
-
-                ExcludedTraitDirectories.Add("_unused");
-
-                if (Convert.ToInt32(ConfigurationManager.AppSettings["UseLosGear"]) != 1)
-                {
-
-                    ExcludedTraitDirectories.Add("_los");
-
-                }                
-
-                ModelCharacterLevels InstanceCharacterLevels = new ModelCharacterLevels().DeserializeFromFile($"{PathingHelper.gamedatabaseDir}CharacterLevels.xml");
-
-                CharacterLevels = InstanceCharacterLevels.Dictionary;
-
-                ModelBlueprints InstanceBlueprints = new ModelBlueprints().DeserializeFromFile($"{PathingHelper.gamedatabaseDir}EconBlueprints.xml");
-
-                Blueprints = InstanceBlueprints.Dictionary;
-
-                ModelAdvisors InstanceAdvisors = new ModelAdvisors().DeserializeFromFile($"{PathingHelper.gamedatabaseDir}advisors.xml");
-
-                Advisors = InstanceAdvisors.Dictionary;
-
-                ModelMaterials InstanceMaterials = new ModelMaterials().DeserializeFromFile($"{PathingHelper.gamedatabaseDir}econmaterials.xml");
-
-                Materials = InstanceMaterials.Dictionary;
-
-                ModelConsumables InstanceConsumables = new ModelConsumables().DeserializeFromFile($"{PathingHelper.gamedatabaseDir}EconConsumables.xml");
-
-                Consumables = InstanceConsumables.Dictionary;
-
-                ModelDesigns InstanceDesigns = new ModelDesigns().DeserializeFromFile($"{PathingHelper.gamedatabaseDir}EconDesigns.xml");
-
-                Designs = InstanceDesigns.Dictionary;
-
-                ModelCraftschools InstanceCraftschools = new ModelCraftschools().DeserializeFromFile($"{PathingHelper.gamedatabaseDir}craftschools.xml");
-
-                Craftschools = InstanceCraftschools.Dictionary;
-
-                ModelVendors InstanceVendors = new ModelVendors().DeserializeFromFile($"{PathingHelper.gamedatabaseDir}EconVendors.xml");
-
-                Vendors = InstanceVendors.Dictionary;
-
-                ModelLootRolls InstanceLootRolls = new ModelLootRolls().DeserializeFromFile($"{PathingHelper.gamedatabaseDir}econLootRolls.xml");
-
-                LootRolls = InstanceLootRolls.Dictionary;
-
-                ModelQuestgivers InstanceQuestgivers = new ModelQuestgivers().DeserializeFromFile($"{PathingHelper.gamedatabaseDir}questgivers.xml");
-
-                Questgivers = InstanceQuestgivers.Dictionary;
-
-                ModelEquipments InstanceEquipments = new ModelEquipments().DeserializeFromFile($"{PathingHelper.gamedatabaseDir}equipment.xml");
-
-                Equipments = InstanceEquipments.Dictionary;
+                CharacterLevels = DatabaseHelper.Deserialize<ModelCharacterLevels>("CharacterLevels.xml").Items;
+                Blueprints = DatabaseHelper.Deserialize<ModelBlueprints>("EconBlueprints.xml").Items;
+                Advisors = DatabaseHelper.Deserialize<ModelAdvisors>("advisors.xml").Items;
+                Materials = DatabaseHelper.Deserialize<ModelMaterials>("econmaterials.xml").Items;
+                Consumables = DatabaseHelper.Deserialize<ModelConsumables>("EconConsumables.xml").Items;
+                Designs = DatabaseHelper.Deserialize<ModelDesigns>("EconDesigns.xml").Items;
+                Craftschools = DatabaseHelper.Deserialize<ModelCraftschools>("craftschools.xml").Items;
+                Vendors = DatabaseHelper.Deserialize<ModelVendors>("EconVendors.xml").Items;
+                LootRolls = DatabaseHelper.Deserialize<ModelLootRolls>("econLootRolls.xml").Items;
+                Questgivers = DatabaseHelper.Deserialize<ModelQuestgivers>("questgivers.xml").Items;
+                Equipments = DatabaseHelper.Deserialize<ModelEquipments>("equipment.xml").Items;
 
                 foreach (string CivilizationFile in Directory.GetFiles($"{PathingHelper.gamedatabaseDir}civilizations", "*.xml", SearchOption.TopDirectoryOnly))
                 {
@@ -106,6 +72,17 @@ namespace Libraries.database
                     Civilization.Source = CivilizationFile;
 
                     Civilizations.Add(Civilization.CivId, Civilization);
+
+                }
+
+                List<string> ExcludedTraitDirectories = new List<string>();
+
+                ExcludedTraitDirectories.Add("_unused");
+
+                if (Convert.ToInt32(ConfigurationManager.AppSettings["UseLosGear"]) != 1)
+                {
+
+                    ExcludedTraitDirectories.Add("_los");
 
                 }
 
@@ -147,6 +124,8 @@ namespace Libraries.database
             }            
 
         }
+
+        
 
     }
 

@@ -1,4 +1,5 @@
-﻿using System.Xml.Serialization;
+﻿using System.ComponentModel;
+using System.Xml.Serialization;
 using System.Collections.Generic;
 
 using Libraries.enums;
@@ -17,14 +18,26 @@ namespace Libraries.database.models
     public class ModelQuest
     {
 
+        public ModelQuest()
+        {
+
+            Secondaryobjectives = new List<ModelQuestSecondaryobjectives>();
+            Secondaryrewards = new List<ModelQuestSecondaryrewards>();
+            Timereffects = new List<ModelQuestTimereffects>();
+            Playersettings = new List<ModelQuestPlayersettings>();
+            Diplomacysettings = new List<ModelQuestDiplomacysettings>();
+
+        }
+
         [XmlElement(ElementName = "displayname")]
+        [DefaultValue(null)]
         public string Displayname { get; set; }
 
         [XmlElement(ElementName = "level")]
         public int Level { get; set; }
-
+        
         [XmlElement(ElementName = "difficultycoloroverride")]
-        public string Difficultycoloroverride { get; set; }
+        public int Difficultycoloroverride { get; set; }
 
         [XmlElement(ElementName = "repeatable")]
         public string Repeatable { get; set; }
@@ -45,18 +58,22 @@ namespace Libraries.database.models
         public string Ranked { get; set; }
 
         [XmlElement(ElementName = "alliance")]
-        public string Alliance { get; set; }
-
+        public AllianceTypesPrefix Alliance { get; set; }
+        
         [XmlElement(ElementName = "description")]
+        [DefaultValue(null)]
         public string Description { get; set; }
 
         [XmlElement(ElementName = "completiontext")]
+        [DefaultValue(null)]
         public string Completiontext { get; set; }
 
         [XmlElement(ElementName = "inprogresstext")]
+        [DefaultValue(null)]
         public string Inprogresstext { get; set; }
 
         [XmlElement(ElementName = "summarytext")]
+        [DefaultValue(null)]
         public string Summarytext { get; set; }
 
         [XmlElement(ElementName = "repeatableduration")]
@@ -91,11 +108,12 @@ namespace Libraries.database.models
 
         [XmlElement(ElementName = "targets")]
         public ModelQuestTargets Targets { get; set; }
-
+        
         [XmlElement(ElementName = "objectives")]
         public ModelQuestObjectives Objectives { get; set; }
 
         [XmlElement(ElementName = "secondaryobjectives")]
+        [DefaultValue(null)]
         public List<ModelQuestSecondaryobjectives> Secondaryobjectives { get; set; }
 
         [XmlElement(ElementName = "onaccept")]
@@ -105,18 +123,23 @@ namespace Libraries.database.models
         public ModelQuestRewards Rewards { get; set; }
 
         [XmlElement(ElementName = "customloadscreen")]
+        [DefaultValue(null)]
         public string Customloadscreen { get; set; }
 
         [XmlElement(ElementName = "secondaryrewards")]
+        [DefaultValue(null)]
         public List<ModelQuestSecondaryrewards> Secondaryrewards { get; set; }
 
         [XmlElement(ElementName = "timereffects")]
+        [DefaultValue(null)]
         public List<ModelQuestTimereffects> Timereffects { get; set; }
 
         [XmlElement(ElementName = "playersettings")]
+        [DefaultValue(null)]
         public List<ModelQuestPlayersettings> Playersettings { get; set; }
 
         [XmlElement(ElementName = "diplomacysettings")]
+        [DefaultValue(null)]
         public List<ModelQuestDiplomacysettings> Diplomacysettings { get; set; }
 
         [XmlElement(ElementName = "randommap")]
@@ -124,23 +147,28 @@ namespace Libraries.database.models
 
         [XmlElement(ElementName = "questgivers")]
         public ModelQuestQuestgivers Questgivers { get; set; }
-
+        
         [XmlElement(ElementName = "questreturners")]
         public ModelQuestQuestreturners Questreturners { get; set; }
 
         [XmlElement(ElementName = "objectiveimage")]
+        [DefaultValue(null)]
         public string Objectiveimage { get; set; }
 
         [XmlElement(ElementName = "maplocationx")]
+        [DefaultValue(null)]
         public string Maplocationx { get; set; }
 
         [XmlElement(ElementName = "maplocationy")]
+        [DefaultValue(null)]
         public string Maplocationy { get; set; }
 
         [XmlElement(ElementName = "mapmarker")]
+        [DefaultValue(null)]
         public string Mapmarker { get; set; }
 
         [XmlElement(ElementName = "mappage")]
+        [DefaultValue(null)]
         public string Mappage { get; set; }
 
         [XmlElement(ElementName = "elitespawnchance")]

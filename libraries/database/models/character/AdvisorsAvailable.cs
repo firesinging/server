@@ -1,5 +1,6 @@
 ﻿using System.Xml.Serialization;
 using System.Collections.Generic;
+using System.ComponentModel;
 
 
 namespace Libraries.database.models.character
@@ -11,11 +12,19 @@ namespace Libraries.database.models.character
     /// <seealso cref="http://xmltocsharp.azurewebsites.net/"/>
 
     [XmlRoot(ElementName = "availableadvisors")]
-    public class ModelCharacterAdvisorsAvailable
+    public class ModelCharacterAdvisorsAvailable : ModelBase
     {
 
+        public ModelCharacterAdvisorsAvailable()
+        {
+
+            Items = new List<string>();
+
+        }
+
         [XmlElement(ElementName = "availableadvisor")]
-        public List<string> Availableadvisor { get; set; }
+        [DefaultValue(null)]
+        public List<string> Items { get; set; }
 
     }
 

@@ -24,51 +24,38 @@ namespace Libraries.helpers.xml
         /// <seealso cref="https://stackoverflow.com/questions/1081325/c-sharp-how-to-xml-deserialize-object-itself"/>
         public static string SerializeObjectToXml<T>(this T obj)
         {
-            
+
             if (obj == null)
             {
 
                 return string.Empty;
 
             }
+            
+            XmlSerializer XmlSerializer = new XmlSerializer(obj.GetType());
+            XmlWriterSettings Settings = new XmlWriterSettings();
+                
+            Settings.Encoding = Encoding.UTF8;
+            Settings.Indent = true;
+            Settings.IndentChars = ("\t");
+            Settings.OmitXmlDeclaration = true;
+            Settings.NewLineHandling = NewLineHandling.None;
 
-            try
+            XmlSerializerNamespaces XmlSerializerNs = new XmlSerializerNamespaces();
+
+            XmlSerializerNs.Add(string.Empty, string.Empty);
+
+            using (Utf8StringWriter Utf8Writer = new Utf8StringWriter())
             {
 
-                XmlSerializer XmlSerializer = new XmlSerializer(obj.GetType());
-                XmlWriterSettings Settings = new XmlWriterSettings();
-                
-                Settings.Encoding = Encoding.UTF8;
-                Settings.Indent = true;
-                Settings.IndentChars = ("\t");
-                Settings.OmitXmlDeclaration = true;
-                Settings.NewLineHandling = NewLineHandling.None;
-
-                XmlSerializerNamespaces XmlSerializerNs = new XmlSerializerNamespaces();
-
-                XmlSerializerNs.Add(string.Empty, string.Empty);
-
-                using (Utf8StringWriter Utf8Writer = new Utf8StringWriter())
+                using (XmlWriter Writer = XmlWriter.Create(Utf8Writer, Settings))
                 {
 
-                    using (XmlWriter Writer = XmlWriter.Create(Utf8Writer, Settings))
-                    {
-
-                        XmlSerializer.Serialize(Writer, obj, XmlSerializerNs);
-
-                    }
-
-                    return Utf8Writer.ToString();
+                    XmlSerializer.Serialize(Writer, obj, XmlSerializerNs);
 
                 }
 
-            }
-
-            catch (Exception ex)
-            {
-
-                throw new Exception("SerializeObjectToXml: An error occurred", ex);
-
+                return Utf8Writer.ToString();
 
             }
 
@@ -89,6 +76,13 @@ namespace Libraries.helpers.xml
             {
 
                 string Xml = SerializeObjectToXml(obj);
+
+                if (File.Exists(path))
+                {
+
+                    File.Delete(path);
+
+                }
 
                 File.WriteAllText(path, Xml, Encoding.UTF8);
 

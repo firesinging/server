@@ -1,4 +1,5 @@
-﻿using System.Xml.Serialization;
+﻿using System.ComponentModel;
+using System.Xml.Serialization;
 
 
 namespace Libraries.database.models.craftschool
@@ -14,6 +15,7 @@ namespace Libraries.database.models.craftschool
     {
 
         [XmlElement(ElementName = "capital")]
+        [DefaultValue(null)]
         public string Capital { get; set; }
 
     }

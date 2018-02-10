@@ -1,4 +1,5 @@
-﻿using System.Xml.Serialization;
+﻿using System.ComponentModel;
+using System.Xml.Serialization;
 
 using Libraries.enums;
 using Libraries.database.models.traits;
@@ -17,7 +18,7 @@ namespace Libraries.database.models
     {
 
         [XmlElement(ElementName = "dbid")]
-        public string Dbid { get; set; }
+        public int Dbid { get; set; }
 
         [XmlElement(ElementName = "traittype")]
         public TraitTypes Traittype { get; set; }
@@ -26,13 +27,14 @@ namespace Libraries.database.models
         public RarityTypes Rarity { get; set; }
 
         [XmlElement(ElementName = "icon")]
+        [DefaultValue(null)]
         public string Icon { get; set; }
 
         [XmlElement(ElementName = "rollovertextid")]
-        public string Rollovertextid { get; set; }
+        public int Rollovertextid { get; set; }
 
         [XmlElement(ElementName = "displaynameid")]
-        public string Displaynameid { get; set; }
+        public int Displaynameid { get; set; }
 
         [XmlElement(ElementName = "alliance")]
         public string Alliance { get; set; }
@@ -41,6 +43,7 @@ namespace Libraries.database.models
         public OfferTypes Offertype { get; set; }
 
         [XmlElement(ElementName = "equipsoundset")]
+        [DefaultValue(null)]
         public string Equipsoundset { get; set; }
 
         [XmlElement(ElementName = "visualfactor")]
@@ -62,6 +65,7 @@ namespace Libraries.database.models
         public ModelTraitEffects Effects { get; set; }
 
         [XmlElement(ElementName = "event")]
+        [DefaultValue(null)]
         public string Event { get; set; }
 
         [XmlAttribute(AttributeName = "name")]

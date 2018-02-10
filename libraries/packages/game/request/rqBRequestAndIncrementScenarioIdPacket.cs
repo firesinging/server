@@ -1,4 +1,5 @@
-﻿using System.IO;
+﻿using System;
+using System.IO;
 
 
 namespace Libraries.packages.game
@@ -10,7 +11,7 @@ namespace Libraries.packages.game
     public class PacketBRequestAndIncrementScenarioIdPacket
     {
 
-        public byte Increment { get; }
+        public int Increment { get; }
 
         public PacketBRequestAndIncrementScenarioIdPacket(byte[] request)
         {
@@ -21,7 +22,7 @@ namespace Libraries.packages.game
                 using (BinaryReader Reader = new BinaryReader(Stream))
                 {
 
-                    Increment = Reader.ReadByte();
+                    Increment = Convert.ToInt32(Reader.ReadByte());
 
                 }
 

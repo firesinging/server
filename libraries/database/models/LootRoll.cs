@@ -1,4 +1,7 @@
-﻿using System.Xml.Serialization;
+﻿using System.ComponentModel;
+using System.Xml.Serialization;
+
+using Libraries.enums;
 
 
 namespace Libraries.database.models
@@ -13,21 +16,23 @@ namespace Libraries.database.models
     {
 
         [XmlElement(ElementName = "icon")]
+        [DefaultValue(null)]
         public string Icon { get; set; }
 
         [XmlElement(ElementName = "rollovertextid")]
-        public string Rollovertextid { get; set; }
+        public int Rollovertextid { get; set; }
 
         [XmlElement(ElementName = "displaynameid")]
-        public string Displaynameid { get; set; }
+        public int Displaynameid { get; set; }
 
         [XmlElement(ElementName = "itemlevel")]
-        public string Itemlevel { get; set; }
+        public int Itemlevel { get; set; }
 
         [XmlElement(ElementName = "rarity")]
-        public string Rarity { get; set; }
+        public RarityTypesPrefix Rarity { get; set; }
 
         [XmlElement(ElementName = "loottable")]
+        [DefaultValue(null)]
         public string Loottable { get; set; }
 
         [XmlAttribute(AttributeName = "name")]

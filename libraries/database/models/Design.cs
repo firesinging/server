@@ -1,5 +1,7 @@
-﻿using System.Xml.Serialization;
+﻿using System.ComponentModel;
+using System.Xml.Serialization;
 
+using Libraries.enums;
 using Libraries.database.models.design;
 
 
@@ -15,22 +17,23 @@ namespace Libraries.database.models
     {
 
         [XmlElement(ElementName = "icon")]
+        [DefaultValue(null)]
         public string Icon { get; set; }
 
         [XmlElement(ElementName = "rollovertextid")]
-        public string Rollovertextid { get; set; }
+        public int Rollovertextid { get; set; }
 
         [XmlElement(ElementName = "displaynameid")]
-        public string Displaynameid { get; set; }
+        public int Displaynameid { get; set; }
 
         [XmlElement(ElementName = "stacksize")]
-        public string Stacksize { get; set; }
+        public int Stacksize { get; set; }
 
         [XmlElement(ElementName = "offertype")]
-        public string Offertype { get; set; }
+        public OfferTypes Offertype { get; set; }
 
         [XmlElement(ElementName = "itemlevel")]
-        public string Itemlevel { get; set; }
+        public int Itemlevel { get; set; }
 
         [XmlElement(ElementName = "sellable")]
         public string Sellable { get; set; }
@@ -42,16 +45,16 @@ namespace Libraries.database.models
         public string Destroyable { get; set; }
 
         [XmlElement(ElementName = "rarity")]
-        public string Rarity { get; set; }
-
+        public RarityTypesPrefix Rarity { get; set; }
+        
         [XmlElement(ElementName = "productionpoints")]
-        public string Productionpoints { get; set; }
+        public int Productionpoints { get; set; }
 
         [XmlElement(ElementName = "output")]
         public ModelDesignOutput Output { get; set; }
 
         [XmlElement(ElementName = "outputtraitlevel")]
-        public string Outputtraitlevel { get; set; }
+        public int Outputtraitlevel { get; set; }
 
         [XmlElement(ElementName = "autolearn")]
         public string Autolearn { get; set; }
@@ -69,11 +72,13 @@ namespace Libraries.database.models
         public string Advanced { get; set; }
 
         [XmlElement(ElementName = "tag")]
+        [DefaultValue(null)]
         public string Tag { get; set; }
-
+        
         [XmlElement(ElementName = "budgetmodifier")]
+        [DefaultValue(null)]
         public string Budgetmodifier { get; set; }
-
+        
         [XmlAttribute(AttributeName = "name")]
         public string Name { get; set; }
 

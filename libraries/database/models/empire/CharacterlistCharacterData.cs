@@ -1,4 +1,5 @@
-﻿using System.Xml.Serialization;
+﻿using System.ComponentModel;
+using System.Xml.Serialization;
 
 using Libraries.enums;
 
@@ -12,7 +13,7 @@ namespace Libraries.database.models.empire
     /// <seealso cref="http://xmltocsharp.azurewebsites.net/"/>
 
     [XmlRoot(ElementName = "CharacterData")]
-    public class ModelEmpireEmpireCharacterlistCharacterData
+    public class ModelEmpireCharacterlistCharacterData
     {
 
         [XmlElement(ElementName = "characterID")]
@@ -22,6 +23,7 @@ namespace Libraries.database.models.empire
         public Civilizations CivId { get; set; }
 
         [XmlElement(ElementName = "Name")]
+        [DefaultValue(null)]
         public string Name { get; set; }
 
         [XmlElement(ElementName = "Level")]

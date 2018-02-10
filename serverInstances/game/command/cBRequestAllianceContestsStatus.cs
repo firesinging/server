@@ -1,10 +1,12 @@
 ﻿using System.IO;
 using SuperSocket.SocketBase.Command;
 
-using Libraries.helpers.package;
 using Libraries.packages.game;
-using Libraries.helpers.pathing;
 using Libraries.enums;
+using Libraries.logger;
+
+using Libraries.helpers.package;
+using Libraries.helpers.pathing;
 
 
 namespace Game.Command
@@ -23,19 +25,15 @@ namespace Game.Command
 
             PacketBRequestAllianceContestsStatus Request = new PacketBRequestAllianceContestsStatus(p.Content);
 
-            if (s.Logger.IsDebugEnabled)
-            {
+            Logger.Debug(p.Key + "::ExecuteCommand - Execute command: " + Request);
 
-                s.Logger.Debug($"Execute command: {Request}");
-
-            }
+            //@TODO
 
             string Xml = File.ReadAllText($"{PathingHelper.tmpDir}BResponseAllianceContestsStatus.xml");
 
             PacketBResponseAllianceContestsStatus ResponseContent = new PacketBResponseAllianceContestsStatus(Xml);
 
-            if (s.Logger.IsDebugEnabled)
-                s.Logger.Debug($"Command response: {ResponseContent}");
+            Logger.Debug(p.Key + "::ExecuteCommand - Execute command: " + ResponseContent);
 
             byte[] Response = ResponseContent.ToByteArray();
 

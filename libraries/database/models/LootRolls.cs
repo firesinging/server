@@ -1,6 +1,5 @@
-﻿using System.Xml.Serialization;
-
-using Libraries.helpers.xml;
+﻿using System.Collections.Generic;
+using System.Xml.Serialization;
 
 
 namespace Libraries.database.models
@@ -21,12 +20,12 @@ namespace Libraries.database.models
         public ModelLootRolls()
         {
 
-            Dictionary = new SerDictionaryLootRolls<string, ModelLootRoll>();
+            Items = new Dictionary<string, ModelLootRoll>();
 
         }
 
         [XmlIgnore]
-        public SerDictionaryLootRolls<string, ModelLootRoll> Dictionary { get; private set; }
+        public Dictionary<string, ModelLootRoll> Items { get; private set; }
 
         [XmlElement(ElementName = "lootroll")]
         public ModelLootRoll[] ModelLootRoll
@@ -42,7 +41,7 @@ namespace Libraries.database.models
             set
             {
 
-                Dictionary = new SerDictionaryLootRolls<string, ModelLootRoll>();
+                Items = new Dictionary<string, ModelLootRoll>();
 
                 if (value != null)
                 {
@@ -50,7 +49,7 @@ namespace Libraries.database.models
                     foreach (ModelLootRoll Item in value)
                     {
 
-                        Dictionary.Add(Item.Name, Item);
+                        Items.Add(Item.Name, Item);
 
                     }
 

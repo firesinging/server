@@ -19,7 +19,7 @@ Then look in the 'download\game' folder of this repository. Copy the 'Spartan.ex
 Copy the content directly in the download folder of this repository to a new folder (adviced to keep it near your game folder for easy access) your harddrive and execute 'Server.exe'. Follow the instructions on the screen, normally choosing 'r' to start the server locally. Wait untill the server instances are loaded (green text) and afterwards run 'Spartan.exe' from the game directory. 
 
 ### Note
-Keep in mind this is a work in progress. At the moment this isn't even 10% of the end result a working server emulation should be. Currently you can only enter the greek capital and take a look around. You cannot play! 
+Keep in mind this is a work in progress. At the moment this isn't even 20% of the end result a working server emulation should be. Currently you can only enter the greek capital and take a look around. You cannot play! 
 
 
 ### Sources

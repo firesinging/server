@@ -1,5 +1,6 @@
-﻿using System.Xml.Serialization;
-using System.Collections.Generic;
+﻿using System.Collections.Generic;
+using System.ComponentModel;
+using System.Xml.Serialization;
 
 
 namespace Libraries.database.models.timer
@@ -14,7 +15,15 @@ namespace Libraries.database.models.timer
     public class ModelQuestTimerEvents
     {
 
+        public ModelQuestTimerEvents()
+        {
+
+            Timerevent = new List<ModelQuestTimerEvent>();
+
+        }
+
         [XmlElement(ElementName = "timerevent")]
+        [DefaultValue(null)]
         public List<ModelQuestTimerEvent> Timerevent { get; set; }
 
     }

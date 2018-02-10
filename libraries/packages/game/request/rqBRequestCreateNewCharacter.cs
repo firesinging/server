@@ -1,4 +1,5 @@
-﻿using System.IO;
+﻿using System;
+using System.IO;
 using System.Text;
 
 using Libraries.enums;
@@ -13,7 +14,7 @@ namespace Libraries.packages.game
     public class PacketBRequestCreateNewCharacter
     {
 
-        public byte SkipTutorial { get; }
+        public int SkipTutorial { get; }
 
         public long Xuid { get; }
 
@@ -42,7 +43,7 @@ namespace Libraries.packages.game
                     CityScenario = Encoding.Unicode.GetString(Reader.ReadBytes(CityScenarioLength));
                     CivilizationId = (Civilizations)Reader.ReadInt32();
 
-                    SkipTutorial = Reader.ReadByte();
+                    SkipTutorial = Convert.ToInt32(Reader.ReadByte());
 
                 }
 

@@ -17,7 +17,17 @@ namespace Libraries.database.models
     public class ModelCivilization
     {
 
+        public ModelCivilization()
+        {
+
+            Agetech = new List<ModelCivilizationAgetech>();
+            Townstartingunit = new List<string>();
+            Wall = new List<ModelCivilizationWall>();
+
+        }
+
         [XmlElement(ElementName = "agetech")]
+        [DefaultValue(null)]
         public List<ModelCivilizationAgetech> Agetech { get; set; }
 
         [XmlElement(ElementName = "alliedid")]
@@ -130,6 +140,7 @@ namespace Libraries.database.models
         public string Towncenter { get; set; }
 
         [XmlElement(ElementName = "townstartingunit")]
+        [DefaultValue(null)]
         public List<string> Townstartingunit { get; set; }
 
         [XmlElement(ElementName = "ui")]
@@ -142,6 +153,7 @@ namespace Libraries.database.models
         public ModelCivilizationUnitregen Unitregen { get; set; }
 
         [XmlElement(ElementName = "wall")]
+        [DefaultValue(null)]
         public List<ModelCivilizationWall> Wall { get; set; }
 
         [XmlIgnore]

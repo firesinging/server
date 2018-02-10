@@ -1,8 +1,10 @@
 ﻿using SuperSocket.SocketBase.Command;
 
+using Libraries.enums;
+using Libraries.logger;
+
 using Libraries.helpers.package;
 using Libraries.packages.game;
-using Libraries.enums;
 
 
 namespace Game.Command
@@ -21,17 +23,11 @@ namespace Game.Command
 
             PacketBRequestQueueLocation Request = new PacketBRequestQueueLocation(p.Content);
 
-            if (s.Logger.IsDebugEnabled)
-            {
-
-                s.Logger.Debug($"Execute command: {Request}");
-
-            }
+            Logger.Debug(p.Key + "::ExecuteCommand - Execute command: " + Request);
 
             PacketBResponseQueueLocation ResponseContent = new PacketBResponseQueueLocation(0, 1, 1);
 
-            if (s.Logger.IsDebugEnabled)
-                s.Logger.Debug($"Command response: {ResponseContent}");
+            Logger.Debug(p.Key + "::ExecuteCommand - Execute command: " + ResponseContent);
 
             byte[] Response = ResponseContent.ToByteArray();
 

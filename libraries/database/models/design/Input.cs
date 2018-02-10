@@ -1,5 +1,6 @@
 ﻿using System.Xml.Serialization;
 using System.Collections.Generic;
+using System.ComponentModel;
 
 
 namespace Libraries.database.models.design
@@ -14,8 +15,16 @@ namespace Libraries.database.models.design
     public class ModelDesignInput
     {
 
+        public ModelDesignInput()
+        {
+
+            Items = new List<ModelGenericMaterial>();
+
+        }
+
         [XmlElement(ElementName = "material")]
-        public List<ModelGenericMaterial> Material { get; set; }
+        [DefaultValue(null)]
+        public List<ModelGenericMaterial> Items { get; set; }
 
     }
 

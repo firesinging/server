@@ -1,5 +1,6 @@
 ﻿using System.Xml.Serialization;
 using System.Collections.Generic;
+using System.ComponentModel;
 
 
 namespace Libraries.database.models.traits
@@ -14,8 +15,16 @@ namespace Libraries.database.models.traits
     public class ModelTraitLevels
     {
 
+        public ModelTraitLevels()
+        {
+
+            Items = new List<int>();
+
+        }
+
         [XmlElement(ElementName = "level")]
-        public List<int> Level { get; set; }
+        [DefaultValue(null)]
+        public List<int> Items { get; set; }
     
     }
 

@@ -1,4 +1,5 @@
-﻿using System.Xml.Serialization;
+﻿using System.ComponentModel;
+using System.Xml.Serialization;
 
 
 namespace Libraries.database.models.questgiver
@@ -17,6 +18,7 @@ namespace Libraries.database.models.questgiver
         public string Key { get; set; }
 
         [XmlElement(ElementName = "value")]
+        [DefaultValue(null)]
         public string Value { get; set; }
 
     }

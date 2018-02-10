@@ -1,62 +1,85 @@
-﻿using System.Xml.Serialization;
+﻿using System;
+using System.ComponentModel;
+using System.Xml.Serialization;
 
 using Libraries.enums;
+using Libraries.character;
 using Libraries.database.models.character;
 
 
 namespace Libraries.database.models
 {
-    
+
     /// <summary>
     /// Character model
     /// </summary>
     /// <seealso cref="http://xmltocsharp.azurewebsites.net/"/>
 
-    [XmlRoot(ElementName = "character")]
-    public class ModelCharacter
+    [XmlRoot(ElementName = "Character")]
+    public class ModelCharacter : ModelBase
     {
 
         public ModelCharacter()
         {
 
+            Questcompleted = new ModelQuestCompleted();
             Questinstances = new ModelQuestinstances();
-
-
-
+            Activetechs = new ModelCharacterTechsActive();
+            Capitaltechs = new ModelCharacterTechsCapital();
+            Protounits = new ModelCharacterProtounits();
+            Traits = new ModelCharacterTraits();
+            Inventorycontainers = new ModelCharacterInventoryContainers();
+            Capitallockedtiles = new ModelCharacterCapitallockedtiles();
+            Questgivers = new ModelCharacterQuestgivers();
+            Resources = new CharacterResources();
+            Availableadvisors = new ModelCharacterAdvisorsAvailable();
+            Assignedadvisors = new ModelCharacterAdvisorsAssigned();
+            Capitalresources = new CharacterCapitalResources();
+            Clientstates = new ModelCharacterClientStates();
+            Configs = new CharacterConfigs();
+            Craftschools = new ModelCharacterCraftschools();
+            Designslearned = new ModelCharacterLearneddesigns();
+            Vanities = new ModelCharacterVanities();
+            Regionsunlocked = new ModelCharacterUnlockedRegions();
+            
         }
-
+        
         [XmlAttribute(AttributeName = "id")]
         public long Id { get; set; }
 
         [XmlAttribute(AttributeName = "version")]
-        public int Version { get; set; } = 1;
+        [DefaultValue(1)]
+        public int Version { get; set; }
+        
+        [XmlAttribute(AttributeName = "playerid")]
+        public long PlayerId { get; set; }
+
+        [XmlElement(ElementName = "Lastsave")]
+        public DateTime Lastsave = DateTime.UtcNow;
 
         [XmlElement(ElementName = "CivId")]
         public Civilizations CivId { get; set; }
 
         [XmlElement(ElementName = "capscenario")]
+        [DefaultValue(null)]
         public string Capscenario { get; set; }
 
         [XmlElement(ElementName = "name")]
+        [DefaultValue(null)]
         public string Name { get; set; }
-
+        
         [XmlElement(ElementName = "flag")]
         public long Flag { get; set; }
 
         [XmlElement(ElementName = "level")]
         public int Level { get; set; }
 
-        [XmlElement(ElementName = "skillpoints")]
-        public int Skillpoints { get; set; }
-
-        [XmlElement(ElementName = "skillresetpoints")]
-        public int Skillresetpoints { get; set; }
-
         [XmlElement(ElementName = "currentage")]
-        public string Currentage { get; set; }
+        public byte Currentage { get; set; }
 
         [XmlElement(ElementName = "completedquests")]
-        public string Completedquests { get; set; }
+        [DefaultValue(null)]
+        public ModelQuestCompleted Questcompleted { get; set; }
 
         [XmlElement(ElementName = "questinstances")]
         public ModelQuestinstances Questinstances { get; set; }
@@ -83,10 +106,11 @@ namespace Libraries.database.models
         public ModelCharacterQuestgivers Questgivers { get; set; } 
 
         [XmlElement(ElementName = "econdesigns")]
+        [DefaultValue(null)]
         public string Econdesigns { get; set; }
 
         [XmlElement(ElementName = "resources")]
-        public ModelCharacterResources Resources { get; set; }
+        public CharacterResources Resources { get; set; }
 
         [XmlElement(ElementName = "currentregion")]
         public int Currentregion { get; set; }
@@ -104,13 +128,13 @@ namespace Libraries.database.models
         public ModelCharacterAdvisorsAssigned Assignedadvisors { get; set; } 
 
         [XmlElement(ElementName = "capitalresources")]
-        public ModelCharacterCapitalResources Capitalresources { get; set; }
+        public CharacterCapitalResources Capitalresources { get; set; }
 
         [XmlElement(ElementName = "clientstates")]
         public ModelCharacterClientStates Clientstates { get; set; } 
 
         [XmlElement(ElementName = "characterconfigs")]
-        public ModelCharacterConfigs Configs { get; set; }
+        public CharacterConfigs Configs { get; set; }
 
         [XmlElement(ElementName = "craftschools")]
         public ModelCharacterCraftschools Craftschools { get; set; }
@@ -122,7 +146,7 @@ namespace Libraries.database.models
         public ModelCharacterVanities Vanities { get; set; }
 
         [XmlElement(ElementName = "unlockedregions")]
-        public ModelCharacterUnlockedRegions Regionsunlocked { get; set; }
+        public ModelCharacterUnlockedRegions Regionsunlocked { get; set; }        
 
     }
 

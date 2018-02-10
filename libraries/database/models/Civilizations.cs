@@ -1,8 +1,7 @@
-﻿using System.Xml.Serialization;
+﻿using System.Collections.Generic;
+using System.Xml.Serialization;
 
 using Libraries.enums;
-
-using Libraries.helpers.xml;
 
 
 namespace Libraries.database.models
@@ -23,12 +22,12 @@ namespace Libraries.database.models
         public ModelCivilizations()
         {
 
-            Dictionary = new SerDictionaryCivilizations<Civilizations, ModelCivilization>();
+            Items = new Dictionary<Civilizations, ModelCivilization>();
 
         }
 
         [XmlIgnore]
-        public SerDictionaryCivilizations<Civilizations, ModelCivilization> Dictionary { get; private set; }
+        public Dictionary<Civilizations, ModelCivilization> Items { get; private set; }
 
         [XmlElement(ElementName = "civ")]
         public ModelCivilization[] ModelCivilization
@@ -44,7 +43,7 @@ namespace Libraries.database.models
             set
             {
 
-                Dictionary = new SerDictionaryCivilizations<Civilizations, ModelCivilization>();
+                Items = new Dictionary<Civilizations, ModelCivilization>();
 
                 if (value != null)
                 {
@@ -52,7 +51,7 @@ namespace Libraries.database.models
                     foreach (var Item in value)
                     {
 
-                        Dictionary.Add(Item.CivId, Item);
+                        Items.Add(Item.CivId, Item);
 
                     }
 

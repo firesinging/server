@@ -1,5 +1,6 @@
 ﻿using System.Xml.Serialization;
 using System.Collections.Generic;
+using System.ComponentModel;
 
 
 namespace Libraries.database.models.craftschool
@@ -14,10 +15,20 @@ namespace Libraries.database.models.craftschool
     public class ModelCraftschoolItems
     {
 
+        public ModelCraftschoolItems()
+        {
+
+            Consumable = new List<string>();
+            Advisor = new List<string>();
+
+        }
+
         [XmlElement(ElementName = "consumable")]
+        [DefaultValue(null)]
         public List<string> Consumable { get; set; }
 
         [XmlElement(ElementName = "advisor")]
+        [DefaultValue(null)]
         public List<string> Advisor { get; set; }
 
     }

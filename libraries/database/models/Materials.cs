@@ -1,6 +1,5 @@
-﻿using System.Xml.Serialization;
-
-using Libraries.helpers.xml;
+﻿using System.Collections.Generic;
+using System.Xml.Serialization;
 
 
 namespace Libraries.database.models
@@ -21,12 +20,12 @@ namespace Libraries.database.models
         public ModelMaterials()
         {
 
-            Dictionary = new SerDictionaryMaterials<string, ModelMaterial>();
+            Items = new Dictionary<string, ModelMaterial>();
 
         }
 
         [XmlIgnore]
-        public SerDictionaryMaterials<string, ModelMaterial> Dictionary { get; private set; }
+        public Dictionary<string, ModelMaterial> Items { get; private set; }
 
         [XmlElement(ElementName = "material")]
         public ModelMaterial[] ModelMaterial
@@ -42,7 +41,7 @@ namespace Libraries.database.models
             set
             {
 
-                Dictionary = new SerDictionaryMaterials<string, ModelMaterial>();
+                Items = new Dictionary<string, ModelMaterial>();
 
                 if (value != null)
                 {
@@ -50,7 +49,7 @@ namespace Libraries.database.models
                     foreach (ModelMaterial Item in value)
                     {
 
-                        Dictionary.Add(Item.Name, Item);
+                        Items.Add(Item.Name, Item);
 
                     }
 

@@ -17,7 +17,7 @@ namespace Libraries.database.models.vendor
         public ModelVendorItems Items { get; set; }
 
         [XmlAttribute(AttributeName = "regionid")]
-        public string Regionid { get; set; }
+        public int Regionid { get; set; }
 
     }
 

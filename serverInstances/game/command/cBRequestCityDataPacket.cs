@@ -1,11 +1,11 @@
-﻿using System.IO;
+﻿using SuperSocket.SocketBase.Command;
 
-using SuperSocket.SocketBase.Command;
-
-using Libraries.helpers.package;
-using Libraries.helpers.pathing;
 using Libraries.packages.game;
 using Libraries.enums;
+using Libraries.player;
+using Libraries.logger;
+
+using Libraries.helpers.package;
 
 
 namespace Game.Command
@@ -24,12 +24,7 @@ namespace Game.Command
 
             PacketBRequestCityDataPacket Request = new PacketBRequestCityDataPacket(p.Content);
 
-            if (s.Logger.IsDebugEnabled)
-            {
-
-                s.Logger.Debug($"Execute command: {Request}");
-
-            }
+            Logger.Debug(p.Key + "::ExecuteCommand - Execute command: " + Request);
 
             _SendResponseCityDataStart(s, p, Request);
             _SendResponseGetContainerNumSlots(s, p, Request);
@@ -53,10 +48,11 @@ namespace Game.Command
         private static void _SendResponseCityDataStart(Session s, Package p, PacketBRequestCityDataPacket r)
         {
 
-            PacketBResponseCityDataStartPacket ResponseContent = new PacketBResponseCityDataStartPacket(p.HeaderXuid, "Capitals/CAPITAL_C01_02", 1);
+            Player Player = s.GetPlayer();
 
-            if (s.Logger.IsDebugEnabled)
-                s.Logger.Debug($"Command response: {ResponseContent}");
+            PacketBResponseCityDataStartPacket ResponseContent = new PacketBResponseCityDataStartPacket(Player.Id, Player.Empire.CurrentCharacter.Capscenario, 1);
+
+            Logger.Debug(p.Key + "::_SendResponseCityDataStart - Execute command: " + ResponseContent);
 
             byte[] Response = ResponseContent.ToByteArray();
 
@@ -79,6 +75,10 @@ namespace Game.Command
 
             //@TODO
 
+            string ResponseContent = string.Empty;
+
+            Logger.Debug(p.Key + "::_SendResponseGetContainerNumSlots - Execute command: " + ResponseContent);
+
 
 
 
@@ -96,10 +96,11 @@ namespace Game.Command
         private static void _SendCityDataComplete(Session s, Package p, PacketBRequestCityDataPacket r)
         {
 
-            PacketBResponseCityDataCompletePacket ResponseContent = new PacketBResponseCityDataCompletePacket(p.HeaderXuid);
+            Player Player = s.GetPlayer();
 
-            if (s.Logger.IsDebugEnabled)
-                s.Logger.Debug($"Command response: {ResponseContent}");
+            PacketBResponseCityDataCompletePacket ResponseContent = new PacketBResponseCityDataCompletePacket(Player.Id);
+
+            Logger.Debug(p.Key + "::_SendCityDataComplete - Execute command: " + ResponseContent);
 
             byte[] Response = ResponseContent.ToByteArray();
 

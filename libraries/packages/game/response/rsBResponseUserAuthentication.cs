@@ -1,5 +1,7 @@
 ﻿using System.IO;
 
+using Libraries.helpers.player;
+
 
 namespace Libraries.packages.game
 {
@@ -63,10 +65,8 @@ namespace Libraries.packages.game
             return string.Format(
                 "PacketBResponseUserAuthentication\r\n" +
                 "Xuid = 0x{0:X}\r\n" +
-                "PlayerId = {1}\r\n" +
-                "Server = {2}\r\n",
+                "Server = {1}\r\n",
                 Xuid,
-                0,
                 Server
             );
 

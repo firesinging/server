@@ -1,5 +1,8 @@
 ﻿using System.Xml.Serialization;
 using System.Collections.Generic;
+using System.ComponentModel;
+
+using Libraries.helpers.region;
 
 
 namespace Libraries.database.models.character
@@ -11,11 +14,31 @@ namespace Libraries.database.models.character
     /// <seealso cref="http://xmltocsharp.azurewebsites.net/"/>
 
     [XmlRoot(ElementName = "unlockedregions")]
-    public class ModelCharacterUnlockedRegions
+    public class ModelCharacterUnlockedRegions : ModelBase
     {
 
-        [XmlElement(ElementName = "unlockedregions")]
-        public List<string> Unlockedregions { get; set; }
+        public ModelCharacterUnlockedRegions()
+        {
+
+            Items = new List<int>();
+
+        }
+
+        [XmlElement(ElementName = "unlockedregion")]
+        [DefaultValue(null)]
+        public List<int> Items { get; set; }
+
+        new public string ToXml
+        {
+
+            get
+            {
+
+                return string.Format("<unlockedregions>{0}</unlockedregions>", RegionHelper.ConvertListToBase64String(Items));
+
+            }
+
+        }
 
     }
 

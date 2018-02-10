@@ -1,4 +1,5 @@
-﻿using System.Xml.Serialization;
+﻿using System.ComponentModel;
+using System.Xml.Serialization;
 
 using Libraries.database.models.quest.randommap;
 
@@ -16,13 +17,14 @@ namespace Libraries.database.models.quest
     {
 
         [XmlElement(ElementName = "map")]
+        [DefaultValue(null)]
         public string Map { get; set; }
 
         [XmlElement(ElementName = "randommap")]
         public string Randommap { get; set; }
 
         [XmlElement(ElementName = "numplayers")]
-        public string Numplayers { get; set; }
+        public int Numplayers { get; set; }
 
         [XmlElement(ElementName = "mapvariables")]
         public ModelQuestRandommapMapvariables Mapvariables { get; set; }
@@ -31,12 +33,15 @@ namespace Libraries.database.models.quest
         public ModelQuestRandommapNuggetoverrides Nuggetoverrides { get; set; }
 
         [XmlElement(ElementName = "mapregionname")]
+        [DefaultValue(null)]
         public string Mapregionname { get; set; }
 
         [XmlElement(ElementName = "lightsetname")]
+        [DefaultValue(null)]
         public string Lightsetname { get; set; }
 
         [XmlElement(ElementName = "mapsizename")]
+        [DefaultValue(null)]
         public string Mapsizename { get; set; }
 
     }

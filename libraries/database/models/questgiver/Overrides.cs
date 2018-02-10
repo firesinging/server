@@ -1,5 +1,6 @@
 ﻿using System.Xml.Serialization;
 using System.Collections.Generic;
+using System.ComponentModel;
 
 
 namespace Libraries.database.models.questgiver
@@ -14,8 +15,16 @@ namespace Libraries.database.models.questgiver
     public class ModelQuestgiverOverrides
     {
 
+        public ModelQuestgiverOverrides()
+        {
+
+            Items = new List<ModelQuestgiverOverride>();
+
+        }
+
         [XmlElement(ElementName = "override")]
-        public List<ModelQuestgiverOverride> Override { get; set; }
+        [DefaultValue(null)]
+        public List<ModelQuestgiverOverride> Items { get; set; }
 
     }
 

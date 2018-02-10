@@ -116,7 +116,7 @@
     <Compile Include="command\todo\cBRequestQuestOperation.cs" />
     <Compile Include="command\todo\cBRequestQuestSaveObjectives.cs" />
     <Compile Include="command\todo\cBRequestRefreshOfferStateData.cs" />
-    <Compile Include="command\todo\cBRequestRefreshQuestGiverSpawns.cs" />
+    <Compile Include="command\cBRequestRefreshQuestGiverSpawns.cs" />
     <Compile Include="command\cBRequestRegionMap.cs" />
     <Compile Include="command\todo\cBRequestReloadPdlc.cs" />
     <Compile Include="command\todo\cBRequestRemoveTraitPacket.cs" />
@@ -134,7 +134,7 @@
     <Compile Include="command\todo\cBRequestSteamFinalize.cs" />
     <Compile Include="command\todo\cBRequestSteamSmokeTest.cs" />
     <Compile Include="command\todo\cBRequestSteamTransaction.cs" />
-    <Compile Include="command\todo\cBRequestStoreOptions.cs" />
+    <Compile Include="command\cBRequestStoreOptions.cs" />
     <Compile Include="command\todo\cBRequestStorePersistentData.cs" />
     <Compile Include="command\todo\cBRequestStoreScenarioDelta.cs" />
     <Compile Include="command\todo\cBRequestUnitKillXp.cs" />

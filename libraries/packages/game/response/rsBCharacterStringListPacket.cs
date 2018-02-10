@@ -50,7 +50,7 @@ namespace Libraries.packages.game
 
                     byte[] Package;
 
-                    byte[] Content = Encoding.Unicode.GetBytes(ContentString);
+                    byte[] Content = Encoding.UTF8.GetBytes(ContentString);
                     byte[] ContentProtected = PackageZipProtection.Compress(Content);
 
                     int InputSize = Content.Length;

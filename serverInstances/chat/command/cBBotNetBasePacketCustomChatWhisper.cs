@@ -3,6 +3,7 @@
 using Libraries.helpers.package;
 using Libraries.packages.chat;
 using Libraries.enums;
+using Libraries.logger;
 
 
 namespace Chat.command
@@ -21,13 +22,7 @@ namespace Chat.command
 
             PacketBBotNetBasePacketCustomChatWhisper Request = new PacketBBotNetBasePacketCustomChatWhisper(p.Content);
 
-            //@TODO - Create custom chat level to spam only when requested
-            if (s.Logger.IsDebugEnabled)
-            {
-
-                s.Logger.Debug($"Execute command: {Request}");
-
-            }
+            Logger.Chat(p.Key + "::ExecuteCommand - Execute command: " + Request);
 
             //@TODO - Get receiver information and pass to function
             // The function needs the ToPlayer Xuid
@@ -48,9 +43,7 @@ namespace Chat.command
 
             PacketBBotNetBasePacketCustomChatWhisperResponse ResponseContent = new PacketBBotNetBasePacketCustomChatWhisperResponse(r.ToPlayerName, r.ChatMessage);
 
-            //@TODO - Create custom chat level to spam only when requested
-            if (s.Logger.IsDebugEnabled)
-                s.Logger.Debug($"Command response: {ResponseContent}");
+            Logger.Chat(p.Key + "::ExecuteCommand - Execute command: " + ResponseContent);
 
             byte[] Response = ResponseContent.ToByteArray();
 
@@ -73,9 +66,7 @@ namespace Chat.command
 
             PacketEWhisperRecievedEvent ResponseContent = new PacketEWhisperRecievedEvent(s.PlayerName, r.ChatMessage);
 
-            //@TODO - Create custom chat level to spam only when requested
-            if (s.Logger.IsDebugEnabled)
-                s.Logger.Debug($"Command response: {ResponseContent}");
+            Logger.Chat(p.Key + "::ExecuteCommand - Execute command: " + ResponseContent);
 
             byte[] Response = ResponseContent.ToByteArray();
 

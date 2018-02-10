@@ -1,9 +1,10 @@
-﻿using System;
-using SuperSocket.SocketBase;
+﻿using SuperSocket.SocketBase;
 
-using Libraries.player;
-using Libraries.helpers.package;
 using Libraries.enums;
+using Libraries.player;
+using Libraries.database;
+
+using Libraries.helpers.package;
 
 
 namespace Game
@@ -11,33 +12,64 @@ namespace Game
 
     public class Session : AppSession<Session, Package>
     {
-        
-        
 
-        
+        private Player _Player;
 
+        /// <summary>
+        /// Check if the player is authenticated.
+        /// </summary>
+        /// <returns>True if the player is authenticated.</returns>
+        public bool IsAuthenticated
+        {
 
-        public string PlayerName { get; internal set; }
-        public string Password { get; internal set; }
+            get
+            {
 
-        // @TODO load player
-        public string Xuid { get; internal set; }
+                return _Player != null;
 
-        public long CharacterId = 1;
-        public string CharacterName = "FireSinger";
-        public long CharacterFlags = 0x10 | 0x2 | 0x1;
-        public Civilizations CharacterCivilizationId = (Civilizations)1;
-        public int CharacterLevel = 0;
-        public int CharacterXp = 0;
-        public byte CharacterMaxAge = 1;
-        public int CharacterMaxLevelXp = 1;
-        public int Region = 1;
-        public int SkillPoints = 1;
-        public int SkillResetPoints = 1;
-        public int scenarioID = 1;
-        public string scenarioName = "";
+            }
 
+        }
 
+        /// <summary>
+        /// Get player based on Id.
+        /// </summary>
+        /// <param name="id">The player Id.</param>
+        /// <returns>The player object.</returns>
+        public Player GetPlayer(long id = 0)
+        {
+
+            Player Instance = _Player;
+
+            if ((id == 0) && (Instance == null))
+            {
+
+                return null;
+
+            }
+
+            if ((id != 0) && (id != Instance.Id))
+            {
+
+                Instance = Database.Players.Get(id);
+
+            }
+
+            return Instance;
+
+        }
+
+        /// <summary>
+        /// Add the player to the session.
+        /// </summary>
+        /// <param name="player">The player object.</param>
+        internal void SetPlayer(Player player)
+        {
+
+            _Player = player;
+            _Player.SessionGame = SessionID;
+
+        }
 
         /// <summary>
         /// Called when [session started].
@@ -45,8 +77,8 @@ namespace Game
         protected override void OnSessionStarted()
         {
 
-            Console.WriteLine("{0}: Session created {1} from {2}", AppServer.Name, SessionID, RemoteEndPoint.Address.ToString());
-
+            Logger.InfoFormat("Game::OnSessionStarted - {0} Session created with Id {1} from IP {2}", AppServer.Name, SessionID, RemoteEndPoint.Address.ToString());
+            
         }
 
         /// <summary>
@@ -56,22 +88,28 @@ namespace Game
         protected override void OnSessionClosed(CloseReason reason)
         {
 
-            if (Logger.IsInfoEnabled)
-                Logger.Info($"Game::OnSessionClosed - Session closed. Reason: ({reason})");
+            Logger.InfoFormat("Game::OnSessionClosed - Session closed. Reason: {0}", reason);
+
+            if (_Player != null)
+            {
+
+                _Player.SessionGame = null;
+                _Player.Save();
+
+            }             
 
         }
 
         /// <summary>
         /// Handle Unknown request
         /// </summary>
-        /// <param name="content"></param>
+        /// <param name="content">The package content.</param>
         protected override void HandleUnknownRequest(Package content)
         {
 
-            if (Logger.IsDebugEnabled)
-                Logger.Debug($"Game::HandleUnknownRequest - Unknown package. Content: {content}");
+            Logger.DebugFormat("Game::HandleUnknownRequest - Unknown package. Content: {0}", content);               
 
-        }        
+        }
 
     }
 

@@ -1,6 +1,7 @@
 ﻿using System.IO;
 using System.Text;
 
+
 namespace Libraries.packages.game
 {
 
@@ -23,7 +24,7 @@ namespace Libraries.packages.game
                 {
 
                     var PlayerNameLength = Reader.ReadInt32();
-                    PlayerName = Encoding.Default.GetString(Reader.ReadBytes(PlayerNameLength));
+                    PlayerName = Encoding.Unicode.GetString(Reader.ReadBytes(PlayerNameLength));
 
                     Xuid = Reader.ReadInt64();                   
 
@@ -39,11 +40,9 @@ namespace Libraries.packages.game
             return string.Format(
                 "PacketBRequestUserAuthentication\r\n" +
                 "PlayerName = {0}\r\n" +
-                "Xuid = 0x{1:X}\r\n" +
-                "PlayerId = {2}\r\n",
+                "Xuid = 0x{1:X}\r\n",
                 PlayerName,
-                Xuid,
-                0
+                Xuid
             );
 
         }

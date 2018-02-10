@@ -3,6 +3,7 @@
 using Libraries.helpers.package;
 using Libraries.packages.chat;
 using Libraries.enums;
+using Libraries.logger;
 
 
 namespace Chat.command
@@ -21,19 +22,11 @@ namespace Chat.command
 
             PacketBBotNetBasePacketDirectChatDataRequest Request = new PacketBBotNetBasePacketDirectChatDataRequest(p.Content);
 
-            //@TODO - Create custom chat level to spam only when requested
-            if (s.Logger.IsDebugEnabled)
-            {
-
-                s.Logger.Debug($"Execute command: {Request}");
-
-            }
+            Logger.Chat(p.Key + "::ExecuteCommand - Execute command: " + Request);
 
             PacketBBotNetBasePacketDirectChatDataResponse ResponseContent = new PacketBBotNetBasePacketDirectChatDataResponse(Request.PlayerName, Request.Unk0);
 
-            //@TODO - Create custom chat level to spam only when requested
-            if (s.Logger.IsDebugEnabled)
-                s.Logger.Debug($"Command response: {ResponseContent}");
+            Logger.Chat(p.Key + "::ExecuteCommand - Execute command: " + ResponseContent);
 
             byte[] Response = ResponseContent.ToByteArray();
 

@@ -1,5 +1,6 @@
 ﻿using System.Xml.Serialization;
 using System.Collections.Generic;
+using System.ComponentModel;
 
 
 namespace Libraries.database.models.equipment
@@ -14,8 +15,16 @@ namespace Libraries.database.models.equipment
     public class ModelEquipmentRanks
     {
 
+        public ModelEquipmentRanks()
+        {
+
+            Items = new List<ModelEquipmentRank>();
+
+        }
+
         [XmlElement(ElementName = "rank")]
-        public List<ModelEquipmentRank> Rank { get; set; }
+        [DefaultValue(null)]
+        public List<ModelEquipmentRank> Items { get; set; }
 
     }
 

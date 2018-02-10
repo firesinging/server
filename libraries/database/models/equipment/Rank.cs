@@ -1,4 +1,5 @@
-﻿using System.Xml.Serialization;
+﻿using System.ComponentModel;
+using System.Xml.Serialization;
 
 
 namespace Libraries.database.models.equipment
@@ -14,13 +15,14 @@ namespace Libraries.database.models.equipment
     {
 
         [XmlAttribute(AttributeName = "tech")]
+        [DefaultValue(null)]
         public string Tech { get; set; }
 
         [XmlAttribute(AttributeName = "cost")]
-        public string Cost { get; set; }
+        public int Cost { get; set; }
 
         [XmlAttribute(AttributeName = "descid")]
-        public string Descid { get; set; }
+        public int Descid { get; set; }
 
     }
 

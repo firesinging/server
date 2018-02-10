@@ -1,6 +1,5 @@
-﻿using System.Xml.Serialization;
-
-using Libraries.helpers.xml;
+﻿using System.Collections.Generic;
+using System.Xml.Serialization;
 
 
 namespace Libraries.database.models
@@ -21,12 +20,12 @@ namespace Libraries.database.models
         public ModelQuestgivers()
         {
 
-            Dictionary = new SerDictionaryQuestgivers<string, ModelQuestgiver>();
+            Items = new Dictionary<string, ModelQuestgiver>();
 
         }
 
         [XmlIgnore]
-        public SerDictionaryQuestgivers<string, ModelQuestgiver> Dictionary { get; private set; }
+        public Dictionary<string, ModelQuestgiver> Items { get; private set; }
 
         [XmlElement(ElementName = "questgiver")]
         public ModelQuestgiver[] ModelQuestgiver
@@ -42,12 +41,12 @@ namespace Libraries.database.models
             set
             {
 
-                Dictionary = new SerDictionaryQuestgivers<string, ModelQuestgiver>();
+                Items = new Dictionary<string, ModelQuestgiver>();
 
                 foreach (ModelQuestgiver Item in value)
                 {
 
-                    Dictionary.Add(Item.Name, Item);
+                    Items.Add(Item.Name, Item);
 
                 }
 

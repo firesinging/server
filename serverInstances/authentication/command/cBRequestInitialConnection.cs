@@ -1,8 +1,11 @@
-﻿using SuperSocket.SocketBase.Command;
+﻿using System.Configuration;
+using SuperSocket.SocketBase.Command;
+
+using Libraries.enums;
+using Libraries.packages.authentication;
+using Libraries.logger;
 
 using Libraries.helpers.package;
-using Libraries.packages.authentication;
-using Libraries.enums;
 
 
 namespace Authentication.command
@@ -23,17 +26,37 @@ namespace Authentication.command
 
             PacketBRequestInitialConnection Request = new PacketBRequestInitialConnection(p.Content);
 
-            if (s.Logger.IsDebugEnabled)
+            Logger.Debug(p.Key + "::ExecuteCommand - Execute command: " + Request);
+
+            ConnectionResponseTypes ResponseResult;
+
+            if (ConfigurationManager.AppSettings["MaintenanceMode"] == "1")
             {
 
-                s.Logger.Debug($"Execute command: {Request}");
+                ResponseResult = ConnectionResponseTypes.Maintenance;
+
+            }
+            else if (!s.IsAuthenticated)
+            {
+
+                ResponseResult = ConnectionResponseTypes.TimeOut1;
+
+            }
+            else if (s.GetPlayer().Ban)
+            {
+
+                ResponseResult = ConnectionResponseTypes.Banned;
+
+            } else
+            {
+
+                ResponseResult = ConnectionResponseTypes.Allowed;
 
             }
 
-            PacketBResponseInitialConnection ResponseContent = new PacketBResponseInitialConnection(Request.Xuid, 0, 1, string.Empty, string.Empty, GamePort, string.Empty, string.Empty);
+            PacketBResponseInitialConnection ResponseContent = new PacketBResponseInitialConnection(Request.Xuid, 0, ResponseResult, string.Empty, string.Empty, GamePort, string.Empty, string.Empty);
 
-            if (s.Logger.IsDebugEnabled)
-                s.Logger.Debug($"Command response: {ResponseContent}");
+            Logger.Debug(p.Key + "::ExecuteCommand - Execute command: " + ResponseContent);
 
             byte[] Response = ResponseContent.ToByteArray();
 

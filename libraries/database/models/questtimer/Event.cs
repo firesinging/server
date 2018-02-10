@@ -1,4 +1,5 @@
-﻿using System.Xml.Serialization;
+﻿using System.ComponentModel;
+using System.Xml.Serialization;
 
 
 namespace Libraries.database.models.timer
@@ -14,9 +15,11 @@ namespace Libraries.database.models.timer
     {
 
         [XmlAttribute(AttributeName = "event")]
+        [DefaultValue(null)]
         public string Event { get; set; }
 
         [XmlText]
+        [DefaultValue(null)]
         public string Text { get; set; }
 
     }

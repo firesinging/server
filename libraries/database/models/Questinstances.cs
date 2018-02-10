@@ -1,5 +1,6 @@
-﻿using System.Xml.Serialization;
+﻿using System.Linq;
 using System.Collections.Generic;
+using System.Xml.Serialization;
 
 
 namespace Libraries.database.models
@@ -11,11 +12,62 @@ namespace Libraries.database.models
     /// <seealso cref="http://xmltocsharp.azurewebsites.net/"/>
 
     [XmlRoot(ElementName = "questinstances")]
-    public class ModelQuestinstances
+    public class ModelQuestinstances : ModelBase
     {
+        
+        /// <summary>
+        /// Initializes a new instance of the class.
+        /// </summary>
+        public ModelQuestinstances()
+        {
+
+            Items = new Dictionary<int, ModelQuestinstance>();
+
+        }
+
+        [XmlIgnore]
+        public Dictionary<int, ModelQuestinstance> Items { get; private set; }
 
         [XmlElement(ElementName = "questinstance")]
-        public List<ModelQuestinstance> Questinstance { get; set; }
+        public ModelQuestinstance[] ModelQuestinstance
+        {
+
+            get
+            {
+
+                List<ModelQuestinstance> List = new List<ModelQuestinstance>();
+
+                if (Items != null)
+                {
+
+                    List.AddRange(Items.Keys.Select(key => Items[key]));
+
+                }
+
+                return List.ToArray();
+
+            }
+
+            set
+            {
+
+                Items = new Dictionary<int, ModelQuestinstance>();
+
+                if (value != null)
+                {
+
+                    foreach (ModelQuestinstance Item in value)
+                    {
+
+                        Items.Add(Item.Id, Item);
+
+                    }
+
+                }
+
+            }
+
+        }
 
     }
 

@@ -4,6 +4,8 @@ using System.Text.RegularExpressions;
 using System.Configuration;
 using System.Security.Cryptography;
 
+using Libraries.database;
+
 using Libraries.helpers.random;
 
 
@@ -17,14 +19,33 @@ namespace Libraries.helpers.player
         ///  Generates random PlayerId / Xuid 
         /// </summary>
         /// <returns>PlayerId / Xuid</returns>
-        public static long generatePlayerId()
-        {
-
-            //@TODO check if playerId is not already taken
+        public static long generatePlayerId(int counter = 0)
+        {           
 
             RandomEx Random = new RandomEx();
 
-            return Random.NextLong();
+            long Result = Random.NextLong();
+
+            if (Database.Players.Get(Result) != null)
+            {
+
+                if (counter < 100)
+                {
+
+                    counter++;
+
+                    generatePlayerId(counter);
+
+                }
+                else
+                {
+
+                    throw new ArgumentException($"PlayerHelper::generatePlayerId - Can not generate random player Id");
+                }
+
+            }
+
+            return Result;
 
         }
 
@@ -57,6 +78,25 @@ namespace Libraries.helpers.player
         }
 
         /// <summary>
+        ///  Check to see if desired player name already exists
+        /// </summary>
+        /// <param name="playerName">Desired player name</param>
+        /// <returns>True if player name already exists</returns>
+        public static bool PlayerNameExists(string playerName)
+        {
+
+            if(Database.Players.Get(key => string.Equals(key.Name, playerName, StringComparison.CurrentCultureIgnoreCase)) != null)
+            {
+
+                return true;
+
+            }
+
+            return false;
+
+        }
+
+        /// <summary>
         ///  Check to see if desired password is valid
         /// </summary>
         /// <param name="password">Desired password</param>
@@ -69,24 +109,10 @@ namespace Libraries.helpers.player
         }
 
         /// <summary>
-        ///  Create password hash
-        /// </summary>
-        /// <param name="password">Desired password</param>
-        /// <returns>Password hash</returns>
-        public static string CreateHash(string password)
-        {
-
-            string combined = password + ConfigurationManager.AppSettings["PasswordSalt"];
-
-            return _HashString(combined);
-
-        }
-
-        /// <summary>
         ///  Match input password with player password
         /// </summary>
         /// <param name="password">Input password</param>
-        /// /// <param name="password">Player hashed password</param>
+        /// <param name="playerPassword">Player hashed password</param>
         /// <returns>True if passwords match</returns>
         public static bool CompareHash(string password, string playerPassword)
         {
@@ -96,22 +122,20 @@ namespace Libraries.helpers.player
         }
 
         /// <summary>
-        ///  Create password hash helper
+        ///  Create password hash
         /// </summary>
-        /// <param name="toHash">Salted password</param>
+        /// <param name="password">Desired password</param>
         /// <returns>Password hash</returns>
-        private static string _HashString(string toHash)
+        public static string CreateHash(string password)
         {
 
-            using (SHA512CryptoServiceProvider sha = new SHA512CryptoServiceProvider())
-            {
+            byte[] buffer = Encoding.Default.GetBytes(password + ConfigurationManager.AppSettings["PasswordSalt"]);
 
-                byte[] data = Encoding.UTF8.GetBytes(toHash);
-                byte[] hashed = sha.ComputeHash(data);
+            SHA512CryptoServiceProvider Provider = new SHA512CryptoServiceProvider();
 
-                return Convert.ToBase64String(hashed);
+            string hash = BitConverter.ToString(Provider.ComputeHash(buffer)).Replace("-", "");
 
-            }
+            return hash;
 
         }
 

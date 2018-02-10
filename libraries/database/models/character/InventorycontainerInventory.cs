@@ -10,8 +10,15 @@ namespace Libraries.database.models.character
     /// <seealso cref="http://xmltocsharp.azurewebsites.net/"/>
 
     [XmlRoot(ElementName = "inventorycontainer")]
-    public class ModelCharacterInventorycontainerInventory
+    public class ModelCharacterInventorycontainerInventory : ModelBase
     {
+
+        public ModelCharacterInventorycontainerInventory()
+        {
+
+            Items = new ModelCharacterInventorycontainerInventoryItems();
+
+        }
 
         [XmlElement(ElementName = "container")]
         public string Container { get; set; }

@@ -10,8 +10,15 @@ namespace Libraries.database.models.character
     /// <seealso cref="http://xmltocsharp.azurewebsites.net/"/>
 
     [XmlRoot(ElementName = "clientState")]
-    public class ModelCharacterClientState
+    public class ModelCharacterClientState : ModelBase
     {
+
+        public ModelCharacterClientState()
+        {
+
+            Actions = new ModelCharacterClientStateActions();
+
+        }
 
         [XmlElement(ElementName = "tasks")]
         public string Tasks { get; set; }

@@ -1,14 +1,17 @@
-﻿using System.IO;
-
+﻿using System;
+using System.Linq;
 using SuperSocket.SocketBase.Command;
 
 using Libraries.database;
-
-using Libraries.helpers.package;
-using Libraries.helpers.pathing;
-using Libraries.helpers.xml;
+using Libraries.database.models;
+using Libraries.player;
 using Libraries.packages.game;
 using Libraries.enums;
+using Libraries.logger;
+
+using Libraries.helpers.package;
+using Libraries.helpers.character;
+using Libraries.helpers.region;
 
 
 namespace Game.Command
@@ -27,42 +30,38 @@ namespace Game.Command
 
             PacketBRequestRetrievePersistentData Request = new PacketBRequestRetrievePersistentData(p.Content);
 
-            if (s.Logger.IsDebugEnabled)
-            {
+            Logger.Debug(p.Key + "::ExecuteCommand - Execute command: " + Request);
 
-                s.Logger.Debug($"Execute command: {Request}");
+            SendResponseCharacterInit(s, p, Request);
+            SendResponseCharacterDetails(s, p, Request);
 
-            }
+            //SendResponseStringListProtoUnits(s, p, Request);
+            //SendResponseStringListDesignsLearned(s, p, Request);
+            SendResponseStringListTechsActive(s, p, Request);
+            SendResponseStringListTechsCapital(s, p, Request);
+            //SendResponseStringListTraits(s, p, Request);
+            //SendResponseStringListQuestsCompleted(s, p, Request);            
+            //SendResponseStringListCapitalResources(s, p, Request);
+            SendResponseStringListRegions(s, p, Request);
+            SendResponseStringListRegionsUnlocked(s, p, Request);
+            //SendResponseStringListAdvisorsAvailable(s, p, Request);
+            //SendResponseStringListAdvisorsAssigned(s, p, Request);
+            //SendResponseStringListCharacterConfig(s, p, Request);
+            //SendResponseStringListCraftSchools(s, p, Request);
+            //SendResponseStringListVanities(s, p, Request);
 
-            _SendResponseCharacterInit(s, p, Request);
-            _SendResponseCharacterDetails(s, p, Request);
+            SendGameCurrency(s, p, Request);
 
-            _SendResponseStringListProtoUnits(s, p, Request);
-            _SendResponseStringListDesignsLearned(s, p, Request);
-            _SendResponseStringListTechsActive(s, p, Request);
-            _SendResponseStringListTechsCapital(s, p, Request);
-            _SendResponseStringListTraits(s, p, Request);
-            _SendResponseStringListQuestsCompleted(s, p, Request);
-            _SendResponseStringListQuests(s, p, Request);
-            _SendResponseStringListCapitalResources(s, p, Request);
-            _SendResponseStringListRegions(s, p, Request);
-            _SendResponseStringListRegionsUnlocked(s, p, Request);
-            _SendResponseStringListAdvisorsAvailable(s, p, Request);
-            _SendResponseStringListAdvisorsAssigned(s, p, Request);
-            _SendResponseStringListCharacterConfig(s, p, Request);
-            _SendResponseStringListCraftSchools(s, p, Request);
-            _SendResponseStringListVendorKickbacks(s, p, Request);
-            _SendResponseStringListVanities(s, p, Request);
+            SendCharacterPersistenceDone(s, p, Request);
 
-            _SendGameCurrency(s, p, Request);
-
-            _SendCharacterPersistenceDone(s, p, Request);
+            SendResponseStringListQuestsInstances(s, p, Request);
+            SendResponseQuestGivers(s, p, Request);
+            SendResponseQuestList(s, p, Request);
 
 
             /*    
          
             @TODO:
-            QuestGivers = 8,
             Inventory = 9,
             CapitalLockedTiles = 10,
             CraftSchool2 = 20,
@@ -75,19 +74,28 @@ namespace Game.Command
 
         }
 
+        
+
         /// <summary>
         /// Sends BCharacterInitPacket.
         /// </summary>
         /// <param name="s">The session.</param>
         /// <param name="p">Packet BRequestRetrievePersistentData.</param>
         /// <param name="r">Packet BRequestRetrievePersistentData content.</param>
-        private static void _SendResponseCharacterInit(Session s, Package p, PacketBRequestRetrievePersistentData r)
+        public static void SendResponseCharacterInit(Session s, Package p, PacketBRequestRetrievePersistentData r)
         {
 
-            PacketBCharacterInitPacket ResponseContent = new PacketBCharacterInitPacket(s.CharacterName, string.Empty, s.CharacterFlags, r.CharacterId, r.Xuid, s.CharacterCivilizationId);
+            //@TODO
+            // Use the real Xuid instead of r.Xuid
+            // See issue https://github.com/firesinging/xlive/issues/2
 
-            if (s.Logger.IsDebugEnabled)
-                s.Logger.Debug($"Command response: {ResponseContent}");
+            Player Player = s.GetPlayer();
+
+            Player.Empire.SetLastLaunchedCharacter(r.CharacterId);
+
+            PacketBCharacterInitPacket ResponseContent = new PacketBCharacterInitPacket(Player.Empire.CurrentCharacter.Name, string.Empty, Player.Empire.CurrentCharacter.Flag, Player.Empire.CurrentCharacter.Id, r.Xuid, Player.Empire.CurrentCharacter.CivId);
+
+            Logger.Debug(p.Key + "::SendResponseCharacterInit - Execute command: " + ResponseContent);
 
             byte[] Response = ResponseContent.ToByteArray();
 
@@ -105,13 +113,14 @@ namespace Game.Command
         /// <param name="s">The session.</param>
         /// <param name="p">Packet BRequestRetrievePersistentData.</param>
         /// <param name="r">Packet BRequestRetrievePersistentData content.</param>
-        private static void _SendResponseCharacterDetails(Session s, Package p, PacketBRequestRetrievePersistentData r)
+        public static void SendResponseCharacterDetails(Session s, Package p, PacketBRequestRetrievePersistentData r)
         {
 
-            PacketBCharacterDetailsPacket ResponseContent = new PacketBCharacterDetailsPacket(s.CharacterName, r.CharacterId, s.CharacterLevel, s.CharacterXp, s.CharacterMaxAge, s.CharacterMaxLevelXp, s.Region, s.SkillPoints, s.SkillResetPoints);
+            Player Player = s.GetPlayer();
 
-            if (s.Logger.IsDebugEnabled)
-                s.Logger.Debug($"Command response: {ResponseContent}");
+            PacketBCharacterDetailsPacket ResponseContent = new PacketBCharacterDetailsPacket(Player.Empire.CurrentCharacter.Name, Player.Empire.CurrentCharacter.Id, Player.Empire.CurrentCharacter.Level, Convert.ToInt32(Player.Empire.CurrentCharacter.Resources.GetResource("XP")), Player.Empire.CurrentCharacter.Currentage, CharacterHelper.GetMaximumXPforLevel(Player.Empire.CurrentCharacter.Level), Player.Empire.CurrentCharacter.Currentregion, Convert.ToInt32(Player.Empire.CurrentCharacter.Capitalresources.GetResource("SkillPoints")), Convert.ToInt32(Player.Empire.CurrentCharacter.Capitalresources.GetResource("Skillresetpoints")));
+
+            Logger.Debug(p.Key + "::SendResponseCharacterDetails - Execute command: " + ResponseContent);
 
             byte[] Response = ResponseContent.ToByteArray();
 
@@ -129,30 +138,27 @@ namespace Game.Command
         /// <param name="s">The session.</param>
         /// <param name="p">Packet BRequestRetrievePersistentData.</param>
         /// <param name="r">Packet BRequestRetrievePersistentData content.</param>
-        private static void _SendResponseStringListProtoUnits(Session s, Package p, PacketBRequestRetrievePersistentData r)
+        public static void SendResponseStringListProtoUnits(Session s, Package p, PacketBRequestRetrievePersistentData r)
         {
 
-            string Content = File.ReadAllText($"{PathingHelper.tmpDir}BCharacterStringListProtoUnitsResponse.xml");
+            Player Player = s.GetPlayer();
 
-            if (string.IsNullOrEmpty(Content))
+            if (Player.Empire.CurrentCharacter.Protounits.Items.Count > 0)
             {
 
-                return;
+                PacketBCharacterStringListPacket ResponseContent = new PacketBCharacterStringListPacket(StringListTypes.ProtoUnits, Player.Empire.CurrentCharacter.Id, string.Join(",", Player.Empire.CurrentCharacter.Protounits.Items));
+
+                Logger.Debug(p.Key + "::SendResponseStringListProtoUnits - Execute command: " + ResponseContent);
+
+                byte[] Response = ResponseContent.ToByteArray();
+
+                Package Package = new Package(p.HeaderXuid, p.HeaderField20, p.HeaderServiceId, p.HeaderField22, PacketTypes.BCharacterStringListPacket, p.HeaderRequestId, Response);
+
+                byte[] ToSend = Package.ToByteArray();
+
+                s.Send(ToSend, 0, ToSend.Length);
 
             }
-
-            PacketBCharacterStringListPacket ResponseContent = new PacketBCharacterStringListPacket(StringListTypes.ProtoUnits, r.CharacterId, Content);
-
-            if (s.Logger.IsDebugEnabled)
-                s.Logger.Debug($"Command response: {ResponseContent}");
-
-            byte[] Response = ResponseContent.ToByteArray();
-
-            Package Package = new Package(p.HeaderXuid, p.HeaderField20, p.HeaderServiceId, p.HeaderField22, PacketTypes.BCharacterStringListPacket, p.HeaderRequestId, Response);
-
-            byte[] ToSend = Package.ToByteArray();
-
-            s.Send(ToSend, 0, ToSend.Length);
 
         }
 
@@ -162,30 +168,27 @@ namespace Game.Command
         /// <param name="s">The session.</param>
         /// <param name="p">Packet BRequestRetrievePersistentData.</param>
         /// <param name="r">Packet BRequestRetrievePersistentData content.</param>
-        private static void _SendResponseStringListDesignsLearned(Session s, Package p, PacketBRequestRetrievePersistentData r)
+        public static void SendResponseStringListDesignsLearned(Session s, Package p, PacketBRequestRetrievePersistentData r)
         {
 
-            string Content = File.ReadAllText($"{PathingHelper.tmpDir}BCharacterStringListDesignsLearnedResponse.xml");
+            Player Player = s.GetPlayer();
 
-            if (string.IsNullOrEmpty(Content))
+            if (Player.Empire.CurrentCharacter.Designslearned.Items.Count > 0)
             {
 
-                return;
+                PacketBCharacterStringListPacket ResponseContent = new PacketBCharacterStringListPacket(StringListTypes.DesignsLearned, Player.Empire.CurrentCharacter.Id, string.Join(",", Player.Empire.CurrentCharacter.Designslearned.Items));
+
+                Logger.Debug(p.Key + "::SendResponseStringListDesignsLearned - Execute command: " + ResponseContent);
+
+                byte[] Response = ResponseContent.ToByteArray();
+
+                Package Package = new Package(p.HeaderXuid, p.HeaderField20, p.HeaderServiceId, p.HeaderField22, PacketTypes.BCharacterStringListPacket, p.HeaderRequestId, Response);
+
+                byte[] ToSend = Package.ToByteArray();
+
+                s.Send(ToSend, 0, ToSend.Length);
 
             }
-
-            PacketBCharacterStringListPacket ResponseContent = new PacketBCharacterStringListPacket(StringListTypes.DesignsLearned, r.CharacterId, Content);
-
-            if (s.Logger.IsDebugEnabled)
-                s.Logger.Debug($"Command response: {ResponseContent}");
-
-            byte[] Response = ResponseContent.ToByteArray();
-
-            Package Package = new Package(p.HeaderXuid, p.HeaderField20, p.HeaderServiceId, p.HeaderField22, PacketTypes.BCharacterStringListPacket, p.HeaderRequestId, Response);
-
-            byte[] ToSend = Package.ToByteArray();
-
-            s.Send(ToSend, 0, ToSend.Length);
 
         }
 
@@ -195,30 +198,27 @@ namespace Game.Command
         /// <param name="s">The session.</param>
         /// <param name="p">Packet BRequestRetrievePersistentData.</param>
         /// <param name="r">Packet BRequestRetrievePersistentData content.</param>
-        private static void _SendResponseStringListTechsActive(Session s, Package p, PacketBRequestRetrievePersistentData r)
+        public static void SendResponseStringListTechsActive(Session s, Package p, PacketBRequestRetrievePersistentData r)
         {
 
-            string Content = File.ReadAllText($"{PathingHelper.tmpDir}BCharacterStringListTechsActiveResponse.xml");
+            Player Player = s.GetPlayer();
 
-            if (string.IsNullOrEmpty(Content))
+            if (Player.Empire.CurrentCharacter.Activetechs.Items.Count > 0)
             {
 
-                return;
+                PacketBCharacterStringListPacket ResponseContent = new PacketBCharacterStringListPacket(StringListTypes.TechsActive, Player.Empire.CurrentCharacter.Id, Player.Empire.CurrentCharacter.Activetechs.ToXml);
+
+                Logger.Debug(p.Key + "::SendResponseStringListTechsActive - Execute command: " + ResponseContent);
+
+                byte[] Response = ResponseContent.ToByteArray();
+
+                Package Package = new Package(p.HeaderXuid, p.HeaderField20, p.HeaderServiceId, p.HeaderField22, PacketTypes.BCharacterStringListPacket, p.HeaderRequestId, Response);
+
+                byte[] ToSend = Package.ToByteArray();
+
+                s.Send(ToSend, 0, ToSend.Length);
 
             }
-
-            PacketBCharacterStringListPacket ResponseContent = new PacketBCharacterStringListPacket(StringListTypes.TechsActive, r.CharacterId, Content);
-
-            if (s.Logger.IsDebugEnabled)
-                s.Logger.Debug($"Command response: {ResponseContent}");
-
-            byte[] Response = ResponseContent.ToByteArray();
-
-            Package Package = new Package(p.HeaderXuid, p.HeaderField20, p.HeaderServiceId, p.HeaderField22, PacketTypes.BCharacterStringListPacket, p.HeaderRequestId, Response);
-
-            byte[] ToSend = Package.ToByteArray();
-
-            s.Send(ToSend, 0, ToSend.Length);
 
         }
 
@@ -228,30 +228,27 @@ namespace Game.Command
         /// <param name="s">The session.</param>
         /// <param name="p">Packet BRequestRetrievePersistentData.</param>
         /// <param name="r">Packet BRequestRetrievePersistentData content.</param>
-        private static void _SendResponseStringListTechsCapital(Session s, Package p, PacketBRequestRetrievePersistentData r)
+        public static void SendResponseStringListTechsCapital(Session s, Package p, PacketBRequestRetrievePersistentData r)
         {
 
-            string Content = File.ReadAllText($"{PathingHelper.tmpDir}BCharacterStringListTechsCapitalResponse.xml");
+            Player Player = s.GetPlayer();
 
-            if (string.IsNullOrEmpty(Content))
+            if (Player.Empire.CurrentCharacter.Capitaltechs.Items.Count > 0)
             {
 
-                return;
+                PacketBCharacterStringListPacket ResponseContent = new PacketBCharacterStringListPacket(StringListTypes.TechsCapital, Player.Empire.CurrentCharacter.Id, Player.Empire.CurrentCharacter.Capitaltechs.ToXml);
+
+                Logger.Debug(p.Key + "::SendResponseStringListTechsCapital - Execute command: " + ResponseContent);
+
+                byte[] Response = ResponseContent.ToByteArray();
+
+                Package Package = new Package(p.HeaderXuid, p.HeaderField20, p.HeaderServiceId, p.HeaderField22, PacketTypes.BCharacterStringListPacket, p.HeaderRequestId, Response);
+
+                byte[] ToSend = Package.ToByteArray();
+
+                s.Send(ToSend, 0, ToSend.Length);
 
             }
-
-            PacketBCharacterStringListPacket ResponseContent = new PacketBCharacterStringListPacket(StringListTypes.TechsCapital, r.CharacterId, Content);
-
-            if (s.Logger.IsDebugEnabled)
-                s.Logger.Debug($"Command response: {ResponseContent}");
-
-            byte[] Response = ResponseContent.ToByteArray();
-
-            Package Package = new Package(p.HeaderXuid, p.HeaderField20, p.HeaderServiceId, p.HeaderField22, PacketTypes.BCharacterStringListPacket, p.HeaderRequestId, Response);
-
-            byte[] ToSend = Package.ToByteArray();
-
-            s.Send(ToSend, 0, ToSend.Length);
 
         }
 
@@ -261,30 +258,27 @@ namespace Game.Command
         /// <param name="s">The session.</param>
         /// <param name="p">Packet BRequestRetrievePersistentData.</param>
         /// <param name="r">Packet BRequestRetrievePersistentData content.</param>
-        private static void _SendResponseStringListTraits(Session s, Package p, PacketBRequestRetrievePersistentData r)
+        public static void SendResponseStringListTraits(Session s, Package p, PacketBRequestRetrievePersistentData r)
         {
 
-            string Content = File.ReadAllText($"{PathingHelper.tmpDir}BCharacterStringListTraitsResponse.xml");
+            Player Player = s.GetPlayer();
 
-            if (string.IsNullOrEmpty(Content))
+            if (Player.Empire.CurrentCharacter.Traits.Items.Count > 0)
             {
 
-                return;
+                PacketBCharacterStringListPacket ResponseContent = new PacketBCharacterStringListPacket(StringListTypes.Traits, Player.Empire.CurrentCharacter.Id, Player.Empire.CurrentCharacter.Traits.ToXml);
+
+                Logger.Debug(p.Key + "::SendResponseStringListTraits - Execute command: " + ResponseContent);
+
+                byte[] Response = ResponseContent.ToByteArray();
+
+                Package Package = new Package(p.HeaderXuid, p.HeaderField20, p.HeaderServiceId, p.HeaderField22, PacketTypes.BCharacterStringListPacket, p.HeaderRequestId, Response);
+
+                byte[] ToSend = Package.ToByteArray();
+
+                s.Send(ToSend, 0, ToSend.Length);
 
             }
-
-            PacketBCharacterStringListPacket ResponseContent = new PacketBCharacterStringListPacket(StringListTypes.Traits, r.CharacterId, Content);
-
-            if (s.Logger.IsDebugEnabled)
-                s.Logger.Debug($"Command response: {ResponseContent}");
-
-            byte[] Response = ResponseContent.ToByteArray();
-
-            Package Package = new Package(p.HeaderXuid, p.HeaderField20, p.HeaderServiceId, p.HeaderField22, PacketTypes.BCharacterStringListPacket, p.HeaderRequestId, Response);
-
-            byte[] ToSend = Package.ToByteArray();
-
-            s.Send(ToSend, 0, ToSend.Length);
 
         }
 
@@ -294,63 +288,57 @@ namespace Game.Command
         /// <param name="s">The session.</param>
         /// <param name="p">Packet BRequestRetrievePersistentData.</param>
         /// <param name="r">Packet BRequestRetrievePersistentData content.</param>
-        private static void _SendResponseStringListQuestsCompleted(Session s, Package p, PacketBRequestRetrievePersistentData r)
+        public static void SendResponseStringListQuestsCompleted(Session s, Package p, PacketBRequestRetrievePersistentData r)
         {
 
-            string Content = File.ReadAllText($"{PathingHelper.tmpDir}BCharacterStringListQuestsCompletedResponse.xml");
+            Player Player = s.GetPlayer();
 
-            if (string.IsNullOrEmpty(Content))
+            if (Player.Empire.CurrentCharacter.Questcompleted.Items.Count > 0)
             {
 
-                return;
+                PacketBCharacterStringListPacket ResponseContent = new PacketBCharacterStringListPacket(StringListTypes.QuestsCompleted, Player.Empire.CurrentCharacter.Id, Player.Empire.CurrentCharacter.Questcompleted.ToXml);
+
+                Logger.Debug(p.Key + "::SendResponseStringListQuestsCompleted - Execute command: " + ResponseContent);
+
+                byte[] Response = ResponseContent.ToByteArray();
+
+                Package Package = new Package(p.HeaderXuid, p.HeaderField20, p.HeaderServiceId, p.HeaderField22, PacketTypes.BCharacterStringListPacket, p.HeaderRequestId, Response);
+
+                byte[] ToSend = Package.ToByteArray();
+
+                s.Send(ToSend, 0, ToSend.Length);
 
             }
-
-            PacketBCharacterStringListPacket ResponseContent = new PacketBCharacterStringListPacket(StringListTypes.QuestsCompleted, r.CharacterId, Content);
-
-            if (s.Logger.IsDebugEnabled)
-                s.Logger.Debug($"Command response: {ResponseContent}");
-
-            byte[] Response = ResponseContent.ToByteArray();
-
-            Package Package = new Package(p.HeaderXuid, p.HeaderField20, p.HeaderServiceId, p.HeaderField22, PacketTypes.BCharacterStringListPacket, p.HeaderRequestId, Response);
-
-            byte[] ToSend = Package.ToByteArray();
-
-            s.Send(ToSend, 0, ToSend.Length);
 
         }
 
         /// <summary>
-        /// Sends BCharacterStringListPacket for quests.
+        /// Sends BCharacterStringListPacket for quests instances.
         /// </summary>
         /// <param name="s">The session.</param>
         /// <param name="p">Packet BRequestRetrievePersistentData.</param>
         /// <param name="r">Packet BRequestRetrievePersistentData content.</param>
-        private static void _SendResponseStringListQuests(Session s, Package p, PacketBRequestRetrievePersistentData r)
+        public static void SendResponseStringListQuestsInstances(Session s, Package p, PacketBRequestRetrievePersistentData r)
         {
 
-            string Content = File.ReadAllText($"{PathingHelper.tmpDir}BCharacterStringListQuestsResponse.xml");
+            Player Player = s.GetPlayer();
 
-            if (string.IsNullOrEmpty(Content))
+            if (Player.Empire.CurrentCharacter.Questinstances.Items.Count > 0)
             {
 
-                return;
+                PacketBCharacterStringListPacket ResponseContent = new PacketBCharacterStringListPacket(StringListTypes.Quests, Player.Empire.CurrentCharacter.Id, Player.Empire.CurrentCharacter.Questinstances.ToXml);
+
+                Logger.Debug(p.Key + "::SendResponseStringListQuests - Execute command: " + ResponseContent);
+
+                byte[] Response = ResponseContent.ToByteArray();
+
+                Package Package = new Package(p.HeaderXuid, p.HeaderField20, p.HeaderServiceId, p.HeaderField22, PacketTypes.BCharacterStringListPacket, p.HeaderRequestId, Response);
+
+                byte[] ToSend = Package.ToByteArray();
+
+                s.Send(ToSend, 0, ToSend.Length);
 
             }
-
-            PacketBCharacterStringListPacket ResponseContent = new PacketBCharacterStringListPacket(StringListTypes.Quests, r.CharacterId, Content);
-
-            if (s.Logger.IsDebugEnabled)
-                s.Logger.Debug($"Command response: {ResponseContent}");
-
-            byte[] Response = ResponseContent.ToByteArray();
-
-            Package Package = new Package(p.HeaderXuid, p.HeaderField20, p.HeaderServiceId, p.HeaderField22, PacketTypes.BCharacterStringListPacket, p.HeaderRequestId, Response);
-
-            byte[] ToSend = Package.ToByteArray();
-
-            s.Send(ToSend, 0, ToSend.Length);
 
         }
 
@@ -360,30 +348,27 @@ namespace Game.Command
         /// <param name="s">The session.</param>
         /// <param name="p">Packet BRequestRetrievePersistentData.</param>
         /// <param name="r">Packet BRequestRetrievePersistentData content.</param>
-        private static void _SendResponseStringListCapitalResources(Session s, Package p, PacketBRequestRetrievePersistentData r)
+        public static void SendResponseStringListCapitalResources(Session s, Package p, PacketBRequestRetrievePersistentData r)
         {
 
-            string Content = File.ReadAllText($"{PathingHelper.tmpDir}BCharacterStringListCapitalResourcesResponse.xml");
+            Player Player = s.GetPlayer();
 
-            if (string.IsNullOrEmpty(Content))
+            if (Player.Empire.CurrentCharacter.Capitalresources.Items.Count > 0)
             {
 
-                return;
+                PacketBCharacterStringListPacket ResponseContent = new PacketBCharacterStringListPacket(StringListTypes.CapitalResources, Player.Empire.CurrentCharacter.Id, Player.Empire.CurrentCharacter.Capitalresources.ToXml);
+
+                Logger.Debug(p.Key + "::SendResponseStringListCapitalResources - Execute command: " + ResponseContent);
+
+                byte[] Response = ResponseContent.ToByteArray();
+
+                Package Package = new Package(p.HeaderXuid, p.HeaderField20, p.HeaderServiceId, p.HeaderField22, PacketTypes.BCharacterStringListPacket, p.HeaderRequestId, Response);
+
+                byte[] ToSend = Package.ToByteArray();
+
+                s.Send(ToSend, 0, ToSend.Length);
 
             }
-
-            PacketBCharacterStringListPacket ResponseContent = new PacketBCharacterStringListPacket(StringListTypes.CapitalResources, r.CharacterId, Content);
-
-            if (s.Logger.IsDebugEnabled)
-                s.Logger.Debug($"Command response: {ResponseContent}");
-
-            byte[] Response = ResponseContent.ToByteArray();
-
-            Package Package = new Package(p.HeaderXuid, p.HeaderField20, p.HeaderServiceId, p.HeaderField22, PacketTypes.BCharacterStringListPacket, p.HeaderRequestId, Response);
-
-            byte[] ToSend = Package.ToByteArray();
-
-            s.Send(ToSend, 0, ToSend.Length);
 
         }
 
@@ -393,30 +378,29 @@ namespace Game.Command
         /// <param name="s">The session.</param>
         /// <param name="p">Packet BRequestRetrievePersistentData.</param>
         /// <param name="r">Packet BRequestRetrievePersistentData content.</param>
-        private static void _SendResponseStringListRegions(Session s, Package p, PacketBRequestRetrievePersistentData r)
+        public static void SendResponseStringListRegions(Session s, Package p, PacketBRequestRetrievePersistentData r)
         {
 
-            string Content = File.ReadAllText($"{PathingHelper.tmpDir}BCharacterStringListRegionsResponse.xml");
+            Player Player = s.GetPlayer();
 
-            if (string.IsNullOrEmpty(Content))
+            string Content = RegionHelper.GetRegionsXML();
+
+            if (!string.IsNullOrEmpty(Content))
             {
 
-                return;
+                PacketBCharacterStringListPacket ResponseContent = new PacketBCharacterStringListPacket(StringListTypes.Regions, Player.Empire.CurrentCharacter.Id, Content);
 
-            }
+                Logger.Debug(p.Key + "::SendResponseStringListRegions - Execute command: " + ResponseContent);
 
-            PacketBCharacterStringListPacket ResponseContent = new PacketBCharacterStringListPacket(StringListTypes.Regions, r.CharacterId, Content);
+                byte[] Response = ResponseContent.ToByteArray();
 
-            if (s.Logger.IsDebugEnabled)
-                s.Logger.Debug($"Command response: {ResponseContent}");
+                Package Package = new Package(p.HeaderXuid, p.HeaderField20, p.HeaderServiceId, p.HeaderField22, PacketTypes.BCharacterStringListPacket, p.HeaderRequestId, Response);
 
-            byte[] Response = ResponseContent.ToByteArray();
+                byte[] ToSend = Package.ToByteArray();
 
-            Package Package = new Package(p.HeaderXuid, p.HeaderField20, p.HeaderServiceId, p.HeaderField22, PacketTypes.BCharacterStringListPacket, p.HeaderRequestId, Response);
+                s.Send(ToSend, 0, ToSend.Length);
 
-            byte[] ToSend = Package.ToByteArray();
-
-            s.Send(ToSend, 0, ToSend.Length);            
+            }                        
 
         }
 
@@ -426,30 +410,27 @@ namespace Game.Command
         /// <param name="s">The session.</param>
         /// <param name="p">Packet BRequestRetrievePersistentData.</param>
         /// <param name="r">Packet BRequestRetrievePersistentData content.</param>
-        private static void _SendResponseStringListRegionsUnlocked(Session s, Package p, PacketBRequestRetrievePersistentData r)
+        public static void SendResponseStringListRegionsUnlocked(Session s, Package p, PacketBRequestRetrievePersistentData r)
         {
 
-            string Content = File.ReadAllText($"{PathingHelper.tmpDir}BCharacterStringListRegionsUnlockedResponse.xml");
+            Player Player = s.GetPlayer();
 
-            if (string.IsNullOrEmpty(Content))
+            if (Player.Empire.CurrentCharacter.Regionsunlocked.Items.Count > 0)
             {
 
-                return;
+                PacketBCharacterStringListPacket ResponseContent = new PacketBCharacterStringListPacket(StringListTypes.RegionsUnlocked, Player.Empire.CurrentCharacter.Id, Player.Empire.CurrentCharacter.Regionsunlocked.ToXml);
+
+                Logger.Debug(p.Key + "::SendResponseStringListRegionsUnlocked - Execute command: " + ResponseContent);
+
+                byte[] Response = ResponseContent.ToByteArray();
+
+                Package Package = new Package(p.HeaderXuid, p.HeaderField20, p.HeaderServiceId, p.HeaderField22, PacketTypes.BCharacterStringListPacket, p.HeaderRequestId, Response);
+
+                byte[] ToSend = Package.ToByteArray();
+
+                s.Send(ToSend, 0, ToSend.Length);
 
             }
-
-            PacketBCharacterStringListPacket ResponseContent = new PacketBCharacterStringListPacket(StringListTypes.RegionsUnlocked, r.CharacterId, Content);
-
-            if (s.Logger.IsDebugEnabled)
-                s.Logger.Debug($"Command response: {ResponseContent}");
-
-            byte[] Response = ResponseContent.ToByteArray();
-
-            Package Package = new Package(p.HeaderXuid, p.HeaderField20, p.HeaderServiceId, p.HeaderField22, PacketTypes.BCharacterStringListPacket, p.HeaderRequestId, Response);
-
-            byte[] ToSend = Package.ToByteArray();
-
-            s.Send(ToSend, 0, ToSend.Length);
 
         }
 
@@ -459,30 +440,27 @@ namespace Game.Command
         /// <param name="s">The session.</param>
         /// <param name="p">Packet BRequestRetrievePersistentData.</param>
         /// <param name="r">Packet BRequestRetrievePersistentData content.</param>
-        private static void _SendResponseStringListAdvisorsAvailable(Session s, Package p, PacketBRequestRetrievePersistentData r)
+        public static void SendResponseStringListAdvisorsAvailable(Session s, Package p, PacketBRequestRetrievePersistentData r)
         {
 
-            string Content = File.ReadAllText($"{PathingHelper.tmpDir}BCharacterStringListAdvisorsAvailableResponse.xml");
+            Player Player = s.GetPlayer();
 
-            if (string.IsNullOrEmpty(Content))
+            if (Player.Empire.CurrentCharacter.Availableadvisors.Items.Count > 0)
             {
 
-                return;
+                PacketBCharacterStringListPacket ResponseContent = new PacketBCharacterStringListPacket(StringListTypes.AdvisorsAvailable, Player.Empire.CurrentCharacter.Id, Player.Empire.CurrentCharacter.Availableadvisors.ToXml);
+
+                Logger.Debug(p.Key + "::SendResponseStringListAdvisorsAvailable - Execute command: " + ResponseContent);
+
+                byte[] Response = ResponseContent.ToByteArray();
+
+                Package Package = new Package(p.HeaderXuid, p.HeaderField20, p.HeaderServiceId, p.HeaderField22, PacketTypes.BCharacterStringListPacket, p.HeaderRequestId, Response);
+
+                byte[] ToSend = Package.ToByteArray();
+
+                s.Send(ToSend, 0, ToSend.Length);
 
             }
-
-            PacketBCharacterStringListPacket ResponseContent = new PacketBCharacterStringListPacket(StringListTypes.AdvisorsAvailable, r.CharacterId, Content);
-
-            if (s.Logger.IsDebugEnabled)
-                s.Logger.Debug($"Command response: {ResponseContent}");
-
-            byte[] Response = ResponseContent.ToByteArray();
-
-            Package Package = new Package(p.HeaderXuid, p.HeaderField20, p.HeaderServiceId, p.HeaderField22, PacketTypes.BCharacterStringListPacket, p.HeaderRequestId, Response);
-
-            byte[] ToSend = Package.ToByteArray();
-
-            s.Send(ToSend, 0, ToSend.Length);
 
         }
 
@@ -492,30 +470,29 @@ namespace Game.Command
         /// <param name="s">The session.</param>
         /// <param name="p">Packet BRequestRetrievePersistentData.</param>
         /// <param name="r">Packet BRequestRetrievePersistentData content.</param>
-        private static void _SendResponseStringListAdvisorsAssigned(Session s, Package p, PacketBRequestRetrievePersistentData r)
+        public static void SendResponseStringListAdvisorsAssigned(Session s, Package p, PacketBRequestRetrievePersistentData r)
         {
 
-            string Content = File.ReadAllText($"{PathingHelper.tmpDir}BCharacterStringListAdvisorsAssignedResponse.xml");
+            Player Player = s.GetPlayer();
 
-            if (string.IsNullOrEmpty(Content))
+            string[] arr = { Player.Empire.CurrentCharacter.Assignedadvisors.Age1, Player.Empire.CurrentCharacter.Assignedadvisors.Age2, Player.Empire.CurrentCharacter.Assignedadvisors.Age3, Player.Empire.CurrentCharacter.Assignedadvisors.Age4 };
+
+            if (arr.Length > 0)
             {
 
-                return;
+                PacketBCharacterStringListPacket ResponseContent = new PacketBCharacterStringListPacket(StringListTypes.AdvisorsAssigned, Player.Empire.CurrentCharacter.Id, string.Join(",", arr.Where(i => !String.IsNullOrEmpty(i))));
 
-            }
+                Logger.Debug(p.Key + "::SendResponseStringListAdvisorsAssigned - Execute command: " + ResponseContent);
 
-            PacketBCharacterStringListPacket ResponseContent = new PacketBCharacterStringListPacket(StringListTypes.AdvisorsAssigned, r.CharacterId, Content);
+                byte[] Response = ResponseContent.ToByteArray();
 
-            if (s.Logger.IsDebugEnabled)
-                s.Logger.Debug($"Command response: {ResponseContent}");
+                Package Package = new Package(p.HeaderXuid, p.HeaderField20, p.HeaderServiceId, p.HeaderField22, PacketTypes.BCharacterStringListPacket, p.HeaderRequestId, Response);
 
-            byte[] Response = ResponseContent.ToByteArray();
+                byte[] ToSend = Package.ToByteArray();
 
-            Package Package = new Package(p.HeaderXuid, p.HeaderField20, p.HeaderServiceId, p.HeaderField22, PacketTypes.BCharacterStringListPacket, p.HeaderRequestId, Response);
+                s.Send(ToSend, 0, ToSend.Length);
 
-            byte[] ToSend = Package.ToByteArray();
-
-            s.Send(ToSend, 0, ToSend.Length);
+            }            
 
         }
 
@@ -525,30 +502,27 @@ namespace Game.Command
         /// <param name="s">The session.</param>
         /// <param name="p">Packet BRequestRetrievePersistentData.</param>
         /// <param name="r">Packet BRequestRetrievePersistentData content.</param>
-        private static void _SendResponseStringListCharacterConfig(Session s, Package p, PacketBRequestRetrievePersistentData r)
+        public static void SendResponseStringListCharacterConfig(Session s, Package p, PacketBRequestRetrievePersistentData r)
         {
 
-            string Content = File.ReadAllText($"{PathingHelper.tmpDir}BCharacterStringListCharacterConfigResponse.xml");
+            Player Player = s.GetPlayer();
 
-            if (string.IsNullOrEmpty(Content))
+            if (Player.Empire.CurrentCharacter.Configs.Items.Count > 0)
             {
 
-                return;
+                PacketBCharacterStringListPacket ResponseContent = new PacketBCharacterStringListPacket(StringListTypes.CharacterConfig, Player.Empire.CurrentCharacter.Id, Player.Empire.CurrentCharacter.Configs.ToXml);
+
+                Logger.Debug(p.Key + "::SendResponseStringListCharacterConfig - Execute command: " + ResponseContent);
+
+                byte[] Response = ResponseContent.ToByteArray();
+
+                Package Package = new Package(p.HeaderXuid, p.HeaderField20, p.HeaderServiceId, p.HeaderField22, PacketTypes.BCharacterStringListPacket, p.HeaderRequestId, Response);
+
+                byte[] ToSend = Package.ToByteArray();
+
+                s.Send(ToSend, 0, ToSend.Length);
 
             }
-
-            PacketBCharacterStringListPacket ResponseContent = new PacketBCharacterStringListPacket(StringListTypes.CharacterConfig, r.CharacterId, Content);
-
-            if (s.Logger.IsDebugEnabled)
-                s.Logger.Debug($"Command response: {ResponseContent}");
-
-            byte[] Response = ResponseContent.ToByteArray();
-
-            Package Package = new Package(p.HeaderXuid, p.HeaderField20, p.HeaderServiceId, p.HeaderField22, PacketTypes.BCharacterStringListPacket, p.HeaderRequestId, Response);
-
-            byte[] ToSend = Package.ToByteArray();
-
-            s.Send(ToSend, 0, ToSend.Length);
 
         }
 
@@ -558,65 +532,29 @@ namespace Game.Command
         /// <param name="s">The session.</param>
         /// <param name="p">Packet BRequestRetrievePersistentData.</param>
         /// <param name="r">Packet BRequestRetrievePersistentData content.</param>
-        private static void _SendResponseStringListCraftSchools(Session s, Package p, PacketBRequestRetrievePersistentData r)
+        public static void SendResponseStringListCraftSchools(Session s, Package p, PacketBRequestRetrievePersistentData r)
         {
 
-            string Content = File.ReadAllText($"{PathingHelper.tmpDir}BCharacterStringListCraftSchoolsResponse.xml");
+            Player Player = s.GetPlayer();
 
-            if (string.IsNullOrEmpty(Content))
+            if (Player.Empire.CurrentCharacter.Craftschools.Items.Count > 0)
             {
 
-                return;
+                PacketBCharacterStringListPacket ResponseContent = new PacketBCharacterStringListPacket(StringListTypes.CraftSchools, Player.Empire.CurrentCharacter.Id, Player.Empire.CurrentCharacter.Craftschools.ToXml);
+
+                Logger.Debug(p.Key + "::SendResponseStringListCraftSchools - Execute command: " + ResponseContent);
+
+                byte[] Response = ResponseContent.ToByteArray();
+
+                Package Package = new Package(p.HeaderXuid, p.HeaderField20, p.HeaderServiceId, p.HeaderField22, PacketTypes.BCharacterStringListPacket, p.HeaderRequestId, Response);
+
+                byte[] ToSend = Package.ToByteArray();
+
+                s.Send(ToSend, 0, ToSend.Length);
 
             }
 
-            PacketBCharacterStringListPacket ResponseContent = new PacketBCharacterStringListPacket(StringListTypes.CraftSchools, r.CharacterId, Content);
-
-            if (s.Logger.IsDebugEnabled)
-                s.Logger.Debug($"Command response: {ResponseContent}");
-
-            byte[] Response = ResponseContent.ToByteArray();
-
-            Package Package = new Package(p.HeaderXuid, p.HeaderField20, p.HeaderServiceId, p.HeaderField22, PacketTypes.BCharacterStringListPacket, p.HeaderRequestId, Response);
-
-            byte[] ToSend = Package.ToByteArray();
-
-            s.Send(ToSend, 0, ToSend.Length);
-
-        }
-
-        /// <summary>
-        /// Sends BCharacterStringListPacket for vendor kickbacks.
-        /// </summary>
-        /// <param name="s">The session.</param>
-        /// <param name="p">Packet BRequestRetrievePersistentData.</param>
-        /// <param name="r">Packet BRequestRetrievePersistentData content.</param>
-        private static void _SendResponseStringListVendorKickbacks(Session s, Package p, PacketBRequestRetrievePersistentData r)
-        {
-
-            string Content = File.ReadAllText($"{PathingHelper.tmpDir}BCharacterStringListVendorKickbacksResponse.xml");
-
-            if (string.IsNullOrEmpty(Content))
-            {
-
-                return;
-
-            }
-
-            PacketBCharacterStringListPacket ResponseContent = new PacketBCharacterStringListPacket(StringListTypes.VendorKickbacks, r.CharacterId, Content);
-
-            if (s.Logger.IsDebugEnabled)
-                s.Logger.Debug($"Command response: {ResponseContent}");
-
-            byte[] Response = ResponseContent.ToByteArray();
-
-            Package Package = new Package(p.HeaderXuid, p.HeaderField20, p.HeaderServiceId, p.HeaderField22, PacketTypes.BCharacterStringListPacket, p.HeaderRequestId, Response);
-
-            byte[] ToSend = Package.ToByteArray();
-
-            s.Send(ToSend, 0, ToSend.Length);
-
-        }
+        }        
 
         /// <summary>
         /// Sends BCharacterStringListPacket for vanities.
@@ -624,30 +562,27 @@ namespace Game.Command
         /// <param name="s">The session.</param>
         /// <param name="p">Packet BRequestRetrievePersistentData.</param>
         /// <param name="r">Packet BRequestRetrievePersistentData content.</param>
-        private static void _SendResponseStringListVanities(Session s, Package p, PacketBRequestRetrievePersistentData r)
+        public static void SendResponseStringListVanities(Session s, Package p, PacketBRequestRetrievePersistentData r)
         {
 
-            string Content = File.ReadAllText($"{PathingHelper.tmpDir}BCharacterStringListVanitiesResponse.xml");
+            Player Player = s.GetPlayer();
 
-            if (string.IsNullOrEmpty(Content))
+            if (Player.Empire.CurrentCharacter.Vanities.Items.Count > 0)
             {
 
-                return;
+                PacketBCharacterStringListPacket ResponseContent = new PacketBCharacterStringListPacket(StringListTypes.Vanities, Player.Empire.CurrentCharacter.Id, Player.Empire.CurrentCharacter.Vanities.ToXml);
+
+                Logger.Debug(p.Key + "::SendResponseStringListVanities - Execute command: " + ResponseContent);
+
+                byte[] Response = ResponseContent.ToByteArray();
+
+                Package Package = new Package(p.HeaderXuid, p.HeaderField20, p.HeaderServiceId, p.HeaderField22, PacketTypes.BCharacterStringListPacket, p.HeaderRequestId, Response);
+
+                byte[] ToSend = Package.ToByteArray();
+
+                s.Send(ToSend, 0, ToSend.Length);
 
             }
-
-            PacketBCharacterStringListPacket ResponseContent = new PacketBCharacterStringListPacket(StringListTypes.Vanities, r.CharacterId, Content);
-
-            if (s.Logger.IsDebugEnabled)
-                s.Logger.Debug($"Command response: {ResponseContent}");
-
-            byte[] Response = ResponseContent.ToByteArray();
-
-            Package Package = new Package(p.HeaderXuid, p.HeaderField20, p.HeaderServiceId, p.HeaderField22, PacketTypes.BCharacterStringListPacket, p.HeaderRequestId, Response);
-
-            byte[] ToSend = Package.ToByteArray();
-
-            s.Send(ToSend, 0, ToSend.Length);
 
         }
 
@@ -657,30 +592,27 @@ namespace Game.Command
         /// <param name="s">The session.</param>
         /// <param name="p">Packet BRequestRetrievePersistentData.</param>
         /// <param name="r">Packet BRequestRetrievePersistentData content.</param>
-        private static void _SendGameCurrency(Session s, Package p, PacketBRequestRetrievePersistentData r)
+        public static void SendGameCurrency(Session s, Package p, PacketBRequestRetrievePersistentData r)
         {
 
-            string Content = File.ReadAllText($"{PathingHelper.tmpDir}BGameCurrencyPacketGameCurrencyResponse.xml");
+            Player Player = s.GetPlayer();
 
-            if (string.IsNullOrEmpty(Content))
+            if (Player.Gamecurrencys.Items.Count > 0)
             {
 
-                return;
+                PacketBGameCurrencyPacket ResponseContent = new PacketBGameCurrencyPacket(Player.Gamecurrencys.ToXml);
 
-            }
+                Logger.Debug(p.Key + "::SendGameCurrency - Execute command: " + ResponseContent);
 
-            PacketBGameCurrencyPacket ResponseContent = new PacketBGameCurrencyPacket(Content);
+                byte[] Response = ResponseContent.ToByteArray();
 
-            if (s.Logger.IsDebugEnabled)
-                s.Logger.Debug($"Command response: {ResponseContent}");
+                Package Package = new Package(p.HeaderXuid, p.HeaderField20, p.HeaderServiceId, p.HeaderField22, PacketTypes.BGameCurrencyPacket, p.HeaderRequestId, Response);
 
-            byte[] Response = ResponseContent.ToByteArray();
+                byte[] ToSend = Package.ToByteArray();
 
-            Package Package = new Package(p.HeaderXuid, p.HeaderField20, p.HeaderServiceId, p.HeaderField22, PacketTypes.BGameCurrencyPacket, p.HeaderRequestId, Response);
+                s.Send(ToSend, 0, ToSend.Length);
 
-            byte[] ToSend = Package.ToByteArray();
-
-            s.Send(ToSend, 0, ToSend.Length);
+            }            
 
         }
 
@@ -690,13 +622,14 @@ namespace Game.Command
         /// <param name="s">The session.</param>
         /// <param name="p">Packet BRequestRetrievePersistentData.</param>
         /// <param name="r">Packet BRequestRetrievePersistentData content.</param>
-        private static void _SendCharacterPersistenceDone(Session s, Package p, PacketBRequestRetrievePersistentData r)
+        public static void SendCharacterPersistenceDone(Session s, Package p, PacketBRequestRetrievePersistentData r)
         {
 
-            PacketBCharacterPersistenceDone ResponseContent = new PacketBCharacterPersistenceDone(r.CharacterId);
+            Player Player = s.GetPlayer();
 
-            if (s.Logger.IsDebugEnabled)
-                s.Logger.Debug($"Command response: {ResponseContent}");
+            PacketBCharacterPersistenceDone ResponseContent = new PacketBCharacterPersistenceDone(Player.Empire.CurrentCharacter.Id);
+
+            Logger.Debug(p.Key + "::SendCharacterPersistenceDone - Execute command: " + ResponseContent);
 
             byte[] Response = ResponseContent.ToByteArray();
 
@@ -708,10 +641,80 @@ namespace Game.Command
 
         }
 
+        /// <summary>
+        /// Sends BQuestGiverSpawnUnitPacket for quest givers.
+        /// </summary>
+        /// <param name="s">The session.</param>
+        /// <param name="p">Packet BRequestRetrievePersistentData.</param>
+        /// <param name="r">Packet BRequestRetrievePersistentData content.</param>
+        public static void SendResponseQuestGivers(Session s, Package p, PacketBRequestRetrievePersistentData r)
+        {
 
+            Player Player = s.GetPlayer();
 
+            if (Player.Empire.CurrentCharacter.Questgivers.Items.Count > 0)
+            {
 
+                int Currentregion = Player.Empire.CurrentCharacter.Currentregion;
 
+                foreach (ModelQuestgiver Questgiver in Database.Questgivers.Values.Where(key => (key.Region == Currentregion || key.Altregion == Currentregion)))
+                {
+
+                    if (Player.Empire.CurrentCharacter.Questgivers.Items.ContainsKey(Questgiver.Name))
+                    {
+
+                        PacketBQuestGiverSpawnUnitPacket ResponseContent = new PacketBQuestGiverSpawnUnitPacket(Questgiver.Name, Questgiver.Placeunittype, Questgiver.ToXml, Questgiver.Greetingstringid, Questgiver.Greetingsoundset, Questgiver.Farewellsoundset, Questgiver.Artset);
+
+                        Logger.Debug(p.Key + "::SendResponseQuestGivers - Execute command: " + ResponseContent);
+
+                        byte[] Response = ResponseContent.ToByteArray();
+
+                        Package Package = new Package(p.HeaderXuid, p.HeaderField20, p.HeaderServiceId, p.HeaderField22, PacketTypes.BQuestGiverSpawnUnitPacket, p.HeaderRequestId, Response);
+
+                        byte[] ToSend = Package.ToByteArray();
+
+                        s.Send(ToSend, 0, ToSend.Length);
+
+                    }
+
+                }
+
+            }
+
+        }
+
+        /// <summary>
+        /// Sends BCharacterStringListPacket for craft schools.
+        /// </summary>
+        /// <param name="s">The session.</param>
+        /// <param name="p">Packet BRequestRetrievePersistentData.</param>
+        /// <param name="r">Packet BRequestRetrievePersistentData content.</param>
+        public static void SendResponseQuestList(Session s, Package p, PacketBRequestRetrievePersistentData r)
+        {
+
+            Player Player = s.GetPlayer();
+
+            /*
+            if (Player.Empire.CurrentCharacter.Craftschools.Items.Count > 0)
+            {
+
+                PacketBCharacterStringListPacket ResponseContent = new PacketBCharacterStringListPacket(StringListTypes.CraftSchools, Player.Empire.CurrentCharacter.Id, Player.Empire.CurrentCharacter.Craftschools.ToXml);
+
+                Logger.DebugFormat("BRequestRetrievePersistentData::SendResponseStringListCraftSchools - Response: {0}", ResponseContent);
+
+                byte[] Response = ResponseContent.ToByteArray();
+
+                Package Package = new Package(p.HeaderXuid, p.HeaderField20, p.HeaderServiceId, p.HeaderField22, PacketTypes.BCharacterStringListPacket, p.HeaderRequestId, Response);
+
+                byte[] ToSend = Package.ToByteArray();
+
+                s.Send(ToSend, 0, ToSend.Length);
+
+            }
+
+    */
+
+        }
     }
 
 }

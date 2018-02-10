@@ -1,4 +1,5 @@
-﻿using System.Xml.Serialization;
+﻿using System.ComponentModel;
+using System.Xml.Serialization;
 
 
 namespace Libraries.database.models.quest.targets
@@ -23,15 +24,17 @@ namespace Libraries.database.models.quest.targets
         public string Name { get; set; }
 
         [XmlElement(ElementName = "protoname")]
+        [DefaultValue(null)]
         public string Protoname { get; set; }
 
         [XmlElement(ElementName = "count")]
-        public string Count { get; set; }
+        public int Count { get; set; }
 
         [XmlElement(ElementName = "team")]
-        public string Team { get; set; }
+        public int Team { get; set; }
 
         [XmlElement(ElementName = "area")]
+        [DefaultValue(null)]
         public string Area { get; set; }
 
         [XmlElement(ElementName = "overrides")]

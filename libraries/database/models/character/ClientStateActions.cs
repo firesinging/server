@@ -1,5 +1,6 @@
 ﻿using System.Xml.Serialization;
 using System.Collections.Generic;
+using System.ComponentModel;
 
 
 namespace Libraries.database.models.character
@@ -14,8 +15,16 @@ namespace Libraries.database.models.character
     public class ModelCharacterClientStateActions
     {
 
+        public ModelCharacterClientStateActions()
+        {
+
+            Items = new List<ModelCharacterClientStateAction>();            
+
+        }
+
         [XmlElement(ElementName = "action")]
-        public List<ModelCharacterClientStateAction> Action { get; set; }
+        [DefaultValue(null)]
+        public List<ModelCharacterClientStateAction> Items { get; set; }
 
     }
 

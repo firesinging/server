@@ -1,7 +1,5 @@
-﻿using System.Xml.Serialization;
-
-using Libraries.helpers.xml;
-
+﻿using System.Collections.Generic;
+using System.Xml.Serialization;
 
 namespace Libraries.database.models
 {
@@ -21,12 +19,12 @@ namespace Libraries.database.models
         public ModelQuests()
         {
 
-            Dictionary = new SerDictionaryQuests<int, ModelQuest>();
+            Items = new Dictionary<int, ModelQuest>();
 
         }
 
         [XmlIgnore]
-        public SerDictionaryQuests<int, ModelQuest> Dictionary { get; private set; }
+        public Dictionary<int, ModelQuest> Items { get; private set; }
 
         [XmlElement(ElementName = "quest")]
         public ModelQuest[] ModelQuest
@@ -42,12 +40,12 @@ namespace Libraries.database.models
             set
             {
 
-                Dictionary = new SerDictionaryQuests<int, ModelQuest>();
+                Items = new Dictionary<int, ModelQuest>();
 
                 foreach (ModelQuest Item in value)
                 {
 
-                    Dictionary.Add(Item.Id, Item);
+                    Items.Add(Item.Id, Item);
 
                 }
 

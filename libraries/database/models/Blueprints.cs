@@ -1,6 +1,5 @@
-﻿using System.Xml.Serialization;
-
-using Libraries.helpers.xml;
+﻿using System.Collections.Generic;
+using System.Xml.Serialization;
 
 
 namespace Libraries.database.models
@@ -21,12 +20,12 @@ namespace Libraries.database.models
         public ModelBlueprints()
         {
 
-            Dictionary = new SerDictionaryBlueprints<string, ModelBlueprint>();
+            Items = new Dictionary<string, ModelBlueprint>();
 
         }
 
         [XmlIgnore]
-        public SerDictionaryBlueprints<string, ModelBlueprint> Dictionary { get; private set; }
+        public Dictionary<string, ModelBlueprint> Items { get; private set; }
 
         [XmlElement(ElementName = "blueprint")]
         public ModelBlueprint[] ModelBlueprint
@@ -42,7 +41,7 @@ namespace Libraries.database.models
             set
             {
 
-                Dictionary = new SerDictionaryBlueprints<string, ModelBlueprint>();
+                Items = new Dictionary<string, ModelBlueprint>();
 
                 if (value != null)
                 {
@@ -50,7 +49,7 @@ namespace Libraries.database.models
                     foreach (var Item in value)
                     {
 
-                        Dictionary.Add(Item.Name, Item);
+                        Items.Add(Item.Name, Item);
 
                     }
 

@@ -1,8 +1,10 @@
 ﻿using SuperSocket.SocketBase.Command;
 
-using Libraries.helpers.package;
 using Libraries.packages.game;
 using Libraries.enums;
+using Libraries.logger;
+
+using Libraries.helpers.package;
 
 
 namespace Game.Command
@@ -21,12 +23,7 @@ namespace Game.Command
 
             var Request = new PacketBRequestPopulateVendor(p.Content);
 
-            if (s.Logger.IsDebugEnabled)
-            {
-
-                s.Logger.Debug($"Execute command: {Request}");
-
-            }
+            Logger.Debug(p.Key + "::ExecuteCommand - Execute command: " + Request);
 
             //@TODO
 

@@ -1,10 +1,10 @@
 ﻿using SuperSocket.SocketBase.Command;
 
-using Libraries.helpers.package;
 using Libraries.packages.chat;
-
 using Libraries.enums;
-using Libraries.player;
+using Libraries.logger;
+
+using Libraries.helpers.package;
 
 
 namespace Chat.command
@@ -23,19 +23,11 @@ namespace Chat.command
 
             PacketBBotNetBasePacketCustomChatPing Request = new PacketBBotNetBasePacketCustomChatPing(p.Content);
 
-            //@TODO - Create custom chat level to spam only when requested
-            if (s.Logger.IsDebugEnabled)
-            {
-            
-                s.Logger.Debug($"Execute command: {Request}");
-           
-            }
+            Logger.Chat(p.Key + "::ExecuteCommand - Execute command: " + Request);
 
             PacketBBotNetBasePacketCustomChatPong ResponseContent = new PacketBBotNetBasePacketCustomChatPong(15);
 
-            //@TODO - Create custom chat level to spam only when requested
-            //if (s.Logger.IsDebugEnabled)
-            //    s.Logger.Debug($"Command response: {ResponseContent}");
+            Logger.Chat(p.Key + "::ExecuteCommand - Execute command: " + ResponseContent);
 
             byte[] Response = ResponseContent.ToByteArray();
 

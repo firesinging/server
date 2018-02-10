@@ -1,4 +1,5 @@
-﻿using System.Xml.Serialization;
+﻿using System.ComponentModel;
+using System.Xml.Serialization;
 
 
 namespace Libraries.database.models.quest.targets
@@ -29,15 +30,19 @@ namespace Libraries.database.models.quest.targets
         public int Team { get; set; }
 
         [XmlElement(ElementName = "area")]
+        [DefaultValue(null)]
         public string Area { get; set; }
 
         [XmlElement(ElementName = "groupfilename")]
+        [DefaultValue(null)]
         public string Groupfilename { get; set; }
 
         [XmlElement(ElementName = "rottype")]
+        [DefaultValue(null)]
         public string Rottype { get; set; }
 
         [XmlElement(ElementName = "rotateunitorientations")]
+        [DefaultValue(null)]
         public string Rotateunitorientations { get; set; }
 
     }

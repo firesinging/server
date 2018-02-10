@@ -1,6 +1,10 @@
-﻿using System.Xml.Serialization;
+﻿using System;
+using System.Net;
+using System.ComponentModel;
+using System.Xml.Serialization;
 
-using Libraries.helpers.player;
+using Libraries.empire;
+using Libraries.database.models.player;
 
 
 namespace Libraries.database.models
@@ -10,46 +14,87 @@ namespace Libraries.database.models
     /// Player model
     /// </summary>
 
-    [XmlRoot(ElementName = "player")]
-    public class ModelPlayer
+    [XmlRoot(ElementName = "Player")]
+    public class ModelPlayer : ModelBase
     {
+
+        public ModelPlayer()
+        {
+
+            Gamecurrencys = new ModelPlayerGamecurrencys();
+            Settings = new ModelPlayerSettings();
+            Mailmessages = new ModelPlayerMailmessages();
+            Vault = new ModelPlayerVault();
+
+        }        
 
         [XmlAttribute(AttributeName = "Id")]
         public long Id { get; set; }
 
         [XmlElement(ElementName = "Name")]
+        [DefaultValue(null)]
         public string Name { get; set; }
 
         [XmlElement(ElementName = "Password")]
-        public string Password
+        [DefaultValue(null)]
+        public string Password { get; set; }
+
+        [XmlElement(ElementName = "Role")]
+        [DefaultValue(1)]
+        public int Role { get; set; }
+
+        [XmlElement(ElementName = "Ban")]
+        public bool Ban { get; set; }
+
+        [XmlElement(ElementName = "Lastsave")]
+        public DateTime Lastsave = DateTime.UtcNow;
+
+        [XmlElement(ElementName = "GameCurrencys")]
+        public ModelPlayerGamecurrencys Gamecurrencys { get; set; }
+
+        [XmlElement(ElementName = "Settings")]
+        public ModelPlayerSettings Settings { get; set; }
+
+        [XmlElement(ElementName = "MailMessages")]
+        public ModelPlayerMailmessages Mailmessages { get; set; }
+
+        [XmlElement(ElementName = "EmpireVault")]
+        public ModelPlayerVault Vault { get; set; }
+
+        [XmlIgnore]
+        public string SessionAuthentication { get; set; }
+
+        [XmlIgnore]
+        public string SessionChat { get; set; }
+
+        [XmlIgnore]
+        public string SessionGame { get; set; }
+
+        [XmlIgnore]
+        public IPAddress Ip { get; set; }
+
+        [XmlIgnore]
+        private Empire _Empire;
+
+        [XmlIgnore]
+        public Empire Empire
         {
 
             get
             {
 
-                return this.Password;
-
-            }
-
-            set
-            {
-
-                if (string.IsNullOrEmpty(value))
+                if (_Empire == null)
                 {
 
-                    return;
+                    _Empire = Database.Empires.Get(Id);
 
                 }
 
-                PlayerHelper.CreateHash(value);
+                return _Empire;
 
             }
 
-
         }
-
-        [XmlElement(ElementName = "Role")]
-        public int Role { get; set; }
 
     }
 

@@ -59,29 +59,35 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="character\capitalresources\CapitalResources.cs" />
+    <Compile Include="character\Characters.cs" />
+    <Compile Include="character\Character.cs" />
+    <Compile Include="character\configs\Configs.cs" />
+    <Compile Include="character\resources\Resources.cs" />
     <Compile Include="database\Database.cs" />
+    <Compile Include="database\models\Characters.cs" />
     <Compile Include="database\models\Empire.cs" />
     <Compile Include="database\models\Character.cs" />
+    <Compile Include="database\models\Empires.cs" />
     <Compile Include="database\models\empire\Allianceinfo.cs" />
     <Compile Include="database\models\empire\CharacterlistCharacterData.cs" />
     <Compile Include="database\models\empire\Characterlist.cs" />
     <Compile Include="database\models\empire\EmpireOffers.cs" />
-    <Compile Include="database\models\empire\Empire.cs" />
-    <Compile Include="database\models\empire\VaultInventoryItemCost.cs" />
-    <Compile Include="database\models\empire\VaultInventoryItem.cs" />
-    <Compile Include="database\models\empire\VaultInventoryItems.cs" />
-    <Compile Include="database\models\empire\VaultInventory.cs" />
-    <Compile Include="database\models\empire\Vault.cs" />
-    <Compile Include="database\models\empire\MailmessageTextMessage.cs" />
-    <Compile Include="database\models\empire\MailmessageItem.cs" />
-    <Compile Include="database\models\empire\MailmessageItems.cs" />
-    <Compile Include="database\models\empire\MailmessageText.cs" />
-    <Compile Include="database\models\empire\Mailmessage.cs" />
-    <Compile Include="database\models\empire\Mailmessages.cs" />
-    <Compile Include="database\models\empire\Setting.cs" />
-    <Compile Include="database\models\empire\Gamecurrency.cs" />
-    <Compile Include="database\models\empire\Settings.cs" />
-    <Compile Include="database\models\empire\Gamecurrencys.cs" />
+    <Compile Include="database\models\player\VaultInventoryItemCost.cs" />
+    <Compile Include="database\models\player\VaultInventoryItem.cs" />
+    <Compile Include="database\models\player\VaultInventoryItems.cs" />
+    <Compile Include="database\models\player\VaultInventory.cs" />
+    <Compile Include="database\models\player\Vault.cs" />
+    <Compile Include="database\models\player\MailmessageTextMessage.cs" />
+    <Compile Include="database\models\player\MailmessageItem.cs" />
+    <Compile Include="database\models\player\MailmessageItems.cs" />
+    <Compile Include="database\models\player\MailmessageText.cs" />
+    <Compile Include="database\models\player\Mailmessage.cs" />
+    <Compile Include="database\models\player\Mailmessages.cs" />
+    <Compile Include="database\models\player\Setting.cs" />
+    <Compile Include="database\models\player\Gamecurrency.cs" />
+    <Compile Include="database\models\player\Settings.cs" />
+    <Compile Include="database\models\player\Gamecurrencys.cs" />
     <Compile Include="database\models\Questinstance.cs" />
     <Compile Include="database\models\Questinstances.cs" />
     <Compile Include="database\models\character\Capitaltech.cs" />
@@ -118,6 +124,7 @@
     <Compile Include="database\models\character\Vanities.cs" />
     <Compile Include="database\models\character\Traits.cs" />
     <Compile Include="database\models\questinstance\Objective.cs" />
+    <Compile Include="database\models\character\Completed.cs" />
     <Compile Include="database\models\Trait.cs" />
     <Compile Include="database\models\Traits.cs" />
     <Compile Include="database\models\Quest.cs" />
@@ -300,7 +307,12 @@
     <Compile Include="database\models\vendor\Items.cs" />
     <Compile Include="database\models\vendor\Itemset.cs" />
     <Compile Include="database\models\vendor\Itemsets.cs" />
-    <Compile Include="enums\Alliances.cs" />
+    <Compile Include="empire\Empires.cs" />
+    <Compile Include="empire\Empire.cs" />
+    <Compile Include="enums\AllianceTypes.cs" />
+    <Compile Include="enums\AllianceTypesPrefix.cs" />
+    <Compile Include="enums\ConnectionResponseTypes.cs" />
+    <Compile Include="enums\CivilizationsShort.cs" />
     <Compile Include="enums\CivilizationsPrefix.cs" />
     <Compile Include="enums\Civilizations.cs" />
     <Compile Include="enums\OfferTypesPrefix.cs" />
@@ -314,7 +326,9 @@
     <Compile Include="enums\StringListTypes.cs" />
     <Compile Include="enums\Traittypes.cs" />
     <Compile Include="exceptions\player\InvalidPasswordException.cs" />
+    <Compile Include="exceptions\player\PlayerNameExistsException.cs" />
     <Compile Include="exceptions\player\InvalidPlayerNameException.cs" />
+    <Compile Include="helpers\Character.cs" />
     <Compile Include="helpers\Database.cs" />
     <Compile Include="helpers\General.cs" />
     <Compile Include="helpers\package\PackageChat.cs" />
@@ -327,23 +341,11 @@
     <Compile Include="helpers\Pathing.cs" />
     <Compile Include="helpers\Player.cs" />
     <Compile Include="helpers\Random.cs" />
+    <Compile Include="helpers\Region.cs" />
     <Compile Include="helpers\Server.cs" />
-    <Compile Include="helpers\xml\serializabledictionaries\Quests.cs" />
-    <Compile Include="helpers\xml\serializabledictionaries\Equipments.cs" />
-    <Compile Include="helpers\xml\serializabledictionaries\Questgivers.cs" />
-    <Compile Include="helpers\xml\serializabledictionaries\Civilizations.cs" />
-    <Compile Include="helpers\xml\serializabledictionaries\LootRolls.cs" />
-    <Compile Include="helpers\xml\serializabledictionaries\Materials.cs" />
-    <Compile Include="helpers\xml\serializabledictionaries\CharacterLevels.cs" />
-    <Compile Include="helpers\xml\serializabledictionaries\Traits.cs" />
-    <Compile Include="helpers\xml\serializabledictionaries\Vendors.cs" />
-    <Compile Include="helpers\xml\serializabledictionaries\Craftschools.cs" />
-    <Compile Include="helpers\xml\serializabledictionaries\Designs.cs" />
-    <Compile Include="helpers\xml\serializabledictionaries\Consumables.cs" />
-    <Compile Include="helpers\xml\serializabledictionaries\Blueprints.cs" />
     <Compile Include="helpers\xml\serializabledictionaries\Regions.cs" />
-    <Compile Include="helpers\xml\serializabledictionaries\Advisors.cs" />
     <Compile Include="helpers\xml\XML.cs" />
+    <Compile Include="logger\Logger.cs" />
     <Compile Include="packages\chat\request\rqBBotNetBasePacketChatData.cs" />
     <Compile Include="packages\chat\request\rqBBotNetBasePacketCustomChatLeaveChannelRequest.cs" />
     <Compile Include="packages\chat\request\rqBBotNetBasePacketCustomChatMessage.cs" />
@@ -383,7 +385,7 @@
     <Compile Include="packages\todo\request\rqBModifyRegionPacket.cs" />
     <Compile Include="packages\todo\request\rqBModifyTerritoryPacket.cs" />
     <Compile Include="packages\todo\request\rqBOfflineActivityPacket.cs" />
-    <Compile Include="packages\todo\request\rqBQuestGiverSpawnUnitPacket.cs" />
+    <Compile Include="packages\game\response\rsBQuestGiverSpawnUnitPacket.cs" />
     <Compile Include="packages\todo\request\rqBRemoveOneTech.cs" />
     <Compile Include="packages\todo\request\rqBRemoveTechs.cs" />
     <Compile Include="packages\todo\request\rqBReportPvPGameComplete.cs" />
@@ -440,7 +442,7 @@
     <Compile Include="packages\todo\request\rqBRequestQuestOperation.cs" />
     <Compile Include="packages\todo\request\rqBRequestQuestSaveObjectives.cs" />
     <Compile Include="packages\todo\request\rqBRequestRefreshOfferStateData.cs" />
-    <Compile Include="packages\todo\request\rqBRequestRefreshQuestGiverSpawns.cs" />
+    <Compile Include="packages\game\request\rqBRequestRefreshQuestGiverSpawns.cs" />
     <Compile Include="packages\game\request\rqBRequestRegionMap.cs" />
     <Compile Include="packages\todo\request\rqBRequestReloadPdlc.cs" />
     <Compile Include="packages\todo\request\rqBRequestRemoveTraitPacket.cs" />
@@ -458,7 +460,7 @@
     <Compile Include="packages\todo\request\rqBRequestSteamFinalize.cs" />
     <Compile Include="packages\todo\request\rqBRequestSteamSmokeTest.cs" />
     <Compile Include="packages\todo\request\rqBRequestSteamTransaction.cs" />
-    <Compile Include="packages\todo\request\rqBRequestStoreOptions.cs" />
+    <Compile Include="packages\game\request\rqBRequestStoreOptions.cs" />
     <Compile Include="packages\todo\request\rqBRequestStorePersistentData.cs" />
     <Compile Include="packages\todo\request\rqBRequestStoreScenarioDelta.cs" />
     <Compile Include="packages\todo\request\rqBRequestUnitKillXp.cs" />
@@ -523,7 +525,7 @@
     <Compile Include="packages\todo\response\rsBResponsePurchaseEmpireInventorySlots.cs" />
     <Compile Include="packages\todo\response\rsBResponsePvPGameComplete.cs" />
     <Compile Include="packages\todo\response\rsBResponsePvPGameStart.cs" />
-    <Compile Include="packages\todo\response\rsBResponseQuestListData.cs" />
+    <Compile Include="packages\game\response\rsBResponseQuestListData.cs" />
     <Compile Include="packages\todo\response\rsBResponseQuestOperation.cs" />
     <Compile Include="packages\todo\response\rsBResponseQuestSaveObjectives.cs" />
     <Compile Include="packages\todo\response\rsBResponseReloadPdlc.cs" />
@@ -538,7 +540,7 @@
     <Compile Include="packages\todo\response\rsBResponseSteamFinalize.cs" />
     <Compile Include="packages\todo\response\rsBResponseSteamSmokeTest.cs" />
     <Compile Include="packages\todo\response\rsBResponseSteamTransaction.cs" />
-    <Compile Include="packages\todo\response\rsBResponseStoreOptions.cs" />
+    <Compile Include="packages\game\response\rsBResponseStoreOptions.cs" />
     <Compile Include="packages\todo\response\rsBResponseStorePersistentData.cs" />
     <Compile Include="packages\todo\response\rsBResponseValidateContentListComplete.cs" />
     <Compile Include="packages\todo\response\rsBResponseValidateContentListRequestLicense.cs" />
@@ -557,7 +559,7 @@
     <Compile Include="packages\todo\unknown\_BPlayerAllianceData.cs" />
     <Compile Include="packages\todo\unknown\_BSteamAssetsPurchased.cs" />
     <Compile Include="packages\todo\unknown\_BTransferNotify.cs" />
-    <Compile Include="players\players.cs" />
+    <Compile Include="player\Players.cs" />
     <Compile Include="player\Player.cs" />
     <Compile Include="packages\authentication\request\rqBRequestInitialConnection.cs" />
     <Compile Include="packages\authentication\request\rqBRequestGfWlValid.cs" />
@@ -577,8 +579,6 @@
     <Compile Include="Properties\AssemblyInfo.cs" />
     <Compile Include="utf8stringwriter\Utf8StringWriter.cs" />
   </ItemGroup>
-  <ItemGroup>
-    <Folder Include="database\models\player\" />
-  </ItemGroup>
+  <ItemGroup />
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
 </Project>
