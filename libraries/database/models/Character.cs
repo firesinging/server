@@ -33,9 +33,9 @@ namespace Libraries.database.models
             Questgivers = new ModelCharacterQuestgivers();
             Resources = new CharacterResources();
             Availableadvisors = new ModelCharacterAdvisorsAvailable();
-            Assignedadvisors = new ModelCharacterAdvisorsAssigned();
+            Assignedadvisors = new AdvisorsAssigned();
             Capitalresources = new CharacterCapitalResources();
-            Clientstates = new ModelCharacterClientStates();
+            Unitstates = new CharacterUnitstates();
             Configs = new CharacterConfigs();
             Craftschools = new ModelCharacterCraftschools();
             Designslearned = new ModelCharacterLearneddesigns();
@@ -73,6 +73,9 @@ namespace Libraries.database.models
 
         [XmlElement(ElementName = "level")]
         public int Level { get; set; }
+
+        [XmlElement(ElementName = "gearscore")]
+        public int Gearscore { get; set; }
 
         [XmlElement(ElementName = "currentage")]
         public byte Currentage { get; set; }
@@ -125,13 +128,13 @@ namespace Libraries.database.models
         public ModelCharacterAdvisorsAvailable Availableadvisors { get; set; } 
 
         [XmlElement(ElementName = "assignedadvisors")]
-        public ModelCharacterAdvisorsAssigned Assignedadvisors { get; set; } 
+        public AdvisorsAssigned Assignedadvisors { get; set; } 
 
         [XmlElement(ElementName = "capitalresources")]
         public CharacterCapitalResources Capitalresources { get; set; }
 
-        [XmlElement(ElementName = "clientstates")]
-        public ModelCharacterClientStates Clientstates { get; set; } 
+        [XmlElement(ElementName = "unitstates")]
+        public CharacterUnitstates Unitstates { get; set; } 
 
         [XmlElement(ElementName = "characterconfigs")]
         public CharacterConfigs Configs { get; set; }

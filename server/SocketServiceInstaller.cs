@@ -35,7 +35,7 @@ namespace Server
             if (!string.IsNullOrEmpty(str1))
                 this.serviceInstaller.Description = str1;
 
-            List<string> list = new List<string>(){"tcpip"};
+            List<string> list = new List<string>(){ "tcpip" };
 
             string str2 = ConfigurationManager.AppSettings["ServicesDependedOn"];
 
@@ -51,8 +51,12 @@ namespace Server
         protected override void Dispose(bool disposing)
         {
 
-            if (disposing && this.components != null)
-                this.components.Dispose();
+            if ((disposing) && (components != null))
+            {
+
+                components.Dispose();
+
+            }                
 
             base.Dispose(disposing);
 

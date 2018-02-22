@@ -34,7 +34,7 @@ namespace Libraries.database.models.character
             get
             {
 
-                return string.Format("<unlockedregions>{0}</unlockedregions>", RegionHelper.ConvertListToBase64String(Items));
+                return $"<unlockedregions>{RegionHelper.ConvertListToBase64String(Items)}</unlockedregions>";
 
             }
 

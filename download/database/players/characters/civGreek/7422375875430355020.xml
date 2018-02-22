@@ -1,0 +1,101 @@
+﻿<Character id="7422375875430355020" playerid="7859660991347220327">
+	<Lastsave>2018-02-22T06:39:39.5272775Z</Lastsave>
+	<CivId>1</CivId>
+	<capscenario>Capitals/CAPITAL_C01_01</capscenario>
+	<name>TESTCREEK</name>
+	<flag>19</flag>
+	<level>1</level>
+	<gearscore>0</gearscore>
+	<currentage>1</currentage>
+	<completedquests />
+	<questinstances />
+	<activetechs>
+		<activetech status="Active" persistentcitystatus="Active">GreekCapStartCiv</activetech>
+		<activetech status="Active" persistentcitystatus="Active">GrE_GreekBldgStorehouse1</activetech>
+		<activetech status="Active" persistentcitystatus="Active">GrE_GreekBldgWatchTower1</activetech>
+		<activetech status="Active" persistentcitystatus="Active">GrE_GreekBldgWall1</activetech>
+	</activetechs>
+	<capitaltechs>
+		<item id="41">1</item>
+		<item id="56">1</item>
+		<item id="60">1</item>
+		<item id="305">1</item>
+	</capitaltechs>
+	<protounits />
+	<traits />
+	<inventorycontainers />
+	<capitallockedtiles />
+	<questgivers />
+	<resources>
+		<resource resourcetype="Stone" quantity="0" />
+		<resource resourcetype="Gold" quantity="0" />
+		<resource resourcetype="Wood" quantity="0" />
+		<resource resourcetype="Food" quantity="0" />
+		<resource resourcetype="SkillPoints" quantity="1" />
+		<resource resourcetype="Skillresetpoints" quantity="3" />
+		<resource resourcetype="XP" quantity="0" />
+		<resource resourcetype="Ships" quantity="0" />
+	</resources>
+	<currentregion>0</currentregion>
+	<nextscenarioid>1</nextscenarioid>
+	<availableadvisors />
+	<assignedadvisors />
+	<capitalresources>
+		<capitalresource resourcetype="cCapResCoin" quantity="0" />
+		<capitalresource resourcetype="cCapResWorkers" quantity="0" />
+		<capitalresource resourcetype="cCapResFactionPoints1" quantity="0" />
+		<capitalresource resourcetype="cCapResFactionPoints2" quantity="0" />
+		<capitalresource resourcetype="cCapResFactionPoints3" quantity="0" />
+	</capitalresources>
+	<unitstates>
+		<unitState unitname="7" protounit="Gr_Cap_Start_Bldg">
+			<clientState unitname="7" protounit="Gr_Cap_Start_Bldg" position="196.22,6.29,263.95" rotation="-0.00,-0.00,-1.00" variation="254" buildPoints="10">
+				<tasks />
+				<actions />
+			</clientState>
+			<serverState unitname="7" protounit="Gr_Cap_Start_Bldg" alive="1" />
+		</unitState>
+		<unitState unitname="2614" protounit="Gr_Cap_Port">
+			<clientState unitname="2614" protounit="Gr_Cap_Port" position="176.43,3.00,310.44" rotation="-0.71,0.00,0.71" variation="41" buildPoints="5">
+				<tasks />
+				<actions />
+			</clientState>
+			<serverState unitname="2614" protounit="Gr_Cap_Port" alive="1" />
+		</unitState>
+		<unitState unitname="3431" protounit="Gn_Cap_PDLC_Store">
+			<clientState unitname="3431" protounit="Gn_Cap_PDLC_Store" position="154.79,5.65,239.43" rotation="-0.38,0.00,-0.92" variation="51" buildPoints="10">
+				<tasks />
+				<actions />
+			</clientState>
+			<serverState unitname="3431" protounit="Gn_Cap_PDLC_Store" alive="1" />
+		</unitState>
+		<unitState unitname="3435" protounit="Gr_Cap_Warehouse03Starting">
+			<clientState unitname="3435" protounit="Gr_Cap_Warehouse03Starting" position="206.00,5.37,242.00" rotation="0.00,0.00,-1.00" variation="45" buildPoints="10">
+				<tasks />
+				<actions />
+			</clientState>
+			<serverState unitname="3435" protounit="Gr_Cap_Warehouse03Starting" alive="1" />
+		</unitState>
+		<unitState unitname="3433" protounit="Gr_Cap_BasicStore01">
+			<clientState unitname="3433" protounit="Gr_Cap_BasicStore01" position="205.65,4.75,226.77" rotation="-1.00,0.00,0.00" variation="40" buildPoints="10">
+				<tasks />
+				<actions />
+			</clientState>
+			<serverState unitname="3433" protounit="Gr_Cap_BasicStore01" alive="1" />
+		</unitState>
+		<unitState unitname="3429" protounit="Gr_Cap_Embassy">
+			<clientState unitname="3429" protounit="Gr_Cap_Embassy" position="226.61,5.73,283.52" rotation="-1.00,0.00,0.00" variation="60" buildPoints="10">
+				<tasks />
+				<actions />
+			</clientState>
+			<serverState unitname="3429" protounit="Gr_Cap_Embassy" alive="1" />
+		</unitState>
+	</unitstates>
+	<characterconfigs>
+		<characterconfig key="Chat-ChannelData" value="-[General,16777215,false,false][LookingForGroup,16777215,false,false][Trade,16777215,false,true]*S*1*A*1.000000*V*18" />
+	</characterconfigs>
+	<craftschools />
+	<learneddesigns />
+	<vanitys />
+	<unlockedregions />
+</Character>

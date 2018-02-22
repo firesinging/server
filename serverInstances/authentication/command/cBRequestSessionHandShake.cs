@@ -3,8 +3,8 @@
 using Libraries.enums;
 using Libraries.player;
 using Libraries.database;
-using Libraries.packages.custom;
 using Libraries.logger;
+using Libraries.packages.custom;
 
 using Libraries.helpers.package;
 using Libraries.helpers.player;
@@ -21,13 +21,13 @@ namespace Authentication.Command
         /// Creates player if not exists
         /// </summary>
         /// <param name="s">The session.</param>
-        /// <param name="i">The package info.</param>
+        /// <param name="p">The package info.</param>
         public override void ExecuteCommand(Session s, Package p)
         {
 
             PacketBRequestSessionHandShake Request = new PacketBRequestSessionHandShake(p.Content);
 
-            Logger.Debug(p.Key + "::ExecuteCommand - Execute command: " + Request);
+            Logger.Debug($"{p.Key}::ExecuteCommand - Execute command: {Request}");
 
             if (!s.IsAuthenticated)
             {
@@ -38,25 +38,25 @@ namespace Authentication.Command
                     if ((PlayerHelper.IsValidPlayerName(Request.PlayerName)) && (PlayerHelper.IsValidPasswordLength(Request.Password)))
                     {
 
-                        Logger.Info(p.Key + "::ExecuteCommand - Create new player " + Request.PlayerName + " from IP " + s.RemoteEndPoint.Address.ToString());
+                        Logger.Info($"{p.Key}::ExecuteCommand - Create new player {Request.PlayerName} from IP {s.RemoteEndPoint.Address.ToString()}");
 
-                        Player New = new Player();
+                        Player NewObjPlayer = new Player();
 
-                        New.Name = Request.PlayerName;
-                        New.Password = PlayerHelper.CreateHash(Request.Password);
+                        NewObjPlayer.Name = Request.PlayerName;
+                        NewObjPlayer.Password = PlayerHelper.CreateHash(Request.Password);
 
-                        New.Save(false, false, true);
+                        NewObjPlayer.Save(false, false, true);
 
                     }                           
 
                 }
                     
-                Player Player = Database.Players.Get(Request.PlayerName, Request.Password);
+                Player ObjPlayer = Database.Players.Get(Request.PlayerName, Request.Password);
 
-                if (Player != null)
+                if (ObjPlayer != null)
                 {
 
-                    s.SetPlayer(Player);
+                    s.SetPlayer(ObjPlayer);
 
                 }
 
@@ -64,7 +64,7 @@ namespace Authentication.Command
 
             PacketBResponseSessionHandShake ResponseContent = new PacketBResponseSessionHandShake(1);
 
-            Logger.Debug(p.Key + "::ExecuteCommand - Execute command: " + ResponseContent);
+            Logger.Debug($"{p.Key}::ExecuteCommand - Execute command: {ResponseContent}");
 
             byte[] Response = ResponseContent.ToByteArray();
 

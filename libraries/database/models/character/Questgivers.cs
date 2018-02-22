@@ -2,6 +2,8 @@
 using System.Linq;
 using System.Xml.Serialization;
 
+using Libraries.character;
+
 
 namespace Libraries.database.models.character
 {
@@ -21,21 +23,21 @@ namespace Libraries.database.models.character
         public ModelCharacterQuestgivers()
         {
 
-            Items = new Dictionary<string, ModelCharacterQuestgiver>();
+            Items = new Dictionary<string, CharacterQuestgiver>();
 
         }
 
         [XmlIgnore]
-        public Dictionary<string, ModelCharacterQuestgiver> Items { get; private set; }
+        public Dictionary<string, CharacterQuestgiver> Items { get; private set; }
 
         [XmlElement(ElementName = "questgiver")]
-        public ModelCharacterQuestgiver[] ModelEmpireGamecurrency
+        public CharacterQuestgiver[] CharacterQuestgiver
         {
 
             get
             {
 
-                List<ModelCharacterQuestgiver> List = new List<ModelCharacterQuestgiver>();
+                List<CharacterQuestgiver> List = new List<CharacterQuestgiver>();
 
                 if (Items != null)
                 {
@@ -51,12 +53,12 @@ namespace Libraries.database.models.character
             set
             {
 
-                Items = new Dictionary<string, ModelCharacterQuestgiver>();
+                Items = new Dictionary<string, CharacterQuestgiver>();
 
                 if (value != null)
                 {
 
-                    foreach (ModelCharacterQuestgiver Item in value)
+                    foreach (CharacterQuestgiver Item in value)
                     {
 
                         Items.Add(Item.Name, Item);

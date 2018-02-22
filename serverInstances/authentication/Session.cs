@@ -24,7 +24,7 @@ namespace Authentication
             get
             {
 
-                return _Player != null;
+                return (_Player != null);
 
             }
 
@@ -65,7 +65,7 @@ namespace Authentication
         internal void SetPlayer(Player player)
         {
 
-            Logger.InfoFormat("Authentication::SetPlayer - Set session player {0}", player.Name);
+            Logger.Info($"Authentication::SetPlayer - Set session player {player.Name}");
 
             _Player = player;
             _Player.SessionAuthentication = SessionID;
@@ -78,7 +78,7 @@ namespace Authentication
         protected override void OnSessionStarted()
         {
 
-            Logger.InfoFormat("Authentication::OnSessionStarted - Session created with Id {0} from IP {1}", SessionID, RemoteEndPoint.Address.ToString());
+            Logger.Info($"Authentication::OnSessionStarted - Session created with Id {SessionID} from IP {RemoteEndPoint.Address.ToString()}");
 
         }
 
@@ -89,7 +89,7 @@ namespace Authentication
         protected override void OnSessionClosed(CloseReason reason)
         {
 
-            Logger.InfoFormat("Authentication::OnSessionClosed - Session closed. Reason: {0}", reason);
+            Logger.Info($"Authentication::OnSessionClosed - Session closed. Reason: {reason}");
 
             if (_Player != null)
             {
@@ -108,7 +108,7 @@ namespace Authentication
         protected override void HandleUnknownRequest(Package content)
         {
 
-            Logger.DebugFormat("Authentication::HandleUnknownRequest - Unknown package. Content: {0}", content);
+            Logger.Debug($"Authentication::HandleUnknownRequest - Unknown package. Content: {content}");
 
         }
 

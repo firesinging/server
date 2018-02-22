@@ -16,15 +16,15 @@ namespace Game.Command
         /// Executes the command and sends response.
         /// </summary>
         /// <param name="s">The session.</param>
-        /// <param name="i">The package info.</param>
+        /// <param name="p">The package info.</param>
         public override void ExecuteCommand(Session s, Package p)
         {
 
-            var Request = new Libraries.packages.todo.PacketBRequestCreatePreloadedCharacter(p.Content);
+            PacketBRequestCreatePreloadedCharacter Request = new PacketBRequestCreatePreloadedCharacter(p.Content);
 
-            Logger.DebugFormat("BRequestCreatePreloadedCharacter::ExecuteCommand - Execute command: {0}", Request);
+            Logger.Debug($"{p.Key}::ExecuteCommand - Execute command: {Request}");
 
-
+            //@TODO
 
 
 

@@ -2,9 +2,9 @@
 using System.IO;
 
 using Libraries.database;
-using Libraries.database.models;
 using Libraries.empire;
 using Libraries.logger;
+using Libraries.database.models;
 
 using Libraries.helpers.pathing;
 using Libraries.helpers.xml;
@@ -58,7 +58,7 @@ namespace Libraries.player
 
                     }
 
-                    Logger.InfoFormat("Player::Save - Saving player {0} with Id {1}", Name, Id);
+                    Logger.Info($"Player::Save - Saving player {Name} with Id {Id}");
 
                     XMLHelper.SerializeObjectToFile(this, $"{PathingHelper.playerDir}{Id}.xml");
 
@@ -67,7 +67,7 @@ namespace Libraries.player
                 catch (Exception Ex)
                 {
 
-                    Logger.ErrorFormat("Player::Save - Error saving player {0} with Id {1}. Error: {2}", Name, Id, Ex);
+                    Logger.Error($"Player::Save - Error saving player {Name} with Id {Id}. Error: {Ex}");
 
                 }
 
@@ -97,16 +97,16 @@ namespace Libraries.player
         public bool Delete()
         {
 
-            Logger.InfoFormat("Player::Delete - Delete player {0} with Id {1}", Name, Id);
+            Logger.Info($"Player::Delete - Delete player {Name} with Id {Id}");
 
             //@TODO
 
             lock (_PlayerLock)
             {
 
-                Empire Empire = Database.Empires.Get(Id);
+                Empire ObjEmpire = Database.Empires.Get(Id);
 
-                if (!Empire.Delete())
+                if (!ObjEmpire.Delete())
                 {
 
                     return false;

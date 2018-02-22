@@ -1,6 +1,8 @@
 ﻿using System.Collections.Generic;
 using System.Xml.Serialization;
 
+using Libraries.region;
+
 
 namespace Libraries.database.models
 {
@@ -20,15 +22,15 @@ namespace Libraries.database.models
         public ModelQuestgivers()
         {
 
-            Items = new Dictionary<string, ModelQuestgiver>();
+            Items = new Dictionary<string, Questgiver>();
 
         }
 
         [XmlIgnore]
-        public Dictionary<string, ModelQuestgiver> Items { get; private set; }
+        public Dictionary<string, Questgiver> Items { get; private set; }
 
         [XmlElement(ElementName = "questgiver")]
-        public ModelQuestgiver[] ModelQuestgiver
+        public Questgiver[] ModelQuestgiver
         {
 
             get
@@ -41,9 +43,9 @@ namespace Libraries.database.models
             set
             {
 
-                Items = new Dictionary<string, ModelQuestgiver>();
+                Items = new Dictionary<string, Questgiver>();
 
-                foreach (ModelQuestgiver Item in value)
+                foreach (Questgiver Item in value)
                 {
 
                     Items.Add(Item.Name, Item);

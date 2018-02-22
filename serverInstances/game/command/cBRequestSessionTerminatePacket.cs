@@ -3,9 +3,9 @@ using SuperSocket.SocketBase.Command;
 
 using Libraries.logger;
 using Libraries.player;
+using Libraries.packages.game;
 
 using Libraries.helpers.package;
-using Libraries.packages.game;
 
 
 namespace Game.Command
@@ -18,17 +18,17 @@ namespace Game.Command
         /// Executes the command and sends response.
         /// </summary>
         /// <param name="s">The session.</param>
-        /// <param name="i">The package info.</param>
+        /// <param name="p">The package info.</param>
         public override void ExecuteCommand(Session s, Package p)
         {
 
             PacketBRequestSessionTerminatePacket Request = new PacketBRequestSessionTerminatePacket(p.Content);
 
-            Logger.Debug(p.Key + "::ExecuteCommand - Execute command: " + Request);
+            Logger.Debug($"{p.Key}::ExecuteCommand - Execute command: {Request}");
 
-            Player Player = s.GetPlayer();
+            Player ObjPlayer = s.GetPlayer();
 
-            Player.Logout();
+            ObjPlayer.Logout();
 
             s.Close(CloseReason.ClientClosing);
 

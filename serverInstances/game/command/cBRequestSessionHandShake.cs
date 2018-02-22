@@ -4,9 +4,9 @@ using Libraries.enums;
 using Libraries.player;
 using Libraries.database;
 using Libraries.logger;
+using Libraries.packages.custom;
 
 using Libraries.helpers.package;
-using Libraries.packages.custom;
 
 
 namespace Game.Command
@@ -19,23 +19,23 @@ namespace Game.Command
         /// Executes the command and sends response.
         /// </summary>
         /// <param name="s">The session.</param>
-        /// <param name="i">The package info.</param>
+        /// <param name="p">The package info.</param>
         public override void ExecuteCommand(Session s, Package p)
         {
 
             PacketBRequestSessionHandShake Request = new PacketBRequestSessionHandShake(p.Content);
 
-            Logger.Debug(p.Key + "::ExecuteCommand - Execute command: " + Request);
+            Logger.Debug($"{p.Key}::ExecuteCommand - Execute command: {Request}");
 
             if (!s.IsAuthenticated)
             {
 
-                Player Player = Database.Players.Get(Request.PlayerName, Request.Password);
+                Player ObjPlayer = Database.Players.Get(Request.PlayerName, Request.Password);
 
-                if (Player != null)
+                if (ObjPlayer != null)
                 {
 
-                    s.SetPlayer(Player);
+                    s.SetPlayer(ObjPlayer);
 
                 }
 
@@ -43,7 +43,7 @@ namespace Game.Command
 
             PacketBResponseSessionHandShake ResponseContent = new PacketBResponseSessionHandShake(1);
 
-            Logger.Debug(p.Key + "::ExecuteCommand - Execute command: " + ResponseContent);
+            Logger.Debug($"{p.Key}::ExecuteCommand - Execute command: {ResponseContent}");
 
             byte[] Response = ResponseContent.ToByteArray();
 

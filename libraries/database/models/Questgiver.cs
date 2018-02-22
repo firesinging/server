@@ -1,7 +1,12 @@
-﻿using System.ComponentModel;
+﻿using System;
+using System.ComponentModel;
+using System.Collections.Generic;
 using System.Xml.Serialization;
 
 using Libraries.database.models.questgiver;
+
+using Libraries.helpers.general;
+using Libraries.helpers.xml;
 
 
 namespace Libraries.database.models
@@ -15,6 +20,16 @@ namespace Libraries.database.models
     [XmlRoot(ElementName = "questgiver")]
     public class ModelQuestgiver : ModelBase
     {
+
+        public ModelQuestgiver()
+        {
+
+            Overrides = new ModelQuestgiverOverrides();
+            Location = new ModelQuestgiverLocation();
+            Spawntrigger = new ModelQuestgiverSpawntrigger();
+            Despawntrigger = new ModelQuestgiverDespawntrigger();
+
+        }
 
         [XmlElement(ElementName = "name")]
         [DefaultValue(null)]
@@ -64,7 +79,81 @@ namespace Libraries.database.models
 
         [XmlAttribute(AttributeName = "altregion")]
         public int Altregion { get; set; }
-        
+
+        [XmlIgnore]
+        public new string ToXml
+        {
+
+            get
+            {
+
+                QuestgiverBaseOverride QuestgiverOverride = new QuestgiverBaseOverride();
+
+                Helper.CopyPropertiesTo(this, QuestgiverOverride, new List<string>() { "Overrides" });
+
+                if (Overrides.Items.Count > 0)
+                {
+
+                    foreach (ModelQuestgiverOverride Override in Overrides.Items)
+                    {
+
+                        switch (Override.Key.ToLower())
+                        {
+
+                            case "displaynameid":
+
+                                QuestgiverOverride.Overrides.DisplayNameId = Override.Value;
+
+                                break;
+
+                            case "shortrollovertextid":
+
+                                QuestgiverOverride.Overrides.ShortRolloverTextId = Override.Value;
+
+                                break;
+
+                            case "animfile":
+
+                                QuestgiverOverride.Overrides.AnimFile = Override.Value;
+
+                                break;
+
+                            case "icon":
+
+                                QuestgiverOverride.Overrides.Icon = Override.Value;
+
+                                break;
+
+                            case "portraiticon":
+
+                                QuestgiverOverride.Overrides.PortraitIcon = Override.Value;
+
+                                break;
+
+                            case "visualscale":
+
+                                QuestgiverOverride.Overrides.VisualScale = Override.Value;
+
+                                break;
+
+                            default:
+
+                                throw new ArgumentOutOfRangeException($"Database::ModelQuestgiver - Unknown override. Override: {Override.Key.ToLower()}");
+
+                        }                        
+
+                    }                    
+
+                    return XMLHelper.SerializeObjectToXml(QuestgiverOverride);
+                    
+                }
+
+                return XMLHelper.SerializeObjectToXml(this);
+
+            }
+
+        }
+
     }
 
 }

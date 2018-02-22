@@ -1,18 +1,20 @@
 ﻿using System;
 using System.IO;
 using System.Linq;
-using System.Collections.Generic;
 using System.Configuration;
+using System.Collections.Generic;
 
 using Libraries.enums;
 using Libraries.player;
 using Libraries.empire;
 using Libraries.character;
+using Libraries.quest;
+using Libraries.region;
+using Libraries.database.models;
 
 using Libraries.helpers.pathing;
 using Libraries.helpers.database;
 using Libraries.helpers.xml;
-using Libraries.database.models;
 
 
 namespace Libraries.database
@@ -25,18 +27,20 @@ namespace Libraries.database
 
         public static readonly Dictionary<int, ModelCharacterLevel> CharacterLevels = new Dictionary<int, ModelCharacterLevel>();        
         public static readonly Dictionary<int, ModelEquipment> Equipments = new Dictionary<int, ModelEquipment>();
-        public static readonly Dictionary<int, ModelQuest> Quests = new Dictionary<int, ModelQuest>();
+        public static readonly Dictionary<int, Quest> Quests = new Dictionary<int, Quest>();
+        public static readonly Dictionary<int, QuestNugget> Nuggets = new Dictionary<int, QuestNugget>();
 
+        public static readonly Dictionary<string, Questgiver> Questgivers = new Dictionary<string, Questgiver>();
         public static readonly Dictionary<string, ModelAdvisor> Advisors = new Dictionary<string, ModelAdvisor>();
         public static readonly Dictionary<string, ModelBlueprint> Blueprints = new Dictionary<string, ModelBlueprint>();
         public static readonly Dictionary<string, ModelConsumable> Consumables = new Dictionary<string, ModelConsumable>();
         public static readonly Dictionary<string, ModelDesign> Designs = new Dictionary<string, ModelDesign>();        
         public static readonly Dictionary<string, ModelCraftschool> Craftschools = new Dictionary<string, ModelCraftschool>();
         public static readonly Dictionary<string, ModelMaterial> Materials = new Dictionary<string, ModelMaterial>();
-        public static readonly Dictionary<string, ModelVendor> Vendors = new Dictionary<string, ModelVendor>();
-        public static readonly Dictionary<string, ModelQuestgiver> Questgivers = new Dictionary<string, ModelQuestgiver>();
+        public static readonly Dictionary<string, ModelVendor> Vendors = new Dictionary<string, ModelVendor>();        
         public static readonly Dictionary<string, ModelLootRoll> LootRolls = new Dictionary<string, ModelLootRoll>();
         public static readonly Dictionary<string, ModelTrait> Traits = new Dictionary<string, ModelTrait>();
+        public static readonly Dictionary<string, ModelNuggetLogic> NuggetLogics = new Dictionary<string, ModelNuggetLogic>();
 
         public static readonly Dictionary<Civilizations, ModelCivilization> Civilizations = new Dictionary<Civilizations, ModelCivilization>();
 
@@ -63,6 +67,8 @@ namespace Libraries.database
                 LootRolls = DatabaseHelper.Deserialize<ModelLootRolls>("econLootRolls.xml").Items;
                 Questgivers = DatabaseHelper.Deserialize<ModelQuestgivers>("questgivers.xml").Items;
                 Equipments = DatabaseHelper.Deserialize<ModelEquipments>("equipment.xml").Items;
+                Nuggets = DatabaseHelper.Deserialize<ModelNuggets>("nuggets.xml").Items;
+                NuggetLogics = DatabaseHelper.Deserialize<ModelNuggetLogics>("nuggetlogics.xml").Items;
 
                 foreach (string CivilizationFile in Directory.GetFiles($"{PathingHelper.gamedatabaseDir}civilizations", "*.xml", SearchOption.TopDirectoryOnly))
                 {
@@ -111,11 +117,11 @@ namespace Libraries.database
                 foreach (string QuestFile in Directory.GetFiles($"{PathingHelper.gamedatabaseDir}quests", "*.quest", SearchOption.AllDirectories))
                 {
 
-                    ModelQuest Quest = new ModelQuest().DeserializeFromFile(QuestFile);
+                    Quest ObjQuest = new Quest().DeserializeFromFile(QuestFile);
 
-                    Quest.Source = QuestFile;
+                    ObjQuest.Source = QuestFile;
 
-                    Quests.Add(Quest.Id, Quest);
+                    Quests.Add(ObjQuest.Id, ObjQuest);
 
                 }
 

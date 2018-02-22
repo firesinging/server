@@ -1,0 +1,55 @@
+﻿<Player Id="7859660991347220327">
+	<Lastsave>2018-02-22T06:39:30.2145691Z</Lastsave>
+	<Name>FireSinger</Name>
+	<Password>ECA8110D5EAB96DFC5DA57F412D1979F6F124D471338BE79C84B3787CC3652119A50767857FD80056431E832A6CD29E497A0DEA770CD2D7BB1AD1A5763403D09</Password>
+	<Role>0</Role>
+	<Ban>false</Ban>
+	<GameCurrencys />
+	<Settings Version="45">
+		<Setting Name="optionfriendorfoecolor">false</Setting>
+		<Setting Name="optionfullrolloverhelp">true</Setting>
+		<Setting Name="optionlanguagefilter">true</Setting>
+		<Setting Name="optioneasydragmilitary">false</Setting>
+		<Setting Name="optionshowaitips">true</Setting>
+		<Setting Name="optionattackmove">false</Setting>
+		<Setting Name="optiontooltipenableworld">true</Setting>
+		<Setting Name="optiontooltipworlddisptime">250.000000</Setting>
+		<Setting Name="optiontooltipgameuidisptime">0.000000</Setting>
+		<Setting Name="optiontooltipbackgroundalpha">1.000000</Setting>
+		<Setting Name="optionshowhponrollover">true</Setting>
+		<Setting Name="optionuishowtraining">false</Setting>
+		<Setting Name="optionuishowfame">false</Setting>
+		<Setting Name="optionuishowgametime">false</Setting>
+		<Setting Name="optionuishowvillagertasks">false</Setting>
+		<Setting Name="optionuishowscore">false</Setting>
+		<Setting Name="optionshowobjectivehints">2</Setting>
+		<Setting Name="optionuishowshipments">false</Setting>
+		<Setting Name="optionadvancedformationui">false</Setting>
+		<Setting Name="optionenablerobustrollover">false</Setting>
+		<Setting Name="optionrightclickecononly">false</Setting>
+		<Setting Name="optioncamerainertiaramptime">200.000000</Setting>
+		<Setting Name="optionesoprivacy">false</Setting>
+		<Setting Name="optionminimizedui">false</Setting>
+		<Setting Name="optionshowchatnotifications">true</Setting>
+		<Setting Name="optionsavefiltersettings">false</Setting>
+		<Setting Name="optionminimizedchatui">false</Setting>
+		<Setting Name="optionallowhotkeyconflicts">false</Setting>
+		<Setting Name="optionuishowvisualcontrolgroups">false</Setting>
+		<Setting Name="optionshowhponalt">0</Setting>
+		<Setting Name="optionsnaponfindunit">true</Setting>
+		<Setting Name="optioninvertcontrolshift">false</Setting>
+		<Setting Name="optionsnaptounitdelay">350.000000</Setting>
+		<Setting Name="optionadvancedunittypeinfo">false</Setting>
+		<Setting Name="optionprotipsdisable">false</Setting>
+		<Setting Name="coptionunused" />
+		<Setting Name="optiononeclickgarrison">false</Setting>
+		<Setting Name="optionignorelist" />
+		<Setting Name="optionfriendnotificationdisable">false</Setting>
+	</Settings>
+	<MailMessages nextmsgid="0" />
+	<EmpireVault EmpireVaultSize="0">
+		<EmpireVaultInventory>
+			<items />
+		</EmpireVaultInventory>
+	</EmpireVault>
+</Player>

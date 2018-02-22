@@ -2,11 +2,11 @@
 using System.IO;
 
 using Libraries.database;
-using Libraries.database.models;
-using Libraries.database.models.empire;
 using Libraries.enums;
 using Libraries.empire;
 using Libraries.logger;
+using Libraries.database.models;
+using Libraries.database.models.empire;
 
 using Libraries.helpers.pathing;
 using Libraries.helpers.xml;
@@ -44,23 +44,23 @@ namespace Libraries.character
 
                         Database.Characters.Add(this);
 
-                        Empire Empire = Database.Empires.Get(PlayerId);
+                        Empire ObjEmpire = Database.Empires.Get(PlayerId);
 
                         ModelEmpireCharacterlistCharacterData Item = new ModelEmpireCharacterlistCharacterData { CharacterId = Id };
 
-                        Empire.Lastlaunched = Name;
+                        ObjEmpire.Lastlaunched = Name;
 
                         Item.CivId = CivId;
                         Item.Level = Level;
                         Item.Name = Name;
+                        
+                        ObjEmpire.Characterlist.Items.Add(Id, Item);
 
-                        Empire.Characterlist.Items.Add(Id, Item);
-
-                        Empire.Save();
+                        ObjEmpire.Save();
 
                     }
 
-                    Logger.InfoFormat("Character::Save - Saving character {0} with Id {1}", Name, Id);
+                    Logger.Info($"Character::Save - Saving character {Name} with Id {Id}");
 
                     XMLHelper.SerializeObjectToFile(this, $"{PathingHelper.playerDir}characters{Path.DirectorySeparatorChar}civ{Enum.GetName(typeof(Civilizations), CivId)}{Path.DirectorySeparatorChar}{Id}.xml");
 
@@ -69,7 +69,7 @@ namespace Libraries.character
                 catch (Exception Ex)
                 {
 
-                    Logger.ErrorFormat("Character::Save - Error saving character {0} with Id {1}. Error: {2}", Name, Id, Ex);
+                    Logger.Error($"Character::Save - Error saving character {Name} with Id {Id}. Error: {Ex}");
 
                 }
 

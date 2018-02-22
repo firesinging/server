@@ -57,13 +57,11 @@ namespace Libraries.packages.game
             return string.Format(
                "PacketBRequestCreateNewCharacter\r\n" +
                "Xuid = 0x{0:X}\r\n" +
-               "PlayerId = {1}\r\n" +
-               "CityName = {2}\r\n" +
-               "CityScenario = {3}\r\n" +
-               "CivilizationId = {4}\r\n" +
-               "SkipTutorial = {5}\r\n",
+               "CityName = {1}\r\n" +
+               "CityScenario = {2}\r\n" +
+               "Civilization = {3}\r\n" +
+               "SkipTutorial = {4}\r\n",
                Xuid,
-               0,
                CityName,
                CityScenario,
                CivilizationId,

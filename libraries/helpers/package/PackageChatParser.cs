@@ -1,5 +1,4 @@
 ﻿using System.IO;
-
 using SuperSocket.SocketBase.Protocol;
 
 using Libraries.enums;
@@ -41,7 +40,7 @@ namespace Libraries.helpers.package
             rest = 0;
             PackageChat Package = null;
 
-            if (BufferSegments != null && BufferSegments.Count > 0)
+            if ((BufferSegments != null) && (BufferSegments.Count > 0))
             {
 
                 _parsedLengthInBuffer += length;

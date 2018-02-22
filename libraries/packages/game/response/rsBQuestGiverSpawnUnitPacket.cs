@@ -37,9 +37,9 @@ namespace Libraries.packages.game
             ProtoType = prototype;
             Xml = xml;
             Greetingstringid = greetingstringid;
-            Greetingsoundset = greetingsoundset;
-            Farewellsoundset = farewellsoundset;
-            Artset = artset;
+            Greetingsoundset = (!string.IsNullOrEmpty(greetingsoundset)) ? greetingsoundset : string.Empty;
+            Farewellsoundset = (!string.IsNullOrEmpty(farewellsoundset)) ? farewellsoundset : string.Empty;
+            Artset = (!string.IsNullOrEmpty(artset)) ? artset : string.Empty;
 
         }
 

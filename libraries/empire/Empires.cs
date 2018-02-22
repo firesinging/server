@@ -42,9 +42,9 @@ namespace Libraries.empire
         public Empire Get(long id)
         {
 
-            _Empires.TryGetValue(id, out Empire Empire);
+            _Empires.TryGetValue(id, out Empire ObjEmpire);
 
-            return Empire;
+            return ObjEmpire;
 
         }
 
@@ -68,7 +68,7 @@ namespace Libraries.empire
         public bool Remove(long id)
         {
 
-            return _Empires.TryRemove(id, out Empire Empire);
+            return _Empires.TryRemove(id, out Empire ObjEmpire);
 
         }
 

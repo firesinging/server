@@ -1,7 +1,7 @@
 ﻿using System;
+using System.Configuration;
 using System.Text;
 using System.Text.RegularExpressions;
-using System.Configuration;
 using System.Security.Cryptography;
 
 using Libraries.database;
@@ -40,7 +40,8 @@ namespace Libraries.helpers.player
                 else
                 {
 
-                    throw new ArgumentException($"PlayerHelper::generatePlayerId - Can not generate random player Id");
+                    throw new ArgumentException($"PlayerHelper::generatePlayerId - Can not generate random player Id after {counter} tries");
+
                 }
 
             }

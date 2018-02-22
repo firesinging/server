@@ -4,6 +4,7 @@ using System.ComponentModel;
 using System.Xml.Serialization;
 
 using Libraries.empire;
+using Libraries.player;
 using Libraries.database.models.player;
 
 
@@ -23,7 +24,7 @@ namespace Libraries.database.models
 
             Gamecurrencys = new ModelPlayerGamecurrencys();
             Settings = new ModelPlayerSettings();
-            Mailmessages = new ModelPlayerMailmessages();
+            Mailmessages = new PlayerMails();
             Vault = new ModelPlayerVault();
 
         }        
@@ -56,7 +57,7 @@ namespace Libraries.database.models
         public ModelPlayerSettings Settings { get; set; }
 
         [XmlElement(ElementName = "MailMessages")]
-        public ModelPlayerMailmessages Mailmessages { get; set; }
+        public PlayerMails Mailmessages { get; set; }
 
         [XmlElement(ElementName = "EmpireVault")]
         public ModelPlayerVault Vault { get; set; }

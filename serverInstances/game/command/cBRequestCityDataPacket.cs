@@ -1,9 +1,11 @@
-﻿using SuperSocket.SocketBase.Command;
+﻿using System.Collections.Generic;
+using SuperSocket.SocketBase.Command;
 
-using Libraries.packages.game;
 using Libraries.enums;
 using Libraries.player;
 using Libraries.logger;
+using Libraries.packages.game;
+using Libraries.database.models.character;
 
 using Libraries.helpers.package;
 
@@ -18,24 +20,18 @@ namespace Game.Command
         /// Executes the command and sends response.
         /// </summary>
         /// <param name="s">The session.</param>
-        /// <param name="i">The package info.</param>
+        /// <param name="p">The package info.</param>
         public override void ExecuteCommand(Session s, Package p)
         {
 
             PacketBRequestCityDataPacket Request = new PacketBRequestCityDataPacket(p.Content);
 
-            Logger.Debug(p.Key + "::ExecuteCommand - Execute command: " + Request);
+            Logger.Debug($"{p.Key}::ExecuteCommand - Execute command: {Request}");
 
-            _SendResponseCityDataStart(s, p, Request);
-            _SendResponseGetContainerNumSlots(s, p, Request);
-
-
-            
-            _SendCityDataComplete(s, p, Request);
-
-           
-
-
+            SendResponseCityDataStart(s, p);
+            SendResponseUnitClientState(s, p);
+            SendResponseGetContainerNumSlots(s, p);            
+            SendCityDataComplete(s, p);
 
         }
 
@@ -44,15 +40,14 @@ namespace Game.Command
         /// </summary>
         /// <param name="s">The session.</param>
         /// <param name="p">Packet BRequestCityData.</param>
-        /// <param name="r">Packet BRequestCityData content.</param>
-        private static void _SendResponseCityDataStart(Session s, Package p, PacketBRequestCityDataPacket r)
+        public static void SendResponseCityDataStart(Session s, Package p)
         {
 
-            Player Player = s.GetPlayer();
+            Player ObjPlayer = s.GetPlayer();
 
-            PacketBResponseCityDataStartPacket ResponseContent = new PacketBResponseCityDataStartPacket(Player.Id, Player.Empire.CurrentCharacter.Capscenario, 1);
+            PacketBResponseCityDataStartPacket ResponseContent = new PacketBResponseCityDataStartPacket(ObjPlayer.Id, ObjPlayer.Empire.CurrentCharacter.Capscenario, 1);
 
-            Logger.Debug(p.Key + "::_SendResponseCityDataStart - Execute command: " + ResponseContent);
+            Logger.Debug($"{p.Key}::SendResponseCityDataStart - Execute command: {ResponseContent}");
 
             byte[] Response = ResponseContent.ToByteArray();
 
@@ -65,19 +60,52 @@ namespace Game.Command
         }
 
         /// <summary>
+        /// Sends BUnitClientStatePacket.
+        /// </summary>
+        /// <param name="s">The session.</param>
+        /// <param name="p">Packet BRequestCityData.</param>
+        public static void SendResponseUnitClientState(Session s, Package p)
+        {
+
+            Player ObjPlayer = s.GetPlayer();
+
+            if (ObjPlayer.Empire.CurrentCharacter.Unitstates.Items.Count > 0)
+            {
+
+                foreach (KeyValuePair<string, ModelCharacterUnitState> Item in ObjPlayer.Empire.CurrentCharacter.Unitstates.Items)
+                {
+
+                    PacketBUnitClientStatePacket ResponseContent = new PacketBUnitClientStatePacket(Item.Value.Client.ToXml, 0);
+
+                    Logger.Debug($"{p.Key}::SendResponseUnitClientState - Execute command: {ResponseContent}");
+
+                    byte[] Response = ResponseContent.ToByteArray();
+
+                    Package Package = new Package(p.HeaderXuid, p.HeaderField20, p.HeaderServiceId, p.HeaderField22, PacketTypes.BUnitClientStatePacket, 0, Response);
+
+                    byte[] ToSend = Package.ToByteArray();
+
+                    s.Send(ToSend, 0, ToSend.Length);
+                    
+                }
+
+            }
+
+        }
+
+        /// <summary>
         /// Sends GetContainerNumSlots.
         /// </summary>
         /// <param name="s">The session.</param>
         /// <param name="p">Packet BRequestRetrievePersistentData.</param>
-        /// <param name="r">Packet BRequestRetrievePersistentData content.</param>
-        private static void _SendResponseGetContainerNumSlots(Session s, Package p, PacketBRequestCityDataPacket r)
+        public static void SendResponseGetContainerNumSlots(Session s, Package p)
         {
 
             //@TODO
 
             string ResponseContent = string.Empty;
 
-            Logger.Debug(p.Key + "::_SendResponseGetContainerNumSlots - Execute command: " + ResponseContent);
+            Logger.Debug($"{p.Key}::SendResponseGetContainerNumSlots - Execute command: {ResponseContent}");
 
 
 
@@ -92,15 +120,14 @@ namespace Game.Command
         /// </summary>
         /// <param name="s">The session.</param>
         /// <param name="p">Packet PacketBRequestCityDataPacket.</param>
-        /// <param name="r">Packet PacketBRequestCityDataPacket content.</param>
-        private static void _SendCityDataComplete(Session s, Package p, PacketBRequestCityDataPacket r)
+        public static void SendCityDataComplete(Session s, Package p)
         {
 
-            Player Player = s.GetPlayer();
+            Player ObjPlayer = s.GetPlayer();
 
-            PacketBResponseCityDataCompletePacket ResponseContent = new PacketBResponseCityDataCompletePacket(Player.Id);
+            PacketBResponseCityDataCompletePacket ResponseContent = new PacketBResponseCityDataCompletePacket(ObjPlayer.Id);
 
-            Logger.Debug(p.Key + "::_SendCityDataComplete - Execute command: " + ResponseContent);
+            Logger.Debug($"{p.Key}::SendCityDataComplete - Execute command: {ResponseContent}");
 
             byte[] Response = ResponseContent.ToByteArray();
 

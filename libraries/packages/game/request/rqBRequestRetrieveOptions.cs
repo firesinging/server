@@ -34,10 +34,8 @@ namespace Libraries.packages.game
 
             return string.Format(
                 "PacketBRequestRetrieveOptions\r\n" +
-                "Xuid = 0x{0:X}\r\n" +
-                "PlayerId = {1}\r\n",
-                Xuid,
-                0
+                "Xuid = 0x{0:X}\r\n",
+                Xuid
             );
 
         }

@@ -1,6 +1,5 @@
 ﻿using System;
 using System.IO;
-
 using SuperSocket.Facility.Protocol;
 
 using Libraries.enums;

@@ -1,6 +1,5 @@
 ﻿using SuperSocket.SocketBase;
 
-using Libraries.enums;
 using Libraries.player;
 using Libraries.database;
 
@@ -25,7 +24,7 @@ namespace Game
             get
             {
 
-                return _Player != null;
+                return (_Player != null);
 
             }
 
@@ -77,7 +76,7 @@ namespace Game
         protected override void OnSessionStarted()
         {
 
-            Logger.InfoFormat("Game::OnSessionStarted - {0} Session created with Id {1} from IP {2}", AppServer.Name, SessionID, RemoteEndPoint.Address.ToString());
+            Logger.Info($"Game::OnSessionStarted - {AppServer.Name} Session created with Id {SessionID} from IP {RemoteEndPoint.Address.ToString()}");
             
         }
 
@@ -88,7 +87,7 @@ namespace Game
         protected override void OnSessionClosed(CloseReason reason)
         {
 
-            Logger.InfoFormat("Game::OnSessionClosed - Session closed. Reason: {0}", reason);
+            Logger.Info($"Game::OnSessionClosed - Session closed. Reason: {reason}");
 
             if (_Player != null)
             {
@@ -107,7 +106,7 @@ namespace Game
         protected override void HandleUnknownRequest(Package content)
         {
 
-            Logger.DebugFormat("Game::HandleUnknownRequest - Unknown package. Content: {0}", content);               
+            Logger.Debug($"Game::HandleUnknownRequest - Unknown package. Content: {content}");               
 
         }
 

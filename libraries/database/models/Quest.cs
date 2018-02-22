@@ -8,16 +8,14 @@ using Libraries.database.models.quest;
 
 namespace Libraries.database.models
 {
-    
+
     /// <summary>
     /// Quest model
     /// </summary>
-    /// <seealso cref="http://xmltocsharp.azurewebsites.net/"/>
-
-    [XmlRoot(ElementName = "quest")]
+    /// <seealso cref="http://xmltocsharp.azurewebsites.net/"/> 
     public class ModelQuest
     {
-
+        
         public ModelQuest()
         {
 
@@ -178,7 +176,7 @@ namespace Libraries.database.models
         public int Linkedquestid { get; set; }
 
         [XmlElement(ElementName = "questbasescale")]
-        public string Questbasescale { get; set; }
+        public int Questbasescale { get; set; }
 
         [XmlElement(ElementName = "victoryconditions")]
         public string Victoryconditions { get; set; }

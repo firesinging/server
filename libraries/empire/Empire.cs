@@ -2,9 +2,9 @@
 using System.IO;
 
 using Libraries.database;
-using Libraries.database.models;
 using Libraries.logger;
 using Libraries.character;
+using Libraries.database.models;
 
 using Libraries.helpers.pathing;
 using Libraries.helpers.xml;
@@ -32,7 +32,7 @@ namespace Libraries.empire
         public bool Save(bool characterSave = false, bool isNew = false)
         {
 
-            Logger.InfoFormat("Empire::Save - Saving empire with Id {0}", Id);
+            Logger.Info($"Empire::Save - Saving empire with Id {Id}");
 
             lock (_EmpireLock)
             {
@@ -60,7 +60,7 @@ namespace Libraries.empire
                 catch (Exception Ex)
                 {
 
-                    Logger.ErrorFormat("Empire::Save - Error saving empire with Id {0}. Error: {1}", Id, Ex);
+                    Logger.Error($"Empire::Save - Error saving empire with Id {Id}. Error: {Ex}");
 
                 }
 
@@ -80,7 +80,7 @@ namespace Libraries.empire
             lock (_EmpireLock)
             {
 
-                Logger.InfoFormat("Empire::Delete - Delete empire with Id {0}", Id);
+                Logger.Info($"Empire::Delete - Delete empire with Id {Id}");
 
                 //@TODO
 

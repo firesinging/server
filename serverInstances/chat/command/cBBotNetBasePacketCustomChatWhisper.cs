@@ -1,9 +1,10 @@
 ﻿using SuperSocket.SocketBase.Command;
 
-using Libraries.helpers.package;
-using Libraries.packages.chat;
 using Libraries.enums;
 using Libraries.logger;
+using Libraries.packages.chat;
+
+using Libraries.helpers.package;
 
 
 namespace Chat.command
@@ -16,13 +17,13 @@ namespace Chat.command
         /// Executes the command and sends response.
         /// </summary>
         /// <param name="s">The session.</param>
-        /// <param name="i">The package info.</param>
+        /// <param name="p">The package info.</param>
         public override void ExecuteCommand(Session s, PackageChat p)
         {
 
             PacketBBotNetBasePacketCustomChatWhisper Request = new PacketBBotNetBasePacketCustomChatWhisper(p.Content);
 
-            Logger.Chat(p.Key + "::ExecuteCommand - Execute command: " + Request);
+            Logger.Chat($"{p.Key}::ExecuteCommand - Execute command: {Request}");
 
             //@TODO - Get receiver information and pass to function
             // The function needs the ToPlayer Xuid
@@ -43,7 +44,7 @@ namespace Chat.command
 
             PacketBBotNetBasePacketCustomChatWhisperResponse ResponseContent = new PacketBBotNetBasePacketCustomChatWhisperResponse(r.ToPlayerName, r.ChatMessage);
 
-            Logger.Chat(p.Key + "::ExecuteCommand - Execute command: " + ResponseContent);
+            Logger.Chat($"{p.Key}::ExecuteCommand - Execute command: {ResponseContent}");
 
             byte[] Response = ResponseContent.ToByteArray();
 
@@ -64,9 +65,12 @@ namespace Chat.command
         private static void _SendWhisperSuccessToSender(Session s, PackageChat p, PacketBBotNetBasePacketCustomChatWhisper r)
         {
 
+            //@TODO
+
+            /*
             PacketEWhisperRecievedEvent ResponseContent = new PacketEWhisperRecievedEvent(s.PlayerName, r.ChatMessage);
 
-            Logger.Chat(p.Key + "::ExecuteCommand - Execute command: " + ResponseContent);
+            Logger.Chat($"{p.Key}::ExecuteCommand - Execute command: {ResponseContent}");
 
             byte[] Response = ResponseContent.ToByteArray();
 
@@ -75,7 +79,7 @@ namespace Chat.command
             byte[] ToSend = Package.ToByteArray();
 
             s.Send(ToSend, 0, ToSend.Length);
-
+            */
         }
 
 

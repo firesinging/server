@@ -54,7 +54,7 @@ namespace Server
 
                 string str = string.Empty;
 
-                if (args == null || args.Length < 1)
+                if ((args == null) || (args.Length < 1))
                 {
 
                     Console.WriteLine("Welcome to FireSinging!");
@@ -304,7 +304,7 @@ namespace Server
         private static void RunAsController(string[] arguments)
         {
 
-            if (arguments == null || arguments.Length < 2)
+            if ((arguments == null) || (arguments.Length < 2))
             {
 
                 Console.WriteLine("Invalid arguments!");
@@ -396,7 +396,7 @@ namespace Server
 
                 IProcessServer processServer = workItem as IProcessServer;
 
-                if (processServer != null && processServer.ProcessId > 0)
+                if ((processServer != null) && (processServer.ProcessId > 0))
                 {
 
                     Console.WriteLine("{0}[PID:{1}] - {2}", (object)workItem.Name, (object)processServer.ProcessId, (object)workItem.State);

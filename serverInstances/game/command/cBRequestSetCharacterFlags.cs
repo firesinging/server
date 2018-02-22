@@ -1,9 +1,9 @@
 ﻿using SuperSocket.SocketBase.Command;
 
-using Libraries.packages.game;
 using Libraries.enums;
 using Libraries.player;
 using Libraries.logger;
+using Libraries.packages.game;
 
 using Libraries.helpers.package;
 
@@ -18,21 +18,21 @@ namespace Game.Command
         /// Executes the command and sends response.
         /// </summary>
         /// <param name="s">The session.</param>
-        /// <param name="i">The package info.</param>
+        /// <param name="p">The package info.</param>
         public override void ExecuteCommand(Session s, Package p)
         {
 
             PacketBRequestSetCharacterFlags Request = new PacketBRequestSetCharacterFlags(p.Content);
 
-            Logger.Debug(p.Key + "::ExecuteCommand - Execute command: " + Request);
+            Logger.Debug($"{p.Key}::ExecuteCommand - Execute command: {Request}");
 
-            Player Player = s.GetPlayer();
+            Player ObjPlayer = s.GetPlayer();
 
-            Player.Empire.CurrentCharacter.Flag = Player.Empire.CurrentCharacter.Flag | Request.Unk0;
+            ObjPlayer.Empire.CurrentCharacter.Flag = ObjPlayer.Empire.CurrentCharacter.Flag | Request.Unk0;
 
-            PacketBCharacterFlagsChanged ResponseContent = new PacketBCharacterFlagsChanged(Player.Empire.CurrentCharacter.Id, Player.Empire.CurrentCharacter.Flag);
+            PacketBCharacterFlagsChanged ResponseContent = new PacketBCharacterFlagsChanged(ObjPlayer.Empire.CurrentCharacter.Id, ObjPlayer.Empire.CurrentCharacter.Flag);
 
-            Logger.Debug(p.Key + "::ExecuteCommand - Execute command: " + ResponseContent);
+            Logger.Debug($"{p.Key}::ExecuteCommand - Execute command: {ResponseContent}");
 
             byte[] Response = ResponseContent.ToByteArray();
 

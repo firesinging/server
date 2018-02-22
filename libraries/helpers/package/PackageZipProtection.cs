@@ -193,11 +193,11 @@ namespace Libraries.helpers.package
 
                 v6 = a2[0] + a1;
                 if (v6 >= 0xFFF1)
-                    v6 -= 65521;
+                    v6 -= 0xFFF1;
                 v7 = v6 + v4;
 
                 if (v7 >= 0xFFF1)
-                    v7 -= 65521;
+                    v7 -= 0xFFF1;
 
                 result = v6 | (v7 << 16);
 

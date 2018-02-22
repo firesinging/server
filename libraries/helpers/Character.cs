@@ -40,7 +40,7 @@ namespace Libraries.helpers.character
                 else
                 {
 
-                    throw new ArgumentException($"CharacterHelper::generateCharacterId - Can not generate random character Id");
+                    throw new ArgumentException($"CharacterHelper::generateCharacterId - Can not generate random character Id after {counter} tries");
                 }                
 
             }
@@ -90,9 +90,7 @@ namespace Libraries.helpers.character
 
                 default:
 
-                    Logger.DebugFormat("CharacterHelper::getRandomCityScenario - Unknown CivId. CivId: {0}", civId);
-
-                    return string.Empty;
+                    throw new ArgumentOutOfRangeException($"CharacterHelper::getRandomCityScenario - Unknown CivId. CivId: {civId}");
 
             }                   
 

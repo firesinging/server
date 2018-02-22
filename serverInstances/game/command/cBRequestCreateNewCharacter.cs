@@ -2,11 +2,11 @@
 using System.IO;
 using SuperSocket.SocketBase.Command;
 
-using Libraries.packages.game;
 using Libraries.character;
 using Libraries.player;
 using Libraries.enums;
 using Libraries.logger;
+using Libraries.packages.game;
 
 using Libraries.helpers.package;
 using Libraries.helpers.pathing;
@@ -24,29 +24,29 @@ namespace Game.Command
         /// Executes the command and sends response.
         /// </summary>
         /// <param name="s">The session.</param>
-        /// <param name="i">The package info.</param>
+        /// <param name="p">The package info.</param>
         public override void ExecuteCommand(Session s, Package p)
         {
 
             PacketBRequestCreateNewCharacter Request = new PacketBRequestCreateNewCharacter(p.Content);
 
-            Logger.Debug(p.Key + "::ExecuteCommand - Execute command: " + Request);
+            Logger.Debug($"{p.Key}::ExecuteCommand - Execute command: {Request}");
 
             string Tutorial = (Request.SkipTutorial == 1) ? "_Tutorial" : "";
 
-            Player Player = s.GetPlayer();
+            Player ObjPlayer = s.GetPlayer();
             Character Character = new Character().DeserializeFromFile($"{PathingHelper.playerDir}characters{Path.DirectorySeparatorChar}civ{Enum.GetName(typeof(Civilizations), Request.CivilizationId)}{Path.DirectorySeparatorChar}Default{Tutorial}.xml");
 
             Character.Id = CharacterHelper.generateCharacterId();
-            Character.PlayerId = Player.Id;
+            Character.PlayerId = ObjPlayer.Id;
             Character.Name = Request.CityName;
-            Character.Capscenario = CharacterHelper.getRandomCityScenario(Request.CivilizationId); 
-
+            Character.Capscenario = CharacterHelper.getRandomCityScenario(Request.CivilizationId);
+            
             Character.Save(true);
 
             PacketBResponseCreateNewCharacter ResponseContent = new PacketBResponseCreateNewCharacter(Request.Xuid, Character.Id, 0, Request.CivilizationId);
 
-            Logger.Debug(p.Key + "::ExecuteCommand - Execute command: " + ResponseContent);
+            Logger.Debug($"{p.Key}::ExecuteCommand - Execute command: {ResponseContent}");
 
             byte[] Response = ResponseContent.ToByteArray();
 

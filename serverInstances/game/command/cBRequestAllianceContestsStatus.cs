@@ -1,9 +1,9 @@
 ﻿using System.IO;
 using SuperSocket.SocketBase.Command;
 
-using Libraries.packages.game;
 using Libraries.enums;
 using Libraries.logger;
+using Libraries.packages.game;
 
 using Libraries.helpers.package;
 using Libraries.helpers.pathing;
@@ -19,13 +19,13 @@ namespace Game.Command
         /// Executes the command and sends response.
         /// </summary>
         /// <param name="s">The session.</param>
-        /// <param name="i">The package info.</param>
+        /// <param name="p">The package info.</param>
         public override void ExecuteCommand(Session s, Package p)
         {
 
             PacketBRequestAllianceContestsStatus Request = new PacketBRequestAllianceContestsStatus(p.Content);
 
-            Logger.Debug(p.Key + "::ExecuteCommand - Execute command: " + Request);
+            Logger.Debug($"{p.Key}::ExecuteCommand - Execute command: {Request}");
 
             //@TODO
 
@@ -33,7 +33,7 @@ namespace Game.Command
 
             PacketBResponseAllianceContestsStatus ResponseContent = new PacketBResponseAllianceContestsStatus(Xml);
 
-            Logger.Debug(p.Key + "::ExecuteCommand - Execute command: " + ResponseContent);
+            Logger.Debug($"{p.Key}::ExecuteCommand - Execute command: {ResponseContent}");
 
             byte[] Response = ResponseContent.ToByteArray();
 

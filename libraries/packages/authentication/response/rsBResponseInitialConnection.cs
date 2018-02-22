@@ -105,16 +105,14 @@ namespace Libraries.packages.authentication
             return string.Format(
                 "PacketBResponseInitialConnection\r\n" +
                 "Xuid = 0x{0:X}\r\n" +
-                "PlayerId = {1}\r\n" +
-                "Unk0 = {2}\r\n" +
-                "Response = {3}\r\n" +
-                "Unk1 = {4}\r\n" +
-                "Unk2 = {5}\r\n" +
-                "Port = {6}\r\n" +
-                "Unk3 = {7}\r\n" +
-                "Unk4 = {8}\r\n",
+                "Unk0 = {1}\r\n" +
+                "Response = {2}\r\n" +
+                "Unk1 = {3}\r\n" +
+                "Unk2 = {4}\r\n" +
+                "Port = {5}\r\n" +
+                "Unk3 = {6}\r\n" +
+                "Unk4 = {7}\r\n",
                 Xuid,
-                0,
                 Unk0,
                 Response,
                 Unk1,

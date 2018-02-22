@@ -1,9 +1,10 @@
 ﻿using SuperSocket.SocketBase.Command;
 
-using Libraries.helpers.package;
-using Libraries.packages.chat;
 using Libraries.enums;
 using Libraries.logger;
+using Libraries.packages.chat;
+
+using Libraries.helpers.package;
 
 
 namespace Chat.command
@@ -16,17 +17,20 @@ namespace Chat.command
         /// Executes the command and sends response.
         /// </summary>
         /// <param name="s">The session.</param>
-        /// <param name="i">The package info.</param>
+        /// <param name="p">The package info.</param>
         public override void ExecuteCommand(Session s, PackageChat p)
         {
 
+            //@TODO
+
+            /*
             PacketBBotNetBasePacketCustomChatJoinChannelRequest Request = new PacketBBotNetBasePacketCustomChatJoinChannelRequest(p.Content);
 
-            Logger.Chat(p.Key + "::ExecuteCommand - Execute command: " + Request);
+            Logger.Chat($"{p.Key}::ExecuteCommand - Execute command: {Request}");
 
             PacketBBotNetBasePacketCustomChatJoinChannelEvent ResponseContent = new PacketBBotNetBasePacketCustomChatJoinChannelEvent(Request.ChannelName, s.CharacterName);
 
-            Logger.Chat(p.Key + "::ExecuteCommand - Execute command: " + ResponseContent);
+            Logger.Chat($"{p.Key}::ExecuteCommand - Execute command: {ResponseContent}");
 
             byte[] Response = ResponseContent.ToByteArray();
 
@@ -35,6 +39,7 @@ namespace Chat.command
             byte[] ToSend = Package.ToByteArray();
 
             s.Send(ToSend, 0, ToSend.Length);
+            */
 
         }
 

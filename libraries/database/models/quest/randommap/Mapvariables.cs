@@ -12,7 +12,7 @@ namespace Libraries.database.models.quest.randommap
     /// <seealso cref="http://xmltocsharp.azurewebsites.net/"/>
 
     [XmlRoot(ElementName = "mapvariables")]
-    public class ModelQuestRandommapMapvariables
+    public class ModelQuestRandommapMapvariables : ModelBase
     {
 
         public ModelQuestRandommapMapvariables()

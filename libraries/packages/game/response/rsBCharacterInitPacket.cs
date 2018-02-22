@@ -93,14 +93,12 @@ namespace Libraries.packages.game
                 "CharacterFlags = 0x{2:X}\r\n" +
                 "CharacterId = {3}\r\n" +
                 "Xuid = 0x{4:X}\r\n" +
-                "PlayerId = {5}\r\n" +
-                "CivilizationId = {6}",
+                "CivilizationId = {5}",
                 CharacterName,
                 Unk0,
                 CharacterFlags,
                 CharacterId,
                 Xuid,
-                0,
                 CivilizationId
             );
 

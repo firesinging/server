@@ -20,21 +20,21 @@ namespace Game.Command
         /// Executes the command and sends response.
         /// </summary>
         /// <param name="s">The session.</param>
-        /// <param name="i">The package info.</param>
+        /// <param name="p">The package info.</param>
         public override void ExecuteCommand(Session s, Package p)
         {
 
             PacketBRequestStoreOptions Request = new PacketBRequestStoreOptions(p.Content);
 
-            Logger.Debug(p.Key + "::ExecuteCommand - Execute command: " + Request);
+            Logger.Debug($"{p.Key}::ExecuteCommand - Execute command: {Request}");
 
-            Player Player = s.GetPlayer();
+            Player ObjPlayer = s.GetPlayer();
 
-            Player.Settings = new ModelPlayerSettings().DeserializeFromXml(Request.ContentString);
+            ObjPlayer.Settings = new ModelPlayerSettings().DeserializeFromXml(Request.ContentString);
 
             PacketBResponseStoreOptions ResponseContent = new PacketBResponseStoreOptions(1);
 
-            Logger.Debug(p.Key + "::ExecuteCommand - Execute command: " + ResponseContent);
+            Logger.Debug($"{p.Key}::ExecuteCommand - Execute command: {ResponseContent}");
 
             byte[] Response = ResponseContent.ToByteArray();
 

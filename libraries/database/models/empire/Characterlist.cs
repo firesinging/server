@@ -1,6 +1,6 @@
-﻿using System.Collections.Generic;
-using System.Linq;
+﻿using System.Linq;
 using System.Xml.Serialization;
+using System.Collections.Generic;
 
 
 namespace Libraries.database.models.empire

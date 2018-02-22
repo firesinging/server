@@ -58,8 +58,12 @@ namespace Server
         protected override void Dispose(bool disposing)
         {
 
-            if (disposing && this.components != null)
-                this.components.Dispose();
+            if ((disposing) && (components != null))
+            {
+
+                components.Dispose();
+
+            }                
 
             base.Dispose(disposing);
 

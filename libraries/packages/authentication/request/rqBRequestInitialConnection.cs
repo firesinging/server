@@ -61,13 +61,11 @@ namespace Libraries.packages.authentication
             return string.Format(
                 "PacketBRequestInitialConnection\r\n" +
                 "Xuid = 0x{0:X}\r\n" +
-                "PlayerId = {1}\r\n" +
-                "PlayerName = {2}\r\n" +
-                "Unk0 = {3}\r\n" +
-                "Language = {4}\r\n" +
-                "Unk1 = {5}\r\n",
+                "PlayerName = {1}\r\n" +
+                "Unk0 = {2}\r\n" +
+                "Language = {3}\r\n" +
+                "Unk1 = {4}\r\n",
                 Xuid,
-                0,
                 PlayerName,
                 Unk0,
                 Language,

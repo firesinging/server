@@ -42,9 +42,9 @@ namespace Libraries.character
         public Character Get(long id)
         {
 
-            _Characters.TryGetValue(id, out Character Character);
+            _Characters.TryGetValue(id, out Character ObjCharacter);
 
-            return Character;
+            return ObjCharacter;
 
         }
 
@@ -68,7 +68,7 @@ namespace Libraries.character
         public bool Remove(long id)
         {
 
-            return _Characters.TryRemove(id, out Character Character);
+            return _Characters.TryRemove(id, out Character ObjCharacter);
 
         }
 

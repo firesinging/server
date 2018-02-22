@@ -38,9 +38,9 @@ namespace Libraries.packages.game
 
             return string.Format(
                 "PacketBGetMailMessagesRequest\r\n",
-                "Unk0 = {0:X}\r\n" +
-                "Unk1 = {1:X}\r\n" +
-                "Unk2 = {2:X}",
+                "Unk0 = {0}\r\n" +
+                "Unk1 = {1}\r\n" +
+                "Unk2 = {2}",
                 Unk0,
                 Unk1,
                 Unk2

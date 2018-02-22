@@ -84,7 +84,7 @@ namespace Libraries.packages.game
                 "PlayerId = {1}\r\n" +
                 "CharacterId = 0x{2:X}\r\n" +
                 "AutoStart = {3}\r\n" +
-                "CivilizationId = {4}\r\n",
+                "Civilization = {4}\r\n",
                 Xuid,
                 0,
                 CharacterId,

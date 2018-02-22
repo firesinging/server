@@ -1,5 +1,8 @@
 ﻿using System;
 using System.Text;
+using System.Linq;
+using System.Reflection;
+using System.Collections.Generic;
 
 
 namespace Libraries.helpers.general
@@ -82,6 +85,60 @@ namespace Libraries.helpers.general
             }
 
             Console.ForegroundColor = color;
+
+        }
+
+        /// <summary>
+        /// Copy object properties to another object
+        /// </summary>
+        /// <seealso cref="https://github.com/herrbpl/csharp-learn-contactdata/blob/edf63153f4d54369f832cf473c80a626f8576f4f/Extenstions/PropertiesCopy.cs"/>
+        public static void CopyPropertiesTo<T, TU>(this T source, TU dest)
+        {
+
+            CopyPropertiesTo(source, dest, null);
+
+        }
+
+        /// <summary>
+        /// Copy object properties to another object with exclude list
+        /// </summary>
+        /// <seealso cref="https://github.com/herrbpl/csharp-learn-contactdata/blob/edf63153f4d54369f832cf473c80a626f8576f4f/Extenstions/PropertiesCopy.cs"/>
+        public static void CopyPropertiesTo<T, TU>(this T source, TU dest, IList<string> exclude)
+        {
+
+            List<PropertyInfo> sourceProps = typeof(T).GetProperties().Where(x => x.CanRead).ToList();
+            List<PropertyInfo> destProps = typeof(TU).GetProperties().Where(x => x.CanWrite).ToList();
+
+            if (exclude == null)
+            {
+
+                exclude = new List<string>();
+
+            }
+
+            foreach (var sourceProp in sourceProps)
+            {
+
+                if (!exclude.Contains(sourceProp.Name))
+                {
+
+                    if (destProps.Any(x => x.Name == sourceProp.Name))
+                    {
+
+                        PropertyInfo p = destProps.First(x => x.Name == sourceProp.Name);
+
+                        if (p.PropertyType.IsAssignableFrom(sourceProp.PropertyType))
+                        {
+
+                            p.SetValue(dest, sourceProp.GetValue(source, null), null);
+
+                        }
+
+                    }
+
+                }
+
+            }
 
         }
 

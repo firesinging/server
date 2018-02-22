@@ -51,7 +51,6 @@ namespace Libraries.packages.game
                 "CharacterId = {2}\r\n" +
                 "CharacterFlag = 0x{3:X}",
                 Xuid,
-                0,
                 CharacterName,
                 CharacterId,
                 CharacterFlag

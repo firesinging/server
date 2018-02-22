@@ -28,12 +28,12 @@ namespace Libraries.player
         /// <summary>
         /// Add player to players dictionary.
         /// </summary>
-        /// <param name="player">The player object to add.</param>
+        /// <param name="objPlayer">The player object to add.</param>
         /// <returns>True when player is added.</returns>
-        public bool Add(Player player)
+        public bool Add(Player objPlayer)
         {
 
-            return _Players.TryAdd(player.Id, player);
+            return _Players.TryAdd(objPlayer.Id, objPlayer);
 
         }
 
@@ -45,9 +45,9 @@ namespace Libraries.player
         public Player Get(long id)
         {
 
-            _Players.TryGetValue(id, out Player Player);
+            _Players.TryGetValue(id, out Player ObjPlayer);
 
-            return Player;
+            return ObjPlayer;
 
         }
 
@@ -72,12 +72,12 @@ namespace Libraries.player
         public Player Get(string name, string password)
         {
 
-            Player Player = Get(key => string.Equals(key.Name, name, StringComparison.CurrentCultureIgnoreCase));
+            Player ObjPlayer = Get(key => string.Equals(key.Name, name, StringComparison.CurrentCultureIgnoreCase));
 
-            if(Player != null && PlayerHelper.CompareHash(password, Player.Password))
+            if((ObjPlayer != null) && (PlayerHelper.CompareHash(password, ObjPlayer.Password)))
             {
 
-                return Player;
+                return ObjPlayer;
 
             } else
             {
@@ -96,7 +96,7 @@ namespace Libraries.player
         public bool Remove(long id)
         {
 
-            return _Players.TryRemove(id, out Player Player);
+            return _Players.TryRemove(id, out Player ObjPlayer);
 
         }
 

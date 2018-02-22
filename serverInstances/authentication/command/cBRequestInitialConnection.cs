@@ -2,8 +2,8 @@
 using SuperSocket.SocketBase.Command;
 
 using Libraries.enums;
-using Libraries.packages.authentication;
 using Libraries.logger;
+using Libraries.packages.authentication;
 
 using Libraries.helpers.package;
 
@@ -20,13 +20,13 @@ namespace Authentication.command
         /// Executes the command and sends response.
         /// </summary>
         /// <param name="s">The session.</param>
-        /// <param name="i">The package info.</param>
+        /// <param name="p">The package info.</param>
         public override void ExecuteCommand(Session s, Package p)
         {
 
             PacketBRequestInitialConnection Request = new PacketBRequestInitialConnection(p.Content);
 
-            Logger.Debug(p.Key + "::ExecuteCommand - Execute command: " + Request);
+            Logger.Debug($"{p.Key}::ExecuteCommand - Execute command: {Request}");
 
             ConnectionResponseTypes ResponseResult;
 
@@ -56,7 +56,7 @@ namespace Authentication.command
 
             PacketBResponseInitialConnection ResponseContent = new PacketBResponseInitialConnection(Request.Xuid, 0, ResponseResult, string.Empty, string.Empty, GamePort, string.Empty, string.Empty);
 
-            Logger.Debug(p.Key + "::ExecuteCommand - Execute command: " + ResponseContent);
+            Logger.Debug($"{p.Key}::ExecuteCommand - Execute command: {ResponseContent}");
 
             byte[] Response = ResponseContent.ToByteArray();
 
