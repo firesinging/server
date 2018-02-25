@@ -4,6 +4,7 @@ using System.Xml.Serialization;
 
 using Libraries.enums;
 using Libraries.character;
+using Libraries.inventory;
 using Libraries.database.models.character;
 
 
@@ -28,7 +29,7 @@ namespace Libraries.database.models
             Capitaltechs = new ModelCharacterTechsCapital();
             Protounits = new ModelCharacterProtounits();
             Traits = new ModelCharacterTraits();
-            Inventorycontainers = new ModelCharacterInventoryContainers();
+            Inventories = new Inventories();
             Capitallockedtiles = new ModelCharacterCapitallockedtiles();
             Questgivers = new ModelCharacterQuestgivers();
             Resources = new CharacterResources();
@@ -100,7 +101,7 @@ namespace Libraries.database.models
         public ModelCharacterTraits Traits { get; set; }
 
         [XmlElement(ElementName = "inventorycontainers")]
-        public ModelCharacterInventoryContainers Inventorycontainers { get; set; } 
+        public Inventories Inventories { get; set; } 
 
         [XmlElement(ElementName = "capitallockedtiles")]
         public ModelCharacterCapitallockedtiles Capitallockedtiles { get; set; } 

@@ -91,7 +91,7 @@
     </Compile>
   </ItemGroup>
   <ItemGroup>
-	<None Include="$(SolutionDir)configuration\log4net.config">
+    <None Include="$(SolutionDir)configuration\log4net.config">
       <Link>log4net.config</Link>
       <SubType>Designer</SubType>
       <CopyToOutputDirectory>Always</CopyToOutputDirectory>
@@ -112,18 +112,18 @@
       <SubType>Designer</SubType>
       <CopyToOutputDirectory>Always</CopyToOutputDirectory>
     </None>
-	<Content Include="$(SolutionDir)configuration\Ionic.Zip.xml" />
+    <Content Include="$(SolutionDir)configuration\Ionic.Zip.xml" />
   </ItemGroup>
   <ItemGroup>
-    <ProjectReference Include="$(SolutionDir)serverInstances\authentication\Authentication.csproj">
+    <ProjectReference Include="Instances\authentication\Authentication.csproj">
       <Project>{cb786f60-3e90-460f-bc4a-3c4d7fe2a2ad}</Project>
       <Name>Authentication</Name>
     </ProjectReference>
-    <ProjectReference Include="$(SolutionDir)serverInstances\chat\Chat.csproj">
+    <ProjectReference Include="Instances\chat\Chat.csproj">
       <Project>{1fcbc160-e71d-4e66-93a4-62d7e12e2971}</Project>
       <Name>Chat</Name>
     </ProjectReference>
-    <ProjectReference Include="$(SolutionDir)serverInstances\game\Game.csproj">
+    <ProjectReference Include="Instances\game\Game.csproj">
       <Project>{c96b910c-b588-4e2a-bc58-da6b482fbc16}</Project>
       <Name>Game</Name>
     </ProjectReference>

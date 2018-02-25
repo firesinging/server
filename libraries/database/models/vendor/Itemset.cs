@@ -13,6 +13,13 @@ namespace Libraries.database.models.vendor
     public class ModelVendorItemset
     {
 
+        public ModelVendorItemset()
+        {
+
+            Items = new ModelVendorItems();
+
+        }
+
         [XmlElement(ElementName = "items")]
         public ModelVendorItems Items { get; set; }
 

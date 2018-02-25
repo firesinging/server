@@ -20,7 +20,7 @@ namespace Libraries.character
         public int GetResource(string type)
         {
 
-            return (Items.ContainsKey(type)) ? Items[type].Quantity : 0;
+            return Items.TryGetValue(type, out ModelCharacterResource Item) ? Item.Quantity : 0;
 
         }
 

@@ -27,7 +27,7 @@
 	</resources>
 	<currentregion>0</currentregion>
 	<capitalresources>		
-		<capitalresource quantity="0" resourcetype="cCapResCoin" />
+		<capitalresource quantity="1000" resourcetype="cCapResCoin" />
 		<capitalresource quantity="0" resourcetype="cCapResWorkers" />
 		<capitalresource quantity="0" resourcetype="cCapResFactionPoints1" />
 		<capitalresource quantity="0" resourcetype="cCapResFactionPoints2" />

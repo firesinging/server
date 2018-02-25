@@ -2,7 +2,7 @@
 using System.Collections.Generic;
 
 using Libraries.database;
-using Libraries.database.models;
+using Libraries.inventory.item;
 using Libraries.database.models.character;
 
 
@@ -25,10 +25,8 @@ namespace Libraries.character
         public bool Set(string name)
         {
 
-            if (Database.Advisors.ContainsKey(name))
+            if (Database.Advisors.TryGetValue(name, out Advisor Advisor))
             {
-
-                ModelAdvisor Advisor = Database.Advisors[name];
 
                 switch (Advisor.Age)
                 {

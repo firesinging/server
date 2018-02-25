@@ -22,10 +22,10 @@ namespace Libraries.character
 
             ModelCharacterConfig Config = new ModelCharacterConfig { Key = key, Value = value };
 
-            if (Items.ContainsKey(key))
+            if (Items.TryGetValue(key, out ModelCharacterConfig Item))
             {
 
-                Items[key] = Config;
+                Item = Config;
 
             } else
             {

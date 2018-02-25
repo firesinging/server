@@ -15,6 +15,13 @@ namespace Libraries.database.models
     public class ModelNugget
     {
 
+        public ModelNugget()
+        {
+
+            Animnugget = new ModelNuggetAnimnugget();
+
+        }
+
         [XmlElement(ElementName = "dbid")]
         public int Dbid { get; set; }
 

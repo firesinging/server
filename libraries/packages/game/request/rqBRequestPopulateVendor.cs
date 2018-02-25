@@ -11,8 +11,8 @@ namespace Libraries.packages.game
     public class PacketBRequestPopulateVendor
     {
 
-        public string VendorProtoUnit { get; }
-        public string Unk0 { get; }
+        public string Vendor { get; }
+        public string Container { get; }
 
         public PacketBRequestPopulateVendor(byte[] request)
         {
@@ -23,11 +23,11 @@ namespace Libraries.packages.game
                 using (BinaryReader Reader = new BinaryReader(Stream))
                 {
 
-                    int VendorProtoUnitLength = Reader.ReadInt32();
-                    VendorProtoUnit = Encoding.Unicode.GetString(Reader.ReadBytes(VendorProtoUnitLength));
+                    int VendorLength = Reader.ReadInt32();
+                    Vendor = Encoding.Unicode.GetString(Reader.ReadBytes(VendorLength));
 
-                    int Unk0Length = Reader.ReadInt32();
-                    Unk0 = Encoding.Unicode.GetString(Reader.ReadBytes(Unk0Length));
+                    int ContainerLength = Reader.ReadInt32();
+                    Container = Encoding.Unicode.GetString(Reader.ReadBytes(ContainerLength));
 
                 }
 
@@ -40,10 +40,10 @@ namespace Libraries.packages.game
 
             return string.Format(
                 "PacketBRequestPopulateVendor\r\n",
-                "VendorProtoUnit = {0}\r\n" +
-                "Unk0 = {1}",
-                VendorProtoUnit,
-                Unk0
+                "Vendor = {0}\r\n" +
+                "Container = {1}",
+                Vendor,
+                Container
             );
 
         }

@@ -2,6 +2,7 @@
 using System.Xml.Serialization;
 
 using Libraries.database.models.vendor;
+using Libraries.database.models.inventory;
 
 
 namespace Libraries.database.models
@@ -15,6 +16,13 @@ namespace Libraries.database.models
     public class ModelVendor
     {
 
+        public ModelVendor()
+        {
+
+            Itemsets = new ModelVendorItemsets();
+
+        }
+
         [XmlElement(ElementName = "protounit")]
         [DefaultValue(null)]
         public string Protounit { get; set; }
@@ -23,7 +31,7 @@ namespace Libraries.database.models
         public ModelVendorItemsets Itemsets { get; set; }
 
         [XmlAttribute(AttributeName = "name")]
-        public string Name { get; set; }
+        public string Name { get; set; }        
 
     }
 

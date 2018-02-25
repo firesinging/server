@@ -15,13 +15,13 @@ namespace Libraries.database.models.vendor
     {
 
         [XmlAttribute(AttributeName = "quantity")]
-        public string Quantity { get; set; }
+        public int Quantity { get; set; }
 
         [XmlText]
         public string Text { get; set; }
 
         [XmlAttribute(AttributeName = "level")]
-        public string Level { get; set; }
+        public int Level { get; set; }
 
     }
 

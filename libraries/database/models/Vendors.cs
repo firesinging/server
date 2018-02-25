@@ -1,6 +1,8 @@
 ﻿using System.Collections.Generic;
 using System.Xml.Serialization;
 
+using Libraries.vendor;
+
 
 namespace Libraries.database.models
 {
@@ -20,15 +22,15 @@ namespace Libraries.database.models
         public ModelVendors()
         {
 
-            Items = new Dictionary<string, ModelVendor>();
+            Items = new Dictionary<string, Vendor>();
 
         }
 
         [XmlIgnore]
-        public Dictionary<string, ModelVendor> Items { get; private set; }
+        public Dictionary<string, Vendor> Items { get; private set; }
 
         [XmlElement(ElementName = "vendor")]
-        public ModelVendor[] ModelVendor
+        public Vendor[] Vendor
         {
 
             get
@@ -41,12 +43,12 @@ namespace Libraries.database.models
             set
             {
 
-                Items = new Dictionary<string, ModelVendor>();
+                Items = new Dictionary<string, Vendor>();
 
                 if (value != null)
                 {
 
-                    foreach (ModelVendor Item in value)
+                    foreach (Vendor Item in value)
                     {
 
                         Items.Add(Item.Protounit, Item);

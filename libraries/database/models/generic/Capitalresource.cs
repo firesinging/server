@@ -1,6 +1,8 @@
 ﻿using System.ComponentModel;
 using System.Xml.Serialization;
 
+using Libraries.enums;
+
 
 namespace Libraries.database.models
 {
@@ -16,11 +18,11 @@ namespace Libraries.database.models
 
         [XmlAttribute(AttributeName = "quantity")]
         [DefaultValue(null)]
-        public string Quantity { get; set; }
+        public double Quantity { get; set; }
 
         [XmlText]
         [DefaultValue(null)]
-        public string Text { get; set; }
+        public CapitalResourceTypes Type { get; set; }
 
     }
 

@@ -14,7 +14,7 @@ namespace Libraries.database.models
     {
 
         [XmlAttribute(AttributeName = "quantity")]
-        public string Quantity { get; set; }
+        public int Quantity { get; set; }
 
         [XmlText]
         public string Text { get; set; }
