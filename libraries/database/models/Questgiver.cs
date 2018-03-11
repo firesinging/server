@@ -17,7 +17,6 @@ namespace Libraries.database.models
     /// </summary>
     /// <seealso cref="http://xmltocsharp.azurewebsites.net/"/>
 
-    [XmlRoot(ElementName = "questgiver")]
     public class ModelQuestgiver : ModelBase
     {
 

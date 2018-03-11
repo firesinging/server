@@ -17,7 +17,7 @@ namespace Libraries.database.models.quest.objectives
         public string Description { get; set; }
 
         [XmlElement(ElementName = "values")]
-        public ModelQuestObjectivesCriteria Values { get; set; }
+        public ModelQuestObjectivesValues Values { get; set; }
 
         [XmlAttribute(AttributeName = "id")]
         public int Id { get; set; }

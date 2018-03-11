@@ -14,17 +14,17 @@ namespace Libraries.database.models.questgiver
     public class ModelQuestgiverOverridesReplacement
     {
 
+        [XmlElement(ElementName = "AnimFile")]
+        [DefaultValue(null)]
+        public string AnimFile { get; set; }
+
         [XmlElement(ElementName = "DisplayNameID")]
         [DefaultValue(null)]
         public string DisplayNameId { get; set; }
 
         [XmlElement(ElementName = "ShortRolloverTextID")]
         [DefaultValue(null)]
-        public string ShortRolloverTextId { get; set; }
-
-        [XmlElement(ElementName = "AnimFile")]
-        [DefaultValue(null)]
-        public string AnimFile { get; set; }            
+        public string ShortRolloverTextId { get; set; }                  
 
         [XmlElement(ElementName = "PortraitIcon")]
         [DefaultValue(null)]

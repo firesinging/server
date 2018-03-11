@@ -29,7 +29,7 @@ namespace Game.Command
 
             Logger.Debug($"{p.Key}::ExecuteCommand - Execute command: {Request}");
 
-            Character ObjCharacter = s.GetPlayer().Empire.CurrentCharacter;
+            Character ObjCharacter = s.Player.Empire.CurrentCharacter;
 
             ModelCharacterUnitStateClient UnitStateClient = new ModelCharacterUnitStateClient().DeserializeFromXml(Request.UnitClientState);
             ModelCharacterUnitStateServer UnitStateServer = new ModelCharacterUnitStateServer().DeserializeFromXml(Request.UnitServerState);

@@ -15,6 +15,9 @@ namespace Libraries.helpers.package
 
         /// <summary>
         /// Package compress
+        /// <param name="input">The input.</param>
+        /// <param name="isFile">Flag is file.</param>
+        /// <param name="compressionLevel">The compression level.</param>
         /// </summary>
         public static byte[] Compress(byte[] input, bool isFile = false, CompressionLevel compressionLevel = CompressionLevel.BestCompression)
         {
@@ -43,8 +46,6 @@ namespace Libraries.helpers.package
 
             }
 
-            uint uChecksum = Checksum(1, input, (uint)input.Length);
-
             using (MemoryStream Stream = new MemoryStream())
             {
 
@@ -53,11 +54,11 @@ namespace Libraries.helpers.package
 
                     Writer.Write(Result);
 
-                    byte[] Addition = BitConverter.GetBytes(uChecksum);
+                    byte[] Checksum = BitConverter.GetBytes(GetChecksum(input, Convert.ToUInt32(input.Length)));
 
-                    Array.Reverse(Addition);
+                    Array.Reverse(Checksum);
 
-                    Writer.Write(Addition);
+                    Writer.Write(Checksum);
 
                 }
 
@@ -68,10 +69,11 @@ namespace Libraries.helpers.package
             return Result;
 
         }
-       
+
         /// <summary>
         /// Package decompress
         /// </summary>
+        /// <param name="input">The input.</param>
         public static byte[] Decompress(byte[] input)
         {
 
@@ -109,154 +111,100 @@ namespace Libraries.helpers.package
         /// <summary>
         /// Package checksum
         /// </summary>
-        public static uint Checksum(uint a1, byte[] a2, uint a3)
+        /// <param name="input">The input.</param>
+        /// <param name="inputLength">The input length.</param>
+        public static uint GetChecksum(byte[] input, uint inputLength)
         {
 
-            uint v3; // ebx@1
-            uint v4; // edi@1
-            uint v5; // ecx@1
-            uint v6; // ecx@2
-            uint v7; // edi@4
-            uint result; // eax@6
-            byte[] v9; // esi@7
-            uint v10; // ebp@16
-            int v11; // eax@17
-            uint v12; // ecx@18
-            uint v13; // edi@18
-            uint v14; // ecx@18
-            uint v15; // edi@18
-            uint v16; // ecx@18
-            uint v17; // edi@18
-            uint v18; // ecx@18
-            uint v19; // edi@18
-            uint v20; // ecx@18
-            uint v21; // edi@18
-            uint v22; // ecx@18
-            uint v23; // edi@18
-            uint v24; // ecx@18
-            uint v25; // edi@18
-            uint v26; // ecx@18
-            uint v27; // edi@18
-            uint v28; // ecx@18
-            uint v29; // edi@18
-            uint v30; // ecx@18
-            uint v31; // edi@18
-            uint v32; // ecx@18
-            uint v33; // edi@18
-            uint v34; // ecx@18
-            uint v35; // edi@18
-            uint v36; // ecx@18
-            uint v37; // edi@18
-            uint v38; // ecx@18
-            uint v39; // edi@18
-            uint v40; // ecx@18
-            uint v41; // edi@18
-            uint v42; // eax@22
-            uint v43; // ecx@23
-            uint v44; // edi@23
-            uint v45; // ecx@23
-            uint v46; // edi@23
-            uint v47; // ecx@23
-            uint v48; // edi@23
-            uint v49; // ecx@23
-            uint v50; // edi@23
-            uint v51; // ecx@23
-            uint v52; // edi@23
-            uint v53; // ecx@23
-            uint v54; // edi@23
-            uint v55; // ecx@23
-            uint v56; // edi@23
-            uint v57; // ecx@23
-            uint v58; // edi@23
-            uint v59; // ecx@23
-            uint v60; // edi@23
-            uint v61; // ecx@23
-            uint v62; // edi@23
-            uint v63; // ecx@23
-            uint v64; // edi@23
-            uint v65; // ecx@23
-            uint v66; // edi@23
-            uint v67; // ecx@23
-            uint v68; // edi@23
-            uint v69; // ecx@23
-            uint v70; // edi@23
-            uint v71; // ecx@23
-            uint v72; // edi@23
-            uint i = 0;
+            uint result;
 
-            v3 = a3;
-            v4 = a1 >> 16;
-            v5 = a1;
+            uint i = 0;                       
+            uint v1 = 1;
+            uint v3 = inputLength;
+            uint v4 = v1 >> 16; 
+            uint v5 = v1;
 
-            if (a3 == 1)
+            if (inputLength == 1)
             {
 
-                v6 = a2[0] + a1;
-                if (v6 >= 0xFFF1)
-                    v6 -= 0xFFF1;
-                v7 = v6 + v4;
+                uint v6 = input[0] + v1; 
 
-                if (v7 >= 0xFFF1)
-                    v7 -= 0xFFF1;
+                if (v6 >= 65521)
+                {
 
+                    v6 -= 65521;
+
+                }
+
+                uint v7 = v6 + v4;
+
+                if (v7 >= 65521)
+                {
+
+                    v7 -= 65521;
+
+                }
+                    
                 result = v6 | (v7 << 16);
 
             }
             else
             {
 
-                v9 = a2;
-
-                if (a3 >= 0x10)
+                if (inputLength >= 0x10)
                 {
 
-                    if (a3 >= 0x15B0)
+                    if (inputLength >= 0x15B0)
                     {
 
-                        v10 = a3 / 0x15B0;
+                        uint v10 = inputLength / 0x15B0;
 
                         do
                         {
 
                             v3 -= 5552;
-                            v11 = 347;
+
+                            int v11 = 347;
 
                             do
                             {
 
-                                v12 = v9[i] + v5;
-                                v13 = v12 + v4;
-                                v14 = (uint)(v9[1] + v12);
-                                v15 = (uint)(v14 + v13);
-                                v16 = (uint)(v9[2] + v14);
-                                v17 = v16 + v15;
-                                v18 = v9[3] + v16;
-                                v19 = v18 + v17;
-                                v20 = v9[4] + v18;
-                                v21 = v20 + v19;
-                                v22 = v9[5] + v20;
-                                v23 = v22 + v21;
-                                v24 = v9[6] + v22;
-                                v25 = v24 + v23;
-                                v26 = v9[7] + v24;
-                                v27 = v26 + v25;
-                                v28 = v9[8] + v26;
-                                v29 = v28 + v27;
-                                v30 = v9[9] + v28;
-                                v31 = v30 + v29;
-                                v32 = v9[10] + v30;
-                                v33 = v32 + v31;
-                                v34 = v9[11] + v32;
-                                v35 = v34 + v33;
-                                v36 = v9[12] + v34;
-                                v37 = v36 + v35;
-                                v38 = v9[13] + v36;
-                                v39 = v38 + v37;
-                                v40 = v9[14] + v38;
-                                v41 = v40 + v39;
-                                v5 = v9[15] + v40;
+                                uint v12 = input[i] + v5; 
+                                uint v13 = v12 + v4; 
+                                uint v14 = input[i + 1] + v12; 
+                                uint v15 = v14 + v13; 
+                                uint v16 = input[i + 2] + v14; 
+                                uint v17 = v16 + v15; 
+                                uint v18 = input[i + 3] + v16; 
+                                uint v19 = v18 + v17; 
+                                uint v20 = input[i + 4] + v18;
+                                uint v21 = v20 + v19;
+                                uint v22 = input[i + 5] + v20; 
+                                uint v23 = v22 + v21; 
+                                uint v24 = input[i + 6] + v22; 
+                                uint v25 = v24 + v23;
+                                uint v26 = input[i + 7] + v24;
+                                uint v27 = v26 + v25; 
+                                uint v28 = input[i + 8] + v26;
+                                uint v29 = v28 + v27; 
+                                uint v30 = input[i + 9] + v28; 
+                                uint v31 = v30 + v29; 
+                                uint v32 = input[i + 10] + v30; 
+                                uint v33 = v32 + v31; 
+                                uint v34 = input[i + 11] + v32;
+                                uint v35 = v34 + v33; 
+                                uint v36 = input[i + 12] + v34; 
+                                uint v37 = v36 + v35; 
+                                uint v38 = input[i + 13] + v36;
+                                uint v39 = v38 + v37;
+                                uint v40 = input[i + 14] + v38; 
+                                uint v41 = v40 + v39;
+
+                                v5 = input[i + 15] + v40;
                                 v4 = v5 + v41;
+
                                 i += 16;
+
                                 --v11;
 
                             }
@@ -265,6 +213,7 @@ namespace Libraries.helpers.package
 
                             v5 %= 0xFFF1u;
                             v4 %= 0xFFF1u;
+
                             --v10;
 
                         }
@@ -279,45 +228,48 @@ namespace Libraries.helpers.package
                         if (v3 >= 0x10)
                         {
 
-                            v42 = v3 >> 4;
+                            uint v42 = v3 >> 4;
 
                             do
                             {
 
-                                v43 = v9[i] + v5;
-                                v44 = v43 + v4;
-                                v45 = v9[i + 1] + v43;
-                                v46 = v45 + v44;
-                                v47 = v9[i + 2] + v45;
-                                v48 = v47 + v46;
-                                v49 = v9[i + 3] + v47;
-                                v50 = v49 + v48;
-                                v51 = v9[i + 4] + v49;
-                                v52 = v51 + v50;
-                                v53 = v9[i + 5] + v51;
-                                v54 = v53 + v52;
-                                v55 = v9[i + 6] + v53;
-                                v56 = v55 + v54;
-                                v57 = v9[i + 7] + v55;
-                                v58 = v57 + v56;
-                                v59 = v9[i + 8] + v57;
-                                v60 = v59 + v58;
-                                v61 = v9[i + 9] + v59;
-                                v62 = v61 + v60;
-                                v63 = v9[i + 10] + v61;
-                                v64 = v63 + v62;
-                                v65 = v9[i + 11] + v63;
-                                v66 = v65 + v64;
-                                v67 = v9[i + 12] + v65;
-                                v68 = v67 + v66;
-                                v69 = v9[i + 13] + v67;
-                                v70 = v69 + v68;
-                                v71 = v9[i + 14] + v69;
-                                v72 = v71 + v70;
-                                v5 = v9[i + 15] + v71;
+                                uint v43 = input[i] + v5;
+                                uint v44 = v43 + v4;
+                                uint v45 = input[i + 1] + v43; 
+                                uint v46 = v45 + v44;
+                                uint v47 = input[i + 2] + v45; 
+                                uint v48 = v47 + v46; 
+                                uint v49 = input[i + 3] + v47;
+                                uint v50 = v49 + v48; 
+                                uint v51 = input[i + 4] + v49; 
+                                uint v52 = v51 + v50; 
+                                uint v53 = input[i + 5] + v51; 
+                                uint v54 = v53 + v52; 
+                                uint v55 = input[i + 6] + v53; 
+                                uint v56 = v55 + v54; 
+                                uint v57 = input[i + 7] + v55; 
+                                uint v58 = v57 + v56; 
+                                uint v59 = input[i + 8] + v57;
+                                uint v60 = v59 + v58; 
+                                uint v61 = input[i + 9] + v59; 
+                                uint v62 = v61 + v60; 
+                                uint v63 = input[i + 10] + v61;
+                                uint v64 = v63 + v62; 
+                                uint v65 = input[i + 11] + v63;
+                                uint v66 = v65 + v64; 
+                                uint v67 = input[i + 12] + v65; 
+                                uint v68 = v67 + v66;
+                                uint v69 = input[i + 13] + v67; 
+                                uint v70 = v69 + v68; 
+                                uint v71 = input[i + 14] + v69; 
+                                uint v72 = v71 + v70;
+
+                                v5 = input[i + 15] + v71;
                                 v3 -= 16;
                                 v4 = v5 + v72;
+
                                 i += 16;
+
                                 --v42;
 
                             }
@@ -329,8 +281,10 @@ namespace Libraries.helpers.package
                         for (; v3 != 0; v4 += v5)
                         {
 
-                            v5 += v9[i];
+                            v5 += input[i];
+
                             --v3;
+
                             ++i;
 
                         }
@@ -346,27 +300,31 @@ namespace Libraries.helpers.package
                 else
                 {
 
-                    if (a3 != 0)
-                    {
+                    if (inputLength != 0)
 
                         do
                         {
 
-                            v5 += v9[i];
+                            v5 += input[i];
+
                             --v3;
+
                             ++i;
+
                             v4 += v5;
 
                         }
 
                         while (v3 != 0);
 
-                    }
+                    if (v5 >= 65521)
+                    {
 
-                    if (v5 >= 0xFFF1)
                         v5 -= 65521;
 
-                    result = v5 | ((v4 + 15 * (v4 / 0xFFF1)) << 16);
+                    }
+                        
+                    result = v5 | ((v4 + 15 * (v4 / 65521)) << 16);
 
                 }
 
@@ -374,7 +332,7 @@ namespace Libraries.helpers.package
 
             return result;
 
-        }
+        }        
 
     }
 

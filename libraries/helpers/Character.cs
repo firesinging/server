@@ -1,9 +1,12 @@
 ﻿using System;
 
 using Libraries.enums;
-using Libraries.logger;
+using Libraries.character;
+using Libraries.quest;
 using Libraries.database;
 using Libraries.database.models;
+using Libraries.database.models.quest;
+using Libraries.database.models.questlistdata;
 
 using Libraries.helpers.random;
 
@@ -22,9 +25,7 @@ namespace Libraries.helpers.character
         public static long generateCharacterId(int counter = 0)
         {
 
-            RandomEx Random = new RandomEx();
-
-            long Result = Random.NextLong();
+            long Result = StaticRandom.NextLong();
 
             if (Database.Characters.Get(Result) != null)
             {
@@ -54,39 +55,37 @@ namespace Libraries.helpers.character
         /// </summary>
         /// <param name="civId">The civilization Id.</param>
         /// <returns>Path to city scenario</returns>
-        public static string getRandomCityScenario(Civilizations civId)
+        public static string GetRandomCityScenario(Civilizations civId)
         {
-
-            RandomEx r = new RandomEx();
 
             switch (civId)
             {
 
                 case Civilizations.Greek:
 
-                    return $"Capitals/CAPITAL_C01_0{r.Next(1, 6)}";
+                    return $"Capitals/CAPITAL_C01_0{StaticRandom.Next(1, 6)}";
 
                 case Civilizations.Egypt:
 
-                    return $"Capitals/CAPITAL_C02_0{r.Next(1, 6)}";
+                    return $"Capitals/CAPITAL_C02_0{StaticRandom.Next(1, 6)}";
 
 
                 case Civilizations.Celt:
 
-                    return $"Capitals/CAPITAL_C03_0{r.Next(1, 6)}";
+                    return $"Capitals/CAPITAL_C03_0{StaticRandom.Next(1, 6)}";
 
                 case Civilizations.Persia:
 
-                    return $"Capitals/CAPITAL_C04_0{r.Next(1, 3)}";
+                    return $"Capitals/CAPITAL_C04_0{StaticRandom.Next(1, 3)}";
 
                 case Civilizations.Babylonian:
 
-                    return $"Capitals/CAPITAL_C06_0{r.Next(1, 3)}";
+                    return $"Capitals/CAPITAL_C06_0{StaticRandom.Next(1, 3)}";
 
 
                 case Civilizations.Norse:
 
-                    return $"Capitals/CAPITAL_C07_0{r.Next(1, 3)}";
+                    return $"Capitals/CAPITAL_C07_0{StaticRandom.Next(1, 3)}";
 
                 default:
 
@@ -97,17 +96,45 @@ namespace Libraries.helpers.character
         }
 
         /// <summary>
-        /// Get character maximum XP for current character level.
+        /// Get character quest list data.
         /// </summary>
-        /// <param name="level">The character level.</param>
-        /// <returns>Maximum XP for current character level.</returns>
-        public static int GetMaximumXPforLevel(int level)
+        /// <param name="objCharacter">The character.</param>
+        /// <returns>ModelQuestListData.</returns>
+        public static ModelQuestListData GetListdata(Character objCharacter)
         {
 
-            ModelCharacterLevel Level = Database.CharacterLevels[level + 1];
-            ModelCharacterLevel MaxLevel = Database.CharacterLevels[Database.CharacterLevels.Count - 1];
+            //@TODO
+            //Filter quests
 
-            return (level < MaxLevel.Level) ? Level.Xp : MaxLevel.Xp;
+            ModelQuestListData ObjListdata = new ModelQuestListData();
+
+            foreach (Quest ObjQuest in Database.Quests.Values)
+            {
+
+                ModelQuestListNetDataCharacterIds Characterids = new ModelQuestListNetDataCharacterIds();
+
+                foreach (ModelQuestPlayersettings Setting in ObjQuest.Playersettings)
+                {
+
+                    Characterids.Characterid.Add(0);
+
+                }
+
+                ModelQuestListNetData ObjQuestListNetData = new ModelQuestListNetData
+                {
+
+                    Prereqs = 1,                    
+                    PrereqsInvalidated = 0,
+                    Characterids = Characterids,
+                    Filename = ObjQuest.Source
+
+                };
+
+                ObjListdata.QuestNetdata.Add(ObjQuestListNetData);
+
+            }
+
+            return ObjListdata;
 
         }
 

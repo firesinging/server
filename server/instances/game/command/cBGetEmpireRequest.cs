@@ -26,7 +26,7 @@ namespace Game.Command
 
             Logger.Debug($"{p.Key}::ExecuteCommand - Execute command: {Request}");
 
-            Player ObjPlayer = s.GetPlayer();
+            Player ObjPlayer = s.Player;
 
             PacketBGetEmpireResponse ResponseContent = new PacketBGetEmpireResponse(Request.Xuid, ObjPlayer.Empire.ToXml);
 

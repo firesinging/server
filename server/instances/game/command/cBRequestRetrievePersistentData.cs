@@ -1,8 +1,8 @@
 ﻿using System;
 using SuperSocket.SocketBase.Command;
 
-using Libraries.database;
 using Libraries.player;
+using Libraries.character;
 using Libraries.enums;
 using Libraries.logger;
 using Libraries.database.models;
@@ -11,6 +11,7 @@ using Libraries.packages.game;
 using Libraries.helpers.package;
 using Libraries.helpers.character;
 using Libraries.helpers.region;
+using Libraries.helpers.database;
 
 
 namespace Game.Command
@@ -52,7 +53,9 @@ namespace Game.Command
             SendCharacterPersistenceDone(s, p);
 
             SendResponseStringListQuestsInstances(s, p);
+
             BRequestRegionMap.SendResponseQuestGivers(s, p);
+            
             SendResponseQuestList(s, p);
 
 
@@ -86,9 +89,9 @@ namespace Game.Command
             // Use the real Xuid instead of r.Xuid
             // See issue https://github.com/firesinging/xlive/issues/2
 
-            Player ObjPlayer = s.GetPlayer();
+            Player ObjPlayer = s.Player;
 
-            ObjPlayer.Empire.SetLastLaunchedCharacter(r.CharacterId);
+            ObjPlayer.Empire.SetLastLaunchedCharacter(r.CharacterId);            
 
             PacketBCharacterInitPacket ResponseContent = new PacketBCharacterInitPacket(ObjPlayer.Empire.CurrentCharacter.Name, string.Empty, ObjPlayer.Empire.CurrentCharacter.Flag, ObjPlayer.Empire.CurrentCharacter.Id, r.Xuid, ObjPlayer.Empire.CurrentCharacter.CivId);
 
@@ -108,13 +111,13 @@ namespace Game.Command
         /// Sends BCharacterDetailsPacket.
         /// </summary>
         /// <param name="s">The session.</param>
-        /// <param name="p">Packet BRequestRetrievePersistentData.</param>
+        /// <param name="p">Packet BRequestRetrievePersistentData or BRequestRegionMap.</param>
         public static void SendResponseCharacterDetails(Session s, Package p)
         {
 
-            Player ObjPlayer = s.GetPlayer();
+            Character ObjCharacter = s.Player.Empire.CurrentCharacter;
 
-            PacketBCharacterDetailsPacket ResponseContent = new PacketBCharacterDetailsPacket(ObjPlayer.Empire.CurrentCharacter.Name, ObjPlayer.Empire.CurrentCharacter.Id, ObjPlayer.Empire.CurrentCharacter.Level, Convert.ToInt32(ObjPlayer.Empire.CurrentCharacter.Resources.GetResource("XP")), ObjPlayer.Empire.CurrentCharacter.Currentage, CharacterHelper.GetMaximumXPforLevel(ObjPlayer.Empire.CurrentCharacter.Level), ObjPlayer.Empire.CurrentCharacter.Currentregion, Convert.ToInt32(ObjPlayer.Empire.CurrentCharacter.Capitalresources.GetResource("SkillPoints")), Convert.ToInt32(ObjPlayer.Empire.CurrentCharacter.Capitalresources.GetResource("Skillresetpoints")));
+            PacketBCharacterDetailsPacket ResponseContent = new PacketBCharacterDetailsPacket(ObjCharacter.Name, ObjCharacter.Id, ObjCharacter.Level, Convert.ToInt32(ObjCharacter.Resources.GetResource("XP")), ObjCharacter.Currentage, DatabaseHelper.GetMaximumXPforLevel(ObjCharacter.Level), ObjCharacter.Currentregion, Convert.ToInt32(ObjCharacter.Capitalresources.GetResource("SkillPoints")), Convert.ToInt32(ObjCharacter.Capitalresources.GetResource("Skillresetpoints")));
 
             Logger.Debug($"{p.Key}::SendResponseCharacterDetails - Execute command: {ResponseContent}");
 
@@ -136,12 +139,12 @@ namespace Game.Command
         public static void SendResponseStringListProtoUnits(Session s, Package p)
         {
 
-            Player ObjPlayer = s.GetPlayer();
+            Character ObjCharacter = s.Player.Empire.CurrentCharacter;
 
-            if (ObjPlayer.Empire.CurrentCharacter.Protounits.Items.Count > 0)
+            if (ObjCharacter.Protounits.Items.Count > 0)
             {
 
-                PacketBCharacterStringListPacket ResponseContent = new PacketBCharacterStringListPacket(StringListTypes.ProtoUnits, ObjPlayer.Empire.CurrentCharacter.Id, string.Join(",", ObjPlayer.Empire.CurrentCharacter.Protounits.Items));
+                PacketBCharacterStringListPacket ResponseContent = new PacketBCharacterStringListPacket(StringListTypes.ProtoUnits, ObjCharacter.Id, string.Join(",", ObjCharacter.Protounits.Items));
 
                 Logger.Debug($"{p.Key}::SendResponseStringListProtoUnits - Execute command: {ResponseContent}");
 
@@ -165,12 +168,12 @@ namespace Game.Command
         public static void SendResponseStringListDesignsLearned(Session s, Package p)
         {
 
-            Player ObjPlayer = s.GetPlayer();
+            Character ObjCharacter = s.Player.Empire.CurrentCharacter;
 
-            if (ObjPlayer.Empire.CurrentCharacter.Designslearned.Items.Count > 0)
+            if (ObjCharacter.Designslearned.Items.Count > 0)
             {
 
-                PacketBCharacterStringListPacket ResponseContent = new PacketBCharacterStringListPacket(StringListTypes.DesignsLearned, ObjPlayer.Empire.CurrentCharacter.Id, string.Join(",", ObjPlayer.Empire.CurrentCharacter.Designslearned.Items));
+                PacketBCharacterStringListPacket ResponseContent = new PacketBCharacterStringListPacket(StringListTypes.DesignsLearned, ObjCharacter.Id, string.Join(",", ObjCharacter.Designslearned.Items));
 
                 Logger.Debug($"{p.Key}::SendResponseStringListDesignsLearned - Execute command: {ResponseContent}");
 
@@ -194,12 +197,12 @@ namespace Game.Command
         public static void SendResponseStringListTechsActive(Session s, Package p)
         {
 
-            Player ObjPlayer = s.GetPlayer();
+            Character ObjCharacter = s.Player.Empire.CurrentCharacter;
 
-            if (ObjPlayer.Empire.CurrentCharacter.Activetechs.Items.Count > 0)
+            if (ObjCharacter.Activetechs.Items.Count > 0)
             {
 
-                PacketBCharacterStringListPacket ResponseContent = new PacketBCharacterStringListPacket(StringListTypes.TechsActive, ObjPlayer.Empire.CurrentCharacter.Id, ObjPlayer.Empire.CurrentCharacter.Activetechs.ToXml);
+                PacketBCharacterStringListPacket ResponseContent = new PacketBCharacterStringListPacket(StringListTypes.TechsActive, ObjCharacter.Id, ObjCharacter.Activetechs.ToXml);
 
                 Logger.Debug($"{p.Key}::SendResponseStringListTechsActive - Execute command: {ResponseContent}");
 
@@ -223,12 +226,12 @@ namespace Game.Command
         public static void SendResponseStringListTechsCapital(Session s, Package p)
         {
 
-            Player ObjPlayer = s.GetPlayer();
+            Character ObjCharacter = s.Player.Empire.CurrentCharacter;
 
-            if (ObjPlayer.Empire.CurrentCharacter.Capitaltechs.Items.Count > 0)
+            if (ObjCharacter.Capitaltechs.Items.Count > 0)
             {
 
-                PacketBCharacterStringListPacket ResponseContent = new PacketBCharacterStringListPacket(StringListTypes.TechsCapital, ObjPlayer.Empire.CurrentCharacter.Id, ObjPlayer.Empire.CurrentCharacter.Capitaltechs.ToXml);
+                PacketBCharacterStringListPacket ResponseContent = new PacketBCharacterStringListPacket(StringListTypes.TechsCapital, ObjCharacter.Id, ObjCharacter.Capitaltechs.ToXml);
 
                 Logger.Debug($"{p.Key}::SendResponseStringListTechsCapital - Execute command: {ResponseContent}");
 
@@ -252,12 +255,12 @@ namespace Game.Command
         public static void SendResponseStringListTraits(Session s, Package p)
         {
 
-            Player ObjPlayer = s.GetPlayer();
+            Character ObjCharacter = s.Player.Empire.CurrentCharacter;
 
-            if (ObjPlayer.Empire.CurrentCharacter.Traits.Items.Count > 0)
+            if (ObjCharacter.Traits.Items.Count > 0)
             {
 
-                PacketBCharacterStringListPacket ResponseContent = new PacketBCharacterStringListPacket(StringListTypes.Traits, ObjPlayer.Empire.CurrentCharacter.Id, ObjPlayer.Empire.CurrentCharacter.Traits.ToXml);
+                PacketBCharacterStringListPacket ResponseContent = new PacketBCharacterStringListPacket(StringListTypes.Traits, ObjCharacter.Id, ObjCharacter.Traits.ToXml);
 
                 Logger.Debug($"{p.Key}::SendResponseStringListTraits - Execute command: {ResponseContent}");
 
@@ -281,13 +284,13 @@ namespace Game.Command
         public static void SendResponseStringListQuestsCompleted(Session s, Package p)
         {
 
-            Player ObjPlayer = s.GetPlayer();
+            Character ObjCharacter = s.Player.Empire.CurrentCharacter;
 
-            if (ObjPlayer.Empire.CurrentCharacter.Questcompleted.Items.Count > 0)
+            if (ObjCharacter.Questcompleted.Items.Count > 0)
             {
 
-                PacketBCharacterStringListPacket ResponseContent = new PacketBCharacterStringListPacket(StringListTypes.QuestsCompleted, ObjPlayer.Empire.CurrentCharacter.Id, ObjPlayer.Empire.CurrentCharacter.Questcompleted.ToXml);
-
+                PacketBCharacterStringListPacket ResponseContent = new PacketBCharacterStringListPacket(StringListTypes.QuestsCompleted, ObjCharacter.Id, ObjCharacter.Questcompleted.ToXml);
+                
                 Logger.Debug($"{p.Key}::SendResponseStringListQuestsCompleted - Execute command: {ResponseContent}");
 
                 byte[] Response = ResponseContent.ToByteArray();
@@ -310,12 +313,12 @@ namespace Game.Command
         public static void SendResponseStringListQuestsInstances(Session s, Package p)
         {
 
-            Player ObjPlayer = s.GetPlayer();
+            Character ObjCharacter = s.Player.Empire.CurrentCharacter;
 
-            if (ObjPlayer.Empire.CurrentCharacter.Questinstances.Items.Count > 0)
+            if (ObjCharacter.Questinstances.Items.Count > 0)
             {
 
-                PacketBCharacterStringListPacket ResponseContent = new PacketBCharacterStringListPacket(StringListTypes.Quests, ObjPlayer.Empire.CurrentCharacter.Id, ObjPlayer.Empire.CurrentCharacter.Questinstances.ToXml);
+                PacketBCharacterStringListPacket ResponseContent = new PacketBCharacterStringListPacket(StringListTypes.Quests, ObjCharacter.Id, ObjCharacter.Questinstances.ToXml);
 
                 Logger.Debug($"{p.Key}::SendResponseStringListQuests - Execute command: {ResponseContent}");
 
@@ -339,12 +342,12 @@ namespace Game.Command
         public static void SendResponseStringListCapitalResources(Session s, Package p)
         {
 
-            Player ObjPlayer = s.GetPlayer();
+            Character ObjCharacter = s.Player.Empire.CurrentCharacter;
 
-            if (ObjPlayer.Empire.CurrentCharacter.Capitalresources.Items.Count > 0)
+            if (ObjCharacter.Capitalresources.Items.Count > 0)
             {
 
-                PacketBCharacterStringListPacket ResponseContent = new PacketBCharacterStringListPacket(StringListTypes.CapitalResources, ObjPlayer.Empire.CurrentCharacter.Id, ObjPlayer.Empire.CurrentCharacter.Capitalresources.ToXml);
+                PacketBCharacterStringListPacket ResponseContent = new PacketBCharacterStringListPacket(StringListTypes.CapitalResources, ObjCharacter.Id, ObjCharacter.Capitalresources.ToXml);
 
                 Logger.Debug($"{p.Key}::SendResponseStringListCapitalResources - Execute command: {ResponseContent}");
 
@@ -368,14 +371,14 @@ namespace Game.Command
         public static void SendResponseStringListRegions(Session s, Package p)
         {
 
-            Player ObjPlayer = s.GetPlayer();
+            Character ObjCharacter = s.Player.Empire.CurrentCharacter;
 
             string Content = RegionHelper.GetRegionsXML();
 
             if (!string.IsNullOrEmpty(Content))
             {
 
-                PacketBCharacterStringListPacket ResponseContent = new PacketBCharacterStringListPacket(StringListTypes.Regions, ObjPlayer.Empire.CurrentCharacter.Id, Content);
+                PacketBCharacterStringListPacket ResponseContent = new PacketBCharacterStringListPacket(StringListTypes.Regions, ObjCharacter.Id, Content);
 
                 Logger.Debug($"{p.Key}::SendResponseStringListRegions - Execute command: {ResponseContent}");
 
@@ -399,12 +402,12 @@ namespace Game.Command
         public static void SendResponseStringListRegionsUnlocked(Session s, Package p)
         {
 
-            Player ObjPlayer = s.GetPlayer();
+            Character ObjCharacter = s.Player.Empire.CurrentCharacter;
 
-            if (ObjPlayer.Empire.CurrentCharacter.Regionsunlocked.Items.Count > 0)
+            if (ObjCharacter.Regionsunlocked.Items.Count > 0)
             {
 
-                PacketBCharacterStringListPacket ResponseContent = new PacketBCharacterStringListPacket(StringListTypes.RegionsUnlocked, ObjPlayer.Empire.CurrentCharacter.Id, ObjPlayer.Empire.CurrentCharacter.Regionsunlocked.ToXml);
+                PacketBCharacterStringListPacket ResponseContent = new PacketBCharacterStringListPacket(StringListTypes.RegionsUnlocked, ObjCharacter.Id, ObjCharacter.Regionsunlocked.ToXml);
 
                 Logger.Debug($"{p.Key}::SendResponseStringListRegionsUnlocked - Execute command: {ResponseContent}");
 
@@ -428,12 +431,12 @@ namespace Game.Command
         public static void SendResponseStringListAdvisorsAvailable(Session s, Package p)
         {
 
-            Player ObjPlayer = s.GetPlayer();
+            Character ObjCharacter = s.Player.Empire.CurrentCharacter;
 
-            if (ObjPlayer.Empire.CurrentCharacter.Availableadvisors.Items.Count > 0)
+            if (ObjCharacter.Availableadvisors.Items.Count > 0)
             {
 
-                PacketBCharacterStringListPacket ResponseContent = new PacketBCharacterStringListPacket(StringListTypes.AdvisorsAvailable, ObjPlayer.Empire.CurrentCharacter.Id, ObjPlayer.Empire.CurrentCharacter.Availableadvisors.ToXml);
+                PacketBCharacterStringListPacket ResponseContent = new PacketBCharacterStringListPacket(StringListTypes.AdvisorsAvailable, ObjCharacter.Id, ObjCharacter.Availableadvisors.ToXml);
 
                 Logger.Debug($"{p.Key}::SendResponseStringListAdvisorsAvailable - Execute command: {ResponseContent}");
 
@@ -457,14 +460,14 @@ namespace Game.Command
         public static void SendResponseStringListAdvisorsAssigned(Session s, Package p)
         {
 
-            Player ObjPlayer = s.GetPlayer();
+            Character ObjCharacter = s.Player.Empire.CurrentCharacter;
 
-            string Assignedadvisors = ObjPlayer.Empire.CurrentCharacter.Assignedadvisors.ToCommaString();            
+            string Assignedadvisors = ObjCharacter.Assignedadvisors.ToCommaString();            
 
             if (!string.IsNullOrEmpty(Assignedadvisors))
             {
 
-                PacketBCharacterStringListPacket ResponseContent = new PacketBCharacterStringListPacket(StringListTypes.AdvisorsAssigned, ObjPlayer.Empire.CurrentCharacter.Id, Assignedadvisors);
+                PacketBCharacterStringListPacket ResponseContent = new PacketBCharacterStringListPacket(StringListTypes.AdvisorsAssigned, ObjCharacter.Id, Assignedadvisors);
 
                 Logger.Debug($"{p.Key}::SendResponseStringListAdvisorsAssigned - Execute command: {ResponseContent}");
 
@@ -488,12 +491,12 @@ namespace Game.Command
         public static void SendResponseStringListCharacterConfig(Session s, Package p)
         {
 
-            Player ObjPlayer = s.GetPlayer();
+            Character ObjCharacter = s.Player.Empire.CurrentCharacter;
 
-            if (ObjPlayer.Empire.CurrentCharacter.Configs.Items.Count > 0)
+            if (ObjCharacter.Configs.Items.Count > 0)
             {
 
-                PacketBCharacterStringListPacket ResponseContent = new PacketBCharacterStringListPacket(StringListTypes.CharacterConfig, ObjPlayer.Empire.CurrentCharacter.Id, ObjPlayer.Empire.CurrentCharacter.Configs.ToXml);
+                PacketBCharacterStringListPacket ResponseContent = new PacketBCharacterStringListPacket(StringListTypes.CharacterConfig, ObjCharacter.Id, ObjCharacter.Configs.ToXml);
 
                 Logger.Debug($"{p.Key}::SendResponseStringListCharacterConfig - Execute command: {ResponseContent}");
 
@@ -517,12 +520,12 @@ namespace Game.Command
         public static void SendResponseStringListCraftSchools(Session s, Package p)
         {
 
-            Player ObjPlayer = s.GetPlayer();
+            Character ObjCharacter = s.Player.Empire.CurrentCharacter;
 
-            if (ObjPlayer.Empire.CurrentCharacter.Craftschools.Items.Count > 0)
+            if (ObjCharacter.Craftschools.Items.Count > 0)
             {
 
-                PacketBCharacterStringListPacket ResponseContent = new PacketBCharacterStringListPacket(StringListTypes.CraftSchools, ObjPlayer.Empire.CurrentCharacter.Id, ObjPlayer.Empire.CurrentCharacter.Craftschools.ToXml);
+                PacketBCharacterStringListPacket ResponseContent = new PacketBCharacterStringListPacket(StringListTypes.CraftSchools, ObjCharacter.Id, ObjCharacter.Craftschools.ToXml);
 
                 Logger.Debug($"{p.Key}::SendResponseStringListCraftSchools - Execute command: {ResponseContent}");
 
@@ -546,12 +549,12 @@ namespace Game.Command
         public static void SendResponseStringListVanities(Session s, Package p)
         {
 
-            Player ObjPlayer = s.GetPlayer();
-
-            if (ObjPlayer.Empire.CurrentCharacter.Vanities.Items.Count > 0)
+            Character ObjCharacter = s.Player.Empire.CurrentCharacter;
+            
+            if (ObjCharacter.Vanities.Items.Count > 0)
             {
 
-                PacketBCharacterStringListPacket ResponseContent = new PacketBCharacterStringListPacket(StringListTypes.Vanities, ObjPlayer.Empire.CurrentCharacter.Id, ObjPlayer.Empire.CurrentCharacter.Vanities.ToXml);
+                PacketBCharacterStringListPacket ResponseContent = new PacketBCharacterStringListPacket(StringListTypes.Vanities, ObjCharacter.Id, ObjCharacter.Vanities.ToXml);
 
                 Logger.Debug($"{p.Key}::SendResponseStringListVanities - Execute command: {ResponseContent}");
 
@@ -575,7 +578,7 @@ namespace Game.Command
         public static void SendGameCurrency(Session s, Package p)
         {
 
-            Player ObjPlayer = s.GetPlayer();
+            Player ObjPlayer = s.Player;
 
             if (ObjPlayer.Gamecurrencys.Items.Count > 0)
             {
@@ -604,7 +607,7 @@ namespace Game.Command
         public static void SendCharacterPersistenceDone(Session s, Package p)
         {
 
-            Player ObjPlayer = s.GetPlayer();
+            Player ObjPlayer = s.Player;
 
             PacketBCharacterPersistenceDone ResponseContent = new PacketBCharacterPersistenceDone(ObjPlayer.Empire.CurrentCharacter.Id);
 
@@ -618,39 +621,38 @@ namespace Game.Command
 
             s.Send(ToSend, 0, ToSend.Length);
 
-        }        
+        }
 
         /// <summary>
-        /// Sends BCharacterStringListPacket for craft schools.
+        /// Sends BResponseQuestListData.
         /// </summary>
         /// <param name="s">The session.</param>
         /// <param name="p">Packet BRequestRetrievePersistentData.</param>
         public static void SendResponseQuestList(Session s, Package p)
         {
 
-            Player ObjPlayer = s.GetPlayer();
-
-            /*
-            if (ObjPlayer.Empire.CurrentCharacter.Craftschools.Items.Count > 0)
+            Character ObjCharacter = s.Player.Empire.CurrentCharacter;
+            ModelQuestListData ObjListdata = CharacterHelper.GetListdata(ObjCharacter);
+            
+            if ((ObjListdata.QuestNetdata != null) && (ObjListdata.QuestNetdata.Count > 0))
             {
 
-                PacketBCharacterStringListPacket ResponseContent = new PacketBCharacterStringListPacket(StringListTypes.CraftSchools, ObjPlayer.Empire.CurrentCharacter.Id, ObjPlayer.Empire.CurrentCharacter.Craftschools.ToXml);
+                PacketBResponseQuestListData ResponseContent = new PacketBResponseQuestListData(ObjListdata.ToXml);
 
-                Logger.Debug($"{p.Key}::SendResponseStringListCraftSchools - Execute command: {ResponseContent}");
+                Logger.Debug($"{p.Key}::SendResponseQuestList - Execute command: {ResponseContent}");
 
                 byte[] Response = ResponseContent.ToByteArray();
 
-                Package Package = new Package(p.HeaderXuid, p.HeaderField20, p.HeaderServiceId, p.HeaderField22, PacketTypes.BCharacterStringListPacket, 0, Response);
+                Package Package = new Package(p.HeaderXuid, p.HeaderField20, p.HeaderServiceId, p.HeaderField22, PacketTypes.BResponseQuestListData, 0, Response);
 
                 byte[] ToSend = Package.ToByteArray();
 
                 s.Send(ToSend, 0, ToSend.Length);
 
-            }
-
-    */
+            }    
 
         }
+
     }
 
 }

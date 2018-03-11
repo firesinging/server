@@ -1,99 +1,108 @@
 ﻿using System;
-using System.Linq;
+using System.Threading;
 
 
 namespace Libraries.helpers.random
 {
+
     /// <summary>
-    ///  Random extention methods
+    /// Static and thread safe random object
     /// </summary>
-    /// <seealso cref="https://github.com/Zaczero/RandomEx/blob/master/RandomEx/RandomEx.cs"/>
-    public class RandomEx : Random
+    public static class StaticRandom
     {
 
-        public RandomEx() : base()
+        private static int Seed;
+
+        private static ThreadLocal<Random> ThreadLocal = new ThreadLocal<Random>(() => new Random(Interlocked.Increment(ref Seed)));
+
+        public static Random Instance
         {
+
+            get
+            {
+
+                return ThreadLocal.Value;
+
+            }
 
         }
 
-        public RandomEx(int seed) : base(seed)
+        /// <summary>
+        /// Fill the buffer with random value
+        /// </summary>
+        /// <param name="buffer">The buffer to fill.</param>
+        public static void NextBytes(byte[] buffer) => StaticRandom.Instance.NextBytes(buffer);
+
+        /// <summary> 
+        /// Return positive random value. 
+        /// </summary>
+        public static int Next()
         {
+
+            return StaticRandom.Instance.Next();
 
         }
 
-        public long NextLong()
+        /// <summary> 
+        /// Return positive random value which is smaller than max.
+        /// </summary>
+        /// <param name="max">The maximum.</param>
+        public static int Next(int max)
+        {
+
+            return StaticRandom.Instance.Next(max);
+
+        }
+
+        /// <summary> 
+        /// Return positive random value which is smaller than max.
+        /// </summary>
+        /// <param name="min">The minimum.</param>
+        /// <param name="max">The maximum.</param>
+        public static int Next(int min, int max)
+        {
+
+            return StaticRandom.Instance.Next(min, max);
+
+        }
+
+        /// <summary>
+        /// Return double between 0.0 and 1.0
+        /// </summary>
+        /// <remarks>Does not include 1.0</remarks>
+        public static double Double()
+        {
+
+            return StaticRandom.Instance.NextDouble();
+
+        }           
+
+        /// <summary>
+        /// Return long value
+        /// </summary>
+        public static long NextLong()
         {
 
             return NextLong(0, long.MaxValue);
 
         }
 
-        public long NextLong(long maxValue)
+        /// <summary>
+        /// Return long value which is smaller than max
+        /// </summary>
+        /// <param name="min">The minimum.</param>
+        /// <param name="max">The maximum.</param>
+        public static long NextLong(long min, long max)
         {
 
-            return NextLong(0, maxValue);
+            byte[] Buffer = new byte[sizeof(long)];
 
-        }
+            NextBytes(Buffer);
 
-        public long NextLong(long minValue, long maxValue)
-        {
+            long Value = BitConverter.ToInt64(Buffer, 0);
 
-            byte[] randomLongBytes = new byte[sizeof(long)];
+            return Math.Abs(Value % (max - min)) + min;
 
-            NextBytes(randomLongBytes);
-
-            long randomLong = BitConverter.ToInt64(randomLongBytes, 0);
-
-            return Math.Abs(randomLong % (maxValue - minValue)) + minValue;
-
-        }
-
-        public int NextPerc(params int[] percs)
-        {
-
-            var sum = percs.Sum();
-
-            int rnd;
-
-            if (sum < 100)
-            {
-
-                rnd = Next(0, 101);
-
-            }
-            else
-            {
-
-                rnd = Next(0, sum + 1);
-
-            }
-
-            if (rnd > sum)
-            {
-
-                return -1;
-
-            }
-
-            var range = 0;
-
-            for (var i = 0; i < percs.Length; i++)
-            {
-
-                range += percs[i];
-
-                if (rnd > range)
-                {
-
-                    continue;
-
-                }
-
-                return i;
-
-            }
-
-            throw new InvalidOperationException();
         }
 
     }

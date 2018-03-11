@@ -3,6 +3,7 @@
 	<flag>1</flag>
 	<level>1</level>
 	<currentage>1</currentage>	
+	<questinstances />
 	<activetechs>
 		<activetech status="Active" persistentcitystatus="Active">GreekCapStartCiv</activetech>
 		<activetech status="Active" persistentcitystatus="Active">GrE_GreekBldgStorehouse1</activetech>

@@ -1,6 +1,7 @@
 ﻿using System;
 using System.IO;
 
+using Libraries.enums;
 using Libraries.database;
 using Libraries.empire;
 using Libraries.logger;
@@ -42,6 +43,10 @@ namespace Libraries.player
 
                     if (isNew)
                     {
+
+                        ACL.Items.Add(PlayerACL.ConnectAuthServer);
+                        ACL.Items.Add(PlayerACL.ConnectGameServer);
+                        ACL.Items.Add(PlayerACL.ConnectChatServer);
 
                         Empire newEmpire = new Empire().DeserializeFromFile($"{PathingHelper.playerDir}empires{Path.DirectorySeparatorChar}Default.xml");
 

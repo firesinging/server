@@ -14,10 +14,10 @@ namespace Libraries.database.models.quest.objectives
     {
 
         [XmlElement(ElementName = "values")]
-        public ModelQuestObjectivesCriteria Values { get; set; }
+        public ModelQuestObjectivesValues Values { get; set; }
 
         [XmlAttribute(AttributeName = "id")]
-        public string Id { get; set; }
+        public int Id { get; set; }
 
         [XmlAttribute(AttributeName = "mustfailall")]
         public string Mustfailall { get; set; }

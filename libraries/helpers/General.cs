@@ -1,4 +1,5 @@
 ﻿using System;
+using System.IO;
 using System.Text;
 using System.Linq;
 using System.Reflection;
@@ -18,7 +19,6 @@ namespace Libraries.helpers.general
         /// </summary>
         /// <param name="byteArray">Byte array</param>
         /// <returns>Converted string</returns>
-        /// <see cref="https://stackoverflow.com/questions/10940883/c-converting-byte-array-to-string-and-printing-out-to-console"/>
         public static string PrintBytes(byte[] byteArray)
         {
 
@@ -29,7 +29,6 @@ namespace Libraries.helpers.general
 
                 var b = byteArray[i];
 
-                /// Format
                 sb.AppendFormat("0x{0:X2}", b);
 
                 if (i < byteArray.Length - 1)
@@ -135,6 +134,60 @@ namespace Libraries.helpers.general
                         }
 
                     }
+
+                }
+
+            }
+
+        }
+
+        /// <summary>
+        ///  Convert list to bytes
+        /// </summary>
+        /// <param name="lst">The list.</param>
+        /// <returns>Converted bytes</returns>
+        public static byte[] ConvertListToBytes(List<int> lst)
+        {
+
+            Dictionary<int, List<int>> Collection = new Dictionary<int, List<int>>();
+
+            foreach (int Item in lst)
+            {
+
+                if (!Collection.ContainsKey(Item >> 3))
+                {
+
+                    Collection.Add(Item >> 3, new List<int>());
+
+                }
+
+                Collection[Item >> 3].Add(1 << (Item & 7));
+
+            }
+
+            byte[] ConvertArray = new byte[Collection.Count];
+
+            foreach (KeyValuePair<int, List<int>> Item in Collection)
+            {
+
+                ConvertArray[Item.Key] = Convert.ToByte(Item.Value.Sum());
+
+            }
+
+            using (MemoryStream Stream = new MemoryStream())
+            {
+
+                using (BinaryWriter Writer = new BinaryWriter(Stream))
+                {
+
+                    for (int i = 0; i < ConvertArray.Length; i++)
+                    {
+
+                        Writer.Write(ConvertArray[i]);
+
+                    }
+
+                    return Stream.ToArray();
 
                 }
 

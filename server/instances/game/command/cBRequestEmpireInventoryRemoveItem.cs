@@ -10,7 +10,7 @@ using Libraries.helpers.package;
 namespace Game.Command
 {
 
-    public class BRequestDestroyInventoryItem : CommandBase<Session, Package>
+    public class BRequestEmpireInventoryRemoveItem : CommandBase<Session, Package>
     {
 
         /// <summary>

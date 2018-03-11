@@ -1,10 +1,13 @@
-﻿using Libraries.enums;
+﻿using System.Xml.Serialization;
+
+using Libraries.enums;
 using Libraries.database.models;
 
 
 namespace Libraries.region
 {
 
+    [XmlRoot(ElementName = "questgiver")]
     public class Questgiver : ModelQuestgiver
     {
 

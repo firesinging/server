@@ -1,5 +1,6 @@
 ﻿using System;
 using System.IO;
+
 using System.Linq;
 using System.Configuration;
 using System.Collections.Generic;
@@ -11,7 +12,6 @@ using Libraries.character;
 using Libraries.quest;
 using Libraries.region;
 using Libraries.vendor;
-using Libraries.inventory;
 using Libraries.inventory.item;
 using Libraries.database.models;
 using Libraries.database.models.inventory.item;
@@ -29,7 +29,7 @@ namespace Libraries.database
 
         public static readonly bool Instance = false;
 
-        public static readonly Dictionary<int, ModelCharacterLevel> CharacterLevels = new Dictionary<int, ModelCharacterLevel>();        
+        public static readonly Dictionary<int, ModelLevel> Levels = new Dictionary<int, ModelLevel>();        
         public static readonly Dictionary<int, ModelEquipment> Equipments = new Dictionary<int, ModelEquipment>();
         public static readonly Dictionary<int, Quest> Quests = new Dictionary<int, Quest>();
         public static readonly Dictionary<int, QuestNugget> Nuggets = new Dictionary<int, QuestNugget>();
@@ -59,8 +59,8 @@ namespace Libraries.database
 
             if (!Instance)
             {                             
-
-                CharacterLevels = DatabaseHelper.Deserialize<ModelCharacterLevels>("CharacterLevels.xml").Items;
+                
+                Levels = DatabaseHelper.Deserialize<ModelLevels>("CharacterLevels.xml").Items;
                 Blueprints = DatabaseHelper.Deserialize<ModelInventoryItemBlueprints>("EconBlueprints.xml").Items;
                 Advisors = DatabaseHelper.Deserialize<ModelInventoryItemAdvisors>("advisors.xml").Items;
                 Materials = DatabaseHelper.Deserialize<ModelInventoryItemMaterials>("econmaterials.xml").Items;
@@ -98,7 +98,7 @@ namespace Libraries.database
 
                 foreach (string TraitFile in Directory.GetFiles($"{PathingHelper.gamedatabaseDir}traits", "*.xml", SearchOption.AllDirectories).Where(f => !DatabaseHelper.IsExcluded(ExcludedTraitDirectories, f)))
                 {
-
+                    
                     Trait ObjTrait = new Trait().DeserializeFromFile(TraitFile);
 
                     ObjTrait.Source = TraitFile;
@@ -109,13 +109,13 @@ namespace Libraries.database
 
                 foreach (string RegionFile in Directory.GetFiles($"{PathingHelper.gamedatabaseDir}regions", "*.region", SearchOption.TopDirectoryOnly))
                 {
-
+                    
                     ModelRegion Region = new ModelRegion().DeserializeFromFile(RegionFile);
 
                     Region.Source = RegionFile;
 
                     Regions.Add(Region.Id, Region);
-
+                    
                 }
 
                 foreach (string QuestFile in Directory.GetFiles($"{PathingHelper.gamedatabaseDir}quests", "*.quest", SearchOption.AllDirectories))
@@ -123,12 +123,13 @@ namespace Libraries.database
 
                     Quest ObjQuest = new Quest().DeserializeFromFile(QuestFile);
 
-                    ObjQuest.Source = QuestFile;
+                    ObjQuest.Source = QuestFile.Substring(0, QuestFile.LastIndexOf('.')).Replace($"{PathingHelper.gamedatabaseDir}", string.Empty).ToLower();
+                    ObjQuest.Instance = DatabaseHelper.GetQuestInstance(ObjQuest);
 
                     Quests.Add(ObjQuest.Id, ObjQuest);
-
+                    
                 }
-
+                
                 Instance = true;
 
             }            
@@ -136,6 +137,8 @@ namespace Libraries.database
         }
 
         
+
+
 
     }
 

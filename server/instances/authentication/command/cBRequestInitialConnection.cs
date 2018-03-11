@@ -42,7 +42,7 @@ namespace Authentication.command
                 ResponseResult = ConnectionResponseTypes.TimeOut1;
 
             }
-            else if (s.GetPlayer().Ban)
+            else if (!s.Player.ACL.Items.Contains(PlayerACL.ConnectAuthServer))
             {
 
                 ResponseResult = ConnectionResponseTypes.Banned;

@@ -1,6 +1,8 @@
 ﻿using System.IO;
 using System.Text;
 
+using Libraries.enums;
+
 
 namespace Libraries.packages.game
 {
@@ -11,10 +13,10 @@ namespace Libraries.packages.game
     public class PacketBRequestBuyItem
     {      
 
-        public int Type { get; }
-
         public string ProtoName { get; }
         public string Item { get; }
+
+        public InventoryItemTypes Type { get; }
 
         public PacketBRequestBuyItem(byte[] request)
         {
@@ -29,7 +31,7 @@ namespace Libraries.packages.game
 
                     ProtoName = Encoding.Unicode.GetString(Reader.ReadBytes(ProtoNameLength));
 
-                    int Type = Reader.ReadInt32();
+                    InventoryItemTypes Type = (InventoryItemTypes) Reader.ReadInt32();
                     int ItemLength = Reader.ReadInt32();
 
                     Item = Encoding.Unicode.GetString(Reader.ReadBytes(ItemLength));

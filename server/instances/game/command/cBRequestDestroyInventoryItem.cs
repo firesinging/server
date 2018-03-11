@@ -1,6 +1,8 @@
 ﻿using SuperSocket.SocketBase.Command;
 
 using Libraries.enums;
+using Libraries.player;
+using Libraries.inventory;
 using Libraries.logger;
 using Libraries.packages.game;
 
@@ -10,7 +12,7 @@ using Libraries.helpers.package;
 namespace Game.Command
 {
 
-    public class BRequestEmpireInventoryRemoveItem : CommandBase<Session, Package>
+    public class BRequestDestroyInventoryItem : CommandBase<Session, Package>
     {
 
         /// <summary>
@@ -21,13 +23,11 @@ namespace Game.Command
         public override void ExecuteCommand(Session s, Package p)
         {
 
-            PacketBRequestEmpireInventoryRemoveItem Request = new PacketBRequestEmpireInventoryRemoveItem(p.Content);
+            PacketBRequestDestroyInventoryItem Request = new PacketBRequestDestroyInventoryItem(p.Content);
 
             Logger.Debug($"{p.Key}::ExecuteCommand - Execute command: {Request}");
 
             //@TODO
-
-
 
         }
 

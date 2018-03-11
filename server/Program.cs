@@ -351,9 +351,7 @@ namespace Server
 
                     string key = arguments[1];
 
-                    ControlCommand controlCommand;
-
-                    if (!Program.m_CommandHandlers.TryGetValue(key, out controlCommand))
+                    if (!Program.m_CommandHandlers.TryGetValue(key, out ControlCommand controlCommand))
                     {
 
                         Console.WriteLine("Unknown command");
@@ -516,9 +514,7 @@ namespace Server
 
                 string[] strArray = str.Split(new char[1]{' '});
 
-                ControlCommand controlCommand;
-
-                if (!Program.m_CommandHandlers.TryGetValue(strArray[0], out controlCommand))
+                if (!Program.m_CommandHandlers.TryGetValue(strArray[0], out ControlCommand controlCommand))
                 {
 
                     Console.WriteLine("Unknown command");

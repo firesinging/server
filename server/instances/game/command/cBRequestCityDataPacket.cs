@@ -45,7 +45,7 @@ namespace Game.Command
         public static void SendResponseCityDataStart(Session s, Package p)
         {
 
-            Player ObjPlayer = s.GetPlayer();
+            Player ObjPlayer = s.Player;
 
             PacketBResponseCityDataStartPacket ResponseContent = new PacketBResponseCityDataStartPacket(ObjPlayer.Id, ObjPlayer.Empire.CurrentCharacter.Capscenario, 1);
 
@@ -69,7 +69,7 @@ namespace Game.Command
         public static void SendResponseUnitClientState(Session s, Package p)
         {
 
-            Player ObjPlayer = s.GetPlayer();
+            Player ObjPlayer = s.Player;
 
             if (ObjPlayer.Empire.CurrentCharacter.Unitstates.Items.Count > 0)
             {
@@ -103,7 +103,7 @@ namespace Game.Command
         public static void SendCityDataComplete(Session s, Package p)
         {
 
-            Player ObjPlayer = s.GetPlayer();
+            Player ObjPlayer = s.Player;
 
             PacketBResponseCityDataCompletePacket ResponseContent = new PacketBResponseCityDataCompletePacket(ObjPlayer.Id);
 

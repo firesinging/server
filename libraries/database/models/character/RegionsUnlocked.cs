@@ -1,8 +1,8 @@
-﻿using System.Xml.Serialization;
+﻿using System;
+using System.Xml.Serialization;
 using System.Collections.Generic;
-using System.ComponentModel;
 
-using Libraries.helpers.region;
+using Libraries.helpers.general;
 
 
 namespace Libraries.database.models.character
@@ -24,9 +24,40 @@ namespace Libraries.database.models.character
 
         }
 
-        [XmlElement(ElementName = "unlockedregion")]
-        [DefaultValue(null)]
+        [XmlIgnore]
         public List<int> Items { get; set; }
+
+        [XmlText]
+        public string Text
+        {
+
+            get
+            {
+
+                return string.Join(",", Items);
+
+            }
+
+            set
+            {
+
+                Items = new List<int>();
+
+                if (value != null)
+                {
+
+                    foreach (var Item in value.Split(','))
+                    {
+
+                        Items.Add(Convert.ToInt32(Item));
+
+                    }
+
+                }
+
+            }
+
+        }
 
         new public string ToXml
         {
@@ -34,7 +65,7 @@ namespace Libraries.database.models.character
             get
             {
 
-                return $"<unlockedregions>{RegionHelper.ConvertListToBase64String(Items)}</unlockedregions>";
+                return $"<unlockedregions>{Convert.ToBase64String(Helper.ConvertListToBytes(Items))}</unlockedregions>";
 
             }
 

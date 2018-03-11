@@ -88,6 +88,7 @@
     <Compile Include="database\models\nuggetlogic\Questlevel.cs" />
     <Compile Include="database\models\nugget\Animnuggetguardianunit.cs" />
     <Compile Include="database\models\nugget\Animnugget.cs" />
+    <Compile Include="database\models\player\ACL.cs" />
     <Compile Include="database\models\player\VaultInventoryItemCost.cs" />
     <Compile Include="database\models\player\VaultInventoryItem.cs" />
     <Compile Include="database\models\player\VaultInventoryItems.cs" />
@@ -105,8 +106,12 @@
     <Compile Include="database\models\player\Gamecurrencys.cs" />
     <Compile Include="database\models\questgiver\QuestgiverBaseOverride.cs" />
     <Compile Include="database\models\questgiver\Overridesreplacement.cs" />
-    <Compile Include="database\models\Questinstance.cs" />
-    <Compile Include="database\models\Questinstances.cs" />
+    <Compile Include="database\models\QuestListData.cs" />
+    <Compile Include="database\models\questlistdata\NetData.cs" />
+    <Compile Include="database\models\questlistdata\NetDataCharacterids.cs" />
+    <Compile Include="database\models\quest\Nuggetdata.cs" />
+    <Compile Include="database\models\quest\Questinstance.cs" />
+    <Compile Include="database\models\character\Questinstances.cs" />
     <Compile Include="database\models\character\Capitaltech.cs" />
     <Compile Include="database\models\character\Capitaltechs.cs" />
     <Compile Include="database\models\character\AdvisorsAssigned.cs" />
@@ -140,7 +145,7 @@
     <Compile Include="database\models\character\RegionsUnlocked.cs" />
     <Compile Include="database\models\character\Vanities.cs" />
     <Compile Include="database\models\character\Traits.cs" />
-    <Compile Include="database\models\questinstance\Objective.cs" />
+    <Compile Include="database\models\quest\questinstance\Objective.cs" />
     <Compile Include="database\models\character\Completed.cs" />
     <Compile Include="database\models\inventory\item\Trait.cs" />
     <Compile Include="database\models\Quest.cs" />
@@ -224,7 +229,6 @@
     <Compile Include="database\models\quest\rewards\Mailreward.cs" />
     <Compile Include="database\models\quest\rewards\Or.cs" />
     <Compile Include="database\models\quest\rewards\Xp.cs" />
-    <Compile Include="database\models\quest\objectives\Criteria.cs" />
     <Compile Include="database\models\quest\objectives\criteriatypes\Protectunit.cs" />
     <Compile Include="database\models\quest\objectives\criteriatypes\Dummy.cs" />
     <Compile Include="database\models\quest\objectives\criteriatypes\Ownsunit.cs" />
@@ -295,12 +299,12 @@
     <Compile Include="database\models\inventory\item\blueprint\Cost.cs" />
     <Compile Include="database\models\inventory\item\Blueprint.cs" />
     <Compile Include="database\models\inventory\item\Blueprints.cs" />
-    <Compile Include="database\models\characterlevel\Ageupeffect.cs" />
-    <Compile Include="database\models\characterlevel\Unlockregioneffect.cs" />
-    <Compile Include="database\models\characterlevel\Skillpointseffect.cs" />
-    <Compile Include="database\models\characterlevel\Gamecurrencyeffect.cs" />
-    <Compile Include="database\models\CharacterLevel.cs" />
-    <Compile Include="database\models\CharacterLevels.cs" />
+    <Compile Include="database\models\level\Ageupeffect.cs" />
+    <Compile Include="database\models\level\Unlockregioneffect.cs" />
+    <Compile Include="database\models\level\Skillpointseffect.cs" />
+    <Compile Include="database\models\level\Gamecurrencyeffect.cs" />
+    <Compile Include="database\models\Level.cs" />
+    <Compile Include="database\models\Levels.cs" />
     <Compile Include="database\models\craftschool\Items.cs" />
     <Compile Include="database\models\craftschool\Gear.cs" />
     <Compile Include="database\models\craftschool\Gearicons.cs" />
@@ -324,6 +328,8 @@
     <Compile Include="database\models\vendor\Itemsets.cs" />
     <Compile Include="empire\Empires.cs" />
     <Compile Include="empire\Empire.cs" />
+    <Compile Include="enums\PlayerACL.cs" />
+    <Compile Include="enums\PlayerTypes.cs" />
     <Compile Include="enums\CapitalResourceTypes.cs" />
     <Compile Include="enums\InventoryItemTypes.cs" />
     <Compile Include="enums\AllianceTypes.cs" />
@@ -351,6 +357,7 @@
     <Compile Include="helpers\Database.cs" />
     <Compile Include="helpers\General.cs" />
     <Compile Include="helpers\Inventory.cs" />
+    <Compile Include="helpers\ListenersJsonConverter.cs" />
     <Compile Include="helpers\package\PackageChat.cs" />
     <Compile Include="helpers\package\PackageChatCommandFilter.cs" />
     <Compile Include="helpers\package\PackageCommandFilter.cs" />
@@ -360,6 +367,7 @@
     <Compile Include="helpers\package\PackageZipProtection.cs" />
     <Compile Include="helpers\Pathing.cs" />
     <Compile Include="helpers\Player.cs" />
+    <Compile Include="helpers\Quest.cs" />
     <Compile Include="helpers\Random.cs" />
     <Compile Include="helpers\Region.cs" />
     <Compile Include="helpers\Server.cs" />
@@ -376,6 +384,10 @@
     <Compile Include="inventory\item\Trait.cs" />
     <Compile Include="inventory\Inventory.cs" />
     <Compile Include="logger\Logger.cs" />
+    <Compile Include="manager\models\CommandName.cs" />
+    <Compile Include="manager\models\CommandResult.cs" />
+    <Compile Include="manager\models\LoginInfo.cs" />
+    <Compile Include="manager\models\LoginResult.cs" />
     <Compile Include="packages\chat\request\rqBBotNetBasePacketChatData.cs" />
     <Compile Include="packages\chat\request\rqBBotNetBasePacketCustomChatLeaveChannelRequest.cs" />
     <Compile Include="packages\chat\request\rqBBotNetBasePacketCustomChatMessage.cs" />
@@ -608,6 +620,7 @@
     <Compile Include="packages\game\response\rsBResponseQueueLocation.cs" />
     <Compile Include="packages\game\response\rsBResponseUserAuthentication.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="quest\instance\Instance.cs" />
     <Compile Include="quest\nugget\Nugget.cs" />
     <Compile Include="quest\Quest.cs" />
     <Compile Include="region\questgiver\Questgiver.cs" />

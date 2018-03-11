@@ -1,10 +1,12 @@
-﻿using SuperSocket.SocketBase.Command;
+﻿using System;
+using SuperSocket.SocketBase.Command;
 
-using Libraries.enums;
+using Libraries.character;
 using Libraries.logger;
 using Libraries.packages.game;
 
 using Libraries.helpers.package;
+using Libraries.helpers.database;
 
 
 namespace Game.Command
@@ -25,9 +27,20 @@ namespace Game.Command
 
             Logger.Debug($"{p.Key}::ExecuteCommand - Execute command: {Request}");
 
+            Character ObjCharacter = s.Player.Empire.CurrentCharacter;
+
             //@TODO
+            // Level progress - Now character XP is renewed to last killed unit XP
+            // Note: Last level has XP to gain
+            //
+            // int Level = ObjCharacter.Level;
+            // int LevelXP = ObjCharacter.Resources.GetResource("XP");
+            // int LevelXPMax = DatabaseHelper.GetMaximumXPforLevel(Level);
+            // int LevelMax = DatabaseHelper.MaxCharacterlevel();
 
+            ObjCharacter.Resources.SetResource("XP", Request.Xp);
 
+            BRequestRetrievePersistentData.SendResponseCharacterDetails(s, p);
 
         }
 

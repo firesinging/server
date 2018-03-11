@@ -35,9 +35,31 @@ namespace Libraries.quest
         {
 
             //@TODO
-            return "<Nuggets />";
+            //
+            // Empty nugget
+            //
+            //return "<Nuggets />";
+
+            //
+            // Filled nugget
+            //
+            return "<Nuggets><QuestId>11001</QuestId><NInst>3101,3101,3101,3101,3101</NInst></Nuggets>";
+
+            // mapregionname in quest file -> nuggetlogic
+            // Nuggets -> definition
+            // Generate 5 random nugget installments based on criteria
+            // Model: ModelQuestNuggetdata
+
 
         }
+
+
+
+
+
+
+
+
 
     }
 

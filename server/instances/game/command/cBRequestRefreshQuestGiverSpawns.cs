@@ -27,7 +27,7 @@ namespace Game.Command
 
             Logger.Debug($"{p.Key}::ExecuteCommand - Execute command: {Request}");
 
-            Player ObjPlayer = s.GetPlayer();
+            Player ObjPlayer = s.Player;
 
             //@TODO
 
@@ -46,7 +46,7 @@ namespace Game.Command
         {
 
             PacketBQuestGiverSpawnUnitPacket ResponseContent = new PacketBQuestGiverSpawnUnitPacket(q.Name, q.Placeunittype, q.ToXml, q.Greetingstringid, q.Greetingsoundset, q.Farewellsoundset, q.Artset);
-
+            
             Logger.Debug($"{p.Key}::SendResponseGiverSpawn - Execute command: {ResponseContent}");
 
             byte[] Response = ResponseContent.ToByteArray();

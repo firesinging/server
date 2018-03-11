@@ -43,7 +43,7 @@ namespace Libraries.helpers.inventory
         public static int MaxcapacityForWarehouse(string warehouse)
         {
 
-            if (String.IsNullOrEmpty(warehouse))
+            if (string.IsNullOrEmpty(warehouse))
             {
 
                 return 0;

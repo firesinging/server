@@ -43,7 +43,7 @@ namespace Authentication.Command
                         Player NewObjPlayer = new Player();
 
                         NewObjPlayer.Name = Request.PlayerName;
-                        NewObjPlayer.Password = PlayerHelper.CreateHash(Request.Password);
+                        NewObjPlayer.Password = PlayerHelper.CreateHash(Request.Password);                        
 
                         NewObjPlayer.Save(false, false, true);
 
@@ -56,7 +56,7 @@ namespace Authentication.Command
                 if (ObjPlayer != null)
                 {
 
-                    s.SetPlayer(ObjPlayer);
+                    s.Player = ObjPlayer;
 
                 }
 

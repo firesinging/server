@@ -20,7 +20,7 @@ namespace Libraries.database.models.quest.objectives
         public string Suppressfail { get; set; }
 
         [XmlAttribute(AttributeName = "id")]
-        public string Id { get; set; }
+        public int Id { get; set; }
 
 
     }

@@ -17,7 +17,7 @@ namespace Libraries.packages.game
 
         public QuestOperationTypes Operation { get; }
 
-        public string Unk1 { get; }
+        public string Status { get; }
         public string Unk2 { get; }
 
         public PacketBRequestQuestOperation(byte[] request)
@@ -32,8 +32,8 @@ namespace Libraries.packages.game
                     Id = Reader.ReadInt32();
                     Operation = (QuestOperationTypes) Reader.ReadByte();
 
-                    int Unk1Length = Reader.ReadInt32();
-                    Unk1 = Encoding.Unicode.GetString(Reader.ReadBytes(Unk1Length));
+                    int StatusLength = Reader.ReadInt32();
+                    Status = Encoding.Unicode.GetString(Reader.ReadBytes(StatusLength));
 
                     int Unk2Length = Reader.ReadInt32();
                     Unk2 = Encoding.Unicode.GetString(Reader.ReadBytes(Unk2Length));
@@ -51,11 +51,11 @@ namespace Libraries.packages.game
                "PacketBRequestQuestOperation\r\n" +
                "Id = {0}\r\n" +
                "Operation = {1}\r\n" +
-               "Unk1 = {2}\r\n" +
+               "Status = {2}\r\n" +
                "Unk2 = {3}\r\n",
                Id,
                Operation,
-               Unk1,
+               Status,
                Unk2
            );
 

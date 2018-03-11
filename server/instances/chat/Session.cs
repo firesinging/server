@@ -11,6 +11,21 @@ namespace Chat
     {
 
         /// <summary>
+        /// Gets the app server.
+        /// </summary>
+        public new Server AppServer
+        {
+
+            get
+            {
+
+                return (Server)base.AppServer;
+
+            }
+
+        }
+
+        /// <summary>
         /// Called when [session started].
         /// </summary>
         protected override void OnSessionStarted()

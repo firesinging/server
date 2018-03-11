@@ -2,6 +2,7 @@
 using System.Collections.Generic;
 
 using Libraries.enums;
+using Libraries.region;
 using Libraries.database;
 
 using Libraries.helpers.xml;
@@ -13,24 +14,7 @@ namespace Libraries.helpers.region
     public static class RegionHelper
     {
 
-        private static string _RegionsXML;
-
-        /// <summary>
-        ///  Convert unlocked regions list to string
-        /// </summary>
-        /// <param name="Regions">Unlocked regions list</param>
-        /// <returns>Converted string</returns>
-        /// <see cref=""/>
-        public static string ConvertListToBase64String(List<int> Regions)
-        {
-
-            byte[] Array = new byte[Regions.Count * 4];
-
-            //@TODO
-
-            return Convert.ToBase64String(Array);             
-            
-        }
+        private static string _RegionsXML;        
 
         /// <summary>
         /// Get all regions XML 
@@ -111,6 +95,32 @@ namespace Libraries.helpers.region
             return Obj;
 
         }
+
+        /// <summary>
+        /// Get quest giver region by quest giver name
+        /// </summary>
+        /// <param name="name">Quest giver name</param>
+        /// <returns>Quest giver region</returns>
+        public static int GetQuestGiverRegion(string name)
+        {
+
+            if (!string.IsNullOrEmpty(name))
+            {
+
+                if (Database.Questgivers.TryGetValue(name, out Questgiver Giver))
+                {
+
+                    return Giver.Region;
+
+                }
+
+            }
+
+            return 0;
+
+        }
+
+
 
     }
 

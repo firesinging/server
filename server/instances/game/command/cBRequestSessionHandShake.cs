@@ -35,7 +35,7 @@ namespace Game.Command
                 if (ObjPlayer != null)
                 {
 
-                    s.SetPlayer(ObjPlayer);
+                    s.Player = ObjPlayer;
 
                 }
 

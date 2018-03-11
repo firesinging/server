@@ -24,7 +24,7 @@ namespace Libraries.database.models
         {
 
             Questcompleted = new ModelQuestCompleted();
-            Questinstances = new ModelQuestinstances();
+            Questinstances = new ModelCharacterQuestinstances();
             Activetechs = new ModelCharacterTechsActive();
             Capitaltechs = new ModelCharacterTechsCapital();
             Protounits = new ModelCharacterProtounits();
@@ -86,7 +86,7 @@ namespace Libraries.database.models
         public ModelQuestCompleted Questcompleted { get; set; }
 
         [XmlElement(ElementName = "questinstances")]
-        public ModelQuestinstances Questinstances { get; set; }
+        public ModelCharacterQuestinstances Questinstances { get; set; }
 
         [XmlElement(ElementName = "activetechs")]
         public ModelCharacterTechsActive Activetechs { get; set; }

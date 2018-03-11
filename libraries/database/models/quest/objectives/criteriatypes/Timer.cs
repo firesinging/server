@@ -1,4 +1,5 @@
-﻿using System.Xml.Serialization;
+﻿using System.ComponentModel;
+using System.Xml.Serialization;
 
 
 namespace Libraries.database.models.quest.objectives
@@ -14,13 +15,15 @@ namespace Libraries.database.models.quest.objectives
     {
 
         [XmlElement(ElementName = "description")]
+        [DefaultValue(null)]
         public string Description { get; set; }
 
         [XmlElement(ElementName = "failonexpire")]
+        [DefaultValue(null)]
         public string Failonexpire { get; set; }
 
         [XmlAttribute(AttributeName = "id")]
-        public string Id { get; set; }
+        public int Id { get; set; }
 
     }
 

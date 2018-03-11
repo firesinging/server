@@ -20,11 +20,9 @@ namespace Libraries.helpers.player
         /// </summary>
         /// <returns>PlayerId / Xuid</returns>
         public static long generatePlayerId(int counter = 0)
-        {           
+        {
 
-            RandomEx Random = new RandomEx();
-
-            long Result = Random.NextLong();
+            long Result = StaticRandom.NextLong();
 
             if (Database.Players.Get(Result) != null)
             {

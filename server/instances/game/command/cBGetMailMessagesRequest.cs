@@ -26,7 +26,7 @@ namespace Game.Command
 
             Logger.Mail($"{p.Key}::ExecuteCommand - Execute command: {Request}");
 
-            Player ObjPlayer = s.GetPlayer();
+            Player ObjPlayer = s.Player;
 
             PacketBGetMailMessagesResponse ResponseContent = new PacketBGetMailMessagesResponse(ObjPlayer.Mailmessages.ToXml);
 

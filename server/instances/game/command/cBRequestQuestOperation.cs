@@ -4,7 +4,7 @@ using SuperSocket.SocketBase.Command;
 using Libraries.enums;
 using Libraries.database;
 using Libraries.logger;
-using Libraries.player;
+using Libraries.character;
 using Libraries.quest;
 using Libraries.packages.game;
 
@@ -29,22 +29,101 @@ namespace Game.Command
 
             Logger.Debug($"{p.Key}::ExecuteCommand - Execute command: {Request}");
 
-            Player ObjPlayer = s.GetPlayer();
+            Character ObjCharacter = s.Player.Empire.CurrentCharacter;
             Quest ObjQuest = Database.Quests[Request.Id];
 
             switch (Request.Operation)
             {
 
+                case QuestOperationTypes.QuestAbandon:
+                {
+
+                    if (ObjCharacter.Questinstances.Items.ContainsKey(ObjQuest.Id))
+                    {
+
+                        ObjCharacter.Questinstances.Items.Remove(ObjQuest.Id);
+
+                    }
+
+                    Logger.Debug($"{p.Key}::ExecuteCommand - Abandonded quest: {Request.Id}");
+
+                    break;
+                       
+                }
+
+                case QuestOperationTypes.QuestAccept:
+                {
+
+                    if ((!ObjCharacter.Questinstances.Items.TryGetValue(ObjQuest.Id, out QuestInstance ObjInstance)))
+                    {
+
+                        ObjCharacter.Questinstances.Items.Add(ObjQuest.Id, ObjQuest.Instance);
+
+                    }
+
+                    ObjCharacter.Questinstances.Items[ObjQuest.Id].Status = "accepted";
+
+                    Logger.Debug($"{p.Key}::ExecuteCommand - Accepted quest: {Request.Id}");
+
+                    break;
+
+                }
+
+                case QuestOperationTypes.QuestObjectiveComplete:
+                {
+
+                    Logger.Debug($"{p.Key}::ExecuteCommand - Completed objective for quest: {Request.Id}");
+
+                    break;
+
+                }
+
+                case QuestOperationTypes.QuestComplete:
+                {
+
+                    //@TODO
+
+                    Logger.Debug($"{p.Key}::ExecuteCommand - Completed quest: {Request.Id}");
+
+                    break;
+
+                }
+
                 case QuestOperationTypes.QuestStartDefault:
                 {
 
-                    PacketBResponseLaunchQuestMapPacket ResponseContentMap = new PacketBResponseLaunchQuestMapPacket(ObjQuest.Id, Convert.ToByte(ObjQuest.IsRandomMap()), ObjQuest.Randommap.Map, ObjQuest.Randommap.Numplayers, 0, -1, ObjQuest.Randommap.Mapvariables.ToXml, ObjQuest.GetNuggets(ObjPlayer.Empire.CurrentCharacter.Level), ObjQuest.Level, ObjQuest.Questbasescale);
+                    PacketBResponseLaunchQuestMapPacket ResponseContentMap = new PacketBResponseLaunchQuestMapPacket(ObjQuest.Id, Convert.ToByte(ObjQuest.IsRandomMap()), ObjQuest.Randommap.Map, ObjQuest.Randommap.Numplayers, 0, -1, ObjQuest.Randommap.Mapvariables.ToXml, ObjQuest.GetNuggets(ObjCharacter.Level), ObjQuest.Level, ObjQuest.Questbasescale);
 
                     SendResponseLaunchQuestMapPacket(s, p, ResponseContentMap);
 
-                    PacketBResponseQuestOperation ResponseContentOp = new PacketBResponseQuestOperation(ObjQuest.Id, QuestOperationTypes.QuestStartDefault, 0, 0, 0);
+                    PacketBResponseQuestOperation ResponseContentOp = new PacketBResponseQuestOperation(ObjQuest.Id, QuestOperationTypes.QuestStartDefault, 0, ObjQuest.GiveRegion, ObjQuest.ReturnRegion);
 
                     SendResponseQuestOperation(s, p, ResponseContentOp);
+
+                    Logger.Debug($"{p.Key}::ExecuteCommand - Started quest: {Request.Id}");
+
+                    break;
+
+                }
+
+                case QuestOperationTypes.QuestStatusSet:
+                {
+
+                    if ((ObjCharacter.Questinstances.Items.TryGetValue(ObjQuest.Id, out QuestInstance ObjInstance)))
+                    {
+
+                        ObjInstance.Status = Request.Status;
+
+                    } else
+                    {
+
+                        ObjCharacter.Questinstances.Items.Add(ObjQuest.Id, ObjQuest.Instance);
+
+                        ObjCharacter.Questinstances.Items[ObjQuest.Id].Status = Request.Status;
+
+                    }
+
+                    Logger.Debug($"{p.Key}::ExecuteCommand - Set quest status for quest: {Request.Id}");
 
                     break;
 

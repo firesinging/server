@@ -1,4 +1,7 @@
-﻿using Libraries.database.models;
+﻿using System;
+using System.Linq;
+
+using Libraries.database.models;
 using Libraries.database.models.inventory;
 
 
@@ -36,6 +39,27 @@ namespace Libraries.inventory
 
             Inventory.Container = name;
             Inventory.Items = items;
+
+        }
+
+        public ModelInventoryInventoryItem GetItem(int index)
+        {
+
+            Inventory.Items.Items.TryGetValue(index, out ModelInventoryInventoryItem ObjInventoryItem);
+
+            return ObjInventoryItem;
+
+        }
+
+        /// <summary>
+        /// Remove player from players dictionary.
+        /// </summary>
+        /// <param name="id">The player Id.</param>
+        /// <returns>True when player is removed.</returns>
+        public bool RemoveItem(int index)
+        {
+
+            return Inventory.Items.Items.Remove(index);
 
         }
 

@@ -4,10 +4,9 @@ using SuperSocket.SocketBase.Command;
 
 using Libraries.database;
 using Libraries.enums;
-using Libraries.player;
+using Libraries.character;
 using Libraries.region;
 using Libraries.logger;
-using Libraries.character;
 using Libraries.packages.game;
 
 using Libraries.helpers.package;
@@ -33,13 +32,13 @@ namespace Game.Command
 
             Logger.Debug($"{p.Key}::ExecuteCommand - Execute command: {Request}");
 
-            Player ObjPlayer = s.GetPlayer();
+            Character ObjCharacter = s.Player.Empire.CurrentCharacter;
 
-            ObjPlayer.Empire.CurrentCharacter.Currentregion = Request.RegionId;
+            ObjCharacter.Currentregion = Request.RegionId;
 
-            ObjPlayer.Empire.CurrentCharacter.Save();
+            ObjCharacter.Save();
 
-            PacketBResponseRequestRegionMap ResponseContent = new PacketBResponseRequestRegionMap(1, Database.Regions[Request.RegionId].Mapname);
+            PacketBResponseRequestRegionMap ResponseContent = new PacketBResponseRequestRegionMap(1, (Request.RegionId == 0) ? ObjCharacter.Capscenario : Database.Regions[Request.RegionId].Mapname);
 
             Logger.Debug($"{p.Key}::ExecuteCommand - Execute command: {ResponseContent}");
 
@@ -50,6 +49,8 @@ namespace Game.Command
             byte[] ToSend = Package.ToByteArray();
 
             s.Send(ToSend, 0, ToSend.Length);
+
+            BRequestRetrievePersistentData.SendResponseCharacterDetails(s, p);
 
             SendResponseQuestGivers(s, p);
 
@@ -62,9 +63,8 @@ namespace Game.Command
         /// <param name="p">Packet BRequestRetrievePersistentData or BRequestRegionMap.</param>
         public static void SendResponseQuestGivers(Session s, Package p)
         {
-
-            Player ObjPlayer = s.GetPlayer();
-            Character ObjCharacter = ObjPlayer.Empire.CurrentCharacter;
+            
+            Character ObjCharacter = s.Player.Empire.CurrentCharacter;
 
             int Currentregion = ObjCharacter.Currentregion;
             List<string> ExcludedCivilizations = RegionHelper.FilterQuestgiversbyCivilization(ObjCharacter.CivId);
@@ -77,7 +77,8 @@ namespace Game.Command
 
                     BRequestRefreshQuestGiverSpawns.SendResponseGiverSpawn(s, p, ObjQuestgiver);
 
-                }  else if (ObjCharacter.Questgivers.Items.TryGetValue(ObjQuestgiver.Name, out CharacterQuestgiver ObjCharacterQuestgiver))
+                }
+                else if (ObjCharacter.Questgivers.Items.TryGetValue(ObjQuestgiver.Name, out CharacterQuestgiver ObjCharacterQuestgiver))
                 {
 
                     if (ObjCharacterQuestgiver.IsAvailable())

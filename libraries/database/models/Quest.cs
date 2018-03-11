@@ -1,9 +1,13 @@
-﻿using System.ComponentModel;
+﻿using System.Linq;
+using System.ComponentModel;
 using System.Xml.Serialization;
 using System.Collections.Generic;
 
 using Libraries.enums;
+using Libraries.quest;
 using Libraries.database.models.quest;
+
+using Libraries.helpers.region;
 
 
 namespace Libraries.database.models
@@ -24,6 +28,7 @@ namespace Libraries.database.models
             Timereffects = new List<ModelQuestTimereffects>();
             Playersettings = new List<ModelQuestPlayersettings>();
             Diplomacysettings = new List<ModelQuestDiplomacysettings>();
+            Instance = new QuestInstance();
 
         }
 
@@ -189,6 +194,35 @@ namespace Libraries.database.models
 
         [XmlIgnore]
         public string Source { get; set; }
+
+        [XmlIgnore]
+        public QuestInstance Instance { get; set; }
+
+        [XmlIgnore]
+        public int GiveRegion
+        {
+
+            get
+            {
+
+                return RegionHelper.GetQuestGiverRegion(Questgivers.Items.FirstOrDefault());
+
+            }
+
+        }
+
+        [XmlIgnore]
+        public int ReturnRegion
+        {
+
+            get
+            {
+
+                return RegionHelper.GetQuestGiverRegion(Questreturners.Items.FirstOrDefault());
+
+            }
+
+        }
 
     }
 

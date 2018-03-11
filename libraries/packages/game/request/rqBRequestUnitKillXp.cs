@@ -1,4 +1,5 @@
-﻿using System.IO;
+﻿using System;
+using System.IO;
 
 
 namespace Libraries.packages.game
@@ -10,8 +11,7 @@ namespace Libraries.packages.game
     public class PacketBRequestUnitKillXp
     {
 
-        public long Xp { get; }
-
+        public int Xp { get; }
         public int QuestId { get; }
 
         public PacketBRequestUnitKillXp(byte[] request)
@@ -23,7 +23,7 @@ namespace Libraries.packages.game
                 using (BinaryReader Reader = new BinaryReader(Stream))
                 {
 
-                    Xp = Reader.ReadInt64();
+                    Xp = Convert.ToInt32(Reader.ReadInt64());
                     QuestId = Reader.ReadInt32();
 
                 }
@@ -36,7 +36,7 @@ namespace Libraries.packages.game
         {
 
             return string.Format(
-                "PacketBDeleteMailRequest\r\n" +
+                "PacketBRequestUnitKillXp\r\n" +
                 "Xp = {0}\r\n" +
                 "QuestId = {1}\r\n",
                 Xp,

@@ -58,6 +58,20 @@ namespace Libraries.inventory
 
         }
 
+        /// <summary>
+        /// Find inventory by item id.
+        /// </summary>
+        /// <param name="index">The item index.</param>
+        /// <returns>The inventory object.</returns>
+        public Inventory FindInventoryForItem(int index)
+        {
+
+            Inventory ObjInventory = Items.Values.FirstOrDefault(key => key.Inventory.Items.Items.ContainsKey(index));
+
+            return ObjInventory;
+
+        }
+
 
     }
 

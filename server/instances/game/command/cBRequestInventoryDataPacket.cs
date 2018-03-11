@@ -43,7 +43,7 @@ namespace Game.Command
 
             Logger.Debug($"{p.Key}::InitInventory");
 
-            Character ObjCharacter = s.GetPlayer().Empire.CurrentCharacter;
+            Character ObjCharacter = s.Player.Empire.CurrentCharacter;
 
             foreach (KeyValuePair<string, Inventory> Item in ObjCharacter.Inventories.Items)
             {
@@ -65,7 +65,7 @@ namespace Game.Command
         public static void SendResponseGetContainerNumSlots(Session s, Package p, ModelInventoryInfo i, byte flag = 0)
         {
 
-            Character ObjCharacter = s.GetPlayer().Empire.CurrentCharacter;
+            Character ObjCharacter = s.Player.Empire.CurrentCharacter;
 
             PacketBResponseGetContainerNumSlots ResponseContent = new PacketBResponseGetContainerNumSlots(ObjCharacter.Id, i.Id, i.Maxcapacity, 0, flag);
 
@@ -93,7 +93,7 @@ namespace Game.Command
             if (!string.IsNullOrEmpty(xml))
             {
 
-                Character ObjCharacter = s.GetPlayer().Empire.CurrentCharacter;
+                Character ObjCharacter = s.Player.Empire.CurrentCharacter;
 
                 PacketBCharacterStringListPacket ResponseContent = new PacketBCharacterStringListPacket(StringListTypes.Inventory, ObjCharacter.Id, xml);
 

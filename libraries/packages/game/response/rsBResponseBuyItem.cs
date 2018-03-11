@@ -1,6 +1,7 @@
 ﻿using System.IO;
 using System.Text;
 
+using Libraries.enums;
 
 namespace Libraries.packages.game
 {
@@ -11,12 +12,12 @@ namespace Libraries.packages.game
     public class PacketBResponseBuyItem
     {
 
-        public byte Result { get; }
-
-        public int Type { get; }
+        public byte Result { get; }        
 
         public string ProtoName { get; }
         public string Item { get; }
+
+        public InventoryItemTypes Type { get; }
 
         /// <summary>
         /// Initializes a new instance of the class.
@@ -25,7 +26,7 @@ namespace Libraries.packages.game
         /// <param name="type">The item type.</param>
         /// <param name="item">The item name.</param>
         /// <param name="result">The result.</param>
-        public PacketBResponseBuyItem(string protoName, int type, string item, byte result)
+        public PacketBResponseBuyItem(string protoName, InventoryItemTypes type, string item, byte result)
         {
 
             ProtoName = protoName;
@@ -55,7 +56,7 @@ namespace Libraries.packages.game
 
                     Writer.Write(ContentProtoName.Length);
                     Writer.Write(ContentProtoName);
-                    Writer.Write(Type);
+                    Writer.Write((int) Type);
                     Writer.Write(ContentItem.Length);
                     Writer.Write(ContentItem);
                     Writer.Write(Result);

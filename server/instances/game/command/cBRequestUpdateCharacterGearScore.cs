@@ -25,7 +25,7 @@ namespace Game.Command
 
             Logger.Debug($"{p.Key}::ExecuteCommand - Execute command: {Request}");
 
-            Player ObjPlayer = s.GetPlayer();
+            Player ObjPlayer = s.Player;
 
             ObjPlayer.Empire.CurrentCharacter.Gearscore = Request.Gearscore;
 

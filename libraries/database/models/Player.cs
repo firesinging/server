@@ -1,8 +1,10 @@
 ﻿using System;
 using System.Net;
 using System.ComponentModel;
+using System.Collections.Generic;
 using System.Xml.Serialization;
 
+using Libraries.enums;
 using Libraries.empire;
 using Libraries.player;
 using Libraries.database.models.player;
@@ -22,6 +24,7 @@ namespace Libraries.database.models
         public ModelPlayer()
         {
 
+            ACL = new ModelPlayerACLs();
             Gamecurrencys = new ModelPlayerGamecurrencys();
             Settings = new ModelPlayerSettings();
             Mailmessages = new PlayerMails();
@@ -40,12 +43,9 @@ namespace Libraries.database.models
         [DefaultValue(null)]
         public string Password { get; set; }
 
-        [XmlElement(ElementName = "Role")]
-        [DefaultValue(1)]
-        public int Role { get; set; }
-
-        [XmlElement(ElementName = "Ban")]
-        public bool Ban { get; set; }
+        [XmlElement(ElementName = "Actionlevels")]
+        [DefaultValue(null)]
+        public ModelPlayerACLs ACL { get; set; }
 
         [XmlElement(ElementName = "Lastsave")]
         public DateTime Lastsave = DateTime.UtcNow;
@@ -70,6 +70,9 @@ namespace Libraries.database.models
 
         [XmlIgnore]
         public string SessionGame { get; set; }
+
+        [XmlIgnore]
+        public string SessionManager { get; set; }
 
         [XmlIgnore]
         public IPAddress Ip { get; set; }

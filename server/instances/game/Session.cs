@@ -1,7 +1,7 @@
-﻿using SuperSocket.SocketBase;
+﻿using System.Linq;
+using SuperSocket.SocketBase;
 
 using Libraries.player;
-using Libraries.database;
 
 using Libraries.helpers.package;
 
@@ -31,42 +31,51 @@ namespace Game
         }
 
         /// <summary>
-        /// Get player based on Id.
+        /// The player.
         /// </summary>
-        /// <param name="id">The player Id.</param>
-        /// <returns>The player object.</returns>
-        public Player GetPlayer(long id = 0)
+        public Player Player
         {
 
-            Player Instance = _Player;
-
-            if ((id == 0) && (Instance == null))
+            get
             {
 
-                return null;
+                return _Player;
 
             }
 
-            if ((id != 0) && (id != Instance.Id))
+            internal set
             {
 
-                Instance = Database.Players.Get(id);
+                if ((value == null) || (IsAuthenticated))
+                {
+
+                    return;
+
+                }
+
+                Logger.Info($"Game::Player - Set session player {value.Name}");
+
+                AppServer.CloseExpiredSessions(value.Id, SessionID);
+
+                _Player = value;
+                _Player.SessionGame = SessionID;
 
             }
-
-            return Instance;
 
         }
 
         /// <summary>
-        /// Add the player to the session.
+        /// Gets the app server.
         /// </summary>
-        /// <param name="player">The player object.</param>
-        internal void SetPlayer(Player player)
+        public new Server AppServer
         {
 
-            _Player = player;
-            _Player.SessionGame = SessionID;
+            get
+            {
+
+                return (Server)base.AppServer;
+
+            }
 
         }
 
@@ -89,7 +98,7 @@ namespace Game
 
             Logger.Info($"Game::OnSessionClosed - Session closed. Reason: {reason}");
 
-            if (_Player != null)
+            if (IsAuthenticated)
             {
 
                 _Player.SessionGame = null;
@@ -98,7 +107,7 @@ namespace Game
             }             
 
         }
-
+        
         /// <summary>
         /// Handle Unknown request
         /// </summary>

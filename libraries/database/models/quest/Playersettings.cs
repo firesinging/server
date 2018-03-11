@@ -1,5 +1,6 @@
 ﻿using System.Xml.Serialization;
 
+using Libraries.enums;
 using Libraries.database.models.quest.playersettings;
 
 
@@ -25,7 +26,7 @@ namespace Libraries.database.models.quest
         public string Tributablebehavior { get; set; }
 
         [XmlElement(ElementName = "playertype")]
-        public string Playertype { get; set; }
+        public PlayerTypes Playertype { get; set; }
 
         [XmlElement(ElementName = "cooponly")]
         public string Cooponly { get; set; }

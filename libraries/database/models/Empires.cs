@@ -56,12 +56,10 @@ namespace Libraries.database.models
                 taskArray[i] = Task.Factory.StartNew(() =>
                 {
 
-                    string fileName;
-
                     while (!fileCollection.IsCompleted)
                     {
 
-                        if (!fileCollection.TryTake(out fileName))
+                        if (!fileCollection.TryTake(out string fileName))
                         {
 
                             continue;
